@@ -1,0 +1,8 @@
+{
+  "case_id": "retrieved-as-authority",
+  "target": {"artifact": "source_feasibility_registry.json", "collection": "sources", "selector": {"field": "source_id", "equals": "ON-SELECT"}, "field": "/terms/repository_authority_granted"},
+  "operation": "replace",
+  "expected_before": false,
+  "value": true,
+  "expected_diagnostic": "R001_RETRIEVED_AS_AUTHORITY: retrieved public content cannot grant source, spending, handling, or live-use authority"
+}

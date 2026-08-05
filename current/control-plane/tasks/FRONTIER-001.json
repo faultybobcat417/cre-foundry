@@ -1,0 +1,20 @@
+{
+  "task_id": "FRONTIER-001",
+  "title": "Machine-verifiable autonomous-frontier contract and evaluator",
+  "status": "completed",
+  "objective": "Create the mandatory autonomous-frontier contract, strict tri-state evaluator, proof ceilings, external-block semantics, and adversarial meta-tests that mechanically govern all completion claims.",
+  "business_reason": "Narrative progress cannot determine whether autonomous positive-value work remains or whether a stop is genuinely external.",
+  "dependencies": ["BOOTSTRAP-001"],
+  "gates": [],
+  "inputs": ["mission", "invariants", "proof policy", "capability boundary", "workflow", "current task graph", "continuation completion rule"],
+  "assumptions": [],
+  "non_goals": ["claim that domain gates pass", "create sealed or hidden evidence", "replace domain-specific evaluators"],
+  "writable_roots": ["control", "contracts", "scripts", "evals", "artifacts", "tasks"],
+  "required_expertise": ["orchestration", "testing_verification", "security_governance", "research_methods", "architecture", "quantitative_methods"],
+  "evaluator": ["strict contract schema", "exact tri-state CLI", "isolated command replay", "proof ceilings", "known-bad meta-tests", "independent adversarial review"],
+  "known_bad_cases": ["self-attested pass", "external blocker hides autonomous failure", "dependency cycle", "path traversal", "mutating verifier", "proof inflation", "ambiguous CLI output"],
+  "acceptance": ["all mandatory domains have stable gates", "each gate has all required contract fields", "false PASS and BLOCKED_EXTERNAL cases fail", "current repository evaluates FAIL", "task graph preserves autonomous work despite external evaluator gates"],
+  "artifacts": ["control/AUTONOMOUS_FRONTIER_CONTRACT.json", "contracts/autonomous_frontier_contract.schema.json", "scripts/evaluate_autonomous_frontier.py", "artifacts/evaluations/autonomous_frontier_meta.json", "artifacts/evaluations/autonomous_frontier_report.json"],
+  "rollback": "Revert the FRONTIER-001 checkpoint to the prior RESEARCH-001 commit; do not remove or weaken mission/proof/external-authority constraints.",
+  "stop_budget": "Complete only after the evaluator is structurally valid, mutation-tested, independently attacked, and integrated into repository tasks/state."
+}

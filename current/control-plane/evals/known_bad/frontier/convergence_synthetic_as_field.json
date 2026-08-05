@@ -1,0 +1,5 @@
+{
+  "case_id": "synthetic-as-field-proof",
+  "mutation_id": "synthetic_as_field",
+  "expected_diagnostic": "registered mutation detected: synthetic-as-field-proof"
+}

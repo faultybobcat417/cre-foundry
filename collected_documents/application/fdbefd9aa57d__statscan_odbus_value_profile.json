@@ -1,0 +1,852 @@
+{
+  "coordinate_quality": {
+    "latitude": {
+      "blank_count": 1,
+      "invalid_count": 134477,
+      "invalid_examples": [
+        ".."
+      ],
+      "out_of_range_count": 0,
+      "out_of_range_examples": [],
+      "valid_count": 312097
+    },
+    "longitude": {
+      "blank_count": 1,
+      "invalid_count": 134477,
+      "invalid_examples": [
+        ".."
+      ],
+      "out_of_range_count": 0,
+      "out_of_range_examples": [],
+      "valid_count": 312097
+    }
+  },
+  "employee_field": {
+    "blank_count": 1,
+    "integer_like_count": 75440,
+    "non_integer_count": 371134,
+    "non_integer_examples": [
+      "..",
+      "NOT AVAILABLE",
+      "5 to 9",
+      "20 to 49",
+      "50 to 99",
+      "10 to 19",
+      "1 to 4",
+      "100 to 199",
+      "200 to 499",
+      "500+"
+    ],
+    "top_values": [
+      {
+        "count": 318230,
+        "value": ".."
+      },
+      {
+        "count": 22254,
+        "value": "0"
+      },
+      {
+        "count": 16871,
+        "value": "1"
+      },
+      {
+        "count": 14853,
+        "value": "1--4"
+      },
+      {
+        "count": 8375,
+        "value": "1 to 4"
+      },
+      {
+        "count": 7775,
+        "value": "5--9"
+      },
+      {
+        "count": 7637,
+        "value": "2"
+      },
+      {
+        "count": 4809,
+        "value": "10--19"
+      },
+      {
+        "count": 4728,
+        "value": "3"
+      },
+      {
+        "count": 3766,
+        "value": "5 to 9"
+      },
+      {
+        "count": 3540,
+        "value": "4"
+      },
+      {
+        "count": 3249,
+        "value": "20--49"
+      },
+      {
+        "count": 3081,
+        "value": "5"
+      },
+      {
+        "count": 2477,
+        "value": "10 to 19"
+      },
+      {
+        "count": 2366,
+        "value": "6"
+      },
+      {
+        "count": 1980,
+        "value": "NOT AVAILABLE"
+      },
+      {
+        "count": 1865,
+        "value": "20 to 49"
+      },
+      {
+        "count": 1608,
+        "value": "10"
+      },
+      {
+        "count": 1445,
+        "value": "8"
+      },
+      {
+        "count": 1418,
+        "value": "7"
+      },
+      {
+        "count": 1288,
+        "value": "50--99"
+      },
+      {
+        "count": 979,
+        "value": "100--499"
+      },
+      {
+        "count": 867,
+        "value": "12"
+      },
+      {
+        "count": 788,
+        "value": "15"
+      },
+      {
+        "count": 786,
+        "value": "50 to 99"
+      },
+      {
+        "count": 740,
+        "value": "9"
+      },
+      {
+        "count": 707,
+        "value": "20"
+      },
+      {
+        "count": 492,
+        "value": "11"
+      },
+      {
+        "count": 455,
+        "value": "100 to 299"
+      },
+      {
+        "count": 410,
+        "value": "25"
+      },
+      {
+        "count": 399,
+        "value": "30"
+      },
+      {
+        "count": 381,
+        "value": "14"
+      },
+      {
+        "count": 363,
+        "value": "13"
+      },
+      {
+        "count": 298,
+        "value": "16"
+      },
+      {
+        "count": 261,
+        "value": "50"
+      },
+      {
+        "count": 260,
+        "value": "18"
+      },
+      {
+        "count": 255,
+        "value": "40"
+      },
+      {
+        "count": 180,
+        "value": "17"
+      },
+      {
+        "count": 170,
+        "value": "35"
+      },
+      {
+        "count": 167,
+        "value": "60"
+      },
+      {
+        "count": 148,
+        "value": "22"
+      },
+      {
+        "count": 146,
+        "value": "19"
+      },
+      {
+        "count": 130,
+        "value": "100"
+      },
+      {
+        "count": 114,
+        "value": "28"
+      },
+      {
+        "count": 113,
+        "value": "85"
+      },
+      {
+        "count": 110,
+        "value": "45"
+      },
+      {
+        "count": 108,
+        "value": "21"
+      },
+      {
+        "count": 106,
+        "value": "23"
+      },
+      {
+        "count": 98,
+        "value": "24"
+      },
+      {
+        "count": 95,
+        "value": "26"
+      }
+    ]
+  },
+  "geo_source_counts": [
+    {
+      "count": 183035,
+      "value": "Source"
+    },
+    {
+      "count": 134493,
+      "value": "oda_match"
+    },
+    {
+      "count": 129046,
+      "value": ".."
+    },
+    {
+      "count": 1,
+      "value": "<BLANK>"
+    }
+  ],
+  "naics_field": {
+    "derived_top_values": [
+      {
+        "count": 78435,
+        "value": "72"
+      },
+      {
+        "count": 71158,
+        "value": "44"
+      },
+      {
+        "count": 64428,
+        "value": ".."
+      },
+      {
+        "count": 50189,
+        "value": "23"
+      },
+      {
+        "count": 41762,
+        "value": "81"
+      },
+      {
+        "count": 23418,
+        "value": "54"
+      },
+      {
+        "count": 21505,
+        "value": "53"
+      },
+      {
+        "count": 17323,
+        "value": "62"
+      },
+      {
+        "count": 13256,
+        "value": "91"
+      },
+      {
+        "count": 10753,
+        "value": "41"
+      },
+      {
+        "count": 8497,
+        "value": "56"
+      },
+      {
+        "count": 7554,
+        "value": "61"
+      },
+      {
+        "count": 6718,
+        "value": "52"
+      },
+      {
+        "count": 6480,
+        "value": "71"
+      },
+      {
+        "count": 5640,
+        "value": "31"
+      },
+      {
+        "count": 4491,
+        "value": "48"
+      },
+      {
+        "count": 4219,
+        "value": "33"
+      },
+      {
+        "count": 3135,
+        "value": "45"
+      },
+      {
+        "count": 2203,
+        "value": "32"
+      },
+      {
+        "count": 1864,
+        "value": "51"
+      },
+      {
+        "count": 999,
+        "value": "55"
+      },
+      {
+        "count": 991,
+        "value": "11"
+      },
+      {
+        "count": 812,
+        "value": "49"
+      },
+      {
+        "count": 577,
+        "value": "21"
+      },
+      {
+        "count": 152,
+        "value": "22"
+      },
+      {
+        "count": 15,
+        "value": "42"
+      },
+      {
+        "count": 1,
+        "value": "<BLANK>"
+      }
+    ],
+    "primary_blank_count": 1,
+    "primary_invalid_count": 350376,
+    "primary_invalid_examples": [
+      "..",
+      "1",
+      "0"
+    ],
+    "primary_top_values": [
+      {
+        "count": 350249,
+        "value": ".."
+      },
+      {
+        "count": 2642,
+        "value": "72251"
+      },
+      {
+        "count": 1887,
+        "value": "722512"
+      },
+      {
+        "count": 1318,
+        "value": "81211"
+      },
+      {
+        "count": 1250,
+        "value": "722511"
+      },
+      {
+        "count": 1226,
+        "value": "23"
+      },
+      {
+        "count": 1018,
+        "value": "621210"
+      },
+      {
+        "count": 1003,
+        "value": "811111"
+      },
+      {
+        "count": 993,
+        "value": "236110"
+      },
+      {
+        "count": 930,
+        "value": "812115"
+      },
+      {
+        "count": 847,
+        "value": "621110"
+      },
+      {
+        "count": 787,
+        "value": "722210"
+      },
+      {
+        "count": 777,
+        "value": "54"
+      },
+      {
+        "count": 752,
+        "value": "62111"
+      },
+      {
+        "count": 751,
+        "value": "541110"
+      },
+      {
+        "count": 721,
+        "value": "54121"
+      },
+      {
+        "count": 700,
+        "value": "238220"
+      },
+      {
+        "count": 690,
+        "value": "62121"
+      },
+      {
+        "count": 685,
+        "value": "81111"
+      },
+      {
+        "count": 658,
+        "value": "62"
+      },
+      {
+        "count": 657,
+        "value": "624410"
+      },
+      {
+        "count": 634,
+        "value": "81"
+      },
+      {
+        "count": 633,
+        "value": "54151"
+      },
+      {
+        "count": 619,
+        "value": "54111"
+      },
+      {
+        "count": 588,
+        "value": "813110"
+      },
+      {
+        "count": 572,
+        "value": "621340"
+      },
+      {
+        "count": 527,
+        "value": "23822"
+      },
+      {
+        "count": 504,
+        "value": "541212"
+      },
+      {
+        "count": 503,
+        "value": "56"
+      },
+      {
+        "count": 502,
+        "value": "23611"
+      },
+      {
+        "count": 475,
+        "value": "446110"
+      },
+      {
+        "count": 475,
+        "value": "62139"
+      },
+      {
+        "count": 469,
+        "value": "61111"
+      },
+      {
+        "count": 460,
+        "value": "81219"
+      },
+      {
+        "count": 454,
+        "value": "445120"
+      },
+      {
+        "count": 452,
+        "value": "44"
+      },
+      {
+        "count": 452,
+        "value": "61169"
+      },
+      {
+        "count": 446,
+        "value": "621390"
+      },
+      {
+        "count": 438,
+        "value": "524210"
+      },
+      {
+        "count": 435,
+        "value": "812116"
+      },
+      {
+        "count": 427,
+        "value": "53"
+      },
+      {
+        "count": 419,
+        "value": "611110"
+      },
+      {
+        "count": 418,
+        "value": "713940"
+      },
+      {
+        "count": 404,
+        "value": "52421"
+      },
+      {
+        "count": 401,
+        "value": "53121"
+      },
+      {
+        "count": 398,
+        "value": "812190"
+      },
+      {
+        "count": 376,
+        "value": "238210"
+      },
+      {
+        "count": 374,
+        "value": "445110"
+      },
+      {
+        "count": 372,
+        "value": "611690"
+      },
+      {
+        "count": 366,
+        "value": "71394"
+      }
+    ],
+    "primary_valid_count": 96198
+  },
+  "provider_counts": [
+    {
+      "count": 125681,
+      "value": "City of Toronto"
+    },
+    {
+      "count": 66846,
+      "value": "City of Vancouver"
+    },
+    {
+      "count": 38573,
+      "value": "City of Edmonton"
+    },
+    {
+      "count": 34997,
+      "value": "Regional Municipality of York"
+    },
+    {
+      "count": 34302,
+      "value": "City of Calgary"
+    },
+    {
+      "count": 18768,
+      "value": "City of Burnaby"
+    },
+    {
+      "count": 17099,
+      "value": "City of Surrey"
+    },
+    {
+      "count": 16506,
+      "value": "City of Mississauga"
+    },
+    {
+      "count": 11201,
+      "value": "Government of British Columbia"
+    },
+    {
+      "count": 10917,
+      "value": "City of Kelowna"
+    },
+    {
+      "count": 10095,
+      "value": "Regional Municipality of Durham"
+    },
+    {
+      "count": 9826,
+      "value": "City of Brampton"
+    },
+    {
+      "count": 7107,
+      "value": "City of Victoria"
+    },
+    {
+      "count": 6911,
+      "value": "Township of Langley"
+    },
+    {
+      "count": 6189,
+      "value": "City of Nanaimo"
+    },
+    {
+      "count": 4399,
+      "value": "City of Prince George"
+    },
+    {
+      "count": 4285,
+      "value": "City of New Westminster"
+    },
+    {
+      "count": 3358,
+      "value": "City of Chilliwack"
+    },
+    {
+      "count": 3014,
+      "value": "City of Maple Ridge"
+    },
+    {
+      "count": 2790,
+      "value": "City of Hamilton"
+    },
+    {
+      "count": 2721,
+      "value": "City of Squamish"
+    },
+    {
+      "count": 2474,
+      "value": "Stathcona County"
+    },
+    {
+      "count": 1898,
+      "value": "City of Kitchener"
+    },
+    {
+      "count": 1445,
+      "value": "City of Yellowknife"
+    },
+    {
+      "count": 1408,
+      "value": "Regional Municipality of Peel"
+    },
+    {
+      "count": 942,
+      "value": "Town of Banff"
+    },
+    {
+      "count": 941,
+      "value": "City of Welland"
+    },
+    {
+      "count": 693,
+      "value": "City of Port Moody"
+    },
+    {
+      "count": 522,
+      "value": "City of Ottawa"
+    },
+    {
+      "count": 249,
+      "value": "Province of Ontario"
+    },
+    {
+      "count": 171,
+      "value": "Government of Nunavut"
+    },
+    {
+      "count": 138,
+      "value": "City of Chestermere"
+    },
+    {
+      "count": 92,
+      "value": "City of Moncton"
+    },
+    {
+      "count": 16,
+      "value": "City of Saint John"
+    },
+    {
+      "count": 1,
+      "value": "<BLANK>"
+    }
+  ],
+  "province_alignment": {
+    "ontario_by_prov_terr": 205122,
+    "ontario_by_pruid": 134697,
+    "ontario_intersection": 134697,
+    "ontario_union": 205122,
+    "prov_terr_pruid_disagreements": 70425,
+    "province_counts": [
+      {
+        "count": 205122,
+        "value": "ON"
+      },
+      {
+        "count": 163200,
+        "value": "BC"
+      },
+      {
+        "count": 76526,
+        "value": "AB"
+      },
+      {
+        "count": 1445,
+        "value": "NT"
+      },
+      {
+        "count": 171,
+        "value": "NU"
+      },
+      {
+        "count": 110,
+        "value": "NB"
+      },
+      {
+        "count": 1,
+        "value": "<BLANK>"
+      }
+    ],
+    "pruid_counts": [
+      {
+        "count": 134697,
+        "value": "35"
+      },
+      {
+        "count": 131644,
+        "value": ".."
+      },
+      {
+        "count": 116296,
+        "value": "59"
+      },
+      {
+        "count": 62551,
+        "value": "48"
+      },
+      {
+        "count": 1244,
+        "value": "61"
+      },
+      {
+        "count": 108,
+        "value": "13"
+      },
+      {
+        "count": 33,
+        "value": "24"
+      },
+      {
+        "count": 1,
+        "value": "60"
+      },
+      {
+        "count": 1,
+        "value": "<BLANK>"
+      }
+    ]
+  },
+  "report_path": "docs/data_contracts/statscan_odbus_2023_value_profile.json",
+  "row_anomalies": {
+    "blank_province_rows": 1,
+    "extra_field_rows": 0,
+    "missing_business_name_rows": 0
+  },
+  "row_count": 446575,
+  "source_id": "statscan_odbus_2023",
+  "status_counts": [
+    {
+      "count": 284422,
+      "value": ".."
+    },
+    {
+      "count": 109590,
+      "value": "Active"
+    },
+    {
+      "count": 52444,
+      "value": "Pending"
+    },
+    {
+      "count": 118,
+      "value": "Not Active"
+    },
+    {
+      "count": 1,
+      "value": "<BLANK>"
+    }
+  ],
+  "target_market": {
+    "city_csd_target_conflicts": 69,
+    "city_exact_any_province": 28200,
+    "csd_exact_any_province": 28244,
+    "municipalities": [
+      "brampton",
+      "mississauga"
+    ],
+    "municipality_counts": [
+      {
+        "count": 18063,
+        "value": "mississauga"
+      },
+      {
+        "count": 10668,
+        "value": "brampton"
+      }
+    ],
+    "union_any_province": 29055,
+    "union_ontario_intersection": 28731
+  }
+}
+ODBUS VALUE PROFILING PASSED

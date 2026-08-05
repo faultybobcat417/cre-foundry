@@ -1,0 +1,32 @@
+{
+  "ambiguous_exact_signal_count": 1,
+  "candidate_row_count": 18,
+  "candidate_table": "silver.brampton_permit_entity_match_candidates",
+  "contract_path": "docs/data_contracts/brampton_permit_entity_bridge.json",
+  "match_distribution": {
+    "exact_full_ambiguous": 1,
+    "exact_full_unique": 16,
+    "none_unmatched": 13
+  },
+  "model_version": "brampton-permit-entity-bridge-v1",
+  "outreach_eligible_count": 0,
+  "policy": {
+    "allowed_match_methods": [
+      "exact_full",
+      "exact_base"
+    ],
+    "ambiguous_links_promoted": false,
+    "current_status_required_for_outreach": true,
+    "fuzzy_matching_enabled": false,
+    "outreach_eligible": false,
+    "unmatched_links_promoted": false
+  },
+  "resolution_table": "silver.brampton_permit_entity_resolution",
+  "signal_count": 30,
+  "unique_exact_signal_count": 16,
+  "unique_link_entity_count": 14,
+  "unique_link_row_count": 16,
+  "unique_link_view": "silver.brampton_permit_entity_unique_links",
+  "unmatched_signal_count": 13,
+  "verified_current_candidate_count": 0
+}

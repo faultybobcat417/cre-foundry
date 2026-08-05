@@ -1,0 +1,863 @@
+{
+  "keyword_candidate_count": 370,
+  "keyword_candidate_samples": [
+    {
+      "address": "5 Jade Cres, Brampton, ON, L6S 3G9",
+      "application_date": "2026-07-25T04:00:00+00:00",
+      "builder": null,
+      "contractor": null,
+      "gfa": null,
+      "issue_date": null,
+      "matched_keywords": [
+        "change of use"
+      ],
+      "permit_number": "26-125183-000-00",
+      "process_date": null,
+      "status": "Applied",
+      "subdesc": "Two Unit Dwelling",
+      "workdesc": "Change of Use - Two Unit Dwelling"
+    },
+    {
+      "address": "15 Ashwood Cres, Brampton, ON, L6T 1M1",
+      "application_date": "2026-07-24T04:00:00+00:00",
+      "builder": null,
+      "contractor": null,
+      "gfa": null,
+      "issue_date": null,
+      "matched_keywords": [
+        "change of use"
+      ],
+      "permit_number": "26-114074-000-00",
+      "process_date": null,
+      "status": "Applied",
+      "subdesc": "Two Unit Dwelling",
+      "workdesc": "Change of Use - Two Unit Dwelling"
+    },
+    {
+      "address": "15 Agricola Rd, Brampton, ON, L7A 0V1",
+      "application_date": "2026-07-24T04:00:00+00:00",
+      "builder": null,
+      "contractor": null,
+      "gfa": null,
+      "issue_date": null,
+      "matched_keywords": [
+        "change of use"
+      ],
+      "permit_number": "26-123592-000-00",
+      "process_date": null,
+      "status": "Applied",
+      "subdesc": "Two Unit Dwelling",
+      "workdesc": "Change of Use - Two Unit Dwelling"
+    },
+    {
+      "address": "15 Derby Rd, Brampton, ON, L6Y 4N4",
+      "application_date": "2026-07-24T04:00:00+00:00",
+      "builder": null,
+      "contractor": null,
+      "gfa": null,
+      "issue_date": null,
+      "matched_keywords": [
+        "change of use"
+      ],
+      "permit_number": "26-122680-000-00",
+      "process_date": null,
+      "status": "Applied",
+      "subdesc": "Two Unit Dwelling",
+      "workdesc": "Change of Use - Two Unit Dwelling"
+    },
+    {
+      "address": "32 Adrian Cres, Brampton, ON, L6X 5M6",
+      "application_date": "2026-07-24T04:00:00+00:00",
+      "builder": null,
+      "contractor": null,
+      "gfa": null,
+      "issue_date": null,
+      "matched_keywords": [
+        "change of use"
+      ],
+      "permit_number": "26-123815-000-00",
+      "process_date": null,
+      "status": "Applied",
+      "subdesc": "Two Unit Dwelling",
+      "workdesc": "Change of Use - Two Unit Dwelling"
+    },
+    {
+      "address": "3 Lisa St, Brampton, ON, L6T 4A2",
+      "application_date": "2026-07-24T04:00:00+00:00",
+      "builder": null,
+      "contractor": null,
+      "gfa": null,
+      "issue_date": null,
+      "matched_keywords": [
+        "alteration"
+      ],
+      "permit_number": "26-123837-000-00",
+      "process_date": null,
+      "status": "Applied",
+      "subdesc": "Parking Garage Repair",
+      "workdesc": "Alteration (Renovation)"
+    },
+    {
+      "address": "7 Chestnut Ave, Brampton, ON, L6X 2A6",
+      "application_date": "2026-07-24T04:00:00+00:00",
+      "builder": null,
+      "contractor": null,
+      "gfa": null,
+      "issue_date": null,
+      "matched_keywords": [
+        "change of use"
+      ],
+      "permit_number": "26-107025-000-00",
+      "process_date": null,
+      "status": "Applied",
+      "subdesc": "Two Unit Dwelling",
+      "workdesc": "Change of Use - Two Unit Dwelling"
+    },
+    {
+      "address": "36 Elsinore St, Brampton, ON, L7A 1Z7",
+      "application_date": "2026-07-24T04:00:00+00:00",
+      "builder": null,
+      "contractor": null,
+      "gfa": null,
+      "issue_date": null,
+      "matched_keywords": [
+        "change of use"
+      ],
+      "permit_number": "26-125061-000-00",
+      "process_date": null,
+      "status": "Applied",
+      "subdesc": "Two Unit Dwelling",
+      "workdesc": "Change of Use - Two Unit Dwelling"
+    },
+    {
+      "address": "31 Vista Green Cres, Brampton, ON, L7A 2S4",
+      "application_date": "2026-07-24T04:00:00+00:00",
+      "builder": null,
+      "contractor": null,
+      "gfa": null,
+      "issue_date": null,
+      "matched_keywords": [
+        "change of use"
+      ],
+      "permit_number": "26-103773-000-00",
+      "process_date": null,
+      "status": "Applied",
+      "subdesc": "Two Unit Dwelling",
+      "workdesc": "Change of Use - Two Unit Dwelling"
+    },
+    {
+      "address": "200 Kennedy Rd S, Brampton, ON, ",
+      "application_date": "2026-07-24T04:00:00+00:00",
+      "builder": null,
+      "contractor": null,
+      "gfa": null,
+      "issue_date": null,
+      "matched_keywords": [
+        "alteration"
+      ],
+      "permit_number": "26-125499-000-00",
+      "process_date": null,
+      "status": "Applied",
+      "subdesc": "HVAC Only",
+      "workdesc": "Alteration (Renovation)"
+    },
+    {
+      "address": "22 Kessler Dr, Brampton, ON, L6X 4P8",
+      "application_date": "2026-07-24T04:00:00+00:00",
+      "builder": null,
+      "contractor": null,
+      "gfa": null,
+      "issue_date": null,
+      "matched_keywords": [
+        "change of use"
+      ],
+      "permit_number": "26-124302-000-00",
+      "process_date": null,
+      "status": "Applied",
+      "subdesc": "Two Unit Dwelling",
+      "workdesc": "Change of Use - Two Unit Dwelling"
+    },
+    {
+      "address": "96 Farthingale Cres, Brampton, ON, L7A 1W8",
+      "application_date": "2026-07-24T04:00:00+00:00",
+      "builder": null,
+      "contractor": null,
+      "gfa": null,
+      "issue_date": null,
+      "matched_keywords": [
+        "change of use"
+      ],
+      "permit_number": "26-122167-000-00",
+      "process_date": null,
+      "status": "Applied",
+      "subdesc": "Two Unit Dwelling",
+      "workdesc": "Change of Use - Two Unit Dwelling"
+    },
+    {
+      "address": "37 Interlude Dr, Brampton, ON, L6X 3B1",
+      "application_date": "2026-07-24T04:00:00+00:00",
+      "builder": null,
+      "contractor": null,
+      "gfa": null,
+      "issue_date": null,
+      "matched_keywords": [
+        "change of use"
+      ],
+      "permit_number": "26-124806-000-00",
+      "process_date": null,
+      "status": "Applied",
+      "subdesc": "Two Unit Dwelling",
+      "workdesc": "Change of Use - Two Unit Dwelling"
+    },
+    {
+      "address": "176 Mountainash Rd, Brampton, ON, L6R 3G8",
+      "application_date": "2026-07-24T04:00:00+00:00",
+      "builder": null,
+      "contractor": null,
+      "gfa": null,
+      "issue_date": null,
+      "matched_keywords": [
+        "change of use"
+      ],
+      "permit_number": "26-124896-000-00",
+      "process_date": null,
+      "status": "Applied",
+      "subdesc": "Two Unit Dwelling",
+      "workdesc": "Change of Use - Two Unit Dwelling"
+    },
+    {
+      "address": "12 Birch Lake Crt, Brampton, ON, L6P 3M6",
+      "application_date": "2026-07-23T04:00:00+00:00",
+      "builder": null,
+      "contractor": null,
+      "gfa": null,
+      "issue_date": null,
+      "matched_keywords": [
+        "change of use"
+      ],
+      "permit_number": "26-121309-000-00",
+      "process_date": null,
+      "status": "Applied",
+      "subdesc": "Two Unit Dwelling",
+      "workdesc": "Change of Use - Two Unit Dwelling"
+    },
+    {
+      "address": "980 Central Park Dr, Unit 1, Brampton, ON, L6S 3L7",
+      "application_date": "2026-07-23T04:00:00+00:00",
+      "builder": null,
+      "contractor": null,
+      "gfa": null,
+      "issue_date": null,
+      "matched_keywords": [
+        "commercial"
+      ],
+      "permit_number": "26-124297-000-00",
+      "process_date": null,
+      "status": "Applied",
+      "subdesc": "Commercial Cooking Equipment",
+      "workdesc": "New"
+    },
+    {
+      "address": "305 Royal West Dr, Unit P, Brampton, ON, L6X 5K8",
+      "application_date": "2026-07-23T04:00:00+00:00",
+      "builder": null,
+      "contractor": null,
+      "gfa": null,
+      "issue_date": null,
+      "matched_keywords": [
+        "alteration"
+      ],
+      "permit_number": "26-123189-000-00",
+      "process_date": null,
+      "status": "Applied",
+      "subdesc": "A2: Restaurants",
+      "workdesc": "Alteration (Renovation)"
+    },
+    {
+      "address": "29 Hoxton Rd, Brampton, ON, L6S 5J3",
+      "application_date": "2026-07-23T04:00:00+00:00",
+      "builder": null,
+      "contractor": null,
+      "gfa": null,
+      "issue_date": null,
+      "matched_keywords": [
+        "change of use"
+      ],
+      "permit_number": "26-123904-000-00",
+      "process_date": null,
+      "status": "Applied",
+      "subdesc": "Two Unit Dwelling",
+      "workdesc": "Change of Use - Two Unit Dwelling"
+    },
+    {
+      "address": "5 Glebe Cres, Brampton, ON, L6S 1E9",
+      "application_date": "2026-07-23T04:00:00+00:00",
+      "builder": null,
+      "contractor": null,
+      "gfa": null,
+      "issue_date": null,
+      "matched_keywords": [
+        "change of use"
+      ],
+      "permit_number": "26-120267-000-00",
+      "process_date": null,
+      "status": "Applied",
+      "subdesc": "Two Unit Dwelling",
+      "workdesc": "Change of Use - Two Unit Dwelling"
+    },
+    {
+      "address": "32 Dairymaid Rd, Brampton, ON, ",
+      "application_date": "2026-07-23T04:00:00+00:00",
+      "builder": null,
+      "contractor": null,
+      "gfa": null,
+      "issue_date": null,
+      "matched_keywords": [
+        "change of use"
+      ],
+      "permit_number": "26-124985-000-00",
+      "process_date": null,
+      "status": "Applied",
+      "subdesc": "Two Unit Dwelling",
+      "workdesc": "Change of Use - Two Unit Dwelling"
+    },
+    {
+      "address": "52 Sapwood Cres, Brampton, ON, ",
+      "application_date": "2026-07-23T04:00:00+00:00",
+      "builder": null,
+      "contractor": null,
+      "gfa": null,
+      "issue_date": null,
+      "matched_keywords": [
+        "change of use"
+      ],
+      "permit_number": "26-121217-000-00",
+      "process_date": null,
+      "status": "Applied",
+      "subdesc": "Two Unit Dwelling",
+      "workdesc": "Change of Use - Two Unit Dwelling"
+    },
+    {
+      "address": "45 Timber Falls Dr, Brampton, ON, ",
+      "application_date": "2026-07-23T04:00:00+00:00",
+      "builder": null,
+      "contractor": null,
+      "gfa": null,
+      "issue_date": null,
+      "matched_keywords": [
+        "change of use"
+      ],
+      "permit_number": "26-124309-000-00",
+      "process_date": null,
+      "status": "Applied",
+      "subdesc": "Two Unit Dwelling",
+      "workdesc": "Change of Use - Two Unit Dwelling"
+    },
+    {
+      "address": "160 Folkstone Cres, Brampton, ON, L6T 3M5",
+      "application_date": "2026-07-23T04:00:00+00:00",
+      "builder": null,
+      "contractor": null,
+      "gfa": null,
+      "issue_date": null,
+      "matched_keywords": [
+        "alteration"
+      ],
+      "permit_number": "26-110095-000-00",
+      "process_date": null,
+      "status": "Applied",
+      "subdesc": "Single Family Detached",
+      "workdesc": "Alteration (Renovation)"
+    },
+    {
+      "address": "68 Buckland Way, Brampton, ON, L6V 3P4",
+      "application_date": "2026-07-23T04:00:00+00:00",
+      "builder": null,
+      "contractor": null,
+      "gfa": null,
+      "issue_date": null,
+      "matched_keywords": [
+        "change of use"
+      ],
+      "permit_number": "26-124651-000-00",
+      "process_date": null,
+      "status": "Applied",
+      "subdesc": "Two Unit Dwelling",
+      "workdesc": "Change of Use - Two Unit Dwelling"
+    },
+    {
+      "address": "18 Wheatberry Cres, Brampton, ON, L6R 4A1",
+      "application_date": "2026-07-23T04:00:00+00:00",
+      "builder": null,
+      "contractor": null,
+      "gfa": null,
+      "issue_date": null,
+      "matched_keywords": [
+        "change of use"
+      ],
+      "permit_number": "26-105789-000-00",
+      "process_date": null,
+      "status": "Applied",
+      "subdesc": "Two Unit Dwelling",
+      "workdesc": "Change of Use - Two Unit Dwelling"
+    },
+    {
+      "address": "95 Inspire Blvd, Unit 11, Brampton, ",
+      "application_date": "2026-07-23T04:00:00+00:00",
+      "builder": null,
+      "contractor": null,
+      "gfa": null,
+      "issue_date": null,
+      "matched_keywords": [
+        "industrial"
+      ],
+      "permit_number": "26-124048-000-00",
+      "process_date": null,
+      "status": "Applied",
+      "subdesc": "F2: Industrial",
+      "workdesc": "Interior/Unit Finish"
+    },
+    {
+      "address": "34 Salonica Rd, Brampton, ON, L7A 3K9",
+      "application_date": "2026-07-23T04:00:00+00:00",
+      "builder": null,
+      "contractor": null,
+      "gfa": null,
+      "issue_date": null,
+      "matched_keywords": [
+        "change of use"
+      ],
+      "permit_number": "26-106638-000-00",
+      "process_date": null,
+      "status": "Applied",
+      "subdesc": "Two Unit Dwelling",
+      "workdesc": "Change of Use - Two Unit Dwelling"
+    },
+    {
+      "address": "27 Crown Victoria Dr, Brampton, ON, L7A 3A9",
+      "application_date": "2026-07-23T04:00:00+00:00",
+      "builder": null,
+      "contractor": null,
+      "gfa": null,
+      "issue_date": null,
+      "matched_keywords": [
+        "change of use"
+      ],
+      "permit_number": "26-123944-000-00",
+      "process_date": null,
+      "status": "Applied",
+      "subdesc": "Two Unit Dwelling",
+      "workdesc": "Change of Use - Two Unit Dwelling"
+    },
+    {
+      "address": "407 Mountainash Rd, Brampton, ON, ",
+      "application_date": "2026-07-23T04:00:00+00:00",
+      "builder": null,
+      "contractor": null,
+      "gfa": null,
+      "issue_date": null,
+      "matched_keywords": [
+        "change of use"
+      ],
+      "permit_number": "26-124086-000-00",
+      "process_date": null,
+      "status": "Applied",
+      "subdesc": "Two Unit Dwelling",
+      "workdesc": "Change of Use - Two Unit Dwelling"
+    },
+    {
+      "address": "18 Tullamore Rd, Brampton, ON, L6W 1J8",
+      "application_date": "2026-07-23T04:00:00+00:00",
+      "builder": null,
+      "contractor": null,
+      "gfa": null,
+      "issue_date": null,
+      "matched_keywords": [
+        "change of use"
+      ],
+      "permit_number": "26-122162-000-00",
+      "process_date": null,
+      "status": "Applied",
+      "subdesc": "Two Unit Dwelling",
+      "workdesc": "Change of Use - Two Unit Dwelling"
+    },
+    {
+      "address": "40 Langston Dr, Brampton, ON, L6V 3W7",
+      "application_date": "2026-07-23T04:00:00+00:00",
+      "builder": null,
+      "contractor": null,
+      "gfa": null,
+      "issue_date": null,
+      "matched_keywords": [
+        "change of use"
+      ],
+      "permit_number": "26-124630-000-00",
+      "process_date": null,
+      "status": "Applied",
+      "subdesc": "Two Unit Dwelling",
+      "workdesc": "Change of Use - Two Unit Dwelling"
+    },
+    {
+      "address": "8301 Winston Churchill Blvd, Brampton, ON, ",
+      "application_date": "2026-07-23T04:00:00+00:00",
+      "builder": null,
+      "contractor": null,
+      "gfa": null,
+      "issue_date": null,
+      "matched_keywords": [
+        "alteration"
+      ],
+      "permit_number": "26-107222-000-00",
+      "process_date": null,
+      "status": "Applied",
+      "subdesc": "Fire Alarm System",
+      "workdesc": "Alteration (Renovation)"
+    },
+    {
+      "address": "2 Buchanan Cres, Brampton, ON, L6X 0Z3",
+      "application_date": "2026-07-23T04:00:00+00:00",
+      "builder": null,
+      "contractor": null,
+      "gfa": null,
+      "issue_date": null,
+      "matched_keywords": [
+        "change of use"
+      ],
+      "permit_number": "26-124771-000-00",
+      "process_date": null,
+      "status": "Applied",
+      "subdesc": "Two Unit Dwelling",
+      "workdesc": "Change of Use - Two Unit Dwelling"
+    },
+    {
+      "address": "14 Flatfield Way, Brampton, ON, L6P 1N7",
+      "application_date": "2026-07-23T04:00:00+00:00",
+      "builder": null,
+      "contractor": null,
+      "gfa": null,
+      "issue_date": null,
+      "matched_keywords": [
+        "change of use"
+      ],
+      "permit_number": "26-105091-000-00",
+      "process_date": null,
+      "status": "Applied",
+      "subdesc": "Two Unit Dwelling",
+      "workdesc": "Change of Use - Two Unit Dwelling"
+    },
+    {
+      "address": "19 Village Lake Cres, Brampton, ON, L6S 6K2",
+      "application_date": "2026-07-23T04:00:00+00:00",
+      "builder": null,
+      "contractor": null,
+      "gfa": null,
+      "issue_date": null,
+      "matched_keywords": [
+        "change of use"
+      ],
+      "permit_number": "26-123422-000-00",
+      "process_date": null,
+      "status": "Applied",
+      "subdesc": "Two Unit Dwelling",
+      "workdesc": "Change of Use - Two Unit Dwelling"
+    },
+    {
+      "address": "155 Sun Pac Blvd, Brampton, ON, L6S 5Z6",
+      "application_date": "2026-07-23T04:00:00+00:00",
+      "builder": null,
+      "contractor": null,
+      "gfa": null,
+      "issue_date": null,
+      "matched_keywords": [
+        "industrial",
+        "addition"
+      ],
+      "permit_number": "26-119005-000-00",
+      "process_date": null,
+      "status": "Applied",
+      "subdesc": "F2: Industrial",
+      "workdesc": "Addition - Complete"
+    },
+    {
+      "address": "74 Starhill Cres, Brampton, ON, L6R 2W1",
+      "application_date": "2026-07-23T04:00:00+00:00",
+      "builder": null,
+      "contractor": null,
+      "gfa": null,
+      "issue_date": null,
+      "matched_keywords": [
+        "change of use"
+      ],
+      "permit_number": "26-123417-000-00",
+      "process_date": null,
+      "status": "Applied",
+      "subdesc": "Two Unit Dwelling",
+      "workdesc": "Change of Use - Two Unit Dwelling"
+    },
+    {
+      "address": "45 Decorso Dr, Brampton, ON, L6P 3Y3",
+      "application_date": "2026-07-23T04:00:00+00:00",
+      "builder": null,
+      "contractor": null,
+      "gfa": null,
+      "issue_date": null,
+      "matched_keywords": [
+        "change of use"
+      ],
+      "permit_number": "26-123521-000-00",
+      "process_date": null,
+      "status": "Applied",
+      "subdesc": "Two Unit Dwelling",
+      "workdesc": "Change of Use - Two Unit Dwelling"
+    },
+    {
+      "address": "26 Portrush Trail, Brampton, ON, L6X 0R3",
+      "application_date": "2026-07-23T04:00:00+00:00",
+      "builder": null,
+      "contractor": null,
+      "gfa": null,
+      "issue_date": null,
+      "matched_keywords": [
+        "change of use"
+      ],
+      "permit_number": "26-123830-000-00",
+      "process_date": null,
+      "status": "Applied",
+      "subdesc": "Two Unit Dwelling",
+      "workdesc": "Change of Use - Two Unit Dwelling"
+    },
+    {
+      "address": "45 Saddlecreek Crt, Brampton, ON, L6Y 4V6",
+      "application_date": "2026-07-23T04:00:00+00:00",
+      "builder": null,
+      "contractor": null,
+      "gfa": null,
+      "issue_date": null,
+      "matched_keywords": [
+        "alteration"
+      ],
+      "permit_number": "26-124489-000-00",
+      "process_date": null,
+      "status": "Applied",
+      "subdesc": "Semi Detached Dwelling",
+      "workdesc": "Alteration (Renovation)"
+    }
+  ],
+  "latest_dates": {
+    "EXPIRYDATE": {
+      "object_id": 214051,
+      "permit_number": "26-122843-000-00",
+      "raw_value": 1787112000000,
+      "utc": "2026-08-19T04:00:00+00:00"
+    },
+    "INDATE": {
+      "object_id": 285616,
+      "permit_number": "26-125183-000-00",
+      "raw_value": 1784952000000,
+      "utc": "2026-07-25T04:00:00+00:00"
+    },
+    "ISSUEDATE": {
+      "object_id": 91394,
+      "permit_number": "26-034188-000-00",
+      "raw_value": 1784865600000,
+      "utc": "2026-07-24T04:00:00+00:00"
+    },
+    "PROCESSDATE": {
+      "object_id": 156186,
+      "permit_number": "26-000523-P01-00",
+      "raw_value": 1784833325000,
+      "utc": "2026-07-23T19:02:05+00:00"
+    }
+  },
+  "layer_url": "https://maps1.brampton.ca/arcgis/rest/services/BuildingPermit/Building_Permits/FeatureServer/0",
+  "recent_record_count": 1000,
+  "status_distribution": [
+    {
+      "records": 631,
+      "status": "Applied"
+    },
+    {
+      "records": 277,
+      "status": "Zoning Certified"
+    },
+    {
+      "records": 86,
+      "status": "Issued"
+    },
+    {
+      "records": 3,
+      "status": "Ready to Issue"
+    },
+    {
+      "records": 2,
+      "status": "Closed"
+    },
+    {
+      "records": 1,
+      "status": "Cancelled"
+    }
+  ],
+  "top_subdescriptions": [
+    {
+      "records": 320,
+      "subdesc": "Two Unit Dwelling"
+    },
+    {
+      "records": 277,
+      "subdesc": "<NULL>"
+    },
+    {
+      "records": 107,
+      "subdesc": "Townhouse - Condominium"
+    },
+    {
+      "records": 59,
+      "subdesc": "Basement Finish"
+    },
+    {
+      "records": 33,
+      "subdesc": "Class A-Mobile"
+    },
+    {
+      "records": 31,
+      "subdesc": "Single Family Detached"
+    },
+    {
+      "records": 21,
+      "subdesc": "Deck"
+    },
+    {
+      "records": 16,
+      "subdesc": "F2: Industrial"
+    },
+    {
+      "records": 12,
+      "subdesc": "D: Business/Services"
+    },
+    {
+      "records": 12,
+      "subdesc": "Permanent"
+    },
+    {
+      "records": 8,
+      "subdesc": "Inground Interior Lot"
+    },
+    {
+      "records": 8,
+      "subdesc": "Temporary Tent"
+    },
+    {
+      "records": 7,
+      "subdesc": "Below Grade Entrance"
+    },
+    {
+      "records": 6,
+      "subdesc": "A2: Restaurants"
+    },
+    {
+      "records": 6,
+      "subdesc": "Three Unit Dwelling"
+    },
+    {
+      "records": 5,
+      "subdesc": "Plumbing Piping"
+    },
+    {
+      "records": 5,
+      "subdesc": "Demolition Residential"
+    },
+    {
+      "records": 5,
+      "subdesc": "Fire Alarm System"
+    },
+    {
+      "records": 5,
+      "subdesc": "Semi Detached Dwelling"
+    },
+    {
+      "records": 5,
+      "subdesc": "Townhouse"
+    },
+    {
+      "records": 4,
+      "subdesc": "A2: Child Care Facility"
+    },
+    {
+      "records": 4,
+      "subdesc": "A2: School"
+    },
+    {
+      "records": 3,
+      "subdesc": "E: Retail"
+    },
+    {
+      "records": 3,
+      "subdesc": "Demolition Other"
+    },
+    {
+      "records": 2,
+      "subdesc": "Parking Garage Repair"
+    },
+    {
+      "records": 2,
+      "subdesc": "Demolition Accessory Bldg"
+    },
+    {
+      "records": 2,
+      "subdesc": "HVAC Only"
+    },
+    {
+      "records": 2,
+      "subdesc": "Commercial Cooking Equipment"
+    },
+    {
+      "records": 2,
+      "subdesc": "Garage"
+    },
+    {
+      "records": 2,
+      "subdesc": "Site Service Residential"
+    },
+    {
+      "records": 2,
+      "subdesc": "C: Dormitories, Residences"
+    },
+    {
+      "records": 2,
+      "subdesc": "Porch"
+    },
+    {
+      "records": 2,
+      "subdesc": "A2: Clubs, Halls, Recreation Centres"
+    },
+    {
+      "records": 2,
+      "subdesc": "Door at grade"
+    },
+    {
+      "records": 2,
+      "subdesc": "Garden Suite"
+    },
+    {
+      "records": 2,
+      "subdesc": "Sprinkler"
+    },
+    {
+      "records": 2,
+      "subdesc": "E: Restaurants"
+    },
+    {
+      "records": 1,
+      "subdesc": "Shoring"
+    },
+    {
+      "records": 1,
+      "subdesc": "D: Sales Pavilion"
+    },
+    {
+      "records": 1,
+      "subdesc": "Inground Corner Lot"
+    }
+  ],
+  "warning": "Keyword matches are exploratory and are not approved commercial opportunity classifications."
+}

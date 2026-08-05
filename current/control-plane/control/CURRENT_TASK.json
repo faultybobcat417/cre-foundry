@@ -1,0 +1,8 @@
+{
+  "task_id": "ADVERSARIAL-001",
+  "task_path": "tasks/ADVERSARIAL-001.json",
+  "status": "in_progress",
+  "selected_reason": "REPLAY-001 reached synthetic public proof level 4 with deterministic replay, idempotent retry, bounded crash recovery, compatibility, restore, rollback, seven registered mutations rejected, and a truthful completion record. CALIBRATION-001 and ECONOMICS-001 were already completed, making ADVERSARIAL-001 the only newly dependency-valid ungated successor.",
+  "started_at": "2026-08-04T22:45:35Z",
+  "proof_target": 4
+}

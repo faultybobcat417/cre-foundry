@@ -1,0 +1,5 @@
+{
+  "case_id": "vertical-replay-receipt-mismatch",
+  "mutation_id": "replay_receipt_mismatch",
+  "expected_diagnostic": "VERTICAL-REPLAY-RECEIPT-MISMATCH"
+}

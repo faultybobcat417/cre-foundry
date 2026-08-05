@@ -1,0 +1,98 @@
+{
+  "activation_summary_digest_match": true,
+  "codex_manifest_artifact_count": 8,
+  "codex_manifest_drift_count": 0,
+  "codex_manifest_results": [
+    {
+      "actual_sha256": "f0aa3317100f41965b020d5c8544ae903b88864d9e1773c6013554dd57275b8d",
+      "digest_match": true,
+      "exists": true,
+      "expected_sha256": "f0aa3317100f41965b020d5c8544ae903b88864d9e1773c6013554dd57275b8d",
+      "path": "docs/data_contracts/governance_decision_schema.json"
+    },
+    {
+      "actual_sha256": "fb63f52dc2fc624d945a9e707fb9f6e35ba69b8a810fdbf029e0ee4b1a91d075",
+      "digest_match": true,
+      "exists": true,
+      "expected_sha256": "fb63f52dc2fc624d945a9e707fb9f6e35ba69b8a810fdbf029e0ee4b1a91d075",
+      "path": "docs/data_contracts/client_input_questionnaire.json"
+    },
+    {
+      "actual_sha256": "5cf5dd02bae7258a027b66053b2bc302cfcad4813aa7af1a196ad63bdc3c296e",
+      "digest_match": true,
+      "exists": true,
+      "expected_sha256": "5cf5dd02bae7258a027b66053b2bc302cfcad4813aa7af1a196ad63bdc3c296e",
+      "path": "docs/data_contracts/governance_approval_packet_template.json"
+    },
+    {
+      "actual_sha256": "cddb737b848e8b7347494ff1bb984be459d1c8ee042c632a140a86389291ac02",
+      "digest_match": true,
+      "exists": true,
+      "expected_sha256": "cddb737b848e8b7347494ff1bb984be459d1c8ee042c632a140a86389291ac02",
+      "path": "docs/data_contracts/outcome_collection_contract.json"
+    },
+    {
+      "actual_sha256": "4aad24e461816d90ca13e79841851f5ab906ef54d9b093bb3a6ec01de14ec7d8",
+      "digest_match": true,
+      "exists": true,
+      "expected_sha256": "4aad24e461816d90ca13e79841851f5ab906ef54d9b093bb3a6ec01de14ec7d8",
+      "path": "docs/data_contracts/pilot_experiment_design.json"
+    },
+    {
+      "actual_sha256": "d68124c840f33fc56d0fed11ef4baa5777844a67dc70ea7e76cbd263e7aa6a11",
+      "digest_match": true,
+      "exists": true,
+      "expected_sha256": "d68124c840f33fc56d0fed11ef4baa5777844a67dc70ea7e76cbd263e7aa6a11",
+      "path": "docs/data_contracts/codex_handoff_gate_graph.json"
+    },
+    {
+      "actual_sha256": "a93f15ff2d35db1e67a8bb25eebd38e2510ac9173cb4d2a9c779380a76c1fbe4",
+      "digest_match": true,
+      "exists": true,
+      "expected_sha256": "a93f15ff2d35db1e67a8bb25eebd38e2510ac9173cb4d2a9c779380a76c1fbe4",
+      "path": "docs/data_contracts/historical_registration_execution_envelope.json"
+    },
+    {
+      "actual_sha256": "94bbf0b68c04f5fe6e3ca0fbdd0d3ca49dbc84bf1c94f3b065dadf04df9022a1",
+      "digest_match": true,
+      "exists": true,
+      "expected_sha256": "94bbf0b68c04f5fe6e3ca0fbdd0d3ca49dbc84bf1c94f3b065dadf04df9022a1",
+      "path": "docs/data_contracts/outcome_ledger_bootstrap_envelope.json"
+    }
+  ],
+  "current_activation_summary_digest": "6453351afc1fb8d7b31244ea648ee1c758590433216f6b5709e38fd3aeb37b46",
+  "current_decision_bundle_digest": "12b0cf577e27c92607dd761217c26a7e8b8dcf219e24326081969b87516ac6ed",
+  "decision_bundle_digest_match": true,
+  "expected_activation_summary_digest": "6453351afc1fb8d7b31244ea648ee1c758590433216f6b5709e38fd3aeb37b46",
+  "expected_decision_bundle_digest": "12b0cf577e27c92607dd761217c26a7e8b8dcf219e24326081969b87516ac6ed",
+  "model_version": "cre-foundry-assurance-drift-report-v1",
+  "outcome_template_continuity": true,
+  "source_evidence_results": [
+    {
+      "digest_match": true,
+      "expected_digest": "714a1be5231393f4a1e397820519ae62844563caeb5db5189b5013212badbaa4",
+      "source_id": "brampton_building_permits",
+      "supplied_digest": "714a1be5231393f4a1e397820519ae62844563caeb5db5189b5013212badbaa4"
+    },
+    {
+      "digest_match": true,
+      "expected_digest": "d2f3f315a55bd11930ee30c9efca9ca1c8b281e5a7c9e20e6e1aa61660a10111",
+      "source_id": "brampton_business_directory",
+      "supplied_digest": "d2f3f315a55bd11930ee30c9efca9ca1c8b281e5a7c9e20e6e1aa61660a10111"
+    },
+    {
+      "digest_match": true,
+      "expected_digest": "5574fd7787d35755cd953bd46e650d391933d6f13944a549f42d9d127da0883e",
+      "source_id": "statscan_odbus_2023",
+      "supplied_digest": "5574fd7787d35755cd953bd46e650d391933d6f13944a549f42d9d127da0883e"
+    },
+    {
+      "digest_match": true,
+      "expected_digest": "51220256dd186910447925379db3922e6839fd27a4b02e4e5576dd9e77ae57c2",
+      "source_id": "brampton_plantrak",
+      "supplied_digest": "51220256dd186910447925379db3922e6839fd27a4b02e4e5576dd9e77ae57c2"
+    }
+  ],
+  "source_evidence_row_count": 4,
+  "stale_source_evidence_count": 0
+}

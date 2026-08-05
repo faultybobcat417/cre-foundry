@@ -1,0 +1,34 @@
+{
+  "policy_version": "cre-backup-substitution-policy-v1",
+  "primary_list_size": 10,
+  "reserve_pool_size": 5,
+  "allowed_failure_reasons": [
+    "location_closed",
+    "location_not_accessible",
+    "unsafe_or_prohibited_access",
+    "business_no_longer_present",
+    "duplicate_or_wrong_entity",
+    "protected_account_discovered",
+    "route_disruption"
+  ],
+  "substitution_order": [
+    "same_spatial_pod",
+    "same_primary_mechanism",
+    "similar_expected_value_band",
+    "preserve_composition_constraints",
+    "minimum_added_route_burden"
+  ],
+  "prohibited_substitutions": [
+    "after substantive contact has already occurred at the failed location",
+    "to a protected or unresolved entity",
+    "from post-contact evidence",
+    "without a new decision manifest",
+    "solely to improve observed outcomes"
+  ],
+  "experiment_handling": {
+    "intention_to_treat_retains_original_assignment": true,
+    "per_protocol_records_actual_substitution": true,
+    "substitution_rate_reported": true,
+    "high_substitution_rate_triggers_redesign": true
+  }
+}

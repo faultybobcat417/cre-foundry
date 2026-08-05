@@ -1,0 +1,28 @@
+{
+  "active_queue_view": "control.brampton_verification_active_queue",
+  "completed_task_count": 0,
+  "contract_path": "docs/data_contracts/brampton_verification_ledger.json",
+  "event_chain_violation_count": 0,
+  "event_projection_table": "control.brampton_verification_events",
+  "failed_task_count": 0,
+  "ledger_event_count": 0,
+  "ledger_path": "data/control/operations.sqlite3",
+  "model_version": "brampton-verification-ledger-v1",
+  "outreach_eligible_count": 0,
+  "policy": {
+    "automatic_gate_clearance": false,
+    "event_chain_enabled": true,
+    "event_ledger_append_only": true,
+    "operating_mode": "shadow",
+    "opportunity_ranked": false,
+    "outreach_authorization_required": true,
+    "outreach_eligible": false,
+    "source_tables_overwritten": false
+  },
+  "ready_task_count": 30,
+  "summary_view": "control.brampton_verification_state_summary",
+  "task_state_count": 319,
+  "task_state_table": "control.brampton_verification_task_state",
+  "workflow_state_count": 30,
+  "workflow_state_table": "control.brampton_verification_workflow_state"
+}

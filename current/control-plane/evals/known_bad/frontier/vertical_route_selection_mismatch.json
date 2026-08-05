@@ -1,0 +1,5 @@
+{
+  "case_id": "vertical-route-selection-mismatch",
+  "mutation_id": "route_selection_mismatch",
+  "expected_diagnostic": "VERTICAL-ROUTE-SELECTION-MISMATCH"
+}

@@ -1,0 +1,5 @@
+{
+  "case_id": "duplicate-effect",
+  "mutation_id": "duplicate_effect",
+  "expected_diagnostic": "REPLAY-DUPLICATE-EFFECT"
+}

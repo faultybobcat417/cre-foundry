@@ -1,0 +1,47 @@
+files	additions	deletions	binary	commit metadata
+71	128716	229	0	05137e8c671f6a6fe14b24b050bf5b380203c19b	2026-08-02 03:08:01 -0400	Engine	baseline: implement point-in-time synthetic comparisons
+12	14581	21589	0	b6471dfbdc09ba9534f985f25cb70b47c0fcd4ab	2026-08-02 03:24:29 -0400	Engine	chore: complete baseline and select calibration
+12	3327	25208	0	aecb0fd68f2a0c722a781edd1a08cff9f59709e4	2026-08-02 05:16:50 -0400	Engine	control: checkpoint calibration and start architecture
+74	19712	223	0	55cc918db780bb52450388c69f28e26529ecf429	2026-08-02 05:04:22 -0400	Engine	calibration: implement exact synthetic uncertainty framework
+164	19200	0	0	1f31dd334dad330b1fba645d8b168e32f40cc164	2026-08-01 18:57:26 -0400	Engine	chore: initialize CRE Foundry control plane
+10	7903	2378	0	b802776ecb8335b4cb18bd81fb5fa5794dc4afa2	2026-08-02 02:15:48 -0400	Engine	chore: complete outcomes and select baseline
+20	7234	25	0	9d28360c217475fd2eacd6fa5039dd1a40946be0	2026-08-02 00:49:16 -0400	Engine	vertical: complete deterministic synthetic shadow slice
+53	6945	30	0	746702d9a46106c33633017d43f571cfb906149d	2026-08-02 02:01:38 -0400	Engine	outcomes: harden synthetic maturity and lineage contracts
+42	3991	107	0	c8949fea8719f4e34e245a16b1f0b1412d205c90	2026-08-01 22:09:51 -0400	Engine	research: bind independent source evidence
+12	2626	1411	0	8330a8f7c0212b4ce2c7641cf698859de9e235b2	2026-08-02 01:03:29 -0400	Engine	chore: complete vertical and select outcomes
+34	3675	100	0	657feb189ad4138c5eebce883faa96206faee0cf	2026-08-01 21:51:35 -0400	Engine	research: enforce strict mutation-tested contract
+22	2893	58	0	94890ec2ca1e838882a5e81cb2223d23006fe5ed	2026-08-01 21:03:23 -0400	Engine	eval: establish autonomous frontier contract
+27	2138	791	0	3950c534de0de4aef86415095dc3e4a59034d191	2026-08-01 23:19:50 -0400	Engine	math: complete public formal contract
+32	2436	22	0	6b9fc937b8812b238085798287935a5b59a7f6d1	2026-08-01 23:02:59 -0400	Engine	math: implement bounded exact-ten oracle
+5	2077	327	0	e14892d8243057c2498ffc3e1d0cc829b44a3026	2026-08-01 21:21:58 -0400	Engine	eval: bind frontier negative-control diagnostics
+9	617	1585	0	63b5be5804f62dae8c61314065e7251689f11ec8	2026-08-01 23:53:56 -0400	Engine	chore: complete contract spine and begin vertical slice
+17	1454	10	0	551c90d93125c7ed28e7ee27ced54b3dbf1b9343	2026-08-01 23:48:25 -0400	Engine	contract: implement synthetic source-to-decision spine
+10	1212	58	0	f2cb17433d3b23086543dff0ff6badbe7703ad22	2026-08-01 22:21:38 -0400	Engine	research: complete task and begin math contract
+8	1005	43	0	e5cc92e7e4f91cb09c5238ba8f1f7c0b7c91ecff	2026-08-01 21:25:31 -0400	Engine	chore: complete frontier checkpoint
+7	966	11	0	9a5462d5144196ef944ee884952fd25f433a05a2	2026-08-02 05:51:54 -0400	Engine	wip: preserve interrupted ARCHITECTURE-001 handoff
+5	840	2	0	8fd5cf8ec1e2e8365dac4286ecf5c9d7ef99f631	2026-08-02 02:24:23 -0400	Engine	baseline: freeze synthetic evaluator contract
+8	597	5	0	04e2581928eb701b8a4b4ab558cebfe19b9b4b1a	2026-08-01 19:14:57 -0400	Engine	research: checkpoint source feasibility
+8	389	8	0	0b4638dbf1424d1dd4efcefb52db08db5912ef24	2026-08-02 01:11:00 -0400	Engine	outcomes: freeze maturity evaluator contract
+7	378	9	0	8513578490a00e7802d910b0ada1616967c84507	2026-08-02 03:40:41 -0400	Engine	calibration: freeze synthetic evaluator contract
+7	297	26	0	16f78b17d9ff94123d96af4e5d2d3e3004079b5e	2026-08-01 19:14:46 -0400	Engine	fix: make bootstrap replay isolated and reproducible
+6	261	38	0	eeaa128829386438a7a785d95d09d467ad2d24f8	2026-08-01 21:16:19 -0400	Engine	eval: close frontier trust and mutation bypasses
+7	232	17	0	061423015acd81f71003f35ade3ed7e311a237c7	2026-08-02 00:00:20 -0400	Engine	vertical: define route event and outcome contracts
+13	122	5	0	4b606c0a6b2e1231fe784c005579b55953e7f13d	2026-08-01 21:28:51 -0400	Engine	research: add canonical source evidence artifacts
+2	109	0	0	a918e2bc65ba47933ace9e21f388c294b84ff876	2026-08-01 23:24:37 -0400	Engine	contract: freeze thin-spine evaluator contract
+4	58	47	0	b44d73bde5d28b24de01edf5c0af8b12dbe33105	2026-08-01 23:22:11 -0400	Engine	chore: advance to contract spine task
+2	101	0	0	cff23389cf12fe667d544a9f588e35dfab716abf	2026-08-01 23:56:31 -0400	Engine	vertical: freeze synthetic slice evaluator contract
+2	51	44	0	bec9ce04530dd3c072568972a58a765f8dd3dd9b	2026-08-01 21:30:48 -0400	Engine	research: checkpoint evaluated source closure
+4	75	2	0	50df16e226a3d5ae3c96a2e9d84d73326b805b10	2026-08-01 22:26:43 -0400	Engine	math: freeze public evaluator contract
+10	46	25	0	b737122f20a3a437d8952422fbe453083645bdba	2026-08-01 22:14:18 -0400	Engine	research: reconcile completion evidence and gates
+2	38	19	0	dcdc9d35e6481cc855bfdc5ff3c4dd6bf373a39f	2026-08-01 21:56:07 -0400	Engine	chore: refresh frontier evidence after research contract
+9	22	22	0	22fab43d59572b3c84865947b46944bcbb9277a5	2026-08-01 18:58:19 -0400	Engine	fix: harden bootstrap evaluator and checkpoint
+2	43	0	0	61147e20f224d062b618bc5b6822eda60c6ad346	2026-08-01 22:23:57 -0400	Engine	math: begin evaluator-first oracle task
+2	27	2	0	beebe4437fde3908ea59207ede6367f585155374	2026-08-01 23:50:00 -0400	Engine	test: bind contract evaluation report
+2	17	5	0	3d8407eb615aab41b16097573b16f5f7c46cc724	2026-08-01 21:33:09 -0400	Engine	research: record closure evaluator failures
+2	17	0	0	071f8beeebc6ba91c5603d9c083ca153236328b6	2026-08-01 21:32:14 -0400	Engine	research: persist public schema reproduction
+1	10	0	0	89d5d294bf4fb80f4829d29e83f7a9aa7f77ac29	2026-08-01 22:15:12 -0400	Engine	test: reconcile mutation completion reports
+1	2	2	0	5c19588b7935c0602f49f662fbaa406bfde78e7f	2026-08-02 02:02:31 -0400	Engine	chore: rebind frontier meta to outcomes proof
+1	2	2	0	c263aa7eee102af7e3a8518c387f111028ce0c63	2026-08-02 00:55:01 -0400	Engine	chore: rebind frontier meta to vertical proof
+1	2	2	0	096dc9e1112f74520ff51de9f28e1fc9a1cb2755	2026-08-01 23:20:30 -0400	Engine	test: bind frontier meta to math completion
+1	2	2	0	a15bf297f679d7521c4459030112fee969474045	2026-08-01 23:03:54 -0400	Engine	test: bind frontier meta to math checkpoint
+1	2	2	0	2f8d2a7355f29e3fd97240a7085459b7099338f5	2026-08-01 22:15:17 -0400	Engine	chore: refresh frontier meta binding

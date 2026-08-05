@@ -1,0 +1,82 @@
+{
+  "version": "2.1",
+  "classes": [
+    {
+      "class": "CODEX_DERIVABLE",
+      "definition": "Can be determined from the repository, supplied files, schemas, tests, logs, or deterministic computation.",
+      "examples": [
+        "repository architecture and existing commands",
+        "schema consistency and software defects",
+        "mathematical derivations from declared assumptions",
+        "synthetic simulations and optimization behavior",
+        "reproducibility, test coverage, and performance profiles"
+      ],
+      "required_action": "Inspect, compute, test, and persist evidence without asking the user."
+    },
+    {
+      "class": "PUBLICLY_RESEARCHABLE",
+      "definition": "Can be gathered from public sources when network/web tools are enabled and source use is allowed.",
+      "examples": [
+        "official documentation and research papers",
+        "published municipal datasets and metadata",
+        "public market, zoning, permit, registry, and economic definitions",
+        "methodological benchmarks from adjacent industries"
+      ],
+      "required_action": "Research primary sources, preserve dates/provenance, seek counterevidence, and distinguish metadata from raw data."
+    },
+    {
+      "class": "ACCESS_DEPENDENT",
+      "definition": "Exists, but requires an approved API, export, credential, connector, paid licence, or authorized raw-file delivery.",
+      "examples": [
+        "CRM exports and representative history",
+        "commercial property/licence datasets",
+        "authenticated portals and route providers",
+        "firm-owned records and protected-account lists"
+      ],
+      "required_action": "Build the adapter and fixture now; create a named access gate for credentials or data."
+    },
+    {
+      "class": "HUMAN_AUTHORITATIVE",
+      "definition": "Only the firm/user or a legally authorized owner can declare it.",
+      "examples": [
+        "service priorities and commission economics",
+        "territories, relationship ownership, exclusions, and protected accounts",
+        "spending, outreach, signing, deployment, and promotion authority",
+        "acceptable risk and practical business thresholds"
+      ],
+      "required_action": "Provide a structured input template and block dependent live actions until signed or explicitly supplied."
+    },
+    {
+      "class": "EMPIRICAL_ONLY",
+      "definition": "Cannot be established by research or code alone; it requires real observations or experiments.",
+      "examples": [
+        "candidate-universe coverage and entity accuracy",
+        "representative service/access time distributions",
+        "incremental F9 appointment lift",
+        "adherence, substitution, and interference effects",
+        "mandate, transaction, and realized commission value"
+      ],
+      "required_action": "Define instrumentation, preregistration, sample/power update, data maturity, and the required proof level."
+    },
+    {
+      "class": "EXTERNALLY_HIDDEN",
+      "definition": "Must remain outside the builder's readable/writable context to test generalization or prevent evaluator gaming.",
+      "examples": [
+        "true hidden holdout cases",
+        "independent field adjudication",
+        "external security or compliance approval"
+      ],
+      "required_action": "Name the external owner and interface; never generate it in the same readable task and call it hidden."
+    }
+  ],
+  "non_capabilities": [
+    "Codex cannot manufacture ground truth, private firm facts, credentials, permission, or field outcomes.",
+    "Codex cannot prove causal lift from code, simulation, or observational fit alone.",
+    "Codex cannot know historical availability when source snapshots or publication clocks do not exist.",
+    "Codex cannot physically visit businesses or independently verify real-world occupancy without an authorized observation channel.",
+    "Codex cannot create a truly hidden holdout that remains visible to the same builder.",
+    "Codex cannot run continuously across platform/session boundaries without a persistent thread or orchestration control plane.",
+    "Codex cannot guarantee a perfect model or eliminate irreducible uncertainty.",
+    "Codex must not bypass access controls, source terms, privacy controls, sandboxing, approvals, rate limits, or protected-account rules."
+  ]
+}

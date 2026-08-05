@@ -1,0 +1,2918 @@
+{
+  "approved_feature_source_count": 0,
+  "approved_temporal_relation_count": 0,
+  "contract_paths": {
+    "dataset_plan": "docs/data_contracts/point_in_time_dataset_plan.json",
+    "feature_queue": "docs/data_contracts/feature_definition_queue.json",
+    "temporal_review": "docs/data_contracts/temporal_relation_review.json"
+  },
+  "dataset_materialization_enabled": false,
+  "inventory_relation_count": 53,
+  "model_training_enabled": false,
+  "model_version": "cre-foundry-temporal-relation-review-v1",
+  "opportunity_ranked": false,
+  "outreach_eligible": false,
+  "policy": {
+    "automatic_feature_approval": false,
+    "automatic_snapshot_registration": false,
+    "automatic_temporal_semantics_approval": false,
+    "dataset_materialization_enabled": false,
+    "model_training_enabled": false,
+    "operating_mode": "shadow",
+    "opportunity_ranked": false,
+    "outreach_eligible": false,
+    "read_only": true
+  },
+  "primitive_count": 1148,
+  "relation_count": 53,
+  "relations": [
+    {
+      "approved_as_of_column": null,
+      "approved_availability_time_rule": null,
+      "approved_effective_time_rule": null,
+      "downstream_relation_count": 0,
+      "feature_role_counts": {
+        "blocked_no_observed_values": 1,
+        "blocked_potential_outcome_leakage": 1,
+        "blocked_safety_control": 5,
+        "join_key_only": 7,
+        "lineage_metadata": 1,
+        "point_in_time_metadata": 1,
+        "review_required": 19
+      },
+      "feature_source_approved": false,
+      "lineage_candidate_count": 2,
+      "lineage_candidates": [
+        {
+          "column": "permit_source_record_id",
+          "data_type": "VARCHAR",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": 0.0,
+          "primitive_id": "duckdb:control.brampton_verification_active_queue.permit_source_record_id"
+        },
+        {
+          "column": "provisional_business_source",
+          "data_type": "VARCHAR",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": 0.4,
+          "primitive_id": "duckdb:control.brampton_verification_active_queue.provisional_business_source"
+        }
+      ],
+      "primitive_count": 35,
+      "relation": "duckdb:control.brampton_verification_active_queue",
+      "status": "review_multiple_temporal_candidates",
+      "temporal_candidate_count": 2,
+      "temporal_candidates": [
+        {
+          "column": "application_at_utc",
+          "data_type": "TIMESTAMP WITH TIME ZONE",
+          "maximum": "2026-07-23 00:00:00-04:00",
+          "minimum": "2026-04-27 00:00:00-04:00",
+          "null_ratio": 0.0,
+          "primitive_id": "duckdb:control.brampton_verification_active_queue.application_at_utc"
+        },
+        {
+          "column": "latest_event_at",
+          "data_type": "TIMESTAMP WITH TIME ZONE",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": 1.0,
+          "primitive_id": "duckdb:control.brampton_verification_active_queue.latest_event_at"
+        }
+      ],
+      "temporal_semantics_approved": false
+    },
+    {
+      "approved_as_of_column": null,
+      "approved_availability_time_rule": null,
+      "approved_effective_time_rule": null,
+      "downstream_relation_count": 0,
+      "feature_role_counts": {
+        "blocked_potential_outcome_leakage": 1,
+        "join_key_only": 6,
+        "lineage_metadata": 1,
+        "point_in_time_metadata": 2,
+        "review_required": 9
+      },
+      "feature_source_approved": false,
+      "lineage_candidate_count": 4,
+      "lineage_candidates": [
+        {
+          "column": "chain_hash",
+          "data_type": "VARCHAR",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": null,
+          "primitive_id": "duckdb:control.brampton_verification_events.chain_hash"
+        },
+        {
+          "column": "evidence_source_type",
+          "data_type": "VARCHAR",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": null,
+          "primitive_id": "duckdb:control.brampton_verification_events.evidence_source_type"
+        },
+        {
+          "column": "permit_source_record_id",
+          "data_type": "VARCHAR",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": null,
+          "primitive_id": "duckdb:control.brampton_verification_events.permit_source_record_id"
+        },
+        {
+          "column": "previous_chain_hash",
+          "data_type": "VARCHAR",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": null,
+          "primitive_id": "duckdb:control.brampton_verification_events.previous_chain_hash"
+        }
+      ],
+      "primitive_count": 19,
+      "relation": "duckdb:control.brampton_verification_events",
+      "status": "review_multiple_temporal_candidates",
+      "temporal_candidate_count": 2,
+      "temporal_candidates": [
+        {
+          "column": "occurred_at",
+          "data_type": "TIMESTAMP WITH TIME ZONE",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": null,
+          "primitive_id": "duckdb:control.brampton_verification_events.occurred_at"
+        },
+        {
+          "column": "recorded_at",
+          "data_type": "TIMESTAMP WITH TIME ZONE",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": null,
+          "primitive_id": "duckdb:control.brampton_verification_events.recorded_at"
+        }
+      ],
+      "temporal_semantics_approved": false
+    },
+    {
+      "approved_as_of_column": null,
+      "approved_availability_time_rule": null,
+      "approved_effective_time_rule": null,
+      "downstream_relation_count": 0,
+      "feature_role_counts": {
+        "blocked_potential_outcome_leakage": 1,
+        "join_key_only": 1,
+        "review_required": 4
+      },
+      "feature_source_approved": false,
+      "lineage_candidate_count": 0,
+      "lineage_candidates": [],
+      "primitive_count": 6,
+      "relation": "duckdb:control.brampton_verification_state_summary",
+      "status": "blocked_no_temporal_semantics",
+      "temporal_candidate_count": 0,
+      "temporal_candidates": [],
+      "temporal_semantics_approved": false
+    },
+    {
+      "approved_as_of_column": null,
+      "approved_availability_time_rule": null,
+      "approved_effective_time_rule": null,
+      "downstream_relation_count": 2,
+      "feature_role_counts": {
+        "blocked_potential_outcome_leakage": 1,
+        "blocked_safety_control": 5,
+        "join_key_only": 7,
+        "lineage_metadata": 1,
+        "point_in_time_metadata": 1,
+        "review_required": 20
+      },
+      "feature_source_approved": false,
+      "lineage_candidate_count": 2,
+      "lineage_candidates": [
+        {
+          "column": "permit_source_record_id",
+          "data_type": "VARCHAR",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": 0.0,
+          "primitive_id": "duckdb:control.brampton_verification_task_state.permit_source_record_id"
+        },
+        {
+          "column": "provisional_business_source",
+          "data_type": "VARCHAR",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": 0.41379310344827586,
+          "primitive_id": "duckdb:control.brampton_verification_task_state.provisional_business_source"
+        }
+      ],
+      "primitive_count": 35,
+      "relation": "duckdb:control.brampton_verification_task_state",
+      "status": "review_multiple_temporal_candidates",
+      "temporal_candidate_count": 2,
+      "temporal_candidates": [
+        {
+          "column": "application_at_utc",
+          "data_type": "TIMESTAMP WITH TIME ZONE",
+          "maximum": "2026-07-23 00:00:00-04:00",
+          "minimum": "2026-04-27 00:00:00-04:00",
+          "null_ratio": 0.0,
+          "primitive_id": "duckdb:control.brampton_verification_task_state.application_at_utc"
+        },
+        {
+          "column": "latest_event_at",
+          "data_type": "TIMESTAMP WITH TIME ZONE",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": 1.0,
+          "primitive_id": "duckdb:control.brampton_verification_task_state.latest_event_at"
+        }
+      ],
+      "temporal_semantics_approved": false
+    },
+    {
+      "approved_as_of_column": null,
+      "approved_availability_time_rule": null,
+      "approved_effective_time_rule": null,
+      "downstream_relation_count": 0,
+      "feature_role_counts": {
+        "blocked_safety_control": 5,
+        "join_key_only": 2,
+        "lineage_metadata": 1,
+        "review_required": 15
+      },
+      "feature_source_approved": false,
+      "lineage_candidate_count": 2,
+      "lineage_candidates": [
+        {
+          "column": "permit_source_record_id",
+          "data_type": "VARCHAR",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": 0.0,
+          "primitive_id": "duckdb:control.brampton_verification_workflow_state.permit_source_record_id"
+        },
+        {
+          "column": "provisional_business_source",
+          "data_type": "VARCHAR",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": 0.4,
+          "primitive_id": "duckdb:control.brampton_verification_workflow_state.provisional_business_source"
+        }
+      ],
+      "primitive_count": 23,
+      "relation": "duckdb:control.brampton_verification_workflow_state",
+      "status": "review_temporal_semantics",
+      "temporal_candidate_count": 1,
+      "temporal_candidates": [
+        {
+          "column": "application_at_utc",
+          "data_type": "TIMESTAMP WITH TIME ZONE",
+          "maximum": "2026-07-23 00:00:00-04:00",
+          "minimum": "2026-04-27 00:00:00-04:00",
+          "null_ratio": 0.0,
+          "primitive_id": "duckdb:control.brampton_verification_workflow_state.application_at_utc"
+        }
+      ],
+      "temporal_semantics_approved": false
+    },
+    {
+      "approved_as_of_column": null,
+      "approved_availability_time_rule": null,
+      "approved_effective_time_rule": null,
+      "downstream_relation_count": 0,
+      "feature_role_counts": {
+        "point_in_time_metadata": 1,
+        "review_required": 2
+      },
+      "feature_source_approved": false,
+      "lineage_candidate_count": 1,
+      "lineage_candidates": [
+        {
+          "column": "updated_at",
+          "data_type": "TIMESTAMP",
+          "maximum": "2026-07-25 21:44:33.491825",
+          "minimum": "2026-07-25 21:44:33.491825",
+          "null_ratio": 0.0,
+          "primitive_id": "duckdb:main.system_metadata.updated_at"
+        }
+      ],
+      "primitive_count": 3,
+      "relation": "duckdb:main.system_metadata",
+      "status": "review_temporal_semantics",
+      "temporal_candidate_count": 1,
+      "temporal_candidates": [
+        {
+          "column": "updated_at",
+          "data_type": "TIMESTAMP",
+          "maximum": "2026-07-25 21:44:33.491825",
+          "minimum": "2026-07-25 21:44:33.491825",
+          "null_ratio": 0.0,
+          "primitive_id": "duckdb:main.system_metadata.updated_at"
+        }
+      ],
+      "temporal_semantics_approved": false
+    },
+    {
+      "approved_as_of_column": null,
+      "approved_availability_time_rule": null,
+      "approved_effective_time_rule": null,
+      "downstream_relation_count": 0,
+      "feature_role_counts": {
+        "join_key_only": 3,
+        "lineage_metadata": 1,
+        "review_required": 4
+      },
+      "feature_source_approved": false,
+      "lineage_candidate_count": 4,
+      "lineage_candidates": [
+        {
+          "column": "archive_sha256",
+          "data_type": "VARCHAR",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": 0.0,
+          "primitive_id": "duckdb:meta.dataset_registry.archive_sha256"
+        },
+        {
+          "column": "bronze_run_id",
+          "data_type": "VARCHAR",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": 0.0,
+          "primitive_id": "duckdb:meta.dataset_registry.bronze_run_id"
+        },
+        {
+          "column": "manifest_path",
+          "data_type": "VARCHAR",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": 0.0,
+          "primitive_id": "duckdb:meta.dataset_registry.manifest_path"
+        },
+        {
+          "column": "source_id",
+          "data_type": "VARCHAR",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": 0.0,
+          "primitive_id": "duckdb:meta.dataset_registry.source_id"
+        }
+      ],
+      "primitive_count": 8,
+      "relation": "duckdb:meta.dataset_registry",
+      "status": "blocked_no_temporal_semantics",
+      "temporal_candidate_count": 0,
+      "temporal_candidates": [],
+      "temporal_semantics_approved": false
+    },
+    {
+      "approved_as_of_column": null,
+      "approved_availability_time_rule": null,
+      "approved_effective_time_rule": null,
+      "downstream_relation_count": 0,
+      "feature_role_counts": {
+        "join_key_only": 3,
+        "lineage_metadata": 2,
+        "review_required": 8
+      },
+      "feature_source_approved": false,
+      "lineage_candidate_count": 5,
+      "lineage_candidates": [
+        {
+          "column": "bronze_run_id",
+          "data_type": "VARCHAR",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": 0.0,
+          "primitive_id": "duckdb:quarantine.odbus_target_conflicts.bronze_run_id"
+        },
+        {
+          "column": "source_archive_sha256",
+          "data_type": "VARCHAR",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": 0.0,
+          "primitive_id": "duckdb:quarantine.odbus_target_conflicts.source_archive_sha256"
+        },
+        {
+          "column": "source_id",
+          "data_type": "VARCHAR",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": 0.0,
+          "primitive_id": "duckdb:quarantine.odbus_target_conflicts.source_id"
+        },
+        {
+          "column": "source_record_id",
+          "data_type": "VARCHAR",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": 0.0,
+          "primitive_id": "duckdb:quarantine.odbus_target_conflicts.source_record_id"
+        },
+        {
+          "column": "source_row_number",
+          "data_type": "BIGINT",
+          "maximum": 38113,
+          "minimum": 2786,
+          "null_ratio": 0.0,
+          "primitive_id": "duckdb:quarantine.odbus_target_conflicts.source_row_number"
+        }
+      ],
+      "primitive_count": 13,
+      "relation": "duckdb:quarantine.odbus_target_conflicts",
+      "status": "blocked_no_temporal_semantics",
+      "temporal_candidate_count": 0,
+      "temporal_candidates": [],
+      "temporal_semantics_approved": false
+    },
+    {
+      "approved_as_of_column": null,
+      "approved_availability_time_rule": null,
+      "approved_effective_time_rule": null,
+      "downstream_relation_count": 0,
+      "feature_role_counts": {
+        "blocked_no_observed_values": 5,
+        "blocked_safety_control": 1,
+        "join_key_only": 5,
+        "lineage_metadata": 1,
+        "point_in_time_metadata": 1,
+        "review_required": 17
+      },
+      "feature_source_approved": false,
+      "lineage_candidate_count": 4,
+      "lineage_candidates": [
+        {
+          "column": "run_id",
+          "data_type": "VARCHAR",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": 0.0,
+          "primitive_id": "duckdb:silver.brampton_active_permit_signals.run_id"
+        },
+        {
+          "column": "source_id",
+          "data_type": "VARCHAR",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": 0.0,
+          "primitive_id": "duckdb:silver.brampton_active_permit_signals.source_id"
+        },
+        {
+          "column": "source_record_id",
+          "data_type": "VARCHAR",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": 0.0,
+          "primitive_id": "duckdb:silver.brampton_active_permit_signals.source_record_id"
+        },
+        {
+          "column": "source_snapshot_sha256",
+          "data_type": "VARCHAR",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": 0.0,
+          "primitive_id": "duckdb:silver.brampton_active_permit_signals.source_snapshot_sha256"
+        }
+      ],
+      "primitive_count": 30,
+      "relation": "duckdb:silver.brampton_active_permit_signals",
+      "status": "review_multiple_temporal_candidates",
+      "temporal_candidate_count": 5,
+      "temporal_candidates": [
+        {
+          "column": "application_at_utc",
+          "data_type": "TIMESTAMP WITH TIME ZONE",
+          "maximum": "2026-07-23 00:00:00-04:00",
+          "minimum": "2026-04-27 00:00:00-04:00",
+          "null_ratio": 0.0,
+          "primitive_id": "duckdb:silver.brampton_active_permit_signals.application_at_utc"
+        },
+        {
+          "column": "as_of_timestamp",
+          "data_type": "TIMESTAMP WITH TIME ZONE",
+          "maximum": "2026-07-25 23:35:16.413070-04:00",
+          "minimum": "2026-07-25 23:35:16.413070-04:00",
+          "null_ratio": 0.0,
+          "primitive_id": "duckdb:silver.brampton_active_permit_signals.as_of_timestamp"
+        },
+        {
+          "column": "expiry_at_utc",
+          "data_type": "TIMESTAMP WITH TIME ZONE",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": 1.0,
+          "primitive_id": "duckdb:silver.brampton_active_permit_signals.expiry_at_utc"
+        },
+        {
+          "column": "issue_at_utc",
+          "data_type": "TIMESTAMP WITH TIME ZONE",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": 1.0,
+          "primitive_id": "duckdb:silver.brampton_active_permit_signals.issue_at_utc"
+        },
+        {
+          "column": "process_at_utc",
+          "data_type": "TIMESTAMP WITH TIME ZONE",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": 1.0,
+          "primitive_id": "duckdb:silver.brampton_active_permit_signals.process_at_utc"
+        }
+      ],
+      "temporal_semantics_approved": false
+    },
+    {
+      "approved_as_of_column": null,
+      "approved_availability_time_rule": null,
+      "approved_effective_time_rule": null,
+      "downstream_relation_count": 1,
+      "feature_role_counts": {
+        "blocked_safety_control": 1,
+        "join_key_only": 5,
+        "lineage_metadata": 2,
+        "point_in_time_metadata": 2,
+        "review_required": 38
+      },
+      "feature_source_approved": false,
+      "lineage_candidate_count": 5,
+      "lineage_candidates": [
+        {
+          "column": "directory_operational_at_snapshot",
+          "data_type": "BOOLEAN",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": 0.0,
+          "primitive_id": "duckdb:silver.brampton_business_directory.directory_operational_at_snapshot"
+        },
+        {
+          "column": "run_id",
+          "data_type": "VARCHAR",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": 0.0,
+          "primitive_id": "duckdb:silver.brampton_business_directory.run_id"
+        },
+        {
+          "column": "source_id",
+          "data_type": "VARCHAR",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": 0.0,
+          "primitive_id": "duckdb:silver.brampton_business_directory.source_id"
+        },
+        {
+          "column": "source_record_id",
+          "data_type": "VARCHAR",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": 0.0,
+          "primitive_id": "duckdb:silver.brampton_business_directory.source_record_id"
+        },
+        {
+          "column": "source_snapshot_sha256",
+          "data_type": "VARCHAR",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": 0.0,
+          "primitive_id": "duckdb:silver.brampton_business_directory.source_snapshot_sha256"
+        }
+      ],
+      "primitive_count": 48,
+      "relation": "duckdb:silver.brampton_business_directory",
+      "status": "review_multiple_temporal_candidates",
+      "temporal_candidate_count": 2,
+      "temporal_candidates": [
+        {
+          "column": "as_of_timestamp",
+          "data_type": "TIMESTAMP WITH TIME ZONE",
+          "maximum": "2026-07-26 00:04:18.972586-04:00",
+          "minimum": "2026-07-26 00:04:18.972586-04:00",
+          "null_ratio": 0.0,
+          "primitive_id": "duckdb:silver.brampton_business_directory.as_of_timestamp"
+        },
+        {
+          "column": "date_established_in_city_raw",
+          "data_type": "VARCHAR",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": 0.29177503250975295,
+          "primitive_id": "duckdb:silver.brampton_business_directory.date_established_in_city_raw"
+        }
+      ],
+      "temporal_semantics_approved": false
+    },
+    {
+      "approved_as_of_column": null,
+      "approved_availability_time_rule": null,
+      "approved_effective_time_rule": null,
+      "downstream_relation_count": 0,
+      "feature_role_counts": {
+        "review_required": 5
+      },
+      "feature_source_approved": false,
+      "lineage_candidate_count": 0,
+      "lineage_candidates": [],
+      "primitive_count": 5,
+      "relation": "duckdb:silver.brampton_business_directory_summary",
+      "status": "blocked_no_temporal_semantics",
+      "temporal_candidate_count": 0,
+      "temporal_candidates": [],
+      "temporal_semantics_approved": false
+    },
+    {
+      "approved_as_of_column": null,
+      "approved_availability_time_rule": null,
+      "approved_effective_time_rule": null,
+      "downstream_relation_count": 2,
+      "feature_role_counts": {
+        "blocked_no_observed_values": 3,
+        "blocked_safety_control": 1,
+        "join_key_only": 5,
+        "lineage_metadata": 1,
+        "point_in_time_metadata": 1,
+        "review_required": 18
+      },
+      "feature_source_approved": false,
+      "lineage_candidate_count": 4,
+      "lineage_candidates": [
+        {
+          "column": "run_id",
+          "data_type": "VARCHAR",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": 0.0,
+          "primitive_id": "duckdb:silver.brampton_industrial_permits.run_id"
+        },
+        {
+          "column": "source_id",
+          "data_type": "VARCHAR",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": 0.0,
+          "primitive_id": "duckdb:silver.brampton_industrial_permits.source_id"
+        },
+        {
+          "column": "source_record_id",
+          "data_type": "VARCHAR",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": 0.0,
+          "primitive_id": "duckdb:silver.brampton_industrial_permits.source_record_id"
+        },
+        {
+          "column": "source_snapshot_sha256",
+          "data_type": "VARCHAR",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": 0.0,
+          "primitive_id": "duckdb:silver.brampton_industrial_permits.source_snapshot_sha256"
+        }
+      ],
+      "primitive_count": 29,
+      "relation": "duckdb:silver.brampton_industrial_permits",
+      "status": "review_multiple_temporal_candidates",
+      "temporal_candidate_count": 5,
+      "temporal_candidates": [
+        {
+          "column": "application_at_utc",
+          "data_type": "TIMESTAMP WITH TIME ZONE",
+          "maximum": "2026-07-23 00:00:00-04:00",
+          "minimum": "2000-01-12 00:00:00-05:00",
+          "null_ratio": 0.00021496130696474635,
+          "primitive_id": "duckdb:silver.brampton_industrial_permits.application_at_utc"
+        },
+        {
+          "column": "as_of_timestamp",
+          "data_type": "TIMESTAMP WITH TIME ZONE",
+          "maximum": "2026-07-25 23:35:16.413070-04:00",
+          "minimum": "2026-07-25 23:35:16.413070-04:00",
+          "null_ratio": 0.0,
+          "primitive_id": "duckdb:silver.brampton_industrial_permits.as_of_timestamp"
+        },
+        {
+          "column": "expiry_at_utc",
+          "data_type": "TIMESTAMP WITH TIME ZONE",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": 1.0,
+          "primitive_id": "duckdb:silver.brampton_industrial_permits.expiry_at_utc"
+        },
+        {
+          "column": "issue_at_utc",
+          "data_type": "TIMESTAMP WITH TIME ZONE",
+          "maximum": "2026-07-24 00:00:00-04:00",
+          "minimum": "2000-02-01 00:00:00-05:00",
+          "null_ratio": 0.06943250214961307,
+          "primitive_id": "duckdb:silver.brampton_industrial_permits.issue_at_utc"
+        },
+        {
+          "column": "process_at_utc",
+          "data_type": "TIMESTAMP WITH TIME ZONE",
+          "maximum": "2026-07-16 06:23:19-04:00",
+          "minimum": "2004-03-18 00:00:00-05:00",
+          "null_ratio": 0.91530524505589,
+          "primitive_id": "duckdb:silver.brampton_industrial_permits.process_at_utc"
+        }
+      ],
+      "temporal_semantics_approved": false
+    },
+    {
+      "approved_as_of_column": null,
+      "approved_availability_time_rule": null,
+      "approved_effective_time_rule": null,
+      "downstream_relation_count": 0,
+      "feature_role_counts": {
+        "blocked_safety_control": 1,
+        "join_key_only": 6,
+        "lineage_metadata": 2,
+        "review_required": 28
+      },
+      "feature_source_approved": false,
+      "lineage_candidate_count": 3,
+      "lineage_candidates": [
+        {
+          "column": "cross_source_name_alignment",
+          "data_type": "BOOLEAN",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": 0.0,
+          "primitive_id": "duckdb:silver.brampton_permit_cross_source_agreement.cross_source_name_alignment"
+        },
+        {
+          "column": "current_directory_operational_at_snapshot",
+          "data_type": "BOOLEAN",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": 0.0,
+          "primitive_id": "duckdb:silver.brampton_permit_cross_source_agreement.current_directory_operational_at_snapshot"
+        },
+        {
+          "column": "permit_source_record_id",
+          "data_type": "VARCHAR",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": 0.0,
+          "primitive_id": "duckdb:silver.brampton_permit_cross_source_agreement.permit_source_record_id"
+        }
+      ],
+      "primitive_count": 37,
+      "relation": "duckdb:silver.brampton_permit_cross_source_agreement",
+      "status": "review_temporal_semantics",
+      "temporal_candidate_count": 1,
+      "temporal_candidates": [
+        {
+          "column": "application_at_utc",
+          "data_type": "TIMESTAMP WITH TIME ZONE",
+          "maximum": "2026-07-06 00:00:00-04:00",
+          "minimum": "2026-04-27 00:00:00-04:00",
+          "null_ratio": 0.0,
+          "primitive_id": "duckdb:silver.brampton_permit_cross_source_agreement.application_at_utc"
+        }
+      ],
+      "temporal_semantics_approved": false
+    },
+    {
+      "approved_as_of_column": null,
+      "approved_availability_time_rule": null,
+      "approved_effective_time_rule": null,
+      "downstream_relation_count": 3,
+      "feature_role_counts": {
+        "blocked_safety_control": 1,
+        "join_key_only": 6,
+        "lineage_metadata": 2,
+        "review_required": 28
+      },
+      "feature_source_approved": false,
+      "lineage_candidate_count": 3,
+      "lineage_candidates": [
+        {
+          "column": "cross_source_name_alignment",
+          "data_type": "BOOLEAN",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": 0.0,
+          "primitive_id": "duckdb:silver.brampton_permit_cross_source_reconciliation.cross_source_name_alignment"
+        },
+        {
+          "column": "current_directory_operational_at_snapshot",
+          "data_type": "BOOLEAN",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": 0.0,
+          "primitive_id": "duckdb:silver.brampton_permit_cross_source_reconciliation.current_directory_operational_at_snapshot"
+        },
+        {
+          "column": "permit_source_record_id",
+          "data_type": "VARCHAR",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": 0.0,
+          "primitive_id": "duckdb:silver.brampton_permit_cross_source_reconciliation.permit_source_record_id"
+        }
+      ],
+      "primitive_count": 37,
+      "relation": "duckdb:silver.brampton_permit_cross_source_reconciliation",
+      "status": "review_temporal_semantics",
+      "temporal_candidate_count": 1,
+      "temporal_candidates": [
+        {
+          "column": "application_at_utc",
+          "data_type": "TIMESTAMP WITH TIME ZONE",
+          "maximum": "2026-07-23 00:00:00-04:00",
+          "minimum": "2026-04-27 00:00:00-04:00",
+          "null_ratio": 0.0,
+          "primitive_id": "duckdb:silver.brampton_permit_cross_source_reconciliation.application_at_utc"
+        }
+      ],
+      "temporal_semantics_approved": false
+    },
+    {
+      "approved_as_of_column": null,
+      "approved_availability_time_rule": null,
+      "approved_effective_time_rule": null,
+      "downstream_relation_count": 0,
+      "feature_role_counts": {
+        "blocked_safety_control": 1,
+        "join_key_only": 6,
+        "lineage_metadata": 2,
+        "review_required": 28
+      },
+      "feature_source_approved": false,
+      "lineage_candidate_count": 3,
+      "lineage_candidates": [
+        {
+          "column": "cross_source_name_alignment",
+          "data_type": "BOOLEAN",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": 0.0,
+          "primitive_id": "duckdb:silver.brampton_permit_cross_source_review_queue.cross_source_name_alignment"
+        },
+        {
+          "column": "current_directory_operational_at_snapshot",
+          "data_type": "BOOLEAN",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": 0.0,
+          "primitive_id": "duckdb:silver.brampton_permit_cross_source_review_queue.current_directory_operational_at_snapshot"
+        },
+        {
+          "column": "permit_source_record_id",
+          "data_type": "VARCHAR",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": 0.0,
+          "primitive_id": "duckdb:silver.brampton_permit_cross_source_review_queue.permit_source_record_id"
+        }
+      ],
+      "primitive_count": 37,
+      "relation": "duckdb:silver.brampton_permit_cross_source_review_queue",
+      "status": "review_temporal_semantics",
+      "temporal_candidate_count": 1,
+      "temporal_candidates": [
+        {
+          "column": "application_at_utc",
+          "data_type": "TIMESTAMP WITH TIME ZONE",
+          "maximum": "2026-07-17 00:00:00-04:00",
+          "minimum": "2026-04-27 00:00:00-04:00",
+          "null_ratio": 0.0,
+          "primitive_id": "duckdb:silver.brampton_permit_cross_source_review_queue.application_at_utc"
+        }
+      ],
+      "temporal_semantics_approved": false
+    },
+    {
+      "approved_as_of_column": null,
+      "approved_availability_time_rule": null,
+      "approved_effective_time_rule": null,
+      "downstream_relation_count": 0,
+      "feature_role_counts": {
+        "review_required": 5
+      },
+      "feature_source_approved": false,
+      "lineage_candidate_count": 0,
+      "lineage_candidates": [],
+      "primitive_count": 5,
+      "relation": "duckdb:silver.brampton_permit_cross_source_summary",
+      "status": "blocked_no_temporal_semantics",
+      "temporal_candidate_count": 0,
+      "temporal_candidates": [],
+      "temporal_semantics_approved": false
+    },
+    {
+      "approved_as_of_column": null,
+      "approved_availability_time_rule": null,
+      "approved_effective_time_rule": null,
+      "downstream_relation_count": 1,
+      "feature_role_counts": {
+        "blocked_no_observed_values": 1,
+        "blocked_safety_control": 1,
+        "join_key_only": 3,
+        "lineage_metadata": 1,
+        "point_in_time_metadata": 1,
+        "review_required": 20
+      },
+      "feature_source_approved": false,
+      "lineage_candidate_count": 3,
+      "lineage_candidates": [
+        {
+          "column": "directory_operational_at_snapshot",
+          "data_type": "BOOLEAN",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": 0.0,
+          "primitive_id": "duckdb:silver.brampton_permit_directory_match_candidates.directory_operational_at_snapshot"
+        },
+        {
+          "column": "directory_source_record_id",
+          "data_type": "VARCHAR",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": 0.0,
+          "primitive_id": "duckdb:silver.brampton_permit_directory_match_candidates.directory_source_record_id"
+        },
+        {
+          "column": "permit_source_record_id",
+          "data_type": "VARCHAR",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": 0.0,
+          "primitive_id": "duckdb:silver.brampton_permit_directory_match_candidates.permit_source_record_id"
+        }
+      ],
+      "primitive_count": 27,
+      "relation": "duckdb:silver.brampton_permit_directory_match_candidates",
+      "status": "review_temporal_semantics",
+      "temporal_candidate_count": 1,
+      "temporal_candidates": [
+        {
+          "column": "directory_as_of_timestamp",
+          "data_type": "TIMESTAMP WITH TIME ZONE",
+          "maximum": "2026-07-26 00:04:18.972586-04:00",
+          "minimum": "2026-07-26 00:04:18.972586-04:00",
+          "null_ratio": 0.0,
+          "primitive_id": "duckdb:silver.brampton_permit_directory_match_candidates.directory_as_of_timestamp"
+        }
+      ],
+      "temporal_semantics_approved": false
+    },
+    {
+      "approved_as_of_column": null,
+      "approved_availability_time_rule": null,
+      "approved_effective_time_rule": null,
+      "downstream_relation_count": 1,
+      "feature_role_counts": {
+        "blocked_safety_control": 1,
+        "join_key_only": 2,
+        "review_required": 14
+      },
+      "feature_source_approved": false,
+      "lineage_candidate_count": 1,
+      "lineage_candidates": [
+        {
+          "column": "permit_source_record_id",
+          "data_type": "VARCHAR",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": 0.0,
+          "primitive_id": "duckdb:silver.brampton_permit_directory_resolution.permit_source_record_id"
+        }
+      ],
+      "primitive_count": 17,
+      "relation": "duckdb:silver.brampton_permit_directory_resolution",
+      "status": "review_temporal_semantics",
+      "temporal_candidate_count": 1,
+      "temporal_candidates": [
+        {
+          "column": "application_at_utc",
+          "data_type": "TIMESTAMP WITH TIME ZONE",
+          "maximum": "2026-07-23 00:00:00-04:00",
+          "minimum": "2026-04-27 00:00:00-04:00",
+          "null_ratio": 0.0,
+          "primitive_id": "duckdb:silver.brampton_permit_directory_resolution.application_at_utc"
+        }
+      ],
+      "temporal_semantics_approved": false
+    },
+    {
+      "approved_as_of_column": null,
+      "approved_availability_time_rule": null,
+      "approved_effective_time_rule": null,
+      "downstream_relation_count": 0,
+      "feature_role_counts": {
+        "blocked_no_observed_values": 1,
+        "blocked_safety_control": 1,
+        "join_key_only": 4,
+        "lineage_metadata": 1,
+        "point_in_time_metadata": 1,
+        "review_required": 22
+      },
+      "feature_source_approved": false,
+      "lineage_candidate_count": 3,
+      "lineage_candidates": [
+        {
+          "column": "directory_operational_at_snapshot",
+          "data_type": "BOOLEAN",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": 0.0,
+          "primitive_id": "duckdb:silver.brampton_permit_directory_unique_address_links.directory_operational_at_snapshot"
+        },
+        {
+          "column": "directory_source_record_id",
+          "data_type": "VARCHAR",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": 0.0,
+          "primitive_id": "duckdb:silver.brampton_permit_directory_unique_address_links.directory_source_record_id"
+        },
+        {
+          "column": "permit_source_record_id",
+          "data_type": "VARCHAR",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": 0.0,
+          "primitive_id": "duckdb:silver.brampton_permit_directory_unique_address_links.permit_source_record_id"
+        }
+      ],
+      "primitive_count": 30,
+      "relation": "duckdb:silver.brampton_permit_directory_unique_address_links",
+      "status": "review_multiple_temporal_candidates",
+      "temporal_candidate_count": 2,
+      "temporal_candidates": [
+        {
+          "column": "application_at_utc",
+          "data_type": "TIMESTAMP WITH TIME ZONE",
+          "maximum": "2026-07-17 00:00:00-04:00",
+          "minimum": "2026-04-27 00:00:00-04:00",
+          "null_ratio": 0.0,
+          "primitive_id": "duckdb:silver.brampton_permit_directory_unique_address_links.application_at_utc"
+        },
+        {
+          "column": "directory_as_of_timestamp",
+          "data_type": "TIMESTAMP WITH TIME ZONE",
+          "maximum": "2026-07-26 00:04:18.972586-04:00",
+          "minimum": "2026-07-26 00:04:18.972586-04:00",
+          "null_ratio": 0.0,
+          "primitive_id": "duckdb:silver.brampton_permit_directory_unique_address_links.directory_as_of_timestamp"
+        }
+      ],
+      "temporal_semantics_approved": false
+    },
+    {
+      "approved_as_of_column": null,
+      "approved_availability_time_rule": null,
+      "approved_effective_time_rule": null,
+      "downstream_relation_count": 1,
+      "feature_role_counts": {
+        "blocked_no_observed_values": 2,
+        "blocked_safety_control": 1,
+        "join_key_only": 2,
+        "review_required": 11
+      },
+      "feature_source_approved": false,
+      "lineage_candidate_count": 1,
+      "lineage_candidates": [
+        {
+          "column": "permit_source_record_id",
+          "data_type": "VARCHAR",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": 0.0,
+          "primitive_id": "duckdb:silver.brampton_permit_entity_match_candidates.permit_source_record_id"
+        }
+      ],
+      "primitive_count": 16,
+      "relation": "duckdb:silver.brampton_permit_entity_match_candidates",
+      "status": "blocked_no_temporal_semantics",
+      "temporal_candidate_count": 0,
+      "temporal_candidates": [],
+      "temporal_semantics_approved": false
+    },
+    {
+      "approved_as_of_column": null,
+      "approved_availability_time_rule": null,
+      "approved_effective_time_rule": null,
+      "downstream_relation_count": 1,
+      "feature_role_counts": {
+        "blocked_safety_control": 1,
+        "join_key_only": 2,
+        "review_required": 10
+      },
+      "feature_source_approved": false,
+      "lineage_candidate_count": 1,
+      "lineage_candidates": [
+        {
+          "column": "permit_source_record_id",
+          "data_type": "VARCHAR",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": 0.0,
+          "primitive_id": "duckdb:silver.brampton_permit_entity_resolution.permit_source_record_id"
+        }
+      ],
+      "primitive_count": 13,
+      "relation": "duckdb:silver.brampton_permit_entity_resolution",
+      "status": "review_temporal_semantics",
+      "temporal_candidate_count": 1,
+      "temporal_candidates": [
+        {
+          "column": "application_at_utc",
+          "data_type": "TIMESTAMP WITH TIME ZONE",
+          "maximum": "2026-07-23 00:00:00-04:00",
+          "minimum": "2026-04-27 00:00:00-04:00",
+          "null_ratio": 0.0,
+          "primitive_id": "duckdb:silver.brampton_permit_entity_resolution.application_at_utc"
+        }
+      ],
+      "temporal_semantics_approved": false
+    },
+    {
+      "approved_as_of_column": null,
+      "approved_availability_time_rule": null,
+      "approved_effective_time_rule": null,
+      "downstream_relation_count": 0,
+      "feature_role_counts": {
+        "blocked_no_observed_values": 2,
+        "blocked_safety_control": 1,
+        "join_key_only": 3,
+        "review_required": 13
+      },
+      "feature_source_approved": false,
+      "lineage_candidate_count": 1,
+      "lineage_candidates": [
+        {
+          "column": "permit_source_record_id",
+          "data_type": "VARCHAR",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": 0.0,
+          "primitive_id": "duckdb:silver.brampton_permit_entity_unique_links.permit_source_record_id"
+        }
+      ],
+      "primitive_count": 19,
+      "relation": "duckdb:silver.brampton_permit_entity_unique_links",
+      "status": "review_temporal_semantics",
+      "temporal_candidate_count": 1,
+      "temporal_candidates": [
+        {
+          "column": "application_at_utc",
+          "data_type": "TIMESTAMP WITH TIME ZONE",
+          "maximum": "2026-07-06 00:00:00-04:00",
+          "minimum": "2026-04-27 00:00:00-04:00",
+          "null_ratio": 0.0,
+          "primitive_id": "duckdb:silver.brampton_permit_entity_unique_links.application_at_utc"
+        }
+      ],
+      "temporal_semantics_approved": false
+    },
+    {
+      "approved_as_of_column": null,
+      "approved_availability_time_rule": null,
+      "approved_effective_time_rule": null,
+      "downstream_relation_count": 3,
+      "feature_role_counts": {
+        "blocked_no_observed_values": 3,
+        "blocked_safety_control": 2,
+        "join_key_only": 9,
+        "lineage_metadata": 4,
+        "point_in_time_metadata": 1,
+        "review_required": 59
+      },
+      "feature_source_approved": false,
+      "lineage_candidate_count": 6,
+      "lineage_candidates": [
+        {
+          "column": "cross_source_name_alignment",
+          "data_type": "BOOLEAN",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": 0.0,
+          "primitive_id": "duckdb:silver.brampton_permit_opportunity_evidence.cross_source_name_alignment"
+        },
+        {
+          "column": "cross_source_name_conflict_present",
+          "data_type": "BOOLEAN",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": 0.0,
+          "primitive_id": "duckdb:silver.brampton_permit_opportunity_evidence.cross_source_name_conflict_present"
+        },
+        {
+          "column": "current_directory_operational_at_snapshot",
+          "data_type": "BOOLEAN",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": 0.5,
+          "primitive_id": "duckdb:silver.brampton_permit_opportunity_evidence.current_directory_operational_at_snapshot"
+        },
+        {
+          "column": "directory_source_record_id",
+          "data_type": "VARCHAR",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": 0.5,
+          "primitive_id": "duckdb:silver.brampton_permit_opportunity_evidence.directory_source_record_id"
+        },
+        {
+          "column": "permit_source_record_id",
+          "data_type": "VARCHAR",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": 0.0,
+          "primitive_id": "duckdb:silver.brampton_permit_opportunity_evidence.permit_source_record_id"
+        },
+        {
+          "column": "provisional_business_source",
+          "data_type": "VARCHAR",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": 0.4,
+          "primitive_id": "duckdb:silver.brampton_permit_opportunity_evidence.provisional_business_source"
+        }
+      ],
+      "primitive_count": 78,
+      "relation": "duckdb:silver.brampton_permit_opportunity_evidence",
+      "status": "review_multiple_temporal_candidates",
+      "temporal_candidate_count": 2,
+      "temporal_candidates": [
+        {
+          "column": "application_at_utc",
+          "data_type": "TIMESTAMP WITH TIME ZONE",
+          "maximum": "2026-07-23 00:00:00-04:00",
+          "minimum": "2026-04-27 00:00:00-04:00",
+          "null_ratio": 0.0,
+          "primitive_id": "duckdb:silver.brampton_permit_opportunity_evidence.application_at_utc"
+        },
+        {
+          "column": "directory_as_of_timestamp",
+          "data_type": "TIMESTAMP WITH TIME ZONE",
+          "maximum": "2026-07-26 00:04:18.972586-04:00",
+          "minimum": "2026-07-26 00:04:18.972586-04:00",
+          "null_ratio": 0.5,
+          "primitive_id": "duckdb:silver.brampton_permit_opportunity_evidence.directory_as_of_timestamp"
+        }
+      ],
+      "temporal_semantics_approved": false
+    },
+    {
+      "approved_as_of_column": null,
+      "approved_availability_time_rule": null,
+      "approved_effective_time_rule": null,
+      "downstream_relation_count": 0,
+      "feature_role_counts": {
+        "blocked_no_observed_values": 3,
+        "blocked_safety_control": 2,
+        "join_key_only": 9,
+        "lineage_metadata": 4,
+        "point_in_time_metadata": 1,
+        "review_required": 59
+      },
+      "feature_source_approved": false,
+      "lineage_candidate_count": 6,
+      "lineage_candidates": [
+        {
+          "column": "cross_source_name_alignment",
+          "data_type": "BOOLEAN",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": 0.0,
+          "primitive_id": "duckdb:silver.brampton_permit_opportunity_review_queue.cross_source_name_alignment"
+        },
+        {
+          "column": "cross_source_name_conflict_present",
+          "data_type": "BOOLEAN",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": 0.0,
+          "primitive_id": "duckdb:silver.brampton_permit_opportunity_review_queue.cross_source_name_conflict_present"
+        },
+        {
+          "column": "current_directory_operational_at_snapshot",
+          "data_type": "BOOLEAN",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": 0.5,
+          "primitive_id": "duckdb:silver.brampton_permit_opportunity_review_queue.current_directory_operational_at_snapshot"
+        },
+        {
+          "column": "directory_source_record_id",
+          "data_type": "VARCHAR",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": 0.5,
+          "primitive_id": "duckdb:silver.brampton_permit_opportunity_review_queue.directory_source_record_id"
+        },
+        {
+          "column": "permit_source_record_id",
+          "data_type": "VARCHAR",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": 0.0,
+          "primitive_id": "duckdb:silver.brampton_permit_opportunity_review_queue.permit_source_record_id"
+        },
+        {
+          "column": "provisional_business_source",
+          "data_type": "VARCHAR",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": 0.125,
+          "primitive_id": "duckdb:silver.brampton_permit_opportunity_review_queue.provisional_business_source"
+        }
+      ],
+      "primitive_count": 78,
+      "relation": "duckdb:silver.brampton_permit_opportunity_review_queue",
+      "status": "review_multiple_temporal_candidates",
+      "temporal_candidate_count": 2,
+      "temporal_candidates": [
+        {
+          "column": "application_at_utc",
+          "data_type": "TIMESTAMP WITH TIME ZONE",
+          "maximum": "2026-07-17 00:00:00-04:00",
+          "minimum": "2026-04-27 00:00:00-04:00",
+          "null_ratio": 0.0,
+          "primitive_id": "duckdb:silver.brampton_permit_opportunity_review_queue.application_at_utc"
+        },
+        {
+          "column": "directory_as_of_timestamp",
+          "data_type": "TIMESTAMP WITH TIME ZONE",
+          "maximum": "2026-07-26 00:04:18.972586-04:00",
+          "minimum": "2026-07-26 00:04:18.972586-04:00",
+          "null_ratio": 0.5,
+          "primitive_id": "duckdb:silver.brampton_permit_opportunity_review_queue.directory_as_of_timestamp"
+        }
+      ],
+      "temporal_semantics_approved": false
+    },
+    {
+      "approved_as_of_column": null,
+      "approved_availability_time_rule": null,
+      "approved_effective_time_rule": null,
+      "downstream_relation_count": 0,
+      "feature_role_counts": {
+        "review_required": 8
+      },
+      "feature_source_approved": false,
+      "lineage_candidate_count": 0,
+      "lineage_candidates": [],
+      "primitive_count": 8,
+      "relation": "duckdb:silver.brampton_permit_opportunity_summary",
+      "status": "blocked_no_temporal_semantics",
+      "temporal_candidate_count": 0,
+      "temporal_candidates": [],
+      "temporal_semantics_approved": false
+    },
+    {
+      "approved_as_of_column": null,
+      "approved_availability_time_rule": null,
+      "approved_effective_time_rule": null,
+      "downstream_relation_count": 0,
+      "feature_role_counts": {
+        "blocked_no_observed_values": 18,
+        "blocked_safety_control": 2,
+        "join_key_only": 9,
+        "lineage_metadata": 4,
+        "point_in_time_metadata": 1,
+        "review_required": 44
+      },
+      "feature_source_approved": false,
+      "lineage_candidate_count": 6,
+      "lineage_candidates": [
+        {
+          "column": "cross_source_name_alignment",
+          "data_type": "BOOLEAN",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": 0.0,
+          "primitive_id": "duckdb:silver.brampton_permit_opportunity_unresolved.cross_source_name_alignment"
+        },
+        {
+          "column": "cross_source_name_conflict_present",
+          "data_type": "BOOLEAN",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": 0.0,
+          "primitive_id": "duckdb:silver.brampton_permit_opportunity_unresolved.cross_source_name_conflict_present"
+        },
+        {
+          "column": "current_directory_operational_at_snapshot",
+          "data_type": "BOOLEAN",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": 1.0,
+          "primitive_id": "duckdb:silver.brampton_permit_opportunity_unresolved.current_directory_operational_at_snapshot"
+        },
+        {
+          "column": "directory_source_record_id",
+          "data_type": "VARCHAR",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": 1.0,
+          "primitive_id": "duckdb:silver.brampton_permit_opportunity_unresolved.directory_source_record_id"
+        },
+        {
+          "column": "permit_source_record_id",
+          "data_type": "VARCHAR",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": 0.0,
+          "primitive_id": "duckdb:silver.brampton_permit_opportunity_unresolved.permit_source_record_id"
+        },
+        {
+          "column": "provisional_business_source",
+          "data_type": "VARCHAR",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": 1.0,
+          "primitive_id": "duckdb:silver.brampton_permit_opportunity_unresolved.provisional_business_source"
+        }
+      ],
+      "primitive_count": 78,
+      "relation": "duckdb:silver.brampton_permit_opportunity_unresolved",
+      "status": "review_multiple_temporal_candidates",
+      "temporal_candidate_count": 2,
+      "temporal_candidates": [
+        {
+          "column": "application_at_utc",
+          "data_type": "TIMESTAMP WITH TIME ZONE",
+          "maximum": "2026-07-23 00:00:00-04:00",
+          "minimum": "2026-04-28 00:00:00-04:00",
+          "null_ratio": 0.0,
+          "primitive_id": "duckdb:silver.brampton_permit_opportunity_unresolved.application_at_utc"
+        },
+        {
+          "column": "directory_as_of_timestamp",
+          "data_type": "TIMESTAMP WITH TIME ZONE",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": 1.0,
+          "primitive_id": "duckdb:silver.brampton_permit_opportunity_unresolved.directory_as_of_timestamp"
+        }
+      ],
+      "temporal_semantics_approved": false
+    },
+    {
+      "approved_as_of_column": null,
+      "approved_availability_time_rule": null,
+      "approved_effective_time_rule": null,
+      "downstream_relation_count": 0,
+      "feature_role_counts": {
+        "review_required": 5
+      },
+      "feature_source_approved": false,
+      "lineage_candidate_count": 0,
+      "lineage_candidates": [],
+      "primitive_count": 5,
+      "relation": "duckdb:silver.brampton_permit_signal_summary",
+      "status": "blocked_no_temporal_semantics",
+      "temporal_candidate_count": 0,
+      "temporal_candidates": [],
+      "temporal_semantics_approved": false
+    },
+    {
+      "approved_as_of_column": null,
+      "approved_availability_time_rule": null,
+      "approved_effective_time_rule": null,
+      "downstream_relation_count": 0,
+      "feature_role_counts": {
+        "blocked_no_observed_values": 3,
+        "blocked_potential_outcome_leakage": 1,
+        "blocked_safety_control": 4,
+        "join_key_only": 5,
+        "lineage_metadata": 2,
+        "point_in_time_metadata": 1,
+        "review_required": 17
+      },
+      "feature_source_approved": false,
+      "lineage_candidate_count": 3,
+      "lineage_candidates": [
+        {
+          "column": "evidence_source_type",
+          "data_type": "VARCHAR",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": 1.0,
+          "primitive_id": "duckdb:silver.brampton_permit_verification_queue.evidence_source_type"
+        },
+        {
+          "column": "permit_source_record_id",
+          "data_type": "VARCHAR",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": 0.0,
+          "primitive_id": "duckdb:silver.brampton_permit_verification_queue.permit_source_record_id"
+        },
+        {
+          "column": "provisional_business_source",
+          "data_type": "VARCHAR",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": 0.4,
+          "primitive_id": "duckdb:silver.brampton_permit_verification_queue.provisional_business_source"
+        }
+      ],
+      "primitive_count": 33,
+      "relation": "duckdb:silver.brampton_permit_verification_queue",
+      "status": "review_multiple_temporal_candidates",
+      "temporal_candidate_count": 2,
+      "temporal_candidates": [
+        {
+          "column": "application_at_utc",
+          "data_type": "TIMESTAMP WITH TIME ZONE",
+          "maximum": "2026-07-23 00:00:00-04:00",
+          "minimum": "2026-04-27 00:00:00-04:00",
+          "null_ratio": 0.0,
+          "primitive_id": "duckdb:silver.brampton_permit_verification_queue.application_at_utc"
+        },
+        {
+          "column": "reviewed_at",
+          "data_type": "TIMESTAMP WITH TIME ZONE",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": 1.0,
+          "primitive_id": "duckdb:silver.brampton_permit_verification_queue.reviewed_at"
+        }
+      ],
+      "temporal_semantics_approved": false
+    },
+    {
+      "approved_as_of_column": null,
+      "approved_availability_time_rule": null,
+      "approved_effective_time_rule": null,
+      "downstream_relation_count": 0,
+      "feature_role_counts": {
+        "blocked_potential_outcome_leakage": 1,
+        "join_key_only": 1,
+        "review_required": 5
+      },
+      "feature_source_approved": false,
+      "lineage_candidate_count": 0,
+      "lineage_candidates": [],
+      "primitive_count": 7,
+      "relation": "duckdb:silver.brampton_permit_verification_summary",
+      "status": "blocked_no_temporal_semantics",
+      "temporal_candidate_count": 0,
+      "temporal_candidates": [],
+      "temporal_semantics_approved": false
+    },
+    {
+      "approved_as_of_column": null,
+      "approved_availability_time_rule": null,
+      "approved_effective_time_rule": null,
+      "downstream_relation_count": 2,
+      "feature_role_counts": {
+        "blocked_no_observed_values": 3,
+        "blocked_potential_outcome_leakage": 1,
+        "blocked_safety_control": 4,
+        "join_key_only": 5,
+        "lineage_metadata": 2,
+        "point_in_time_metadata": 1,
+        "review_required": 17
+      },
+      "feature_source_approved": false,
+      "lineage_candidate_count": 3,
+      "lineage_candidates": [
+        {
+          "column": "evidence_source_type",
+          "data_type": "VARCHAR",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": 1.0,
+          "primitive_id": "duckdb:silver.brampton_permit_verification_tasks.evidence_source_type"
+        },
+        {
+          "column": "permit_source_record_id",
+          "data_type": "VARCHAR",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": 0.0,
+          "primitive_id": "duckdb:silver.brampton_permit_verification_tasks.permit_source_record_id"
+        },
+        {
+          "column": "provisional_business_source",
+          "data_type": "VARCHAR",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": 0.41379310344827586,
+          "primitive_id": "duckdb:silver.brampton_permit_verification_tasks.provisional_business_source"
+        }
+      ],
+      "primitive_count": 33,
+      "relation": "duckdb:silver.brampton_permit_verification_tasks",
+      "status": "review_multiple_temporal_candidates",
+      "temporal_candidate_count": 2,
+      "temporal_candidates": [
+        {
+          "column": "application_at_utc",
+          "data_type": "TIMESTAMP WITH TIME ZONE",
+          "maximum": "2026-07-23 00:00:00-04:00",
+          "minimum": "2026-04-27 00:00:00-04:00",
+          "null_ratio": 0.0,
+          "primitive_id": "duckdb:silver.brampton_permit_verification_tasks.application_at_utc"
+        },
+        {
+          "column": "reviewed_at",
+          "data_type": "TIMESTAMP WITH TIME ZONE",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": 1.0,
+          "primitive_id": "duckdb:silver.brampton_permit_verification_tasks.reviewed_at"
+        }
+      ],
+      "temporal_semantics_approved": false
+    },
+    {
+      "approved_as_of_column": null,
+      "approved_availability_time_rule": null,
+      "approved_effective_time_rule": null,
+      "downstream_relation_count": 0,
+      "feature_role_counts": {
+        "blocked_safety_control": 3,
+        "join_key_only": 2,
+        "lineage_metadata": 1,
+        "review_required": 15
+      },
+      "feature_source_approved": false,
+      "lineage_candidate_count": 2,
+      "lineage_candidates": [
+        {
+          "column": "permit_source_record_id",
+          "data_type": "VARCHAR",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": 0.0,
+          "primitive_id": "duckdb:silver.brampton_permit_verification_workflow.permit_source_record_id"
+        },
+        {
+          "column": "provisional_business_source",
+          "data_type": "VARCHAR",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": 0.4,
+          "primitive_id": "duckdb:silver.brampton_permit_verification_workflow.provisional_business_source"
+        }
+      ],
+      "primitive_count": 21,
+      "relation": "duckdb:silver.brampton_permit_verification_workflow",
+      "status": "review_temporal_semantics",
+      "temporal_candidate_count": 1,
+      "temporal_candidates": [
+        {
+          "column": "application_at_utc",
+          "data_type": "TIMESTAMP WITH TIME ZONE",
+          "maximum": "2026-07-23 00:00:00-04:00",
+          "minimum": "2026-04-27 00:00:00-04:00",
+          "null_ratio": 0.0,
+          "primitive_id": "duckdb:silver.brampton_permit_verification_workflow.application_at_utc"
+        }
+      ],
+      "temporal_semantics_approved": false
+    },
+    {
+      "approved_as_of_column": null,
+      "approved_availability_time_rule": null,
+      "approved_effective_time_rule": null,
+      "downstream_relation_count": 1,
+      "feature_role_counts": {
+        "join_key_only": 2,
+        "review_required": 28
+      },
+      "feature_source_approved": false,
+      "lineage_candidate_count": 0,
+      "lineage_candidates": [],
+      "primitive_count": 30,
+      "relation": "duckdb:silver.odbus_entities",
+      "status": "blocked_no_temporal_semantics",
+      "temporal_candidate_count": 0,
+      "temporal_candidates": [],
+      "temporal_semantics_approved": false
+    },
+    {
+      "approved_as_of_column": null,
+      "approved_availability_time_rule": null,
+      "approved_effective_time_rule": null,
+      "downstream_relation_count": 0,
+      "feature_role_counts": {
+        "blocked_no_observed_values": 1,
+        "join_key_only": 5,
+        "lineage_metadata": 6,
+        "point_in_time_metadata": 1,
+        "review_required": 40
+      },
+      "feature_source_approved": false,
+      "lineage_candidate_count": 10,
+      "lineage_candidates": [
+        {
+          "column": "bronze_run_id",
+          "data_type": "VARCHAR",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": 0.0,
+          "primitive_id": "duckdb:silver.odbus_entity_observations.bronze_run_id"
+        },
+        {
+          "column": "geo_source",
+          "data_type": "VARCHAR",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": 0.010694818188090802,
+          "primitive_id": "duckdb:silver.odbus_entity_observations.geo_source"
+        },
+        {
+          "column": "source_archive_sha256",
+          "data_type": "VARCHAR",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": 0.0,
+          "primitive_id": "duckdb:silver.odbus_entity_observations.source_archive_sha256"
+        },
+        {
+          "column": "source_id",
+          "data_type": "VARCHAR",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": 0.0,
+          "primitive_id": "duckdb:silver.odbus_entity_observations.source_id"
+        },
+        {
+          "column": "source_record_id",
+          "data_type": "VARCHAR",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": 0.0,
+          "primitive_id": "duckdb:silver.odbus_entity_observations.source_record_id"
+        },
+        {
+          "column": "source_release_date",
+          "data_type": "VARCHAR",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": 0.0,
+          "primitive_id": "duckdb:silver.odbus_entity_observations.source_release_date"
+        },
+        {
+          "column": "source_row_number",
+          "data_type": "BIGINT",
+          "maximum": 400372,
+          "minimum": 1755,
+          "null_ratio": 0.0,
+          "primitive_id": "duckdb:silver.odbus_entity_observations.source_row_number"
+        },
+        {
+          "column": "source_status_raw",
+          "data_type": "VARCHAR",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": 0.9996205064513903,
+          "primitive_id": "duckdb:silver.odbus_entity_observations.source_status_raw"
+        },
+        {
+          "column": "source_vintage_end",
+          "data_type": "VARCHAR",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": 0.0,
+          "primitive_id": "duckdb:silver.odbus_entity_observations.source_vintage_end"
+        },
+        {
+          "column": "source_vintage_start",
+          "data_type": "VARCHAR",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": 0.0,
+          "primitive_id": "duckdb:silver.odbus_entity_observations.source_vintage_start"
+        }
+      ],
+      "primitive_count": 53,
+      "relation": "duckdb:silver.odbus_entity_observations",
+      "status": "review_temporal_semantics",
+      "temporal_candidate_count": 1,
+      "temporal_candidates": [
+        {
+          "column": "source_release_date",
+          "data_type": "VARCHAR",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": 0.0,
+          "primitive_id": "duckdb:silver.odbus_entity_observations.source_release_date"
+        }
+      ],
+      "temporal_semantics_approved": false
+    },
+    {
+      "approved_as_of_column": null,
+      "approved_availability_time_rule": null,
+      "approved_effective_time_rule": null,
+      "downstream_relation_count": 0,
+      "feature_role_counts": {
+        "review_required": 4
+      },
+      "feature_source_approved": false,
+      "lineage_candidate_count": 0,
+      "lineage_candidates": [],
+      "primitive_count": 4,
+      "relation": "duckdb:silver.odbus_entity_resolution_summary",
+      "status": "blocked_no_temporal_semantics",
+      "temporal_candidate_count": 0,
+      "temporal_candidates": [],
+      "temporal_semantics_approved": false
+    },
+    {
+      "approved_as_of_column": null,
+      "approved_availability_time_rule": null,
+      "approved_effective_time_rule": null,
+      "downstream_relation_count": 1,
+      "feature_role_counts": {
+        "blocked_safety_control": 1,
+        "join_key_only": 1,
+        "review_required": 18
+      },
+      "feature_source_approved": false,
+      "lineage_candidate_count": 0,
+      "lineage_candidates": [],
+      "primitive_count": 20,
+      "relation": "duckdb:silver.odbus_industrial_entities",
+      "status": "blocked_no_temporal_semantics",
+      "temporal_candidate_count": 0,
+      "temporal_candidates": [],
+      "temporal_semantics_approved": false
+    },
+    {
+      "approved_as_of_column": null,
+      "approved_availability_time_rule": null,
+      "approved_effective_time_rule": null,
+      "downstream_relation_count": 0,
+      "feature_role_counts": {
+        "join_key_only": 2,
+        "review_required": 6
+      },
+      "feature_source_approved": false,
+      "lineage_candidate_count": 1,
+      "lineage_candidates": [
+        {
+          "column": "source_record_id",
+          "data_type": "VARCHAR",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": 0.0,
+          "primitive_id": "duckdb:silver.odbus_industrial_observation_evidence.source_record_id"
+        }
+      ],
+      "primitive_count": 8,
+      "relation": "duckdb:silver.odbus_industrial_observation_evidence",
+      "status": "blocked_no_temporal_semantics",
+      "temporal_candidate_count": 0,
+      "temporal_candidates": [],
+      "temporal_semantics_approved": false
+    },
+    {
+      "approved_as_of_column": null,
+      "approved_availability_time_rule": null,
+      "approved_effective_time_rule": null,
+      "downstream_relation_count": 0,
+      "feature_role_counts": {
+        "review_required": 6
+      },
+      "feature_source_approved": false,
+      "lineage_candidate_count": 0,
+      "lineage_candidates": [],
+      "primitive_count": 6,
+      "relation": "duckdb:silver.odbus_industrial_segment_summary",
+      "status": "blocked_no_temporal_semantics",
+      "temporal_candidate_count": 0,
+      "temporal_candidates": [],
+      "temporal_semantics_approved": false
+    },
+    {
+      "approved_as_of_column": null,
+      "approved_availability_time_rule": null,
+      "approved_effective_time_rule": null,
+      "downstream_relation_count": 1,
+      "feature_role_counts": {
+        "blocked_no_observed_values": 1,
+        "join_key_only": 3,
+        "lineage_metadata": 6,
+        "point_in_time_metadata": 1,
+        "review_required": 37
+      },
+      "feature_source_approved": false,
+      "lineage_candidate_count": 10,
+      "lineage_candidates": [
+        {
+          "column": "bronze_run_id",
+          "data_type": "VARCHAR",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": 0.0,
+          "primitive_id": "duckdb:silver.odbus_target_businesses.bronze_run_id"
+        },
+        {
+          "column": "geo_source",
+          "data_type": "VARCHAR",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": 0.010694818188090802,
+          "primitive_id": "duckdb:silver.odbus_target_businesses.geo_source"
+        },
+        {
+          "column": "source_archive_sha256",
+          "data_type": "VARCHAR",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": 0.0,
+          "primitive_id": "duckdb:silver.odbus_target_businesses.source_archive_sha256"
+        },
+        {
+          "column": "source_id",
+          "data_type": "VARCHAR",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": 0.0,
+          "primitive_id": "duckdb:silver.odbus_target_businesses.source_id"
+        },
+        {
+          "column": "source_record_id",
+          "data_type": "VARCHAR",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": 0.0,
+          "primitive_id": "duckdb:silver.odbus_target_businesses.source_record_id"
+        },
+        {
+          "column": "source_release_date",
+          "data_type": "VARCHAR",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": 0.0,
+          "primitive_id": "duckdb:silver.odbus_target_businesses.source_release_date"
+        },
+        {
+          "column": "source_row_number",
+          "data_type": "BIGINT",
+          "maximum": 400372,
+          "minimum": 1755,
+          "null_ratio": 0.0,
+          "primitive_id": "duckdb:silver.odbus_target_businesses.source_row_number"
+        },
+        {
+          "column": "source_status_raw",
+          "data_type": "VARCHAR",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": 0.9996205064513903,
+          "primitive_id": "duckdb:silver.odbus_target_businesses.source_status_raw"
+        },
+        {
+          "column": "source_vintage_end",
+          "data_type": "VARCHAR",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": 0.0,
+          "primitive_id": "duckdb:silver.odbus_target_businesses.source_vintage_end"
+        },
+        {
+          "column": "source_vintage_start",
+          "data_type": "VARCHAR",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": 0.0,
+          "primitive_id": "duckdb:silver.odbus_target_businesses.source_vintage_start"
+        }
+      ],
+      "primitive_count": 48,
+      "relation": "duckdb:silver.odbus_target_businesses",
+      "status": "review_temporal_semantics",
+      "temporal_candidate_count": 1,
+      "temporal_candidates": [
+        {
+          "column": "source_release_date",
+          "data_type": "VARCHAR",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": 0.0,
+          "primitive_id": "duckdb:silver.odbus_target_businesses.source_release_date"
+        }
+      ],
+      "temporal_semantics_approved": false
+    },
+    {
+      "approved_as_of_column": null,
+      "approved_availability_time_rule": null,
+      "approved_effective_time_rule": null,
+      "downstream_relation_count": 0,
+      "feature_role_counts": {
+        "review_required": 4
+      },
+      "feature_source_approved": false,
+      "lineage_candidate_count": 0,
+      "lineage_candidates": [],
+      "primitive_count": 4,
+      "relation": "duckdb:silver.odbus_target_summary",
+      "status": "blocked_no_temporal_semantics",
+      "temporal_candidate_count": 0,
+      "temporal_candidates": [],
+      "temporal_semantics_approved": false
+    },
+    {
+      "approved_as_of_column": null,
+      "approved_availability_time_rule": null,
+      "approved_effective_time_rule": null,
+      "downstream_relation_count": 0,
+      "feature_role_counts": {
+        "blocked_no_observed_values": 2,
+        "blocked_potential_outcome_leakage": 1,
+        "join_key_only": 1,
+        "point_in_time_metadata": 5,
+        "review_required": 5
+      },
+      "feature_source_approved": false,
+      "lineage_candidate_count": 2,
+      "lineage_candidates": [
+        {
+          "column": "source_id",
+          "data_type": "TEXT",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": 0.0,
+          "primitive_id": "sqlite:main.source_health.source_id"
+        },
+        {
+          "column": "updated_at",
+          "data_type": "TEXT",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": 0.0,
+          "primitive_id": "sqlite:main.source_health.updated_at"
+        }
+      ],
+      "primitive_count": 14,
+      "relation": "sqlite:main.source_health",
+      "status": "review_multiple_temporal_candidates",
+      "temporal_candidate_count": 6,
+      "temporal_candidates": [
+        {
+          "column": "last_attempt_at",
+          "data_type": "TEXT",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": 0.0,
+          "primitive_id": "sqlite:main.source_health.last_attempt_at"
+        },
+        {
+          "column": "last_change_at",
+          "data_type": "TEXT",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": 0.25,
+          "primitive_id": "sqlite:main.source_health.last_change_at"
+        },
+        {
+          "column": "last_failure_at",
+          "data_type": "TEXT",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": 1.0,
+          "primitive_id": "sqlite:main.source_health.last_failure_at"
+        },
+        {
+          "column": "last_success_at",
+          "data_type": "TEXT",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": 0.0,
+          "primitive_id": "sqlite:main.source_health.last_success_at"
+        },
+        {
+          "column": "next_due_at",
+          "data_type": "TEXT",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": 0.0,
+          "primitive_id": "sqlite:main.source_health.next_due_at"
+        },
+        {
+          "column": "updated_at",
+          "data_type": "TEXT",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": 0.0,
+          "primitive_id": "sqlite:main.source_health.updated_at"
+        }
+      ],
+      "temporal_semantics_approved": false
+    },
+    {
+      "approved_as_of_column": null,
+      "approved_availability_time_rule": null,
+      "approved_effective_time_rule": null,
+      "downstream_relation_count": 0,
+      "feature_role_counts": {
+        "join_key_only": 1,
+        "point_in_time_metadata": 2,
+        "review_required": 1
+      },
+      "feature_source_approved": false,
+      "lineage_candidate_count": 2,
+      "lineage_candidates": [
+        {
+          "column": "acquired_at",
+          "data_type": "TEXT",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": null,
+          "primitive_id": "sqlite:main.source_locks.acquired_at"
+        },
+        {
+          "column": "source_id",
+          "data_type": "TEXT",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": null,
+          "primitive_id": "sqlite:main.source_locks.source_id"
+        }
+      ],
+      "primitive_count": 4,
+      "relation": "sqlite:main.source_locks",
+      "status": "review_multiple_temporal_candidates",
+      "temporal_candidate_count": 2,
+      "temporal_candidates": [
+        {
+          "column": "acquired_at",
+          "data_type": "TEXT",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": null,
+          "primitive_id": "sqlite:main.source_locks.acquired_at"
+        },
+        {
+          "column": "expires_at",
+          "data_type": "TEXT",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": null,
+          "primitive_id": "sqlite:main.source_locks.expires_at"
+        }
+      ],
+      "temporal_semantics_approved": false
+    },
+    {
+      "approved_as_of_column": null,
+      "approved_availability_time_rule": null,
+      "approved_effective_time_rule": null,
+      "downstream_relation_count": 0,
+      "feature_role_counts": {
+        "blocked_no_observed_values": 4,
+        "join_key_only": 1,
+        "lineage_metadata": 2,
+        "point_in_time_metadata": 1,
+        "review_required": 6
+      },
+      "feature_source_approved": false,
+      "lineage_candidate_count": 3,
+      "lineage_candidates": [
+        {
+          "column": "parser_version",
+          "data_type": "TEXT",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": 0.0,
+          "primitive_id": "sqlite:main.source_operation_policies.parser_version"
+        },
+        {
+          "column": "schema_version",
+          "data_type": "TEXT",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": 0.0,
+          "primitive_id": "sqlite:main.source_operation_policies.schema_version"
+        },
+        {
+          "column": "source_id",
+          "data_type": "TEXT",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": 0.0,
+          "primitive_id": "sqlite:main.source_operation_policies.source_id"
+        }
+      ],
+      "primitive_count": 14,
+      "relation": "sqlite:main.source_operation_policies",
+      "status": "review_temporal_semantics",
+      "temporal_candidate_count": 1,
+      "temporal_candidates": [
+        {
+          "column": "configured_at",
+          "data_type": "TEXT",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": 0.0,
+          "primitive_id": "sqlite:main.source_operation_policies.configured_at"
+        }
+      ],
+      "temporal_semantics_approved": false
+    },
+    {
+      "approved_as_of_column": null,
+      "approved_availability_time_rule": null,
+      "approved_effective_time_rule": null,
+      "downstream_relation_count": 0,
+      "feature_role_counts": {
+        "join_key_only": 3,
+        "point_in_time_metadata": 1,
+        "review_required": 2
+      },
+      "feature_source_approved": false,
+      "lineage_candidate_count": 2,
+      "lineage_candidates": [
+        {
+          "column": "snapshot_id",
+          "data_type": "TEXT",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": null,
+          "primitive_id": "sqlite:main.source_quarantine_events.snapshot_id"
+        },
+        {
+          "column": "source_id",
+          "data_type": "TEXT",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": null,
+          "primitive_id": "sqlite:main.source_quarantine_events.source_id"
+        }
+      ],
+      "primitive_count": 6,
+      "relation": "sqlite:main.source_quarantine_events",
+      "status": "review_temporal_semantics",
+      "temporal_candidate_count": 1,
+      "temporal_candidates": [
+        {
+          "column": "occurred_at",
+          "data_type": "TEXT",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": null,
+          "primitive_id": "sqlite:main.source_quarantine_events.occurred_at"
+        }
+      ],
+      "temporal_semantics_approved": false
+    },
+    {
+      "approved_as_of_column": null,
+      "approved_availability_time_rule": null,
+      "approved_effective_time_rule": null,
+      "downstream_relation_count": 0,
+      "feature_role_counts": {
+        "join_key_only": 1,
+        "lineage_metadata": 1,
+        "point_in_time_metadata": 2,
+        "review_required": 6
+      },
+      "feature_source_approved": false,
+      "lineage_candidate_count": 4,
+      "lineage_candidates": [
+        {
+          "column": "created_at",
+          "data_type": "TEXT",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": 0.0,
+          "primitive_id": "sqlite:main.source_registry.created_at"
+        },
+        {
+          "column": "critical_source",
+          "data_type": "INTEGER",
+          "maximum": 0,
+          "minimum": 0,
+          "null_ratio": 0.0,
+          "primitive_id": "sqlite:main.source_registry.critical_source"
+        },
+        {
+          "column": "source_id",
+          "data_type": "TEXT",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": 0.0,
+          "primitive_id": "sqlite:main.source_registry.source_id"
+        },
+        {
+          "column": "updated_at",
+          "data_type": "TEXT",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": 0.0,
+          "primitive_id": "sqlite:main.source_registry.updated_at"
+        }
+      ],
+      "primitive_count": 10,
+      "relation": "sqlite:main.source_registry",
+      "status": "review_multiple_temporal_candidates",
+      "temporal_candidate_count": 2,
+      "temporal_candidates": [
+        {
+          "column": "created_at",
+          "data_type": "TEXT",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": 0.0,
+          "primitive_id": "sqlite:main.source_registry.created_at"
+        },
+        {
+          "column": "updated_at",
+          "data_type": "TEXT",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": 0.0,
+          "primitive_id": "sqlite:main.source_registry.updated_at"
+        }
+      ],
+      "temporal_semantics_approved": false
+    },
+    {
+      "approved_as_of_column": null,
+      "approved_availability_time_rule": null,
+      "approved_effective_time_rule": null,
+      "downstream_relation_count": 0,
+      "feature_role_counts": {
+        "join_key_only": 3,
+        "point_in_time_metadata": 1,
+        "review_required": 2
+      },
+      "feature_source_approved": false,
+      "lineage_candidate_count": 2,
+      "lineage_candidates": [
+        {
+          "column": "snapshot_id",
+          "data_type": "TEXT",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": null,
+          "primitive_id": "sqlite:main.source_replay_events.snapshot_id"
+        },
+        {
+          "column": "source_id",
+          "data_type": "TEXT",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": null,
+          "primitive_id": "sqlite:main.source_replay_events.source_id"
+        }
+      ],
+      "primitive_count": 6,
+      "relation": "sqlite:main.source_replay_events",
+      "status": "review_temporal_semantics",
+      "temporal_candidate_count": 1,
+      "temporal_candidates": [
+        {
+          "column": "occurred_at",
+          "data_type": "TEXT",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": null,
+          "primitive_id": "sqlite:main.source_replay_events.occurred_at"
+        }
+      ],
+      "temporal_semantics_approved": false
+    },
+    {
+      "approved_as_of_column": null,
+      "approved_availability_time_rule": null,
+      "approved_effective_time_rule": null,
+      "downstream_relation_count": 0,
+      "feature_role_counts": {
+        "blocked_no_observed_values": 2,
+        "join_key_only": 3,
+        "lineage_metadata": 1,
+        "point_in_time_metadata": 3,
+        "review_required": 7
+      },
+      "feature_source_approved": false,
+      "lineage_candidate_count": 4,
+      "lineage_candidates": [
+        {
+          "column": "manifest_path",
+          "data_type": "TEXT",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": 0.5,
+          "primitive_id": "sqlite:main.source_runs.manifest_path"
+        },
+        {
+          "column": "run_id",
+          "data_type": "TEXT",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": 0.0,
+          "primitive_id": "sqlite:main.source_runs.run_id"
+        },
+        {
+          "column": "schema_changed",
+          "data_type": "INTEGER",
+          "maximum": 0,
+          "minimum": 0,
+          "null_ratio": 0.0,
+          "primitive_id": "sqlite:main.source_runs.schema_changed"
+        },
+        {
+          "column": "source_id",
+          "data_type": "TEXT",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": 0.0,
+          "primitive_id": "sqlite:main.source_runs.source_id"
+        }
+      ],
+      "primitive_count": 16,
+      "relation": "sqlite:main.source_runs",
+      "status": "review_multiple_temporal_candidates",
+      "temporal_candidate_count": 3,
+      "temporal_candidates": [
+        {
+          "column": "as_of_timestamp",
+          "data_type": "TEXT",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": 0.0,
+          "primitive_id": "sqlite:main.source_runs.as_of_timestamp"
+        },
+        {
+          "column": "completed_at",
+          "data_type": "TEXT",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": 0.0,
+          "primitive_id": "sqlite:main.source_runs.completed_at"
+        },
+        {
+          "column": "started_at",
+          "data_type": "TEXT",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": 0.0,
+          "primitive_id": "sqlite:main.source_runs.started_at"
+        }
+      ],
+      "temporal_semantics_approved": false
+    },
+    {
+      "approved_as_of_column": null,
+      "approved_availability_time_rule": null,
+      "approved_effective_time_rule": null,
+      "downstream_relation_count": 0,
+      "feature_role_counts": {
+        "join_key_only": 4,
+        "point_in_time_metadata": 1,
+        "review_required": 3
+      },
+      "feature_source_approved": false,
+      "lineage_candidate_count": 3,
+      "lineage_candidates": [
+        {
+          "column": "run_id",
+          "data_type": "TEXT",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": null,
+          "primitive_id": "sqlite:main.source_runtime_events.run_id"
+        },
+        {
+          "column": "snapshot_id",
+          "data_type": "TEXT",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": null,
+          "primitive_id": "sqlite:main.source_runtime_events.snapshot_id"
+        },
+        {
+          "column": "source_id",
+          "data_type": "TEXT",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": null,
+          "primitive_id": "sqlite:main.source_runtime_events.source_id"
+        }
+      ],
+      "primitive_count": 8,
+      "relation": "sqlite:main.source_runtime_events",
+      "status": "review_temporal_semantics",
+      "temporal_candidate_count": 1,
+      "temporal_candidates": [
+        {
+          "column": "occurred_at",
+          "data_type": "TEXT",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": null,
+          "primitive_id": "sqlite:main.source_runtime_events.occurred_at"
+        }
+      ],
+      "temporal_semantics_approved": false
+    },
+    {
+      "approved_as_of_column": null,
+      "approved_availability_time_rule": null,
+      "approved_effective_time_rule": null,
+      "downstream_relation_count": 0,
+      "feature_role_counts": {
+        "blocked_no_observed_values": 3,
+        "join_key_only": 2,
+        "point_in_time_metadata": 4,
+        "review_required": 3
+      },
+      "feature_source_approved": false,
+      "lineage_candidate_count": 3,
+      "lineage_candidates": [
+        {
+          "column": "last_snapshot_id",
+          "data_type": "TEXT",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": 1.0,
+          "primitive_id": "sqlite:main.source_runtime_state.last_snapshot_id"
+        },
+        {
+          "column": "source_id",
+          "data_type": "TEXT",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": 0.0,
+          "primitive_id": "sqlite:main.source_runtime_state.source_id"
+        },
+        {
+          "column": "updated_at",
+          "data_type": "TEXT",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": 0.0,
+          "primitive_id": "sqlite:main.source_runtime_state.updated_at"
+        }
+      ],
+      "primitive_count": 12,
+      "relation": "sqlite:main.source_runtime_state",
+      "status": "review_multiple_temporal_candidates",
+      "temporal_candidate_count": 4,
+      "temporal_candidates": [
+        {
+          "column": "last_completed_at",
+          "data_type": "TEXT",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": 1.0,
+          "primitive_id": "sqlite:main.source_runtime_state.last_completed_at"
+        },
+        {
+          "column": "last_started_at",
+          "data_type": "TEXT",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": 1.0,
+          "primitive_id": "sqlite:main.source_runtime_state.last_started_at"
+        },
+        {
+          "column": "next_due_at",
+          "data_type": "TEXT",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": 1.0,
+          "primitive_id": "sqlite:main.source_runtime_state.next_due_at"
+        },
+        {
+          "column": "updated_at",
+          "data_type": "TEXT",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": 0.0,
+          "primitive_id": "sqlite:main.source_runtime_state.updated_at"
+        }
+      ],
+      "temporal_semantics_approved": false
+    },
+    {
+      "approved_as_of_column": null,
+      "approved_availability_time_rule": null,
+      "approved_effective_time_rule": null,
+      "downstream_relation_count": 0,
+      "feature_role_counts": {
+        "join_key_only": 2,
+        "point_in_time_metadata": 1,
+        "review_required": 3
+      },
+      "feature_source_approved": false,
+      "lineage_candidate_count": 1,
+      "lineage_candidates": [
+        {
+          "column": "source_id",
+          "data_type": "TEXT",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": null,
+          "primitive_id": "sqlite:main.source_schedule_events.source_id"
+        }
+      ],
+      "primitive_count": 6,
+      "relation": "sqlite:main.source_schedule_events",
+      "status": "review_temporal_semantics",
+      "temporal_candidate_count": 1,
+      "temporal_candidates": [
+        {
+          "column": "occurred_at",
+          "data_type": "TEXT",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": null,
+          "primitive_id": "sqlite:main.source_schedule_events.occurred_at"
+        }
+      ],
+      "temporal_semantics_approved": false
+    },
+    {
+      "approved_as_of_column": null,
+      "approved_availability_time_rule": null,
+      "approved_effective_time_rule": null,
+      "downstream_relation_count": 0,
+      "feature_role_counts": {
+        "join_key_only": 1,
+        "lineage_metadata": 1,
+        "point_in_time_metadata": 2,
+        "review_required": 3
+      },
+      "feature_source_approved": false,
+      "lineage_candidate_count": 2,
+      "lineage_candidates": [
+        {
+          "column": "schema_fingerprint",
+          "data_type": "TEXT",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": 0.0,
+          "primitive_id": "sqlite:main.source_schema_versions.schema_fingerprint"
+        },
+        {
+          "column": "source_id",
+          "data_type": "TEXT",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": 0.0,
+          "primitive_id": "sqlite:main.source_schema_versions.source_id"
+        }
+      ],
+      "primitive_count": 7,
+      "relation": "sqlite:main.source_schema_versions",
+      "status": "review_multiple_temporal_candidates",
+      "temporal_candidate_count": 2,
+      "temporal_candidates": [
+        {
+          "column": "first_seen_at",
+          "data_type": "TEXT",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": 0.0,
+          "primitive_id": "sqlite:main.source_schema_versions.first_seen_at"
+        },
+        {
+          "column": "last_seen_at",
+          "data_type": "TEXT",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": 0.0,
+          "primitive_id": "sqlite:main.source_schema_versions.last_seen_at"
+        }
+      ],
+      "temporal_semantics_approved": false
+    },
+    {
+      "approved_as_of_column": null,
+      "approved_availability_time_rule": null,
+      "approved_effective_time_rule": null,
+      "downstream_relation_count": 0,
+      "feature_role_counts": {
+        "join_key_only": 3,
+        "point_in_time_metadata": 1,
+        "review_required": 2
+      },
+      "feature_source_approved": false,
+      "lineage_candidate_count": 2,
+      "lineage_candidates": [
+        {
+          "column": "snapshot_id",
+          "data_type": "TEXT",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": null,
+          "primitive_id": "sqlite:main.source_snapshot_events.snapshot_id"
+        },
+        {
+          "column": "source_id",
+          "data_type": "TEXT",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": null,
+          "primitive_id": "sqlite:main.source_snapshot_events.source_id"
+        }
+      ],
+      "primitive_count": 6,
+      "relation": "sqlite:main.source_snapshot_events",
+      "status": "review_temporal_semantics",
+      "temporal_candidate_count": 1,
+      "temporal_candidates": [
+        {
+          "column": "occurred_at",
+          "data_type": "TEXT",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": null,
+          "primitive_id": "sqlite:main.source_snapshot_events.occurred_at"
+        }
+      ],
+      "temporal_semantics_approved": false
+    },
+    {
+      "approved_as_of_column": null,
+      "approved_availability_time_rule": null,
+      "approved_effective_time_rule": null,
+      "downstream_relation_count": 0,
+      "feature_role_counts": {
+        "join_key_only": 4,
+        "lineage_metadata": 3,
+        "point_in_time_metadata": 2,
+        "review_required": 5
+      },
+      "feature_source_approved": false,
+      "lineage_candidate_count": 8,
+      "lineage_candidates": [
+        {
+          "column": "acquired_at",
+          "data_type": "TEXT",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": null,
+          "primitive_id": "sqlite:main.source_snapshots.acquired_at"
+        },
+        {
+          "column": "content_sha256",
+          "data_type": "TEXT",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": null,
+          "primitive_id": "sqlite:main.source_snapshots.content_sha256"
+        },
+        {
+          "column": "observed_at",
+          "data_type": "TEXT",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": null,
+          "primitive_id": "sqlite:main.source_snapshots.observed_at"
+        },
+        {
+          "column": "parent_snapshot_id",
+          "data_type": "TEXT",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": null,
+          "primitive_id": "sqlite:main.source_snapshots.parent_snapshot_id"
+        },
+        {
+          "column": "parser_version",
+          "data_type": "TEXT",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": null,
+          "primitive_id": "sqlite:main.source_snapshots.parser_version"
+        },
+        {
+          "column": "schema_version",
+          "data_type": "TEXT",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": null,
+          "primitive_id": "sqlite:main.source_snapshots.schema_version"
+        },
+        {
+          "column": "snapshot_id",
+          "data_type": "TEXT",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": null,
+          "primitive_id": "sqlite:main.source_snapshots.snapshot_id"
+        },
+        {
+          "column": "source_id",
+          "data_type": "TEXT",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": null,
+          "primitive_id": "sqlite:main.source_snapshots.source_id"
+        }
+      ],
+      "primitive_count": 14,
+      "relation": "sqlite:main.source_snapshots",
+      "status": "review_multiple_temporal_candidates",
+      "temporal_candidate_count": 2,
+      "temporal_candidates": [
+        {
+          "column": "acquired_at",
+          "data_type": "TEXT",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": null,
+          "primitive_id": "sqlite:main.source_snapshots.acquired_at"
+        },
+        {
+          "column": "observed_at",
+          "data_type": "TEXT",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": null,
+          "primitive_id": "sqlite:main.source_snapshots.observed_at"
+        }
+      ],
+      "temporal_semantics_approved": false
+    },
+    {
+      "approved_as_of_column": null,
+      "approved_availability_time_rule": null,
+      "approved_effective_time_rule": null,
+      "downstream_relation_count": 0,
+      "feature_role_counts": {
+        "blocked_potential_outcome_leakage": 1,
+        "join_key_only": 6,
+        "lineage_metadata": 1,
+        "point_in_time_metadata": 2,
+        "review_required": 9
+      },
+      "feature_source_approved": false,
+      "lineage_candidate_count": 4,
+      "lineage_candidates": [
+        {
+          "column": "chain_hash",
+          "data_type": "TEXT",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": null,
+          "primitive_id": "sqlite:main.verification_events.chain_hash"
+        },
+        {
+          "column": "evidence_source_type",
+          "data_type": "TEXT",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": null,
+          "primitive_id": "sqlite:main.verification_events.evidence_source_type"
+        },
+        {
+          "column": "permit_source_record_id",
+          "data_type": "TEXT",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": null,
+          "primitive_id": "sqlite:main.verification_events.permit_source_record_id"
+        },
+        {
+          "column": "previous_chain_hash",
+          "data_type": "TEXT",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": null,
+          "primitive_id": "sqlite:main.verification_events.previous_chain_hash"
+        }
+      ],
+      "primitive_count": 19,
+      "relation": "sqlite:main.verification_events",
+      "status": "review_multiple_temporal_candidates",
+      "temporal_candidate_count": 2,
+      "temporal_candidates": [
+        {
+          "column": "occurred_at",
+          "data_type": "TEXT",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": null,
+          "primitive_id": "sqlite:main.verification_events.occurred_at"
+        },
+        {
+          "column": "recorded_at",
+          "data_type": "TEXT",
+          "maximum": null,
+          "minimum": null,
+          "null_ratio": null,
+          "primitive_id": "sqlite:main.verification_events.recorded_at"
+        }
+      ],
+      "temporal_semantics_approved": false
+    }
+  ],
+  "review_ready": true,
+  "status_counts": {
+    "blocked_no_temporal_semantics": 15,
+    "review_multiple_temporal_candidates": 20,
+    "review_temporal_semantics": 18
+  }
+}

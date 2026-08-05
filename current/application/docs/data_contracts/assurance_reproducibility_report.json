@@ -1,0 +1,10 @@
+{
+  "build_count": 2,
+  "database_access_count": 0,
+  "database_write_count": 0,
+  "first_build_digest": "313104b1ae84e04c9f4123012cc94b3cbe97e5ffe1788eac313d1e6627e06e8b",
+  "input_mutation_count": 0,
+  "model_version": "cre-foundry-assurance-reproducibility-v1",
+  "reproducibility_match": true,
+  "second_build_digest": "313104b1ae84e04c9f4123012cc94b3cbe97e5ffe1788eac313d1e6627e06e8b"
+}

@@ -1,0 +1,5 @@
+{
+  "case_id": "common-asof-divergence",
+  "mutation_id": "common_asof_divergence",
+  "expected_diagnostic": "OUTCOMES-ROUTE-DAY-ASOF-MISMATCH"
+}

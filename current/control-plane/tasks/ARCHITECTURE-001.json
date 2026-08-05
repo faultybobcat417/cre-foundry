@@ -1,0 +1,20 @@
+{
+  "task_id": "ARCHITECTURE-001",
+  "title": "Replaceable application and representative-workflow boundaries",
+  "status": "in_progress",
+  "objective": "Harden the thin slice into replaceable application/module/API boundaries and a representative workflow that cannot bypass policy, protection, lineage, abstention, or idempotent issuance.",
+  "business_reason": "The connected slice now exposes the minimum interfaces that can be hardened without prematurely expanding every subsystem.",
+  "dependencies": ["VERTICAL-001"],
+  "gates": ["GATE-MANUAL-REVIEW-AUTHORITY-001", "GATE-LIVE-WORKFLOW-AUTHORITY-001", "GATE-ACCESSIBILITY-EMPIRICAL-VALIDATION-001", "GATE-REPRESENTATIVE-USABILITY-001", "GATE-PRODUCTION-DEPLOYMENT-001"],
+  "inputs": ["VERTICAL-001 schemas, builder, evaluator, and replay receipt", "mission invariants", "proof and capability boundaries"],
+  "assumptions": [],
+  "non_goals": ["claim representative usability", "deploy or publish", "enable live issuance or outreach", "choose production infrastructure without evidence", "calibrate real routes"],
+  "writable_roots": ["src", "contracts", "evals/public", "evals/known_bad/frontier", "artifacts/architecture", "artifacts/evaluations", "docs/architecture", "scripts", "tasks", "control"],
+  "required_expertise": ["product_architecture", "api_contracts", "workflow_state_machines", "accessibility", "testing_verification"],
+  "evaluator": ["freeze boundary and workflow evaluator before material implementation", "state-machine and API contract tests", "manual-bypass, duplicate-issuance, abstention, accessibility, and error-path mutations"],
+  "known_bad_cases": ["manual edit bypasses eligibility", "duplicate route issuance", "abstention reason hidden", "lineage dropped across API boundary", "live action enabled by default", "partial failure leaves ambiguous state"],
+  "acceptance": ["replaceable boundaries preserve exact-ten-or-abstain and lineage", "all write-like workflow transitions are idempotent and fail closed", "manual review cannot silently change Stage 1", "synthetic product workflow reaches public proof level 4 without usability or production claims", "every registered mutation is rejected"],
+  "artifacts": ["artifacts/architecture/ARCHITECTURE-001-start.json", "artifacts/architecture/public_evaluator_contract.json", "docs/architecture/BOUNDARIES.md", "scripts/validate_architecture.py", "artifacts/evaluations/architecture.json", "artifacts/task-results/ARCHITECTURE-001.json"],
+  "rollback": "Remove the application/workflow layer and return to the validated VERTICAL-001 executable interfaces; no live effect exists.",
+  "stop_budget": "Remain local, synthetic, and non-influencing; keep deployment, publication, credentials, representative authority, and live actions behind existing gates."
+}

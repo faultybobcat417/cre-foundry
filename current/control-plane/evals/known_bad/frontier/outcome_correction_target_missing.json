@@ -1,0 +1,5 @@
+{
+  "case_id": "correction-target-missing",
+  "mutation_id": "correction_target_missing",
+  "expected_diagnostic": "OUTCOMES-CORRECTION-ASSERTION-LINEAGE"
+}

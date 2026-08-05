@@ -1,0 +1,46 @@
+{
+  "artifact_id": "OUTCOMES-001-CAPABILITY-CLASSIFICATION-RECONCILIATION",
+  "schema_version": "1.0.0",
+  "task_id": "OUTCOMES-001",
+  "authority": "bootstrap/project_os_v2.2/CRE_Codex_Project_OS_v2.2/launch_kernel/kernel/CAPABILITY_BOUNDARY.json",
+  "classifications": [
+    {
+      "input": "synthetic schemas, deterministic projections, public evaluator, mutations, replay receipts, and ITT inclusion mechanics",
+      "classification": "CODEX_DERIVABLE",
+      "disposition": "implemented and evaluated only in SYNTHETIC_NON_INFLUENCING scope"
+    },
+    {
+      "input": "real F9 predicate, window anchor/horizon/endpoints/grace, censoring and competing-event taxonomy, correction policy, adjudication standard, firm service policy, risk preferences, and decision economics",
+      "classification": "HUMAN_AUTHORITATIVE",
+      "gates": ["GATE-F9-OUTCOME-POLICY-AUTHORITY-001", "GATE-OUTCOME-ADJUDICATION-CUSTODY-001", "firm_economics_services_territories"]
+    },
+    {
+      "input": "CRM, booking, attendance, mandate, transaction, commission, cost, referral, repeat-value, and route/field records",
+      "classification": "ACCESS_DEPENDENT",
+      "gates": ["GATE-OUTCOME-LABELS-MATURITY-001", "approved_source_envelope"]
+    },
+    {
+      "input": "outcome maturity distribution, adjudicated label quality, baseline F9 rate, predictive validity, incremental lift, downstream funnel, and realized commercial value",
+      "classification": "EMPIRICAL_ONLY",
+      "gates": ["GATE-OUTCOME-MATURITY-EVIDENCE-001", "GATE-EXPERIMENT-PROTOCOL-001", "GATE-FULL-EXTERNAL-EVIDENCE-001"]
+    },
+    {
+      "input": "sealed adversarial cases and a truly external hidden holdout",
+      "classification": "EXTERNALLY_HIDDEN",
+      "gates": ["GATE-SEALED-EVALUATOR-CUSTODY-001", "GATE-HIDDEN-HOLDOUT-OWNER-001"]
+    }
+  ],
+  "reconciled_checkpoint_ambiguities": [
+    {
+      "path": "artifacts/outcomes/OUTCOMES-001-start.json",
+      "ambiguity": "Commission and cost inputs were grouped with empirical-only claims.",
+      "resolution": "Record access is ACCESS_DEPENDENT; firm cost/service/risk policy is HUMAN_AUTHORITATIVE; realized value and lift are EMPIRICAL_ONLY."
+    },
+    {
+      "path": "artifacts/outcomes/OUTCOMES-001-start.json",
+      "ambiguity": "Independent historical adjudication was grouped with externally hidden evaluation.",
+      "resolution": "Adjudication policy/custody is HUMAN_AUTHORITATIVE, historical records are ACCESS_DEPENDENT, measured maturity/accuracy is EMPIRICAL_ONLY, and only separately custodied sealed/hidden evaluation is EXTERNALLY_HIDDEN."
+    }
+  ],
+  "claim_ceiling": "Classification reconciliation only; no authority, access, empirical result, sealed custody, or hidden-holdout ownership is granted."
+}

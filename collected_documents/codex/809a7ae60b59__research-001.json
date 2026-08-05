@@ -1,0 +1,138 @@
+{
+  "task_id": "RESEARCH-001",
+  "status": "completed",
+  "objective": "Close decision-changing public source and mechanism gaps, preserve canonical research and proof-claim meanings, produce independently replayable evidence and field contracts, and convert every remaining unknown into a registered gate or experiment.",
+  "state_transition": {
+    "from": "RESEARCH-001_in_progress_public_research_completion",
+    "to": "RESEARCH-001_completed_MATH-001_in_progress",
+    "reason": "Strict research and source-definition evaluators pass; nine real artifact-copy mutants fail; exact-byte builder and independent evidence is retained; two independent final sweeps accept closure at proof level 2; level-5 authorized sampling remains explicitly gated."
+  },
+  "files_changed": [
+    "artifacts/research/claim_evidence_graph.json",
+    "artifacts/research/counterevidence_register.json",
+    "artifacts/research/source_feasibility_registry.json",
+    "artifacts/research/canonical_field_map.json",
+    "artifacts/research/source_reproduction_report.json",
+    "artifacts/research/research_completion_report.json",
+    "artifacts/research/bundle_manifest.json",
+    "artifacts/research/raw/manifest.json",
+    "artifacts/research/raw/independent/capture_manifest.json",
+    "artifacts/research/raw/row_witness/capture_manifest.json",
+    "contracts/research/claim_evidence_graph.schema.json",
+    "contracts/research/counterevidence_register.schema.json",
+    "contracts/research/source_feasibility_registry.schema.json",
+    "contracts/research/canonical_field_map.schema.json",
+    "contracts/research/source_reproduction_report.schema.json",
+    "scripts/validate_research_completion.py",
+    "scripts/run_research_mutation.py",
+    "scripts/validate_source_feasibility.py",
+    "scripts/capture_public_research_evidence.py",
+    "scripts/import_independent_research_capture.py",
+    "scripts/import_independent_row_witness.py",
+    "evals/public/test_research_completion.py",
+    "evals/known_bad/frontier/research_brand_as_location.json",
+    "evals/known_bad/frontier/research_current_as_historical.json",
+    "evals/known_bad/frontier/research_inference_as_fact.json",
+    "evals/known_bad/frontier/research_metadata_as_access.json",
+    "evals/known_bad/frontier/research_ontario_multi_address.json",
+    "evals/known_bad/frontier/research_retrieved_as_authority.json",
+    "evals/known_bad/frontier/research_toronto_sysid_conflict.json",
+    "evals/known_bad/frontier/source_mutable_as_snapshot.json",
+    "evals/known_bad/frontier/source_unspecified_licence.json",
+    "control/AUTONOMOUS_FRONTIER_CONTRACT.json",
+    "control/GATES.json",
+    "control/TASK_GRAPH.json",
+    "control/CURRENT_STATE.json",
+    "control/CURRENT_TASK.json",
+    "tasks/RESEARCH-001.json",
+    "tasks/MATH-001.json"
+  ],
+  "commands": [
+    {"command": ".venv/bin/python scripts/capture_public_research_evidence.py --observed-at 2026-08-02T01:36:04Z", "exit_code": 0, "artifact": "artifacts/research/raw/manifest.json"},
+    {"command": ".venv/bin/python scripts/import_independent_research_capture.py /tmp/cre-independent-research-z2cwv3sr", "exit_code": 0, "artifact": "artifacts/research/raw/independent/capture_manifest.json"},
+    {"command": ".venv/bin/python scripts/import_independent_row_witness.py /tmp/cre-independent-row-witness-mja24u2d", "exit_code": 0, "artifact": "artifacts/research/raw/row_witness/capture_manifest.json"},
+    {"command": ".venv/bin/python scripts/build_research_contract.py", "exit_code": 0, "artifact": "artifacts/research/claim_evidence_graph.json"},
+    {"command": ".venv/bin/python scripts/finalize_research_bundle.py", "exit_code": 0, "artifact": "artifacts/research/research_completion_report.json"},
+    {"command": ".venv/bin/python scripts/validate_research_completion.py", "exit_code": 0, "artifact": "artifacts/research/research_completion_report.json"},
+    {"command": ".venv/bin/python scripts/validate_source_feasibility.py", "exit_code": 0, "artifact": "artifacts/research/source_reproduction_report.json"},
+    {"command": ".venv/bin/python -m unittest discover -s evals/public -p 'test_*.py'", "exit_code": 0, "artifact": null},
+    {"command": ".venv/bin/python scripts/validate_control_plane.py", "exit_code": 0, "artifact": null},
+    {"command": ".venv/bin/python scripts/evaluate_autonomous_frontier.py --report artifacts/evaluations/autonomous_frontier_report.json", "exit_code": 1, "artifact": "artifacts/evaluations/autonomous_frontier_report.json"}
+  ],
+  "evaluations": [
+    {"name": "strict artifact schemas", "passed": true, "proof": "Five Draft 2020-12 schemas reject extra fields and constrain all canonical artifacts."},
+    {"name": "canonical authority reconciliation", "passed": true, "proof": "Exact RQ-001..RQ-012 and CLM-001..CLM-007 text, class, lane, proof level, and evidence requirement match kernel authorities."},
+    {"name": "public source reproduction", "passed": true, "proof": "Nine independent exact HTTP captures plus narrow Ontario/Toronto witnesses are retained and hash-bound."},
+    {"name": "research mutation suite", "passed": true, "proof": "Seven semantic artifact-copy mutations are detected by the normal validator and repaired copies pass."},
+    {"name": "source-feasibility mutation suite", "passed": true, "proof": "Unspecified-licence and mutable-history mutants are detected through the normal source validator."},
+    {"name": "public test suite", "passed": true, "proof": "34/34 tests pass, including evaluator anti-recognition and prior independent-review regressions."},
+    {"name": "frontier gate evaluation", "passed": true, "proof": "AF-RESEARCH-CLOSURE-001 base PASS with seven known-bads; AF-SOURCE-FEASIBILITY-001 base BLOCKED_EXTERNAL with autonomous checks passing and two known-bads."},
+    {"name": "independent repository-truth acceptance", "passed": true, "proof": "Confirmed control, task, gate, bundle, and source-feasibility consistency and approved proof-level-2 closure."},
+    {"name": "independent public-source acceptance", "passed": true, "proof": "Confirmed all 18 imported bodies, bounded witness wording, gate set, and row-evidence scopes; recommended closure."}
+  ],
+  "expertise_coverage": [
+    {"domain": "research_methods", "state": "ACTIVE", "reason": "Owned classification, evidence ceilings, counterevidence, and completion protocol."},
+    {"domain": "source_intelligence", "state": "ACTIVE", "reason": "Reproduced official metadata, schema, terms, clocks, grains, and narrow counterexamples."},
+    {"domain": "testing_verification", "state": "ACTIVE", "reason": "Built strict schemas, shared validation, real mutation protocols, and regression tests."},
+    {"domain": "identity_temporal", "state": "ACTIVE", "reason": "Preserved resource-scoped observations, candidate identities, conflict adjudication, and distinct clocks."},
+    {"domain": "cre_strategy", "state": "CONSULT", "reason": "Mapped sources to Stage-1 decisions without promoting coverage or business-value claims."},
+    {"domain": "security_governance", "state": "CONSULT", "reason": "Separated OGL permissions from repository authority, privacy, retention, and live-use approval."},
+    {"domain": "statistics_probability", "state": "CONSULT", "reason": "Converted association and lift unknowns into falsifiable experiments for MATH-001 and later empirical work."},
+    {"domain": "economics", "state": "CONSULT", "reason": "Kept firm thresholds and realized value human-authoritative or empirical."}
+  ],
+  "agents_used": [
+    "root sole repository writer and integrator",
+    "research_public_sources independent official-source capture and provenance reviewer",
+    "repo_truth_review independent authority, schema, gate, task, and closure reviewer",
+    "evaluator_review independent evaluator design and first adversarial sweep"
+  ],
+  "alternatives": [
+    {"decision": "claim model", "options": ["repurpose CLM IDs for source facts", "preserve canonical mission claims and attach bounded evidence", "create unregistered parallel claims"], "selected": "preserve canonical mission claims and attach bounded evidence", "reason": "Only this preserves kernel authority and proof ceilings."},
+    {"decision": "reproduction evidence", "options": ["builder-only canonical JSON", "duplicate role labels", "independent exact HTTP capture plus retained-byte review"], "selected": "independent exact HTTP capture plus retained-byte review", "reason": "Provides replayable provenance without overstating builder HTTP metadata."},
+    {"decision": "row witnesses", "options": ["drop all multiplicity/conflict evidence", "broad row dump", "narrow aggregate and two-row counterexample capture"], "selected": "narrow aggregate and two-row counterexample capture", "reason": "Proves the shortcut failures with minimum data and no coverage claim."},
+    {"decision": "source closure", "options": ["claim level-5 readiness", "block all research on external approval", "close autonomous level 2 and keep level 5 externally gated"], "selected": "close autonomous level 2 and keep level 5 externally gated", "reason": "Matches the dual-axis proof contract."}
+  ],
+  "findings": [
+    {"id": "R001-F01", "finding": "Current Ontario/Toronto sources do not establish a complete historical eligible-establishment universe."},
+    {"id": "R001-F02", "finding": "One Ontario licence has 175 distinct raw addresses; licence and brand must not identify a physical location."},
+    {"id": "R001-F03", "finding": "Toronto normalized SYS_ID 3209741 has materially non-equivalent resource-scoped observations; silent deduplication is invalid."},
+    {"id": "R001-F04", "finding": "Current annual partitions do not prove contemporaneous historical publication."},
+    {"id": "R001-F05", "finding": "OGL reuse terms do not grant repository credentials, handling, retention, spending, or live-use authority."},
+    {"id": "R001-F06", "finding": "Authorized representative samples, coverage, identity accuracy, lift, feasibility, causal effect, and commercial value remain unproven."}
+  ],
+  "assumptions": [
+    "Official public endpoints are mutable; retained hashes prove only the captured bytes at their recorded observation times.",
+    "Narrow public counterexamples are used only to reject unsafe identity shortcuts, not as representative samples."
+  ],
+  "decisions": [
+    "Preserve kernel claim IDs and exact meanings.",
+    "Treat public source evidence as proof level 2 source-definition readiness only.",
+    "Keep operational source access and representative samples behind approved_source_envelope.",
+    "Require exact registered gates or falsifiable experiments for every unresolved research question.",
+    "Advance to the formal exactly-ten-or-abstain mathematical contract before horizontal subsystem implementation."
+  ],
+  "risks": [
+    "Public endpoints and terms may change after the retained snapshot.",
+    "Narrow conflict witnesses do not estimate prevalence or universe coverage.",
+    "No historical point-in-time, entity-truth, protected-account, route, outcome, economics, or live-use evidence exists yet.",
+    "Global frontier remains FAIL because upstream mission/vertical evidence is absent and MATH-001 is executable."
+  ],
+  "gates": [
+    "approved_source_envelope",
+    "GATE-PUBLICATION-HISTORY-001",
+    "GATE-ENTITY-TRUTH-001",
+    "GATE-OUTCOME-LABELS-MATURITY-001",
+    "firm_economics_services_territories",
+    "representative_origins_capacity_specialties",
+    "GATE-FULL-EXTERNAL-EVIDENCE-001"
+  ],
+  "proof_level": 2,
+  "artifacts": [
+    {"path": "artifacts/research/research_completion_report.json", "result": "PASS"},
+    {"path": "artifacts/research/bundle_manifest.json", "sha256": "542ee9dc23b5d2959f7bd738f57a95a35c45f4983efad45c1bad079fe6098946"},
+    {"path": "artifacts/research/source_reproduction_report.json", "result": "pass"},
+    {"path": "artifacts/evaluations/autonomous_frontier_report.json", "result": "FAIL", "research_base": "PASS", "source_base": "BLOCKED_EXTERNAL"}
+  ],
+  "rollback": "Revert the RESEARCH-001 checkpoints, restore the preceding source registry and graph, quarantine any evidence whose bytes or terms drift, and return RESEARCH-001 to in_progress without weakening gates or evaluators.",
+  "next_action": "Begin MATH-001 by compiling its task context, classifying mathematical expertise, and defining the public oracle evaluator before implementing the exact-ten-or-abstain reference policy."
+}

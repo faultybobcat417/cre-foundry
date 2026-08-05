@@ -1,0 +1,19 @@
+{
+  "config_version": "cre-foundry-data-health-v1",
+  "policy": {
+    "operating_mode": "shadow",
+    "read_only": true,
+    "automatic_schema_mutation": false,
+    "automatic_backfill": false,
+    "automatic_acquisition": false,
+    "automatic_conclusions": false,
+    "opportunity_ranked": false,
+    "outreach_eligible": false
+  },
+  "priority_mapping": {
+    "critical": "P0",
+    "high": "P1",
+    "medium": "P2",
+    "low": "P3"
+  }
+}

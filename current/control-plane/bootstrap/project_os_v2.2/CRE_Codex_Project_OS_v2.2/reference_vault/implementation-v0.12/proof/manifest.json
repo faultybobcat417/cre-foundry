@@ -1,0 +1,478 @@
+{
+  "manifest_version": "cre-proof-manifest-v1",
+  "generated_at": "2026-08-01T08:33:37.286927+00:00",
+  "files": [
+    {
+      "path": "CODEX_MASTER_PROMPT.md",
+      "sha256": "8935fb4c32519d08200e8ce1281384039b7b638293e6a927ce2fd9093366f328",
+      "bytes": 6709
+    },
+    {
+      "path": "contracts/backup_substitution_policy.json",
+      "sha256": "7cd21357412f46fea87d7158a2cd527ae83d365b2eb7a6faaeadbd11d0a25209",
+      "bytes": 1068
+    },
+    {
+      "path": "contracts/benchmark_coverage_universe.json",
+      "sha256": "89dc30573d743356f5b16756692fd19b7d2e50b52eb5d02e9fb3c6220878b6c8",
+      "bytes": 7651
+    },
+    {
+      "path": "contracts/benchmark_crosswalk.json",
+      "sha256": "54ef126560419155de353f075ed9be633f8715636f2e05d02418d86c1ec2e69f",
+      "bytes": 11542
+    },
+    {
+      "path": "contracts/canonical_data_product_registry.json",
+      "sha256": "68152b4b2981b534755cf127ac216da10cf4291ed22885ca0c6b58536bb29a29",
+      "bytes": 19238
+    },
+    {
+      "path": "contracts/canonical_glossary.json",
+      "sha256": "d0daa6ecfa5013cf418d4b999b2aa1053ca6e2c6e7013e9e0c16a419ae3cc32b",
+      "bytes": 6276
+    },
+    {
+      "path": "contracts/change_migration_backfill_policy_v2.json",
+      "sha256": "553404622712b5e20f853c8409636c1bfd5e44d40b0c2371e9b6384c4ae58b70",
+      "bytes": 1654
+    },
+    {
+      "path": "contracts/claim_registry.json",
+      "sha256": "928ca7ca9292bd378a3d45de8a8c14e953b90f0e334b2543bf78640d43ac760f",
+      "bytes": 1851
+    },
+    {
+      "path": "contracts/codex_launch_context.json",
+      "sha256": "12aabfc3cba67f036583a32d098baa9e145d642df1014b54ce0897f5a42fdc46",
+      "bytes": 2613
+    },
+    {
+      "path": "contracts/codex_milestone_acceptance_plan.json",
+      "sha256": "7c5ba54a42013e99376f5f1278c2d5c27f5fe3fea1c19f624e5697c9b5107b9a",
+      "bytes": 15600
+    },
+    {
+      "path": "contracts/codex_reading_order.json",
+      "sha256": "798d923517ad071f069c594e8ec571ebda7670181f587b573535215b1045a4c3",
+      "bytes": 4276
+    },
+    {
+      "path": "contracts/conformance_suite.json",
+      "sha256": "4a15ec0a3d22a0baddab4f137c3ab398fcd49611acc9284ffeaf28ece73de2e2",
+      "bytes": 109894
+    },
+    {
+      "path": "contracts/daily_list_composition_policy.json",
+      "sha256": "932625ad778caf1d458e1e7a427b73a5a8f6f83e1ffb3d0c9635da2c5aaba663",
+      "bytes": 2477
+    },
+    {
+      "path": "contracts/deployment_profile_contract_v2.json",
+      "sha256": "2fcd5371c15c917826194908206f075a05a2859c74fa29d73951b8aaf3cf854d",
+      "bytes": 2674
+    },
+    {
+      "path": "contracts/evaluator_escrow.json",
+      "sha256": "8d42987e2dd3880dede45f40a6286a99936fe515dccf1fd87cd716582f1b19b8",
+      "bytes": 706
+    },
+    {
+      "path": "contracts/event_api_contract_registry.json",
+      "sha256": "4a918e6043f0c7ece158f8848011a6b553a65c27c0b3b5ca52a27e1ab448acf4",
+      "bytes": 8112
+    },
+    {
+      "path": "contracts/fault_campaign.json",
+      "sha256": "ebce3c6580764bc62ef8fe74600c856ecd05438195c7afb4959dfd209d69fcff",
+      "bytes": 5183
+    },
+    {
+      "path": "contracts/final_planning_readiness_matrix.json",
+      "sha256": "8c07e858cb65c845386572ba520be9810c7d80ff59da6ada4dc21c90e7b17720",
+      "bytes": 5437
+    },
+    {
+      "path": "contracts/immutable_source_snapshot_contract.json",
+      "sha256": "bf292abada70473b220c6052221dde7de711f4b7205fb7b7d1f30af6dd68bed0",
+      "bytes": 2421
+    },
+    {
+      "path": "contracts/implementation_architecture_contract.json",
+      "sha256": "18a73bfb9795fb930976ed2a01c699dade7a54ea5bf8a4f405b5203332e0779f",
+      "bytes": 11139
+    },
+    {
+      "path": "contracts/launch_dossier_manifest.json",
+      "sha256": "e3451b71b3f69aa78689719d994bd1b70414fede054602a55a9ee445fe980481",
+      "bytes": 4127
+    },
+    {
+      "path": "contracts/ml_lifecycle_contract_v2.json",
+      "sha256": "601a767e93dca54a69eee301b1255c31e24b43411d4f1eb378c1be9b507a101d",
+      "bytes": 2300
+    },
+    {
+      "path": "contracts/pilot_cross_source_join_contract.json",
+      "sha256": "431b100f8e6940e3197a99c53c1862bd8e1a8a5759a3566645fb9f049c7e74f9",
+      "bytes": 3712
+    },
+    {
+      "path": "contracts/pilot_historical_sample_protocol.json",
+      "sha256": "f3e007bcf141b09fcdd046b22909461ab1d7b765fbde2d72876d470bb45d21cf",
+      "bytes": 2431
+    },
+    {
+      "path": "contracts/proof_level_policy.json",
+      "sha256": "f8d0d107d14485eb5949b01a433facaa764cf7a78f46989d205f2eb83dfb07ae",
+      "bytes": 3119
+    },
+    {
+      "path": "contracts/proof_obligation_registry.json",
+      "sha256": "52ea4723a0b71fe6b6817fe4825c36bd53587afcfa77993f6d13891414827437",
+      "bytes": 26184
+    },
+    {
+      "path": "contracts/protected_path_policy.json",
+      "sha256": "da905a562e2a63194069a0d6bd3f61d164492e14ba151d602981281f5b579bd3",
+      "bytes": 5032
+    },
+    {
+      "path": "contracts/reliability_observability_contract.json",
+      "sha256": "9a5f777464fb84efccfdd68b8255b56c96fec22e5dacd33366c75ad3ea566489",
+      "bytes": 2585
+    },
+    {
+      "path": "contracts/representative_spatial_assignment_policy.json",
+      "sha256": "804fdb7b095c720400c374b7e42f1b0330442cce0c26f670c2465bca1409403a",
+      "bytes": 1563
+    },
+    {
+      "path": "contracts/source_access_proof_registry.json",
+      "sha256": "820dd485914575af9bb54d9707249250963c4fca072de11b122d50743b48e028",
+      "bytes": 23945
+    },
+    {
+      "path": "contracts/spatial_experiment_interference_policy.json",
+      "sha256": "0cd9ac1a885c6aeca6d41d1560b48d2dfd52c6829b7442c96563304d9dbc3634",
+      "bytes": 1563
+    },
+    {
+      "path": "contracts/spatial_proximity_policy.json",
+      "sha256": "69c19cbeb7ff4db4f49d978b9c107167ab884c754e8e50b0bc0c84497463fecb",
+      "bytes": 2860
+    },
+    {
+      "path": "contracts/workflow_state_machine_contract.json",
+      "sha256": "3bde4c75756ca756337a40904120b753e12ffb7197dc98ca4b0225746e92ec23",
+      "bytes": 5192
+    },
+    {
+      "path": "docs/phase-zero/CODEX_MILESTONE_ACCEPTANCE_PLAN_V0.12.md",
+      "sha256": "99e926484ad62a5f3e6d42697e472d882734af4fc3dabd56182146deb13af03c",
+      "bytes": 2238
+    },
+    {
+      "path": "docs/phase-zero/IMPLEMENTATION_CONTRACT_AND_BUILD_SPEC_V0.12.md",
+      "sha256": "c654ea9434b4429d53a151c70f2a2327b9d8d9c3afbb50b2b5370866ed9d6f61",
+      "bytes": 7678
+    },
+    {
+      "path": "docs/phase-zero/MASTER_SYSTEM_BLUEPRINT_V0.11.md",
+      "sha256": "972a60ebc2a2601319424c6ab18cf8749e9078719c1d1ea424836a2e0f45af1f",
+      "bytes": 10888
+    },
+    {
+      "path": "interfaces/asyncapi.json",
+      "sha256": "b0e97a8693bd29b48306361aa27828563e1321b48ac178a30437002138762ac1",
+      "bytes": 9253
+    },
+    {
+      "path": "interfaces/openapi.json",
+      "sha256": "96ececa7abb6d70ce3b2e73d5d96beb530252f5d7e705295295a99499203584e",
+      "bytes": 21809
+    },
+    {
+      "path": "proof/README.md",
+      "sha256": "9277bd70a178341b312d8bd1d8c2a88e5ef8421b9531f9f5b96f3b19bb0a8130",
+      "bytes": 784
+    },
+    {
+      "path": "schemas/backup_substitution_policy.schema.json",
+      "sha256": "934941ec0d8900a97d0b9c77acff39b7c2ea51de420d9d5b436d6e8314780e37",
+      "bytes": 417
+    },
+    {
+      "path": "schemas/benchmark_coverage_universe.schema.json",
+      "sha256": "a6e398620e3ab4fd90f76e5e72503a4d43b8c0fffe37205eab25fff11dca6f77",
+      "bytes": 1575
+    },
+    {
+      "path": "schemas/canonical_data_product_registry.schema.json",
+      "sha256": "094ca3416287fb857d3ca3b60bbf7ba745c5191a9fb336935864034953998648",
+      "bytes": 346
+    },
+    {
+      "path": "schemas/canonical_glossary.schema.json",
+      "sha256": "c0dfe023ddf26c9dded3d36e8ad400c249d6a5012c407176fe2d71e588a5abfa",
+      "bytes": 1052
+    },
+    {
+      "path": "schemas/change_migration_backfill_policy_v2.schema.json",
+      "sha256": "54be82acb98c87dd4e32b9b6c3202977aea3677e6ca5a226f329557136c6dcfe",
+      "bytes": 254
+    },
+    {
+      "path": "schemas/cloudevent_envelope.schema.json",
+      "sha256": "01010308bae2a9173e8c92569a28aebcb32bb92547f7b4998adc13c66c56d6df",
+      "bytes": 1233
+    },
+    {
+      "path": "schemas/codex_launch_context.schema.json",
+      "sha256": "0afde1eefb1aecef2494be748abe2a252d38ad3412c3dba0411f69f5feb1edca",
+      "bytes": 1525
+    },
+    {
+      "path": "schemas/codex_milestone_acceptance_plan.schema.json",
+      "sha256": "3bc35da5787b662e59b0bc1f0bb03833873fd4d7c26cfe3ab3a50560dd4bfdc7",
+      "bytes": 368
+    },
+    {
+      "path": "schemas/codex_reading_order.schema.json",
+      "sha256": "20c00ccbab256d273fb1a505c5eb04cc26c8250c21fd1c9ae9cdf311385a4e35",
+      "bytes": 1064
+    },
+    {
+      "path": "schemas/daily_list_composition_policy.schema.json",
+      "sha256": "761f4f3f7bb596c27da0b9edf49cdc54de6756b03304ee06232c1069dc89fb21",
+      "bytes": 496
+    },
+    {
+      "path": "schemas/data_product_manifest.schema.json",
+      "sha256": "ace2df1a78b1c4d1f7eb02cb9d6bec69e84253f802b55e46018ca5a80b0f82de",
+      "bytes": 1545
+    },
+    {
+      "path": "schemas/deployment_profile_contract_v2.schema.json",
+      "sha256": "52d6b9c36bc11abef8b6f5fdb8acadd8a5c5866a9faf025d3accda2c367c6e0e",
+      "bytes": 280
+    },
+    {
+      "path": "schemas/event_api_contract_registry.schema.json",
+      "sha256": "ba6f0a5cb314adfccb79ea11d3f594fdc324d3672add734b4d8da9305c1cdb43",
+      "bytes": 332
+    },
+    {
+      "path": "schemas/final_planning_readiness_matrix.schema.json",
+      "sha256": "ee54536e185d6c73b18808ff2c28f864a0e20ed6ea644aa219d972a05574fb25",
+      "bytes": 298
+    },
+    {
+      "path": "schemas/immutable_source_snapshot_contract.schema.json",
+      "sha256": "6b29401d779d7f574647927e78302f49e2b8dfd8878a55cac970602b9bf894c2",
+      "bytes": 881
+    },
+    {
+      "path": "schemas/implementation_architecture_contract.schema.json",
+      "sha256": "a10466cd79784c7f4ee2d96bb431f8fdfa8ba4b964ef4cbcd6f808dfd014a408",
+      "bytes": 620
+    },
+    {
+      "path": "schemas/implementation_failure_simulation.schema.json",
+      "sha256": "0a4ba7f584a50caae17a132d39d1d05bbe6aaf4093003e4133d237f9cf06040e",
+      "bytes": 367
+    },
+    {
+      "path": "schemas/launch_dossier_manifest.schema.json",
+      "sha256": "362d5e67d888cb5423019a1a6cc4e6d54f9e0d6d76c2aa851ae6c0b9700f5689",
+      "bytes": 1193
+    },
+    {
+      "path": "schemas/ml_lifecycle_contract_v2.schema.json",
+      "sha256": "2b2367da10cde7b8a7d602105eacda5bef10c95c5bb2f3be719d62ac0975b48c",
+      "bytes": 387
+    },
+    {
+      "path": "schemas/pilot_cross_source_join_contract.schema.json",
+      "sha256": "5fdafd9eaf91b04e27887677d6ab56d79dfd3eae031452ab50593e305ad62b88",
+      "bytes": 782
+    },
+    {
+      "path": "schemas/pilot_historical_sample_protocol.schema.json",
+      "sha256": "6eb80209d9dbad976ddb49257bb4260694a500290c4bbc6693673c21c6308789",
+      "bytes": 786
+    },
+    {
+      "path": "schemas/pre_codex_readiness.schema.json",
+      "sha256": "6cb062fcaab3b9448eaccede49a371a8eb51fb9712c7782e42a8f188395a53f1",
+      "bytes": 1450
+    },
+    {
+      "path": "schemas/proof_manifest.schema.json",
+      "sha256": "522654e89c347a808e69dd6f6aeadbc9d95ff66346054cc94270cba0e2159cf0",
+      "bytes": 1138
+    },
+    {
+      "path": "schemas/proof_obligation_registry.schema.json",
+      "sha256": "e88ad3ff3019ddceae432484992318d45f18c078a078ce299685aa91ef89c1fe",
+      "bytes": 2297
+    },
+    {
+      "path": "schemas/reliability_observability_contract.schema.json",
+      "sha256": "e98f8bf7ecb18a280e253143b130d8f5c3c7f2a3c608d3fa1252f3e1f1a7621d",
+      "bytes": 474
+    },
+    {
+      "path": "schemas/representative_spatial_assignment_policy.schema.json",
+      "sha256": "239339fc92f87fdec8db727d24b3f972d3b2786a1ee2b134e594631dc29956f5",
+      "bytes": 291
+    },
+    {
+      "path": "schemas/source_access_proof_registry.schema.json",
+      "sha256": "c6411a233c52e16b51860c6d45607164be53a68ad1f475673dc03f8789c3cbb1",
+      "bytes": 822
+    },
+    {
+      "path": "schemas/source_access_proof_result.schema.json",
+      "sha256": "2cf35f25e6271a4059ae1b59b2ce8d567f27eeedf7335a1c1d2d3f5edefb76d7",
+      "bytes": 665
+    },
+    {
+      "path": "schemas/spatial_decision_result.schema.json",
+      "sha256": "bdc46b0d92bc1d535fd4faee8d89a8a6860ae874e7e7a0a91e0fd8680f512f62",
+      "bytes": 756
+    },
+    {
+      "path": "schemas/spatial_experiment_interference_policy.schema.json",
+      "sha256": "64244a9b767c0025b610ff6116b38b8da0ebc745cd7ec34084623b3b6c98dc47",
+      "bytes": 243
+    },
+    {
+      "path": "schemas/spatial_proximity_policy.schema.json",
+      "sha256": "f75b8406b18e973ceac826c690c1d3576c20ba8057b21a249ed4d963e35c68ae",
+      "bytes": 622
+    },
+    {
+      "path": "schemas/spatial_simulation_result.schema.json",
+      "sha256": "df555ee6b13dbf2669f035b82564d1160cd019ee227d8922e5c1785a4c06afae",
+      "bytes": 344
+    },
+    {
+      "path": "schemas/traceability_graph.schema.json",
+      "sha256": "ebe2a445a714ebf4f035e0b4f8ad48b7ace21dfeacccfc77dcbf2f72fae4c68f",
+      "bytes": 2276
+    },
+    {
+      "path": "schemas/workflow_state_machine_contract.schema.json",
+      "sha256": "87143750c8de20a2d9f21a1592863d34f5b812e81bc810c96f305c27cf6ddead",
+      "bytes": 275
+    },
+    {
+      "path": "scripts/build_traceability_graph.py",
+      "sha256": "73091f3a56090a15e3727c54e5cdccb769b3d279091d430ee29553925eb76179",
+      "bytes": 8783
+    },
+    {
+      "path": "scripts/claim_linter.py",
+      "sha256": "36f94dc9ddcd99cf2677462e98d4728751c4b6e4e9a60a0827f54a53d26415fc",
+      "bytes": 2769
+    },
+    {
+      "path": "scripts/formal_model_check.py",
+      "sha256": "57008ba3db4ca7cb60dd1e72795545aa1538dcb355ee3b04e050f6ca39ea011a",
+      "bytes": 8243
+    },
+    {
+      "path": "scripts/reference_authorization_oracle.py",
+      "sha256": "86ebf50eb4892f964717ef0cf0cf7d4a0ef4047fb59fdb43a4632a04d809c009",
+      "bytes": 1091
+    },
+    {
+      "path": "scripts/run_conformance_suite.py",
+      "sha256": "d38decbfc3d681cf84d90763870b5de9583adb23831ddf0454798d1d5f465aa3",
+      "bytes": 13855
+    },
+    {
+      "path": "scripts/run_mutation_campaign.py",
+      "sha256": "26e8c6444cd5c22b5fbddb2e342bbc557524ebed355a90401b07823013a4f7cc",
+      "bytes": 16674
+    },
+    {
+      "path": "scripts/run_pre_codex_proof.py",
+      "sha256": "b15e3dca9f95c8920c968d45d30eea2506d05dde11da08e88b4ef4425bb72517",
+      "bytes": 14595
+    },
+    {
+      "path": "scripts/seal_proof_pack.py",
+      "sha256": "50f8c9c91f0b4139bfa31a756f3640742c185ab84435c12d6a4b21e238c1119d",
+      "bytes": 2468
+    },
+    {
+      "path": "scripts/simulate_cre_policy.py",
+      "sha256": "7958726b00e0b6a4ba5abdd17fb2bd02a4f519511e2930fe75f9a116469bb441",
+      "bytes": 12473
+    },
+    {
+      "path": "scripts/simulate_implementation_failures.py",
+      "sha256": "77f30f8719dd2004af3b1541e3ed60f7be29f05879a13240d5f3356852a9721b",
+      "bytes": 6564
+    },
+    {
+      "path": "scripts/simulate_spatial_policy.py",
+      "sha256": "e219dc2c88e579ec755976d2486bb584eca7bb3f967a06ac4385f8626d0999b6",
+      "bytes": 15073
+    },
+    {
+      "path": "scripts/validate_build_contract.py",
+      "sha256": "5af08ab578796e3b90742377525036b8ca9003e44abc9c39d376b31d520269ab",
+      "bytes": 8935
+    },
+    {
+      "path": "scripts/validate_launch_dossier.py",
+      "sha256": "d115af6c997521f6233bb51e77f229ade84aee141c058a27f0c0762582bce98c",
+      "bytes": 4036
+    },
+    {
+      "path": "scripts/validate_source_access_proofs.py",
+      "sha256": "9b6fbee194251013389fffa4772a8b768a914d8fc6527f0d366af5d7937a8d10",
+      "bytes": 5114
+    },
+    {
+      "path": "scripts/validate_spatial_decision_system.py",
+      "sha256": "93ddef8c5fd2bb53e70e405385f6da9dce81491d1d0ca4084394b691b9e38eff",
+      "bytes": 6367
+    },
+    {
+      "path": "scripts/verify_proof_seal.py",
+      "sha256": "c36bc6c4293f80a5721f5a441dc0f1bcdf089c166bbab37a3b99f213b1ed550e",
+      "bytes": 2044
+    },
+    {
+      "path": "tests/test_build_contract.py",
+      "sha256": "f174bc9369f1d9988d134d949dc88c5394882fcb4552400122d4556efd27491f",
+      "bytes": 6872
+    },
+    {
+      "path": "tests/test_launch_dossier.py",
+      "sha256": "261ad47995631eb051ace13cd3ee17a17596b92a924745b1570f182405f86ecb",
+      "bytes": 2265
+    },
+    {
+      "path": "tests/test_pre_codex_proof.py",
+      "sha256": "f0be79a6bee947e5fc23471f25eb7f704b79d805d7ad425cbf772ac3a227106c",
+      "bytes": 10400
+    },
+    {
+      "path": "tests/test_source_access_proofs.py",
+      "sha256": "27d7ed9a5f7c0f9ab45d474cd81fd2de1bae7030148f39cde0eb1017342d7fa7",
+      "bytes": 3808
+    },
+    {
+      "path": "tests/test_spatial_decision_system.py",
+      "sha256": "2a58399b0f12eed85eefe2577336519523982d8f1f95945822f5b028ff2ae318",
+      "bytes": 5598
+    }
+  ],
+  "root_hash": "2d840847f311bf7d8a8a4b710fff6c9dc18c848236847099b9a78a8cfc7e5d1e",
+  "builder_write_allowed": false
+}

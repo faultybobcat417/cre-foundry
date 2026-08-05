@@ -1,0 +1,67 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://cre-foundry.local/schemas/synthetic-field-event-v1.json",
+  "title": "Append-only synthetic Stage-2 field event",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["document_kind", "schema_version", "execution_scope", "evidence_stage", "event_id", "route_binding", "representative_id", "route_date", "stop", "event_type", "event_result", "occurred_at", "recorded_at", "ingested_at", "validation_completed_at", "available_at", "evidence", "quality", "owner", "live_outreach_occurred"],
+  "properties": {
+    "document_kind": {"const": "SYNTHETIC_FIELD_EVENT"},
+    "schema_version": {"const": "1.0.0"},
+    "execution_scope": {"const": "SYNTHETIC_NON_INFLUENCING"},
+    "evidence_stage": {"const": 2},
+    "event_id": {"type": "string", "pattern": "^FIELD_EVENT:[A-Z0-9_-]+$"},
+    "route_binding": {"$ref": "#/$defs/route_binding"},
+    "representative_id": {"type": "string", "minLength": 1},
+    "route_date": {"type": "string", "format": "date"},
+    "stop": {"$ref": "#/$defs/stop"},
+    "event_type": {"const": "FIRST_TOUCH_VISIT"},
+    "event_result": {"enum": ["CONTACT_MADE_SYNTHETIC", "CONTACT_ATTEMPTED_SYNTHETIC", "NO_CONTACT_SYNTHETIC"]},
+    "occurred_at": {"type": "string", "format": "date-time"},
+    "recorded_at": {"type": "string", "format": "date-time"},
+    "ingested_at": {"type": "string", "format": "date-time"},
+    "validation_completed_at": {"type": "string", "format": "date-time"},
+    "available_at": {"type": "string", "format": "date-time"},
+    "evidence": {"$ref": "#/$defs/evidence"},
+    "quality": {"$ref": "#/$defs/quality"},
+    "owner": {"$ref": "#/$defs/owner"},
+    "live_outreach_occurred": {"const": false}
+  },
+  "$defs": {
+    "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "route_binding": {
+      "type": "object", "additionalProperties": false,
+      "required": ["route_manifest_id", "route_manifest_sha256", "candidate_snapshot_sha256", "math_decision_sha256"],
+      "properties": {
+        "route_manifest_id": {"type": "string", "minLength": 1},
+        "route_manifest_sha256": {"$ref": "#/$defs/sha256"},
+        "candidate_snapshot_sha256": {"$ref": "#/$defs/sha256"},
+        "math_decision_sha256": {"$ref": "#/$defs/sha256"}
+      }
+    },
+    "stop": {
+      "type": "object", "additionalProperties": false,
+      "required": ["sequence_position", "candidate_id", "physical_location_id"],
+      "properties": {
+        "sequence_position": {"type": "integer", "minimum": 1, "maximum": 10},
+        "candidate_id": {"type": "string", "minLength": 1},
+        "physical_location_id": {"type": "string", "minLength": 1}
+      }
+    },
+    "evidence": {
+      "type": "object", "additionalProperties": false,
+      "required": ["mode", "payload_sha256"],
+      "properties": {"mode": {"const": "SYNTHETIC_FIXTURE"}, "payload_sha256": {"$ref": "#/$defs/sha256"}}
+    },
+    "quality": {
+      "type": "object", "additionalProperties": false,
+      "required": ["synthetic_fixture", "real_visit_proven"],
+      "properties": {"synthetic_fixture": {"const": true}, "real_visit_proven": {"const": false}}
+    },
+    "owner": {
+      "type": "object", "additionalProperties": false,
+      "required": ["system", "real_world_authority"],
+      "properties": {"system": {"const": "CRE_FOUNDRY"}, "real_world_authority": {"const": "UNASSIGNED_EXTERNAL_AUTHORITY"}}
+    }
+  }
+}

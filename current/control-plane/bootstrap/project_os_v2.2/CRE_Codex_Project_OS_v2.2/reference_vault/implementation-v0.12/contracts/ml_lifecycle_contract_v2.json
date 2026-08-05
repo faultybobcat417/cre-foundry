@@ -1,0 +1,70 @@
+{
+  "contract_version": "cre-ml-lifecycle-v2",
+  "as_of": "2026-08-01T04:35:00-04:00",
+  "initial_operating_mode": "daily_batch_offline_features",
+  "registry_semantics": {
+    "required_aliases": [
+      "candidate",
+      "challenger",
+      "champion",
+      "suspended",
+      "retired"
+    ],
+    "required_metadata": [
+      "training_dataset_id",
+      "feature_definition_versions",
+      "code_commit",
+      "environment_hash",
+      "temporal_split",
+      "metrics",
+      "calibration",
+      "subgroup_results",
+      "model_card",
+      "rollback_reference"
+    ],
+    "compatible_with": "MLflow model registry concepts; implementation may be simpler in alpha"
+  },
+  "feature_policy": {
+    "registry_required": true,
+    "offline_store": "Parquet/DuckDB or governed warehouse",
+    "online_store_initially_required": false,
+    "point_in_time_join_required": true,
+    "feature_service_parity_test_required": true,
+    "feature_definition_change": "new immutable version",
+    "compatible_with": "Feast-style registry/materialization concepts without requiring Feast initially"
+  },
+  "promotion_gates": [
+    "dataset and lineage manifests complete",
+    "label maturity and leakage tests pass",
+    "meaningful baselines evaluated",
+    "calibration and uncertainty acceptable",
+    "source-family ablations complete",
+    "protected subgroup and municipality diagnostics complete",
+    "replay bundle succeeds",
+    "shadow comparison succeeds",
+    "economic/practical threshold succeeds",
+    "rollback artifact exists"
+  ],
+  "anti_patterns": [
+    "training and serving feature code paths with untested divergence",
+    "mutable model artifact",
+    "production alias moved without a signed promotion decision",
+    "model score used after source or feature freshness expiry",
+    "automatic retraining on unmatured labels",
+    "complex model promoted without beating transparent baselines"
+  ],
+  "performance_escalation": {
+    "reference_language": "Python and SQL",
+    "compiled_plugin_options": [
+      "Rust",
+      "C++"
+    ],
+    "requirements": [
+      "reproducible profile",
+      "material business or reliability bottleneck",
+      "reference implementation differential tests",
+      "FFI safety and memory tests",
+      "fallback reference path"
+    ]
+  }
+}

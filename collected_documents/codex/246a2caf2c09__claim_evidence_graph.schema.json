@@ -1,0 +1,68 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["artifact_id", "schema_version", "as_of", "scope", "claim_ceiling", "research_questions", "claims"],
+  "properties": {
+    "artifact_id": {"const": "RESEARCH-001-CLAIM-GRAPH"},
+    "schema_version": {"const": "2.0.0"},
+    "as_of": {"type": "string", "format": "date"},
+    "scope": {"type": "string", "minLength": 1},
+    "claim_ceiling": {"type": "string", "minLength": 1},
+    "research_questions": {
+      "type": "array", "minItems": 12, "maxItems": 12,
+      "items": {"$ref": "#/$defs/question"}
+    },
+    "claims": {
+      "type": "array", "minItems": 7, "maxItems": 7,
+      "items": {"$ref": "#/$defs/claim"}
+    }
+  },
+  "$defs": {
+    "ref": {
+      "type": "object", "additionalProperties": false,
+      "required": ["ref_type", "ref_id"],
+      "properties": {
+        "ref_type": {"enum": ["source", "probe", "counterevidence", "gate", "experiment"]},
+        "ref_id": {"type": "string", "minLength": 1}
+      }
+    },
+    "question": {
+      "type": "object", "additionalProperties": false,
+      "required": ["question_id", "question", "information_class", "decision_lane", "classification", "disposition", "claim_ids", "evidence_refs", "counterevidence_ids", "claim_ceiling", "decision_effect", "as_of"],
+      "properties": {
+        "question_id": {"pattern": "^RQ-0(0[1-9]|1[0-2])$"},
+        "question": {"type": "string", "minLength": 1},
+        "information_class": {"enum": ["EMPIRICAL_ONLY", "PUBLICLY_RESEARCHABLE", "ACCESS_DEPENDENT", "HUMAN_AUTHORITATIVE", "CODEX_DERIVABLE"]},
+        "decision_lane": {"type": "string", "minLength": 1},
+        "classification": {"enum": ["fact", "inference", "assumption", "hypothesis", "unknown"]},
+        "disposition": {"enum": ["answered_bounded", "rejected_shortcut", "gated", "experiment", "partially_supported_gated"]},
+        "claim_ids": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"pattern": "^CLM-00[1-7]$"}},
+        "evidence_refs": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/ref"}},
+        "counterevidence_ids": {"type": "array", "uniqueItems": true, "items": {"pattern": "^CE-[0-9]{3}$"}},
+        "gate_or_experiment_id": {"type": ["string", "null"]},
+        "claim_ceiling": {"type": "string", "minLength": 1},
+        "decision_effect": {"type": "string", "minLength": 1},
+        "as_of": {"type": "string", "format": "date"}
+      }
+    },
+    "claim": {
+      "type": "object", "additionalProperties": false,
+      "required": ["claim_id", "claim", "required_proof_level", "minimum_evidence", "current_status", "classification", "disposition", "evidence_refs", "counterevidence_ids", "claim_ceiling", "decision_effect", "as_of"],
+      "properties": {
+        "claim_id": {"pattern": "^CLM-00[1-7]$"},
+        "claim": {"type": "string", "minLength": 1},
+        "required_proof_level": {"type": "integer", "minimum": 0, "maximum": 10},
+        "minimum_evidence": {"type": "string", "minLength": 1},
+        "current_status": {"type": "string", "minLength": 1},
+        "classification": {"enum": ["fact", "inference", "assumption", "hypothesis", "unknown"]},
+        "disposition": {"enum": ["accept_bounded", "reject_shortcut", "gate", "experiment"]},
+        "evidence_refs": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/ref"}},
+        "counterevidence_ids": {"type": "array", "uniqueItems": true, "items": {"pattern": "^CE-[0-9]{3}$"}},
+        "claim_ceiling": {"type": "string", "minLength": 1},
+        "decision_effect": {"type": "string", "minLength": 1},
+        "as_of": {"type": "string", "format": "date"}
+      }
+    }
+  }
+}

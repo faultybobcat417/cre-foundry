@@ -1,0 +1,5 @@
+{
+  "case_id": "missing-version",
+  "expected_diagnostic": "LINEAGE-MISSING-VERSION",
+  "mutation_id": "missing_version"
+}

@@ -1,0 +1,15 @@
+{
+  "artifact_boundary_passed": true,
+  "authoritative_database_connection_count": 0,
+  "authoritative_database_write_count": 0,
+  "guarded_parser_execution_count": 6,
+  "model_version": "cre-foundry-source-parser-isolation-v1",
+  "outreach_execution_count": 0,
+  "production_ranking_execution_count": 0,
+  "reproducibility_match_count": 3,
+  "runtime_guard_passed": true,
+  "snapshot_registration_count": 0,
+  "static_isolation_passed": true,
+  "validated_contract_count": 3
+}
+SOURCE PARSER ISOLATION PASSED

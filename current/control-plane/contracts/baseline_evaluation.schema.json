@@ -1,0 +1,78 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://cre-foundry.local/schemas/baseline-evaluation-run-v1.json",
+  "title": "Synthetic point-in-time baseline evaluation run",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["document_kind", "schema_version", "execution_scope", "run_id", "canonicalization", "bindings", "state", "fit", "policy_runs", "metrics", "replacement_analysis", "replay_receipt", "proof"],
+  "properties": {
+    "document_kind": {"const": "SYNTHETIC_BASELINE_EVALUATION_RUN"},
+    "schema_version": {"const": "1.0.0"},
+    "execution_scope": {"const": "SYNTHETIC_NON_INFLUENCING"},
+    "run_id": {"const": "BASELINE_RUN:FROZEN_SYNTHETIC_V1"},
+    "canonicalization": {"const": "SORTED_KEYS_COMPACT_INTEGER_JSON_V1"},
+    "bindings": {"$ref": "#/$defs/bindings"},
+    "state": {"const": "COMPARISON_COMPLETE"},
+    "fit": {"type": "object", "required": ["policy_id", "model_fit_at", "training_row_ids", "excluded_null_row_ids", "bucket_counts", "global_prior", "fit_sha256"], "additionalProperties": false, "properties": {
+      "policy_id": {"const": "BETA_BINOMIAL_BUCKET_SYNTHETIC_V1"},
+      "model_fit_at": {"type": "string", "format": "date-time"},
+      "training_row_ids": {"type": "array", "uniqueItems": true, "items": {"type": "string"}},
+      "excluded_null_row_ids": {"type": "array", "uniqueItems": true, "items": {"type": "string"}},
+      "bucket_counts": {"type": "object"},
+      "global_prior": {"$ref": "#/$defs/rational"},
+      "fit_sha256": {"$ref": "#/$defs/sha256"}
+    }},
+    "policy_runs": {"type": "array", "minItems": 40, "items": {"$ref": "#/$defs/policy_run"}},
+    "metrics": {"type": "object"},
+    "replacement_analysis": {"type": "object"},
+    "replay_receipt": {"type": "object", "additionalProperties": false, "required": ["builder_version", "builder_sha256", "bindings", "fit_sha256", "policy_registry_sha256", "full_seed_schedule_sha256", "score_vectors_sha256", "math_decisions_sha256", "metrics_sha256", "replacement_sha256", "proof_sha256", "receipt_sha256"], "properties": {
+      "builder_version": {"const": "baseline-framework-builder-v1"}, "builder_sha256": {"$ref": "#/$defs/sha256"},
+      "bindings": {"$ref": "#/$defs/bindings"}, "fit_sha256": {"$ref": "#/$defs/sha256"},
+      "policy_registry_sha256": {"$ref": "#/$defs/sha256"}, "full_seed_schedule_sha256": {"$ref": "#/$defs/sha256"},
+      "score_vectors_sha256": {"$ref": "#/$defs/sha256"}, "math_decisions_sha256": {"$ref": "#/$defs/sha256"},
+      "metrics_sha256": {"$ref": "#/$defs/sha256"}, "replacement_sha256": {"$ref": "#/$defs/sha256"},
+      "proof_sha256": {"$ref": "#/$defs/sha256"}, "receipt_sha256": {"$ref": "#/$defs/sha256"}
+    }},
+    "proof": {"type": "object", "additionalProperties": false, "required": ["level", "claim", "real_predictive_validity_proven", "incremental_lift_proven", "commercial_value_proven", "production_replacement_authorized", "live_use_authorized"], "properties": {
+      "level": {"const": 5},
+      "claim": {"const": "synthetic baseline framework and replay conformance only"},
+      "real_predictive_validity_proven": {"const": false},
+      "incremental_lift_proven": {"const": false},
+      "commercial_value_proven": {"const": false},
+      "production_replacement_authorized": {"const": false},
+      "live_use_authorized": {"const": false}
+    }}
+  },
+  "$defs": {
+    "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "bindings": {"type": "object", "additionalProperties": false, "required": ["frozen_benchmark_sha256", "temporal_split_registry_sha256", "policy_registry_sha256", "metric_spec_sha256", "replacement_rule_sha256", "outcomes_policy_sha256", "outcomes_canonical_run_sha256", "math_problem_schema_sha256", "math_decision_schema_sha256", "math_policy_sha256", "math_evaluator_sha256", "baseline_policy_schema_sha256", "baseline_evaluation_schema_sha256", "public_evaluator_contract_sha256"], "properties": {
+      "frozen_benchmark_sha256": {"$ref": "#/$defs/sha256"}, "temporal_split_registry_sha256": {"$ref": "#/$defs/sha256"},
+      "policy_registry_sha256": {"$ref": "#/$defs/sha256"}, "metric_spec_sha256": {"$ref": "#/$defs/sha256"},
+      "replacement_rule_sha256": {"$ref": "#/$defs/sha256"}, "outcomes_policy_sha256": {"$ref": "#/$defs/sha256"},
+      "outcomes_canonical_run_sha256": {"$ref": "#/$defs/sha256"}, "math_problem_schema_sha256": {"$ref": "#/$defs/sha256"},
+      "math_decision_schema_sha256": {"$ref": "#/$defs/sha256"}, "math_policy_sha256": {"$ref": "#/$defs/sha256"},
+      "math_evaluator_sha256": {"$ref": "#/$defs/sha256"}, "baseline_policy_schema_sha256": {"$ref": "#/$defs/sha256"},
+      "baseline_evaluation_schema_sha256": {"$ref": "#/$defs/sha256"}, "public_evaluator_contract_sha256": {"$ref": "#/$defs/sha256"}
+    }},
+    "rational": {"type": "object", "additionalProperties": false, "required": ["numerator", "denominator"], "properties": {"numerator": {"type": "integer"}, "denominator": {"type": "integer", "minimum": 1}}},
+    "score": {"type": "object", "additionalProperties": false, "required": ["candidate_id", "numerator", "denominator", "business_value_units"], "properties": {"candidate_id": {"type": "string"}, "numerator": {"type": "integer"}, "denominator": {"type": "integer", "minimum": 1}, "business_value_units": {"type": "integer"}}},
+    "policy_run": {"type": "object", "additionalProperties": false, "required": ["policy_id", "seed_hex", "route_day_id", "split", "candidate_universe_sha256", "feature_view_sha256", "label_view_sha256", "non_score_math_sha256", "scores", "math_problem", "math_decision", "selected_label_summary", "rank_concordance", "score_vector_sha256", "math_problem_sha256", "math_decision_sha256"], "properties": {
+      "policy_id": {"type": "string"},
+      "seed_hex": {"type": ["string", "null"], "pattern": "^[0-9a-f]{64}$"},
+      "route_day_id": {"type": "string"},
+      "split": {"enum": ["TRAIN", "VALIDATION", "TEST"]},
+      "candidate_universe_sha256": {"$ref": "#/$defs/sha256"},
+      "feature_view_sha256": {"$ref": "#/$defs/sha256"},
+      "label_view_sha256": {"$ref": "#/$defs/sha256"},
+      "non_score_math_sha256": {"$ref": "#/$defs/sha256"},
+      "scores": {"type": "array", "items": {"$ref": "#/$defs/score"}},
+      "math_problem": {"type": "object"},
+      "math_decision": {"type": "object"},
+      "selected_label_summary": {"type": "object"},
+      "rank_concordance": {"oneOf": [{"type": "null"}, {"$ref": "#/$defs/rational"}]},
+      "score_vector_sha256": {"$ref": "#/$defs/sha256"},
+      "math_problem_sha256": {"$ref": "#/$defs/sha256"},
+      "math_decision_sha256": {"$ref": "#/$defs/sha256"}
+    }}
+  }
+}

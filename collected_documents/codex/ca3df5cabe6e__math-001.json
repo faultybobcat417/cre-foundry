@@ -1,0 +1,131 @@
+{
+  "task_id": "MATH-001",
+  "status": "completed",
+  "objective": "Define executable mathematical contracts for eligibility, protected masks, physical-location and required-grain uniqueness, deterministic value-first selection with penalties, operational feasibility, exact-ten abstention, estimands, evidence states, and proof propagation, then differentially test a bounded exhaustive oracle.",
+  "state_transition": {
+    "from": "in_progress formal_math_contract",
+    "to": "completed public_formal_proof_level_4; CONTRACT-001 in_progress",
+    "reason": "The registered public validator, 10 property/mutation test methods, 40 generated differential domains, full 20-candidate bound, and independent sweeps pass with an explicit synthetic-only claim ceiling."
+  },
+  "files_changed": [
+    "artifacts/evaluations/math_contracts.json",
+    "artifacts/math/estimand_registry.json",
+    "artifacts/math/formal_decisions.json",
+    "artifacts/math/human_authority_input_template.json",
+    "artifacts/math/public_evaluator_contract.json",
+    "contracts/estimand_registry.schema.json",
+    "contracts/math_authority_input.schema.json",
+    "contracts/math_decision_policy.schema.json",
+    "contracts/math_route_decision.schema.json",
+    "control/AUTONOMOUS_FRONTIER_CONTRACT.json",
+    "control/CURRENT_STATE.json",
+    "control/CURRENT_TASK.json",
+    "control/GATES.json",
+    "control/TASK_GRAPH.json",
+    "evals/known_bad/frontier/exact_ten_protected_fill.json",
+    "evals/known_bad/frontier/exact_ten_wrong_cardinality.json",
+    "evals/known_bad/frontier/math_hardcoded_power.json",
+    "evals/known_bad/frontier/math_scenario_as_measured.json",
+    "evals/known_bad/frontier/math_undefined_estimand.json",
+    "evals/known_bad/math/_support.py",
+    "evals/known_bad/math/collapse_duplicate_physical_locations.py",
+    "evals/known_bad/math/fill_with_protected_alias.py",
+    "evals/known_bad/math/greedy_individual_value.py",
+    "evals/known_bad/math/issue_nine.py",
+    "evals/known_bad/math/permutation_sensitive.py",
+    "evals/known_bad/math/prefer_proximity_below_value_floor.py",
+    "evals/known_bad/math/use_stage2_field_observation.py",
+    "evals/public/math_oracle_evaluator.py",
+    "evals/public/test_math_contracts.py",
+    "scripts/build_math_contracts.py",
+    "scripts/compile_repository_task_context.py",
+    "scripts/finalize_math_contracts.py",
+    "scripts/validate_math_contracts.py",
+    "src/cre_foundry/__init__.py",
+    "src/cre_foundry/math/__init__.py",
+    "src/cre_foundry/math/reference_oracle.py",
+    "tasks/MATH-001.json",
+    "tasks/CONTRACT-001.json"
+  ],
+  "commands": [
+    {"command": "python scripts/build_math_contracts.py", "exit_code": 0, "artifact": "artifacts/math/estimand_registry.json"},
+    {"command": "python -m unittest evals.public.test_math_contracts", "exit_code": 0, "artifact": "artifacts/evaluations/math_contracts.json"},
+    {"command": "python scripts/finalize_math_contracts.py", "exit_code": 0, "artifact": "artifacts/evaluations/math_contracts.json"},
+    {"command": "python scripts/validate_math_contracts.py", "exit_code": 0, "artifact": "artifacts/evaluations/math_contracts.json"},
+    {"command": ".venv/bin/python -m unittest discover -s evals/public -p 'test_*.py'", "exit_code": 0, "artifact": "artifacts/evaluations/autonomous_frontier_meta.json"},
+    {"command": ".venv/bin/python scripts/validate_control_plane.py", "exit_code": 0, "artifact": null},
+    {"command": ".venv/bin/python scripts/evaluate_autonomous_frontier.py --report artifacts/evaluations/autonomous_frontier_report.json", "exit_code": 1, "artifact": "artifacts/evaluations/autonomous_frontier_report.json"}
+  ],
+  "evaluations": [
+    {"name": "decision and estimand schemas", "passed": true, "proof": "Draft 2020-12 validation plus semantic state/class/gate/formula/unit/window/proof checks"},
+    {"name": "bounded differential oracle", "passed": true, "proof": "40 seeded N=10..14 domains plus the N=20 bound agree across recursive and combinations implementations"},
+    {"name": "negative controls", "passed": true, "proof": "Ten registered algorithm/registry faults are detected; frontier wrappers execute exact-ten and protected-alias cases"},
+    {"name": "independent sweeps", "passed": true, "proof": "Three read-heavy reviews found and drove repair of alias, clock, objective, unknown-value, estimand, evidence-transition, output, and proof-boundary defects"},
+    {"name": "frontier gate integration", "passed": true, "proof": "AF-MATH-STATS-001 and AF-EXACT-TEN-001 each have current base_result PASS; global frontier correctly remains FAIL through dependencies"}
+  ],
+  "expertise_coverage": [
+    {"domain": "statistics_probability", "state": "ACTIVE", "reason": "Defined ITT, predictive-risk, power-input, maturity, clustering, sensitivity, and proof-ceiling contracts without numeric invention."},
+    {"domain": "optimization_physics", "state": "ACTIVE", "reason": "Implemented exact bounded ten-combination search with capacity, composition, grain, incompatibility, redundancy, interference, and deterministic tie constraints."},
+    {"domain": "economics", "state": "ACTIVE", "reason": "Preserved the candidate value chain, dimensions, causal/proxy mode boundary, costs, risk penalty, and firm-authority gates symbolically."},
+    {"domain": "identity_temporal", "state": "ACTIVE", "reason": "Enforced physical-location and configured grain uniqueness, protected alias tokens, and observation-cutoff-issuance-route clocks."},
+    {"domain": "testing_verification", "state": "ACTIVE", "reason": "Built strict validators, independent exhaustive comparison, generated properties, semantic output checks, hash bindings, and real executable mutants."}
+  ],
+  "agents_used": [
+    "repo_truth_review independent formal/constitution sweep",
+    "evaluator_review independent adversarial evaluator sweep",
+    "research_public_sources independent estimand/capability-boundary sweep",
+    "primary writer in the main worktree"
+  ],
+  "alternatives": [
+    {"choice": "bounded recursive exhaustive oracle", "over": ["greedy selection", "solver-only implementation"], "reason": "It is transparent, deterministic, dependency-light, and independently comparable over the registered maximum of 20 candidates."},
+    {"choice": "epsilon_B=0 exact value-first policy", "over": ["unregistered tolerance", "proximity-first ranking"], "reason": "No firm-authoritative value-loss tolerance exists; exact integer equality preserves the hard value priority."},
+    {"choice": "synthetic-formal-only v1 decision and all-null estimand registry", "over": ["accept arbitrary future evidence strings", "invent numeric calibration"], "reason": "A later independently reviewed evidence-bound version is required before numeric inputs, computed power, or live issuance."},
+    {"choice": "public proof-level-4 completion", "over": ["claim sealed independence", "block formal work on external custody"], "reason": "Sealed evaluation remains EVAL-001 and promotion-gated; MATH-001 proves only public formal/synthetic behavior."}
+  ],
+  "findings": [
+    {"id": "MATH-FIND-001", "finding": "A single hard-admissible unknown-value candidate warrants uncertainty abstention only when at least one feasible ten can include that candidate."},
+    {"id": "MATH-FIND-002", "finding": "Physical-location uniqueness is insufficient alone; required entity grains, protected aliases, and pairwise redundancy/interference need explicit interfaces."},
+    {"id": "MATH-FIND-003", "finding": "JSON Schema cannot express cross-record physical-location uniqueness, so the public semantic output validator is load-bearing."},
+    {"id": "MATH-FIND-004", "finding": "Future evidence acceptance cannot be inferred from a file hash; v1.1 therefore rejects numeric transitions pending a separately reviewed evidence-bound contract."},
+    {"id": "MATH-FIND-005", "finding": "Experimental design authority is distinct from final causal evidence and now has its own named protocol gate."}
+  ],
+  "assumptions": [
+    "All decision scores in v1 are registered synthetic scaled integers used only to prove formal behavior.",
+    "Empty penalty tables and required-grain lists mean explicit zero/no-additional synthetic constraints, not production defaults.",
+    "The maximum public exhaustive candidate domain is 20 and route sequencing is outside this task."
+  ],
+  "decisions": [
+    "Require exactly ten distinct physical locations or ABSTAIN_NO_VALID_TEN.",
+    "Treat protected-bundle incompleteness and feasible unknown-value participation as fail-closed abstention conditions.",
+    "Subtract registered exact pairwise penalties before proximity tie-breaking and enforce required unique grains.",
+    "Bind every output to decision, snapshot, policy version, and policy digest.",
+    "Keep all empirical and human-authoritative values null and all numeric result transitions disabled in v1.1.",
+    "Reserve sealed evaluation, empirical calibration, causal lift, operational feasibility, and realized commercial value for their later proof gates."
+  ],
+  "risks": [
+    "The public evaluator and builder remain repository-visible and do not establish sealed independence.",
+    "Synthetic feasibility does not establish real identity, eligibility, protection, service time, route, or source coverage.",
+    "Pairwise penalties are a bounded formal interface, not a calibrated production redundancy/interference model.",
+    "A later evidence-bound registry version must define verified ingestion and recomputable estimand outputs before accepting numeric evidence."
+  ],
+  "gates": [
+    "GATE-EXPERIMENT-PROTOCOL-001 remains open for protocol-authoritative design inputs",
+    "GATE-OUTCOME-LABELS-MATURITY-001 remains open for empirical base-rate, variance, clustering, adherence, substitution, attrition, interference, and maturity inputs",
+    "firm_economics_services_territories remains open for practical lift, cost, and risk policy",
+    "GATE-FULL-EXTERNAL-EVIDENCE-001 remains open for causal and realized-value evidence",
+    "GATE-SEALED-EVALUATOR-CUSTODY-001 remains open and is owned by EVAL-001"
+  ],
+  "proof_level": 4,
+  "artifacts": [
+    {"name": "public evaluation report", "path": "artifacts/evaluations/math_contracts.json", "result": "PASS"},
+    {"name": "formal decisions", "path": "artifacts/math/formal_decisions.json", "result": "16 decisions frozen"},
+    {"name": "estimand registry", "path": "artifacts/math/estimand_registry.json", "result": "six estimands and 24 all-null inputs"},
+    {"name": "authority collection template", "path": "artifacts/math/human_authority_input_template.json", "result": "blank non-ingestion template"},
+    {"name": "decision problem schema", "path": "contracts/math_decision_policy.schema.json", "result": "strict synthetic-formal-only v1"},
+    {"name": "decision output schema", "path": "contracts/math_route_decision.schema.json", "result": "strict issue-or-abstain union"},
+    {"name": "reference oracle", "path": "src/cre_foundry/math/reference_oracle.py", "result": "bounded exhaustive deterministic policy"},
+    {"name": "independent public evaluator", "path": "evals/public/math_oracle_evaluator.py", "result": "combinations oracle and semantic output validator"}
+  ],
+  "rollback": "Revert the MATH-001 completion/state commit and retain commit 50df16e as the evaluator-contract checkpoint; all live issuance remains disabled regardless.",
+  "next_action": "Execute CONTRACT-001: build and mutation-test the smallest strict synthetic source-to-decision contract spine before expanding subsystems."
+}

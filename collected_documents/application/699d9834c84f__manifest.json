@@ -1,0 +1,25 @@
+{
+  "as_of_timestamp": "2026-07-26T03:35:16.413070Z",
+  "completed_at": "2026-07-26T03:35:19.702760Z",
+  "error_message": null,
+  "error_type": null,
+  "layer_snapshots": [
+    {
+      "as_of_timestamp": "2026-07-26T03:35:16.413070Z",
+      "collected_at": "2026-07-26T03:35:19.632197Z",
+      "content_type": "application/geo+json",
+      "layer_id": 0,
+      "raw_path": "data/bronze/brampton_building_permits/2026/07/26/RUN-20260726T033516Z-e1388f64b1/layer_0_bae5f22db1bef14b.geojson.gz",
+      "record_count": 4652,
+      "run_id": "RUN-20260726T033516Z-e1388f64b1",
+      "schema_fingerprint": "dc7de11abb5d362c91ed17ea52f392377b2543005c6cd08be3effb8c2b8910c5",
+      "sha256": "bae5f22db1bef14bac2e242d32b4c8058decabee05da47e795e7639f1133137e",
+      "source_id": "brampton_building_permits"
+    }
+  ],
+  "run_id": "RUN-20260726T033516Z-e1388f64b1",
+  "service_url": "https://maps1.brampton.ca/arcgis/rest/services/BuildingPermit/Building_Permits/FeatureServer",
+  "source_id": "brampton_building_permits",
+  "started_at": "2026-07-26T03:35:16.414113Z",
+  "status": "succeeded"
+}

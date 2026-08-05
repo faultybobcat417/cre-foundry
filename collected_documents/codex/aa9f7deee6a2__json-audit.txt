@@ -1,0 +1,19 @@
+PASS  artifacts/context/current_task_packet.json: root=dict
+PASS  artifacts/economics/ECONOMICS-001-start.json: root=dict
+PASS  artifacts/economics/public_evaluator_contract.json: root=dict
+PASS  artifacts/evaluations/economics_contracts.json: root=dict
+PASS  artifacts/evaluations/identity_contracts.json: root=dict
+PASS  artifacts/task-results/ECONOMICS-001.json: root=dict
+PASS  artifacts/task-results/IDENTITY-001.json: root=dict
+PASS  bootstrap/project_os_v2.2/CRE_Codex_Project_OS_v2.2/launch_kernel/artifacts/codex_capabilities.json: root=dict
+PASS  contracts/economic_engine.schema.json: root=dict
+PASS  contracts/synthetic_identity_graph.schema.json: root=dict
+PASS  control/CURRENT_STATE.json: root=dict
+PASS  control/CURRENT_TASK.json: root=dict
+PASS  control/ONE_SHOT_READINESS.json: root=dict
+PASS  control/TASK_GRAPH.json: root=dict
+PASS  tasks/ECONOMICS-001.json: root=dict
+PASS  tasks/SECURITY-001.json: root=dict
+
+JSON files checked: 16
+JSON failures: 0

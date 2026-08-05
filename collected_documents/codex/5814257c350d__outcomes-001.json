@@ -1,0 +1,20 @@
+{
+  "task_id": "OUTCOMES-001",
+  "title": "Synthetic F9 outcome and maturity contract hardening",
+  "status": "completed",
+  "objective": "Implement and evaluate synthetic F9 outcome, observation-window, maturity, censoring, competing-event, adjudication, deduplication, and lineage contracts without converting unavailable empirical evidence into labels.",
+  "business_reason": "The vertical slice proves one connected fixture; the next load-bearing step is to make outcome-state mechanics complete enough to support later baselines without contaminating negatives, lift, or commercial-value claims.",
+  "dependencies": ["VERTICAL-001", "CONTRACT-001"],
+  "gates": [],
+  "inputs": ["VERTICAL-001 Stage-2/3 schemas and evaluator", "MATH-001 F9 estimand and maturity constitution", "claim-evidence graph and proof ceiling", "synthetic event/outcome fixtures only"],
+  "assumptions": [],
+  "non_goals": ["claim real F9 outcomes", "set a human-authoritative outcome window", "estimate incremental lift", "treat bookings as attendance, mandate, transaction, commission, or net value", "ingest CRM or outreach data", "authorize live action"],
+  "writable_roots": ["contracts", "src/cre_foundry/outcomes", "evals/public", "evals/known_bad/frontier", "artifacts/outcomes", "artifacts/evaluations", "docs/outcomes", "scripts", "tasks", "control"],
+  "required_expertise": ["outcome_measurement", "survival_competing_risks", "causal_inference", "data_contracts", "testing_verification"],
+  "evaluator": ["freeze a public evaluator contract before implementation", "strict outcome/event/clock/lineage schemas and independent semantics", "bounded state-transition and maturity properties", "registered label-contamination and replay mutations"],
+  "known_bad_cases": ["immature outcome counted as negative", "censored outcome counted as negative", "competing closure counted as F9 failure", "booking outside the registered window counted positive", "appointment without all F9 conjuncts counted positive", "duplicate booking counted twice", "post-window evidence rewrites an earlier assessment", "Stage-3 data changes Stage-1 selection", "downstream commission inferred from booking"],
+  "acceptance": ["every synthetic outcome has an explicit mutually exclusive maturity/ascertainment state", "positive F9 requires every registered conjunct and adjudicable evidence", "immature, censored, conflicted, competing-event, and unknown states remain null rather than negative", "event-time, availability-time, assessment-time, and window policy remain distinct and ordered", "deduplication and correction lineage are replayable and append-only", "all real outcome, lift, and value claims remain behind named empirical or human-authoritative gates", "every registered mutation is rejected"],
+  "artifacts": ["artifacts/outcomes/OUTCOMES-001-start.json", "artifacts/outcomes/public_evaluator_contract.json", "contracts/f9_outcome.schema.json", "src/cre_foundry/outcomes", "scripts/validate_outcomes_labels.py", "artifacts/evaluations/outcomes_synthetic.json", "artifacts/task-results/OUTCOMES-001.json"],
+  "rollback": "Remove the outcome-hardening layer and retain the validated VERTICAL-001 event/outcome interface; invalidate dependent synthetic labels and keep empirical permissions disabled.",
+  "stop_budget": "Remain synthetic and non-influencing; create exact gates for real labels, authorized window policy, adjudication authority, CRM access, maturity evidence, and experimental proof."
+}

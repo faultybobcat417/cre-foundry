@@ -1,0 +1,4173 @@
+[
+  {
+    "path": "repos/repo/README.md",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/repo/artifacts/research/raw/tor_coa_package.json",
+    "findings": [
+      "email"
+    ]
+  },
+  {
+    "path": "repos/repo/artifacts/research/raw/on_ogl_terms.html",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/repo/artifacts/research/raw/tor_ogl_terms.html",
+    "findings": [
+      "email"
+    ]
+  },
+  {
+    "path": "repos/repo/artifacts/research/raw/independent/tor_coa_package.json",
+    "findings": [
+      "email"
+    ]
+  },
+  {
+    "path": "repos/repo/artifacts/research/raw/independent/on_ogl_terms.html",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/repo/artifacts/research/raw/independent/tor_ogl_terms.html",
+    "findings": [
+      "email"
+    ]
+  },
+  {
+    "path": "repos/repo/artifacts/research/raw/row_witness/on_summary.json",
+    "findings": [
+      "email"
+    ]
+  },
+  {
+    "path": "repos/repo/artifacts/research/raw/row_witness/on_max_address.json",
+    "findings": [
+      "email"
+    ]
+  },
+  {
+    "path": "repos/repo/artifacts/research/raw/row_witness/on_max_address_post.json",
+    "findings": [
+      "email"
+    ]
+  },
+  {
+    "path": "repos/repo/artifacts/context/current_task_packet.md",
+    "findings": [
+      "absolute_home_path",
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/repo/artifacts/bootstrap/repository_inventory.json",
+    "findings": [
+      "absolute_home_path"
+    ]
+  },
+  {
+    "path": "repos/repo/artifacts/bootstrap/archive_verification.json",
+    "findings": [
+      "absolute_home_path"
+    ]
+  },
+  {
+    "path": "repos/repo/artifacts/identity/public_evaluator_contract.json",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/repo/artifacts/evaluations/architecture.json",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/repo/artifacts/evaluations/security_privacy.json",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/repo/artifacts/task-results/BOOTSTRAP-001.json",
+    "findings": [
+      "absolute_home_path"
+    ]
+  },
+  {
+    "path": "repos/repo/artifacts/math/formal_decisions.json",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/repo/artifacts/architecture/scenario_registry.json",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/repo/artifacts/architecture/public_evaluator_contract.json",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/repo/evals/known_bad/frontier/architecture_authority-self-granted-from-role-env-credential-or-content.json",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/repo/evals/known_bad/frontier/security_secret_log.json",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/repo/evals/public/test_autonomous_frontier.py",
+    "findings": [
+      "email",
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/repo/evals/public/temporal_identity_evaluator.py",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/repo/evals/public/architecture_workflow_evaluator.py",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/repo/tasks/SECURITY-001.json",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/repo/bootstrap/GATE-OS-ARTIFACT-001.json",
+    "findings": [
+      "absolute_home_path"
+    ]
+  },
+  {
+    "path": "repos/repo/bootstrap/BOOTSTRAP-001.partial.json",
+    "findings": [
+      "absolute_home_path"
+    ]
+  },
+  {
+    "path": "repos/repo/bootstrap/project_os_v2.2/CRE_Codex_Project_OS_v2.2/launch_kernel/FINAL_AUDIT_REPORT.md",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/repo/bootstrap/project_os_v2.2/CRE_Codex_Project_OS_v2.2/launch_kernel/artifacts/level10/campaign.json",
+    "findings": [
+      "absolute_home_path"
+    ]
+  },
+  {
+    "path": "repos/repo/bootstrap/project_os_v2.2/CRE_Codex_Project_OS_v2.2/launch_kernel/artifacts/level10/full_system_simulation.json",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/repo/bootstrap/project_os_v2.2/CRE_Codex_Project_OS_v2.2/launch_kernel/evals/TRIAL_PROTOCOL.md",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/repo/bootstrap/project_os_v2.2/CRE_Codex_Project_OS_v2.2/launch_kernel/scripts/run_level10_simulation.py",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/repo/bootstrap/project_os_v2.2/CRE_Codex_Project_OS_v2.2/launch_kernel/control/ROLE_ACTIVATION_POLICY.json",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/repo/bootstrap/project_os_v2.2/CRE_Codex_Project_OS_v2.2/launch_kernel/kernel/CAPABILITY_BOUNDARY.json",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/repo/docs/security/threat_model.md",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/repo/scripts/validate_architecture.py",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/repo/scripts/build_phase1_evidence.py",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/repo/scripts/validate_economics_contracts.py",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/repo/scripts/evaluate_autonomous_frontier.py",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/repo/control/EVALUATOR_DECISION.json",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/repo/control/AUTONOMOUS_FRONTIER_CONTRACT.json",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/repo/control/GATES.json",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/repo/control/CURRENT_STATE.json",
+    "findings": [
+      "absolute_home_path"
+    ]
+  },
+  {
+    "path": "repos/repo/control/TASK_GRAPH.json",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/repo/src/cre_foundry/contracts/thin_slice.py",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre-kimi-security-20260803-195956/README.md",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre-kimi-security-20260803-195956/artifacts/research/raw/tor_coa_package.json",
+    "findings": [
+      "email"
+    ]
+  },
+  {
+    "path": "repos/cre-kimi-security-20260803-195956/artifacts/research/raw/on_ogl_terms.html",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre-kimi-security-20260803-195956/artifacts/research/raw/tor_ogl_terms.html",
+    "findings": [
+      "email"
+    ]
+  },
+  {
+    "path": "repos/cre-kimi-security-20260803-195956/artifacts/research/raw/independent/tor_coa_package.json",
+    "findings": [
+      "email"
+    ]
+  },
+  {
+    "path": "repos/cre-kimi-security-20260803-195956/artifacts/research/raw/independent/on_ogl_terms.html",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre-kimi-security-20260803-195956/artifacts/research/raw/independent/tor_ogl_terms.html",
+    "findings": [
+      "email"
+    ]
+  },
+  {
+    "path": "repos/cre-kimi-security-20260803-195956/artifacts/research/raw/row_witness/on_summary.json",
+    "findings": [
+      "email"
+    ]
+  },
+  {
+    "path": "repos/cre-kimi-security-20260803-195956/artifacts/research/raw/row_witness/on_max_address.json",
+    "findings": [
+      "email"
+    ]
+  },
+  {
+    "path": "repos/cre-kimi-security-20260803-195956/artifacts/research/raw/row_witness/on_max_address_post.json",
+    "findings": [
+      "email"
+    ]
+  },
+  {
+    "path": "repos/cre-kimi-security-20260803-195956/artifacts/context/current_task_packet.md",
+    "findings": [
+      "absolute_home_path",
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre-kimi-security-20260803-195956/artifacts/bootstrap/repository_inventory.json",
+    "findings": [
+      "absolute_home_path"
+    ]
+  },
+  {
+    "path": "repos/cre-kimi-security-20260803-195956/artifacts/bootstrap/archive_verification.json",
+    "findings": [
+      "absolute_home_path"
+    ]
+  },
+  {
+    "path": "repos/cre-kimi-security-20260803-195956/artifacts/identity/public_evaluator_contract.json",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre-kimi-security-20260803-195956/artifacts/evaluations/architecture.json",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre-kimi-security-20260803-195956/artifacts/evaluations/security_privacy.json",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre-kimi-security-20260803-195956/artifacts/task-results/BOOTSTRAP-001.json",
+    "findings": [
+      "absolute_home_path"
+    ]
+  },
+  {
+    "path": "repos/cre-kimi-security-20260803-195956/artifacts/math/formal_decisions.json",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre-kimi-security-20260803-195956/artifacts/architecture/scenario_registry.json",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre-kimi-security-20260803-195956/artifacts/architecture/public_evaluator_contract.json",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre-kimi-security-20260803-195956/evals/known_bad/frontier/architecture_authority-self-granted-from-role-env-credential-or-content.json",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre-kimi-security-20260803-195956/evals/public/test_autonomous_frontier.py",
+    "findings": [
+      "email",
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre-kimi-security-20260803-195956/evals/public/temporal_identity_evaluator.py",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre-kimi-security-20260803-195956/evals/public/architecture_workflow_evaluator.py",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre-kimi-security-20260803-195956/tasks/SECURITY-001.json",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre-kimi-security-20260803-195956/bootstrap/GATE-OS-ARTIFACT-001.json",
+    "findings": [
+      "absolute_home_path"
+    ]
+  },
+  {
+    "path": "repos/cre-kimi-security-20260803-195956/bootstrap/BOOTSTRAP-001.partial.json",
+    "findings": [
+      "absolute_home_path"
+    ]
+  },
+  {
+    "path": "repos/cre-kimi-security-20260803-195956/bootstrap/project_os_v2.2/CRE_Codex_Project_OS_v2.2/launch_kernel/FINAL_AUDIT_REPORT.md",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre-kimi-security-20260803-195956/bootstrap/project_os_v2.2/CRE_Codex_Project_OS_v2.2/launch_kernel/artifacts/level10/campaign.json",
+    "findings": [
+      "absolute_home_path"
+    ]
+  },
+  {
+    "path": "repos/cre-kimi-security-20260803-195956/bootstrap/project_os_v2.2/CRE_Codex_Project_OS_v2.2/launch_kernel/artifacts/level10/full_system_simulation.json",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre-kimi-security-20260803-195956/bootstrap/project_os_v2.2/CRE_Codex_Project_OS_v2.2/launch_kernel/evals/TRIAL_PROTOCOL.md",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre-kimi-security-20260803-195956/bootstrap/project_os_v2.2/CRE_Codex_Project_OS_v2.2/launch_kernel/scripts/run_level10_simulation.py",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre-kimi-security-20260803-195956/bootstrap/project_os_v2.2/CRE_Codex_Project_OS_v2.2/launch_kernel/control/ROLE_ACTIVATION_POLICY.json",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre-kimi-security-20260803-195956/bootstrap/project_os_v2.2/CRE_Codex_Project_OS_v2.2/launch_kernel/kernel/CAPABILITY_BOUNDARY.json",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre-kimi-security-20260803-195956/docs/security/threat_model.md",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre-kimi-security-20260803-195956/scripts/validate_architecture.py",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre-kimi-security-20260803-195956/scripts/build_phase1_evidence.py",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre-kimi-security-20260803-195956/scripts/validate_economics_contracts.py",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre-kimi-security-20260803-195956/scripts/evaluate_autonomous_frontier.py",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre-kimi-security-20260803-195956/control/EVALUATOR_DECISION.json",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre-kimi-security-20260803-195956/control/AUTONOMOUS_FRONTIER_CONTRACT.json",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre-kimi-security-20260803-195956/control/GATES.json",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre-kimi-security-20260803-195956/control/CURRENT_STATE.json",
+    "findings": [
+      "absolute_home_path"
+    ]
+  },
+  {
+    "path": "repos/cre-kimi-security-20260803-195956/control/TASK_GRAPH.json",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre-kimi-security-20260803-195956/src/cre_foundry/contracts/thin_slice.py",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre-relay-security-standalone/README.md",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre-relay-security-standalone/artifacts/research/raw/tor_coa_package.json",
+    "findings": [
+      "email"
+    ]
+  },
+  {
+    "path": "repos/cre-relay-security-standalone/artifacts/research/raw/on_ogl_terms.html",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre-relay-security-standalone/artifacts/research/raw/tor_ogl_terms.html",
+    "findings": [
+      "email"
+    ]
+  },
+  {
+    "path": "repos/cre-relay-security-standalone/artifacts/research/raw/independent/tor_coa_package.json",
+    "findings": [
+      "email"
+    ]
+  },
+  {
+    "path": "repos/cre-relay-security-standalone/artifacts/research/raw/independent/on_ogl_terms.html",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre-relay-security-standalone/artifacts/research/raw/independent/tor_ogl_terms.html",
+    "findings": [
+      "email"
+    ]
+  },
+  {
+    "path": "repos/cre-relay-security-standalone/artifacts/research/raw/row_witness/on_summary.json",
+    "findings": [
+      "email"
+    ]
+  },
+  {
+    "path": "repos/cre-relay-security-standalone/artifacts/research/raw/row_witness/on_max_address.json",
+    "findings": [
+      "email"
+    ]
+  },
+  {
+    "path": "repos/cre-relay-security-standalone/artifacts/research/raw/row_witness/on_max_address_post.json",
+    "findings": [
+      "email"
+    ]
+  },
+  {
+    "path": "repos/cre-relay-security-standalone/artifacts/context/current_task_packet.md",
+    "findings": [
+      "absolute_home_path",
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre-relay-security-standalone/artifacts/bootstrap/repository_inventory.json",
+    "findings": [
+      "absolute_home_path"
+    ]
+  },
+  {
+    "path": "repos/cre-relay-security-standalone/artifacts/bootstrap/archive_verification.json",
+    "findings": [
+      "absolute_home_path"
+    ]
+  },
+  {
+    "path": "repos/cre-relay-security-standalone/artifacts/identity/public_evaluator_contract.json",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre-relay-security-standalone/artifacts/evaluations/architecture.json",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre-relay-security-standalone/artifacts/evaluations/security_contracts.json",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre-relay-security-standalone/artifacts/evaluations/security_privacy.json",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre-relay-security-standalone/artifacts/task-results/SECURITY-001.json",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre-relay-security-standalone/artifacts/task-results/OBSERVABILITY-001.json",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre-relay-security-standalone/artifacts/task-results/BOOTSTRAP-001.json",
+    "findings": [
+      "absolute_home_path"
+    ]
+  },
+  {
+    "path": "repos/cre-relay-security-standalone/artifacts/security/SECURITY-001-start.json",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre-relay-security-standalone/artifacts/security/public_evaluator_contract.json",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre-relay-security-standalone/artifacts/math/formal_decisions.json",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre-relay-security-standalone/artifacts/architecture/scenario_registry.json",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre-relay-security-standalone/artifacts/architecture/public_evaluator_contract.json",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre-relay-security-standalone/evals/known_bad/frontier/architecture_authority-self-granted-from-role-env-credential-or-content.json",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre-relay-security-standalone/evals/known_bad/frontier/security001/security_secret_log.json",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre-relay-security-standalone/evals/public/observability_posture_evaluator.py",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre-relay-security-standalone/evals/public/test_autonomous_frontier.py",
+    "findings": [
+      "email",
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre-relay-security-standalone/evals/public/temporal_identity_evaluator.py",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre-relay-security-standalone/evals/public/security_posture_evaluator.py",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre-relay-security-standalone/evals/public/test_observability_contracts.py",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre-relay-security-standalone/evals/public/test_security_contracts.py",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre-relay-security-standalone/evals/public/architecture_workflow_evaluator.py",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre-relay-security-standalone/tasks/SECURITY-001.json",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre-relay-security-standalone/bootstrap/GATE-OS-ARTIFACT-001.json",
+    "findings": [
+      "absolute_home_path"
+    ]
+  },
+  {
+    "path": "repos/cre-relay-security-standalone/bootstrap/BOOTSTRAP-001.partial.json",
+    "findings": [
+      "absolute_home_path"
+    ]
+  },
+  {
+    "path": "repos/cre-relay-security-standalone/bootstrap/project_os_v2.2/CRE_Codex_Project_OS_v2.2/launch_kernel/FINAL_AUDIT_REPORT.md",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre-relay-security-standalone/bootstrap/project_os_v2.2/CRE_Codex_Project_OS_v2.2/launch_kernel/artifacts/level10/campaign.json",
+    "findings": [
+      "absolute_home_path"
+    ]
+  },
+  {
+    "path": "repos/cre-relay-security-standalone/bootstrap/project_os_v2.2/CRE_Codex_Project_OS_v2.2/launch_kernel/artifacts/level10/full_system_simulation.json",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre-relay-security-standalone/bootstrap/project_os_v2.2/CRE_Codex_Project_OS_v2.2/launch_kernel/evals/TRIAL_PROTOCOL.md",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre-relay-security-standalone/bootstrap/project_os_v2.2/CRE_Codex_Project_OS_v2.2/launch_kernel/scripts/run_level10_simulation.py",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre-relay-security-standalone/bootstrap/project_os_v2.2/CRE_Codex_Project_OS_v2.2/launch_kernel/control/ROLE_ACTIVATION_POLICY.json",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre-relay-security-standalone/bootstrap/project_os_v2.2/CRE_Codex_Project_OS_v2.2/launch_kernel/kernel/CAPABILITY_BOUNDARY.json",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre-relay-security-standalone/docs/security/threat_model.md",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre-relay-security-standalone/docs/observability/OBSERVABILITY_MATERIAL.md",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre-relay-security-standalone/scripts/validate_architecture.py",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre-relay-security-standalone/scripts/build_phase1_evidence.py",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre-relay-security-standalone/scripts/validate_economics_contracts.py",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre-relay-security-standalone/scripts/evaluate_autonomous_frontier.py",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre-relay-security-standalone/scripts/validate_security_contracts.py",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre-relay-security-standalone/scripts/validate_observability_contracts.py",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre-relay-security-standalone/control/EVALUATOR_DECISION.json",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre-relay-security-standalone/control/AUTONOMOUS_FRONTIER_CONTRACT.json",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre-relay-security-standalone/control/GATES.json",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre-relay-security-standalone/control/CURRENT_STATE.json",
+    "findings": [
+      "absolute_home_path",
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre-relay-security-standalone/control/TASK_GRAPH.json",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre-relay-security-standalone/src/cre_foundry/security/posture.py",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre-relay-security-standalone/src/cre_foundry/contracts/thin_slice.py",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre-relay-security-standalone/src/cre_foundry/observability/lineage.py",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/repo-2/_RECOVERY_MANIFEST.json",
+    "findings": [
+      "absolute_home_path"
+    ]
+  },
+  {
+    "path": "repos/repo-2/README.md",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/repo-2/artifacts/research/raw/tor_coa_package.json",
+    "findings": [
+      "email"
+    ]
+  },
+  {
+    "path": "repos/repo-2/artifacts/research/raw/on_ogl_terms.html",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/repo-2/artifacts/research/raw/tor_ogl_terms.html",
+    "findings": [
+      "email"
+    ]
+  },
+  {
+    "path": "repos/repo-2/artifacts/research/raw/independent/tor_coa_package.json",
+    "findings": [
+      "email"
+    ]
+  },
+  {
+    "path": "repos/repo-2/artifacts/research/raw/independent/on_ogl_terms.html",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/repo-2/artifacts/research/raw/independent/tor_ogl_terms.html",
+    "findings": [
+      "email"
+    ]
+  },
+  {
+    "path": "repos/repo-2/artifacts/research/raw/row_witness/on_summary.json",
+    "findings": [
+      "email"
+    ]
+  },
+  {
+    "path": "repos/repo-2/artifacts/research/raw/row_witness/on_max_address.json",
+    "findings": [
+      "email"
+    ]
+  },
+  {
+    "path": "repos/repo-2/artifacts/research/raw/row_witness/on_max_address_post.json",
+    "findings": [
+      "email"
+    ]
+  },
+  {
+    "path": "repos/repo-2/artifacts/context/current_task_packet.md",
+    "findings": [
+      "absolute_home_path",
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/repo-2/artifacts/bootstrap/repository_inventory.json",
+    "findings": [
+      "absolute_home_path"
+    ]
+  },
+  {
+    "path": "repos/repo-2/artifacts/bootstrap/archive_verification.json",
+    "findings": [
+      "absolute_home_path"
+    ]
+  },
+  {
+    "path": "repos/repo-2/artifacts/identity/public_evaluator_contract.json",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/repo-2/artifacts/evaluations/architecture.json",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/repo-2/artifacts/evaluations/security_privacy.json",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/repo-2/artifacts/task-results/BOOTSTRAP-001.json",
+    "findings": [
+      "absolute_home_path"
+    ]
+  },
+  {
+    "path": "repos/repo-2/artifacts/math/formal_decisions.json",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/repo-2/artifacts/architecture/scenario_registry.json",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/repo-2/artifacts/architecture/public_evaluator_contract.json",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/repo-2/evals/known_bad/frontier/architecture_authority-self-granted-from-role-env-credential-or-content.json",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/repo-2/evals/public/test_autonomous_frontier.py",
+    "findings": [
+      "email",
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/repo-2/evals/public/temporal_identity_evaluator.py",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/repo-2/evals/public/architecture_workflow_evaluator.py",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/repo-2/tasks/SECURITY-001.json",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/repo-2/bootstrap/GATE-OS-ARTIFACT-001.json",
+    "findings": [
+      "absolute_home_path"
+    ]
+  },
+  {
+    "path": "repos/repo-2/bootstrap/BOOTSTRAP-001.partial.json",
+    "findings": [
+      "absolute_home_path"
+    ]
+  },
+  {
+    "path": "repos/repo-2/bootstrap/project_os_v2.2/CRE_Codex_Project_OS_v2.2/launch_kernel/FINAL_AUDIT_REPORT.md",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/repo-2/bootstrap/project_os_v2.2/CRE_Codex_Project_OS_v2.2/launch_kernel/artifacts/level10/campaign.json",
+    "findings": [
+      "absolute_home_path"
+    ]
+  },
+  {
+    "path": "repos/repo-2/bootstrap/project_os_v2.2/CRE_Codex_Project_OS_v2.2/launch_kernel/artifacts/level10/full_system_simulation.json",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/repo-2/bootstrap/project_os_v2.2/CRE_Codex_Project_OS_v2.2/launch_kernel/evals/TRIAL_PROTOCOL.md",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/repo-2/bootstrap/project_os_v2.2/CRE_Codex_Project_OS_v2.2/launch_kernel/scripts/run_level10_simulation.py",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/repo-2/bootstrap/project_os_v2.2/CRE_Codex_Project_OS_v2.2/launch_kernel/control/ROLE_ACTIVATION_POLICY.json",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/repo-2/bootstrap/project_os_v2.2/CRE_Codex_Project_OS_v2.2/launch_kernel/kernel/CAPABILITY_BOUNDARY.json",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/repo-2/docs/security/threat_model.md",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/repo-2/scripts/validate_architecture.py",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/repo-2/scripts/build_phase1_evidence.py",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/repo-2/scripts/validate_economics_contracts.py",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/repo-2/scripts/evaluate_autonomous_frontier.py",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/repo-2/control/EVALUATOR_DECISION.json",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/repo-2/control/AUTONOMOUS_FRONTIER_CONTRACT.json",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/repo-2/control/GATES.json",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/repo-2/control/CURRENT_STATE.json",
+    "findings": [
+      "absolute_home_path"
+    ]
+  },
+  {
+    "path": "repos/repo-2/control/TASK_GRAPH.json",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/repo-2/src/cre_foundry/contracts/thin_slice.py",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/repo-3/README.md",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/repo-3/artifacts/research/raw/tor_coa_package.json",
+    "findings": [
+      "email"
+    ]
+  },
+  {
+    "path": "repos/repo-3/artifacts/research/raw/on_ogl_terms.html",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/repo-3/artifacts/research/raw/tor_ogl_terms.html",
+    "findings": [
+      "email"
+    ]
+  },
+  {
+    "path": "repos/repo-3/artifacts/research/raw/independent/tor_coa_package.json",
+    "findings": [
+      "email"
+    ]
+  },
+  {
+    "path": "repos/repo-3/artifacts/research/raw/independent/on_ogl_terms.html",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/repo-3/artifacts/research/raw/independent/tor_ogl_terms.html",
+    "findings": [
+      "email"
+    ]
+  },
+  {
+    "path": "repos/repo-3/artifacts/research/raw/row_witness/on_summary.json",
+    "findings": [
+      "email"
+    ]
+  },
+  {
+    "path": "repos/repo-3/artifacts/research/raw/row_witness/on_max_address.json",
+    "findings": [
+      "email"
+    ]
+  },
+  {
+    "path": "repos/repo-3/artifacts/research/raw/row_witness/on_max_address_post.json",
+    "findings": [
+      "email"
+    ]
+  },
+  {
+    "path": "repos/repo-3/artifacts/context/current_task_packet.md",
+    "findings": [
+      "absolute_home_path",
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/repo-3/artifacts/bootstrap/repository_inventory.json",
+    "findings": [
+      "absolute_home_path"
+    ]
+  },
+  {
+    "path": "repos/repo-3/artifacts/bootstrap/archive_verification.json",
+    "findings": [
+      "absolute_home_path"
+    ]
+  },
+  {
+    "path": "repos/repo-3/artifacts/identity/public_evaluator_contract.json",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/repo-3/artifacts/evaluations/architecture.json",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/repo-3/artifacts/evaluations/security_privacy.json",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/repo-3/artifacts/task-results/BOOTSTRAP-001.json",
+    "findings": [
+      "absolute_home_path"
+    ]
+  },
+  {
+    "path": "repos/repo-3/artifacts/math/formal_decisions.json",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/repo-3/artifacts/architecture/scenario_registry.json",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/repo-3/artifacts/architecture/public_evaluator_contract.json",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/repo-3/evals/known_bad/frontier/architecture_authority-self-granted-from-role-env-credential-or-content.json",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/repo-3/evals/public/test_autonomous_frontier.py",
+    "findings": [
+      "email",
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/repo-3/evals/public/temporal_identity_evaluator.py",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/repo-3/evals/public/architecture_workflow_evaluator.py",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/repo-3/tasks/SECURITY-001.json",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/repo-3/bootstrap/GATE-OS-ARTIFACT-001.json",
+    "findings": [
+      "absolute_home_path"
+    ]
+  },
+  {
+    "path": "repos/repo-3/bootstrap/BOOTSTRAP-001.partial.json",
+    "findings": [
+      "absolute_home_path"
+    ]
+  },
+  {
+    "path": "repos/repo-3/bootstrap/project_os_v2.2/CRE_Codex_Project_OS_v2.2/launch_kernel/FINAL_AUDIT_REPORT.md",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/repo-3/bootstrap/project_os_v2.2/CRE_Codex_Project_OS_v2.2/launch_kernel/artifacts/level10/campaign.json",
+    "findings": [
+      "absolute_home_path"
+    ]
+  },
+  {
+    "path": "repos/repo-3/bootstrap/project_os_v2.2/CRE_Codex_Project_OS_v2.2/launch_kernel/artifacts/level10/full_system_simulation.json",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/repo-3/bootstrap/project_os_v2.2/CRE_Codex_Project_OS_v2.2/launch_kernel/evals/TRIAL_PROTOCOL.md",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/repo-3/bootstrap/project_os_v2.2/CRE_Codex_Project_OS_v2.2/launch_kernel/scripts/run_level10_simulation.py",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/repo-3/bootstrap/project_os_v2.2/CRE_Codex_Project_OS_v2.2/launch_kernel/control/ROLE_ACTIVATION_POLICY.json",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/repo-3/bootstrap/project_os_v2.2/CRE_Codex_Project_OS_v2.2/launch_kernel/kernel/CAPABILITY_BOUNDARY.json",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/repo-3/docs/security/threat_model.md",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/repo-3/scripts/validate_architecture.py",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/repo-3/scripts/build_phase1_evidence.py",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/repo-3/scripts/validate_economics_contracts.py",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/repo-3/scripts/evaluate_autonomous_frontier.py",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/repo-3/control/EVALUATOR_DECISION.json",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/repo-3/control/AUTONOMOUS_FRONTIER_CONTRACT.json",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/repo-3/control/GATES.json",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/repo-3/control/CURRENT_STATE.json",
+    "findings": [
+      "absolute_home_path"
+    ]
+  },
+  {
+    "path": "repos/repo-3/control/TASK_GRAPH.json",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/repo-3/src/cre_foundry/contracts/thin_slice.py",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre/README.md",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre/artifacts/research/raw/tor_coa_package.json",
+    "findings": [
+      "email"
+    ]
+  },
+  {
+    "path": "repos/cre/artifacts/research/raw/on_ogl_terms.html",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre/artifacts/research/raw/tor_ogl_terms.html",
+    "findings": [
+      "email"
+    ]
+  },
+  {
+    "path": "repos/cre/artifacts/research/raw/independent/tor_coa_package.json",
+    "findings": [
+      "email"
+    ]
+  },
+  {
+    "path": "repos/cre/artifacts/research/raw/independent/on_ogl_terms.html",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre/artifacts/research/raw/independent/tor_ogl_terms.html",
+    "findings": [
+      "email"
+    ]
+  },
+  {
+    "path": "repos/cre/artifacts/research/raw/row_witness/on_summary.json",
+    "findings": [
+      "email"
+    ]
+  },
+  {
+    "path": "repos/cre/artifacts/research/raw/row_witness/on_max_address.json",
+    "findings": [
+      "email"
+    ]
+  },
+  {
+    "path": "repos/cre/artifacts/research/raw/row_witness/on_max_address_post.json",
+    "findings": [
+      "email"
+    ]
+  },
+  {
+    "path": "repos/cre/artifacts/context/current_task_packet.md",
+    "findings": [
+      "absolute_home_path",
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre/artifacts/bootstrap/repository_inventory.json",
+    "findings": [
+      "absolute_home_path"
+    ]
+  },
+  {
+    "path": "repos/cre/artifacts/bootstrap/archive_verification.json",
+    "findings": [
+      "absolute_home_path"
+    ]
+  },
+  {
+    "path": "repos/cre/artifacts/identity/public_evaluator_contract.json",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre/artifacts/evaluations/architecture.json",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre/artifacts/evaluations/security_privacy.json",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre/artifacts/task-results/BOOTSTRAP-001.json",
+    "findings": [
+      "absolute_home_path"
+    ]
+  },
+  {
+    "path": "repos/cre/artifacts/math/formal_decisions.json",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre/artifacts/architecture/scenario_registry.json",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre/artifacts/architecture/public_evaluator_contract.json",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre/evals/known_bad/frontier/architecture_authority-self-granted-from-role-env-credential-or-content.json",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre/evals/public/test_autonomous_frontier.py",
+    "findings": [
+      "email",
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre/evals/public/temporal_identity_evaluator.py",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre/evals/public/architecture_workflow_evaluator.py",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre/tasks/SECURITY-001.json",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre/bootstrap/GATE-OS-ARTIFACT-001.json",
+    "findings": [
+      "absolute_home_path"
+    ]
+  },
+  {
+    "path": "repos/cre/bootstrap/BOOTSTRAP-001.partial.json",
+    "findings": [
+      "absolute_home_path"
+    ]
+  },
+  {
+    "path": "repos/cre/bootstrap/project_os_v2.2/CRE_Codex_Project_OS_v2.2/launch_kernel/FINAL_AUDIT_REPORT.md",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre/bootstrap/project_os_v2.2/CRE_Codex_Project_OS_v2.2/launch_kernel/artifacts/level10/campaign.json",
+    "findings": [
+      "absolute_home_path"
+    ]
+  },
+  {
+    "path": "repos/cre/bootstrap/project_os_v2.2/CRE_Codex_Project_OS_v2.2/launch_kernel/artifacts/level10/full_system_simulation.json",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre/bootstrap/project_os_v2.2/CRE_Codex_Project_OS_v2.2/launch_kernel/evals/TRIAL_PROTOCOL.md",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre/bootstrap/project_os_v2.2/CRE_Codex_Project_OS_v2.2/launch_kernel/scripts/run_level10_simulation.py",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre/bootstrap/project_os_v2.2/CRE_Codex_Project_OS_v2.2/launch_kernel/control/ROLE_ACTIVATION_POLICY.json",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre/bootstrap/project_os_v2.2/CRE_Codex_Project_OS_v2.2/launch_kernel/kernel/CAPABILITY_BOUNDARY.json",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre/docs/security/threat_model.md",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre/scripts/validate_architecture.py",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre/scripts/build_phase1_evidence.py",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre/scripts/validate_economics_contracts.py",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre/scripts/evaluate_autonomous_frontier.py",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre/control/EVALUATOR_DECISION.json",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre/control/AUTONOMOUS_FRONTIER_CONTRACT.json",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre/control/GATES.json",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre/control/CURRENT_STATE.json",
+    "findings": [
+      "absolute_home_path"
+    ]
+  },
+  {
+    "path": "repos/cre/control/TASK_GRAPH.json",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre/src/cre_foundry/contracts/thin_slice.py",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre-foundry/config/devsecops_scanner_control_plane.json",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre-foundry/tests/unit/test_brampton_permit_directory_bridge.py",
+    "findings": [
+      "phone"
+    ]
+  },
+  {
+    "path": "repos/cre-foundry/tests/unit/test_devsecops_scanner_control_plane.py",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre-foundry/tests/unit/test_brampton_verification_ledger.py",
+    "findings": [
+      "email"
+    ]
+  },
+  {
+    "path": "repos/cre-foundry/tests/unit/test_brampton_business_directory_silver.py",
+    "findings": [
+      "phone"
+    ]
+  },
+  {
+    "path": "repos/cre-foundry/tests/unit/test_brampton_permit_opportunity_evidence.py",
+    "findings": [
+      "phone"
+    ]
+  },
+  {
+    "path": "repos/cre-foundry/docs/security/sql_safety_remediation_inventory.md",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre-foundry/docs/security/secret_scan_report.json",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre-foundry/docs/security/devsecops_scanner_findings.json",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre-foundry/docs/security/static_analysis_report.json",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre-foundry/docs/security/audit_control_catalog.json",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre-foundry/docs/security/SCANNER_SUPPRESSION_POLICY.md",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre-foundry/docs/security/sql_safety_wave1a_plan.json",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre-foundry/docs/security/sql_safety_wave1a_plan.md",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre-foundry/docs/security/secret_noise_profile.json",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre-foundry/docs/security/devsecops_scanner_control_plane.md",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre-foundry/docs/security/CI_SECURITY_POLICY.md",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre-foundry/docs/data_contracts/data_plane_readiness.md",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre-foundry/docs/data_contracts/source_parser_isolation.json",
+    "findings": [
+      "absolute_home_path"
+    ]
+  },
+  {
+    "path": "repos/cre-foundry/docs/data_contracts/source_snapshot_bootstrap_review.json",
+    "findings": [
+      "absolute_home_path"
+    ]
+  },
+  {
+    "path": "repos/cre-foundry/docs/data_contracts/source_snapshot_bootstrap.json",
+    "findings": [
+      "absolute_home_path"
+    ]
+  },
+  {
+    "path": "repos/cre-foundry/docs/data_contracts/source_snapshot_admission.json",
+    "findings": [
+      "absolute_home_path"
+    ]
+  },
+  {
+    "path": "repos/cre-foundry/docs/source_access/evidence/brampton_plantrak_20260726T022324Z/brampton_portal_self.txt",
+    "findings": [
+      "email"
+    ]
+  },
+  {
+    "path": "repos/cre-foundry/docs/source_access/evidence/brampton_plantrak_20260726T022324Z/evidence_summary.json",
+    "findings": [
+      "email"
+    ]
+  },
+  {
+    "path": "repos/cre-foundry/logs/canary_sealed_security_scan.txt",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre-foundry/logs/semantic_v2_security_scan.txt",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre-foundry/logs/semantic_identity_security_scan.txt",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre-foundry/logs/semantic_v2_wave1a_plan.txt",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre-foundry/logs/canary_seal_security_scan.txt",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre-foundry/logs/semantic_identity_audit.txt",
+    "findings": [
+      "absolute_home_path",
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre-foundry/logs/security_checkpoint_audit.txt",
+    "findings": [
+      "absolute_home_path",
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre-foundry/logs/canary_final_security_scan.txt",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre-foundry/logs/canary_sealed_audit.txt",
+    "findings": [
+      "absolute_home_path",
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre-foundry/logs/source_snapshot_bootstrap.json",
+    "findings": [
+      "absolute_home_path"
+    ]
+  },
+  {
+    "path": "repos/cre-foundry/logs/sql_safety_wave1_security_scan.txt",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre-foundry/logs/security_scanner_loop.txt",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre-foundry/logs/canary_sealed_plan.txt",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre-foundry/logs/wave1a_canary_plan.txt",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre-foundry/logs/security_scanner_finalization.txt",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre-foundry/logs/semantic_v2_audit.txt",
+    "findings": [
+      "absolute_home_path",
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre-foundry/logs/wave1a_canary_security_scan.txt",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre-foundry/logs/canary_seal_plan.txt",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre-foundry/logs/security_scans/detect_secrets.json",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre-foundry/logs/security_scans/bandit.json",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre-foundry/logs/brampton_permits_preflight_20260726T031853Z/property_information.html",
+    "findings": [
+      "email",
+      "phone"
+    ]
+  },
+  {
+    "path": "repos/cre-foundry/logs/brampton_permits_preflight_20260726T031853Z/open_data.html",
+    "findings": [
+      "email"
+    ]
+  },
+  {
+    "path": "repos/cre-foundry/logs/ero_preflight_20260726T031636Z/search_brampton.html",
+    "findings": [
+      "email"
+    ]
+  },
+  {
+    "path": "repos/cre-foundry/logs/ero_preflight_20260726T031636Z/search_default.html",
+    "findings": [
+      "email"
+    ]
+  },
+  {
+    "path": "repos/cre-foundry/logs/brampton_business_directory_preflight_20260726T035707Z/brampton_open_data_page.html",
+    "findings": [
+      "email"
+    ]
+  },
+  {
+    "path": "repos/cre-foundry/logs/brampton_business_directory_preflight_20260726T035707Z/evidence_summary.json",
+    "findings": [
+      "email",
+      "phone",
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre-foundry/logs/brampton_business_directory_preflight_20260726T035707Z/invest_brampton_research_data.html",
+    "findings": [
+      "email",
+      "phone",
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre-foundry/logs/brampton_business_directory_preflight_20260726T035707Z/arcgis_search.json",
+    "findings": [
+      "email",
+      "phone",
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre-foundry/logs/brampton_business_directory_lineage_20260726T035925Z/evidence_summary.json",
+    "findings": [
+      "email",
+      "phone"
+    ]
+  },
+  {
+    "path": "repos/cre-foundry/logs/brampton_business_directory_lineage_20260726T035925Z/item_3d7354f336cf4589a18b94816cdbfae4_data.json",
+    "findings": [
+      "email"
+    ]
+  },
+  {
+    "path": "repos/cre-foundry/logs/brampton_business_directory_lineage_20260726T035925Z/item_3cd59a895f404612b57e4c84fc8931be.json",
+    "findings": [
+      "email",
+      "phone"
+    ]
+  },
+  {
+    "path": "repos/cre-foundry/logs/brampton_business_directory_lineage_20260726T035925Z/item_3d7354f336cf4589a18b94816cdbfae4.json",
+    "findings": [
+      "email"
+    ]
+  },
+  {
+    "path": "repos/cre-foundry/logs/brampton_business_directory_lineage_20260726T035925Z/item_66674743f40f4b4c85d004bdf6a831f2_data.json",
+    "findings": [
+      "email"
+    ]
+  },
+  {
+    "path": "repos/cre-foundry/logs/ero_preflight_20260726T031655Z/search_brampton.html",
+    "findings": [
+      "email"
+    ]
+  },
+  {
+    "path": "repos/cre-foundry/logs/ero_preflight_20260726T031655Z/evidence_summary.json",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre-foundry/logs/ero_preflight_20260726T031655Z/ontario_open_licence.html",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre-foundry/logs/ero_preflight_20260726T031655Z/search_mississauga.html",
+    "findings": [
+      "email"
+    ]
+  },
+  {
+    "path": "repos/cre-foundry/logs/ero_preflight_20260726T031655Z/search_default.html",
+    "findings": [
+      "email"
+    ]
+  },
+  {
+    "path": "repos/cre-foundry/logs/ero_preflight_20260726T031655Z/robots.txt",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre-foundry/scripts/security_scan.sh",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre-foundry/scripts/run_metadata_watch.sh",
+    "findings": [
+      "absolute_home_path"
+    ]
+  },
+  {
+    "path": "repos/cre-foundry/src/cre_foundry/temporal_readiness.py",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre-foundry/src/cre_foundry/shadow_learning.py",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre-foundry/src/cre_foundry/primitive_quality.py",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre-foundry/src/cre_foundry/devsecops_scanner_control_plane.py",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre-foundry/src/cre_foundry/contract_resilience_audit.py",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre-foundry/src/cre_foundry/source_cadence.py",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre-foundry/src/cre_foundry/sql_safety_remediation_inventory.py",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre-foundry/src/cre_foundry/data_plane.py",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre-foundry/src/cre_foundry/sql_safety_wave1a_planner.py",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "repos/cre-foundry/src/cre_foundry/primitive_inventory.py",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/kimi/b29d0751ea72__CHECKPOINT_SUMMARY.txt",
+    "findings": [
+      "absolute_home_path",
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/unclassified/1e08fbd415c9__results.tsv",
+    "findings": [
+      "absolute_home_path"
+    ]
+  },
+  {
+    "path": "loose/unclassified/68f0093f1208__security-secret-log.pretty.json",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/opencode/b8ec040bf9e9__SUMMARY.txt",
+    "findings": [
+      "absolute_home_path"
+    ]
+  },
+  {
+    "path": "loose/opencode/bf33f0c12005__CRE-Complete-Repository-Map-20260802-172809.md",
+    "findings": [
+      "absolute_home_path"
+    ]
+  },
+  {
+    "path": "loose/control-plane/5632ea93bf27__CONTINUATION_BRIEF.md",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/opencode/7e2afd7f6159__REFERENCE_INDEX.md",
+    "findings": [
+      "absolute_home_path"
+    ]
+  },
+  {
+    "path": "loose/unclassified/c5e4f4a49ed2__protected-hashes.after.txt",
+    "findings": [
+      "absolute_home_path"
+    ]
+  },
+  {
+    "path": "loose/codex/497ca97c0f34__current_task_packet.md",
+    "findings": [
+      "absolute_home_path",
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/control-plane/583e7715e2af__public_evaluator_contract.json",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/codex/83192f86dcee__CURRENT_STATE.json",
+    "findings": [
+      "absolute_home_path"
+    ]
+  },
+  {
+    "path": "loose/control-plane/8f44705c2db2__TASK_GRAPH.json",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/control-plane/0f4ae702dd27__validate_economics_contracts.py",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/control-plane/1b8d2bbef566__SECURITY-001.json",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/opencode/21d949808b79__opencode-sessions.json",
+    "findings": [
+      "absolute_home_path"
+    ]
+  },
+  {
+    "path": "loose/kimi/7acc83ac7cb7__recovery-summary.txt",
+    "findings": [
+      "absolute_home_path"
+    ]
+  },
+  {
+    "path": "loose/kimi/c382f6b9bbf1__audit-summary.txt",
+    "findings": [
+      "absolute_home_path"
+    ]
+  },
+  {
+    "path": "loose/unclassified/00c46bc0737e__command-results.tsv",
+    "findings": [
+      "absolute_home_path"
+    ]
+  },
+  {
+    "path": "loose/opencode/b94ed6e911e1__opencode-session-tail.txt",
+    "findings": [
+      "absolute_home_path",
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/kimi/008b6a33491e__sanitized-prompt-manifest.json",
+    "findings": [
+      "absolute_home_path"
+    ]
+  },
+  {
+    "path": "loose/kimi/2de8a88761e4__2de8a88761e4__KIMI_HANDOFF.md",
+    "findings": [
+      "absolute_home_path"
+    ]
+  },
+  {
+    "path": "loose/kimi/2f0de5fd21e9__2f0de5fd21e9__kimi_one_shot_prompt.md",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/opencode/59a72ddc4aa7__59a72ddc4aa7__prompt-agent-session-paths.txt",
+    "findings": [
+      "absolute_home_path"
+    ]
+  },
+  {
+    "path": "loose/opencode/de980e364880__tool-path-catalog.json",
+    "findings": [
+      "absolute_home_path"
+    ]
+  },
+  {
+    "path": "loose/opencode/f3fb2cbf3db8__AUDIT_SUMMARY.txt",
+    "findings": [
+      "absolute_home_path"
+    ]
+  },
+  {
+    "path": "loose/opencode/f477331a6a17__HISTORICAL_PATHS.txt",
+    "findings": [
+      "absolute_home_path"
+    ]
+  },
+  {
+    "path": "loose/opencode/462699878192__desktop-reference-paths.txt",
+    "findings": [
+      "absolute_home_path"
+    ]
+  },
+  {
+    "path": "loose/opencode/eda7dc8bf80d__duplicate-files.json",
+    "findings": [
+      "absolute_home_path"
+    ]
+  },
+  {
+    "path": "loose/opencode/e297260d4dc8__duplicate-files.txt",
+    "findings": [
+      "absolute_home_path"
+    ]
+  },
+  {
+    "path": "loose/opencode/5a385c65b8eb__priority-reference-files.txt",
+    "findings": [
+      "absolute_home_path"
+    ]
+  },
+  {
+    "path": "loose/opencode/50f5ddd18286__reference-metadata.json",
+    "findings": [
+      "absolute_home_path"
+    ]
+  },
+  {
+    "path": "loose/opencode/d0ae016ec00a__tool-reference-paths.txt",
+    "findings": [
+      "absolute_home_path"
+    ]
+  },
+  {
+    "path": "loose/kimi/43fc364b31ed__CURRENT_CHECKPOINT.md",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/codex/b5696a60ac2a__CURRENT_STATE.json",
+    "findings": [
+      "absolute_home_path"
+    ]
+  },
+  {
+    "path": "loose/control-plane/b92ac97713ce__TASK_GRAPH.json",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/kimi/691decf5eccb__security-diagnostic.txt",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/unclassified/0df4a7e5fe2e__security_secret_log.json",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/unclassified/a0e36ea088a9__results.tsv",
+    "findings": [
+      "absolute_home_path"
+    ]
+  },
+  {
+    "path": "loose/control-plane/59fad773696d__SECURITY-001.json",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/kimi/e755c8369426___RECOVERY_MANIFEST.json",
+    "findings": [
+      "absolute_home_path"
+    ]
+  },
+  {
+    "path": "loose/application/640f1453c32a__devsecops_scanner_control_plane.json",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/application/9f746f16964b__data_plane_readiness.md",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/application/711641f96f23__source_parser_isolation.json",
+    "findings": [
+      "absolute_home_path"
+    ]
+  },
+  {
+    "path": "loose/application/1cc70bc0a306__source_snapshot_admission.json",
+    "findings": [
+      "absolute_home_path"
+    ]
+  },
+  {
+    "path": "loose/application/eef083ab8c7f__source_snapshot_bootstrap.json",
+    "findings": [
+      "absolute_home_path"
+    ]
+  },
+  {
+    "path": "loose/application/7a659ddf1197__source_snapshot_bootstrap_review.json",
+    "findings": [
+      "absolute_home_path"
+    ]
+  },
+  {
+    "path": "loose/application/e75b0fd6fe5f__CI_SECURITY_POLICY.md",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/application/785470269e03__SCANNER_SUPPRESSION_POLICY.md",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/application/486966d42db4__audit_control_catalog.json",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/application/a395dbb83f11__devsecops_scanner_control_plane.md",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/codex/fe6d5dde15e8__devsecops_scanner_findings.json",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/codex/1be88b7e5781__secret_noise_profile.json",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/codex/0245ce5b0128__secret_scan_report.json",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/application/acb0904ea5dc__sql_safety_remediation_inventory.md",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/application/2899ee900a61__sql_safety_wave1a_plan.json",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/application/b86e5ebf0822__sql_safety_wave1a_plan.md",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/application/0d5fc2090bf2__static_analysis_report.json",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/application/1d85e0792c98__brampton_portal_self.txt",
+    "findings": [
+      "email"
+    ]
+  },
+  {
+    "path": "loose/application/355359208730__evidence_summary.json",
+    "findings": [
+      "email"
+    ]
+  },
+  {
+    "path": "loose/application/7b1524adeb3e__evidence_summary.json",
+    "findings": [
+      "email",
+      "phone"
+    ]
+  },
+  {
+    "path": "loose/application/5c89579277ba__item_3cd59a895f404612b57e4c84fc8931be.json",
+    "findings": [
+      "email",
+      "phone"
+    ]
+  },
+  {
+    "path": "loose/application/febde18c15d1__item_3d7354f336cf4589a18b94816cdbfae4.json",
+    "findings": [
+      "email"
+    ]
+  },
+  {
+    "path": "loose/application/c127a3d8eb31__item_3d7354f336cf4589a18b94816cdbfae4_data.json",
+    "findings": [
+      "email"
+    ]
+  },
+  {
+    "path": "loose/application/434bcdbb9935__item_66674743f40f4b4c85d004bdf6a831f2_data.json",
+    "findings": [
+      "email"
+    ]
+  },
+  {
+    "path": "loose/application/a623b5f05420__arcgis_search.json",
+    "findings": [
+      "email",
+      "phone",
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/application/96b70c590fe7__brampton_open_data_page.html",
+    "findings": [
+      "email"
+    ]
+  },
+  {
+    "path": "loose/application/1f47f6176ab3__evidence_summary.json",
+    "findings": [
+      "email",
+      "phone",
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/application/79bb0d69c878__invest_brampton_research_data.html",
+    "findings": [
+      "email",
+      "phone",
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/application/987d905351ab__open_data.html",
+    "findings": [
+      "email"
+    ]
+  },
+  {
+    "path": "loose/application/ad9a795c366e__property_information.html",
+    "findings": [
+      "email",
+      "phone"
+    ]
+  },
+  {
+    "path": "loose/application/4139cc23f179__canary_final_security_scan.txt",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/application/52a758fa035f__canary_seal_plan.txt",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/codex/636d7744d669__canary_sealed_audit.txt",
+    "findings": [
+      "absolute_home_path",
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/application/bcadb1fbe557__canary_sealed_plan.txt",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/application/a6ef4b825737__search_brampton.html",
+    "findings": [
+      "email"
+    ]
+  },
+  {
+    "path": "loose/application/6747f949cb26__search_default.html",
+    "findings": [
+      "email"
+    ]
+  },
+  {
+    "path": "loose/application/9dc5c8f1a0c3__evidence_summary.json",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/application/683ba1d30b0a__ontario_open_licence.html",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/application/773fb8d35bb9__robots.txt",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/application/7d4e1fcc88b1__search_mississauga.html",
+    "findings": [
+      "email"
+    ]
+  },
+  {
+    "path": "loose/codex/437c1920409d__security_checkpoint_audit.txt",
+    "findings": [
+      "absolute_home_path",
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/application/effdd1d687ff__security_scanner_finalization.txt",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/application/16cce9ec0ad6__security_scanner_loop.txt",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/application/30b55c3efeca__bandit.json",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/codex/ceeea9b0d390__detect_secrets.json",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/codex/ae32fba15472__semantic_identity_audit.txt",
+    "findings": [
+      "absolute_home_path",
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/codex/9a1cfa80ce7a__semantic_v2_audit.txt",
+    "findings": [
+      "absolute_home_path",
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/application/1710b3e58f84__semantic_v2_security_scan.txt",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/application/1dc1631c0962__semantic_v2_wave1a_plan.txt",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/application/7d49c9130b9a__source_snapshot_bootstrap.json",
+    "findings": [
+      "absolute_home_path"
+    ]
+  },
+  {
+    "path": "loose/application/8893b6c57b11__wave1a_canary_security_scan.txt",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/application/4f70e13f647e__run_metadata_watch.sh",
+    "findings": [
+      "absolute_home_path"
+    ]
+  },
+  {
+    "path": "loose/application/fe9ef6c2b66f__security_scan.sh",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/application/ec479199a7a6__contract_resilience_audit.py",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/application/4f152987fbe8__data_plane.py",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/application/a619ae00b6f5__devsecops_scanner_control_plane.py",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/application/e45f5f0ec6d6__primitive_inventory.py",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/application/4c632de37553__primitive_quality.py",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/application/c308ff418d4c__shadow_learning.py",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/application/9ed1600e1790__source_cadence.py",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/application/539e2f6335bc__sql_safety_remediation_inventory.py",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/application/cfa1891c9377__sql_safety_wave1a_planner.py",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/application/9e34f4ef0ad1__temporal_readiness.py",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/application/9ba4837deaea__test_brampton_business_directory_silver.py",
+    "findings": [
+      "phone"
+    ]
+  },
+  {
+    "path": "loose/application/d1ec7fc69f4e__test_brampton_permit_directory_bridge.py",
+    "findings": [
+      "phone"
+    ]
+  },
+  {
+    "path": "loose/application/725425bd06a6__test_brampton_permit_opportunity_evidence.py",
+    "findings": [
+      "phone"
+    ]
+  },
+  {
+    "path": "loose/application/3660efe83d54__test_brampton_verification_ledger.py",
+    "findings": [
+      "email"
+    ]
+  },
+  {
+    "path": "loose/application/6eb6e935e919__test_devsecops_scanner_control_plane.py",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/codex/b62a0b8b605f__README.md",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/codex/10c5804d0719__public_evaluator_contract.json",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/codex/718e8e161474__scenario_registry.json",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/codex/3147b79871f3__archive_verification.json",
+    "findings": [
+      "absolute_home_path"
+    ]
+  },
+  {
+    "path": "loose/codex/0f9c896ac564__repository_inventory.json",
+    "findings": [
+      "absolute_home_path"
+    ]
+  },
+  {
+    "path": "loose/codex/b5b0e44763ff__current_task_packet.md",
+    "findings": [
+      "absolute_home_path",
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/codex/3b1b1dca7ffc__architecture.json",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/codex/165ba85706d4__security_privacy.json",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/codex/fa078e8d4286__formal_decisions.json",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/codex/e089257f0c6c__on_ogl_terms.html",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/codex/1b1868fcc8f3__tor_coa_package.json",
+    "findings": [
+      "email"
+    ]
+  },
+  {
+    "path": "loose/codex/88852d08f653__tor_ogl_terms.html",
+    "findings": [
+      "email"
+    ]
+  },
+  {
+    "path": "loose/codex/b872ccb5b6ea__on_ogl_terms.html",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/codex/aba15f7df654__on_max_address.json",
+    "findings": [
+      "email"
+    ]
+  },
+  {
+    "path": "loose/codex/b07e02ef088c__tor_coa_package.json",
+    "findings": [
+      "email"
+    ]
+  },
+  {
+    "path": "loose/codex/1b8093b9184b__BOOTSTRAP-001.json",
+    "findings": [
+      "absolute_home_path"
+    ]
+  },
+  {
+    "path": "loose/codex/174b7818a51c__BOOTSTRAP-001.partial.json",
+    "findings": [
+      "absolute_home_path"
+    ]
+  },
+  {
+    "path": "loose/codex/e905bfc2d2ab__GATE-OS-ARTIFACT-001.json",
+    "findings": [
+      "absolute_home_path"
+    ]
+  },
+  {
+    "path": "loose/codex/68c05e5b4285__FINAL_AUDIT_REPORT.md",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/codex/8a0ce5efcaea__campaign.json",
+    "findings": [
+      "absolute_home_path"
+    ]
+  },
+  {
+    "path": "loose/codex/672b8ba9fd36__full_system_simulation.json",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/codex/fe884298d6ba__ROLE_ACTIVATION_POLICY.json",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/codex/b6b98c095e5d__TRIAL_PROTOCOL.md",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/codex/08e5828cd0c7__CAPABILITY_BOUNDARY.json",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/codex/766c1d345c06__run_level10_simulation.py",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/codex/e21d0157c436__AUTONOMOUS_FRONTIER_CONTRACT.json",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/codex/4d4846e143cb__EVALUATOR_DECISION.json",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/codex/b3fb0832582c__GATES.json",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/codex/7660a58ffb17__threat_model.md",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/codex/e523b25246fd__architecture_authority-self-granted-from-role-env-credential-or-content.json",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/codex/d735b7a56c44__architecture_workflow_evaluator.py",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/codex/b4492349ff6a__temporal_identity_evaluator.py",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/codex/9be2a4a1931d__test_autonomous_frontier.py",
+    "findings": [
+      "email",
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/codex/a8e5d44563d4__build_phase1_evidence.py",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/codex/e3e07ffc2f40__evaluate_autonomous_frontier.py",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/codex/31caeee0c1b2__validate_architecture.py",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/codex/f152b7bfafb1__validate_economics_contracts.py",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/codex/ebd0e08ddcf0__thin_slice.py",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/codex/42334d3508a7__security_contracts.json",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/codex/3e53e03e7b00__SECURITY-001-start.json",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/codex/61bb1ef04fd8__public_evaluator_contract.json",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/codex/f312b3fbb415__OBSERVABILITY-001.json",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/codex/39be06a6e0a0__SECURITY-001.json",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/codex/7dedc0ee561c__CURRENT_STATE.json",
+    "findings": [
+      "absolute_home_path",
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/codex/c496a35431f9__TASK_GRAPH.json",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/codex/3396b4769571__OBSERVABILITY_MATERIAL.md",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/codex/0fc585002b11__security_secret_log.json",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/codex/83abf1f707f4__observability_posture_evaluator.py",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/codex/49296226b0a1__security_posture_evaluator.py",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/codex/8a4da014e734__test_observability_contracts.py",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/codex/96001f9cd6c8__test_security_contracts.py",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/codex/91fc2e72afdc__validate_observability_contracts.py",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/codex/142fed1e12bc__validate_security_contracts.py",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/codex/877dfa24499b__lineage.py",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/codex/e3688c5aef64__posture.py",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/codex/2415fad7fe39__SECURITY-001.json",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/codex/527d61ab08af__current_task_packet.md",
+    "findings": [
+      "absolute_home_path",
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/codex/50cf3c0789cd__CURRENT_STATE.json",
+    "findings": [
+      "absolute_home_path"
+    ]
+  },
+  {
+    "path": "loose/codex/c778dbdb82d1__TASK_GRAPH.json",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/opencode/583cb67e229d__collect_cre_work.py",
+    "findings": [
+      "absolute_home_path",
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/kimi/976f7cdadc8a__00_READ_ME_FIRST.md",
+    "findings": [
+      "absolute_home_path"
+    ]
+  },
+  {
+    "path": "loose/kimi/69f6a100c132__01_LOOP_1_AUDIT_AND_PLAN.txt",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/kimi/16127138ca7c__MANIFEST.json",
+    "findings": [
+      "absolute_home_path"
+    ]
+  },
+  {
+    "path": "loose/kimi/723ea9888599__check_state.sh",
+    "findings": [
+      "absolute_home_path"
+    ]
+  },
+  {
+    "path": "loose/kimi/d7740f7f81ac__start_loop_1.sh",
+    "findings": [
+      "absolute_home_path"
+    ]
+  },
+  {
+    "path": "loose/kimi/099986d4619c__start_resume_auto.sh",
+    "findings": [
+      "absolute_home_path"
+    ]
+  },
+  {
+    "path": "loose/kimi/949d3e0dd7be__LINE_COUNT_REPORT.md",
+    "findings": [
+      "absolute_home_path"
+    ]
+  },
+  {
+    "path": "loose/codex/eb2bd2ec483b__files.csv",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/kimi/25914506c6d1__summary.json",
+    "findings": [
+      "absolute_home_path"
+    ]
+  },
+  {
+    "path": "loose/kimi/d1167c4a1294__AUDIT_SUMMARY.txt",
+    "findings": [
+      "absolute_home_path"
+    ]
+  },
+  {
+    "path": "loose/antigravity/d387fbd4d094__recent-antigravity-state.json",
+    "findings": [
+      "absolute_home_path"
+    ]
+  },
+  {
+    "path": "loose/relay/9cc56b1e2756__02_RELAY_PROTOCOL.md",
+    "findings": [
+      "absolute_home_path"
+    ]
+  },
+  {
+    "path": "loose/kimi/7279b518def5__03_SECURITY_ACTIVATION.md",
+    "findings": [
+      "absolute_home_path",
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/kimi/553874a8cc4a__04_SECURITY_CONTEXT_PACKET.md",
+    "findings": [
+      "absolute_home_path",
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/kimi/a929f9ea6302__05_CONTEXT_PACKET_MANIFEST.json",
+    "findings": [
+      "absolute_home_path"
+    ]
+  },
+  {
+    "path": "loose/kimi/e0fa1f1d0390__ONE_SHOT_READINESS.json",
+    "findings": [
+      "absolute_home_path",
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/kimi/871162b19e46__installed.json",
+    "findings": [
+      "absolute_home_path"
+    ]
+  },
+  {
+    "path": "loose/kimi/d86bd79bb7bc__CHANGELOG.md",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/kimi/83194b70224f__kimi-datasource.mjs",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/kimi/13ce74502a96__session_index.jsonl",
+    "findings": [
+      "absolute_home_path"
+    ]
+  },
+  {
+    "path": "loose/kimi/ac23885559e8__wire.jsonl",
+    "findings": [
+      "absolute_home_path",
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/kimi/ae2735058d19__state.json",
+    "findings": [
+      "absolute_home_path"
+    ]
+  },
+  {
+    "path": "loose/kimi/af0bd03e5d2d__wire.jsonl",
+    "findings": [
+      "absolute_home_path",
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/kimi/8350944a7d5e__state.json",
+    "findings": [
+      "absolute_home_path"
+    ]
+  },
+  {
+    "path": "loose/kimi/9a43bc6f84b9__wire.jsonl",
+    "findings": [
+      "absolute_home_path",
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/kimi/f0c22fd77ef4__state.json",
+    "findings": [
+      "absolute_home_path"
+    ]
+  },
+  {
+    "path": "loose/kimi/c3b113e5b0d8__wire.jsonl",
+    "findings": [
+      "absolute_home_path",
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/kimi/ad1970bd39be__state.json",
+    "findings": [
+      "absolute_home_path"
+    ]
+  },
+  {
+    "path": "loose/kimi/1351c4dad207__wire.jsonl",
+    "findings": [
+      "absolute_home_path",
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/kimi/8ebc2da25a72__state.json",
+    "findings": [
+      "absolute_home_path"
+    ]
+  },
+  {
+    "path": "loose/kimi/ab274830ab6e__wire.jsonl",
+    "findings": [
+      "absolute_home_path",
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/kimi/d364d4f9141a__state.json",
+    "findings": [
+      "absolute_home_path"
+    ]
+  },
+  {
+    "path": "loose/kimi/a6b7189662b2__wire.jsonl",
+    "findings": [
+      "absolute_home_path",
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/kimi/7aabd5f5d2ef__state.json",
+    "findings": [
+      "absolute_home_path"
+    ]
+  },
+  {
+    "path": "loose/kimi/223e6c6d2219__wire.jsonl",
+    "findings": [
+      "absolute_home_path",
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/kimi/346aac9be61d__state.json",
+    "findings": [
+      "absolute_home_path"
+    ]
+  },
+  {
+    "path": "loose/kimi/3ff66d2721a6__wire.jsonl",
+    "findings": [
+      "absolute_home_path",
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/kimi/e427e903aaa8__state.json",
+    "findings": [
+      "absolute_home_path"
+    ]
+  },
+  {
+    "path": "loose/kimi/4721f9afc21f__wire.jsonl",
+    "findings": [
+      "absolute_home_path",
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/kimi/2c5366e95f20__state.json",
+    "findings": [
+      "absolute_home_path"
+    ]
+  },
+  {
+    "path": "loose/kimi/747128fd80cc__wire.jsonl",
+    "findings": [
+      "absolute_home_path",
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/kimi/c01c98eb9305__state.json",
+    "findings": [
+      "absolute_home_path"
+    ]
+  },
+  {
+    "path": "loose/kimi/623cb64cfae9__wire.jsonl",
+    "findings": [
+      "absolute_home_path",
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/kimi/6424101892af__state.json",
+    "findings": [
+      "absolute_home_path"
+    ]
+  },
+  {
+    "path": "loose/kimi/20435f3c5b6e__wire.jsonl",
+    "findings": [
+      "absolute_home_path",
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/kimi/09cd4ecadd01__state.json",
+    "findings": [
+      "absolute_home_path"
+    ]
+  },
+  {
+    "path": "loose/kimi/31781d5bc158__wire.jsonl",
+    "findings": [
+      "absolute_home_path",
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/kimi/f5e404bbbeac__state.json",
+    "findings": [
+      "absolute_home_path"
+    ]
+  },
+  {
+    "path": "loose/kimi/c96ffbc2d85e__wire.jsonl",
+    "findings": [
+      "absolute_home_path",
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/kimi/1302ad25258d__wire.jsonl",
+    "findings": [
+      "absolute_home_path",
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/kimi/642343090ffd__wire.jsonl",
+    "findings": [
+      "absolute_home_path",
+      "email",
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/kimi/bd7a807cbaec__wire.jsonl",
+    "findings": [
+      "absolute_home_path",
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/kimi/0450da61ec9e__wire.jsonl",
+    "findings": [
+      "absolute_home_path",
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/kimi/0deba3f99660__wire.jsonl",
+    "findings": [
+      "absolute_home_path",
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/kimi/f234f9ade541__AgentSwarm-AgentSwarm_26-409c5e9a-8356-4949-a86d-5d75ef5eaad4.txt",
+    "findings": [
+      "absolute_home_path",
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/kimi/0e301a8c8a46__Read-Read_27-531411be-11de-4421-a03c-69e8b7389614.txt",
+    "findings": [
+      "absolute_home_path",
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/kimi/3eb3555b4c66__wire.jsonl",
+    "findings": [
+      "absolute_home_path",
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/kimi/a8a1f70e6319__state.json",
+    "findings": [
+      "absolute_home_path"
+    ]
+  },
+  {
+    "path": "loose/kimi/033b2b9a1d76__wire.jsonl",
+    "findings": [
+      "absolute_home_path",
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/kimi/068af3e33a7c__wire.jsonl",
+    "findings": [
+      "absolute_home_path",
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/kimi/dd6f00b978d5__wire.jsonl",
+    "findings": [
+      "absolute_home_path",
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/kimi/8f53c142d37c__wire.jsonl",
+    "findings": [
+      "absolute_home_path",
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/kimi/bb854dc01f85__wire.jsonl",
+    "findings": [
+      "absolute_home_path",
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/kimi/1bdb7b6393fe__wire.jsonl",
+    "findings": [
+      "absolute_home_path",
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/kimi/0cea80fa4b2c__wire.jsonl",
+    "findings": [
+      "absolute_home_path",
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/kimi/7e8d2af53f01__wire.jsonl",
+    "findings": [
+      "absolute_home_path",
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/kimi/78f5c451e43f__wire.jsonl",
+    "findings": [
+      "absolute_home_path",
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/kimi/30556465ecd6__wire.jsonl",
+    "findings": [
+      "absolute_home_path",
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/kimi/0f9f6b82afaa__bash-2mou087k.json",
+    "findings": [
+      "absolute_home_path"
+    ]
+  },
+  {
+    "path": "loose/kimi/3031156fc380__bash-52fio5yb.json",
+    "findings": [
+      "absolute_home_path"
+    ]
+  },
+  {
+    "path": "loose/kimi/04178b425944__bash-e2ddk2mn.json",
+    "findings": [
+      "absolute_home_path"
+    ]
+  },
+  {
+    "path": "loose/kimi/58f51d9c2532__bash-jinwrq8m.json",
+    "findings": [
+      "absolute_home_path"
+    ]
+  },
+  {
+    "path": "loose/kimi/1935cd47608c__bash-lwv5179g.json",
+    "findings": [
+      "absolute_home_path"
+    ]
+  },
+  {
+    "path": "loose/kimi/cc5457c99187__bash-p1rirb0t.json",
+    "findings": [
+      "absolute_home_path"
+    ]
+  },
+  {
+    "path": "loose/kimi/5ffef2bf608e__bash-sgc6d1ab.json",
+    "findings": [
+      "absolute_home_path"
+    ]
+  },
+  {
+    "path": "loose/kimi/981a0606d536__bash-zppo80w6.json",
+    "findings": [
+      "absolute_home_path"
+    ]
+  },
+  {
+    "path": "loose/kimi/c774ebf4baab__wire.jsonl",
+    "findings": [
+      "absolute_home_path",
+      "email",
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/kimi/d99663fe3608__state.json",
+    "findings": [
+      "absolute_home_path"
+    ]
+  },
+  {
+    "path": "loose/kimi/8d9aa18479fb__wire.jsonl",
+    "findings": [
+      "absolute_home_path",
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/kimi/e7c5529baaad__state.json",
+    "findings": [
+      "absolute_home_path"
+    ]
+  },
+  {
+    "path": "loose/kimi/5c30bedabef5__wire.jsonl",
+    "findings": [
+      "absolute_home_path",
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/kimi/a9eb042cd391__state.json",
+    "findings": [
+      "absolute_home_path"
+    ]
+  },
+  {
+    "path": "loose/kimi/c1b2093706c4__wire.jsonl",
+    "findings": [
+      "absolute_home_path",
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/kimi/7d34f077ceaf__state.json",
+    "findings": [
+      "absolute_home_path"
+    ]
+  },
+  {
+    "path": "loose/kimi/2288346f913d__wire.jsonl",
+    "findings": [
+      "absolute_home_path",
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/kimi/d5aaf14d8a33__state.json",
+    "findings": [
+      "absolute_home_path"
+    ]
+  },
+  {
+    "path": "loose/kimi/e558d05c5bc2__wire.jsonl",
+    "findings": [
+      "absolute_home_path",
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/kimi/0963d4c83907__state.json",
+    "findings": [
+      "absolute_home_path",
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/kimi/139d078abc5a__wire.jsonl",
+    "findings": [
+      "absolute_home_path",
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/kimi/960206dee25b__state.json",
+    "findings": [
+      "absolute_home_path"
+    ]
+  },
+  {
+    "path": "loose/kimi/a2eede777560__wire.jsonl",
+    "findings": [
+      "absolute_home_path",
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/kimi/f1f99ce4c7b2__state.json",
+    "findings": [
+      "absolute_home_path"
+    ]
+  },
+  {
+    "path": "loose/kimi/fd929a37e0c6__wire.jsonl",
+    "findings": [
+      "absolute_home_path",
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/kimi/a986b75a7bc8__state.json",
+    "findings": [
+      "absolute_home_path"
+    ]
+  },
+  {
+    "path": "loose/kimi/966572c9598a__wire.jsonl",
+    "findings": [
+      "absolute_home_path",
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/kimi/a186d7867a13__wire.jsonl",
+    "findings": [
+      "absolute_home_path",
+      "email",
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/kimi/db5b41daa42c__wire.jsonl",
+    "findings": [
+      "absolute_home_path",
+      "email",
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/kimi/c8070ec35268__state.json",
+    "findings": [
+      "absolute_home_path"
+    ]
+  },
+  {
+    "path": "loose/kimi/08c4da14f15d__wire.jsonl",
+    "findings": [
+      "absolute_home_path",
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/kimi/dc819581a4d2__state.json",
+    "findings": [
+      "absolute_home_path"
+    ]
+  },
+  {
+    "path": "loose/kimi/ea0af6450523__wire.jsonl",
+    "findings": [
+      "absolute_home_path",
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/kimi/416ab99f829b__state.json",
+    "findings": [
+      "absolute_home_path"
+    ]
+  },
+  {
+    "path": "loose/kimi/f2a805b8130c__wire.jsonl",
+    "findings": [
+      "absolute_home_path",
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/kimi/fa564da3367e__state.json",
+    "findings": [
+      "absolute_home_path"
+    ]
+  },
+  {
+    "path": "loose/kimi/abedcbea7e7b__afb779816911f3ccdf47d7b7cfd1019a.jsonl",
+    "findings": [
+      "absolute_home_path"
+    ]
+  },
+  {
+    "path": "loose/kimi/b7eb99daa833__d75d60e9531d46a1f3bc4c8859aaabc5.jsonl",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/kimi/167774d0d5b6__workspaces.json",
+    "findings": [
+      "absolute_home_path"
+    ]
+  },
+  {
+    "path": "loose/kimi/bdd46bf00ac6__recent-kimi-sessions.txt",
+    "findings": [
+      "absolute_home_path"
+    ]
+  },
+  {
+    "path": "loose/kimi/401f6034ee0b__INTEGRATION_GUIDE.md",
+    "findings": [
+      "absolute_home_path"
+    ]
+  },
+  {
+    "path": "loose/codex/acd8041adb37__d1blindspot.html",
+    "findings": [
+      "email",
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/codex/7174827bffcf__IMPLEMENTATION_PLAN.md",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/kimi/127c7a141141__SHA256SUMS.txt",
+    "findings": [
+      "absolute_home_path"
+    ]
+  },
+  {
+    "path": "loose/kimi/c03c85ad07d2__current_task_packet.md",
+    "findings": [
+      "absolute_home_path",
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/kimi/e00a0dc3358a__AUTONOMOUS_FRONTIER_CONTRACT.json",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/kimi/639293a8996a__CURRENT_STATE.json",
+    "findings": [
+      "absolute_home_path"
+    ]
+  },
+  {
+    "path": "loose/kimi/1b927fbf0531__TASK_GRAPH.json",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/kimi/41c28b3c61fd__REPO_STATE.json",
+    "findings": [
+      "absolute_home_path",
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/kimi/86c86d9952db__worktrees.txt",
+    "findings": [
+      "absolute_home_path"
+    ]
+  },
+  {
+    "path": "loose/kimi/e2df9b8414cf__SHA256SUMS.txt",
+    "findings": [
+      "absolute_home_path"
+    ]
+  },
+  {
+    "path": "loose/kimi/ac8653bfe0ff__REPO_STATE.json",
+    "findings": [
+      "absolute_home_path",
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/unclassified/87fdec60fcbf__RNScreens.podspec.json",
+    "findings": [
+      "email"
+    ]
+  },
+  {
+    "path": "loose/opencode/44efcc35e100__.goreleaser.yml",
+    "findings": [
+      "email"
+    ]
+  },
+  {
+    "path": "loose/opencode/719f545372b0__README.md",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/opencode/3244bd2c90e3__config.go",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/opencode/2803984284aa__copilot.go",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/opencode/8b06aa5a58cf__bash.go",
+    "findings": [
+      "email"
+    ]
+  },
+  {
+    "path": "loose/opencode/88f7448e0066__tsprotocol.go",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/opencode/3f2b94a21663__background.go",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/unclassified/7ca43767f433__AppleSignInScreen.tsx",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/unclassified/7ebe11d9685b__GoogleSignInScreen.tsx",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/unclassified/74cf0708df3f__MagicLinkScreen.tsx",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/research/02536eaf1dc8__osm.csv",
+    "findings": [
+      "email",
+      "phone"
+    ]
+  },
+  {
+    "path": "loose/unclassified/d1f0b3466c6b__osm.csv",
+    "findings": [
+      "email",
+      "phone"
+    ]
+  },
+  {
+    "path": "loose/codex/be997fcf9c46__CODEX_HANDOFF.md",
+    "findings": [
+      "absolute_home_path"
+    ]
+  },
+  {
+    "path": "loose/codex/d6c489008ab6__PLATE_PARTY_CODEX_MASTER_AUDIT_PROMPT_V3.md",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/kimi/1016bdd0713b__PLATE_PARTY_HANDOFF (1).md",
+    "findings": [
+      "absolute_home_path"
+    ]
+  },
+  {
+    "path": "loose/kimi/3d303b2b845c__PLATE_PARTY_MEGA_PROMPT (1).md",
+    "findings": [
+      "absolute_home_path"
+    ]
+  },
+  {
+    "path": "loose/kimi/8164201e4bc9__audit_cre_after_gemini.py",
+    "findings": [
+      "absolute_home_path"
+    ]
+  },
+  {
+    "path": "loose/opencode/bc7be765b418__collect_all_cre_agent_work_from_mac.sh",
+    "findings": [
+      "absolute_home_path",
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/kimi/c7b00b7c97e5__count_cre_project_lines.py",
+    "findings": [
+      "absolute_home_path"
+    ]
+  },
+  {
+    "path": "loose/opencode/7ec4d00ef24c__finalize_cre_curated_reference.sh",
+    "findings": [
+      "absolute_home_path",
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/kimi/e37cfc656b78__organize_cre_current_checkpoint.sh",
+    "findings": [
+      "absolute_home_path",
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/kimi/97d7abc8ef6a__plate_party_handoff_and_prompt.md",
+    "findings": [
+      "email",
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/application/14fdcdc57249__prepare_and_publish_cre_repo.sh",
+    "findings": [
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/kimi/b0157712c5ad__prepare_kimi_cre_campaign.sh",
+    "findings": [
+      "absolute_home_path",
+      "possible_password_word"
+    ]
+  },
+  {
+    "path": "loose/kimi/6207224ff17c__verify_cre_checkpoint_after_gemini.sh",
+    "findings": [
+      "absolute_home_path",
+      "possible_password_word"
+    ]
+  }
+]

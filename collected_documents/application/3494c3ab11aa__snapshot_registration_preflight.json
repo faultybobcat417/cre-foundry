@@ -1,0 +1,22 @@
+{
+  "config_version": "cre-foundry-snapshot-registration-preflight-v1",
+  "policy": {
+    "operating_mode": "shadow",
+    "authoritative_database_read_only": true,
+    "ephemeral_database_clone_required": true,
+    "schema_introspection_required": true,
+    "required_column_mapping_required": true,
+    "transaction_rollback_required": true,
+    "count_reconciliation_required": true,
+    "manual_parser_approval_required": true,
+    "manual_temporal_approval_required": true,
+    "manual_registration_approval_required": true,
+    "authoritative_registration_enabled": false,
+    "snapshot_event_insertion_enabled": false,
+    "automatic_acquisition": false,
+    "browser_execution": false,
+    "computer_vision_execution": false,
+    "opportunity_ranked": false,
+    "outreach_eligible": false
+  }
+}

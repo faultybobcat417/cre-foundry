@@ -1,0 +1,2 @@
+docs/security/SCANNER_SUPPRESSION_POLICY.md:33: new blank line at EOF.
+docs/security/sql_safety_remediation_inventory.md:308: new blank line at EOF.

@@ -1,0 +1,5 @@
+{
+  "case_id": "evaluator-weakened",
+  "expected_diagnostic": "ADVERSARIAL-EVALUATOR-WEAKENED",
+  "mutation_id": "evaluator_weakened"
+}

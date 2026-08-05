@@ -1,0 +1,125 @@
+{
+  "automatic_registration_performed": false,
+  "blocked_review_count": 0,
+  "candidate_count": 3,
+  "contract_path": "docs/data_contracts/source_snapshot_bootstrap_review.json",
+  "human_approval_required": true,
+  "model_version": "cre-foundry-source-snapshot-bootstrap-review-v1",
+  "operating_mode": "shadow",
+  "opportunity_ranked": false,
+  "outreach_eligible": false,
+  "packet_count": 3,
+  "packet_root": "outputs/source_snapshot_bootstrap_review",
+  "packets": [
+    {
+      "candidate_index": 0,
+      "checksum_matches": [
+        "0ec6388eb16584d025252026cee22d95bf3b603fccb5cc471710a619d89dca2f"
+      ],
+      "declared_checksum_count": 1,
+      "declared_checksum_match_count": 1,
+      "declared_checksums": [
+        {
+          "breadcrumb": "$.archive_sha256",
+          "declared_sha256": "0ec6388eb16584d025252026cee22d95bf3b603fccb5cc471710a619d89dca2f"
+        }
+      ],
+      "declared_path_count": 1,
+      "manifest_actual_sha256": "9cb3e48f9436f53680bfd2007e2e0c2ae124cba2c0d84933537492364d1ef081",
+      "manifest_path": "/Users/alimehdi/Projects/comfiance/cre-foundry/data/bronze/statscan_odbus_2023/2026/07/26/RUN-20260726T024102Z-16fb53d196/manifest.json",
+      "manifest_size_bytes": 3811,
+      "manifest_source_id": "statscan_odbus_2023",
+      "referenced_artifact_count": 1,
+      "referenced_artifacts": [
+        {
+          "actual_sha256": "0ec6388eb16584d025252026cee22d95bf3b603fccb5cc471710a619d89dca2f",
+          "breadcrumb": "$.archive_path",
+          "declared_path": "data/bronze/statscan_odbus_2023/2026/07/26/RUN-20260726T024102Z-16fb53d196/ODBus_2023_0ec6388eb16584d0.zip",
+          "exists": true,
+          "inside_project": true,
+          "resolution": "project_relative",
+          "resolved_path": "/Users/alimehdi/Projects/comfiance/cre-foundry/data/bronze/statscan_odbus_2023/2026/07/26/RUN-20260726T024102Z-16fb53d196/ODBus_2023_0ec6388eb16584d0.zip",
+          "size_bytes": 21860048
+        }
+      ],
+      "registration_permitted": false,
+      "review_ready": true,
+      "source_id": "statscan_odbus_2023",
+      "violations": []
+    },
+    {
+      "candidate_index": 1,
+      "checksum_matches": [],
+      "declared_checksum_count": 1,
+      "declared_checksum_match_count": 0,
+      "declared_checksums": [
+        {
+          "breadcrumb": "$.layer_snapshots[0].sha256",
+          "declared_sha256": "bae5f22db1bef14bac2e242d32b4c8058decabee05da47e795e7639f1133137e"
+        }
+      ],
+      "declared_path_count": 1,
+      "manifest_actual_sha256": "699d9834c84fddd6f6bc0eb095ff3e5bdb629888271397142b883c89b797c8a8",
+      "manifest_path": "/Users/alimehdi/Projects/comfiance/cre-foundry/data/bronze/brampton_building_permits/2026/07/26/RUN-20260726T033516Z-e1388f64b1/manifest.json",
+      "manifest_size_bytes": 1086,
+      "manifest_source_id": "brampton_building_permits",
+      "referenced_artifact_count": 1,
+      "referenced_artifacts": [
+        {
+          "actual_sha256": "d5359d5308355a74e18f5e54d0022e1c49dcfd2909d17ea3cd084000488e6d4c",
+          "breadcrumb": "$.layer_snapshots[0].raw_path",
+          "declared_path": "data/bronze/brampton_building_permits/2026/07/26/RUN-20260726T033516Z-e1388f64b1/layer_0_bae5f22db1bef14b.geojson.gz",
+          "exists": true,
+          "inside_project": true,
+          "resolution": "project_relative",
+          "resolved_path": "/Users/alimehdi/Projects/comfiance/cre-foundry/data/bronze/brampton_building_permits/2026/07/26/RUN-20260726T033516Z-e1388f64b1/layer_0_bae5f22db1bef14b.geojson.gz",
+          "size_bytes": 336333
+        }
+      ],
+      "registration_permitted": false,
+      "review_ready": true,
+      "source_id": "brampton_building_permits",
+      "violations": []
+    },
+    {
+      "candidate_index": 2,
+      "checksum_matches": [],
+      "declared_checksum_count": 1,
+      "declared_checksum_match_count": 0,
+      "declared_checksums": [
+        {
+          "breadcrumb": "$.layer_snapshots[0].sha256",
+          "declared_sha256": "0c90be8f6d4c89fe652ebd1834d3aa2a6cf4b9c49db15c30da135da617ea293b"
+        }
+      ],
+      "declared_path_count": 1,
+      "manifest_actual_sha256": "e0d129a35c077d8e64d421d66d799855d3f0af9d678420dc745d43a42e1b0010",
+      "manifest_path": "/Users/alimehdi/Projects/comfiance/cre-foundry/data/bronze/brampton_business_directory/2026/07/26/RUN-20260726T040418Z-b394f90ee8/manifest.json",
+      "manifest_size_bytes": 1101,
+      "manifest_source_id": "brampton_business_directory",
+      "referenced_artifact_count": 1,
+      "referenced_artifacts": [
+        {
+          "actual_sha256": "8a7a0add73e0bd57215880ceb2f216d3799748aba8baed8fa32fb02a1aca7c6a",
+          "breadcrumb": "$.layer_snapshots[0].raw_path",
+          "declared_path": "data/bronze/brampton_business_directory/2026/07/26/RUN-20260726T040418Z-b394f90ee8/layer_0_0c90be8f6d4c89fe.geojson.gz",
+          "exists": true,
+          "inside_project": true,
+          "resolution": "project_relative",
+          "resolved_path": "/Users/alimehdi/Projects/comfiance/cre-foundry/data/bronze/brampton_business_directory/2026/07/26/RUN-20260726T040418Z-b394f90ee8/layer_0_0c90be8f6d4c89fe.geojson.gz",
+          "size_bytes": 1063904
+        }
+      ],
+      "registration_permitted": false,
+      "review_ready": true,
+      "source_id": "brampton_business_directory",
+      "violations": []
+    }
+  ],
+  "registration_execution_count": 0,
+  "registration_permitted": false,
+  "review_ready_count": 3,
+  "total_referenced_bytes": 23260285,
+  "violation_count": 0,
+  "violations": []
+}

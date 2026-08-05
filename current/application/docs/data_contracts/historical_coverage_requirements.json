@@ -1,0 +1,58 @@
+{
+  "backtest_eligible_source_count": 0,
+  "model_training_eligible_source_count": 0,
+  "model_version": "cre-foundry-historical-coverage-v1",
+  "point_in_time_eligible_source_count": 0,
+  "requirement_count": 4,
+  "requirements": [
+    {
+      "approved_history_months": null,
+      "approved_minimum_snapshots": null,
+      "backtest_eligible": false,
+      "candidate_history_months": 24,
+      "candidate_minimum_snapshots": 24,
+      "coverage_satisfied": false,
+      "model_training_eligible": false,
+      "point_in_time_dataset_eligible": false,
+      "registered_snapshot_count": 0,
+      "source_id": "brampton_building_permits"
+    },
+    {
+      "approved_history_months": null,
+      "approved_minimum_snapshots": null,
+      "backtest_eligible": false,
+      "candidate_history_months": 24,
+      "candidate_minimum_snapshots": 24,
+      "coverage_satisfied": false,
+      "model_training_eligible": false,
+      "point_in_time_dataset_eligible": false,
+      "registered_snapshot_count": 0,
+      "source_id": "brampton_business_directory"
+    },
+    {
+      "approved_history_months": null,
+      "approved_minimum_snapshots": null,
+      "backtest_eligible": false,
+      "candidate_history_months": 24,
+      "candidate_minimum_snapshots": 24,
+      "coverage_satisfied": false,
+      "model_training_eligible": false,
+      "point_in_time_dataset_eligible": false,
+      "registered_snapshot_count": 0,
+      "source_id": "brampton_plantrak"
+    },
+    {
+      "approved_history_months": null,
+      "approved_minimum_snapshots": null,
+      "backtest_eligible": false,
+      "candidate_history_months": 36,
+      "candidate_minimum_snapshots": 3,
+      "coverage_satisfied": false,
+      "model_training_eligible": false,
+      "point_in_time_dataset_eligible": false,
+      "registered_snapshot_count": 0,
+      "source_id": "statscan_odbus_2023"
+    }
+  ],
+  "satisfied_requirement_count": 0
+}

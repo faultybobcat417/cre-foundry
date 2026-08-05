@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://cre-foundry.local/schemas/route-decision-v1.json",
+  "title": "Route decision",
+  "type": "object",
+  "oneOf": [
+    {
+      "required": ["decision", "locations"],
+      "properties": {
+        "decision": {"const": "ISSUE"},
+        "locations": {
+          "type": "array",
+          "minItems": 10,
+          "maxItems": 10,
+          "uniqueItems": true,
+          "items": {"type": "string", "minLength": 1}
+        }
+      },
+      "additionalProperties": false
+    },
+    {
+      "required": ["decision", "locations", "reason"],
+      "properties": {
+        "decision": {"const": "ABSTAIN_NO_VALID_TEN"},
+        "locations": {"type": "array", "maxItems": 0},
+        "reason": {"type": "string", "minLength": 1}
+      },
+      "additionalProperties": false
+    }
+  ]
+}

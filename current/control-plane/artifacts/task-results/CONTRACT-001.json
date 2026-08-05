@@ -1,0 +1,118 @@
+{
+  "task_id": "CONTRACT-001",
+  "status": "completed",
+  "objective": "Define and prove the smallest strict, versioned, point-in-time synthetic contract chain from source-native observation through explicit physical-location assertion, protection and eligibility projection, synthetic scoring, exact-ten decision, and replay receipt.",
+  "state_transition": {
+    "from": "in_progress thin_contract_spine",
+    "to": "completed public_contract_proof_level_4; VERTICAL-001 in_progress",
+    "reason": "Strict schemas, an independent cross-document evaluator, supplied-observation replay, five registered mutations, rebound regression cases, 49 public tests, and two independent final reviews now pass under a synthetic-only claim ceiling."
+  },
+  "files_changed": [
+    "artifacts/contracts/CONTRACT-001-start.json",
+    "artifacts/contracts/contract_spine.json",
+    "artifacts/contracts/public_evaluator_contract.json",
+    "artifacts/evaluations/contract_spine.json",
+    "artifacts/task-results/CONTRACT-001.json",
+    "contracts/thin_slice_candidate.schema.json",
+    "contracts/thin_slice_observation.schema.json",
+    "control/CURRENT_STATE.json",
+    "control/CURRENT_TASK.json",
+    "control/TASK_GRAPH.json",
+    "docs/contracts/THIN_SLICE_CONTRACT.md",
+    "evals/known_bad/frontier/contract_brand_location_collapse.json",
+    "evals/known_bad/frontier/contract_decision_digest_mismatch.json",
+    "evals/known_bad/frontier/contract_future_observation.json",
+    "evals/known_bad/frontier/contract_protected_alias_omission.json",
+    "evals/known_bad/frontier/contract_silent_schema_upgrade.json",
+    "evals/public/contract_spine_evaluator.py",
+    "evals/public/test_contract_spine.py",
+    "scripts/compile_repository_task_context.py",
+    "scripts/validate_contract_spine.py",
+    "src/cre_foundry/contracts/__init__.py",
+    "src/cre_foundry/contracts/thin_slice.py",
+    "tasks/CONTRACT-001.json",
+    "tasks/VERTICAL-001.json"
+  ],
+  "commands": [
+    {"command": "python -m py_compile src/cre_foundry/contracts/thin_slice.py evals/public/contract_spine_evaluator.py scripts/validate_contract_spine.py", "exit_code": 0, "artifact": null},
+    {"command": "python scripts/validate_contract_spine.py", "exit_code": 0, "artifact": "artifacts/evaluations/contract_spine.json"},
+    {"command": "for f in evals/known_bad/frontier/contract_*.json; do python scripts/validate_contract_spine.py --known-bad \"$f\"; done", "exit_code": 0, "artifact": "artifacts/evaluations/contract_spine.json"},
+    {"command": "python -m unittest evals.public.test_contract_spine -v", "exit_code": 0, "artifact": "artifacts/evaluations/contract_spine.json"},
+    {"command": "python -m unittest discover -s evals/public -p 'test_*.py'", "exit_code": 0, "artifact": "artifacts/evaluations/contract_spine.json"},
+    {"command": "python scripts/validate_control_plane.py", "exit_code": 0, "artifact": null}
+  ],
+  "evaluations": [
+    {"name": "strict observation and candidate schemas", "passed": true, "proof": "Draft 2020-12 schemas reject extra fields and unsupported versions; semantic checks bind native bytes, clocks, typed grains, protection, and MATH projections."},
+    {"name": "synthetic source-to-decision replay", "passed": true, "proof": "A focal observation traverses deterministically; ten observations ISSUE exactly ten; one observation abstains; source-order permutation leaves the canonical transform set unchanged."},
+    {"name": "registered negative controls", "passed": true, "proof": "All five repository fixtures are executed by the normal validator and produce their exact registered diagnostics."},
+    {"name": "coherently rebound regression family", "passed": true, "proof": "Claim, scope, version, schema, provenance, publication, cutoff, grain, protection, receipt, set-order, and report rebinding attempts are rejected."},
+    {"name": "independent sweeps", "passed": true, "proof": "Two read-heavy agents found the initial manifest and cutoff-rebinding defects, repairs were applied, and both final reviews returned clean."},
+    {"name": "full public regression suite", "passed": true, "proof": "49 tests pass and repository control-plane validation remains green."}
+  ],
+  "expertise_coverage": [
+    {"domain": "data_contracts", "state": "ACTIVE", "reason": "Defined strict source-native and candidate documents, version transitions, canonicalization, hashes, lineage, ownership, and quality fields."},
+    {"domain": "identity_temporal", "state": "ACTIVE", "reason": "Separated source, legal, business, brand, establishment, unit, property, parcel, owner, occupier, parent, and physical-location grains and cross-bound all Stage-1 availability clocks."},
+    {"domain": "security_privacy", "state": "ACTIVE", "reason": "Kept every fixture synthetic, source payload bounded, authority false, live issuance false, and external source/protection/identity authority gated."},
+    {"domain": "testing_verification", "state": "ACTIVE", "reason": "Implemented independent semantic validation, exact diagnostics, supplied-input replay, report and fixture hash binding, and post-repair regression cases."},
+    {"domain": "product_architecture", "state": "ACTIVE", "reason": "Established the minimal source-to-decision seam needed by the next vertical slice without horizontal subsystem expansion."}
+  ],
+  "agents_used": [
+    "repo_truth_review independent contract and rebound sweep",
+    "evaluator_review independent evaluator and cutoff-binding sweep",
+    "primary writer in the main worktree"
+  ],
+  "alternatives": [
+    {"choice": "separate strict observation and candidate documents plus a hash-bound replay manifest", "over": ["one loose cross-domain envelope", "horizontal source and identity implementation first"], "reason": "This is the smallest design that exposes grain, clock, authority, and transformation boundaries mechanically."},
+    {"choice": "explicit SYNTHETIC_IDENTITY_ASSERTION", "over": ["treat source-native licence or brand fields as a physical location"], "reason": "A source record proves only its bytes and native key; real identity remains behind GATE-ENTITY-TRUTH-001."},
+    {"choice": "replay from supplied observations plus independent semantic evaluation", "over": ["compare two fresh golden builds"], "reason": "It detects coherently rebound downstream artifacts rather than only shallow stale hashes."},
+    {"choice": "public proof level 4 with synthetic-only scope", "over": ["claim real application or operational conformance"], "reason": "No authorized source, real identity, protection bundle, calibrated route, empirical outcome, or live-use evidence exists."}
+  ],
+  "findings": [
+    {"id": "CONTRACT-FIND-001", "finding": "Observation provenance must stop at source-native bytes; canonical physical identity requires a separate typed assertion and evidence gate."},
+    {"id": "CONTRACT-FIND-002", "finding": "A per-record cutoff is unsafe unless it is equal-bound to the candidate snapshot and decision problem cutoff."},
+    {"id": "CONTRACT-FIND-003", "finding": "Digest-valid rebinding can still falsify semantics, so public evaluation must recompute provenance, normalization, protection, projection, decision, receipt, and claim ceilings."},
+    {"id": "CONTRACT-FIND-004", "finding": "Set-valued arrays must have canonical stored order when their serialized order participates in snapshot hashes."},
+    {"id": "CONTRACT-FIND-005", "finding": "A stored PASS report is evidence only when its exact claims, commands, subjects, fixtures, and digests are checked by the normal validator."}
+  ],
+  "assumptions": [
+    "Fixture source rows, identities, aliases, scores, service times, representative, and route day are synthetic contract data only.",
+    "Known event and publisher-effective clocks are descriptive metadata and do not establish evidence availability; publication and local availability are the Stage-1-bearing clocks.",
+    "The contract canonicalizer supports integer-valued JSON only and is not claimed as a general RFC 8785 implementation."
+  ],
+  "decisions": [
+    "Bind observation, candidate, and MATH snapshot to one Stage-1 cutoff and fail closed on later publication or availability.",
+    "Derive physical-location IDs only from the registered normalized address-and-unit basis in this synthetic version.",
+    "Project the complete canonical alias set into protection screening and derive CLEAR, PROTECTED, or UNKNOWN rather than accepting caller labels.",
+    "Bind source snapshot, candidate snapshot, adapter, schemas, policy, problem, decision, selections, result, and proof claim in the replay artifact.",
+    "Execute repository mutation fixtures and validate the evaluation report itself on every normal contract validation run.",
+    "Advance to VERTICAL-001 while preserving all real-world gates."
+  ],
+  "risks": [
+    "The builder and public evaluator remain repository-visible and do not constitute a sealed holdout.",
+    "Synthetic address-and-unit identity is a deterministic fixture mechanism, not evidence of real entity resolution accuracy.",
+    "The exact-ten output is canonical selection order, not a travel sequence or proof of representative-day feasibility.",
+    "Event and publisher-effective clocks can describe future events; only publication and evidence availability participate in the Stage-1 cutoff in this version.",
+    "The next vertical slice must not relabel synthetic field events or F9 outcomes as empirical results."
+  ],
+  "gates": [
+    "approved_source_envelope remains open for authorized operational source bytes",
+    "GATE-PUBLICATION-HISTORY-001 remains open for historical source availability",
+    "GATE-ENTITY-TRUTH-001 remains open for real entity and physical-location truth",
+    "protected_account_bundle remains open for real protected-account completeness",
+    "representative_origins_capacity_specialties and approved_route_matrix remain open for real route feasibility",
+    "firm_economics_services_territories remains open for firm-authoritative economics and policy",
+    "GATE-OUTCOME-LABELS-MATURITY-001 and GATE-FULL-EXTERNAL-EVIDENCE-001 remain open for empirical outcome and causal evidence",
+    "GATE-SEALED-EVALUATOR-CUSTODY-001 remains open for independent sealed proof"
+  ],
+  "proof_level": 4,
+  "artifacts": [
+    {"name": "contract replay receipt", "path": "artifacts/contracts/contract_spine.json", "result": "deterministic ISSUE-10 and complete digest bindings"},
+    {"name": "public evaluation report", "path": "artifacts/evaluations/contract_spine.json", "result": "PASS at public proof level 4"},
+    {"name": "observation schema", "path": "contracts/thin_slice_observation.schema.json", "result": "strict synthetic source-native v1"},
+    {"name": "candidate schema", "path": "contracts/thin_slice_candidate.schema.json", "result": "strict synthetic identity/protection/MATH projection v1"},
+    {"name": "reference transform", "path": "src/cre_foundry/contracts/thin_slice.py", "result": "bounded deterministic replay from supplied observations"},
+    {"name": "independent public evaluator", "path": "evals/public/contract_spine_evaluator.py", "result": "cross-document semantic, digest, decision, receipt, and claim validation"}
+  ],
+  "rollback": "Revert CONTRACT-001 completion and VERTICAL-001 selection while retaining commit a918e2b as the evaluator-contract checkpoint and MATH-001 as the standalone exact-ten policy; live issuance remains disabled regardless.",
+  "next_action": "Execute VERTICAL-001 evaluator-first: define the synthetic route-day, field-event, outcome, and replay contracts before implementing the connected shadow slice."
+}

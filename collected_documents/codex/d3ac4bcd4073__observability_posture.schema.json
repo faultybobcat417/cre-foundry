@@ -1,0 +1,192 @@
+{
+  "$id": "https://cre-foundry.local/schemas/observability-posture-v1.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "claim_ceiling": {
+      "const": "Synthetic OBSERVABILITY-001 conformance only; no production telemetry, durability, recovery, operational completeness, sealed evaluation, or deployment claim."
+    },
+    "decision": {
+      "additionalProperties": false,
+      "properties": {
+        "artifacts": {
+          "items": {
+            "additionalProperties": false,
+            "properties": {
+              "artifact_id": {
+                "minLength": 1,
+                "type": "string"
+              },
+              "as_of": {
+                "minLength": 1,
+                "type": "string"
+              },
+              "content_sha256": {
+                "pattern": "^[0-9a-f]{64}$",
+                "type": "string"
+              },
+              "owner": {
+                "minLength": 1,
+                "type": "string"
+              },
+              "parents": {
+                "items": {
+                  "minLength": 1,
+                  "type": "string"
+                },
+                "type": "array",
+                "uniqueItems": true
+              },
+              "stage": {
+                "enum": [
+                  "source",
+                  "snapshot",
+                  "identity",
+                  "feature",
+                  "model",
+                  "policy",
+                  "route",
+                  "evaluator",
+                  "outcome"
+                ]
+              },
+              "version": {
+                "minLength": 1,
+                "type": "string"
+              }
+            },
+            "required": [
+              "stage",
+              "artifact_id",
+              "owner",
+              "version",
+              "as_of",
+              "content_sha256",
+              "parents"
+            ],
+            "type": "object"
+          },
+          "maxItems": 9,
+          "minItems": 9,
+          "type": "array"
+        },
+        "as_of": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "correlation_id": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "decision_id": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "replay_identity": {
+          "additionalProperties": false,
+          "properties": {
+            "algorithm": {
+              "const": "sha256"
+            },
+            "canonical_input_sha256": {
+              "pattern": "^[0-9a-f]{64}$",
+              "type": "string"
+            },
+            "replay_id": {
+              "pattern": "^replay_[0-9a-f]{64}$",
+              "type": "string"
+            }
+          },
+          "required": [
+            "algorithm",
+            "canonical_input_sha256",
+            "replay_id"
+          ],
+          "type": "object"
+        },
+        "source_public_availability": {
+          "minLength": 1,
+          "type": "string"
+        }
+      },
+      "required": [
+        "decision_id",
+        "as_of",
+        "source_public_availability",
+        "correlation_id",
+        "artifacts",
+        "replay_identity"
+      ],
+      "type": "object"
+    },
+    "document_kind": {
+      "const": "OBSERVABILITY_POSTURE"
+    },
+    "execution_scope": {
+      "const": "SYNTHETIC_NON_INFLUENCING"
+    },
+    "external_effect_occurred": {
+      "const": false
+    },
+    "live_permissions": {
+      "const": false
+    },
+    "logs": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "correlation_id": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "level": {
+            "enum": [
+              "debug",
+              "info",
+              "warning",
+              "error"
+            ]
+          },
+          "message": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "payload": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          }
+        },
+        "required": [
+          "level",
+          "message",
+          "correlation_id",
+          "payload"
+        ],
+        "type": "object"
+      },
+      "minItems": 1,
+      "type": "array"
+    },
+    "proof_level": {
+      "const": 4
+    },
+    "schema_version": {
+      "const": "1.0.0"
+    }
+  },
+  "required": [
+    "document_kind",
+    "schema_version",
+    "execution_scope",
+    "proof_level",
+    "live_permissions",
+    "external_effect_occurred",
+    "decision",
+    "logs",
+    "claim_ceiling"
+  ],
+  "title": "OBSERVABILITY-001 synthetic posture",
+  "type": "object"
+}

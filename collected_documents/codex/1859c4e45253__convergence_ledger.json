@@ -1,0 +1,43 @@
+{
+  "document_kind": "CONVERGENCE_LEDGER",
+  "schema_version": "1.0.0",
+  "execution_scope": "SYNTHETIC_NON_INFLUENCING",
+  "result": "PASS",
+  "proof_level": 4,
+  "rounds": [
+    {
+      "round_id": "round-1",
+      "sweeps": [
+        {"domain": "quantitative-causal-economic", "artifact": "artifacts/convergence/sweep_r1_quantitative.json", "status": "CLEAN"},
+        {"domain": "systems-product-field-reliability-security", "artifact": "artifacts/convergence/sweep_r1_systems.json", "status": "CLEAN"},
+        {"domain": "adversarial-claim-integrity", "artifact": "artifacts/convergence/sweep_r1_adversarial.json", "status": "CLEAN"}
+      ],
+      "issue_severity": {"critical": 0, "high": 0, "medium": 0, "low": 0},
+      "repair_hashes": [],
+      "after_last_material_repair": true
+    },
+    {
+      "round_id": "round-2",
+      "sweeps": [
+        {"domain": "quantitative-causal-economic", "artifact": "artifacts/convergence/sweep_r2_quantitative.json", "status": "CLEAN"},
+        {"domain": "systems-product-field-reliability-security", "artifact": "artifacts/convergence/sweep_r2_systems.json", "status": "CLEAN"},
+        {"domain": "adversarial-claim-integrity", "artifact": "artifacts/convergence/sweep_r2_adversarial.json", "status": "CLEAN"}
+      ],
+      "issue_severity": {"critical": 0, "high": 0, "medium": 0, "low": 0},
+      "repair_hashes": [],
+      "after_last_material_repair": true
+    }
+  ],
+  "conclusion": {
+    "no_critical_or_high_issue": true,
+    "no_positive_value_repair": true,
+    "synthetic_promoted_as_field": false,
+    "booking_promoted_as_value": false
+  },
+  "independence": {
+    "sweep_coordinator": "independent sweep coordinator",
+    "sweeps_generated_from_repository_artifacts": true,
+    "builder_not_relabeled_independent": true
+  },
+  "claim_ceiling": "Convergence sweep mechanics only; no real field, production, causal, or commercial convergence claim."
+}

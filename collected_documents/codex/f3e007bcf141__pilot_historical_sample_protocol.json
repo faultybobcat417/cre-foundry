@@ -1,0 +1,61 @@
+{
+  "protocol_version": "cre-pilot-historical-sample-v1",
+  "purpose": "Test whether the minimum source portfolio can reconstruct point-in-time CRE events and eligible establishments before Codex implementation.",
+  "sample_frames": [
+    {
+      "frame_id": "HS-01",
+      "description": "100 nonresidential Brampton permits stratified by input year, status and work type",
+      "target_n": 100
+    },
+    {
+      "frame_id": "HS-02",
+      "description": "100 Mississauga permits stratified by application year, building type, scope and value",
+      "target_n": 100
+    },
+    {
+      "frame_id": "HS-03",
+      "description": "200 Mississauga businesses linked across 2019, 2024 and 2025 directories",
+      "target_n": 200
+    },
+    {
+      "frame_id": "HS-04",
+      "description": "100 federal records across Job Bank, LMIA, contracts, grants and regulated sources linked or intentionally unmatched",
+      "target_n": 100
+    }
+  ],
+  "review_tasks": [
+    "identify real physical establishment at prediction date",
+    "classify event truth and brokerage captureability separately",
+    "record earliest observable precursor and all six clocks",
+    "identify alternative explanations and negative evidence",
+    "adjudicate expansion, relocation, renewal, contraction, formation, displacement or no verified event",
+    "mark source failure, censoring and unresolved identity separately"
+  ],
+  "review_design": {
+    "reviewers": 2,
+    "blind_to_candidate_score": true,
+    "adjudicator": true,
+    "agreement_targets": {
+      "cohens_kappa": 0.8,
+      "critical_clock_disagreement_rate_max": 0.05
+    }
+  },
+  "release_thresholds": {
+    "source_snapshot_completeness": 0.99,
+    "critical_field_parse_success": 0.98,
+    "deterministic_or_reviewed_entity_precision_lcb": 0.95,
+    "protected_account_false_clear": 0,
+    "event_positive_minimum_total": 60,
+    "primary_module_positive_minimum_each": 20,
+    "label_reliability_kappa": 0.8
+  },
+  "rejection_rules": [
+    "candidate-universe coverage is too low or systematically biased",
+    "permit-to-occupier attribution is not reliable enough",
+    "publication lag makes the proposed signal non-actionable",
+    "most positives are already committed/completed and not capturable",
+    "federal records cannot be linked to operating locations",
+    "source terms do not authorize intended retention or integration"
+  ],
+  "status": "designed_not_executed"
+}

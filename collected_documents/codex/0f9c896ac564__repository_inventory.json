@@ -1,0 +1,37 @@
+{
+  "captured_at": "2026-08-01T22:42:30Z",
+  "repository_root": "/Users/alimehdi/Documents/cre",
+  "repository_kind": "intentional_greenfield",
+  "git": {
+    "branch": "main",
+    "head": "1f31dd334dad330b1fba645d8b168e32f40cc164",
+    "commits": 1,
+    "remotes": [],
+    "worktrees": ["/Users/alimehdi/Documents/cre"],
+    "application_history": true,
+    "internal_codex_refs_are_application_history": false
+  },
+  "initial_application_state": {
+    "commands": [],
+    "tests": [],
+    "schemas": [],
+    "modules": [],
+    "data": [],
+    "adapters": [],
+    "ci": [],
+    "migrations": []
+  },
+  "bootstrap_material": {
+    "project_os_root": "bootstrap/project_os_v2.2/CRE_Codex_Project_OS_v2.2/launch_kernel",
+    "reference_vault_root": "bootstrap/project_os_v2.2/CRE_Codex_Project_OS_v2.2/reference_vault",
+    "classification": "authoritative launch control plane and task-selected reference evidence; not pre-existing application code"
+  },
+  "permissions": {
+    "repository_read": true,
+    "repository_write": true,
+    "git_metadata_read": true,
+    "git_metadata_write": true,
+    "live_external_permissions": false
+  },
+  "claim_boundary": "Repository access is proven and greenfield status is intentional. Application conformance, production readiness, empirical lift, and commercial value remain unverified."
+}

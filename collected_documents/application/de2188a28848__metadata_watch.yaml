@@ -1,0 +1,7 @@
+profile_id: metadata_watch
+run_type: metadata_watch
+enabled: true
+source_ids:
+  - brampton_plantrak
+due_only: true
+lock_ttl_minutes: 15

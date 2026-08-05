@@ -1,0 +1,5 @@
+{
+  "case_id": "future-revision-visible",
+  "mutation_id": "future_revision_visible",
+  "expected_diagnostic": "DATA-HISTORY-FUTURE-REVISION"
+}

@@ -1,0 +1,21 @@
+{
+  "attack_scope": "SYNTHETIC_EVALUATOR_SELF_TEST_ONLY",
+  "base_run_sha256": "e467dec2bdaa913919bb848d3aa9c490244c908c5d136e348c80708bff43325a",
+  "case_id": "rehashed-probability-contract",
+  "document_kind": "REGISTERED_CALIBRATION_MUTATION",
+  "expected_diagnostic": "CALIBRATION-FROZEN-PROBABILITY-CONTRACT",
+  "patch": {
+    "operations": [
+      {
+        "document": "input",
+        "operation": "replace",
+        "path": [
+          "bindings",
+          "public_evaluator_contract_sha256"
+        ],
+        "value": "0000000000000000000000000000000000000000000000000000000000000000"
+      }
+    ]
+  },
+  "schema_version": "1.0.0"
+}

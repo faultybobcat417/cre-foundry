@@ -1,0 +1,80 @@
+{
+  "artifact_copy_execution_count": 0,
+  "browser_execution_count": 0,
+  "computer_vision_execution_count": 0,
+  "contract_paths": {
+    "admission": "docs/data_contracts/source_snapshot_admission.json",
+    "markdown": "docs/data_contracts/source_snapshot_admission.md",
+    "replay_index": "docs/data_contracts/source_replay_fixture_index.json"
+  },
+  "entries": [
+    {
+      "artifact_copy_performed": false,
+      "artifact_paths": [
+        "data/bronze/statscan_odbus_2023/2026/07/26/RUN-20260726T024102Z-16fb53d196/ODBus_2023_0ec6388eb16584d0.zip"
+      ],
+      "artifact_sha256s": [
+        "0ec6388eb16584d025252026cee22d95bf3b603fccb5cc471710a619d89dca2f"
+      ],
+      "bundle_sha256": "347ab9a3ddd029b3485809948691e2050fcafcb0422b83fd2b1676593b4343cf",
+      "manifest_path": "data/bronze/statscan_odbus_2023/2026/07/26/RUN-20260726T024102Z-16fb53d196/manifest.json",
+      "parser_execution_performed": false,
+      "replay_metadata_ready": true,
+      "snapshot_registration_performed": false,
+      "source_id": "statscan_odbus_2023"
+    },
+    {
+      "artifact_copy_performed": false,
+      "artifact_paths": [
+        "data/bronze/brampton_building_permits/2026/07/26/RUN-20260726T033516Z-e1388f64b1/layer_0_bae5f22db1bef14b.geojson.gz"
+      ],
+      "artifact_sha256s": [
+        "d5359d5308355a74e18f5e54d0022e1c49dcfd2909d17ea3cd084000488e6d4c"
+      ],
+      "bundle_sha256": "5d9d5858eb070ff1ebf430a58ee3388a437964ced347d185be69ff4bd9ef8e21",
+      "manifest_path": "data/bronze/brampton_building_permits/2026/07/26/RUN-20260726T033516Z-e1388f64b1/manifest.json",
+      "parser_execution_performed": false,
+      "replay_metadata_ready": true,
+      "snapshot_registration_performed": false,
+      "source_id": "brampton_building_permits"
+    },
+    {
+      "artifact_copy_performed": false,
+      "artifact_paths": [
+        "data/bronze/brampton_business_directory/2026/07/26/RUN-20260726T040418Z-b394f90ee8/layer_0_0c90be8f6d4c89fe.geojson.gz"
+      ],
+      "artifact_sha256s": [
+        "8a7a0add73e0bd57215880ceb2f216d3799748aba8baed8fa32fb02a1aca7c6a"
+      ],
+      "bundle_sha256": "6eb58360f23790922ff30e06f2d61f9e1732330b528ec0a900d6a8a2dd136dc1",
+      "manifest_path": "data/bronze/brampton_business_directory/2026/07/26/RUN-20260726T040418Z-b394f90ee8/manifest.json",
+      "parser_execution_performed": false,
+      "replay_metadata_ready": true,
+      "snapshot_registration_performed": false,
+      "source_id": "brampton_business_directory"
+    }
+  ],
+  "entry_count": 3,
+  "model_version": "cre-foundry-source-replay-fixture-index-v1",
+  "opportunity_ranked": false,
+  "outreach_eligible": false,
+  "parser_execution_count": 0,
+  "policy": {
+    "automatic_acquisition": false,
+    "automatic_conclusions": false,
+    "automatic_snapshot_registration": false,
+    "checksum_verification_required": true,
+    "exact_path_required": true,
+    "manual_review_required": true,
+    "operating_mode": "shadow",
+    "opportunity_ranked": false,
+    "outreach_eligible": false,
+    "project_boundary_required": true,
+    "read_only": true,
+    "regular_file_required": true,
+    "source_identity_match_required": true,
+    "symlink_allowed": false
+  },
+  "replay_metadata_ready_count": 3,
+  "snapshot_registration_execution_count": 0
+}

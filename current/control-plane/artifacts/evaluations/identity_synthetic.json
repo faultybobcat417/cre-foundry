@@ -1,0 +1,50 @@
+{
+  "artifact_id": "IDENTITY-001-PUBLIC-EVIDENCE",
+  "checks": {
+    "clean_subject_pass": true,
+    "external_effect_occurred_false": true,
+    "frozen_contract_present": true,
+    "frozen_schema_present": true,
+    "live_permissions_false": true,
+    "registered_fixtures_detected": true,
+    "registered_mutation_count": 28,
+    "source_independence_clean": true,
+    "source_independence_scan": [],
+    "stable_diagnostic_count": 8
+  },
+  "claim": "Public proof level 4 establishes deterministic, replayable conformance of synthetic temporal identity mechanics, grain distinctness, alternative/ambiguity/conflict handling, relocation and closure temporality, fail-closed protection, correction and lineage binding, and the registered mutations only.",
+  "claim_ceiling": "Public proof level 4 establishes deterministic, replayable conformance of synthetic temporal identity mechanics, grain distinctness, alternative/ambiguity/conflict handling, relocation and closure temporality, fail-closed protection, correction and lineage binding, and registered mutations only. It establishes no real entity-resolution accuracy, real precision or recall, real protected-account completeness, measured zero false clears on production data, representative usability, production readiness, deployment readiness, field effectiveness, commercial lift, sealed evaluator independence, or hidden-holdout performance.",
+  "evaluator_id": "identity-temporal-public-v1",
+  "execution_scope": "SYNTHETIC_NON_INFLUENCING",
+  "mutation_results": [
+    {
+      "case_id": "suite-collapse",
+      "diagnostic": "registered mutation detected: suite-collapse",
+      "fixture": "evals/known_bad/frontier/identity_suite_collapse.json",
+      "fixture_sha256": "6facc93d48044b0e4708c0000dd894f7a5c62fd75c4db74f5ff0747a7eaf723a",
+      "result": "DETECTED"
+    },
+    {
+      "case_id": "protected-alias-clear",
+      "diagnostic": "registered mutation detected: protected-alias-clear",
+      "fixture": "evals/known_bad/frontier/identity_protected_alias.json",
+      "fixture_sha256": "78f23ba38eccb2aca78d300104ea09be50054ff95b6fbe7998fb764e69f131ca",
+      "result": "DETECTED"
+    }
+  ],
+  "proof_level": 4,
+  "result": "PASS",
+  "schema_version": "1.0.0",
+  "subject_hashes": {
+    "artifacts/identity/public_evaluator_contract.json": "583e7715e2af53e82309e934d6136d1b161bcda45771cebc948e9a9137525282",
+    "contracts/temporal_identity.schema.json": "0c3b42f906063169b46cc760f9e7cf516b3c73c7c84f6293eb4cfcf826cc55ba",
+    "evals/known_bad/frontier/identity_protected_alias.json": "78f23ba38eccb2aca78d300104ea09be50054ff95b6fbe7998fb764e69f131ca",
+    "evals/known_bad/frontier/identity_suite_collapse.json": "6facc93d48044b0e4708c0000dd894f7a5c62fd75c4db74f5ff0747a7eaf723a",
+    "evals/public/temporal_identity_evaluator.py": "b4492349ff6a49069e42e73ee26ecaa377291be4ad479893ea462d77afae9af3"
+  },
+  "upstream": {
+    "mission_ref": "bootstrap/project_os_v2.2/CRE_Codex_Project_OS_v2.2/launch_kernel/kernel/MISSION.md",
+    "stage": "S2 public evidence for the frozen independent evaluator",
+    "task_id": "IDENTITY-001"
+  }
+}

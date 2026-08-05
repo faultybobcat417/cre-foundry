@@ -1,0 +1,5 @@
+{
+  "case_id": "missing-lineage-edge",
+  "expected_diagnostic": "LINEAGE-MISSING-EDGE",
+  "mutation_id": "missing_lineage_edge"
+}

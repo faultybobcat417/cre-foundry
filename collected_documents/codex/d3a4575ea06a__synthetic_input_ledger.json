@@ -1,0 +1,497 @@
+{
+  "canonicalization": "SORTED_KEYS_INTEGER_JSON_V1",
+  "document_kind": "SYNTHETIC_OUTCOME_INPUT_LEDGER",
+  "execution_scope": "SYNTHETIC_NON_INFLUENCING",
+  "ledger_id": "OUTCOME_LEDGER:SYNTHETIC_ROUTE_DAY_001",
+  "live_data": false,
+  "owner": {
+    "real_world_authority": "UNASSIGNED_EXTERNAL_AUTHORITY",
+    "system": "CRE_FOUNDRY"
+  },
+  "policy_sha256": "9dc662f6afdd9bf2b1eeed4224eb782e96437263051eb421d0625025f5005e31",
+  "route_assignment": {
+    "assigned_at": "2026-08-01T00:00:00Z",
+    "assignment_id": "ROUTE_DAY_ASSIGNMENT:SYNTHETIC_001",
+    "assignment_result": "ISSUE",
+    "include_in_itt": true,
+    "representative_id": "REP:SYNTHETIC_001",
+    "route_date": "2026-08-01"
+  },
+  "schema_version": "1.0.0",
+  "stage1_unchanged_sha256": "d87a30a30436ea3ce67811895c43510e51df32e115d98e9e2c0609e70b301e6b",
+  "units": [
+    {
+      "assertions": [
+        {
+          "assertion_id": "ASSERTION:ROUTE_DAY_001:01:01",
+          "assertion_type": "F9_EVIDENCE",
+          "available_at": "2026-08-02T12:00:00Z",
+          "ingested_at": "2026-08-02T11:02:00Z",
+          "occurred_at": "2026-08-02T11:00:00Z",
+          "outcome_unit_id": "OUTCOME_UNIT:ROUTE_DAY_001:01",
+          "payload": {
+            "actor_role": "RELEVANT_DECISION_MAKER",
+            "adjudication": "PASS_SYNTHETIC",
+            "appointment": "SCHEDULED_WITH_IDENTIFIED_SENIOR_COMMERCIAL_REALTOR",
+            "appointment_scheduled_at": "2026-08-04T11:00:00Z",
+            "booking_confirmed_at": "2026-08-02T11:00:00Z",
+            "booking_episode_id": "BOOKING:SYN_UNIQUE_001",
+            "requirement_type": "CURRENT_CRE_REQUIREMENT",
+            "senior_commercial_realtor_id": "REALTOR:SYNTHETIC_SENIOR_001",
+            "source_namespace": "SYNTHETIC_CRM",
+            "supporting_evidence": "INDEPENDENTLY_ADJUDICABLE_SYNTHETIC",
+            "supporting_evidence_sha256": "7c243956c37f6a3827e68ca725df9d6055537f1cd3de57c762379f5ffc397965"
+          },
+          "recorded_at": "2026-08-02T11:01:00Z",
+          "validation_completed_at": "2026-08-02T12:00:00Z"
+        }
+      ],
+      "assessment_cutoffs": [
+        "2026-08-02T12:00:00Z",
+        "2026-08-31T00:01:00Z"
+      ],
+      "binding": {
+        "candidate_id": "CAND:SYN_0008",
+        "candidate_snapshot_sha256": "236ded7ed4b4ef10e38bc2e33f037d5d65cc1b4158205f92f2bd3547e961a647",
+        "field_event_id": "FIELD_EVENT:SYN_0001",
+        "field_event_sha256": "1fdaa6f72d5420bcc9e8aa8e9a8b5ad0e0db3f35043b8b405536d8efcd8df61f",
+        "math_decision_sha256": "09d0e986cb410f44cf89348e7b43a098adb277287ad83567db595d0643b6b9b7",
+        "physical_location_id": "LOCATION:04cba31e0339f3ccdbdaf82a",
+        "representative_id": "REP:SYNTHETIC_001",
+        "route_date": "2026-08-01",
+        "route_manifest_sha256": "e3f3019918b357c67f985e4e1f765026b74ae9d7f69e696dcf40251f2a1fb637",
+        "source_snapshot_sha256": "65607401ad27a1306336a1d7024a9bc67f1bfce6af164374f6e3fb5e833c91d6"
+      },
+      "outcome_unit_id": "OUTCOME_UNIT:ROUTE_DAY_001:01",
+      "scenario": "F9_UNIQUE",
+      "sequence_position": 1
+    },
+    {
+      "assertions": [
+        {
+          "assertion_id": "ASSERTION:ROUTE_DAY_001:02:01",
+          "assertion_type": "OBSERVATION_WATERMARK",
+          "available_at": "2026-08-31T00:00:00Z",
+          "ingested_at": "2026-08-31T00:00:00Z",
+          "occurred_at": "2026-08-31T00:00:00Z",
+          "outcome_unit_id": "OUTCOME_UNIT:ROUTE_DAY_001:02",
+          "payload": {
+            "observed_through_at": "2026-08-31T00:00:00Z",
+            "source_complete": true
+          },
+          "recorded_at": "2026-08-31T00:00:00Z",
+          "validation_completed_at": "2026-08-31T00:00:00Z"
+        },
+        {
+          "assertion_id": "ASSERTION:ROUTE_DAY_001:02:02",
+          "assertion_type": "NEGATIVE_ADJUDICATION",
+          "available_at": "2026-08-31T00:00:00Z",
+          "ingested_at": "2026-08-31T00:00:00Z",
+          "occurred_at": "2026-08-31T00:00:00Z",
+          "outcome_unit_id": "OUTCOME_UNIT:ROUTE_DAY_001:02",
+          "payload": {
+            "adjudication": "FAIL_SYNTHETIC",
+            "verdict": "NO_QUALIFYING_F9_SYNTHETIC"
+          },
+          "recorded_at": "2026-08-31T00:00:00Z",
+          "validation_completed_at": "2026-08-31T00:00:00Z"
+        }
+      ],
+      "assessment_cutoffs": [
+        "2026-08-31T00:01:00Z"
+      ],
+      "binding": {
+        "candidate_id": "CAND:SYN_0002",
+        "candidate_snapshot_sha256": "236ded7ed4b4ef10e38bc2e33f037d5d65cc1b4158205f92f2bd3547e961a647",
+        "field_event_id": "FIELD_EVENT:SYN_0002",
+        "field_event_sha256": "6612d99da80865ecd7fea7ed942c2b92414b2d4b6eb4bdc6d5d0ba12fd08f154",
+        "math_decision_sha256": "09d0e986cb410f44cf89348e7b43a098adb277287ad83567db595d0643b6b9b7",
+        "physical_location_id": "LOCATION:38c51bde00c903169b995a1c",
+        "representative_id": "REP:SYNTHETIC_001",
+        "route_date": "2026-08-01",
+        "route_manifest_sha256": "e3f3019918b357c67f985e4e1f765026b74ae9d7f69e696dcf40251f2a1fb637",
+        "source_snapshot_sha256": "65607401ad27a1306336a1d7024a9bc67f1bfce6af164374f6e3fb5e833c91d6"
+      },
+      "outcome_unit_id": "OUTCOME_UNIT:ROUTE_DAY_001:02",
+      "scenario": "MATURE_NEGATIVE",
+      "sequence_position": 2
+    },
+    {
+      "assertions": [
+        {
+          "assertion_id": "ASSERTION:ROUTE_DAY_001:03:01",
+          "assertion_type": "OBSERVATION_WATERMARK",
+          "available_at": "2026-08-03T11:00:00Z",
+          "ingested_at": "2026-08-03T11:00:00Z",
+          "occurred_at": "2026-08-03T11:00:00Z",
+          "outcome_unit_id": "OUTCOME_UNIT:ROUTE_DAY_001:03",
+          "payload": {
+            "observed_through_at": "2026-08-03T11:00:00Z",
+            "source_complete": false
+          },
+          "recorded_at": "2026-08-03T11:00:00Z",
+          "validation_completed_at": "2026-08-03T11:00:00Z"
+        }
+      ],
+      "assessment_cutoffs": [
+        "2026-08-03T12:00:00Z",
+        "2026-08-31T00:01:00Z"
+      ],
+      "binding": {
+        "candidate_id": "CAND:SYN_0005",
+        "candidate_snapshot_sha256": "236ded7ed4b4ef10e38bc2e33f037d5d65cc1b4158205f92f2bd3547e961a647",
+        "field_event_id": "FIELD_EVENT:SYN_0003",
+        "field_event_sha256": "0c394a48dfe28fc1738d9bee0e1a7077fb040278dbc6346568d926d8c2695160",
+        "math_decision_sha256": "09d0e986cb410f44cf89348e7b43a098adb277287ad83567db595d0643b6b9b7",
+        "physical_location_id": "LOCATION:3e7dc00444353469cddb78f8",
+        "representative_id": "REP:SYNTHETIC_001",
+        "route_date": "2026-08-01",
+        "route_manifest_sha256": "e3f3019918b357c67f985e4e1f765026b74ae9d7f69e696dcf40251f2a1fb637",
+        "source_snapshot_sha256": "65607401ad27a1306336a1d7024a9bc67f1bfce6af164374f6e3fb5e833c91d6"
+      },
+      "outcome_unit_id": "OUTCOME_UNIT:ROUTE_DAY_001:03",
+      "scenario": "IMMATURE",
+      "sequence_position": 3
+    },
+    {
+      "assertions": [
+        {
+          "assertion_id": "ASSERTION:ROUTE_DAY_001:04:01",
+          "assertion_type": "CENSORING",
+          "available_at": "2026-08-10T12:00:00Z",
+          "ingested_at": "2026-08-10T11:02:00Z",
+          "occurred_at": "2026-08-10T11:00:00Z",
+          "outcome_unit_id": "OUTCOME_UNIT:ROUTE_DAY_001:04",
+          "payload": {
+            "cause": "SYNTHETIC_LOSS_TO_FOLLOW_UP",
+            "evidence_sha256": "54d7472fb852ecd5c4330c8a05e92bbedb06f2f0812aa376e8a0c4e08928b5ec"
+          },
+          "recorded_at": "2026-08-10T11:01:00Z",
+          "validation_completed_at": "2026-08-10T12:00:00Z"
+        }
+      ],
+      "assessment_cutoffs": [
+        "2026-08-11T12:00:00Z",
+        "2026-08-31T00:01:00Z"
+      ],
+      "binding": {
+        "candidate_id": "CAND:SYN_0003",
+        "candidate_snapshot_sha256": "236ded7ed4b4ef10e38bc2e33f037d5d65cc1b4158205f92f2bd3547e961a647",
+        "field_event_id": "FIELD_EVENT:SYN_0004",
+        "field_event_sha256": "586f3b0bcb8370087c4ec67f4658da0b9bddfb21a3288ebf81013bac7bc40a0d",
+        "math_decision_sha256": "09d0e986cb410f44cf89348e7b43a098adb277287ad83567db595d0643b6b9b7",
+        "physical_location_id": "LOCATION:4716b9b31d8d07da70324cd5",
+        "representative_id": "REP:SYNTHETIC_001",
+        "route_date": "2026-08-01",
+        "route_manifest_sha256": "e3f3019918b357c67f985e4e1f765026b74ae9d7f69e696dcf40251f2a1fb637",
+        "source_snapshot_sha256": "65607401ad27a1306336a1d7024a9bc67f1bfce6af164374f6e3fb5e833c91d6"
+      },
+      "outcome_unit_id": "OUTCOME_UNIT:ROUTE_DAY_001:04",
+      "scenario": "CENSORED",
+      "sequence_position": 4
+    },
+    {
+      "assertions": [
+        {
+          "assertion_id": "ASSERTION:ROUTE_DAY_001:05:01",
+          "assertion_type": "COMPETING_EVENT",
+          "available_at": "2026-08-12T12:00:00Z",
+          "ingested_at": "2026-08-12T11:02:00Z",
+          "occurred_at": "2026-08-12T11:00:00Z",
+          "outcome_unit_id": "OUTCOME_UNIT:ROUTE_DAY_001:05",
+          "payload": {
+            "adjudication": "PASS_SYNTHETIC",
+            "cause": "SYNTHETIC_TERMINAL_CLOSURE",
+            "evidence_sha256": "f8b6da17eabf592626b4376b44ecd2e8a040031fde9176dbe31557996888a957"
+          },
+          "recorded_at": "2026-08-12T11:01:00Z",
+          "validation_completed_at": "2026-08-12T12:00:00Z"
+        }
+      ],
+      "assessment_cutoffs": [
+        "2026-08-13T12:00:00Z",
+        "2026-08-31T00:01:00Z"
+      ],
+      "binding": {
+        "candidate_id": "CAND:SYN_0004",
+        "candidate_snapshot_sha256": "236ded7ed4b4ef10e38bc2e33f037d5d65cc1b4158205f92f2bd3547e961a647",
+        "field_event_id": "FIELD_EVENT:SYN_0005",
+        "field_event_sha256": "d536d3459f16359a91715004f09354d71ac93e4f89fc05a619576f8d9ee094ef",
+        "math_decision_sha256": "09d0e986cb410f44cf89348e7b43a098adb277287ad83567db595d0643b6b9b7",
+        "physical_location_id": "LOCATION:9ba44777ecff2baa1e1e2156",
+        "representative_id": "REP:SYNTHETIC_001",
+        "route_date": "2026-08-01",
+        "route_manifest_sha256": "e3f3019918b357c67f985e4e1f765026b74ae9d7f69e696dcf40251f2a1fb637",
+        "source_snapshot_sha256": "65607401ad27a1306336a1d7024a9bc67f1bfce6af164374f6e3fb5e833c91d6"
+      },
+      "outcome_unit_id": "OUTCOME_UNIT:ROUTE_DAY_001:05",
+      "scenario": "COMPETING_EVENT",
+      "sequence_position": 5
+    },
+    {
+      "assertions": [
+        {
+          "assertion_id": "ASSERTION:ROUTE_DAY_001:06:01",
+          "assertion_type": "F9_EVIDENCE",
+          "available_at": "2026-08-05T12:00:00Z",
+          "ingested_at": "2026-08-05T11:02:00Z",
+          "occurred_at": "2026-08-05T11:00:00Z",
+          "outcome_unit_id": "OUTCOME_UNIT:ROUTE_DAY_001:06",
+          "payload": {
+            "actor_role": "RELEVANT_DECISION_MAKER",
+            "adjudication": "PASS_SYNTHETIC",
+            "appointment": "SCHEDULED_WITH_IDENTIFIED_SENIOR_COMMERCIAL_REALTOR",
+            "appointment_scheduled_at": "2026-08-07T11:00:00Z",
+            "booking_confirmed_at": "2026-08-05T11:00:00Z",
+            "booking_episode_id": "BOOKING:SYN_TIED_006",
+            "requirement_type": "CURRENT_CRE_REQUIREMENT",
+            "senior_commercial_realtor_id": "REALTOR:SYNTHETIC_SENIOR_001",
+            "source_namespace": "SYNTHETIC_CRM",
+            "supporting_evidence": "INDEPENDENTLY_ADJUDICABLE_SYNTHETIC",
+            "supporting_evidence_sha256": "40d45062b3dbc050eb4f732e86660e5e9d8a38135a2e459ca644ce70d13189b3"
+          },
+          "recorded_at": "2026-08-05T11:01:00Z",
+          "validation_completed_at": "2026-08-05T12:00:00Z"
+        },
+        {
+          "assertion_id": "ASSERTION:ROUTE_DAY_001:06:02",
+          "assertion_type": "CENSORING",
+          "available_at": "2026-08-05T12:00:00Z",
+          "ingested_at": "2026-08-05T11:02:00Z",
+          "occurred_at": "2026-08-05T11:00:00Z",
+          "outcome_unit_id": "OUTCOME_UNIT:ROUTE_DAY_001:06",
+          "payload": {
+            "cause": "SYNTHETIC_SOURCE_OUTAGE",
+            "evidence_sha256": "5ad2da47ac5e367198783f6ddd8c526afa5c4e039bd144a07dc5e17c6600f68f"
+          },
+          "recorded_at": "2026-08-05T11:01:00Z",
+          "validation_completed_at": "2026-08-05T12:00:00Z"
+        }
+      ],
+      "assessment_cutoffs": [
+        "2026-08-06T12:00:00Z",
+        "2026-08-31T00:01:00Z"
+      ],
+      "binding": {
+        "candidate_id": "CAND:SYN_0006",
+        "candidate_snapshot_sha256": "236ded7ed4b4ef10e38bc2e33f037d5d65cc1b4158205f92f2bd3547e961a647",
+        "field_event_id": "FIELD_EVENT:SYN_0006",
+        "field_event_sha256": "98fdd714bfd00ce11fe1a7afbbd8b2d15283298f29533bca2786533b2c49cc7f",
+        "math_decision_sha256": "09d0e986cb410f44cf89348e7b43a098adb277287ad83567db595d0643b6b9b7",
+        "physical_location_id": "LOCATION:aa8c55b995f9a7b4fca142ee",
+        "representative_id": "REP:SYNTHETIC_001",
+        "route_date": "2026-08-01",
+        "route_manifest_sha256": "e3f3019918b357c67f985e4e1f765026b74ae9d7f69e696dcf40251f2a1fb637",
+        "source_snapshot_sha256": "65607401ad27a1306336a1d7024a9bc67f1bfce6af164374f6e3fb5e833c91d6"
+      },
+      "outcome_unit_id": "OUTCOME_UNIT:ROUTE_DAY_001:06",
+      "scenario": "TIED_CONFLICT",
+      "sequence_position": 6
+    },
+    {
+      "assertions": [
+        {
+          "assertion_id": "ASSERTION:ROUTE_DAY_001:07:01",
+          "assertion_type": "UNKNOWN_INPUT",
+          "available_at": "2026-08-02T01:00:00Z",
+          "ingested_at": "2026-08-02T00:02:00Z",
+          "occurred_at": "2026-08-02T00:00:00Z",
+          "outcome_unit_id": "OUTCOME_UNIT:ROUTE_DAY_001:07",
+          "payload": {
+            "missing": "AUTHORIZED_POLICY_OR_BINDING"
+          },
+          "recorded_at": "2026-08-02T00:01:00Z",
+          "validation_completed_at": "2026-08-02T01:00:00Z"
+        }
+      ],
+      "assessment_cutoffs": [
+        "2026-08-03T12:00:00Z",
+        "2026-08-31T00:01:00Z"
+      ],
+      "binding": {
+        "candidate_id": "CAND:SYN_0007",
+        "candidate_snapshot_sha256": "236ded7ed4b4ef10e38bc2e33f037d5d65cc1b4158205f92f2bd3547e961a647",
+        "field_event_id": "FIELD_EVENT:SYN_0007",
+        "field_event_sha256": "4b144cd33bb137afecdb38621bcc363b0476a84ff36470d6864be5ac482b3162",
+        "math_decision_sha256": "09d0e986cb410f44cf89348e7b43a098adb277287ad83567db595d0643b6b9b7",
+        "physical_location_id": "LOCATION:d6529ff9d9ad0dae617f53e1",
+        "representative_id": "REP:SYNTHETIC_001",
+        "route_date": "2026-08-01",
+        "route_manifest_sha256": "e3f3019918b357c67f985e4e1f765026b74ae9d7f69e696dcf40251f2a1fb637",
+        "source_snapshot_sha256": "65607401ad27a1306336a1d7024a9bc67f1bfce6af164374f6e3fb5e833c91d6"
+      },
+      "outcome_unit_id": "OUTCOME_UNIT:ROUTE_DAY_001:07",
+      "scenario": "UNKNOWN_INPUT",
+      "sequence_position": 7
+    },
+    {
+      "assertions": [
+        {
+          "assertion_id": "ASSERTION:ROUTE_DAY_001:08:01",
+          "assertion_type": "F9_EVIDENCE",
+          "available_at": "2026-08-03T12:00:00Z",
+          "ingested_at": "2026-08-03T11:02:00Z",
+          "occurred_at": "2026-08-03T11:00:00Z",
+          "outcome_unit_id": "OUTCOME_UNIT:ROUTE_DAY_001:08",
+          "payload": {
+            "actor_role": "RELEVANT_DECISION_MAKER",
+            "adjudication": "PASS_SYNTHETIC",
+            "appointment": "SCHEDULED_WITH_IDENTIFIED_SENIOR_COMMERCIAL_REALTOR",
+            "appointment_scheduled_at": "2026-08-05T11:00:00Z",
+            "booking_confirmed_at": "2026-08-03T11:00:00Z",
+            "booking_episode_id": "BOOKING:SYN_SHARED_008_009",
+            "requirement_type": "CURRENT_CRE_REQUIREMENT",
+            "senior_commercial_realtor_id": "REALTOR:SYNTHETIC_SENIOR_001",
+            "source_namespace": "SYNTHETIC_CRM",
+            "supporting_evidence": "INDEPENDENTLY_ADJUDICABLE_SYNTHETIC",
+            "supporting_evidence_sha256": "6982cc483da69c1bad83d275f6b3d52918ac2fad7d4b71b185284c06d68cba5d"
+          },
+          "recorded_at": "2026-08-03T11:01:00Z",
+          "validation_completed_at": "2026-08-03T12:00:00Z"
+        }
+      ],
+      "assessment_cutoffs": [
+        "2026-08-04T12:00:00Z",
+        "2026-08-31T00:01:00Z"
+      ],
+      "binding": {
+        "candidate_id": "CAND:SYN_0001",
+        "candidate_snapshot_sha256": "236ded7ed4b4ef10e38bc2e33f037d5d65cc1b4158205f92f2bd3547e961a647",
+        "field_event_id": "FIELD_EVENT:SYN_0008",
+        "field_event_sha256": "7bbe7d70d23e9f8b2c6ef7f06ea9788d5f979cc47e87ecc886f09259d1c20fac",
+        "math_decision_sha256": "09d0e986cb410f44cf89348e7b43a098adb277287ad83567db595d0643b6b9b7",
+        "physical_location_id": "LOCATION:e26b9ed0259fdf3b8f7c8a70",
+        "representative_id": "REP:SYNTHETIC_001",
+        "route_date": "2026-08-01",
+        "route_manifest_sha256": "e3f3019918b357c67f985e4e1f765026b74ae9d7f69e696dcf40251f2a1fb637",
+        "source_snapshot_sha256": "65607401ad27a1306336a1d7024a9bc67f1bfce6af164374f6e3fb5e833c91d6"
+      },
+      "outcome_unit_id": "OUTCOME_UNIT:ROUTE_DAY_001:08",
+      "scenario": "F9_DEDUPE_CANONICAL",
+      "sequence_position": 8
+    },
+    {
+      "assertions": [
+        {
+          "assertion_id": "ASSERTION:ROUTE_DAY_001:09:01",
+          "assertion_type": "F9_EVIDENCE",
+          "available_at": "2026-08-03T12:00:00Z",
+          "ingested_at": "2026-08-03T11:02:00Z",
+          "occurred_at": "2026-08-03T11:00:00Z",
+          "outcome_unit_id": "OUTCOME_UNIT:ROUTE_DAY_001:09",
+          "payload": {
+            "actor_role": "RELEVANT_DECISION_MAKER",
+            "adjudication": "PASS_SYNTHETIC",
+            "appointment": "SCHEDULED_WITH_IDENTIFIED_SENIOR_COMMERCIAL_REALTOR",
+            "appointment_scheduled_at": "2026-08-05T11:00:00Z",
+            "booking_confirmed_at": "2026-08-03T11:00:00Z",
+            "booking_episode_id": "BOOKING:SYN_SHARED_008_009",
+            "requirement_type": "CURRENT_CRE_REQUIREMENT",
+            "senior_commercial_realtor_id": "REALTOR:SYNTHETIC_SENIOR_001",
+            "source_namespace": "SYNTHETIC_CRM",
+            "supporting_evidence": "INDEPENDENTLY_ADJUDICABLE_SYNTHETIC",
+            "supporting_evidence_sha256": "6982cc483da69c1bad83d275f6b3d52918ac2fad7d4b71b185284c06d68cba5d"
+          },
+          "recorded_at": "2026-08-03T11:01:00Z",
+          "validation_completed_at": "2026-08-03T12:00:00Z"
+        }
+      ],
+      "assessment_cutoffs": [
+        "2026-08-04T12:00:00Z",
+        "2026-08-31T00:01:00Z"
+      ],
+      "binding": {
+        "candidate_id": "CAND:SYN_0010",
+        "candidate_snapshot_sha256": "236ded7ed4b4ef10e38bc2e33f037d5d65cc1b4158205f92f2bd3547e961a647",
+        "field_event_id": "FIELD_EVENT:SYN_0009",
+        "field_event_sha256": "baf06d6871b40df92d37a7bdb763e654f9711910bfe326d6295dbc30fbd6ddfc",
+        "math_decision_sha256": "09d0e986cb410f44cf89348e7b43a098adb277287ad83567db595d0643b6b9b7",
+        "physical_location_id": "LOCATION:eeccea883c51bf4ffed6d4f1",
+        "representative_id": "REP:SYNTHETIC_001",
+        "route_date": "2026-08-01",
+        "route_manifest_sha256": "e3f3019918b357c67f985e4e1f765026b74ae9d7f69e696dcf40251f2a1fb637",
+        "source_snapshot_sha256": "65607401ad27a1306336a1d7024a9bc67f1bfce6af164374f6e3fb5e833c91d6"
+      },
+      "outcome_unit_id": "OUTCOME_UNIT:ROUTE_DAY_001:09",
+      "scenario": "F9_DEDUPE_COLLISION",
+      "sequence_position": 9
+    },
+    {
+      "assertions": [
+        {
+          "assertion_id": "ASSERTION:ROUTE_DAY_001:10:01",
+          "assertion_type": "CONFLICT",
+          "available_at": "2026-08-03T12:00:00Z",
+          "ingested_at": "2026-08-03T11:02:00Z",
+          "occurred_at": "2026-08-03T11:00:00Z",
+          "outcome_unit_id": "OUTCOME_UNIT:ROUTE_DAY_001:10",
+          "payload": {
+            "reason": "SYNTHETIC_CONFLICTING_BOOKING_EVIDENCE"
+          },
+          "recorded_at": "2026-08-03T11:01:00Z",
+          "validation_completed_at": "2026-08-03T12:00:00Z"
+        },
+        {
+          "assertion_id": "ASSERTION:ROUTE_DAY_001:10:02",
+          "assertion_type": "CORRECTION",
+          "available_at": "2026-08-05T12:00:00Z",
+          "ingested_at": "2026-08-05T11:02:00Z",
+          "occurred_at": "2026-08-05T11:00:00Z",
+          "outcome_unit_id": "OUTCOME_UNIT:ROUTE_DAY_001:10",
+          "payload": {
+            "action": "RETRACT",
+            "corrects_assertion_id": "ASSERTION:ROUTE_DAY_001:10:01",
+            "corrects_assertion_sha256": "327eaf8eda93a31f369854cd7859f6e81bbf17ee60e9db9ee55eba688ed1eff4",
+            "reason": "SYNTHETIC_ADJUDICATED_RETRACTION"
+          },
+          "recorded_at": "2026-08-05T11:01:00Z",
+          "validation_completed_at": "2026-08-05T12:00:00Z"
+        },
+        {
+          "assertion_id": "ASSERTION:ROUTE_DAY_001:10:03",
+          "assertion_type": "F9_EVIDENCE",
+          "available_at": "2026-08-05T13:00:00Z",
+          "ingested_at": "2026-08-05T12:02:00Z",
+          "occurred_at": "2026-08-05T12:00:00Z",
+          "outcome_unit_id": "OUTCOME_UNIT:ROUTE_DAY_001:10",
+          "payload": {
+            "actor_role": "RELEVANT_DECISION_MAKER",
+            "adjudication": "PASS_SYNTHETIC",
+            "appointment": "SCHEDULED_WITH_IDENTIFIED_SENIOR_COMMERCIAL_REALTOR",
+            "appointment_scheduled_at": "2026-08-07T12:00:00Z",
+            "booking_confirmed_at": "2026-08-05T12:00:00Z",
+            "booking_episode_id": "BOOKING:SYN_CORRECTED_010",
+            "requirement_type": "CURRENT_CRE_REQUIREMENT",
+            "senior_commercial_realtor_id": "REALTOR:SYNTHETIC_SENIOR_001",
+            "source_namespace": "SYNTHETIC_CRM",
+            "supporting_evidence": "INDEPENDENTLY_ADJUDICABLE_SYNTHETIC",
+            "supporting_evidence_sha256": "3c27a3e4d306aefad744edd9637fdcfc8866a7b967790a242455e18ec4f6fb72"
+          },
+          "recorded_at": "2026-08-05T12:01:00Z",
+          "validation_completed_at": "2026-08-05T13:00:00Z"
+        }
+      ],
+      "assessment_cutoffs": [
+        "2026-08-04T12:00:00Z",
+        "2026-08-07T12:00:00Z",
+        "2026-08-31T00:01:00Z"
+      ],
+      "binding": {
+        "candidate_id": "CAND:SYN_0009",
+        "candidate_snapshot_sha256": "236ded7ed4b4ef10e38bc2e33f037d5d65cc1b4158205f92f2bd3547e961a647",
+        "field_event_id": "FIELD_EVENT:SYN_0010",
+        "field_event_sha256": "5aba35ecb9b5111af9d680ecec0428e9c00f5d17079b215c5bb9468c3c5f2ac3",
+        "math_decision_sha256": "09d0e986cb410f44cf89348e7b43a098adb277287ad83567db595d0643b6b9b7",
+        "physical_location_id": "LOCATION:fb52000a646088c2e776aede",
+        "representative_id": "REP:SYNTHETIC_001",
+        "route_date": "2026-08-01",
+        "route_manifest_sha256": "e3f3019918b357c67f985e4e1f765026b74ae9d7f69e696dcf40251f2a1fb637",
+        "source_snapshot_sha256": "65607401ad27a1306336a1d7024a9bc67f1bfce6af164374f6e3fb5e833c91d6"
+      },
+      "outcome_unit_id": "OUTCOME_UNIT:ROUTE_DAY_001:10",
+      "scenario": "CORRECTED_CONFLICT_TO_F9",
+      "sequence_position": 10
+    }
+  ],
+  "vertical_slice_sha256": "0e9dccc15e2703f1d9840e304ef380feaa0bfb0a23d3b7cd7a365cdcedcd64d5"
+}

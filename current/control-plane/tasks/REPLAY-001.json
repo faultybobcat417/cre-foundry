@@ -1,0 +1,82 @@
+{
+  "task_id": "REPLAY-001",
+  "title": "Deterministic replay, idempotency, compatibility, restore, rollback, and crash recovery",
+  "status": "completed",
+  "objective": "Prove deterministic replay, idempotency, backup and restore, compatibility, migration, rollback, and bounded crash recovery using synthetic non-influencing fixtures.",
+  "business_reason": "The system must reconstruct prior synthetic decisions exactly and recover safely from duplicate execution, partial failure, schema change, stale snapshots, and rollback before adversarial integration testing can begin.",
+  "dependencies": [
+    "OBSERVABILITY-001"
+  ],
+  "gates": [],
+  "inputs": [
+    "OBSERVABILITY-001 canonical lineage, correlation, artifact hashes, and replay identity",
+    "CONTRACT-001 versioned schemas and compatibility contracts",
+    "VERTICAL-001 deterministic synthetic slice",
+    "synthetic recovery and migration fixtures only"
+  ],
+  "assumptions": [
+    "all replay inputs and effects remain synthetic",
+    "no production storage or backup system is accessed",
+    "live permissions and external effects remain false"
+  ],
+  "non_goals": [
+    "claim production durability",
+    "claim production disaster recovery",
+    "perform live migrations",
+    "write to external systems"
+  ],
+  "writable_roots": [
+    "contracts",
+    "src/cre_foundry/replay",
+    "evals/public",
+    "evals/known_bad/frontier",
+    "artifacts/replay",
+    "artifacts/evaluations",
+    "docs/replay",
+    "scripts",
+    "tasks",
+    "control"
+  ],
+  "required_expertise": [
+    "deterministic_systems",
+    "data_engineering",
+    "reliability_engineering",
+    "software_architecture",
+    "testing_verification"
+  ],
+  "evaluator": [
+    "inspect and preserve existing replay and recovery evaluator boundaries",
+    "freeze an additive independent evaluator before material implementation",
+    "reject replay mismatch, duplicate effect, partial crash, stale snapshot, migration incompatibility, restore mismatch, and rollback failure mutations"
+  ],
+  "known_bad_cases": [
+    "replay output differs from original output",
+    "duplicate execution creates a second effect",
+    "partial crash leaves an accepted inconsistent state",
+    "stale snapshot is silently accepted",
+    "incompatible schema migration is accepted",
+    "restore does not match the bound backup",
+    "rollback does not restore the prior accepted version"
+  ],
+  "acceptance": [
+    "synthetic replay reconstructs byte-identical canonical outputs",
+    "duplicate execution is idempotent",
+    "partial failures fail closed and resume deterministically",
+    "compatibility and migration rules reject unsupported versions",
+    "backup and restore identities match",
+    "rollback restores the previous accepted version",
+    "every registered mutation is rejected",
+    "live permissions and external effects remain false"
+  ],
+  "artifacts": [
+    "artifacts/replay/REPLAY-001-start.json",
+    "artifacts/replay/public_evaluator_contract.json",
+    "contracts/replay_recovery.schema.json",
+    "src/cre_foundry/replay",
+    "scripts/validate_replay_contracts.py",
+    "artifacts/evaluations/replay_contracts.json",
+    "artifacts/task-results/REPLAY-001.json"
+  ],
+  "rollback": "Restore the prior schema, reader, and recovery baseline; block incompatible writes and retain the last accepted synthetic snapshot.",
+  "stop_budget": "Remain synthetic and non-influencing; preserve existing evaluator hashes, keep external effects disabled, and do not claim production durability, disaster recovery, or operational recovery readiness."
+}

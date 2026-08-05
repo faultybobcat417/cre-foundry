@@ -1,0 +1,13 @@
+{
+  "automatic_backfill": false,
+  "automatic_schema_mutation": false,
+  "baseline_ready": true,
+  "dependency_edge_count": 20,
+  "issue_count": 131,
+  "opportunity_ranked": false,
+  "outreach_eligible": false,
+  "primitive_count": 1148,
+  "relation_count": 53,
+  "remediation_work_item_count": 32
+}
+DATA HEALTH BASELINE PASSED

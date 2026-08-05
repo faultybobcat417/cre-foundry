@@ -1,0 +1,20 @@
+{
+  "task_id": "BASELINE-001",
+  "title": "Common synthetic point-in-time baseline framework",
+  "status": "completed",
+  "objective": "Implement a replaceable, point-in-time-safe synthetic framework that evaluates incumbent, random, transparent-rule, recency, and simple statistical ranking policies on identical candidate/route-day inputs and outcome contracts without claiming predictive validity or incremental lift.",
+  "business_reason": "A complex model has no defensible value unless it beats meaningful simple baselines under one leakage-resistant evaluator; this is the next depth-first consumer of the hardened outcome boundary and the prerequisite for calibration and economics.",
+  "dependencies": ["VERTICAL-001", "OUTCOMES-001", "MATH-001"],
+  "gates": [],
+  "inputs": ["MATH-001 estimand and exact-ten contracts", "VERTICAL-001 deterministic route-day interface", "OUTCOMES-001 frozen common-as-of labels and claim ceiling", "synthetic point-in-time features and splits only"],
+  "assumptions": [],
+  "non_goals": ["claim real predictive validity", "estimate incremental lift", "tune on future or outcome-derived information", "select a production model", "ingest real source or CRM data", "authorize live ranking or outreach"],
+  "writable_roots": ["contracts", "src/cre_foundry/baselines", "evals/public", "evals/known_bad/frontier", "artifacts/baselines", "artifacts/evaluations", "docs/baselines", "scripts", "tasks", "control"],
+  "required_expertise": ["statistical_learning", "causal_inference", "temporal_validation", "ranking_systems", "testing_verification"],
+  "evaluator": ["freeze a common public evaluator contract before material implementation", "one exact point-in-time feature/label/split interface for every baseline", "deterministic ranking, exact-ten/abstain, metric, replacement, and complexity rules", "registered leakage, missing-baseline, unfair-comparison, nondeterminism, and overclaim mutations"],
+  "known_bad_cases": ["future feature admitted to a historical decision", "outcome-derived feature used for ranking", "incumbent or random baseline omitted", "different candidate sets or splits used across policies", "random baseline is unseeded or non-replayable", "complex model declared superior without registered replacement margin", "synthetic metric represented as predictive validity or lift", "exact-ten/protection invariant bypassed by a baseline"],
+  "acceptance": ["incumbent, seeded random, transparent rule, recency, and simple statistical policies share one strict interface and identical synthetic evaluation inputs", "features obey event/recorded/available/decision clocks and labels obey OUTCOMES maturity semantics", "every policy produces exactly ten distinct eligible physical locations or ABSTAIN_NO_VALID_TEN through the existing MATH contract", "metrics, uncertainty placeholders, replacement rules, and complexity penalties are frozen before candidate implementation", "all registered mutations are rejected and independent sweeps find no surviving leakage or comparison asymmetry", "all real predictive, causal, commercial, and production claims remain behind named gates"],
+  "artifacts": ["artifacts/baselines/BASELINE-001-start.json", "artifacts/baselines/public_evaluator_contract.json", "contracts/baseline_policy.schema.json", "contracts/baseline_evaluation.schema.json", "src/cre_foundry/baselines", "scripts/validate_baseline_framework.py", "artifacts/evaluations/baseline_framework.json", "artifacts/task-results/BASELINE-001.json"],
+  "rollback": "Remove the baseline framework and retain the validated OUTCOMES-001/MATH-001 interfaces; invalidate dependent calibration/economics fixtures and keep all real-use permissions disabled.",
+  "stop_budget": "Remain synthetic and non-influencing; do not use real source rows, infer predictive validity, tune on unavailable outcomes, authorize live ranking, or convert empirical uncertainty into assumptions."
+}

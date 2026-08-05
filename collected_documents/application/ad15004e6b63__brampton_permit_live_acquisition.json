@@ -1,0 +1,22 @@
+{
+  "approved_subdescriptions": [
+    "F1: Industrial",
+    "F2: Industrial",
+    "F3: Industrial"
+  ],
+  "bytes_written": 337419,
+  "layer_id": 0,
+  "manifest_path": "data/bronze/brampton_building_permits/2026/07/26/RUN-20260726T033516Z-e1388f64b1/manifest.json",
+  "next_due_at": "2026-07-26T09:35:16.413070+00:00",
+  "outreach_eligible": false,
+  "raw_path": "data/bronze/brampton_building_permits/2026/07/26/RUN-20260726T033516Z-e1388f64b1/layer_0_bae5f22db1bef14b.geojson.gz",
+  "raw_sha256": "bae5f22db1bef14bac2e242d32b4c8058decabee05da47e795e7639f1133137e",
+  "record_count": 4652,
+  "required_attribution": "City of Brampton Open Data",
+  "run_id": "RUN-20260726T033516Z-e1388f64b1",
+  "schema_fingerprint": "dc7de11abb5d362c91ed17ea52f392377b2543005c6cd08be3effb8c2b8910c5",
+  "source_id": "brampton_building_permits",
+  "status": "succeeded",
+  "where_clause": "SUBDESC IN ('F1: Industrial', 'F2: Industrial', 'F3: Industrial')"
+}
+BRAMPTON PERMIT BRONZE ACQUISITION PASSED

@@ -1,0 +1,22 @@
+source_id: brampton_building_permits
+name: City of Brampton Industrial Building Permits
+base_url: https://maps1.brampton.ca/arcgis/rest/services/BuildingPermit/Building_Permits/FeatureServer
+access_state: approved
+enabled: true
+request_timeout_seconds: 90
+batch_size: 500
+output_spatial_reference: 4326
+layers:
+  - 0
+base_cadence_minutes: 360
+minimum_cadence_minutes: 60
+maximum_cadence_minutes: 1440
+critical_source: false
+license_name: City of Brampton Open Data
+license_url: https://www.brampton.ca/EN/City-Hall/Access-Privacy/Pages/Open-Data.aspx
+required_attribution: City of Brampton Open Data
+where_clause: "SUBDESC IN ('F1: Industrial', 'F2: Industrial', 'F3: Industrial')"
+approved_subdescriptions:
+  - "F1: Industrial"
+  - "F2: Industrial"
+  - "F3: Industrial"

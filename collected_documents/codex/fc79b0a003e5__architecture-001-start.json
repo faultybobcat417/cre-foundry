@@ -1,0 +1,54 @@
+{
+  "artifact_id": "ARCHITECTURE-001-START",
+  "schema_version": "1.0.0",
+  "task_id": "ARCHITECTURE-001",
+  "started_at": "2026-08-02T09:11:30Z",
+  "base_commit": "55cc918db780bb52450388c69f28e26529ecf429",
+  "compiled_context": {
+    "path": "artifacts/context/current_task_packet.md",
+    "manifest_path": "artifacts/context/current_task_packet.json",
+    "packet_sha256": "141dad5d5785bb86eb96ec36180e4734cf74db91caa1825d77c6005830140669",
+    "characters": 405370
+  },
+  "execution_scope": "SYNTHETIC_NON_INFLUENCING",
+  "proof_target": 4,
+  "active_expertise": [
+    "product_architecture",
+    "api_contracts",
+    "workflow_state_machines",
+    "accessibility",
+    "testing_verification"
+  ],
+  "one_writer": "/root",
+  "material_input_classification": [
+    {
+      "input": "synthetic module boundaries, API envelopes, workflow states, idempotency keys, replay bindings, error paths, accessibility semantics, and mutations",
+      "classification": "CODEX_DERIVABLE"
+    },
+    {
+      "input": "representative operating policy, manual-review authority, production service ownership, deployment topology, and live workflow permissions",
+      "classification": "HUMAN_AUTHORITATIVE"
+    },
+    {
+      "input": "actual CRM identity, protected-account bundles, representative sessions, production data sources, and deployed service credentials",
+      "classification": "ACCESS_DEPENDENT"
+    },
+    {
+      "input": "representative usability, accessibility performance with real users, operational error rates, adoption, and field outcomes",
+      "classification": "EMPIRICAL_ONLY"
+    },
+    {
+      "input": "sealed workflow attacks and external hidden architecture evaluation",
+      "classification": "EXTERNALLY_HIDDEN"
+    }
+  ],
+  "hard_boundaries": [
+    "Every successful issuance contains exactly ten distinct eligible physical locations; otherwise the workflow returns ABSTAIN_NO_VALID_TEN.",
+    "No application or manual-review boundary may bypass protection, eligibility, Stage-1 immutability, MATH, lineage, or replay contracts.",
+    "Write-like transitions are idempotent and fail closed; partial failure cannot create ambiguous or duplicate issuance state.",
+    "Abstention reasons and evidence lineage remain visible across every boundary.",
+    "Live actions, external writes, deployment, publication, credentials, and representative authority remain disabled.",
+    "Synthetic architecture proof does not establish representative usability, accessibility performance, production fitness, or field adoption."
+  ],
+  "evaluator_status": "MUST_BE_INDEPENDENTLY_DESIGNED_AND_FROZEN_BEFORE_MATERIAL_IMPLEMENTATION"
+}

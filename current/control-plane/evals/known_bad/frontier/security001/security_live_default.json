@@ -1,0 +1,5 @@
+{
+  "case_id": "live-default",
+  "expected_diagnostic": "SECURITY-LIVE-DEFAULT",
+  "mutation_id": "live_default"
+}

@@ -1,0 +1,26 @@
+{
+  "attack_scope": "SYNTHETIC_EVALUATOR_SELF_TEST_ONLY",
+  "base_run_sha256": "e467dec2bdaa913919bb848d3aa9c490244c908c5d136e348c80708bff43325a",
+  "case_id": "empty-bin-point-estimate",
+  "document_kind": "REGISTERED_CALIBRATION_MUTATION",
+  "expected_diagnostic": "CALIBRATION-EMPTY-CELL-OVERCLAIM",
+  "patch": {
+    "operations": [
+      {
+        "document": "subject",
+        "operation": "replace",
+        "path": [
+          "fit",
+          "cells",
+          3,
+          "posterior_probability"
+        ],
+        "value": {
+          "denominator": 2,
+          "numerator": 1
+        }
+      }
+    ]
+  },
+  "schema_version": "1.0.0"
+}

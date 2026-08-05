@@ -1,0 +1,23 @@
+{
+  "state_version": "2.1",
+  "updated_at": "2026-08-01T22:57:35Z",
+  "project": "CRE Tip Sheet / CRE Foundry",
+  "phase": "greenfield_control_plane_initialized",
+  "current_milestone": "M01",
+  "current_task_id": "RESEARCH-001",
+  "completed_tasks": ["PLANNING-V0.12", "LAUNCH-OS-V2.0", "BOOTSTRAP-001"],
+  "executable_tasks": ["RESEARCH-001"],
+  "blocked_tasks": ["EVAL-001", "MATH-001", "CONTRACT-001", "VERTICAL-001", "SOURCE-PILOT-001", "IDENTITY-001", "IDENTITY-CAL-001", "ROUTE-CAL-001", "POLICY-001", "SHADOW-001"],
+  "open_gates": ["GATE-SEALED-EVALUATOR-CUSTODY-001", "GATE-HIDDEN-HOLDOUT-OWNER-001", "approved_source_envelope", "firm_economics_services_territories", "representative_origins_capacity_specialties", "protected_account_bundle", "approved_route_matrix"],
+  "verified_claims": ["product mission and hard invariants defined", "Project OS archive and structure validated", "greenfield repository access and intent confirmed", "repository public evaluator rejects the registered known-bad mutant", "repository-specific task graph is acyclic", "live permissions disabled"],
+  "unverified_claims": ["sealed evaluator independence", "external hidden holdout", "application conformance", "raw source feasibility", "candidate universe coverage", "entity precision and conflict recall", "historical signal value", "route and service calibration", "randomized appointment lift", "commercial value", "production readiness"],
+  "live_permissions": false,
+  "last_checkpoint": "BOOTSTRAP-001",
+  "checkpoint_commit": "1f31dd334dad330b1fba645d8b168e32f40cc164",
+  "session": {
+    "mode": "interactive",
+    "codex_version": "codex-cli 0.145.0-alpha.18",
+    "thread_id": null,
+    "last_turn_id": null
+  }
+}

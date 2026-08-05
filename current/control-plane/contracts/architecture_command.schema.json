@@ -1,0 +1,529 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://cre-foundry.local/schemas/architecture-command-v1.json",
+  "title": "CRE Foundry architecture workflow command envelope",
+  "description": "Versioned black-box JSON command envelope for the ARCHITECTURE-001 transactional workflow. Enforces the frozen evaluator contract command_envelope and is recursive-closed at every object definition. No live authority is expressed.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "command_id",
+    "command_type",
+    "aggregate_key",
+    "expected_aggregate_version",
+    "idempotency_key",
+    "payload",
+    "payload_sha256",
+    "schema_version",
+    "contract_sha256",
+    "actor_class",
+    "principal_reference",
+    "requested_capability",
+    "authorization_decision_sha256",
+    "correlation_id",
+    "causation_id",
+    "submitted_at"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "contract_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "command_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "command_type": {
+      "$ref": "#/$defs/command_type"
+    },
+    "aggregate_key": {
+      "$ref": "#/$defs/aggregate_key"
+    },
+    "expected_aggregate_version": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "idempotency_key": {
+      "$ref": "#/$defs/idempotency_key"
+    },
+    "payload": {
+      "$ref": "#/$defs/payload"
+    },
+    "payload_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "actor_class": {
+      "enum": [
+        "SYSTEM",
+        "MANUAL_REVIEWER",
+        "REPRESENTATIVE"
+      ]
+    },
+    "principal_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "requested_capability": {
+      "$ref": "#/$defs/requested_capability"
+    },
+    "authorization_decision_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "correlation_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "causation_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "submitted_at": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "$defs": {
+    "command_type": {
+      "enum": [
+        "APPEND_STAGE1",
+        "FREEZE_STAGE1",
+        "DECIDE_ISSUE",
+        "DECIDE_ABSTAIN",
+        "QUARANTINE_INVALID",
+        "PREPARE_SYNTHETIC_ISSUANCE",
+        "COMMIT_SYNTHETIC_ISSUANCE",
+        "APPEND_STAGE2",
+        "APPEND_STAGE3",
+        "VOID_UNDELIVERED",
+        "SUPERSEDE_WITH_NEW_GENERATION",
+        "RECORD_REVIEW_ANNOTATION",
+        "REQUEST_AUTHORITATIVE_EVIDENCE"
+      ]
+    },
+    "aggregate_key": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "execution_scope",
+        "representative_id",
+        "route_date",
+        "generation"
+      ],
+      "properties": {
+        "execution_scope": {
+          "const": "SYNTHETIC_NON_INFLUENCING"
+        },
+        "representative_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "route_date": {
+          "type": "string",
+          "format": "date"
+        },
+        "generation": {
+          "type": "integer",
+          "minimum": 1
+        }
+      }
+    },
+    "idempotency_key": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "key",
+        "binding"
+      ],
+      "properties": {
+        "key": {
+          "type": "string",
+          "minLength": 1
+        },
+        "binding": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "contract_version",
+            "representative_id",
+            "route_date",
+            "generation",
+            "operation",
+            "stage1_snapshot_sha256",
+            "math_decision_sha256"
+          ],
+          "properties": {
+            "contract_version": {
+              "const": "1.0.0"
+            },
+            "representative_id": {
+              "type": "string",
+              "minLength": 1
+            },
+            "route_date": {
+              "type": "string",
+              "format": "date"
+            },
+            "generation": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "operation": {
+              "type": "string",
+              "minLength": 1
+            },
+            "stage1_snapshot_sha256": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "pattern": "^[0-9a-f]{64}$"
+            },
+            "math_decision_sha256": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "pattern": "^[0-9a-f]{64}$"
+            }
+          }
+        }
+      }
+    },
+    "requested_capability": {
+      "enum": [
+        "stage1:append",
+        "stage1:freeze",
+        "decision:issue",
+        "decision:abstain",
+        "decision:quarantine",
+        "issuance:prepare",
+        "issuance:commit",
+        "stage2:append",
+        "stage3:append",
+        "issuance:void",
+        "generation:supersede",
+        "review:annotate",
+        "review:request-evidence"
+      ]
+    },
+    "payload": {
+      "oneOf": [
+        {
+          "$ref": "#/$defs/payload_append_stage1"
+        },
+        {
+          "$ref": "#/$defs/payload_freeze_stage1"
+        },
+        {
+          "$ref": "#/$defs/payload_decide_issue"
+        },
+        {
+          "$ref": "#/$defs/payload_decide_abstain"
+        },
+        {
+          "$ref": "#/$defs/payload_quarantine_invalid"
+        },
+        {
+          "$ref": "#/$defs/payload_prepare_issuance"
+        },
+        {
+          "$ref": "#/$defs/payload_commit_issuance"
+        },
+        {
+          "$ref": "#/$defs/payload_append_stage2"
+        },
+        {
+          "$ref": "#/$defs/payload_append_stage3"
+        },
+        {
+          "$ref": "#/$defs/payload_void_undelivered"
+        },
+        {
+          "$ref": "#/$defs/payload_supersede"
+        },
+        {
+          "$ref": "#/$defs/payload_review_annotation"
+        },
+        {
+          "$ref": "#/$defs/payload_request_evidence"
+        }
+      ]
+    },
+    "payload_append_stage1": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "evidence_kind",
+        "source_snapshot_sha256",
+        "observation_ids",
+        "stage1_cutoff"
+      ],
+      "properties": {
+        "evidence_kind": {
+          "const": "STAGE1_OBSERVATION"
+        },
+        "source_snapshot_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "observation_ids": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "stage1_cutoff": {
+          "type": "string",
+          "format": "date-time"
+        }
+      }
+    },
+    "payload_freeze_stage1": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "stage1_snapshot_sha256"
+      ],
+      "properties": {
+        "stage1_snapshot_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        }
+      }
+    },
+    "payload_decide_issue": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "decision_scope",
+        "math_decision_sha256"
+      ],
+      "properties": {
+        "decision_scope": {
+          "const": "SYNTHETIC_FORMAL_ONLY"
+        },
+        "math_decision_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        }
+      }
+    },
+    "payload_decide_abstain": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "math_decision_sha256",
+        "abstain_reason"
+      ],
+      "properties": {
+        "math_decision_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "abstain_reason": {
+          "enum": [
+            "PROTECTED_BUNDLE_INCOMPLETE",
+            "UNRESOLVED_VALUE_COULD_DOMINATE",
+            "NO_FEASIBLE_TEN"
+          ]
+        }
+      }
+    },
+    "payload_quarantine_invalid": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "cause",
+        "diagnostic"
+      ],
+      "properties": {
+        "cause": {
+          "type": "string",
+          "minLength": 1
+        },
+        "diagnostic": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "payload_prepare_issuance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "route_date",
+        "prepared_route_sha256"
+      ],
+      "properties": {
+        "route_date": {
+          "type": "string",
+          "format": "date"
+        },
+        "prepared_route_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        }
+      }
+    },
+    "payload_commit_issuance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "route_manifest_sha256",
+        "issuance_slot"
+      ],
+      "properties": {
+        "route_manifest_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "issuance_slot": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "execution_scope",
+            "representative_id",
+            "route_date"
+          ],
+          "properties": {
+            "execution_scope": {
+              "const": "SYNTHETIC_NON_INFLUENCING"
+            },
+            "representative_id": {
+              "type": "string",
+              "minLength": 1
+            },
+            "route_date": {
+              "type": "string",
+              "format": "date"
+            }
+          }
+        }
+      }
+    },
+    "payload_append_stage2": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "route_manifest_sha256",
+        "field_event_ids"
+      ],
+      "properties": {
+        "route_manifest_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "field_event_ids": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    "payload_append_stage3": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "field_event_id",
+        "field_event_sha256",
+        "outcome_ids"
+      ],
+      "properties": {
+        "field_event_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "field_event_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "outcome_ids": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    "payload_void_undelivered": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "reason"
+      ],
+      "properties": {
+        "reason": {
+          "const": "UNDELIVERED_SYNTHETIC"
+        }
+      }
+    },
+    "payload_supersede": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "new_generation",
+        "successor_stage1_snapshot_sha256"
+      ],
+      "properties": {
+        "new_generation": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "successor_stage1_snapshot_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        }
+      }
+    },
+    "payload_review_annotation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "action",
+        "annotation"
+      ],
+      "properties": {
+        "action": {
+          "const": "ANNOTATE"
+        },
+        "annotation": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "payload_request_evidence": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "action",
+        "request_reason"
+      ],
+      "properties": {
+        "action": {
+          "const": "REQUEST_AUTHORITATIVE_EVIDENCE"
+        },
+        "request_reason": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    }
+  }
+}

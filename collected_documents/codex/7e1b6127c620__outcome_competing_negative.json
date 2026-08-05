@@ -1,0 +1,5 @@
+{
+  "case_id": "competing-event-negative",
+  "mutation_id": "competing_event_as_negative",
+  "expected_diagnostic": "OUTCOMES-LABEL-COMPETING-AS-NEGATIVE"
+}

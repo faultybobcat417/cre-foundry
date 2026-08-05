@@ -1,0 +1,22 @@
+{
+  "config_version": "cre-foundry-primitive-quality-v1",
+  "policy": {
+    "operating_mode": "shadow",
+    "read_only": true,
+    "schema_driven": true,
+    "sample_values_enabled": false,
+    "safety_control_values_enabled": true,
+    "automatic_acquisition": false,
+    "automatic_snapshot_registration": false,
+    "browser_execution": false,
+    "computer_vision_execution": false,
+    "automatic_conclusions": false,
+    "opportunity_ranked": false,
+    "outreach_eligible": false
+  },
+  "thresholds": {
+    "high_null_ratio": 0.95,
+    "material_null_ratio": 0.5,
+    "maximum_safety_distinct_values": 20
+  }
+}

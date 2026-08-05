@@ -1,0 +1,39 @@
+{
+  "failed_scenario_count": 0,
+  "final_digest": "fcef7b4fb29d3eab7ba6209e5d1db8ef29330a6072c8d4169351108f914261db",
+  "final_rehearsal_entries": [
+    "state.json"
+  ],
+  "initial_digest": "4b8894d57dfa621e534ef4eb25263e8f00254cbcb4327f1f98796314ac279dde",
+  "model_version": "cre-foundry-atomic-write-recovery-v1",
+  "passed_scenario_count": 6,
+  "project_file_mutation_count": 0,
+  "scenario_count": 6,
+  "scenarios": [
+    {
+      "passed": true,
+      "scenario_id": "normal_commit"
+    },
+    {
+      "passed": true,
+      "scenario_id": "crash_before_replace"
+    },
+    {
+      "passed": true,
+      "scenario_id": "corrupt_temporary_file"
+    },
+    {
+      "passed": true,
+      "scenario_id": "replace_after_fsync"
+    },
+    {
+      "passed": true,
+      "scenario_id": "symlink_escape_rejected"
+    },
+    {
+      "passed": true,
+      "scenario_id": "scoped_orphan_cleanup"
+    }
+  ],
+  "temporary_rehearsal_deleted": true
+}

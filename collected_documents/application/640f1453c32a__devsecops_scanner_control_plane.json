@@ -1,0 +1,118 @@
+{
+  "blocking_policy": {
+    "bandit_confidences": [
+      "medium",
+      "high"
+    ],
+    "bandit_severities": [
+      "medium",
+      "high"
+    ],
+    "critical_secret_detectors": [
+      "AWS Access Key",
+      "AWS Secret Key",
+      "Azure Storage Key",
+      "GitHub Token",
+      "GitLab Token",
+      "OpenAI Token",
+      "Private Key",
+      "Pypi Token",
+      "Slack Detector",
+      "Stripe Access Key",
+      "Twilio Key"
+    ],
+    "dependency_vulnerability": [
+      "unknown",
+      "low",
+      "medium",
+      "high",
+      "critical"
+    ],
+    "prohibited_license_markers": [
+      "AGPL",
+      "SSPL",
+      "BUSL",
+      "COMMONS CLAUSE",
+      "ELASTIC LICENSE"
+    ],
+    "review_license_markers": [
+      "GPL",
+      "LGPL",
+      "MPL",
+      "EPL",
+      "CDDL",
+      "UNKNOWN"
+    ]
+  },
+  "ci_policy": {
+    "forbidden_triggers": [
+      "pull_request_target"
+    ],
+    "maximum_timeout_minutes": 30,
+    "required_commands": [
+      "uv sync --locked --all-groups",
+      "./scripts/sql_safety_primitives_check.sh",
+      "./scripts/security_scan.sh",
+      "./scripts/sql_safety_inventory.sh",
+      "./scripts/sql_safety_wave1a_plan.sh",
+      "./scripts/security_ratchet.sh",
+      "./scripts/sql_safety_wave1a_canary_check.sh"
+    ],
+    "required_job_permissions": {
+      "contents": "read"
+    },
+    "required_top_level_permissions": {
+      "contents": "read"
+    },
+    "required_workflow_path": ".github/workflows/security-audit.yml"
+  },
+  "config_version": "cre-foundry-devsecops-scanner-control-plane-v1",
+  "history_scan": {
+    "excluded_path_prefixes": [
+      ".git/",
+      ".venv/",
+      "data/",
+      "logs/"
+    ],
+    "maximum_blob_bytes": 1048576,
+    "maximum_findings": 1000
+  },
+  "policy": {
+    "automatic_acquisition_enabled": false,
+    "backtest_execution_enabled": false,
+    "ci_least_privilege_required": true,
+    "critical_secret_suppression_forbidden": true,
+    "database_access_enabled": false,
+    "database_write_enabled": false,
+    "deterministic_fingerprints_required": true,
+    "expired_suppressions_forbidden": true,
+    "finding_normalization_required": true,
+    "git_history_secret_scan_required": true,
+    "immutable_action_pinning_required": true,
+    "machine_readable_results_required": true,
+    "model_training_enabled": false,
+    "network_access_scope": "pip-audit-vulnerability-service-only",
+    "operating_mode": "shadow",
+    "outcome_event_insertion_enabled": false,
+    "outreach_enabled": false,
+    "persistent_outcome_ledger_enabled": false,
+    "pilot_execution_enabled": false,
+    "point_in_time_materialization_enabled": false,
+    "production_ranking_enabled": false,
+    "raw_secret_persistence_forbidden": true,
+    "sbom_lockfile_reconciliation_required": true,
+    "scanner_execution_required": true,
+    "silent_suppressions_forbidden": true,
+    "snapshot_registration_enabled": false,
+    "suppression_governance_required": true,
+    "wildcard_suppressions_forbidden": true
+  },
+  "raw_report_directory": "logs/security_scans",
+  "suppression_path": "config/security_suppressions.json",
+  "toolchain": {
+    "bandit": "1.9.4",
+    "detect-secrets": "1.5.0",
+    "pip-audit": "2.10.1",
+    "pip-licenses": "5.5.5"
+  }
+}

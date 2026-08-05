@@ -1,0 +1,30 @@
+{
+  "artifact_id": "MATH-001-FORMAL-DECISIONS",
+  "schema_version": "1.0.0",
+  "decisions": [
+    {"decision_id": "MATH-D01", "topic": "candidate admissibility", "decision": "Every required evidence, identity, eligibility, safety, access, protection, operational, and Stage-1 provenance gate must be PASS; UNKNOWN fails closed for issuance."},
+    {"decision_id": "MATH-D02", "topic": "protected uncertainty", "decision": "Candidate-level UNKNOWN excludes that candidate; inability to establish snapshot-level protected-bundle completeness forces route-day abstention."},
+    {"decision_id": "MATH-D03", "topic": "feasible set", "decision": "Enumerate 10-combinations with ten distinct physical_location_id values and all registered joint composition/capacity constraints; ten individually admissible candidates alone are insufficient."},
+    {"decision_id": "MATH-D04", "topic": "value floor", "decision": "Version 1 uses exact additive epsilon_B=0, so proximity is a tie-break only among primary-value-maximizing lists."},
+    {"decision_id": "MATH-D05", "topic": "numeric representation", "decision": "Public oracle scores use scaled integers or exact rationals; binary floating point, NaN, implicit rounding, and index-based ties are forbidden."},
+    {"decision_id": "MATH-D06", "topic": "determinism", "decision": "After equal primary value and proximity, select the lexicographically smallest canonical tuple of sorted physical-location and candidate IDs; output order is canonical display order, not a claimed visit sequence."},
+    {"decision_id": "MATH-D07", "topic": "unknown value", "decision": "Abstain when unresolved candidates could dominate the selected list; no global optimality claim is allowed until conservative bound semantics are registered."},
+    {"decision_id": "MATH-D08", "topic": "invalid versus abstain", "decision": "Malformed or incoherent input is a validation failure; valid input with no provable feasible ten returns ABSTAIN_NO_VALID_TEN."},
+    {"decision_id": "MATH-D09", "topic": "bounded oracle", "decision": "Public exhaustive enumeration is capped at 20 candidates and enumerates combinations, not route permutations; route sequencing requires a separate smaller contract."},
+    {"decision_id": "MATH-D10", "topic": "issue obligation", "decision": "A valid input with at least one provable feasible ten must ISSUE and may not always abstain."},
+    {"decision_id": "MATH-D11", "topic": "protected aliases", "decision": "Candidate protection tokens are intersected with the complete snapshot protected-token bundle; any match excludes the candidate even when its direct protected_status is CLEAR."},
+    {"decision_id": "MATH-D12", "topic": "objective penalties", "decision": "The exact primary objective subtracts registered scaled-integer pairwise redundancy and interference penalties before proximity tie-breaking; empty tables explicitly mean zero in the bounded v1 oracle."},
+    {"decision_id": "MATH-D13", "topic": "clock and output binding", "decision": "Every observation must be at or before the Stage-1 cutoff, the cutoff must be at or before issued_at, issuance must precede the route date, and every decision echoes snapshot and policy digests."},
+    {"decision_id": "MATH-D14", "topic": "proof propagation", "decision": "Computed outputs bind structured evidence or authority attestations and may not exceed the weakest load-bearing input proof level; sensitivity values remain scenario-only at proof level four or below."},
+    {"decision_id": "MATH-D15", "topic": "synthetic score scope", "decision": "Version 1 decision problems are explicitly SYNTHETIC_FORMAL_ONLY and accept only REGISTERED_SYNTHETIC_PROXY scores; live issuance requires a later evidence-bound contract version and cannot use this oracle entry point."},
+    {"decision_id": "MATH-D16", "topic": "experiment protocol authority", "decision": "Analysis family, sidedness, multiplicity, randomization unit, estimator, variance model, alpha, target power, and allocation are unset human-authoritative protocol inputs under GATE-EXPERIMENT-PROTOCOL-001; instrumentation inputs use the outcome-maturity gate rather than the final-evidence gate."}
+  ],
+  "unresolved": [
+    "production composition limits and required one-per-grain rules",
+    "redundancy and interference penalty definitions",
+    "approved operational route/capacity model",
+    "authoritative physical-location and protected-bundle inputs",
+    "empirical or firm-authoritative value components"
+  ],
+  "claim_ceiling": "Version-1 public oracle semantics only; unresolved production parameters remain symbolic or gated."
+}

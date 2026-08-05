@@ -1,0 +1,596 @@
+{
+  "layers": [
+    {
+      "id": 0,
+      "popupInfo": {
+        "description": null,
+        "fieldInfos": [
+          {
+            "fieldName": "GIS_ID",
+            "format": {
+              "digitSeparator": true,
+              "places": 2
+            },
+            "label": "GIS_ID",
+            "stringFieldOption": "textbox",
+            "tooltip": "",
+            "visible": true
+          },
+          {
+            "fieldName": "OBJECTID",
+            "label": "OBJECTID",
+            "stringFieldOption": "textbox",
+            "tooltip": "",
+            "visible": false
+          },
+          {
+            "fieldName": "FULL_ADDRESS",
+            "label": "FULL ADDRESS",
+            "stringFieldOption": "textbox",
+            "tooltip": "",
+            "visible": true
+          },
+          {
+            "fieldName": "CIVIC_NUMBER",
+            "label": "CIVIC NUMBER",
+            "stringFieldOption": "textbox",
+            "tooltip": "",
+            "visible": true
+          },
+          {
+            "fieldName": "STREET_NAME",
+            "label": "STREET NAME",
+            "stringFieldOption": "textbox",
+            "tooltip": "",
+            "visible": true
+          },
+          {
+            "fieldName": "STREET_TYPE",
+            "label": "STREET TYPE",
+            "stringFieldOption": "textbox",
+            "tooltip": "",
+            "visible": true
+          },
+          {
+            "fieldName": "STREET_DIRECTION",
+            "label": "STREET DIRECTION",
+            "stringFieldOption": "textbox",
+            "tooltip": "",
+            "visible": true
+          },
+          {
+            "fieldName": "UNIT_NO",
+            "label": "UNIT NUMBER",
+            "stringFieldOption": "textbox",
+            "tooltip": "",
+            "visible": true
+          },
+          {
+            "fieldName": "CITY",
+            "label": "CITY",
+            "stringFieldOption": "textbox",
+            "tooltip": "",
+            "visible": true
+          },
+          {
+            "fieldName": "PROVINCE",
+            "label": "PROVINCE",
+            "stringFieldOption": "textbox",
+            "tooltip": "",
+            "visible": true
+          },
+          {
+            "fieldName": "POSTAL_CODE",
+            "label": "POSTAL_CODE",
+            "stringFieldOption": "textbox",
+            "tooltip": "",
+            "visible": true
+          },
+          {
+            "fieldName": "ADDRESS_TYPE",
+            "label": "ADDRESS TYPE",
+            "stringFieldOption": "textbox",
+            "tooltip": "",
+            "visible": true
+          },
+          {
+            "fieldName": "PROP_CODE",
+            "format": {
+              "digitSeparator": true,
+              "places": 2
+            },
+            "label": "PROPERTY CODE",
+            "stringFieldOption": "textbox",
+            "tooltip": "",
+            "visible": true
+          },
+          {
+            "fieldName": "PROP_CODE_DESC",
+            "label": "PROPERTY CODE DESCRIPTION",
+            "stringFieldOption": "textbox",
+            "tooltip": "",
+            "visible": true
+          },
+          {
+            "fieldName": "WARD",
+            "label": "WARD",
+            "stringFieldOption": "textbox",
+            "tooltip": "",
+            "visible": true
+          },
+          {
+            "fieldName": "CITY_GRID",
+            "label": "CITY GRID",
+            "stringFieldOption": "textbox",
+            "tooltip": "",
+            "visible": true
+          },
+          {
+            "fieldName": "LOT_NUM",
+            "label": "LOT NUMBER",
+            "stringFieldOption": "textbox",
+            "tooltip": "",
+            "visible": true
+          },
+          {
+            "fieldName": "CON_NUM",
+            "label": "CONCESSION NUMBER",
+            "stringFieldOption": "textbox",
+            "tooltip": "",
+            "visible": true
+          },
+          {
+            "fieldName": "SEC_PLAN_AREA",
+            "label": "SECONDARY PLAN AREA",
+            "stringFieldOption": "textbox",
+            "tooltip": "",
+            "visible": true
+          },
+          {
+            "fieldName": "CITY_FILE",
+            "label": "CITY FILE NUMBER",
+            "stringFieldOption": "textbox",
+            "tooltip": "",
+            "visible": true
+          },
+          {
+            "fieldName": "DRAFT_PLAN_NUMBER",
+            "label": "DRAFT PLAN NUMBER",
+            "stringFieldOption": "textbox",
+            "tooltip": "",
+            "visible": true
+          },
+          {
+            "fieldName": "REG_PLAN_NUMBER",
+            "label": "REGISTERED PLAN NUMBER",
+            "stringFieldOption": "textbox",
+            "tooltip": "",
+            "visible": true
+          },
+          {
+            "fieldName": "REG_PLAN_ASSUMP_DATE",
+            "format": {
+              "dateFormat": "shortDateShortTime"
+            },
+            "label": "REGISTERED PLAN ASSUMPTION DATE",
+            "stringFieldOption": "textbox",
+            "tooltip": "",
+            "visible": true
+          },
+          {
+            "fieldName": "SITE_PLAN_NUMBER",
+            "label": "SITE PLAN NUMBER",
+            "stringFieldOption": "textbox",
+            "tooltip": "",
+            "visible": true
+          },
+          {
+            "fieldName": "CONDO_PLAN_NUMBER",
+            "label": "CONDO PLAN NUMBER",
+            "stringFieldOption": "textbox",
+            "tooltip": "",
+            "visible": true
+          },
+          {
+            "fieldName": "C_OF_A",
+            "label": "COMMITTEE OF ADJUSTMENT NUMBER",
+            "stringFieldOption": "textbox",
+            "tooltip": "",
+            "visible": true
+          },
+          {
+            "fieldName": "TOWNSHIP",
+            "label": "TOWNSHIP",
+            "stringFieldOption": "textbox",
+            "tooltip": "",
+            "visible": true
+          },
+          {
+            "fieldName": "BLOCK_PLAN",
+            "label": "BLOCK PLAN",
+            "stringFieldOption": "textbox",
+            "tooltip": "",
+            "visible": true
+          },
+          {
+            "fieldName": "HERITAGE",
+            "label": "HERITAGE",
+            "stringFieldOption": "textbox",
+            "tooltip": "",
+            "visible": true
+          },
+          {
+            "fieldName": "PERMIT_ISSUEDATE",
+            "format": {
+              "dateFormat": "shortDateShortTime"
+            },
+            "label": "PERMIT ISSUE DATE",
+            "stringFieldOption": "textbox",
+            "tooltip": "",
+            "visible": true
+          },
+          {
+            "fieldName": "PERMIT_NO",
+            "label": "PERMIT NUMBER",
+            "stringFieldOption": "textbox",
+            "tooltip": "",
+            "visible": true
+          },
+          {
+            "fieldName": "PERMIT_TYPE",
+            "label": "PERMIT TYPE",
+            "stringFieldOption": "textbox",
+            "tooltip": "",
+            "visible": true
+          },
+          {
+            "fieldName": "SUB_TYPE",
+            "label": "PERMIT SUB TYPE",
+            "stringFieldOption": "textbox",
+            "tooltip": "",
+            "visible": true
+          },
+          {
+            "fieldName": "WORK_TYPE",
+            "label": "PERMIT WORK TYPE",
+            "stringFieldOption": "textbox",
+            "tooltip": "",
+            "visible": true
+          },
+          {
+            "fieldName": "OCCUPANCY_DATE",
+            "format": {
+              "dateFormat": "shortDateShortTime"
+            },
+            "label": "OCCUPANCY DATE",
+            "stringFieldOption": "textbox",
+            "tooltip": "",
+            "visible": true
+          },
+          {
+            "fieldName": "PROPERTY_DESC",
+            "label": "PROPERTY DESCRIPTION",
+            "stringFieldOption": "textbox",
+            "tooltip": "",
+            "visible": true
+          },
+          {
+            "fieldName": "LEGAL_DESC",
+            "label": "LEGAL DESCRIPTION",
+            "stringFieldOption": "textbox",
+            "tooltip": "",
+            "visible": true
+          },
+          {
+            "fieldName": "ROLL_NO_DISP",
+            "label": "ROLL NUMBER",
+            "stringFieldOption": "textbox",
+            "tooltip": "",
+            "visible": true
+          },
+          {
+            "fieldName": "PIN",
+            "label": "PIN",
+            "stringFieldOption": "textbox",
+            "tooltip": "",
+            "visible": true
+          },
+          {
+            "fieldName": "ADDRESS_ID",
+            "format": {
+              "digitSeparator": true,
+              "places": 2
+            },
+            "label": "ADDRESS_ID",
+            "stringFieldOption": "textbox",
+            "tooltip": "",
+            "visible": true
+          },
+          {
+            "fieldName": "GEOMETRY",
+            "label": "GEOMETRY",
+            "stringFieldOption": "textbox",
+            "tooltip": "",
+            "visible": false
+          }
+        ],
+        "mediaInfos": [],
+        "showAttachments": true,
+        "title": "Address Points: {OWNER_NAME1}"
+      }
+    },
+    {
+      "id": 1,
+      "popupInfo": {
+        "description": null,
+        "fieldInfos": [
+          {
+            "fieldName": "SEARCH_NAME",
+            "label": "SEARCH NAME",
+            "stringFieldOption": "textbox",
+            "tooltip": "",
+            "visible": true
+          },
+          {
+            "fieldName": "STREET_NAME",
+            "label": "STREET NAME",
+            "stringFieldOption": "textbox",
+            "tooltip": "",
+            "visible": true
+          },
+          {
+            "fieldName": "STREET_TYPE",
+            "label": "STREET TYPE",
+            "stringFieldOption": "textbox",
+            "tooltip": "",
+            "visible": true
+          },
+          {
+            "fieldName": "DIRECTION",
+            "label": "DIRECTION",
+            "stringFieldOption": "textbox",
+            "tooltip": "",
+            "visible": true
+          },
+          {
+            "fieldName": "JURISDICTION",
+            "label": "JURISDICTION",
+            "stringFieldOption": "textbox",
+            "tooltip": "",
+            "visible": true
+          },
+          {
+            "fieldName": "LENGTH_M",
+            "format": {
+              "digitSeparator": true,
+              "places": 2
+            },
+            "label": "SEGMENT LENGTH IN METRES",
+            "stringFieldOption": "textbox",
+            "tooltip": "",
+            "visible": true
+          },
+          {
+            "fieldName": "ROAD_CLASSIFICATION",
+            "label": "ROAD CLASSIFICATION",
+            "stringFieldOption": "textbox",
+            "tooltip": "",
+            "visible": true
+          },
+          {
+            "fieldName": "DEVEL_STATUS",
+            "label": "DEVELOPMENT STATUS",
+            "stringFieldOption": "textbox",
+            "tooltip": "",
+            "visible": true
+          },
+          {
+            "fieldName": "CONSTRUC_STATUS",
+            "label": "CONSTRUCTION STATUS",
+            "stringFieldOption": "textbox",
+            "tooltip": "",
+            "visible": true
+          },
+          {
+            "fieldName": "SERVICING",
+            "format": {
+              "dateFormat": "shortDateShortTime"
+            },
+            "label": "SERVICING DATE",
+            "stringFieldOption": "textbox",
+            "tooltip": "",
+            "visible": true
+          },
+          {
+            "fieldName": "OBJECTID",
+            "label": "OBJECTID",
+            "stringFieldOption": "textbox",
+            "tooltip": "",
+            "visible": false
+          },
+          {
+            "fieldName": "NUMBER_OF_LANES",
+            "label": "NUMBER OF LANES",
+            "stringFieldOption": "textbox",
+            "tooltip": "",
+            "visible": true
+          },
+          {
+            "fieldName": "LF_ADDRESS",
+            "label": "LEFT FROM ADDRESS",
+            "stringFieldOption": "textbox",
+            "tooltip": "",
+            "visible": true
+          },
+          {
+            "fieldName": "LT_ADDRESS",
+            "label": "LEFT TO ADDRESS",
+            "stringFieldOption": "textbox",
+            "tooltip": "",
+            "visible": true
+          },
+          {
+            "fieldName": "RF_ADDRESS",
+            "label": "RIGHT FROM ADDRESS",
+            "stringFieldOption": "textbox",
+            "tooltip": "",
+            "visible": true
+          },
+          {
+            "fieldName": "RT_ADDRESS",
+            "label": "RIGHT TO ADDRESS",
+            "stringFieldOption": "textbox",
+            "tooltip": "",
+            "visible": true
+          },
+          {
+            "fieldName": "MAJ_MIN",
+            "label": "MAJOR MINOR CLASSIFICATION",
+            "stringFieldOption": "textbox",
+            "tooltip": "",
+            "visible": true
+          },
+          {
+            "fieldName": "TRAFFIC_DIRECTION",
+            "format": {
+              "digitSeparator": true,
+              "places": 2
+            },
+            "label": "TRAFFIC DIRECTION",
+            "stringFieldOption": "textbox",
+            "tooltip": "",
+            "visible": true
+          },
+          {
+            "fieldName": "T_ELEV",
+            "format": {
+              "digitSeparator": true,
+              "places": 2
+            },
+            "label": "TO ELEVATION",
+            "stringFieldOption": "textbox",
+            "tooltip": "",
+            "visible": true
+          },
+          {
+            "fieldName": "F_ELEV",
+            "format": {
+              "digitSeparator": true,
+              "places": 2
+            },
+            "label": "FROM ELEVATION",
+            "stringFieldOption": "textbox",
+            "tooltip": "",
+            "visible": true
+          },
+          {
+            "fieldName": "SHAPE",
+            "label": "SHAPE",
+            "stringFieldOption": "textbox",
+            "tooltip": "",
+            "visible": false
+          }
+        ],
+        "mediaInfos": [],
+        "showAttachments": true,
+        "title": "Streets: {SEARCH_NAME}"
+      }
+    },
+    {
+      "id": 2,
+      "layerDefinition": {
+        "defaultVisibility": true
+      },
+      "showLegend": false
+    },
+    {
+      "id": 3,
+      "popupInfo": {
+        "description": null,
+        "fieldInfos": [
+          {
+            "fieldName": "ID",
+            "label": "ID",
+            "stringFieldOption": "textbox",
+            "tooltip": "",
+            "visible": false
+          },
+          {
+            "fieldName": "ZONE",
+            "label": "ZONE",
+            "stringFieldOption": "textbox",
+            "tooltip": "",
+            "visible": true
+          },
+          {
+            "fieldName": "GEOMETRY",
+            "label": "GEOMETRY",
+            "stringFieldOption": "textbox",
+            "tooltip": "",
+            "visible": false
+          }
+        ],
+        "mediaInfos": [],
+        "showAttachments": true,
+        "title": "Brampton Grid: {ZONE}"
+      }
+    },
+    {
+      "id": 4,
+      "popupInfo": {
+        "description": null,
+        "fieldInfos": [
+          {
+            "fieldName": "PIN",
+            "label": "PIN",
+            "stringFieldOption": "textbox",
+            "tooltip": "",
+            "visible": true
+          },
+          {
+            "fieldName": "SHAPE",
+            "label": "SHAPE",
+            "stringFieldOption": "textbox",
+            "tooltip": "",
+            "visible": false
+          },
+          {
+            "fieldName": "OBJECTID",
+            "label": "OBJECTID",
+            "stringFieldOption": "textbox",
+            "tooltip": "",
+            "visible": false
+          }
+        ],
+        "mediaInfos": [],
+        "showAttachments": true,
+        "title": "Parcel Fabric: {PIN}"
+      }
+    },
+    {
+      "id": 7,
+      "popupInfo": {
+        "description": null,
+        "fieldInfos": [
+          {
+            "fieldName": "OBJECTID",
+            "label": "OBJECTID",
+            "stringFieldOption": "textbox",
+            "tooltip": "",
+            "visible": false
+          },
+          {
+            "fieldName": "SHAPE",
+            "label": "SHAPE",
+            "stringFieldOption": "textbox",
+            "tooltip": "",
+            "visible": false
+          }
+        ],
+        "mediaInfos": [],
+        "showAttachments": true,
+        "title": "Downtown Special Policy Area: {OBJECTID}"
+      }
+    }
+  ]
+}

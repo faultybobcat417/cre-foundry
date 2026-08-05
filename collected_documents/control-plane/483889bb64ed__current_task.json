@@ -1,0 +1,8 @@
+{
+  "task_id": "ECONOMICS-001",
+  "task_path": "tasks/ECONOMICS-001.json",
+  "status": "in_progress",
+  "selected_reason": "IDENTITY-001 reached public proof level 4 with a green material implementation and truthful task-result. ECONOMICS-001 is the next depth-first executable task (dependencies MATH-001 and CALIBRATION-001 completed, gates empty); SECURITY-001 is the second executable task.",
+  "started_at": "2026-08-03T17:20:00Z",
+  "proof_target": 5
+}

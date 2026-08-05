@@ -1,0 +1,28 @@
+{
+  "config_version": "cre-foundry-sql-safety-wave1a-planner-v1",
+  "input": "docs/security/sql_safety_remediation_inventory.json",
+  "outputs": {
+    "plan": "docs/security/sql_safety_wave1a_plan.json",
+    "report": "docs/security/sql_safety_wave1a_plan.md"
+  },
+  "policy": {
+    "automatic_rewrite_enabled": false,
+    "automatic_risk_acceptance_enabled": false,
+    "automatic_suppression_enabled": false,
+    "database_access_enabled": false,
+    "database_write_enabled": false,
+    "exact_source_excerpt_required": true,
+    "expected_parameter_aware_count": 6,
+    "identifier_classification_required": true,
+    "model_training_enabled": false,
+    "operating_mode": "shadow",
+    "outreach_enabled": false,
+    "path_value_classification_required": true,
+    "pilot_execution_enabled": false,
+    "production_ranking_enabled": false,
+    "semantic_ast_identity_required": true,
+    "snapshot_registration_enabled": false,
+    "source_modification_enabled": false,
+    "test_reference_capture_required": true
+  }
+}

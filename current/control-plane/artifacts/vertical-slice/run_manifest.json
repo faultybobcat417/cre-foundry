@@ -1,0 +1,284 @@
+{
+  "artifact_id": "VERTICAL-001-RUN-MANIFEST",
+  "counted_f9_positive_units": 1,
+  "execution_scope": "SYNTHETIC_NON_INFLUENCING",
+  "field_event_count": 10,
+  "not_yet_labelled_count": 9,
+  "outcome_count": 10,
+  "outcome_state_counts": {
+    "F9_CONFIRMED_SYNTHETIC": 1,
+    "IMMATURE_UNKNOWN": 9
+  },
+  "proof": {
+    "claim": "deterministic synthetic source-to-route-to-field-outcome fixture conformance only",
+    "commercial_value_proven": false,
+    "fixture_horizon_is_authorized_policy": false,
+    "incremental_lift_proven": false,
+    "level": 5,
+    "live_issuance_authorized": false,
+    "real_f9_outcome_proven": false,
+    "real_identity_proven": false,
+    "real_protection_clearance_proven": false,
+    "real_route_feasibility_proven": false,
+    "real_source_proven": false,
+    "representative_usability_proven": false
+  },
+  "replay_receipt": {
+    "abstain_reason": null,
+    "builder_sha256": "07e05cfe5ae21f9a45211ce7f6b4a71adb8f4874c7bbd0ac59f641994a1da6f8",
+    "builder_version": "vertical-shadow-builder-v1",
+    "candidate_snapshot_sha256": "236ded7ed4b4ef10e38bc2e33f037d5d65cc1b4158205f92f2bd3547e961a647",
+    "contract_artifact_sha256": "d10d27041d7cee071514c5995af0879d354c5f34177004603ac1379b3dae4dc9",
+    "field_event_digests": [
+      {
+        "event_id": "FIELD_EVENT:SYN_0001",
+        "sha256": "1fdaa6f72d5420bcc9e8aa8e9a8b5ad0e0db3f35043b8b405536d8efcd8df61f"
+      },
+      {
+        "event_id": "FIELD_EVENT:SYN_0002",
+        "sha256": "6612d99da80865ecd7fea7ed942c2b92414b2d4b6eb4bdc6d5d0ba12fd08f154"
+      },
+      {
+        "event_id": "FIELD_EVENT:SYN_0003",
+        "sha256": "0c394a48dfe28fc1738d9bee0e1a7077fb040278dbc6346568d926d8c2695160"
+      },
+      {
+        "event_id": "FIELD_EVENT:SYN_0004",
+        "sha256": "586f3b0bcb8370087c4ec67f4658da0b9bddfb21a3288ebf81013bac7bc40a0d"
+      },
+      {
+        "event_id": "FIELD_EVENT:SYN_0005",
+        "sha256": "d536d3459f16359a91715004f09354d71ac93e4f89fc05a619576f8d9ee094ef"
+      },
+      {
+        "event_id": "FIELD_EVENT:SYN_0006",
+        "sha256": "98fdd714bfd00ce11fe1a7afbbd8b2d15283298f29533bca2786533b2c49cc7f"
+      },
+      {
+        "event_id": "FIELD_EVENT:SYN_0007",
+        "sha256": "4b144cd33bb137afecdb38621bcc363b0476a84ff36470d6864be5ac482b3162"
+      },
+      {
+        "event_id": "FIELD_EVENT:SYN_0008",
+        "sha256": "7bbe7d70d23e9f8b2c6ef7f06ea9788d5f979cc47e87ecc886f09259d1c20fac"
+      },
+      {
+        "event_id": "FIELD_EVENT:SYN_0009",
+        "sha256": "baf06d6871b40df92d37a7bdb763e654f9711910bfe326d6295dbc30fbd6ddfc"
+      },
+      {
+        "event_id": "FIELD_EVENT:SYN_0010",
+        "sha256": "5aba35ecb9b5111af9d680ecec0428e9c00f5d17079b215c5bb9468c3c5f2ac3"
+      }
+    ],
+    "math_decision_sha256": "09d0e986cb410f44cf89348e7b43a098adb277287ad83567db595d0643b6b9b7",
+    "math_problem_sha256": "63a2b2ad5529621f987b1060f179452e497d1e32eaef465a4d1b0cd7747da290",
+    "outcome_digests": [
+      {
+        "outcome_id": "OUTCOME:SYN_0001",
+        "sha256": "4006c1bdf7fc2b470f1267edc2d69f7bb8b805c6a384566c46b3dfa6c6822a2f"
+      },
+      {
+        "outcome_id": "OUTCOME:SYN_0002",
+        "sha256": "9dfc711fb97d8b23302a77e879f29003fe267799755d0921c379cbd5310afce4"
+      },
+      {
+        "outcome_id": "OUTCOME:SYN_0003",
+        "sha256": "e611e82c9e3b45689a52fb1413ac08325b4306f6d04d4c46a92ec61f3849426a"
+      },
+      {
+        "outcome_id": "OUTCOME:SYN_0004",
+        "sha256": "4b9612aa1d4710264d75d8c000f5ed2e473bba6981a072fa4f1231863aaa19a8"
+      },
+      {
+        "outcome_id": "OUTCOME:SYN_0005",
+        "sha256": "7c4fc1b17cd0a6e6d6b46407190ddb2de3cb5ff8305089e2143ad2507d26c9fc"
+      },
+      {
+        "outcome_id": "OUTCOME:SYN_0006",
+        "sha256": "6b6efd5c768dcfa000f126598acb3195aa9b842bfed224be3f2744840d0ffe1e"
+      },
+      {
+        "outcome_id": "OUTCOME:SYN_0007",
+        "sha256": "a55239b151a8cf2bb2faf38f53f6788b4918e484557db858047b412512233201"
+      },
+      {
+        "outcome_id": "OUTCOME:SYN_0008",
+        "sha256": "b71d45a2d8a563443dc7ad544b1007daa803a46434469213db5d761b36375d34"
+      },
+      {
+        "outcome_id": "OUTCOME:SYN_0009",
+        "sha256": "fdb293864fdf25912db4e8402a0910745a2583953428dd2b8cdad18d71767804"
+      },
+      {
+        "outcome_id": "OUTCOME:SYN_0010",
+        "sha256": "5dec90680cfc5ed15e66f60d120013ac5807adbadab68e9723116f226cf867fa"
+      }
+    ],
+    "policy_sha256": "562a0c295ca5bc452d88376b0b1ce784007d5bbc3c2b5e023fc9652caa236018",
+    "result": "ISSUE",
+    "route_manifest_sha256": "e3f3019918b357c67f985e4e1f765026b74ae9d7f69e696dcf40251f2a1fb637",
+    "schema_sha256": {
+      "f9_outcome": "0d26f5f317f87c014b91f0f73e3a677d048f94fe8eeda1d49b332265813c854c",
+      "field_event": "9e00bdb5104f3d5ec7e87371ca59b5dc045b280308a470095cd34661ffe66913",
+      "route_day": "a04bc6e1fd6f70a984d61f4314bb07c81ef00a37e7fd1cb96705256d36ecff0f"
+    },
+    "selected_candidate_ids": [
+      "CAND:SYN_0008",
+      "CAND:SYN_0002",
+      "CAND:SYN_0005",
+      "CAND:SYN_0003",
+      "CAND:SYN_0004",
+      "CAND:SYN_0006",
+      "CAND:SYN_0007",
+      "CAND:SYN_0001",
+      "CAND:SYN_0010",
+      "CAND:SYN_0009"
+    ],
+    "source_snapshot_sha256": "65607401ad27a1306336a1d7024a9bc67f1bfce6af164374f6e3fb5e833c91d6",
+    "upstream_spine_sha256": "d87a30a30436ea3ce67811895c43510e51df32e115d98e9e2c0609e70b301e6b"
+  },
+  "result": "ISSUE",
+  "route_manifest": {
+    "document_kind": "SYNTHETIC_ROUTE_DAY",
+    "execution_scope": "SYNTHETIC_NON_INFLUENCING",
+    "feasibility_claim": "SYNTHETIC_FIXTURE_ONLY",
+    "issued_at": "2026-07-31T23:45:00Z",
+    "live_issuance_authorized": false,
+    "owner": {
+      "real_world_authority": "UNASSIGNED_EXTERNAL_AUTHORITY",
+      "system": "CRE_FOUNDRY"
+    },
+    "quality": {
+      "real_route_feasibility_proven": false,
+      "synthetic_fixture": true
+    },
+    "representative_id": "REP:SYNTHETIC_001",
+    "route_date": "2026-08-01",
+    "route_manifest_id": "ROUTE:SYNTHETIC_ROUTE_DAY_001",
+    "route_order_state": "CANONICAL_SYNTHETIC_NOT_TRAVEL_OPTIMIZED",
+    "route_status": "ISSUED_SYNTHETIC",
+    "schema_version": "1.0.0",
+    "stop_count": 10,
+    "stops": [
+      {
+        "candidate_id": "CAND:SYN_0008",
+        "physical_location_id": "LOCATION:04cba31e0339f3ccdbdaf82a",
+        "sequence_position": 1,
+        "stop_feasibility_state": "SYNTHETIC_FIXTURE_PASS",
+        "synthetic_service_minutes": 10,
+        "synthetic_travel_minutes_from_previous": 0
+      },
+      {
+        "candidate_id": "CAND:SYN_0002",
+        "physical_location_id": "LOCATION:38c51bde00c903169b995a1c",
+        "sequence_position": 2,
+        "stop_feasibility_state": "SYNTHETIC_FIXTURE_PASS",
+        "synthetic_service_minutes": 10,
+        "synthetic_travel_minutes_from_previous": 5
+      },
+      {
+        "candidate_id": "CAND:SYN_0005",
+        "physical_location_id": "LOCATION:3e7dc00444353469cddb78f8",
+        "sequence_position": 3,
+        "stop_feasibility_state": "SYNTHETIC_FIXTURE_PASS",
+        "synthetic_service_minutes": 10,
+        "synthetic_travel_minutes_from_previous": 5
+      },
+      {
+        "candidate_id": "CAND:SYN_0003",
+        "physical_location_id": "LOCATION:4716b9b31d8d07da70324cd5",
+        "sequence_position": 4,
+        "stop_feasibility_state": "SYNTHETIC_FIXTURE_PASS",
+        "synthetic_service_minutes": 10,
+        "synthetic_travel_minutes_from_previous": 5
+      },
+      {
+        "candidate_id": "CAND:SYN_0004",
+        "physical_location_id": "LOCATION:9ba44777ecff2baa1e1e2156",
+        "sequence_position": 5,
+        "stop_feasibility_state": "SYNTHETIC_FIXTURE_PASS",
+        "synthetic_service_minutes": 10,
+        "synthetic_travel_minutes_from_previous": 5
+      },
+      {
+        "candidate_id": "CAND:SYN_0006",
+        "physical_location_id": "LOCATION:aa8c55b995f9a7b4fca142ee",
+        "sequence_position": 6,
+        "stop_feasibility_state": "SYNTHETIC_FIXTURE_PASS",
+        "synthetic_service_minutes": 10,
+        "synthetic_travel_minutes_from_previous": 5
+      },
+      {
+        "candidate_id": "CAND:SYN_0007",
+        "physical_location_id": "LOCATION:d6529ff9d9ad0dae617f53e1",
+        "sequence_position": 7,
+        "stop_feasibility_state": "SYNTHETIC_FIXTURE_PASS",
+        "synthetic_service_minutes": 10,
+        "synthetic_travel_minutes_from_previous": 5
+      },
+      {
+        "candidate_id": "CAND:SYN_0001",
+        "physical_location_id": "LOCATION:e26b9ed0259fdf3b8f7c8a70",
+        "sequence_position": 8,
+        "stop_feasibility_state": "SYNTHETIC_FIXTURE_PASS",
+        "synthetic_service_minutes": 10,
+        "synthetic_travel_minutes_from_previous": 5
+      },
+      {
+        "candidate_id": "CAND:SYN_0010",
+        "physical_location_id": "LOCATION:eeccea883c51bf4ffed6d4f1",
+        "sequence_position": 9,
+        "stop_feasibility_state": "SYNTHETIC_FIXTURE_PASS",
+        "synthetic_service_minutes": 10,
+        "synthetic_travel_minutes_from_previous": 5
+      },
+      {
+        "candidate_id": "CAND:SYN_0009",
+        "physical_location_id": "LOCATION:fb52000a646088c2e776aede",
+        "sequence_position": 10,
+        "stop_feasibility_state": "SYNTHETIC_FIXTURE_PASS",
+        "synthetic_service_minutes": 10,
+        "synthetic_travel_minutes_from_previous": 5
+      }
+    ],
+    "upstream_binding": {
+      "candidate_snapshot_sha256": "236ded7ed4b4ef10e38bc2e33f037d5d65cc1b4158205f92f2bd3547e961a647",
+      "decision_id": "DECISION:SYNTHETIC_ROUTE_DAY_001",
+      "math_decision_sha256": "09d0e986cb410f44cf89348e7b43a098adb277287ad83567db595d0643b6b9b7",
+      "math_problem_sha256": "63a2b2ad5529621f987b1060f179452e497d1e32eaef465a4d1b0cd7747da290",
+      "policy_sha256": "562a0c295ca5bc452d88376b0b1ce784007d5bbc3c2b5e023fc9652caa236018",
+      "policy_version": "math-policy-v1",
+      "source_snapshot_sha256": "65607401ad27a1306336a1d7024a9bc67f1bfce6af164374f6e3fb5e833c91d6",
+      "upstream_decision_scope": "SYNTHETIC_FORMAL_ONLY"
+    }
+  },
+  "schema_bindings": {
+    "f9_outcome": {
+      "path": "contracts/synthetic_f9_outcome.schema.json",
+      "schema_version": "1.0.0",
+      "sha256": "0d26f5f317f87c014b91f0f73e3a677d048f94fe8eeda1d49b332265813c854c"
+    },
+    "field_event": {
+      "path": "contracts/synthetic_field_event.schema.json",
+      "schema_version": "1.0.0",
+      "sha256": "9e00bdb5104f3d5ec7e87371ca59b5dc045b280308a470095cd34661ffe66913"
+    },
+    "route_day": {
+      "path": "contracts/synthetic_route_day.schema.json",
+      "schema_version": "1.0.0",
+      "sha256": "a04bc6e1fd6f70a984d61f4314bb07c81ef00a37e7fd1cb96705256d36ecff0f"
+    }
+  },
+  "schema_version": "1.0.0",
+  "slice_id": "VERTICAL:SHADOW_SLICE_001",
+  "upstream": {
+    "candidate_snapshot_sha256": "236ded7ed4b4ef10e38bc2e33f037d5d65cc1b4158205f92f2bd3547e961a647",
+    "decision_id": "DECISION:SYNTHETIC_ROUTE_DAY_001",
+    "math_decision_sha256": "09d0e986cb410f44cf89348e7b43a098adb277287ad83567db595d0643b6b9b7",
+    "policy_sha256": "562a0c295ca5bc452d88376b0b1ce784007d5bbc3c2b5e023fc9652caa236018",
+    "representative_id": "REP:SYNTHETIC_001",
+    "route_date": "2026-08-01",
+    "source_snapshot_sha256": "65607401ad27a1306336a1d7024a9bc67f1bfce6af164374f6e3fb5e833c91d6"
+  }
+}

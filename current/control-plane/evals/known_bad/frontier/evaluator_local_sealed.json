@@ -1,0 +1,11 @@
+{
+  "case_id": "local-sealed",
+  "mutation_id": "local_sealed",
+  "expected_diagnostic": "registered mutation detected: local-sealed",
+  "claim": {
+    "kind": "sealed-custody",
+    "custodian": "builder-owned local worktree",
+    "repository": "https://cre-foundry.local/worktree",
+    "builder_readable": true
+  }
+}

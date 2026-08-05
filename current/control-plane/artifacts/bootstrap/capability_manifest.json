@@ -1,0 +1,46 @@
+{
+  "captured_at": "2026-08-01T22:42:30Z",
+  "host": {
+    "os": "macOS 26.3.1 arm64",
+    "git": "2.55.0",
+    "codex_cli": "0.145.0-alpha.18",
+    "uv": "0.11.32",
+    "python_selected": "3.12.13",
+    "python_global_default": "3.9.12 Anaconda",
+    "node": "26.5.0",
+    "npm": "11.17.0",
+    "pnpm": "11.9.0",
+    "postgresql": "18.4 installed locally",
+    "postgis": "not detected",
+    "sqlite": "3.38.2",
+    "docker": "not detected",
+    "podman": "not detected"
+  },
+  "codex_probe": {
+    "exec_json": true,
+    "output_schema": true,
+    "output_last_message": true,
+    "resume": true,
+    "app_server": true,
+    "recommended_mode": "interactive_bootstrap_then_headless_or_orchestrated",
+    "dangerous_bypass_allowed_by_project": false
+  },
+  "project_reproducibility": {
+    "runtime": "Python >=3.12,<3.13 through uv",
+    "dependency_manifest": "pyproject.toml",
+    "lockfile": "uv.lock",
+    "public_test_command": "uv run --python 3.12 python -m unittest discover -s evals/public -p 'test_*.py'",
+    "known_bad_command": "uv run --python 3.12 python scripts/prove_known_bad_fails.py",
+    "control_plane_command": "uv run --python 3.12 python scripts/validate_control_plane.py"
+  },
+  "external_authority": {
+    "credentials": false,
+    "source_rights": false,
+    "protected_account_clearance": false,
+    "spending": false,
+    "outreach": false,
+    "deployment": false,
+    "promotion": false,
+    "live_writes": false
+  }
+}

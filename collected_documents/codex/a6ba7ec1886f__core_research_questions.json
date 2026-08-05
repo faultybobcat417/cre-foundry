@@ -1,0 +1,89 @@
+{
+  "version": "2.1",
+  "questions": [
+    {
+      "id": "RQ-001",
+      "question": "What physical establishments form the true eligible universe at each historical prediction date?",
+      "decision_lane": "candidate universe",
+      "information_class": "EMPIRICAL_ONLY",
+      "status": "open"
+    },
+    {
+      "id": "RQ-002",
+      "question": "Which source combinations identify the correct operating business, unit, property, occupier, and parent?",
+      "decision_lane": "entity resolution",
+      "information_class": "EMPIRICAL_ONLY",
+      "status": "open"
+    },
+    {
+      "id": "RQ-003",
+      "question": "Which observable precursors occur early enough to support a useful first-touch action?",
+      "decision_lane": "signal mechanisms",
+      "information_class": "PUBLICLY_RESEARCHABLE",
+      "status": "open"
+    },
+    {
+      "id": "RQ-004",
+      "question": "Which signals retain lift after time, municipality, source-family, and entity-error controls?",
+      "decision_lane": "historical modeling",
+      "information_class": "EMPIRICAL_ONLY",
+      "status": "open"
+    },
+    {
+      "id": "RQ-005",
+      "question": "What is the representative/firm baseline F9 booking rate and variance?",
+      "decision_lane": "power/economics",
+      "information_class": "ACCESS_DEPENDENT",
+      "status": "open"
+    },
+    {
+      "id": "RQ-006",
+      "question": "What minimum F9 lift is economically meaningful?",
+      "decision_lane": "decision threshold",
+      "information_class": "HUMAN_AUTHORITATIVE",
+      "status": "open"
+    },
+    {
+      "id": "RQ-007",
+      "question": "How long do visits, access failures, conversations, and substitutions actually take?",
+      "decision_lane": "routing",
+      "information_class": "EMPIRICAL_ONLY",
+      "status": "open"
+    },
+    {
+      "id": "RQ-008",
+      "question": "How much spatial/relationship interference exists between nearby businesses?",
+      "decision_lane": "causal experiment",
+      "information_class": "EMPIRICAL_ONLY",
+      "status": "open"
+    },
+    {
+      "id": "RQ-009",
+      "question": "Which representative specialties and territories modify treatment response?",
+      "decision_lane": "heterogeneity",
+      "information_class": "ACCESS_DEPENDENT",
+      "status": "open"
+    },
+    {
+      "id": "RQ-010",
+      "question": "How do F9 bookings mature into attendance, mandate, transaction, and commission?",
+      "decision_lane": "commercial value",
+      "information_class": "ACCESS_DEPENDENT",
+      "status": "open"
+    },
+    {
+      "id": "RQ-011",
+      "question": "Which source rights, privacy constraints, and retention rules apply to each feature?",
+      "decision_lane": "governance",
+      "information_class": "HUMAN_AUTHORITATIVE",
+      "status": "open"
+    },
+    {
+      "id": "RQ-012",
+      "question": "Which implementation architecture performs best under the real repository and pilot load?",
+      "decision_lane": "engineering",
+      "information_class": "CODEX_DERIVABLE",
+      "status": "open"
+    }
+  ]
+}

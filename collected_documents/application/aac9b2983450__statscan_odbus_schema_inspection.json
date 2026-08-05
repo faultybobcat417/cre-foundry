@@ -1,0 +1,276 @@
+{
+  "archive_sha256": "0ec6388eb16584d025252026cee22d95bf3b603fccb5cc471710a619d89dca2f",
+  "column_count": 32,
+  "columns": [
+    {
+      "candidate_type": "string-like",
+      "empty_count": 2,
+      "maximum_length": 20,
+      "name": "idx",
+      "non_empty_count": 446573,
+      "position": 1
+    },
+    {
+      "candidate_type": "string-like",
+      "empty_count": 0,
+      "maximum_length": 170,
+      "name": "business_name",
+      "non_empty_count": 446575,
+      "position": 2
+    },
+    {
+      "candidate_type": "string-like",
+      "empty_count": 1,
+      "maximum_length": 131,
+      "name": "alt_business_name",
+      "non_empty_count": 446574,
+      "position": 3
+    },
+    {
+      "candidate_type": "string-like",
+      "empty_count": 1,
+      "maximum_length": 538,
+      "name": "business_sector",
+      "non_empty_count": 446574,
+      "position": 4
+    },
+    {
+      "candidate_type": "string-like",
+      "empty_count": 1,
+      "maximum_length": 100,
+      "name": "business_subsector",
+      "non_empty_count": 446574,
+      "position": 5
+    },
+    {
+      "candidate_type": "string-like",
+      "empty_count": 1,
+      "maximum_length": 3182,
+      "name": "business_description",
+      "non_empty_count": 446574,
+      "position": 6
+    },
+    {
+      "candidate_type": "string-like",
+      "empty_count": 1,
+      "maximum_length": 26,
+      "name": "business_id_no",
+      "non_empty_count": 446574,
+      "position": 7
+    },
+    {
+      "candidate_type": "string-like",
+      "empty_count": 1,
+      "maximum_length": 15,
+      "name": "licence_number",
+      "non_empty_count": 446574,
+      "position": 8
+    },
+    {
+      "candidate_type": "string-like",
+      "empty_count": 1,
+      "maximum_length": 147,
+      "name": "licence_type",
+      "non_empty_count": 446574,
+      "position": 9
+    },
+    {
+      "candidate_type": "string-like",
+      "empty_count": 1,
+      "maximum_length": 2,
+      "name": "derived_NAICS",
+      "non_empty_count": 446574,
+      "position": 10
+    },
+    {
+      "candidate_type": "string-like",
+      "empty_count": 1,
+      "maximum_length": 6,
+      "name": "source_NAICS_primary",
+      "non_empty_count": 446574,
+      "position": 11
+    },
+    {
+      "candidate_type": "string-like",
+      "empty_count": 1,
+      "maximum_length": 69,
+      "name": "source_NAICS_secondary",
+      "non_empty_count": 446574,
+      "position": 12
+    },
+    {
+      "candidate_type": "string-like",
+      "empty_count": 1,
+      "maximum_length": 237,
+      "name": "NAICS_descr",
+      "non_empty_count": 446574,
+      "position": 13
+    },
+    {
+      "candidate_type": "string-like",
+      "empty_count": 1,
+      "maximum_length": 2,
+      "name": "NAICS_descr2",
+      "non_empty_count": 446574,
+      "position": 14
+    },
+    {
+      "candidate_type": "string-like",
+      "empty_count": 1,
+      "maximum_length": 8,
+      "name": "latitude",
+      "non_empty_count": 446574,
+      "position": 15
+    },
+    {
+      "candidate_type": "string-like",
+      "empty_count": 1,
+      "maximum_length": 10,
+      "name": "longitude",
+      "non_empty_count": 446574,
+      "position": 16
+    },
+    {
+      "candidate_type": "string-like",
+      "empty_count": 1,
+      "maximum_length": 79,
+      "name": "full_address",
+      "non_empty_count": 446574,
+      "position": 17
+    },
+    {
+      "candidate_type": "string-like",
+      "empty_count": 1,
+      "maximum_length": 6,
+      "name": "postal_code",
+      "non_empty_count": 446574,
+      "position": 18
+    },
+    {
+      "candidate_type": "string-like",
+      "empty_count": 1,
+      "maximum_length": 43,
+      "name": "unit",
+      "non_empty_count": 446574,
+      "position": 19
+    },
+    {
+      "candidate_type": "string-like",
+      "empty_count": 1,
+      "maximum_length": 14,
+      "name": "street_no",
+      "non_empty_count": 446574,
+      "position": 20
+    },
+    {
+      "candidate_type": "string-like",
+      "empty_count": 1,
+      "maximum_length": 67,
+      "name": "street_name",
+      "non_empty_count": 446574,
+      "position": 21
+    },
+    {
+      "candidate_type": "string-like",
+      "empty_count": 1,
+      "maximum_length": 5,
+      "name": "street_direction",
+      "non_empty_count": 446574,
+      "position": 22
+    },
+    {
+      "candidate_type": "string-like",
+      "empty_count": 1,
+      "maximum_length": 10,
+      "name": "street_type",
+      "non_empty_count": 446574,
+      "position": 23
+    },
+    {
+      "candidate_type": "string-like",
+      "empty_count": 1,
+      "maximum_length": 30,
+      "name": "city",
+      "non_empty_count": 446574,
+      "position": 24
+    },
+    {
+      "candidate_type": "string-like",
+      "empty_count": 1,
+      "maximum_length": 2,
+      "name": "prov_terr",
+      "non_empty_count": 446574,
+      "position": 25
+    },
+    {
+      "candidate_type": "string-like",
+      "empty_count": 1,
+      "maximum_length": 13,
+      "name": "total_no_employees",
+      "non_empty_count": 446574,
+      "position": 26
+    },
+    {
+      "candidate_type": "string-like",
+      "empty_count": 1,
+      "maximum_length": 10,
+      "name": "status",
+      "non_empty_count": 446574,
+      "position": 27
+    },
+    {
+      "candidate_type": "string-like",
+      "empty_count": 1,
+      "maximum_length": 31,
+      "name": "provider",
+      "non_empty_count": 446574,
+      "position": 28
+    },
+    {
+      "candidate_type": "string-like",
+      "empty_count": 1,
+      "maximum_length": 9,
+      "name": "geo_source",
+      "non_empty_count": 446574,
+      "position": 29
+    },
+    {
+      "candidate_type": "string-like",
+      "empty_count": 1,
+      "maximum_length": 7,
+      "name": "CSDUID",
+      "non_empty_count": 446574,
+      "position": 30
+    },
+    {
+      "candidate_type": "string-like",
+      "empty_count": 1,
+      "maximum_length": 51,
+      "name": "CSDNAME",
+      "non_empty_count": 446574,
+      "position": 31
+    },
+    {
+      "candidate_type": "string-like",
+      "empty_count": 1,
+      "maximum_length": 2,
+      "name": "PRUID",
+      "non_empty_count": 446574,
+      "position": 32
+    }
+  ],
+  "data_delimiter": ",",
+  "data_encoding": "utf-8-sig",
+  "data_member": "ODBus_v1/ODBus_v1.csv",
+  "record_layout_columns": [
+    "Field name",
+    "Data type",
+    "Description",
+    "Field type"
+  ],
+  "record_layout_rows": 32,
+  "report_path": "docs/data_contracts/statscan_odbus_2023_schema.json",
+  "row_count": 446575,
+  "source_id": "statscan_odbus_2023"
+}
+ODBUS SCHEMA INSPECTION PASSED

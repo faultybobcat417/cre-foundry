@@ -1,0 +1,617 @@
+{
+  "bank_version": "cre-field-question-bank-v1",
+  "questions": [
+    {
+      "question_id": "FQ-001",
+      "domain": "capacity",
+      "wording": "What part of the current operation is closest to its physical capacity limit?",
+      "response_type": "single_select_plus_note",
+      "information_gain_rating": 5,
+      "mechanism_modules": [
+        "expansion",
+        "infrastructure_and_use_friction"
+      ],
+      "pre_visit_or_field": "field_only",
+      "updates": [
+        "event_probability",
+        "captureability",
+        "timing",
+        "economic_value",
+        "follow_up_policy"
+      ],
+      "prohibited_interpretation": "Do not infer sensitive personal attributes, legal conclusions or consent from the answer.",
+      "required_skip_option": true
+    },
+    {
+      "question_id": "FQ-002",
+      "domain": "timing",
+      "wording": "When would that constraint begin affecting orders, staffing or service?",
+      "response_type": "date_range",
+      "information_gain_rating": 5,
+      "mechanism_modules": [
+        "expansion"
+      ],
+      "pre_visit_or_field": "field_only",
+      "updates": [
+        "event_probability",
+        "captureability",
+        "timing",
+        "economic_value",
+        "follow_up_policy"
+      ],
+      "prohibited_interpretation": "Do not infer sensitive personal attributes, legal conclusions or consent from the answer.",
+      "required_skip_option": true
+    },
+    {
+      "question_id": "FQ-003",
+      "domain": "location_strategy",
+      "wording": "Is the likely solution more space here, another site, or a full move?",
+      "response_type": "single_select",
+      "information_gain_rating": 5,
+      "mechanism_modules": [
+        "expansion",
+        "relocation_and_renewal"
+      ],
+      "pre_visit_or_field": "field_only",
+      "updates": [
+        "event_probability",
+        "captureability",
+        "timing",
+        "economic_value",
+        "follow_up_policy"
+      ],
+      "prohibited_interpretation": "Do not infer sensitive personal attributes, legal conclusions or consent from the answer.",
+      "required_skip_option": true
+    },
+    {
+      "question_id": "FQ-004",
+      "domain": "commitment",
+      "wording": "Has a specific property, broker, landlord or contractor already been selected?",
+      "response_type": "single_select_plus_note",
+      "information_gain_rating": 5,
+      "mechanism_modules": [
+        "expansion",
+        "relocation_and_renewal"
+      ],
+      "pre_visit_or_field": "field_only",
+      "updates": [
+        "event_probability",
+        "captureability",
+        "timing",
+        "economic_value",
+        "follow_up_policy"
+      ],
+      "prohibited_interpretation": "Do not infer sensitive personal attributes, legal conclusions or consent from the answer.",
+      "required_skip_option": true
+    },
+    {
+      "question_id": "FQ-005",
+      "domain": "decision_authority",
+      "wording": "Who owns the final location or real-estate decision?",
+      "response_type": "role_select",
+      "information_gain_rating": 5,
+      "mechanism_modules": [
+        "all"
+      ],
+      "pre_visit_or_field": "field_only",
+      "updates": [
+        "event_probability",
+        "captureability",
+        "timing",
+        "economic_value",
+        "follow_up_policy"
+      ],
+      "prohibited_interpretation": "Do not infer sensitive personal attributes, legal conclusions or consent from the answer.",
+      "required_skip_option": true
+    },
+    {
+      "question_id": "FQ-006",
+      "domain": "decision_process",
+      "wording": "What decision or approval has to occur before a property search begins?",
+      "response_type": "structured_note",
+      "information_gain_rating": 4,
+      "mechanism_modules": [
+        "all"
+      ],
+      "pre_visit_or_field": "field_only",
+      "updates": [
+        "event_probability",
+        "captureability",
+        "timing",
+        "economic_value",
+        "follow_up_policy"
+      ],
+      "prohibited_interpretation": "Do not infer sensitive personal attributes, legal conclusions or consent from the answer.",
+      "required_skip_option": true
+    },
+    {
+      "question_id": "FQ-007",
+      "domain": "loading",
+      "wording": "Are dock, truck-court, trailer or yard constraints affecting operations?",
+      "response_type": "multi_select",
+      "information_gain_rating": 4,
+      "mechanism_modules": [
+        "infrastructure_and_use_friction"
+      ],
+      "pre_visit_or_field": "field_only",
+      "updates": [
+        "event_probability",
+        "captureability",
+        "timing",
+        "economic_value",
+        "follow_up_policy"
+      ],
+      "prohibited_interpretation": "Do not infer sensitive personal attributes, legal conclusions or consent from the answer.",
+      "required_skip_option": true
+    },
+    {
+      "question_id": "FQ-008",
+      "domain": "utilities",
+      "wording": "Are power, HVAC, drainage, ventilation or process utilities limiting new equipment?",
+      "response_type": "multi_select",
+      "information_gain_rating": 4,
+      "mechanism_modules": [
+        "infrastructure_and_use_friction"
+      ],
+      "pre_visit_or_field": "field_only",
+      "updates": [
+        "event_probability",
+        "captureability",
+        "timing",
+        "economic_value",
+        "follow_up_policy"
+      ],
+      "prohibited_interpretation": "Do not infer sensitive personal attributes, legal conclusions or consent from the answer.",
+      "required_skip_option": true
+    },
+    {
+      "question_id": "FQ-009",
+      "domain": "compliance",
+      "wording": "Would a move or expansion require new environmental, food, health or operating approvals?",
+      "response_type": "multi_select",
+      "information_gain_rating": 4,
+      "mechanism_modules": [
+        "specialized_regulated_facilities"
+      ],
+      "pre_visit_or_field": "field_only",
+      "updates": [
+        "event_probability",
+        "captureability",
+        "timing",
+        "economic_value",
+        "follow_up_policy"
+      ],
+      "prohibited_interpretation": "Do not infer sensitive personal attributes, legal conclusions or consent from the answer.",
+      "required_skip_option": true
+    },
+    {
+      "question_id": "FQ-010",
+      "domain": "labour",
+      "wording": "Is the present location making recruitment, shift access or retention materially harder?",
+      "response_type": "ordinal_plus_note",
+      "information_gain_rating": 3,
+      "mechanism_modules": [
+        "network_and_supply_chain"
+      ],
+      "pre_visit_or_field": "field_only",
+      "updates": [
+        "event_probability",
+        "captureability",
+        "timing",
+        "economic_value",
+        "follow_up_policy"
+      ],
+      "prohibited_interpretation": "Do not infer sensitive personal attributes, legal conclusions or consent from the answer.",
+      "required_skip_option": true
+    },
+    {
+      "question_id": "FQ-011",
+      "domain": "parking_access",
+      "wording": "Are parking, customer access or delivery restrictions affecting growth?",
+      "response_type": "multi_select",
+      "information_gain_rating": 3,
+      "mechanism_modules": [
+        "infrastructure_and_use_friction"
+      ],
+      "pre_visit_or_field": "field_only",
+      "updates": [
+        "event_probability",
+        "captureability",
+        "timing",
+        "economic_value",
+        "follow_up_policy"
+      ],
+      "prohibited_interpretation": "Do not infer sensitive personal attributes, legal conclusions or consent from the answer.",
+      "required_skip_option": true
+    },
+    {
+      "question_id": "FQ-012",
+      "domain": "inventory",
+      "wording": "How much inventory or staging overflow is being handled outside the ideal workflow?",
+      "response_type": "ordinal",
+      "information_gain_rating": 4,
+      "mechanism_modules": [
+        "expansion"
+      ],
+      "pre_visit_or_field": "field_only",
+      "updates": [
+        "event_probability",
+        "captureability",
+        "timing",
+        "economic_value",
+        "follow_up_policy"
+      ],
+      "prohibited_interpretation": "Do not infer sensitive personal attributes, legal conclusions or consent from the answer.",
+      "required_skip_option": true
+    },
+    {
+      "question_id": "FQ-013",
+      "domain": "outsourcing",
+      "wording": "Are storage, production or logistics functions being outsourced because the site cannot handle them?",
+      "response_type": "yes_no_plus_note",
+      "information_gain_rating": 4,
+      "mechanism_modules": [
+        "expansion"
+      ],
+      "pre_visit_or_field": "field_only",
+      "updates": [
+        "event_probability",
+        "captureability",
+        "timing",
+        "economic_value",
+        "follow_up_policy"
+      ],
+      "prohibited_interpretation": "Do not infer sensitive personal attributes, legal conclusions or consent from the answer.",
+      "required_skip_option": true
+    },
+    {
+      "question_id": "FQ-014",
+      "domain": "renewal_clock",
+      "wording": "Is there a lease, ownership or occupancy decision expected within the next 24 months?",
+      "response_type": "horizon_select",
+      "information_gain_rating": 5,
+      "mechanism_modules": [
+        "relocation_and_renewal"
+      ],
+      "pre_visit_or_field": "field_only",
+      "updates": [
+        "event_probability",
+        "captureability",
+        "timing",
+        "economic_value",
+        "follow_up_policy"
+      ],
+      "prohibited_interpretation": "Do not infer sensitive personal attributes, legal conclusions or consent from the answer.",
+      "required_skip_option": true
+    },
+    {
+      "question_id": "FQ-015",
+      "domain": "landlord_friction",
+      "wording": "Are renewal terms, maintenance, access or landlord constraints changing the location decision?",
+      "response_type": "multi_select",
+      "information_gain_rating": 4,
+      "mechanism_modules": [
+        "relocation_and_renewal"
+      ],
+      "pre_visit_or_field": "field_only",
+      "updates": [
+        "event_probability",
+        "captureability",
+        "timing",
+        "economic_value",
+        "follow_up_policy"
+      ],
+      "prohibited_interpretation": "Do not infer sensitive personal attributes, legal conclusions or consent from the answer.",
+      "required_skip_option": true
+    },
+    {
+      "question_id": "FQ-016",
+      "domain": "alternate_site",
+      "wording": "Is another site already being fit out, licensed or evaluated?",
+      "response_type": "stage_select",
+      "information_gain_rating": 5,
+      "mechanism_modules": [
+        "relocation_and_renewal"
+      ],
+      "pre_visit_or_field": "field_only",
+      "updates": [
+        "event_probability",
+        "captureability",
+        "timing",
+        "economic_value",
+        "follow_up_policy"
+      ],
+      "prohibited_interpretation": "Do not infer sensitive personal attributes, legal conclusions or consent from the answer.",
+      "required_skip_option": true
+    },
+    {
+      "question_id": "FQ-017",
+      "domain": "displacement",
+      "wording": "Has the owner, municipality or project team communicated redevelopment or displacement plans?",
+      "response_type": "stage_select",
+      "information_gain_rating": 5,
+      "mechanism_modules": [
+        "redevelopment_and_displacement"
+      ],
+      "pre_visit_or_field": "field_only",
+      "updates": [
+        "event_probability",
+        "captureability",
+        "timing",
+        "economic_value",
+        "follow_up_policy"
+      ],
+      "prohibited_interpretation": "Do not infer sensitive personal attributes, legal conclusions or consent from the answer.",
+      "required_skip_option": true
+    },
+    {
+      "question_id": "FQ-018",
+      "domain": "continuity",
+      "wording": "What operational features cannot be interrupted during a move?",
+      "response_type": "multi_select_plus_note",
+      "information_gain_rating": 4,
+      "mechanism_modules": [
+        "relocation_and_renewal"
+      ],
+      "pre_visit_or_field": "field_only",
+      "updates": [
+        "event_probability",
+        "captureability",
+        "timing",
+        "economic_value",
+        "follow_up_policy"
+      ],
+      "prohibited_interpretation": "Do not infer sensitive personal attributes, legal conclusions or consent from the answer.",
+      "required_skip_option": true
+    },
+    {
+      "question_id": "FQ-019",
+      "domain": "growth_driver",
+      "wording": "What changed recently\u2014orders, contract, funding, product line, regulation or customer network?",
+      "response_type": "multi_select",
+      "information_gain_rating": 5,
+      "mechanism_modules": [
+        "expansion",
+        "network_and_supply_chain"
+      ],
+      "pre_visit_or_field": "field_only",
+      "updates": [
+        "event_probability",
+        "captureability",
+        "timing",
+        "economic_value",
+        "follow_up_policy"
+      ],
+      "prohibited_interpretation": "Do not infer sensitive personal attributes, legal conclusions or consent from the answer.",
+      "required_skip_option": true
+    },
+    {
+      "question_id": "FQ-020",
+      "domain": "contract_location",
+      "wording": "Where will new contract or customer work actually be fulfilled?",
+      "response_type": "location_select",
+      "information_gain_rating": 4,
+      "mechanism_modules": [
+        "network_and_supply_chain"
+      ],
+      "pre_visit_or_field": "field_only",
+      "updates": [
+        "event_probability",
+        "captureability",
+        "timing",
+        "economic_value",
+        "follow_up_policy"
+      ],
+      "prohibited_interpretation": "Do not infer sensitive personal attributes, legal conclusions or consent from the answer.",
+      "required_skip_option": true
+    },
+    {
+      "question_id": "FQ-021",
+      "domain": "regulated_activity",
+      "wording": "Which licensed or regulated activities are performed at this specific site?",
+      "response_type": "multi_select",
+      "information_gain_rating": 5,
+      "mechanism_modules": [
+        "specialized_regulated_facilities"
+      ],
+      "pre_visit_or_field": "field_only",
+      "updates": [
+        "event_probability",
+        "captureability",
+        "timing",
+        "economic_value",
+        "follow_up_policy"
+      ],
+      "prohibited_interpretation": "Do not infer sensitive personal attributes, legal conclusions or consent from the answer.",
+      "required_skip_option": true
+    },
+    {
+      "question_id": "FQ-022",
+      "domain": "property_control",
+      "wording": "Does the business own, lease, share or sublease the current premises?",
+      "response_type": "single_select",
+      "information_gain_rating": 4,
+      "mechanism_modules": [
+        "ownership_and_succession",
+        "relocation_and_renewal"
+      ],
+      "pre_visit_or_field": "field_only",
+      "updates": [
+        "event_probability",
+        "captureability",
+        "timing",
+        "economic_value",
+        "follow_up_policy"
+      ],
+      "prohibited_interpretation": "Do not infer sensitive personal attributes, legal conclusions or consent from the answer.",
+      "required_skip_option": true
+    },
+    {
+      "question_id": "FQ-023",
+      "domain": "surplus_space",
+      "wording": "Has staffing, automation or consolidation created materially unused space?",
+      "response_type": "ordinal_plus_note",
+      "information_gain_rating": 4,
+      "mechanism_modules": [
+        "contraction_and_consolidation"
+      ],
+      "pre_visit_or_field": "field_only",
+      "updates": [
+        "event_probability",
+        "captureability",
+        "timing",
+        "economic_value",
+        "follow_up_policy"
+      ],
+      "prohibited_interpretation": "Do not infer sensitive personal attributes, legal conclusions or consent from the answer.",
+      "required_skip_option": true
+    },
+    {
+      "question_id": "FQ-024",
+      "domain": "network_overlap",
+      "wording": "Are multiple nearby facilities performing the same function?",
+      "response_type": "yes_no_plus_note",
+      "information_gain_rating": 3,
+      "mechanism_modules": [
+        "contraction_and_consolidation"
+      ],
+      "pre_visit_or_field": "field_only",
+      "updates": [
+        "event_probability",
+        "captureability",
+        "timing",
+        "economic_value",
+        "follow_up_policy"
+      ],
+      "prohibited_interpretation": "Do not infer sensitive personal attributes, legal conclusions or consent from the answer.",
+      "required_skip_option": true
+    },
+    {
+      "question_id": "FQ-025",
+      "domain": "economic_threshold",
+      "wording": "What would make a move or expansion economically worthwhile?",
+      "response_type": "structured_note",
+      "information_gain_rating": 4,
+      "mechanism_modules": [
+        "all"
+      ],
+      "pre_visit_or_field": "field_only",
+      "updates": [
+        "event_probability",
+        "captureability",
+        "timing",
+        "economic_value",
+        "follow_up_policy"
+      ],
+      "prohibited_interpretation": "Do not infer sensitive personal attributes, legal conclusions or consent from the answer.",
+      "required_skip_option": true
+    },
+    {
+      "question_id": "FQ-026",
+      "domain": "brokerage_capture",
+      "wording": "Would a senior commercial realtor conversation be useful now, later, or not at all?",
+      "response_type": "single_select",
+      "information_gain_rating": 5,
+      "mechanism_modules": [
+        "all"
+      ],
+      "pre_visit_or_field": "field_only",
+      "updates": [
+        "event_probability",
+        "captureability",
+        "timing",
+        "economic_value",
+        "follow_up_policy"
+      ],
+      "prohibited_interpretation": "Do not infer sensitive personal attributes, legal conclusions or consent from the answer.",
+      "required_skip_option": true
+    },
+    {
+      "question_id": "FQ-027",
+      "domain": "follow_up_date",
+      "wording": "What is the earliest useful date for a follow-up conversation?",
+      "response_type": "date",
+      "information_gain_rating": 5,
+      "mechanism_modules": [
+        "all"
+      ],
+      "pre_visit_or_field": "field_only",
+      "updates": [
+        "event_probability",
+        "captureability",
+        "timing",
+        "economic_value",
+        "follow_up_policy"
+      ],
+      "prohibited_interpretation": "Do not infer sensitive personal attributes, legal conclusions or consent from the answer.",
+      "required_skip_option": true
+    },
+    {
+      "question_id": "FQ-028",
+      "domain": "evidence_correction",
+      "wording": "Which fact on this Tip Sheet is wrong, incomplete or already outdated?",
+      "response_type": "multi_select_plus_note",
+      "information_gain_rating": 5,
+      "mechanism_modules": [
+        "all"
+      ],
+      "pre_visit_or_field": "field_only",
+      "updates": [
+        "event_probability",
+        "captureability",
+        "timing",
+        "economic_value",
+        "follow_up_policy"
+      ],
+      "prohibited_interpretation": "Do not infer sensitive personal attributes, legal conclusions or consent from the answer.",
+      "required_skip_option": true
+    },
+    {
+      "question_id": "FQ-029",
+      "domain": "referral",
+      "wording": "If this location is not responsible for property decisions, which office or role is?",
+      "response_type": "role_or_location",
+      "information_gain_rating": 4,
+      "mechanism_modules": [
+        "all"
+      ],
+      "pre_visit_or_field": "field_only",
+      "updates": [
+        "event_probability",
+        "captureability",
+        "timing",
+        "economic_value",
+        "follow_up_policy"
+      ],
+      "prohibited_interpretation": "Do not infer sensitive personal attributes, legal conclusions or consent from the answer.",
+      "required_skip_option": true
+    },
+    {
+      "question_id": "FQ-030",
+      "domain": "no_need_reason",
+      "wording": "What is the main reason no commercial-real-estate action is expected?",
+      "response_type": "reason_code_plus_note",
+      "information_gain_rating": 5,
+      "mechanism_modules": [
+        "all"
+      ],
+      "pre_visit_or_field": "field_only",
+      "updates": [
+        "event_probability",
+        "captureability",
+        "timing",
+        "economic_value",
+        "follow_up_policy"
+      ],
+      "prohibited_interpretation": "Do not infer sensitive personal attributes, legal conclusions or consent from the answer.",
+      "required_skip_option": true
+    }
+  ],
+  "field_form_rules": [
+    "Show no more than five mechanism-specific questions before an adaptive branch is justified.",
+    "Require structured reason codes but preserve a short verbatim note.",
+    "Allow unknown, declined and not-applicable values.",
+    "Field-only information never leaks backward into the original pre-visit feature snapshot.",
+    "Record question version, representative, timestamp and recommendation ID."
+  ]
+}

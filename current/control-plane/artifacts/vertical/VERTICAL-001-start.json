@@ -1,0 +1,62 @@
+{
+  "schema_version": "1.0.0",
+  "task_id": "VERTICAL-001",
+  "started_at": "2026-08-02T03:50:32Z",
+  "execution_scope": "SYNTHETIC_NON_INFLUENCING",
+  "proof_target": {
+    "level": 5,
+    "claim": "A bounded synthetic source batch can replay through route issuance, append-only field events, and F9 outcome-state mechanics without changing its Stage-1 decision.",
+    "excluded_claims": [
+      "real route feasibility",
+      "real representative assignment or activity",
+      "real outreach or appointment",
+      "historical or prospective performance",
+      "incremental F9 lift",
+      "commercial value"
+    ]
+  },
+  "expertise_domains": [
+    "product_architecture",
+    "identity_temporal",
+    "routing_operations",
+    "outcome_measurement",
+    "testing_verification"
+  ],
+  "alternatives_considered": [
+    {
+      "alternative_id": "A",
+      "description": "Write field observations and outcomes back into candidate and decision documents.",
+      "rejected_because": "It violates Stage-1 isolation and destroys append-only replay."
+    },
+    {
+      "alternative_id": "B",
+      "description": "Use separate strict route, visit-event, and outcome-assessment documents bound by hashes.",
+      "selected": true,
+      "reason": "It is the smallest connected slice that preserves temporal stages, exact-ten issuance, lineage, and replay identity."
+    },
+    {
+      "alternative_id": "C",
+      "description": "Build a general event broker, outcome service, route optimizer, and application workflow now.",
+      "rejected_because": "It expands horizontally before the shadow path and its failure semantics are proven."
+    }
+  ],
+  "hard_invariants": [
+    "ISSUE produces exactly ten distinct selected physical-location stops and ABSTAIN produces no route",
+    "Stage-2 and Stage-3 documents append to and never rewrite the Stage-1 snapshot",
+    "every route, event, and outcome binds the exact representative and route day",
+    "field events target only issued stops and occur after issuance",
+    "immature, censored, conflicted, and unknown outcomes are never counted as negatives",
+    "synthetic route ordering and timing make no real feasibility claim",
+    "all live and external authority remains false"
+  ],
+  "open_external_gates": [
+    "approved_source_envelope",
+    "GATE-ENTITY-TRUTH-001",
+    "protected_account_bundle",
+    "representative_origins_capacity_specialties",
+    "approved_route_matrix",
+    "GATE-OUTCOME-LABELS-MATURITY-001",
+    "GATE-FULL-EXTERNAL-EVIDENCE-001",
+    "firm_economics_services_territories"
+  ]
+}

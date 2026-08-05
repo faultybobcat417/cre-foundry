@@ -1,0 +1,196 @@
+{
+  "$id": "https://cre-foundry.local/contracts/security_posture.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "authority": {
+      "additionalProperties": false,
+      "properties": {
+        "least_privilege_default": {
+          "type": "boolean"
+        },
+        "policy_store_version": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "retrieved_content_may_grant_authority": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "retrieved_content_may_grant_authority",
+        "least_privilege_default",
+        "policy_store_version"
+      ],
+      "type": "object"
+    },
+    "claim_ceiling": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "data_classes": {
+      "items": {
+        "enum": [
+          "PUBLIC",
+          "INTERNAL",
+          "CONFIDENTIAL",
+          "RESTRICTED_PII",
+          "RESTRICTED_SECRET"
+        ]
+      },
+      "type": "array",
+      "uniqueItems": true
+    },
+    "deletion_policy": {
+      "additionalProperties": false,
+      "properties": {
+        "deletion_verified": {
+          "type": "boolean"
+        },
+        "requests_supported": {
+          "type": "boolean"
+        },
+        "verification_required": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "requests_supported",
+        "verification_required",
+        "deletion_verified"
+      ],
+      "type": "object"
+    },
+    "document_kind": {
+      "const": "SECURITY_POSTURE"
+    },
+    "execution_scope": {
+      "const": "SYNTHETIC_NON_INFLUENCING"
+    },
+    "external_effect_occurred": {
+      "type": "boolean"
+    },
+    "live_permissions": {
+      "type": "boolean"
+    },
+    "log_events": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "level": {
+            "enum": [
+              "debug",
+              "info",
+              "warning",
+              "error"
+            ]
+          },
+          "message": {
+            "type": "string"
+          },
+          "payload_tokens": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          }
+        },
+        "required": [
+          "level",
+          "message",
+          "payload_tokens"
+        ],
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "proof_level": {
+      "maximum": 9,
+      "minimum": 0,
+      "type": "integer"
+    },
+    "retention_policy": {
+      "additionalProperties": false,
+      "properties": {
+        "configured_days": {
+          "minimum": 0,
+          "type": "integer"
+        },
+        "enforced": {
+          "type": "boolean"
+        },
+        "maximum_days": {
+          "minimum": 0,
+          "type": "integer"
+        }
+      },
+      "required": [
+        "maximum_days",
+        "configured_days",
+        "enforced"
+      ],
+      "type": "object"
+    },
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "untrusted_input_policy": {
+      "additionalProperties": false,
+      "properties": {
+        "instructions_inert": {
+          "type": "boolean"
+        },
+        "malformed_fail_closed": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "instructions_inert",
+        "malformed_fail_closed"
+      ],
+      "type": "object"
+    },
+    "write_requests": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "authorized": {
+            "type": "boolean"
+          },
+          "executed": {
+            "type": "boolean"
+          },
+          "target": {
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "target",
+          "authorized",
+          "executed"
+        ],
+        "type": "object"
+      },
+      "type": "array"
+    }
+  },
+  "required": [
+    "document_kind",
+    "schema_version",
+    "execution_scope",
+    "proof_level",
+    "live_permissions",
+    "external_effect_occurred",
+    "authority",
+    "data_classes",
+    "log_events",
+    "write_requests",
+    "retention_policy",
+    "deletion_policy",
+    "untrusted_input_policy",
+    "claim_ceiling"
+  ],
+  "title": "SECURITY-001 synthetic security posture",
+  "type": "object"
+}

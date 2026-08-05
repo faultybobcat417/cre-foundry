@@ -1,0 +1,93 @@
+{
+  "automatic_execution_enabled": false,
+  "blocked_gate_count": 6,
+  "gate_count": 6,
+  "gates": [
+    {
+      "current_ready": false,
+      "gate_id": "recommended_source_review",
+      "required_actions": [
+        "Review the checksum-bound permit evidence.",
+        "Select an approved record key.",
+        "Select valid temporal fields.",
+        "Record named reviewer attribution.",
+        "Record explicit source approvals."
+      ],
+      "required_artifacts": [
+        "docs/data_contracts/brampton_permit_review_workbook.md",
+        "config/governance_decisions.json"
+      ]
+    },
+    {
+      "current_ready": false,
+      "gate_id": "historical_registration_dry_run",
+      "required_actions": [
+        "Complete the recommended-source review.",
+        "Rebuild manual activation envelopes.",
+        "Generate a separate non-authoritative dry-run implementation."
+      ],
+      "required_artifacts": [
+        "docs/data_contracts/historical_registration_execution_envelope.json"
+      ]
+    },
+    {
+      "current_ready": false,
+      "gate_id": "all_client_inputs",
+      "required_actions": [
+        "Complete all five authoritative answers.",
+        "Record named client confirmation.",
+        "Record confirmation timestamps.",
+        "Attach evidence references."
+      ],
+      "required_artifacts": [
+        "docs/data_contracts/client_answer_workbook.md",
+        "config/governance_decisions.json"
+      ]
+    },
+    {
+      "current_ready": false,
+      "gate_id": "outcome_ledger_ephemeral_bootstrap",
+      "required_actions": [
+        "Complete all client inputs.",
+        "Revalidate schema continuity.",
+        "Run only a disposable bootstrap before any persistent database is created."
+      ],
+      "required_artifacts": [
+        "docs/data_contracts/outcome_ledger_bootstrap_envelope.json",
+        "docs/data_contracts/outcome_collection_schema.sql"
+      ]
+    },
+    {
+      "current_ready": false,
+      "gate_id": "codex_contract_handoff",
+      "required_actions": [
+        "Complete all five client inputs.",
+        "Recompute all contract artifact checksums.",
+        "Limit Codex to application shell and stable contract adapters."
+      ],
+      "required_artifacts": [
+        "docs/data_contracts/codex_contract_bundle_manifest.json"
+      ]
+    },
+    {
+      "current_ready": false,
+      "gate_id": "codex_final_product_handoff",
+      "required_actions": [
+        "Collect repeated historical snapshots.",
+        "Collect real censored outcome labels.",
+        "Build a leakage-safe point-in-time dataset.",
+        "Train transparent baseline models.",
+        "Complete temporal backtesting.",
+        "Complete calibration.",
+        "Complete shadow and controlled pilots.",
+        "Prove incremental ROI.",
+        "Complete production governance."
+      ],
+      "required_artifacts": [
+        "docs/data_contracts/codex_handoff_gate_graph.json"
+      ]
+    }
+  ],
+  "model_version": "cre-foundry-assurance-recovery-map-v1",
+  "ready_gate_count": 0
+}

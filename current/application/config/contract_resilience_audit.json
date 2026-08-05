@@ -1,0 +1,104 @@
+{
+  "config_version": "cre-foundry-contract-resilience-audit-v1",
+  "policy": {
+    "operating_mode": "shadow",
+    "deterministic_fuzzing_required": true,
+    "strict_json_parsing_required": true,
+    "serialization_round_trip_required": true,
+    "duplicate_key_rejection_required": true,
+    "non_finite_number_rejection_required": true,
+    "atomic_write_recovery_required": true,
+    "configuration_versioning_required": true,
+    "future_version_rejection_required": true,
+    "deterministic_migration_rehearsal_required": true,
+    "software_inventory_required": true,
+    "audit_evidence_index_required": true,
+    "steelman_audit_plan_required": true,
+    "compliance_claim_permitted": false,
+    "approval_invention_forbidden": true,
+    "client_value_invention_forbidden": true,
+    "network_access_enabled": false,
+    "database_access_enabled": false,
+    "database_write_enabled": false,
+    "snapshot_registration_enabled": false,
+    "automatic_acquisition_enabled": false,
+    "persistent_outcome_ledger_enabled": false,
+    "outcome_event_insertion_enabled": false,
+    "point_in_time_materialization_enabled": false,
+    "model_training_enabled": false,
+    "backtest_execution_enabled": false,
+    "pilot_execution_enabled": false,
+    "production_ranking_enabled": false,
+    "outreach_enabled": false
+  },
+  "seed": 20260727,
+  "decision_fuzz_case_count": 2048,
+  "serialization_case_count": 4096,
+  "max_generated_depth": 5,
+  "standards_baseline": [
+    {
+      "standard_id": "nist-ssdf-1.1",
+      "title": "NIST Secure Software Development Framework",
+      "version": "1.1",
+      "status": "final_normative_baseline"
+    },
+    {
+      "standard_id": "nist-ssdf-1.2-draft",
+      "title": "NIST Secure Software Development Framework",
+      "version": "1.2",
+      "status": "draft_informative_tracking"
+    },
+    {
+      "standard_id": "owasp-asvs-5.0.0",
+      "title": "OWASP Application Security Verification Standard",
+      "version": "5.0.0",
+      "status": "future_application_security_baseline"
+    },
+    {
+      "standard_id": "slsa-1.2",
+      "title": "Supply-chain Levels for Software Artifacts",
+      "version": "1.2",
+      "status": "future_provenance_baseline"
+    },
+    {
+      "standard_id": "cyclonedx-1.7",
+      "title": "CycloneDX Bill of Materials",
+      "version": "1.7",
+      "status": "software_inventory_format"
+    },
+    {
+      "standard_id": "openssf-scorecard",
+      "title": "OpenSSF Scorecard",
+      "version": "current",
+      "status": "future_repository_posture_scan"
+    }
+  ],
+  "evidence_paths": [
+    "pyproject.toml",
+    "uv.lock",
+    "scripts/verify.sh",
+    "config/governance_decisions.json",
+    "docs/data_contracts/source_parser_contract_validation.json",
+    "docs/data_contracts/source_parser_isolation.json",
+    "docs/data_contracts/snapshot_registration_preflight.json",
+    "docs/data_contracts/learning_capture_design_summary.json",
+    "docs/data_contracts/manual_decision_validation.json",
+    "docs/data_contracts/human_input_workbench_summary.json",
+    "docs/data_contracts/assurance_mesh_summary.json",
+    "docs/data_contracts/assurance_drift_report.json",
+    "docs/data_contracts/assurance_invariant_results.json",
+    "docs/data_contracts/assurance_scenario_matrix.json",
+    "docs/data_contracts/activation_state_model_summary.json",
+    "docs/data_contracts/activation_model_check_report.json",
+    "docs/data_contracts/activation_mutation_report.json",
+    "docs/data_contracts/activation_chaos_matrix.json",
+    "src/cre_foundry/source_parser_contracts.py",
+    "src/cre_foundry/manual_activation_envelopes.py",
+    "src/cre_foundry/assurance_mesh.py",
+    "src/cre_foundry/activation_state_model.py",
+    "tests/unit/test_source_parser_contracts.py",
+    "tests/unit/test_manual_activation_envelopes.py",
+    "tests/unit/test_assurance_mesh.py",
+    "tests/unit/test_activation_state_model.py"
+  ]
+}

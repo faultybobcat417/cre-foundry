@@ -1,0 +1,141 @@
+{
+  "artifact_id": "SECURITY-001-PUBLIC-EVALUATOR-CONTRACT",
+  "authoritative_inputs": [
+    "artifacts/security/SECURITY-001-start.json",
+    "artifacts/security/public_evaluator_contract.json",
+    "contracts/security_posture.schema.json",
+    "tasks/SECURITY-001.json",
+    "artifacts/task-results/ARCHITECTURE-001.json",
+    "artifacts/task-results/RESEARCH-001.json",
+    "contracts/product_workflow.schema.json"
+  ],
+  "claim_ceiling": "Public proof level 4 establishes deterministic synthetic threat-model, data-classification, least-privilege, negative-authorization, sensitive-log, untrusted-input, retention, and deletion conformance only. It establishes no penetration-test result, legal compliance, production security, operational privacy, breach resistance, real deletion performance, deployment readiness, sealed evaluator independence, or hidden-holdout performance.",
+  "defined_before_material_implementation": true,
+  "diagnostic_precedence": [
+    "strict parse and closed shape",
+    "registered schema and execution scope",
+    "proof and claim ceiling",
+    "live permissions and external effects",
+    "authority provenance and untrusted-input isolation",
+    "secret and PII logging",
+    "negative authorization and write execution",
+    "retention",
+    "deletion"
+  ],
+  "evaluator_id": "security-posture-public-v1",
+  "evaluator_independence": {
+    "reconstruction_scope": [
+      "strict parsing and recursively closed schema",
+      "authority provenance and least privilege",
+      "secret and PII log exclusion",
+      "negative authorization and external-write denial",
+      "live-disabled defaults",
+      "untrusted-input instruction isolation",
+      "bounded retention",
+      "verifiable deletion",
+      "proof and claim ceiling"
+    ],
+    "rejected": [
+      {
+        "architecture": "GOLDEN_RECEIPT_ONLY",
+        "reason": "A self-asserted receipt cannot prove authorization, privacy, retention, or deletion semantics."
+      },
+      {
+        "architecture": "SHARED_BUILDER_LIBRARY",
+        "reason": "A shared defect could allow both material and evaluator paths to accept the same bypass."
+      },
+      {
+        "architecture": "SCHEMA_ONLY_VALIDATION",
+        "reason": "Closed shape cannot alone prove fail-closed authorization or sensitive-data handling."
+      }
+    ],
+    "rule": "The frozen evaluator must never import src.cre_foundry.security or any material security implementation. It independently constructs and judges the canonical synthetic posture."
+  },
+  "execution_scope": "SYNTHETIC_NON_INFLUENCING",
+  "external_effect_occurred": false,
+  "external_gates": [
+    "GATE-SEALED-EVALUATOR-CUSTODY-001",
+    "GATE-HIDDEN-HOLDOUT-OWNER-001",
+    "GATE-MANUAL-REVIEW-AUTHORITY-001",
+    "GATE-LIVE-WORKFLOW-AUTHORITY-001",
+    "GATE-PRODUCTION-DEPLOYMENT-001",
+    "GATE-FULL-EXTERNAL-EVIDENCE-001"
+  ],
+  "freeze_repair": {
+    "legacy_evaluator_modified": false,
+    "material_implementation_started": false,
+    "reason": "Moved SECURITY-001-only fixtures below frontier/security001 so the pinned legacy security_*.json evaluator continues to see only its original two fixtures."
+  },
+  "future_evaluator_path": "evals/public/security_posture_evaluator.py",
+  "future_material_validator_path": "scripts/validate_security_contracts.py",
+  "future_validator_path": "scripts/validate_security_posture.py",
+  "implementation_gate": "Do not begin src/cre_foundry/security until this contract, schema, evaluator, validator, and all seven mutation fixtures are hash-frozen and independently replay green.",
+  "live_permissions": false,
+  "pass_rule": "The clean canonical subject passes with zero diagnostics, every registered mutation fails with exactly its registered diagnostic, frozen hashes remain unchanged, and no live or production-security claim is made.",
+  "proof_target": 4,
+  "registered_mutations": [
+    {
+      "expected_diagnostic": "SECURITY-SECRET-LOG",
+      "mutation_id": "secret_log"
+    },
+    {
+      "expected_diagnostic": "SECURITY-PII-LOG",
+      "mutation_id": "pii_log"
+    },
+    {
+      "expected_diagnostic": "SECURITY-RETRIEVED-AUTHORITY",
+      "mutation_id": "retrieved_authority"
+    },
+    {
+      "expected_diagnostic": "SECURITY-UNAUTHORIZED-WRITE",
+      "mutation_id": "unauthorized_write"
+    },
+    {
+      "expected_diagnostic": "SECURITY-LIVE-DEFAULT",
+      "mutation_id": "live_default"
+    },
+    {
+      "expected_diagnostic": "SECURITY-RETENTION",
+      "mutation_id": "retention_violation"
+    },
+    {
+      "expected_diagnostic": "SECURITY-DELETION",
+      "mutation_id": "deletion_refused"
+    }
+  ],
+  "required_fixtures": [
+    "evals/known_bad/frontier/security001/security_secret_log.json",
+    "evals/known_bad/frontier/security_pii_log.json",
+    "evals/known_bad/frontier/security_retrieved_authority.json",
+    "evals/known_bad/frontier/security001/security_unauthorized_write.json",
+    "evals/known_bad/frontier/security001/security_live_default.json",
+    "evals/known_bad/frontier/security001/security_retention_violation.json",
+    "evals/known_bad/frontier/security001/security_deletion_refused.json"
+  ],
+  "schema_version": "1.0.0",
+  "stable_diagnostics": [
+    {
+      "case_id": "malformed-or-duplicate-key-json",
+      "diagnostic": "SECURITY-SHAPE-INVALID"
+    },
+    {
+      "case_id": "schema-failure",
+      "diagnostic": "SECURITY-SCHEMA-FAILURE"
+    },
+    {
+      "case_id": "unknown-schema-version",
+      "diagnostic": "SECURITY-SCHEMA-UNREGISTERED"
+    },
+    {
+      "case_id": "external-effect-recorded",
+      "diagnostic": "SECURITY-EXTERNAL-EFFECT"
+    },
+    {
+      "case_id": "proof-or-claim-ceiling-violation",
+      "diagnostic": "SECURITY-CLAIM-CEILING"
+    }
+  ],
+  "subject_schema_path": "contracts/security_posture.schema.json",
+  "subject_task": "SECURITY-001",
+  "task_id": "SECURITY-001"
+}

@@ -1,0 +1,13 @@
+{
+  "all_properties_passed": true,
+  "baseline_digest": "12b0cf577e27c92607dd761217c26a7e8b8dcf219e24326081969b87516ac6ed",
+  "baseline_valid": true,
+  "escaped_case_indices": [],
+  "escaped_malformed_case_count": 0,
+  "malformed_case_count": 2048,
+  "model_version": "cre-foundry-contract-fuzz-report-v1",
+  "permutation_case_count": 512,
+  "rejected_malformed_case_count": 2048,
+  "seed": 20260727,
+  "stable_permutation_digest_count": 512
+}

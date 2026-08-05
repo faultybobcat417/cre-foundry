@@ -1,0 +1,14 @@
+{
+  "artifact_copy_execution_count": 0,
+  "blocked_count": 0,
+  "duplicate_replay_id_count": 0,
+  "model_version": "cre-foundry-deterministic-replay-spec-v1",
+  "opportunity_ranked": false,
+  "outreach_eligible": false,
+  "parser_execution_count": 0,
+  "replay_ready_count": 3,
+  "row_materialization_execution_count": 0,
+  "snapshot_registration_execution_count": 0,
+  "specification_count": 3
+}
+DETERMINISTIC REPLAY SPEC PASSED

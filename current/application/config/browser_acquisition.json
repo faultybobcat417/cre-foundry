@@ -1,0 +1,40 @@
+{
+  "config_version": "cre-foundry-browser-acquisition-v1",
+  "enabled": false,
+  "operating_mode": "shadow",
+  "acquisition_precedence": [
+    "authorized_official_api",
+    "authorized_network_response_capture",
+    "authorized_bulk_or_file_download",
+    "browser_dom_or_accessibility_tree",
+    "computer_vision_fallback",
+    "human_exception_review"
+  ],
+  "controls": {
+    "domain_allowlist_required": true,
+    "source_authorization_required": true,
+    "isolated_browser_profile_required": true,
+    "credential_reference_required_for_authenticated_sources": true,
+    "request_rate_limit_required": true,
+    "concurrency_limit_required": true,
+    "navigation_recipe_version_required": true,
+    "dom_capture_required": true,
+    "screenshot_before_visual_action_required": true,
+    "screenshot_after_visual_action_required": true,
+    "network_archive_when_available": true,
+    "content_checksum_required": true,
+    "layout_change_quarantine_required": true,
+    "human_review_on_ambiguity_required": true,
+    "captcha_bypass_allowed": false,
+    "access_control_bypass_allowed": false,
+    "destructive_actions_allowed": false,
+    "automatic_outreach_allowed": false
+  },
+  "runtime": {
+    "browser_execution_enabled": false,
+    "computer_vision_execution_enabled": false,
+    "macos_screen_recording_permission": "manual_confirmation_required",
+    "macos_accessibility_permission": "manual_confirmation_required",
+    "macos_automation_permission": "manual_confirmation_required"
+  }
+}

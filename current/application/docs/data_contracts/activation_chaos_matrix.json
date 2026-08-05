@@ -1,0 +1,165 @@
+{
+  "execution_count": 0,
+  "failed_scenario_count": 0,
+  "model_version": "cre-foundry-activation-chaos-matrix-v1",
+  "passed_scenario_count": 11,
+  "scenario_count": 11,
+  "scenarios": [
+    {
+      "disabled_inputs": [
+        "source_review_complete"
+      ],
+      "expected_false_gates": [
+        "historical_registration_dry_run_ready",
+        "first_authoritative_snapshot_ready",
+        "repeated_snapshot_collection_ready",
+        "point_in_time_dataset_ready",
+        "codex_final_product_handoff_ready"
+      ],
+      "passed": true,
+      "scenario_id": "stale_source_review",
+      "unexpected_true_gates": []
+    },
+    {
+      "disabled_inputs": [
+        "client_inputs_complete"
+      ],
+      "expected_false_gates": [
+        "outcome_ledger_ephemeral_bootstrap_ready",
+        "persistent_outcome_ledger_ready",
+        "shadow_pilot_ready",
+        "codex_contract_handoff_ready",
+        "codex_final_product_handoff_ready"
+      ],
+      "passed": true,
+      "scenario_id": "missing_client_inputs",
+      "unexpected_true_gates": []
+    },
+    {
+      "disabled_inputs": [
+        "outcome_template_current"
+      ],
+      "expected_false_gates": [
+        "outcome_ledger_ephemeral_bootstrap_ready",
+        "persistent_outcome_ledger_ready",
+        "codex_contract_handoff_ready",
+        "codex_final_product_handoff_ready"
+      ],
+      "passed": true,
+      "scenario_id": "stale_outcome_template",
+      "unexpected_true_gates": []
+    },
+    {
+      "disabled_inputs": [
+        "separate_execution_authorization"
+      ],
+      "expected_false_gates": [
+        "first_authoritative_snapshot_ready",
+        "repeated_snapshot_collection_ready",
+        "change_detection_ready",
+        "point_in_time_dataset_ready",
+        "codex_final_product_handoff_ready"
+      ],
+      "passed": true,
+      "scenario_id": "execution_authorization_revoked",
+      "unexpected_true_gates": []
+    },
+    {
+      "disabled_inputs": [
+        "schedule_and_acquisition_approval"
+      ],
+      "expected_false_gates": [
+        "repeated_snapshot_collection_ready",
+        "change_detection_ready",
+        "point_in_time_dataset_ready",
+        "codex_final_product_handoff_ready"
+      ],
+      "passed": true,
+      "scenario_id": "schedule_and_acquisition_revoked",
+      "unexpected_true_gates": []
+    },
+    {
+      "disabled_inputs": [
+        "separate_ledger_activation_authorization"
+      ],
+      "expected_false_gates": [
+        "persistent_outcome_ledger_ready",
+        "real_outcome_labels_ready",
+        "point_in_time_dataset_ready",
+        "codex_final_product_handoff_ready"
+      ],
+      "passed": true,
+      "scenario_id": "ledger_activation_revoked",
+      "unexpected_true_gates": []
+    },
+    {
+      "disabled_inputs": [
+        "pilot_actions_and_windows_complete"
+      ],
+      "expected_false_gates": [
+        "real_outcome_labels_ready",
+        "point_in_time_dataset_ready",
+        "codex_final_product_handoff_ready"
+      ],
+      "passed": true,
+      "scenario_id": "observation_windows_incomplete",
+      "unexpected_true_gates": []
+    },
+    {
+      "disabled_inputs": [
+        "sufficient_history"
+      ],
+      "expected_false_gates": [
+        "temporal_backtesting_ready",
+        "probability_calibration_ready",
+        "controlled_pilot_ready",
+        "incremental_roi_proven",
+        "codex_final_product_handoff_ready"
+      ],
+      "passed": true,
+      "scenario_id": "insufficient_history",
+      "unexpected_true_gates": []
+    },
+    {
+      "disabled_inputs": [
+        "transaction_economics_confirmed"
+      ],
+      "expected_false_gates": [
+        "incremental_roi_proven",
+        "production_governance_ready",
+        "codex_final_product_handoff_ready"
+      ],
+      "passed": true,
+      "scenario_id": "transaction_economics_missing",
+      "unexpected_true_gates": []
+    },
+    {
+      "disabled_inputs": [
+        "monitoring_and_rollback_ready"
+      ],
+      "expected_false_gates": [
+        "production_governance_ready",
+        "production_ranking_ready",
+        "outreach_ready",
+        "codex_final_product_handoff_ready"
+      ],
+      "passed": true,
+      "scenario_id": "monitoring_and_rollback_missing",
+      "unexpected_true_gates": []
+    },
+    {
+      "disabled_inputs": [
+        "production_audit_ready"
+      ],
+      "expected_false_gates": [
+        "production_governance_ready",
+        "production_ranking_ready",
+        "outreach_ready",
+        "codex_final_product_handoff_ready"
+      ],
+      "passed": true,
+      "scenario_id": "production_audit_missing",
+      "unexpected_true_gates": []
+    }
+  ]
+}

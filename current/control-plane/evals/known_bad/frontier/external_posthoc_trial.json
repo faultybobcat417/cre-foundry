@@ -1,0 +1,5 @@
+{
+  "case_id": "posthoc-trial",
+  "mutation_id": "posthoc_trial",
+  "expected_diagnostic": "EXTERNAL-READINESS-POSTHOC-TRIAL"
+}

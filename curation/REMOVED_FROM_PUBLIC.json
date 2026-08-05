@@ -1,0 +1,4181 @@
+[
+  {
+    "logical_path": "repos/cre-relay-security-standalone/artifacts/research/raw/tor_coa_package.json",
+    "actual_path": "current/control-plane/artifacts/research/raw/tor_coa_package.json",
+    "findings": [
+      "email"
+    ],
+    "reason": "raw_evidence_log_session_or_loose_sensitive_file"
+  },
+  {
+    "logical_path": "repos/cre-relay-security-standalone/artifacts/research/raw/tor_ogl_terms.html",
+    "actual_path": "current/control-plane/artifacts/research/raw/tor_ogl_terms.html",
+    "findings": [
+      "email"
+    ],
+    "reason": "raw_evidence_log_session_or_loose_sensitive_file"
+  },
+  {
+    "logical_path": "repos/cre-relay-security-standalone/artifacts/research/raw/independent/tor_coa_package.json",
+    "actual_path": "current/control-plane/artifacts/research/raw/independent/tor_coa_package.json",
+    "findings": [
+      "email"
+    ],
+    "reason": "raw_evidence_log_session_or_loose_sensitive_file"
+  },
+  {
+    "logical_path": "repos/cre-relay-security-standalone/artifacts/research/raw/independent/tor_ogl_terms.html",
+    "actual_path": "current/control-plane/artifacts/research/raw/independent/tor_ogl_terms.html",
+    "findings": [
+      "email"
+    ],
+    "reason": "raw_evidence_log_session_or_loose_sensitive_file"
+  },
+  {
+    "logical_path": "repos/cre-relay-security-standalone/artifacts/research/raw/row_witness/on_summary.json",
+    "actual_path": "current/control-plane/artifacts/research/raw/row_witness/on_summary.json",
+    "findings": [
+      "email"
+    ],
+    "reason": "raw_evidence_log_session_or_loose_sensitive_file"
+  },
+  {
+    "logical_path": "repos/cre-relay-security-standalone/artifacts/research/raw/row_witness/on_max_address.json",
+    "actual_path": "current/control-plane/artifacts/research/raw/row_witness/on_max_address.json",
+    "findings": [
+      "email"
+    ],
+    "reason": "raw_evidence_log_session_or_loose_sensitive_file"
+  },
+  {
+    "logical_path": "repos/cre-relay-security-standalone/artifacts/research/raw/row_witness/on_max_address_post.json",
+    "actual_path": "current/control-plane/artifacts/research/raw/row_witness/on_max_address_post.json",
+    "findings": [
+      "email"
+    ],
+    "reason": "raw_evidence_log_session_or_loose_sensitive_file"
+  },
+  {
+    "logical_path": "repos/cre-foundry/docs/source_access/evidence/brampton_plantrak_20260726T022324Z/brampton_portal_self.txt",
+    "actual_path": "current/application/docs/source_access/evidence/brampton_plantrak_20260726T022324Z/brampton_portal_self.txt",
+    "findings": [
+      "email"
+    ],
+    "reason": "raw_evidence_log_session_or_loose_sensitive_file"
+  },
+  {
+    "logical_path": "repos/cre-foundry/docs/source_access/evidence/brampton_plantrak_20260726T022324Z/evidence_summary.json",
+    "actual_path": "current/application/docs/source_access/evidence/brampton_plantrak_20260726T022324Z/evidence_summary.json",
+    "findings": [
+      "email"
+    ],
+    "reason": "raw_evidence_log_session_or_loose_sensitive_file"
+  },
+  {
+    "logical_path": "repos/cre-foundry/logs/brampton_permits_preflight_20260726T031853Z/property_information.html",
+    "actual_path": "current/application/logs/brampton_permits_preflight_20260726T031853Z/property_information.html",
+    "findings": [
+      "email",
+      "phone"
+    ],
+    "reason": "raw_evidence_log_session_or_loose_sensitive_file"
+  },
+  {
+    "logical_path": "repos/cre-foundry/logs/brampton_permits_preflight_20260726T031853Z/open_data.html",
+    "actual_path": "current/application/logs/brampton_permits_preflight_20260726T031853Z/open_data.html",
+    "findings": [
+      "email"
+    ],
+    "reason": "raw_evidence_log_session_or_loose_sensitive_file"
+  },
+  {
+    "logical_path": "repos/cre-foundry/logs/ero_preflight_20260726T031636Z/search_brampton.html",
+    "actual_path": "current/application/logs/ero_preflight_20260726T031636Z/search_brampton.html",
+    "findings": [
+      "email"
+    ],
+    "reason": "raw_evidence_log_session_or_loose_sensitive_file"
+  },
+  {
+    "logical_path": "repos/cre-foundry/logs/ero_preflight_20260726T031636Z/search_default.html",
+    "actual_path": "current/application/logs/ero_preflight_20260726T031636Z/search_default.html",
+    "findings": [
+      "email"
+    ],
+    "reason": "raw_evidence_log_session_or_loose_sensitive_file"
+  },
+  {
+    "logical_path": "repos/cre-foundry/logs/brampton_business_directory_preflight_20260726T035707Z/brampton_open_data_page.html",
+    "actual_path": "current/application/logs/brampton_business_directory_preflight_20260726T035707Z/brampton_open_data_page.html",
+    "findings": [
+      "email"
+    ],
+    "reason": "raw_evidence_log_session_or_loose_sensitive_file"
+  },
+  {
+    "logical_path": "repos/cre-foundry/logs/brampton_business_directory_preflight_20260726T035707Z/evidence_summary.json",
+    "actual_path": "current/application/logs/brampton_business_directory_preflight_20260726T035707Z/evidence_summary.json",
+    "findings": [
+      "email",
+      "phone",
+      "possible_password_word"
+    ],
+    "reason": "raw_evidence_log_session_or_loose_sensitive_file"
+  },
+  {
+    "logical_path": "repos/cre-foundry/logs/brampton_business_directory_preflight_20260726T035707Z/invest_brampton_research_data.html",
+    "actual_path": "current/application/logs/brampton_business_directory_preflight_20260726T035707Z/invest_brampton_research_data.html",
+    "findings": [
+      "email",
+      "phone",
+      "possible_password_word"
+    ],
+    "reason": "raw_evidence_log_session_or_loose_sensitive_file"
+  },
+  {
+    "logical_path": "repos/cre-foundry/logs/brampton_business_directory_preflight_20260726T035707Z/arcgis_search.json",
+    "actual_path": "current/application/logs/brampton_business_directory_preflight_20260726T035707Z/arcgis_search.json",
+    "findings": [
+      "email",
+      "phone",
+      "possible_password_word"
+    ],
+    "reason": "raw_evidence_log_session_or_loose_sensitive_file"
+  },
+  {
+    "logical_path": "repos/cre-foundry/logs/brampton_business_directory_lineage_20260726T035925Z/evidence_summary.json",
+    "actual_path": "current/application/logs/brampton_business_directory_lineage_20260726T035925Z/evidence_summary.json",
+    "findings": [
+      "email",
+      "phone"
+    ],
+    "reason": "raw_evidence_log_session_or_loose_sensitive_file"
+  },
+  {
+    "logical_path": "repos/cre-foundry/logs/brampton_business_directory_lineage_20260726T035925Z/item_3d7354f336cf4589a18b94816cdbfae4_data.json",
+    "actual_path": "current/application/logs/brampton_business_directory_lineage_20260726T035925Z/item_3d7354f336cf4589a18b94816cdbfae4_data.json",
+    "findings": [
+      "email"
+    ],
+    "reason": "raw_evidence_log_session_or_loose_sensitive_file"
+  },
+  {
+    "logical_path": "repos/cre-foundry/logs/brampton_business_directory_lineage_20260726T035925Z/item_3cd59a895f404612b57e4c84fc8931be.json",
+    "actual_path": "current/application/logs/brampton_business_directory_lineage_20260726T035925Z/item_3cd59a895f404612b57e4c84fc8931be.json",
+    "findings": [
+      "email",
+      "phone"
+    ],
+    "reason": "raw_evidence_log_session_or_loose_sensitive_file"
+  },
+  {
+    "logical_path": "repos/cre-foundry/logs/brampton_business_directory_lineage_20260726T035925Z/item_3d7354f336cf4589a18b94816cdbfae4.json",
+    "actual_path": "current/application/logs/brampton_business_directory_lineage_20260726T035925Z/item_3d7354f336cf4589a18b94816cdbfae4.json",
+    "findings": [
+      "email"
+    ],
+    "reason": "raw_evidence_log_session_or_loose_sensitive_file"
+  },
+  {
+    "logical_path": "repos/cre-foundry/logs/brampton_business_directory_lineage_20260726T035925Z/item_66674743f40f4b4c85d004bdf6a831f2_data.json",
+    "actual_path": "current/application/logs/brampton_business_directory_lineage_20260726T035925Z/item_66674743f40f4b4c85d004bdf6a831f2_data.json",
+    "findings": [
+      "email"
+    ],
+    "reason": "raw_evidence_log_session_or_loose_sensitive_file"
+  },
+  {
+    "logical_path": "repos/cre-foundry/logs/ero_preflight_20260726T031655Z/search_brampton.html",
+    "actual_path": "current/application/logs/ero_preflight_20260726T031655Z/search_brampton.html",
+    "findings": [
+      "email"
+    ],
+    "reason": "raw_evidence_log_session_or_loose_sensitive_file"
+  },
+  {
+    "logical_path": "repos/cre-foundry/logs/ero_preflight_20260726T031655Z/search_mississauga.html",
+    "actual_path": "current/application/logs/ero_preflight_20260726T031655Z/search_mississauga.html",
+    "findings": [
+      "email"
+    ],
+    "reason": "raw_evidence_log_session_or_loose_sensitive_file"
+  },
+  {
+    "logical_path": "repos/cre-foundry/logs/ero_preflight_20260726T031655Z/search_default.html",
+    "actual_path": "current/application/logs/ero_preflight_20260726T031655Z/search_default.html",
+    "findings": [
+      "email"
+    ],
+    "reason": "raw_evidence_log_session_or_loose_sensitive_file"
+  },
+  {
+    "logical_path": "loose/application/1d85e0792c98__brampton_portal_self.txt",
+    "actual_path": "collected_documents/application/1d85e0792c98__brampton_portal_self.txt",
+    "findings": [
+      "email"
+    ],
+    "reason": "raw_evidence_log_session_or_loose_sensitive_file"
+  },
+  {
+    "logical_path": "loose/application/355359208730__evidence_summary.json",
+    "actual_path": "collected_documents/application/355359208730__evidence_summary.json",
+    "findings": [
+      "email"
+    ],
+    "reason": "raw_evidence_log_session_or_loose_sensitive_file"
+  },
+  {
+    "logical_path": "loose/application/7b1524adeb3e__evidence_summary.json",
+    "actual_path": "collected_documents/application/7b1524adeb3e__evidence_summary.json",
+    "findings": [
+      "email",
+      "phone"
+    ],
+    "reason": "raw_evidence_log_session_or_loose_sensitive_file"
+  },
+  {
+    "logical_path": "loose/application/5c89579277ba__item_3cd59a895f404612b57e4c84fc8931be.json",
+    "actual_path": "collected_documents/application/5c89579277ba__item_3cd59a895f404612b57e4c84fc8931be.json",
+    "findings": [
+      "email",
+      "phone"
+    ],
+    "reason": "raw_evidence_log_session_or_loose_sensitive_file"
+  },
+  {
+    "logical_path": "loose/application/febde18c15d1__item_3d7354f336cf4589a18b94816cdbfae4.json",
+    "actual_path": "collected_documents/application/febde18c15d1__item_3d7354f336cf4589a18b94816cdbfae4.json",
+    "findings": [
+      "email"
+    ],
+    "reason": "raw_evidence_log_session_or_loose_sensitive_file"
+  },
+  {
+    "logical_path": "loose/application/c127a3d8eb31__item_3d7354f336cf4589a18b94816cdbfae4_data.json",
+    "actual_path": "collected_documents/application/c127a3d8eb31__item_3d7354f336cf4589a18b94816cdbfae4_data.json",
+    "findings": [
+      "email"
+    ],
+    "reason": "raw_evidence_log_session_or_loose_sensitive_file"
+  },
+  {
+    "logical_path": "loose/application/434bcdbb9935__item_66674743f40f4b4c85d004bdf6a831f2_data.json",
+    "actual_path": "collected_documents/application/434bcdbb9935__item_66674743f40f4b4c85d004bdf6a831f2_data.json",
+    "findings": [
+      "email"
+    ],
+    "reason": "raw_evidence_log_session_or_loose_sensitive_file"
+  },
+  {
+    "logical_path": "loose/application/a623b5f05420__arcgis_search.json",
+    "actual_path": "collected_documents/application/a623b5f05420__arcgis_search.json",
+    "findings": [
+      "email",
+      "phone",
+      "possible_password_word"
+    ],
+    "reason": "raw_evidence_log_session_or_loose_sensitive_file"
+  },
+  {
+    "logical_path": "loose/application/96b70c590fe7__brampton_open_data_page.html",
+    "actual_path": "collected_documents/application/96b70c590fe7__brampton_open_data_page.html",
+    "findings": [
+      "email"
+    ],
+    "reason": "raw_evidence_log_session_or_loose_sensitive_file"
+  },
+  {
+    "logical_path": "loose/application/1f47f6176ab3__evidence_summary.json",
+    "actual_path": "collected_documents/application/1f47f6176ab3__evidence_summary.json",
+    "findings": [
+      "email",
+      "phone",
+      "possible_password_word"
+    ],
+    "reason": "raw_evidence_log_session_or_loose_sensitive_file"
+  },
+  {
+    "logical_path": "loose/application/79bb0d69c878__invest_brampton_research_data.html",
+    "actual_path": "collected_documents/application/79bb0d69c878__invest_brampton_research_data.html",
+    "findings": [
+      "email",
+      "phone",
+      "possible_password_word"
+    ],
+    "reason": "raw_evidence_log_session_or_loose_sensitive_file"
+  },
+  {
+    "logical_path": "loose/application/987d905351ab__open_data.html",
+    "actual_path": "collected_documents/application/987d905351ab__open_data.html",
+    "findings": [
+      "email"
+    ],
+    "reason": "raw_evidence_log_session_or_loose_sensitive_file"
+  },
+  {
+    "logical_path": "loose/application/ad9a795c366e__property_information.html",
+    "actual_path": "collected_documents/application/ad9a795c366e__property_information.html",
+    "findings": [
+      "email",
+      "phone"
+    ],
+    "reason": "raw_evidence_log_session_or_loose_sensitive_file"
+  },
+  {
+    "logical_path": "loose/application/a6ef4b825737__search_brampton.html",
+    "actual_path": "collected_documents/application/a6ef4b825737__search_brampton.html",
+    "findings": [
+      "email"
+    ],
+    "reason": "raw_evidence_log_session_or_loose_sensitive_file"
+  },
+  {
+    "logical_path": "loose/application/6747f949cb26__search_default.html",
+    "actual_path": "collected_documents/application/6747f949cb26__search_default.html",
+    "findings": [
+      "email"
+    ],
+    "reason": "raw_evidence_log_session_or_loose_sensitive_file"
+  },
+  {
+    "logical_path": "loose/application/7d4e1fcc88b1__search_mississauga.html",
+    "actual_path": "collected_documents/application/7d4e1fcc88b1__search_mississauga.html",
+    "findings": [
+      "email"
+    ],
+    "reason": "raw_evidence_log_session_or_loose_sensitive_file"
+  },
+  {
+    "logical_path": "loose/application/9ba4837deaea__test_brampton_business_directory_silver.py",
+    "actual_path": "collected_documents/application/9ba4837deaea__test_brampton_business_directory_silver.py",
+    "findings": [
+      "phone"
+    ],
+    "reason": "raw_evidence_log_session_or_loose_sensitive_file"
+  },
+  {
+    "logical_path": "loose/application/d1ec7fc69f4e__test_brampton_permit_directory_bridge.py",
+    "actual_path": "collected_documents/application/d1ec7fc69f4e__test_brampton_permit_directory_bridge.py",
+    "findings": [
+      "phone"
+    ],
+    "reason": "raw_evidence_log_session_or_loose_sensitive_file"
+  },
+  {
+    "logical_path": "loose/application/725425bd06a6__test_brampton_permit_opportunity_evidence.py",
+    "actual_path": "collected_documents/application/725425bd06a6__test_brampton_permit_opportunity_evidence.py",
+    "findings": [
+      "phone"
+    ],
+    "reason": "raw_evidence_log_session_or_loose_sensitive_file"
+  },
+  {
+    "logical_path": "loose/application/3660efe83d54__test_brampton_verification_ledger.py",
+    "actual_path": "collected_documents/application/3660efe83d54__test_brampton_verification_ledger.py",
+    "findings": [
+      "email"
+    ],
+    "reason": "raw_evidence_log_session_or_loose_sensitive_file"
+  },
+  {
+    "logical_path": "loose/codex/1b1868fcc8f3__tor_coa_package.json",
+    "actual_path": "collected_documents/codex/1b1868fcc8f3__tor_coa_package.json",
+    "findings": [
+      "email"
+    ],
+    "reason": "raw_evidence_log_session_or_loose_sensitive_file"
+  },
+  {
+    "logical_path": "loose/codex/88852d08f653__tor_ogl_terms.html",
+    "actual_path": "collected_documents/codex/88852d08f653__tor_ogl_terms.html",
+    "findings": [
+      "email"
+    ],
+    "reason": "raw_evidence_log_session_or_loose_sensitive_file"
+  },
+  {
+    "logical_path": "loose/codex/aba15f7df654__on_max_address.json",
+    "actual_path": "collected_documents/codex/aba15f7df654__on_max_address.json",
+    "findings": [
+      "email"
+    ],
+    "reason": "raw_evidence_log_session_or_loose_sensitive_file"
+  },
+  {
+    "logical_path": "loose/codex/b07e02ef088c__tor_coa_package.json",
+    "actual_path": "collected_documents/codex/b07e02ef088c__tor_coa_package.json",
+    "findings": [
+      "email"
+    ],
+    "reason": "raw_evidence_log_session_or_loose_sensitive_file"
+  },
+  {
+    "logical_path": "loose/codex/9be2a4a1931d__test_autonomous_frontier.py",
+    "actual_path": "collected_documents/codex/9be2a4a1931d__test_autonomous_frontier.py",
+    "findings": [
+      "email",
+      "possible_password_word"
+    ],
+    "reason": "raw_evidence_log_session_or_loose_sensitive_file"
+  },
+  {
+    "logical_path": "loose/kimi/642343090ffd__wire.jsonl",
+    "actual_path": "collected_documents/kimi/642343090ffd__wire.jsonl",
+    "findings": [
+      "absolute_home_path",
+      "email",
+      "possible_password_word"
+    ],
+    "reason": "raw_evidence_log_session_or_loose_sensitive_file"
+  },
+  {
+    "logical_path": "loose/kimi/c774ebf4baab__wire.jsonl",
+    "actual_path": "collected_documents/kimi/c774ebf4baab__wire.jsonl",
+    "findings": [
+      "absolute_home_path",
+      "email",
+      "possible_password_word"
+    ],
+    "reason": "raw_evidence_log_session_or_loose_sensitive_file"
+  },
+  {
+    "logical_path": "loose/kimi/a186d7867a13__wire.jsonl",
+    "actual_path": "collected_documents/kimi/a186d7867a13__wire.jsonl",
+    "findings": [
+      "absolute_home_path",
+      "email",
+      "possible_password_word"
+    ],
+    "reason": "raw_evidence_log_session_or_loose_sensitive_file"
+  },
+  {
+    "logical_path": "loose/kimi/db5b41daa42c__wire.jsonl",
+    "actual_path": "collected_documents/kimi/db5b41daa42c__wire.jsonl",
+    "findings": [
+      "absolute_home_path",
+      "email",
+      "possible_password_word"
+    ],
+    "reason": "raw_evidence_log_session_or_loose_sensitive_file"
+  },
+  {
+    "logical_path": "loose/codex/acd8041adb37__d1blindspot.html",
+    "actual_path": "collected_documents/codex/acd8041adb37__d1blindspot.html",
+    "findings": [
+      "email",
+      "possible_password_word"
+    ],
+    "reason": "raw_evidence_log_session_or_loose_sensitive_file"
+  },
+  {
+    "logical_path": "loose/unclassified/87fdec60fcbf__RNScreens.podspec.json",
+    "actual_path": "collected_documents/unclassified/87fdec60fcbf__rnscreens.podspec.json",
+    "findings": [
+      "email"
+    ],
+    "reason": "raw_evidence_log_session_or_loose_sensitive_file"
+  },
+  {
+    "logical_path": "loose/opencode/44efcc35e100__.goreleaser.yml",
+    "actual_path": "collected_documents/opencode/44efcc35e100__.goreleaser.yml",
+    "findings": [
+      "email"
+    ],
+    "reason": "raw_evidence_log_session_or_loose_sensitive_file"
+  },
+  {
+    "logical_path": "loose/opencode/8b06aa5a58cf__bash.go",
+    "actual_path": "collected_documents/opencode/8b06aa5a58cf__bash.go",
+    "findings": [
+      "email"
+    ],
+    "reason": "raw_evidence_log_session_or_loose_sensitive_file"
+  },
+  {
+    "logical_path": "loose/research/02536eaf1dc8__osm.csv",
+    "actual_path": "collected_documents/research/02536eaf1dc8__osm.csv",
+    "findings": [
+      "email",
+      "phone"
+    ],
+    "reason": "raw_evidence_log_session_or_loose_sensitive_file"
+  },
+  {
+    "logical_path": "loose/unclassified/d1f0b3466c6b__osm.csv",
+    "actual_path": "collected_documents/unclassified/d1f0b3466c6b__osm.csv",
+    "findings": [
+      "email",
+      "phone"
+    ],
+    "reason": "raw_evidence_log_session_or_loose_sensitive_file"
+  },
+  {
+    "logical_path": "loose/kimi/97d7abc8ef6a__plate_party_handoff_and_prompt.md",
+    "actual_path": "collected_documents/kimi/97d7abc8ef6a__plate_party_handoff_and_prompt.md",
+    "findings": [
+      "email",
+      "possible_password_word"
+    ],
+    "reason": "raw_evidence_log_session_or_loose_sensitive_file"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/.Screen Shot 2023-11-02 at 9.48.40 AM.png",
+    "actual_path": "collected_documents/unclassified/e3b0c44298fc__.screen-shot-2023-11-02-at-9.48.40-am.png",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/CRE-Checkpoint-Verification-20260803-183510/clone-final-status.txt",
+    "actual_path": "collected_documents/kimi/b34a68c55f6c__clone-final-status.txt",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/CRE-Checkpoint-Verification-20260803-183510/clone-status.after-first-validation.txt",
+    "actual_path": "collected_documents/unclassified/2b4a9111d087__clone-status.after-first-validation.txt",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/CRE-Checkpoint-Verification-20260803-183510/commit-f47e87d-stat.txt",
+    "actual_path": "collected_documents/unclassified/b551c3992e17__commit-f47e87d-stat.txt",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/CRE-Checkpoint-Verification-20260803-183510/results.tsv",
+    "actual_path": "collected_documents/unclassified/1e08fbd415c9__results.tsv",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/CRE-Checkpoint-Verification-20260803-183510/security-secret-log.pretty.json",
+    "actual_path": "collected_documents/unclassified/68f0093f1208__security-secret-log.pretty.json",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/CRE-Checkpoint-Verification-20260803-183510/source-head.after.txt",
+    "actual_path": "collected_documents/unclassified/3906f9742c5b__source-head.after.txt",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/CRE-Checkpoint-Verification-20260803-183510/validator-byte-stable.txt",
+    "actual_path": "collected_documents/unclassified/a115e91c2e84__validator-byte-stable.txt",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/CRE-Codex-Forensics-20260802-171901/current-line-counts.txt",
+    "actual_path": "collected_documents/codex/2e629ed05115__current-line-counts.txt",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/CRE-Codex-Forensics-20260802-171901/git-branches.txt",
+    "actual_path": "collected_documents/kimi/c32ece530dc7__git-branches.txt",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/CRE-Codex-Forensics-20260802-171901/git-fsck-unreachable.txt",
+    "actual_path": "collected_documents/codex/9dd749900dc5__git-fsck-unreachable.txt",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/CRE-Codex-Forensics-20260802-171901/git-refs.txt",
+    "actual_path": "collected_documents/kimi/663c4c1096b1__git-refs.txt",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/CRE-Codex-Forensics-20260802-171901/git-status-porcelain-v2.txt",
+    "actual_path": "collected_documents/opencode/1e5a26d4cb03__git-status-porcelain-v2.txt",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/CRE-Codex-Forensics-20260802-171901/git-status.txt",
+    "actual_path": "collected_documents/opencode/2790f780b867__git-status.txt",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/CRE-Codex-Forensics-20260802-171901/screenshot-artifact-checks.txt",
+    "actual_path": "collected_documents/codex/a31ac74350a4__screenshot-artifact-checks.txt",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/CRE-Codex-Forensics-20260802-171901/suspect-commit-analysis.txt",
+    "actual_path": "collected_documents/codex/cd215a6616d7__suspect-commit-analysis.txt",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/CRE-Codex-Forensics-20260802-171901/untracked/opencode.json",
+    "actual_path": "collected_documents/opencode/69059f7cbc92__opencode.json",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/CRE-Codex-Forensics-20260802-171901/untracked-files.txt",
+    "actual_path": "collected_documents/opencode/6da143d02812__untracked-files.txt",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/CRE-Curated-Reference-20260803-162157/01_REPOSITORY/diff-stat.txt",
+    "actual_path": "collected_documents/unclassified/42861af8d11c__diff-stat.txt",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/CRE-Curated-Reference-20260803-162157/01_REPOSITORY/protected-hashes.after.txt",
+    "actual_path": "collected_documents/unclassified/c5e4f4a49ed2__protected-hashes.after.txt",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/CRE-Curated-Reference-20260803-162157/01_REPOSITORY/source-head.after.txt",
+    "actual_path": "collected_documents/unclassified/ab979f55787c__source-head.after.txt",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/CRE-Curated-Reference-20260803-162157/01_REPOSITORY/tracked-changes.txt",
+    "actual_path": "collected_documents/unclassified/14b860cf599e__tracked-changes.txt",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/CRE-Curated-Reference-20260803-162157/02_CONTROL_SNAPSHOT/contracts/temporal_identity.schema.json",
+    "actual_path": "collected_documents/application/0c3b42f90606__temporal_identity.schema.json",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/CRE-Curated-Reference-20260803-162157/02_CONTROL_SNAPSHOT/scripts/validate_control_plane.py",
+    "actual_path": "collected_documents/codex/f6a01e0f89bb__validate_control_plane.py",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/CRE-Curated-Reference-20260803-162157/03_RECOVERY/important-hashes.txt",
+    "actual_path": "collected_documents/unclassified/837e2585e741__important-hashes.txt",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/CRE-Curated-Reference-20260803-162157/03_RECOVERY/opencode-sessions.json",
+    "actual_path": "collected_documents/opencode/21d949808b79__opencode-sessions.json",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/CRE-Curated-Reference-20260803-162157/04_VALIDATION/command-results.tsv",
+    "actual_path": "collected_documents/unclassified/00c46bc0737e__command-results.tsv",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/CRE-Curated-Reference-20260803-162157/04_VALIDATION/recovered-diff-stat.txt",
+    "actual_path": "collected_documents/codex/1d7fec888eb4__recovered-diff-stat.txt",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/CRE-Curated-Reference-20260803-162157/04_VALIDATION/recovered-tracked-paths.txt",
+    "actual_path": "collected_documents/codex/fd8a2f57fe80__recovered-tracked-paths.txt",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/CRE-Curated-Reference-20260803-162157/05_OPENCODE_SESSION/session-extraction-summary.json",
+    "actual_path": "collected_documents/opencode/b73ee7942c2a__session-extraction-summary.json",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/CRE-Curated-Reference-20260803-162157/06_TOOL_CONTEXT/sanitized-prompt-manifest.json",
+    "actual_path": "collected_documents/kimi/008b6a33491e__sanitized-prompt-manifest.json",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/CRE-Curated-Reference-20260803-162157/06_TOOL_CONTEXT/sanitized-prompts/0e68eade1bba__AGENTS.md",
+    "actual_path": "collected_documents/unclassified/0e68eade1bba__0e68eade1bba__agents.md",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/CRE-Curated-Reference-20260803-162157/06_TOOL_CONTEXT/sanitized-prompts/2d35b8f1877f__AGENTS.md",
+    "actual_path": "collected_documents/unclassified/2d35b8f1877f__2d35b8f1877f__agents.md",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/CRE-Curated-Reference-20260803-162157/06_TOOL_CONTEXT/sanitized-prompts/2f0de5fd21e9__kimi_one_shot_prompt.md",
+    "actual_path": "collected_documents/kimi/2f0de5fd21e9__2f0de5fd21e9__kimi_one_shot_prompt.md",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/CRE-Curated-Reference-20260803-162157/06_TOOL_CONTEXT/sanitized-prompts/59a72ddc4aa7__prompt-agent-session-paths.txt",
+    "actual_path": "collected_documents/opencode/59a72ddc4aa7__59a72ddc4aa7__prompt-agent-session-paths.txt",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/CRE-Curated-Reference-20260803-162157/06_TOOL_CONTEXT/sanitized-prompts/6ab82732b089__AGENTS.md",
+    "actual_path": "collected_documents/antigravity/6ab82732b089__6ab82732b089__agents.md",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/CRE-Curated-Reference-20260803-162157/06_TOOL_CONTEXT/sanitized-prompts/84552dc956a6__AGENTS.md",
+    "actual_path": "collected_documents/unclassified/84552dc956a6__84552dc956a6__agents.md",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/CRE-Curated-Reference-20260803-162157/06_TOOL_CONTEXT/sanitized-prompts/c93e2a7d549f__AGENTS.md",
+    "actual_path": "collected_documents/unclassified/c93e2a7d549f__c93e2a7d549f__agents.md",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/CRE-Curated-Reference-20260803-162157/06_TOOL_CONTEXT/sanitized-prompts/ea65270fa49e__AGENTS.md",
+    "actual_path": "collected_documents/unclassified/ea65270fa49e__ea65270fa49e__agents.md",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/CRE-Curated-Reference-20260803-162157/06_TOOL_CONTEXT/sanitized-prompts/f21a864654bb__AGENTS.md",
+    "actual_path": "collected_documents/unclassified/f21a864654bb__f21a864654bb__agents.md",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/CRE-Curated-Reference-20260803-162157/06_TOOL_CONTEXT/tool-path-catalog.json",
+    "actual_path": "collected_documents/opencode/de980e364880__tool-path-catalog.json",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/CRE-Curated-Reference-20260803-162157/07_HISTORICAL_INDEX/HISTORICAL_PATHS.txt",
+    "actual_path": "collected_documents/opencode/f477331a6a17__historical_paths.txt",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/CRE-Curated-Reference-20260803-162157/07_HISTORICAL_INDEX/desktop-reference-paths.txt",
+    "actual_path": "collected_documents/opencode/462699878192__desktop-reference-paths.txt",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/CRE-Curated-Reference-20260803-162157/07_HISTORICAL_INDEX/duplicate-files.json",
+    "actual_path": "collected_documents/opencode/eda7dc8bf80d__duplicate-files.json",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/CRE-Curated-Reference-20260803-162157/07_HISTORICAL_INDEX/duplicate-files.txt",
+    "actual_path": "collected_documents/opencode/e297260d4dc8__duplicate-files.txt",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/CRE-Curated-Reference-20260803-162157/07_HISTORICAL_INDEX/priority-reference-files.txt",
+    "actual_path": "collected_documents/opencode/5a385c65b8eb__priority-reference-files.txt",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/CRE-Curated-Reference-20260803-162157/07_HISTORICAL_INDEX/reference-metadata.json",
+    "actual_path": "collected_documents/opencode/50f5ddd18286__reference-metadata.json",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/CRE-Curated-Reference-20260803-162157/07_HISTORICAL_INDEX/tool-reference-paths.txt",
+    "actual_path": "collected_documents/opencode/d0ae016ec00a__tool-reference-paths.txt",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/CRE-Curated-Reference-20260803-162157/GEMINI.md",
+    "actual_path": "collected_documents/unclassified/e1093de1edf4__gemini.md",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/CRE-Current-Checkpoint-20260803-184027/branches.txt",
+    "actual_path": "collected_documents/kimi/6034f4ace856__branches.txt",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/CRE-Current-Checkpoint-20260803-184027/git-status.txt",
+    "actual_path": "collected_documents/kimi/65d07fb13a79__git-status.txt",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/CRE-Current-Checkpoint-20260803-184027/partial-security-work/security_secret_log.json",
+    "actual_path": "collected_documents/unclassified/0df4a7e5fe2e__security_secret_log.json",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/CRE-Current-Checkpoint-20260803-184027/results.tsv",
+    "actual_path": "collected_documents/unclassified/a0e36ea088a9__results.tsv",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/CRE-Kimi-Campaign-20260803-195956/04_REPEATING_CAMPAIGN_TEMPLATE.md",
+    "actual_path": "collected_documents/kimi/3dc35ef51a57__04_repeating_campaign_template.md",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/CRE-Kimi-Campaign-20260803-195956/MANIFEST.json",
+    "actual_path": "collected_documents/kimi/16127138ca7c__manifest.json",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/CRE-Kimi-Campaign-20260803-195956/check_state.sh",
+    "actual_path": "collected_documents/kimi/723ea9888599__check_state.sh",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/CRE-Kimi-Campaign-20260803-195956/start_loop_1.sh",
+    "actual_path": "collected_documents/kimi/d7740f7f81ac__start_loop_1.sh",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/CRE-Kimi-Campaign-20260803-195956/start_resume_auto.sh",
+    "actual_path": "collected_documents/kimi/099986d4619c__start_resume_auto.sh",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/CRE-Line-Count-20260803-184823/summary.json",
+    "actual_path": "collected_documents/kimi/25914506c6d1__summary.json",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/CRE-OpenCode-Config-Backup/opencode.json",
+    "actual_path": "collected_documents/opencode/0d9cc2561dbe__opencode.json",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/CRE-Post-Gemini-Audit-20260803-183354/AUDIT_SUMMARY.txt",
+    "actual_path": "collected_documents/kimi/d1167c4a1294__audit_summary.txt",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/CRE-Post-Gemini-Audit-20260803-183354/baseline-exists.txt",
+    "actual_path": "collected_documents/unclassified/a9ac0c3ac83c__baseline-exists.txt",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/CRE-Post-Gemini-Audit-20260803-183354/branch.txt",
+    "actual_path": "collected_documents/kimi/d3d87c34cd09__branch.txt",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/CRE-Post-Gemini-Audit-20260803-183354/commits-after-baseline.txt",
+    "actual_path": "collected_documents/kimi/44b2b8459447__commits-after-baseline.txt",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/CRE-Post-Gemini-Audit-20260803-183354/conflict-marker-scan.txt",
+    "actual_path": "collected_documents/unclassified/384f248fdbd6__conflict-marker-scan.txt",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/CRE-Post-Gemini-Audit-20260803-183354/git-diff-check-exit.txt",
+    "actual_path": "collected_documents/unclassified/9a271f2a916b__git-diff-check-exit.txt",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/CRE-Post-Gemini-Audit-20260803-183354/json-semantic-diff.txt",
+    "actual_path": "collected_documents/unclassified/c0ad125bb1c6__json-semantic-diff.txt",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/CRE-Post-Gemini-Audit-20260803-183354/protected-hash-results.json",
+    "actual_path": "collected_documents/unclassified/d1ec283ebfd8__protected-hash-results.json",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/CRE-Post-Gemini-Audit-20260803-183354/recent-antigravity-state.json",
+    "actual_path": "collected_documents/antigravity/d387fbd4d094__recent-antigravity-state.json",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/CRE-Post-Gemini-Audit-20260803-183354/status.txt",
+    "actual_path": "collected_documents/kimi/82fc55816845__status.txt",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/CRE-Post-Gemini-Audit-20260803-183354/untracked-files.txt",
+    "actual_path": "collected_documents/unclassified/3b16a156164c__untracked-files.txt",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/CRE-Post-Gemini-Audit-20260803-183354/working-tree-manifest.json",
+    "actual_path": "collected_documents/unclassified/e7d4c72121af__working-tree-manifest.json",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/CRE-Prompt-System-Upload/02_RELAY_PROTOCOL.md",
+    "actual_path": "collected_documents/relay/9cc56b1e2756__02_relay_protocol.md",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/CRE-Recovery-20260803-134330/head.txt",
+    "actual_path": "collected_documents/unclassified/f974ebb84fa5__head.txt",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/CRE-Relay-Sandbox/approved-read.txt",
+    "actual_path": "collected_documents/relay/8f754ce2d10b__approved-read.txt",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/CRE-Relay-Sandbox/container-image-test.txt",
+    "actual_path": "collected_documents/relay/a492bd4d29f3__container-image-test.txt",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/CRE-Relay-Sandbox/container-persistence-probe.txt",
+    "actual_path": "collected_documents/relay/bfd40c2d584f__container-persistence-probe.txt",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/CRE-Relay-Sandbox/container-runner-success.txt",
+    "actual_path": "collected_documents/relay/6f005ad56eca__container-runner-success.txt",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/CRE-Relay-Sandbox/full-relay-test.txt",
+    "actual_path": "collected_documents/relay/ca118868b46c__full-relay-test.txt",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/CRE-Relay-Sandbox/normal-container-test.txt",
+    "actual_path": "collected_documents/relay/0d1e23937bae__normal-container-test.txt",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/CRE-Relay-Sandbox/normal-test.txt",
+    "actual_path": "collected_documents/relay/cfda61ce8cb8__normal-test.txt",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/CRE-Relay-Sandbox/os-sandbox-runner-success.txt",
+    "actual_path": "collected_documents/relay/79cd7b43fa0a__os-sandbox-runner-success.txt",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/CRE-Relay-Sandbox/protected-container-test.txt",
+    "actual_path": "collected_documents/relay/4ae716c4a6e3__protected-container-test.txt",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/CRE-Relay-Sandbox/relay-test.txt",
+    "actual_path": "collected_documents/relay/b824562e774b__relay-test.txt",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/CRE-Relay-Sandbox/sandbox-inside-success.txt",
+    "actual_path": "collected_documents/relay/dcabdff80ad8__sandbox-inside-success.txt",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/CRE-Relay-Sandbox/v3-test.txt",
+    "actual_path": "collected_documents/relay/3202ebaee8df__v3-test.txt",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/Kimi-Rescue-20260802-161833/ONE_SHOT_READINESS.json",
+    "actual_path": "collected_documents/kimi/e0fa1f1d0390__one_shot_readiness.json",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/Kimi-Rescue-20260802-161833/cre-recent-commits.txt",
+    "actual_path": "collected_documents/kimi/c488fc8c2a3c__cre-recent-commits.txt",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/Kimi-Rescue-20260802-161833/kimi-code-home/cache/banner/state.json",
+    "actual_path": "collected_documents/kimi/e2968e4415d1__state.json",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/Kimi-Rescue-20260802-161833/kimi-code-home/migrations-effort.json",
+    "actual_path": "collected_documents/kimi/85ece38f20ec__migrations-effort.json",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/Kimi-Rescue-20260802-161833/kimi-code-home/plugins/installed.json",
+    "actual_path": "collected_documents/kimi/871162b19e46__installed.json",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/Kimi-Rescue-20260802-161833/kimi-code-home/plugins/managed/kimi-datasource/CHANGELOG.md",
+    "actual_path": "collected_documents/kimi/d86bd79bb7bc__changelog.md",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/Kimi-Rescue-20260802-161833/kimi-code-home/plugins/managed/kimi-datasource/SKILL.md",
+    "actual_path": "collected_documents/kimi/21cc349d6ae4__skill.md",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/Kimi-Rescue-20260802-161833/kimi-code-home/plugins/managed/kimi-datasource/bin/kimi-datasource.mjs",
+    "actual_path": "collected_documents/kimi/83194b70224f__kimi-datasource.mjs",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/Kimi-Rescue-20260802-161833/kimi-code-home/plugins/managed/kimi-datasource/kimi.plugin.json",
+    "actual_path": "collected_documents/kimi/f1893ae13751__kimi.plugin.json",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/Kimi-Rescue-20260802-161833/kimi-code-home/plugins/managed/kimi-datasource/watchlist.json",
+    "actual_path": "collected_documents/kimi/a629eebe4f4d__watchlist.json",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/Kimi-Rescue-20260802-161833/kimi-code-home/session_index.jsonl",
+    "actual_path": "collected_documents/kimi/13ce74502a96__session_index.jsonl",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/Kimi-Rescue-20260802-161833/kimi-code-home/sessions/wd_alimehdi_27489f1f7f35/session_28e6ae41-583d-451c-9fae-25ebf9783949/agents/main/wire.jsonl",
+    "actual_path": "collected_documents/kimi/ac23885559e8__wire.jsonl",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/Kimi-Rescue-20260802-161833/kimi-code-home/sessions/wd_alimehdi_27489f1f7f35/session_28e6ae41-583d-451c-9fae-25ebf9783949/state.json",
+    "actual_path": "collected_documents/kimi/ae2735058d19__state.json",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/Kimi-Rescue-20260802-161833/kimi-code-home/sessions/wd_cre_1559d34c1cb3/session_159140a0-cb6e-4158-a7bd-a2550db3625f/state.json",
+    "actual_path": "collected_documents/kimi/f0c22fd77ef4__state.json",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/Kimi-Rescue-20260802-161833/kimi-code-home/sessions/wd_cre_1559d34c1cb3/session_45fb9dfc-2598-4d3a-8e46-c6cc281a3838/state.json",
+    "actual_path": "collected_documents/kimi/ad1970bd39be__state.json",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/Kimi-Rescue-20260802-161833/kimi-code-home/sessions/wd_cre_1559d34c1cb3/session_52f7cdb6-ea82-48cd-9db9-150f87a6c820/state.json",
+    "actual_path": "collected_documents/kimi/8ebc2da25a72__state.json",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/Kimi-Rescue-20260802-161833/kimi-code-home/sessions/wd_cre_1559d34c1cb3/session_5e8ff076-bb1d-409e-bb9c-0df92bf90b45/state.json",
+    "actual_path": "collected_documents/kimi/d364d4f9141a__state.json",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/Kimi-Rescue-20260802-161833/kimi-code-home/sessions/wd_cre_1559d34c1cb3/session_65cc0600-087b-4cc6-a4f7-203cabbfac05/state.json",
+    "actual_path": "collected_documents/kimi/7aabd5f5d2ef__state.json",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/Kimi-Rescue-20260802-161833/kimi-code-home/sessions/wd_cre_1559d34c1cb3/session_6d3545e8-c7df-4759-a564-5a05f7ea441f/state.json",
+    "actual_path": "collected_documents/kimi/346aac9be61d__state.json",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/Kimi-Rescue-20260802-161833/kimi-code-home/sessions/wd_cre_1559d34c1cb3/session_6e9d1488-c1c7-4ee4-b5ed-9b5ff75d6c07/state.json",
+    "actual_path": "collected_documents/kimi/e427e903aaa8__state.json",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/Kimi-Rescue-20260802-161833/kimi-code-home/sessions/wd_cre_1559d34c1cb3/session_70d771eb-4ed3-4bfd-ab9e-89b790ce2b48/state.json",
+    "actual_path": "collected_documents/kimi/2c5366e95f20__state.json",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/Kimi-Rescue-20260802-161833/kimi-code-home/sessions/wd_cre_1559d34c1cb3/session_88b60685-8b51-400e-b4e8-1dec1c8c71a1/state.json",
+    "actual_path": "collected_documents/kimi/6424101892af__state.json",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/Kimi-Rescue-20260802-161833/kimi-code-home/sessions/wd_cre_1559d34c1cb3/session_cae9fae7-b44a-4023-9b4a-ba16d1fdc3aa/state.json",
+    "actual_path": "collected_documents/kimi/09cd4ecadd01__state.json",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/Kimi-Rescue-20260802-161833/kimi-code-home/sessions/wd_cre_1559d34c1cb3/session_cc57a386-06e7-49be-aa3b-fcbcc8b04a46/state.json",
+    "actual_path": "collected_documents/kimi/f5e404bbbeac__state.json",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/Kimi-Rescue-20260802-161833/kimi-code-home/sessions/wd_cre_1559d34c1cb3/session_f42af550-c7f2-43d9-94af-65db5207a4ce/agents/agent-2/tool-results/Read-Read_7-3b508228-94eb-4674-897c-96523729b588.txt",
+    "actual_path": "collected_documents/kimi/87b8c1858f4d__read-read_7-3b508228-94eb-4674-897c-96523729b588.txt",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/Kimi-Rescue-20260802-161833/kimi-code-home/sessions/wd_cre_1559d34c1cb3/session_f42af550-c7f2-43d9-94af-65db5207a4ce/state.json",
+    "actual_path": "collected_documents/kimi/a8a1f70e6319__state.json",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/Kimi-Rescue-20260802-161833/kimi-code-home/sessions/wd_plate-party_3081c89cc43c/session_02a4c0be-bf10-4ad7-a991-800201b2410d/agents/agent-0/wire.jsonl",
+    "actual_path": "collected_documents/kimi/033b2b9a1d76__wire.jsonl",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/Kimi-Rescue-20260802-161833/kimi-code-home/sessions/wd_plate-party_3081c89cc43c/session_02a4c0be-bf10-4ad7-a991-800201b2410d/agents/agent-1/wire.jsonl",
+    "actual_path": "collected_documents/kimi/068af3e33a7c__wire.jsonl",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/Kimi-Rescue-20260802-161833/kimi-code-home/sessions/wd_plate-party_3081c89cc43c/session_02a4c0be-bf10-4ad7-a991-800201b2410d/agents/agent-2/wire.jsonl",
+    "actual_path": "collected_documents/kimi/dd6f00b978d5__wire.jsonl",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/Kimi-Rescue-20260802-161833/kimi-code-home/sessions/wd_plate-party_3081c89cc43c/session_02a4c0be-bf10-4ad7-a991-800201b2410d/agents/agent-3/wire.jsonl",
+    "actual_path": "collected_documents/kimi/8f53c142d37c__wire.jsonl",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/Kimi-Rescue-20260802-161833/kimi-code-home/sessions/wd_plate-party_3081c89cc43c/session_02a4c0be-bf10-4ad7-a991-800201b2410d/agents/agent-4/wire.jsonl",
+    "actual_path": "collected_documents/kimi/bb854dc01f85__wire.jsonl",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/Kimi-Rescue-20260802-161833/kimi-code-home/sessions/wd_plate-party_3081c89cc43c/session_02a4c0be-bf10-4ad7-a991-800201b2410d/agents/agent-5/wire.jsonl",
+    "actual_path": "collected_documents/kimi/1bdb7b6393fe__wire.jsonl",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/Kimi-Rescue-20260802-161833/kimi-code-home/sessions/wd_plate-party_3081c89cc43c/session_02a4c0be-bf10-4ad7-a991-800201b2410d/agents/agent-6/wire.jsonl",
+    "actual_path": "collected_documents/kimi/0cea80fa4b2c__wire.jsonl",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/Kimi-Rescue-20260802-161833/kimi-code-home/sessions/wd_plate-party_3081c89cc43c/session_02a4c0be-bf10-4ad7-a991-800201b2410d/agents/agent-7/wire.jsonl",
+    "actual_path": "collected_documents/kimi/7e8d2af53f01__wire.jsonl",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/Kimi-Rescue-20260802-161833/kimi-code-home/sessions/wd_plate-party_3081c89cc43c/session_02a4c0be-bf10-4ad7-a991-800201b2410d/agents/agent-8/wire.jsonl",
+    "actual_path": "collected_documents/kimi/78f5c451e43f__wire.jsonl",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/Kimi-Rescue-20260802-161833/kimi-code-home/sessions/wd_plate-party_3081c89cc43c/session_02a4c0be-bf10-4ad7-a991-800201b2410d/agents/agent-9/wire.jsonl",
+    "actual_path": "collected_documents/kimi/30556465ecd6__wire.jsonl",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/Kimi-Rescue-20260802-161833/kimi-code-home/sessions/wd_plate-party_3081c89cc43c/session_02a4c0be-bf10-4ad7-a991-800201b2410d/agents/main/tasks/bash-05s8xlpw.json",
+    "actual_path": "collected_documents/kimi/3c8f7f094126__bash-05s8xlpw.json",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/Kimi-Rescue-20260802-161833/kimi-code-home/sessions/wd_plate-party_3081c89cc43c/session_02a4c0be-bf10-4ad7-a991-800201b2410d/agents/main/tasks/bash-2mou087k.json",
+    "actual_path": "collected_documents/kimi/0f9f6b82afaa__bash-2mou087k.json",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/Kimi-Rescue-20260802-161833/kimi-code-home/sessions/wd_plate-party_3081c89cc43c/session_02a4c0be-bf10-4ad7-a991-800201b2410d/agents/main/tasks/bash-3ssiqs4i.json",
+    "actual_path": "collected_documents/kimi/e4fe67312211__bash-3ssiqs4i.json",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/Kimi-Rescue-20260802-161833/kimi-code-home/sessions/wd_plate-party_3081c89cc43c/session_02a4c0be-bf10-4ad7-a991-800201b2410d/agents/main/tasks/bash-52fio5yb.json",
+    "actual_path": "collected_documents/kimi/3031156fc380__bash-52fio5yb.json",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/Kimi-Rescue-20260802-161833/kimi-code-home/sessions/wd_plate-party_3081c89cc43c/session_02a4c0be-bf10-4ad7-a991-800201b2410d/agents/main/tasks/bash-9zykk4c1.json",
+    "actual_path": "collected_documents/kimi/0162ad67631f__bash-9zykk4c1.json",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/Kimi-Rescue-20260802-161833/kimi-code-home/sessions/wd_plate-party_3081c89cc43c/session_02a4c0be-bf10-4ad7-a991-800201b2410d/agents/main/tasks/bash-d2n1umg6.json",
+    "actual_path": "collected_documents/kimi/82b66da0b5eb__bash-d2n1umg6.json",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/Kimi-Rescue-20260802-161833/kimi-code-home/sessions/wd_plate-party_3081c89cc43c/session_02a4c0be-bf10-4ad7-a991-800201b2410d/agents/main/tasks/bash-e2ddk2mn.json",
+    "actual_path": "collected_documents/kimi/04178b425944__bash-e2ddk2mn.json",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/Kimi-Rescue-20260802-161833/kimi-code-home/sessions/wd_plate-party_3081c89cc43c/session_02a4c0be-bf10-4ad7-a991-800201b2410d/agents/main/tasks/bash-i4vb35lt.json",
+    "actual_path": "collected_documents/kimi/680d41b70013__bash-i4vb35lt.json",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/Kimi-Rescue-20260802-161833/kimi-code-home/sessions/wd_plate-party_3081c89cc43c/session_02a4c0be-bf10-4ad7-a991-800201b2410d/agents/main/tasks/bash-jinwrq8m.json",
+    "actual_path": "collected_documents/kimi/58f51d9c2532__bash-jinwrq8m.json",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/Kimi-Rescue-20260802-161833/kimi-code-home/sessions/wd_plate-party_3081c89cc43c/session_02a4c0be-bf10-4ad7-a991-800201b2410d/agents/main/tasks/bash-lwv5179g.json",
+    "actual_path": "collected_documents/kimi/1935cd47608c__bash-lwv5179g.json",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/Kimi-Rescue-20260802-161833/kimi-code-home/sessions/wd_plate-party_3081c89cc43c/session_02a4c0be-bf10-4ad7-a991-800201b2410d/agents/main/tasks/bash-p1rirb0t.json",
+    "actual_path": "collected_documents/kimi/cc5457c99187__bash-p1rirb0t.json",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/Kimi-Rescue-20260802-161833/kimi-code-home/sessions/wd_plate-party_3081c89cc43c/session_02a4c0be-bf10-4ad7-a991-800201b2410d/agents/main/tasks/bash-sgc6d1ab.json",
+    "actual_path": "collected_documents/kimi/5ffef2bf608e__bash-sgc6d1ab.json",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/Kimi-Rescue-20260802-161833/kimi-code-home/sessions/wd_plate-party_3081c89cc43c/session_02a4c0be-bf10-4ad7-a991-800201b2410d/agents/main/tasks/bash-tbtocxrs.json",
+    "actual_path": "collected_documents/kimi/9001b5675442__bash-tbtocxrs.json",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/Kimi-Rescue-20260802-161833/kimi-code-home/sessions/wd_plate-party_3081c89cc43c/session_02a4c0be-bf10-4ad7-a991-800201b2410d/agents/main/tasks/bash-zppo80w6.json",
+    "actual_path": "collected_documents/kimi/981a0606d536__bash-zppo80w6.json",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/Kimi-Rescue-20260802-161833/kimi-code-home/sessions/wd_plate-party_3081c89cc43c/session_02a4c0be-bf10-4ad7-a991-800201b2410d/state.json",
+    "actual_path": "collected_documents/kimi/d99663fe3608__state.json",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/Kimi-Rescue-20260802-161833/kimi-code-home/sessions/wd_plate-party_3081c89cc43c/session_2b7b20d2-5145-4af4-bf5e-8e800a4d244d/agents/main/wire.jsonl",
+    "actual_path": "collected_documents/kimi/8d9aa18479fb__wire.jsonl",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/Kimi-Rescue-20260802-161833/kimi-code-home/sessions/wd_plate-party_3081c89cc43c/session_2b7b20d2-5145-4af4-bf5e-8e800a4d244d/state.json",
+    "actual_path": "collected_documents/kimi/e7c5529baaad__state.json",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/Kimi-Rescue-20260802-161833/kimi-code-home/sessions/wd_plate-party_3081c89cc43c/session_49283987-0be3-4b64-8294-3104572b1976/agents/main/wire.jsonl",
+    "actual_path": "collected_documents/kimi/5c30bedabef5__wire.jsonl",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/Kimi-Rescue-20260802-161833/kimi-code-home/sessions/wd_plate-party_3081c89cc43c/session_49283987-0be3-4b64-8294-3104572b1976/state.json",
+    "actual_path": "collected_documents/kimi/a9eb042cd391__state.json",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/Kimi-Rescue-20260802-161833/kimi-code-home/sessions/wd_plate-party_3081c89cc43c/session_4e0e3729-a149-4a3a-881d-e910ad5f1786/agents/main/wire.jsonl",
+    "actual_path": "collected_documents/kimi/c1b2093706c4__wire.jsonl",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/Kimi-Rescue-20260802-161833/kimi-code-home/sessions/wd_plate-party_3081c89cc43c/session_4e0e3729-a149-4a3a-881d-e910ad5f1786/state.json",
+    "actual_path": "collected_documents/kimi/7d34f077ceaf__state.json",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/Kimi-Rescue-20260802-161833/kimi-code-home/sessions/wd_plate-party_3081c89cc43c/session_664767c5-324c-4d0b-88f5-52561fee6618/agents/main/wire.jsonl",
+    "actual_path": "collected_documents/kimi/2288346f913d__wire.jsonl",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/Kimi-Rescue-20260802-161833/kimi-code-home/sessions/wd_plate-party_3081c89cc43c/session_664767c5-324c-4d0b-88f5-52561fee6618/state.json",
+    "actual_path": "collected_documents/kimi/d5aaf14d8a33__state.json",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/Kimi-Rescue-20260802-161833/kimi-code-home/sessions/wd_plate-party_3081c89cc43c/session_674a564e-fb3d-43a6-83cb-6177066eae97/agents/main/wire.jsonl",
+    "actual_path": "collected_documents/kimi/e558d05c5bc2__wire.jsonl",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/Kimi-Rescue-20260802-161833/kimi-code-home/sessions/wd_plate-party_3081c89cc43c/session_674a564e-fb3d-43a6-83cb-6177066eae97/state.json",
+    "actual_path": "collected_documents/kimi/0963d4c83907__state.json",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/Kimi-Rescue-20260802-161833/kimi-code-home/sessions/wd_plate-party_3081c89cc43c/session_94c71986-05b6-45d6-9dd1-555c7a393dc4/agents/main/wire.jsonl",
+    "actual_path": "collected_documents/kimi/139d078abc5a__wire.jsonl",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/Kimi-Rescue-20260802-161833/kimi-code-home/sessions/wd_plate-party_3081c89cc43c/session_94c71986-05b6-45d6-9dd1-555c7a393dc4/state.json",
+    "actual_path": "collected_documents/kimi/960206dee25b__state.json",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/Kimi-Rescue-20260802-161833/kimi-code-home/sessions/wd_plate-party_3081c89cc43c/session_a8943910-004a-481a-858b-5e112b2fbbae/agents/main/wire.jsonl",
+    "actual_path": "collected_documents/kimi/a2eede777560__wire.jsonl",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/Kimi-Rescue-20260802-161833/kimi-code-home/sessions/wd_plate-party_3081c89cc43c/session_a8943910-004a-481a-858b-5e112b2fbbae/state.json",
+    "actual_path": "collected_documents/kimi/f1f99ce4c7b2__state.json",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/Kimi-Rescue-20260802-161833/kimi-code-home/sessions/wd_plate-party_3081c89cc43c/session_cd7cef3f-1a27-4d1c-9bb4-81baf59f6806/agents/main/wire.jsonl",
+    "actual_path": "collected_documents/kimi/fd929a37e0c6__wire.jsonl",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/Kimi-Rescue-20260802-161833/kimi-code-home/sessions/wd_plate-party_3081c89cc43c/session_cd7cef3f-1a27-4d1c-9bb4-81baf59f6806/state.json",
+    "actual_path": "collected_documents/kimi/a986b75a7bc8__state.json",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/Kimi-Rescue-20260802-161833/kimi-code-home/sessions/wd_plate-party_3081c89cc43c/session_cfbec6c5-8052-45bd-8d8d-eb5d27569f70/agents/agent-0/wire.jsonl",
+    "actual_path": "collected_documents/kimi/966572c9598a__wire.jsonl",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/Kimi-Rescue-20260802-161833/kimi-code-home/sessions/wd_plate-party_3081c89cc43c/session_cfbec6c5-8052-45bd-8d8d-eb5d27569f70/state.json",
+    "actual_path": "collected_documents/kimi/c8070ec35268__state.json",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/Kimi-Rescue-20260802-161833/kimi-code-home/sessions/wd_plate-party_3081c89cc43c/session_d2a26ee0-cbe3-4e4c-b48f-ee500a67d581/agents/main/wire.jsonl",
+    "actual_path": "collected_documents/kimi/08c4da14f15d__wire.jsonl",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/Kimi-Rescue-20260802-161833/kimi-code-home/sessions/wd_plate-party_3081c89cc43c/session_d2a26ee0-cbe3-4e4c-b48f-ee500a67d581/state.json",
+    "actual_path": "collected_documents/kimi/dc819581a4d2__state.json",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/Kimi-Rescue-20260802-161833/kimi-code-home/sessions/wd_plate-party_3081c89cc43c/session_e987749a-f017-4b34-8b8c-479d5c326747/agents/main/wire.jsonl",
+    "actual_path": "collected_documents/kimi/ea0af6450523__wire.jsonl",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/Kimi-Rescue-20260802-161833/kimi-code-home/sessions/wd_plate-party_3081c89cc43c/session_e987749a-f017-4b34-8b8c-479d5c326747/state.json",
+    "actual_path": "collected_documents/kimi/416ab99f829b__state.json",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/Kimi-Rescue-20260802-161833/kimi-code-home/sessions/wd_plate-party_3081c89cc43c/session_f68d2e55-c916-42a4-a04c-de97565a6376/agents/main/wire.jsonl",
+    "actual_path": "collected_documents/kimi/f2a805b8130c__wire.jsonl",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/Kimi-Rescue-20260802-161833/kimi-code-home/sessions/wd_plate-party_3081c89cc43c/session_f68d2e55-c916-42a4-a04c-de97565a6376/state.json",
+    "actual_path": "collected_documents/kimi/fa564da3367e__state.json",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/Kimi-Rescue-20260802-161833/kimi-code-home/tui.toml",
+    "actual_path": "collected_documents/kimi/19e1721956cf__tui.toml",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/Kimi-Rescue-20260802-161833/kimi-code-home/updates/install.json",
+    "actual_path": "collected_documents/kimi/95aa524846c3__install.json",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/Kimi-Rescue-20260802-161833/kimi-code-home/updates/latest.json",
+    "actual_path": "collected_documents/kimi/03f63adf5a24__latest.json",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/Kimi-Rescue-20260802-161833/kimi-code-home/user-history/85b2f4fb8519c3d412e26cff2e66bf8b.jsonl",
+    "actual_path": "collected_documents/kimi/04d0917076f7__85b2f4fb8519c3d412e26cff2e66bf8b.jsonl",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/Kimi-Rescue-20260802-161833/kimi-code-home/user-history/d75d60e9531d46a1f3bc4c8859aaabc5.jsonl",
+    "actual_path": "collected_documents/kimi/b7eb99daa833__d75d60e9531d46a1f3bc4c8859aaabc5.jsonl",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/Kimi-Rescue-20260802-161833/kimi-code-home/workspaces.json",
+    "actual_path": "collected_documents/kimi/167774d0d5b6__workspaces.json",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/Kimi-Rescue-20260802-161833/recent-kimi-sessions.txt",
+    "actual_path": "collected_documents/kimi/bdd46bf00ac6__recent-kimi-sessions.txt",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/Screenshot 2026-06-18 at 19.55.25.png",
+    "actual_path": "collected_documents/unclassified/3f9886cd81cc__screenshot-2026-06-18-at-19.55.25.png",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/Screenshot 2026-06-18 at 19.55.38.png",
+    "actual_path": "collected_documents/unclassified/b78691a51730__screenshot-2026-06-18-at-19.55.38.png",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/Screenshot 2026-06-19 at 00.16.19.png",
+    "actual_path": "collected_documents/unclassified/c477e3a9f2d9__screenshot-2026-06-19-at-00.16.19.png",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/Screenshot 2026-06-21 at 18.16.33.png",
+    "actual_path": "collected_documents/unclassified/8b4e8b2cc50c__screenshot-2026-06-21-at-18.16.33.png",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/Screenshot 2026-06-23 at 11.39.31.png",
+    "actual_path": "collected_documents/unclassified/ee200e2c0cb4__screenshot-2026-06-23-at-11.39.31.png",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/Screenshot 2026-06-23 at 11.39.34.png",
+    "actual_path": "collected_documents/unclassified/efb40314433d__screenshot-2026-06-23-at-11.39.34.png",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/Screenshot 2026-06-25 at 05.10.26.png",
+    "actual_path": "collected_documents/unclassified/b263cc6a6280__screenshot-2026-06-25-at-05.10.26.png",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/Screenshot 2026-06-25 at 08.47.10.png",
+    "actual_path": "collected_documents/unclassified/870320bf7eab__screenshot-2026-06-25-at-08.47.10.png",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/Screenshot 2026-06-26 at 00.05.08.png",
+    "actual_path": "collected_documents/unclassified/9669b1b198d3__screenshot-2026-06-26-at-00.05.08.png",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/Screenshot 2026-06-26 at 13.36.21.png",
+    "actual_path": "collected_documents/unclassified/aac1f7a56f24__screenshot-2026-06-26-at-13.36.21.png",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/Screenshot 2026-06-27 at 09.55.04.png",
+    "actual_path": "collected_documents/unclassified/54bd777b877c__screenshot-2026-06-27-at-09.55.04.png",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/Screenshot 2026-06-27 at 17.17.17.png",
+    "actual_path": "collected_documents/unclassified/32f38b23f4f2__screenshot-2026-06-27-at-17.17.17.png",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/Screenshot 2026-06-27 at 17.44.07.png",
+    "actual_path": "collected_documents/unclassified/e3d6ed8d4834__screenshot-2026-06-27-at-17.44.07.png",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/Screenshot 2026-07-09 at 19.50.32.png",
+    "actual_path": "collected_documents/unclassified/78bda1277ae2__screenshot-2026-07-09-at-19.50.32.png",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/Screenshot 2026-07-20 at 16.06.49.png",
+    "actual_path": "collected_documents/unclassified/d022a42ba659__screenshot-2026-07-20-at-16.06.49.png",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/Screenshot 2026-07-20 at 16.06.51.png",
+    "actual_path": "collected_documents/unclassified/beb8745c16df__screenshot-2026-07-20-at-16.06.51.png",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/Screenshot 2026-07-20 at 16.06.54.png",
+    "actual_path": "collected_documents/unclassified/19ccb41a8a19__screenshot-2026-07-20-at-16.06.54.png",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/Screenshot 2026-07-24 at 22.27.22.png",
+    "actual_path": "collected_documents/unclassified/2c6c71d65e5f__screenshot-2026-07-24-at-22.27.22.png",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/Screenshot 2026-07-25 at 23.32.18.png",
+    "actual_path": "collected_documents/unclassified/37cd64056879__screenshot-2026-07-25-at-23.32.18.png",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/Screenshot 2026-07-25 at 23.32.40.png",
+    "actual_path": "collected_documents/unclassified/0fdc6081f655__screenshot-2026-07-25-at-23.32.40.png",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/Screenshot 2026-08-03 at 23.41.00.png",
+    "actual_path": "collected_documents/unclassified/a880b1781124__screenshot-2026-08-03-at-23.41.00.png",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/Screenshot 2026-08-03 at 23.48.42.png",
+    "actual_path": "collected_documents/unclassified/a55302a55026__screenshot-2026-08-03-at-23.48.42.png",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/plate_party_backend/supabase/functions/create-challenge/index.ts",
+    "actual_path": "collected_documents/unclassified/45f627451fb3__index.ts",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/plate_party_backend/supabase/functions/create-game-session/index.ts",
+    "actual_path": "collected_documents/unclassified/3b417858b2f3__index.ts",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/plate_party_complete/Screenshot 2026-08-04 at 00.00.05.png",
+    "actual_path": "collected_documents/unclassified/cbaa587fdc50__screenshot-2026-08-04-at-00.00.05.png",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/plate_party_complete/src/screens/party/CreatePartyScreen.tsx",
+    "actual_path": "collected_documents/unclassified/75a6b1ba9fc9__createpartyscreen.tsx",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/plate_party_complete/src/screens/party/JoinPartyScreen.tsx",
+    "actual_path": "collected_documents/unclassified/490b6f6051bb__joinpartyscreen.tsx",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/plate_party_complete/src/screens/party/PartyDetailScreen.tsx",
+    "actual_path": "collected_documents/unclassified/8739fa47cd9e__partydetailscreen.tsx",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/plate_party_complete/src/screens/party/PartyDiscoveryScreen.tsx",
+    "actual_path": "collected_documents/unclassified/293c593fe6a6__partydiscoveryscreen.tsx",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/plate_party_complete/src/screens/profile/ActivityHistoryScreen.tsx",
+    "actual_path": "collected_documents/unclassified/4951e6409065__activityhistoryscreen.tsx",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/plate_party_complete/src/screens/profile/EditProfileScreen.tsx",
+    "actual_path": "collected_documents/unclassified/1d12f259d286__editprofilescreen.tsx",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/plate_party_complete/src/screens/profile/ProfileScreen.tsx",
+    "actual_path": "collected_documents/unclassified/b08d6dba36b9__profilescreen.tsx",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/plate_party_complete/src/screens/profile/SettingsScreen.tsx",
+    "actual_path": "collected_documents/unclassified/d8ba659363e8__settingsscreen.tsx",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/plate_party_complete_v2/src/screens/party/CreatePartyScreen.tsx",
+    "actual_path": "collected_documents/unclassified/68830872ea3a__createpartyscreen.tsx",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/plate_party_complete_v2/src/screens/party/JoinPartyScreen.tsx",
+    "actual_path": "collected_documents/unclassified/ddd32fd0102f__joinpartyscreen.tsx",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/plate_party_complete_v2/src/screens/party/PartyDetailScreen.tsx",
+    "actual_path": "collected_documents/unclassified/6062e8615cdc__partydetailscreen.tsx",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/plate_party_complete_v2/src/screens/party/PartyDiscoveryScreen.tsx",
+    "actual_path": "collected_documents/unclassified/b36e4ae4650d__partydiscoveryscreen.tsx",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/plate_party_complete_v2/src/screens/profile/ActivityHistoryScreen.tsx",
+    "actual_path": "collected_documents/unclassified/4b6fd8f9fdcc__activityhistoryscreen.tsx",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/plate_party_complete_v2/src/screens/profile/EditProfileScreen.tsx",
+    "actual_path": "collected_documents/unclassified/a95d9cee3db5__editprofilescreen.tsx",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/plate_party_complete_v2/src/screens/profile/ProfileScreen.tsx",
+    "actual_path": "collected_documents/unclassified/629d9ce99ff6__profilescreen.tsx",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/plate_party_complete_v2/src/screens/profile/SettingsScreen.tsx",
+    "actual_path": "collected_documents/unclassified/8d54d1f18a6d__settingsscreen.tsx",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Desktop/plate_party_swarm_v2/INTEGRATION_GUIDE.md",
+    "actual_path": "collected_documents/kimi/401f6034ee0b__integration_guide.md",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/Codex/2026-04-18-help-me-fix-and-impove-this/README.md",
+    "actual_path": "collected_documents/codex/1e67a819e22d__readme.md",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/Codex/2026-04-18-help-me-fix-and-impove-this/docs/ARCHITECTURE_REVIEW.md",
+    "actual_path": "collected_documents/codex/a4d00e27f234__architecture_review.md",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/Codex/2026-04-18-help-me-fix-and-impove-this/docs/IMPLEMENTATION_PLAN.md",
+    "actual_path": "collected_documents/codex/7174827bffcf__implementation_plan.md",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/Codex/2026-04-18-help-me-fix-and-impove-this/docs/MVP_SPEC.md",
+    "actual_path": "collected_documents/codex/ba43739b1458__mvp_spec.md",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/cre-kimi-handoff-20260802-054814/backup/SHA256SUMS.txt",
+    "actual_path": "collected_documents/kimi/127c7a141141__sha256sums.txt",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/cre-kimi-handoff-20260802-054814/key-files/artifacts/context/current_task_packet.json",
+    "actual_path": "collected_documents/kimi/b78d8fbb4b40__current_task_packet.json",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/cre-kimi-handoff-20260802-054814/key-files/control/AUTONOMOUS_FRONTIER_CONTRACT.json",
+    "actual_path": "collected_documents/kimi/e00a0dc3358a__autonomous_frontier_contract.json",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/cre-kimi-handoff-20260802-054814/key-files/control/DECISIONS.md",
+    "actual_path": "collected_documents/codex/94f9630a002e__decisions.md",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/cre-kimi-handoff-20260802-054814/key-files/control/GATES.json",
+    "actual_path": "collected_documents/codex/b3fb0832582c__gates.json",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/cre-kimi-handoff-20260802-054814/key-files/pyproject.toml",
+    "actual_path": "collected_documents/codex/b51a5b957a91__pyproject.toml",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/cre-kimi-handoff-20260802-054814/logs/diagnostic-exit-codes.txt",
+    "actual_path": "collected_documents/kimi/f166fa8d4772__diagnostic-exit-codes.txt",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/cre-kimi-handoff-20260802-054814/logs/git-fsck.txt",
+    "actual_path": "collected_documents/kimi/c77ca7fa8c8d__git-fsck.txt",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/cre-kimi-handoff-20260802-054814/state/current-branch.txt",
+    "actual_path": "collected_documents/kimi/6403203dd5a0__current-branch.txt",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/cre-kimi-handoff-20260802-054814/state/git-status-porcelain-v2.txt",
+    "actual_path": "collected_documents/kimi/0c50276e9cfc__git-status-porcelain-v2.txt",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/cre-kimi-handoff-20260802-054814/state/git-status-short.txt",
+    "actual_path": "collected_documents/kimi/f0aca206c842__git-status-short.txt",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/cre-kimi-handoff-20260802-054814/state/head-commit.txt",
+    "actual_path": "collected_documents/kimi/45bbeb4f0bed__head-commit.txt",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/cre-kimi-handoff-20260802-054814/state/untracked-files.txt",
+    "actual_path": "collected_documents/kimi/e781aecc0434__untracked-files.txt",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/cre-kimi-handoff-20260802-054814/state/worktrees.txt",
+    "actual_path": "collected_documents/kimi/86c86d9952db__worktrees.txt",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/cre-kimi-handoff-20260802-055026/backup/SHA256SUMS.txt",
+    "actual_path": "collected_documents/kimi/e2df9b8414cf__sha256sums.txt",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/PROJECT_SUMMARY.md",
+    "actual_path": "collected_documents/kimi/7ae622f0f8b9__project_summary.md",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/android/app/src/main/res/drawable-hdpi/splashscreen_logo.png",
+    "actual_path": "collected_documents/unclassified/721c895579cb__splashscreen_logo.png",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/android/app/src/main/res/drawable-mdpi/splashscreen_logo.png",
+    "actual_path": "collected_documents/unclassified/f84b9b17a4a1__splashscreen_logo.png",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/android/app/src/main/res/drawable-xhdpi/splashscreen_logo.png",
+    "actual_path": "collected_documents/unclassified/e1c5250e339a__splashscreen_logo.png",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/android/app/src/main/res/drawable-xxhdpi/splashscreen_logo.png",
+    "actual_path": "collected_documents/unclassified/23d97ccb41a8__splashscreen_logo.png",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/android/app/src/main/res/drawable-xxxhdpi/splashscreen_logo.png",
+    "actual_path": "collected_documents/unclassified/be9fac5c4cda__splashscreen_logo.png",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/ios/Pods/React-Core-prebuilt/React.xcframework/Headers/React_Fabric/react/renderer/components/view/ConcreteViewShadowNode.h",
+    "actual_path": "collected_documents/unclassified/2e5ba6d7c52f__concreteviewshadownode.h",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/ios/Pods/React-Core-prebuilt/React.xcframework/Headers/React_Fabric/react/renderer/core/ConcreteComponentDescriptor.h",
+    "actual_path": "collected_documents/unclassified/658e0cb47155__concretecomponentdescriptor.h",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/ios/Pods/React-Core-prebuilt/React.xcframework/Headers/React_Fabric/react/renderer/core/ConcreteShadowNode.h",
+    "actual_path": "collected_documents/unclassified/572c41bff38f__concreteshadownode.h",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/ios/Pods/React-Core-prebuilt/React.xcframework/Headers/React_Fabric/react/renderer/core/ConcreteState.h",
+    "actual_path": "collected_documents/unclassified/bb7ebc054cbd__concretestate.h",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/ios/Pods/ReactNativeDependencies/Headers/boost/random/discrete_distribution.hpp",
+    "actual_path": "collected_documents/unclassified/b84e4fd5aff4__discrete_distribution.hpp",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/ios/Pods/ReactNativeDependencies/Headers/boost/type_traits/has_pre_increment.hpp",
+    "actual_path": "collected_documents/unclassified/f0cc939dfc66__has_pre_increment.hpp",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/ios/Pods/RevenueCat/Sources/OfflineEntitlements/OfflineCustomerInfoCreator.swift",
+    "actual_path": "collected_documents/unclassified/7b1c5be7396c__offlinecustomerinfocreator.swift",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/ios/Pods/Target Support Files/RNScreens/RNScreens-umbrella.h",
+    "actual_path": "collected_documents/unclassified/fe0b1e92303d__rnscreens-umbrella.h",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/ios/build/generated/ios/ReactCodegen/react/renderer/components/rnscreens/ComponentDescriptors.h",
+    "actual_path": "collected_documents/unclassified/9cb3bbe083f0__componentdescriptors.h",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/ios/build/generated/ios/ReactCodegen/react/renderer/components/rnscreens/EventEmitters.h",
+    "actual_path": "collected_documents/unclassified/2aec33d769f1__eventemitters.h",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/ios/build/generated/ios/ReactCodegen/react/renderer/components/rnscreens/Props.h",
+    "actual_path": "collected_documents/unclassified/c54591de31cb__props.h",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/ios/build/generated/ios/ReactCodegen/react/renderer/components/rnscreens/RCTComponentViewHelpers.h",
+    "actual_path": "collected_documents/unclassified/244f5025f98c__rctcomponentviewhelpers.h",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/ios/build/generated/ios/ReactCodegen/react/renderer/components/rnscreens/ShadowNodes.h",
+    "actual_path": "collected_documents/unclassified/833a746883af__shadownodes.h",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/ios/build/generated/ios/ReactCodegen/react/renderer/components/rnscreens/States.h",
+    "actual_path": "collected_documents/unclassified/bfe55d7c77c6__states.h",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/ios/build/generated/ios/ReactCodegen/rnscreens/rnscreens.h",
+    "actual_path": "collected_documents/unclassified/c77b4cc4d1fa__rnscreens.h",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/ios/build/generated/ios/ReactCodegen/rnscreensJSI.h",
+    "actual_path": "collected_documents/unclassified/cb848a3fbdb1__rnscreensjsi.h",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/node_modules/react-native-screens/common/cpp/react/renderer/components/rnscreens/FrameCorrectionModes.h",
+    "actual_path": "collected_documents/unclassified/ccb7bd3054fc__framecorrectionmodes.h",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/node_modules/react-native-screens/common/cpp/react/renderer/components/rnscreens/RNSFullWindowOverlayComponentDescriptor.h",
+    "actual_path": "collected_documents/unclassified/7bf86cdf2b91__rnsfullwindowoverlaycomponentdescriptor.h",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/node_modules/react-native-screens/common/cpp/react/renderer/components/rnscreens/RNSFullWindowOverlayShadowNode.h",
+    "actual_path": "collected_documents/unclassified/f1a0b9636218__rnsfullwindowoverlayshadownode.h",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/node_modules/react-native-screens/common/cpp/react/renderer/components/rnscreens/RNSFullWindowOverlayState.h",
+    "actual_path": "collected_documents/unclassified/0c846a672c3d__rnsfullwindowoverlaystate.h",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/node_modules/react-native-screens/common/cpp/react/renderer/components/rnscreens/RNSModalScreenComponentDescriptor.h",
+    "actual_path": "collected_documents/unclassified/391acbe0bd33__rnsmodalscreencomponentdescriptor.h",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/node_modules/react-native-screens/common/cpp/react/renderer/components/rnscreens/RNSModalScreenShadowNode.h",
+    "actual_path": "collected_documents/unclassified/799eb199e5ff__rnsmodalscreenshadownode.h",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/node_modules/react-native-screens/common/cpp/react/renderer/components/rnscreens/RNSSafeAreaViewComponentDescriptor.h",
+    "actual_path": "collected_documents/unclassified/cf2f0901456f__rnssafeareaviewcomponentdescriptor.h",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/node_modules/react-native-screens/common/cpp/react/renderer/components/rnscreens/RNSSafeAreaViewShadowNode.h",
+    "actual_path": "collected_documents/unclassified/aff0caaf2eea__rnssafeareaviewshadownode.h",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/node_modules/react-native-screens/common/cpp/react/renderer/components/rnscreens/RNSSafeAreaViewState.h",
+    "actual_path": "collected_documents/unclassified/b5b85f0af1b5__rnssafeareaviewstate.h",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/node_modules/react-native-screens/common/cpp/react/renderer/components/rnscreens/RNSScreenComponentDescriptor.h",
+    "actual_path": "collected_documents/unclassified/df594a7f9392__rnsscreencomponentdescriptor.h",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/node_modules/react-native-screens/common/cpp/react/renderer/components/rnscreens/RNSScreenShadowNode.h",
+    "actual_path": "collected_documents/unclassified/b23404b5cfd3__rnsscreenshadownode.h",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/node_modules/react-native-screens/common/cpp/react/renderer/components/rnscreens/RNSScreenShadowNodeCommitHook.h",
+    "actual_path": "collected_documents/unclassified/26550ce837e8__rnsscreenshadownodecommithook.h",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/node_modules/react-native-screens/common/cpp/react/renderer/components/rnscreens/RNSScreenStackHeaderConfigComponentDescriptor.h",
+    "actual_path": "collected_documents/unclassified/7d501a695920__rnsscreenstackheaderconfigcomponentdescriptor.h",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/node_modules/react-native-screens/common/cpp/react/renderer/components/rnscreens/RNSScreenStackHeaderConfigShadowNode.h",
+    "actual_path": "collected_documents/unclassified/86babe7d62da__rnsscreenstackheaderconfigshadownode.h",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/node_modules/react-native-screens/common/cpp/react/renderer/components/rnscreens/RNSScreenStackHeaderConfigState.h",
+    "actual_path": "collected_documents/unclassified/120b265ed3e4__rnsscreenstackheaderconfigstate.h",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/node_modules/react-native-screens/common/cpp/react/renderer/components/rnscreens/RNSScreenStackHeaderSubviewComponentDescriptor.h",
+    "actual_path": "collected_documents/unclassified/b7ce17e6af00__rnsscreenstackheadersubviewcomponentdescriptor.h",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/node_modules/react-native-screens/common/cpp/react/renderer/components/rnscreens/RNSScreenStackHeaderSubviewShadowNode.h",
+    "actual_path": "collected_documents/unclassified/0831675960c6__rnsscreenstackheadersubviewshadownode.h",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/node_modules/react-native-screens/common/cpp/react/renderer/components/rnscreens/RNSScreenStackHeaderSubviewState.h",
+    "actual_path": "collected_documents/unclassified/64272911dd02__rnsscreenstackheadersubviewstate.h",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/node_modules/react-native-screens/common/cpp/react/renderer/components/rnscreens/RNSScreenState.h",
+    "actual_path": "collected_documents/unclassified/cfb1b58868a4__rnsscreenstate.h",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/node_modules/react-native-screens/common/cpp/react/renderer/components/rnscreens/RNSSplitScreenComponentDescriptor.h",
+    "actual_path": "collected_documents/unclassified/63de566e3919__rnssplitscreencomponentdescriptor.h",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/node_modules/react-native-screens/common/cpp/react/renderer/components/rnscreens/RNSSplitScreenShadowNode.h",
+    "actual_path": "collected_documents/unclassified/7d248cf5d872__rnssplitscreenshadownode.h",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/node_modules/react-native-screens/common/cpp/react/renderer/components/rnscreens/RNSSplitScreenState.h",
+    "actual_path": "collected_documents/unclassified/8760d625a288__rnssplitscreenstate.h",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/node_modules/react-native-screens/common/cpp/react/renderer/components/rnscreens/RNSStackHeaderConfigComponentDescriptor.h",
+    "actual_path": "collected_documents/unclassified/d7832b619d6e__rnsstackheaderconfigcomponentdescriptor.h",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/node_modules/react-native-screens/common/cpp/react/renderer/components/rnscreens/RNSStackHeaderConfigShadowNode.h",
+    "actual_path": "collected_documents/unclassified/f640c8329cff__rnsstackheaderconfigshadownode.h",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/node_modules/react-native-screens/common/cpp/react/renderer/components/rnscreens/RNSStackHeaderConfigState.h",
+    "actual_path": "collected_documents/unclassified/e2db42dbca9d__rnsstackheaderconfigstate.h",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/node_modules/react-native-screens/common/cpp/react/renderer/components/rnscreens/RNSStackHeaderSubviewComponentDescriptor.h",
+    "actual_path": "collected_documents/unclassified/dc43e15caa77__rnsstackheadersubviewcomponentdescriptor.h",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/node_modules/react-native-screens/common/cpp/react/renderer/components/rnscreens/RNSStackHeaderSubviewShadowNode.h",
+    "actual_path": "collected_documents/unclassified/d0a362ad22f4__rnsstackheadersubviewshadownode.h",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/node_modules/react-native-screens/common/cpp/react/renderer/components/rnscreens/RNSStackHeaderSubviewState.h",
+    "actual_path": "collected_documents/unclassified/eea490305119__rnsstackheadersubviewstate.h",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/node_modules/react-native-screens/common/cpp/react/renderer/components/rnscreens/RNSStackScreenComponentDescriptor.h",
+    "actual_path": "collected_documents/unclassified/5da2ed027f8c__rnsstackscreencomponentdescriptor.h",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/node_modules/react-native-screens/common/cpp/react/renderer/components/rnscreens/RNSStackScreenShadowNode.h",
+    "actual_path": "collected_documents/unclassified/c9c288a34740__rnsstackscreenshadownode.h",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/node_modules/react-native-screens/common/cpp/react/renderer/components/rnscreens/RNSStackScreenState.h",
+    "actual_path": "collected_documents/unclassified/baba4eed6561__rnsstackscreenstate.h",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/node_modules/react-native-screens/common/cpp/react/renderer/components/rnscreens/RNSTabsBottomAccessoryComponentDescriptor.h",
+    "actual_path": "collected_documents/unclassified/7cba595b936f__rnstabsbottomaccessorycomponentdescriptor.h",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/node_modules/react-native-screens/common/cpp/react/renderer/components/rnscreens/RNSTabsBottomAccessoryShadowNode.h",
+    "actual_path": "collected_documents/unclassified/cd48a7a8b836__rnstabsbottomaccessoryshadownode.h",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/node_modules/react-native-screens/common/cpp/react/renderer/components/rnscreens/RNSTabsBottomAccessoryState.h",
+    "actual_path": "collected_documents/unclassified/a7c431aad9e5__rnstabsbottomaccessorystate.h",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/node_modules/react-native-screens/common/cpp/react/renderer/components/rnscreens/RNSTabsHostComponentDescriptor.h",
+    "actual_path": "collected_documents/unclassified/73f8387382b6__rnstabshostcomponentdescriptor.h",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/node_modules/react-native-screens/common/cpp/react/renderer/components/rnscreens/RNSTabsHostShadowNode.h",
+    "actual_path": "collected_documents/unclassified/5703688b6522__rnstabshostshadownode.h",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/node_modules/react-native-screens/common/cpp/react/renderer/components/rnscreens/RNSTabsHostState.h",
+    "actual_path": "collected_documents/unclassified/42b1fd6c96c1__rnstabshoststate.h",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/node_modules/react-native-screens/common/cpp/react/renderer/components/rnscreens/utils/RectUtil.h",
+    "actual_path": "collected_documents/unclassified/343d4e2d0e44__rectutil.h",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/node_modules/react-native-screens/cpp/RNSScreenRemovalListener.h",
+    "actual_path": "collected_documents/unclassified/3eb22b7fd136__rnsscreenremovallistener.h",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/node_modules/react-native-screens/cpp/RNScreensTurboModule.h",
+    "actual_path": "collected_documents/unclassified/58489137ed80__rnscreensturbomodule.h",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/node_modules/react-native-screens/ios/RCTConvert+RNScreens.h",
+    "actual_path": "collected_documents/unclassified/85e24fb9f8d3__rctconvert-rnscreens.h",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/node_modules/react-native-screens/ios/RCTImageComponentView+RNSScreenStackHeaderConfig.h",
+    "actual_path": "collected_documents/unclassified/07b93698672e__rctimagecomponentview-rnsscreenstackheaderconfig.h",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/node_modules/react-native-screens/ios/RNSBarButtonItem.h",
+    "actual_path": "collected_documents/unclassified/66fe630151f3__rnsbarbuttonitem.h",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/node_modules/react-native-screens/ios/RNSConvert.h",
+    "actual_path": "collected_documents/unclassified/e9c1714d6b34__rnsconvert.h",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/node_modules/react-native-screens/ios/RNSEnums.h",
+    "actual_path": "collected_documents/unclassified/491214f13cb5__rnsenums.h",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/node_modules/react-native-screens/ios/RNSFullWindowOverlay.h",
+    "actual_path": "collected_documents/unclassified/e97d0ba677bf__rnsfullwindowoverlay.h",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/node_modules/react-native-screens/ios/RNSModalScreen.h",
+    "actual_path": "collected_documents/unclassified/3bf512d2abfb__rnsmodalscreen.h",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/node_modules/react-native-screens/ios/RNSModule.h",
+    "actual_path": "collected_documents/unclassified/35dd440e965a__rnsmodule.h",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/node_modules/react-native-screens/ios/RNSOrientationProviding.h",
+    "actual_path": "collected_documents/unclassified/220bab9606ad__rnsorientationproviding.h",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/node_modules/react-native-screens/ios/RNSPercentDrivenInteractiveTransition.h",
+    "actual_path": "collected_documents/unclassified/79fa66605563__rnspercentdriveninteractivetransition.h",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/node_modules/react-native-screens/ios/RNSScreen.h",
+    "actual_path": "collected_documents/unclassified/5d60ea938571__rnsscreen.h",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/node_modules/react-native-screens/ios/RNSScreenContainer.h",
+    "actual_path": "collected_documents/unclassified/d3941121bd23__rnsscreencontainer.h",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/node_modules/react-native-screens/ios/RNSScreenContentWrapper.h",
+    "actual_path": "collected_documents/unclassified/1014b4575fcc__rnsscreencontentwrapper.h",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/node_modules/react-native-screens/ios/RNSScreenFooter.h",
+    "actual_path": "collected_documents/unclassified/b0b70677f7b8__rnsscreenfooter.h",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/node_modules/react-native-screens/ios/RNSScreenNavigationContainer.h",
+    "actual_path": "collected_documents/unclassified/7cd347c46b85__rnsscreennavigationcontainer.h",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/node_modules/react-native-screens/ios/RNSScreenStack.h",
+    "actual_path": "collected_documents/unclassified/c9151b01632a__rnsscreenstack.h",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/node_modules/react-native-screens/ios/RNSScreenStackAnimator.h",
+    "actual_path": "collected_documents/unclassified/4f72e31583ef__rnsscreenstackanimator.h",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/node_modules/react-native-screens/ios/RNSScreenStackHeaderConfig.h",
+    "actual_path": "collected_documents/unclassified/b4b3d29b7b06__rnsscreenstackheaderconfig.h",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/node_modules/react-native-screens/ios/RNSScreenStackHeaderSubview.h",
+    "actual_path": "collected_documents/unclassified/4fc6b05250b4__rnsscreenstackheadersubview.h",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/node_modules/react-native-screens/ios/RNSScreenWindowTraits.h",
+    "actual_path": "collected_documents/unclassified/723a96190989__rnsscreenwindowtraits.h",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/node_modules/react-native-screens/ios/RNSScrollViewBehaviorOverriding.h",
+    "actual_path": "collected_documents/unclassified/ef5fb161472f__rnsscrollviewbehavioroverriding.h",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/node_modules/react-native-screens/ios/RNSSearchBar.h",
+    "actual_path": "collected_documents/unclassified/10311557c076__rnssearchbar.h",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/node_modules/react-native-screens/ios/RNScreens-Bridging-Header.h",
+    "actual_path": "collected_documents/unclassified/80f19f80faf9__rnscreens-bridging-header.h",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/node_modules/react-native-screens/ios/UIScrollView+RNScreens.h",
+    "actual_path": "collected_documents/unclassified/f6ba76c866d6__uiscrollview-rnscreens.h",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/node_modules/react-native-screens/ios/UIViewController+RNScreens.h",
+    "actual_path": "collected_documents/unclassified/1af5d0683e50__uiviewcontroller-rnscreens.h",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/node_modules/react-native-screens/ios/UIWindow+RNScreens.h",
+    "actual_path": "collected_documents/unclassified/7169d1456987__uiwindow-rnscreens.h",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/node_modules/react-native-screens/ios/bridging/RNSReactBaseView.h",
+    "actual_path": "collected_documents/unclassified/8155c38f1a03__rnsreactbaseview.h",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/node_modules/react-native-screens/ios/bridging/Swift-Bridging.h",
+    "actual_path": "collected_documents/unclassified/a5056f1834dc__swift-bridging.h",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/node_modules/react-native-screens/ios/conversion/RNSConversions-ScrollViewMarker.h",
+    "actual_path": "collected_documents/unclassified/8b0760bfb2d1__rnsconversions-scrollviewmarker.h",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/node_modules/react-native-screens/ios/conversion/RNSConversions-Stack.h",
+    "actual_path": "collected_documents/unclassified/d6a50be06e4c__rnsconversions-stack.h",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/node_modules/react-native-screens/ios/conversion/RNSConversions.h",
+    "actual_path": "collected_documents/unclassified/3579d0051368__rnsconversions.h",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/node_modules/react-native-screens/ios/conversion/always_false.h",
+    "actual_path": "collected_documents/unclassified/6b7f4458311b__always_false.h",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/node_modules/react-native-screens/ios/events/RNSHeaderHeightChangeEvent.h",
+    "actual_path": "collected_documents/unclassified/79a2ee5e4439__rnsheaderheightchangeevent.h",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/node_modules/react-native-screens/ios/events/RNSScreenViewEvent.h",
+    "actual_path": "collected_documents/unclassified/e2e03eeb1881__rnsscreenviewevent.h",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/node_modules/react-native-screens/ios/helpers/RNSViewInteractionAware.h",
+    "actual_path": "collected_documents/unclassified/1614bd32a13a__rnsviewinteractionaware.h",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/node_modules/react-native-screens/ios/helpers/RNSViewInteractionManager.h",
+    "actual_path": "collected_documents/unclassified/9983f8f8796f__rnsviewinteractionmanager.h",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/node_modules/react-native-screens/ios/helpers/image/RNSImageLoadingHelper.h",
+    "actual_path": "collected_documents/unclassified/099e5bee9b3a__rnsimageloadinghelper.h",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/node_modules/react-native-screens/ios/helpers/scroll-view/RNSContentScrollViewProviding.h",
+    "actual_path": "collected_documents/unclassified/ac110a2d1c89__rnscontentscrollviewproviding.h",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/node_modules/react-native-screens/ios/helpers/scroll-view/RNSScrollEdgeEffectApplicator.h",
+    "actual_path": "collected_documents/unclassified/1be56d702b7e__rnsscrolledgeeffectapplicator.h",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/node_modules/react-native-screens/ios/helpers/scroll-view/RNSScrollViewFinder.h",
+    "actual_path": "collected_documents/unclassified/ef3ba89bf71d__rnsscrollviewfinder.h",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/node_modules/react-native-screens/ios/helpers/scroll-view/RNSScrollViewHelper.h",
+    "actual_path": "collected_documents/unclassified/244235c197dd__rnsscrollviewhelper.h",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/node_modules/react-native-screens/ios/integrations/RNSDismissibleModalProtocol.h",
+    "actual_path": "collected_documents/unclassified/7d7e059c735a__rnsdismissiblemodalprotocol.h",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/node_modules/react-native-screens/ios/safe-area/RNSSafeAreaProviding.h",
+    "actual_path": "collected_documents/unclassified/953ca3ecb67b__rnssafeareaproviding.h",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/node_modules/react-native-screens/ios/safe-area/RNSSafeAreaViewComponentView.h",
+    "actual_path": "collected_documents/unclassified/434fb5bdbc4e__rnssafeareaviewcomponentview.h",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/node_modules/react-native-screens/ios/safe-area/RNSSafeAreaViewNotifications.h",
+    "actual_path": "collected_documents/unclassified/af3dbda7ba09__rnssafeareaviewnotifications.h",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/node_modules/react-native-screens/ios/stubs/RNSGammaStubs.h",
+    "actual_path": "collected_documents/unclassified/c1db6edf9d55__rnsgammastubs.h",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/node_modules/react-native-screens/ios/tabs/RCTConvert+RNSTabs.h",
+    "actual_path": "collected_documents/unclassified/e3ea6897323d__rctconvert-rnstabs.h",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/node_modules/react-native-screens/ios/tabs/RNSTabBarAppearanceCoordinator.h",
+    "actual_path": "collected_documents/unclassified/0db8a531920e__rnstabbarappearancecoordinator.h",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/node_modules/react-native-screens/ios/tabs/RNSTabsSpecialEffectsSupporting.h",
+    "actual_path": "collected_documents/unclassified/6005926effaa__rnstabsspecialeffectssupporting.h",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/node_modules/react-native-screens/ios/tabs/bottom-accessory/RNSTabsBottomAccessoryComponentView.h",
+    "actual_path": "collected_documents/unclassified/c5dfee7faa36__rnstabsbottomaccessorycomponentview.h",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/node_modules/react-native-screens/ios/tabs/bottom-accessory/RNSTabsBottomAccessoryComponentViewManager.h",
+    "actual_path": "collected_documents/unclassified/08a4b52da551__rnstabsbottomaccessorycomponentviewmanager.h",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/node_modules/react-native-screens/ios/tabs/bottom-accessory/RNSTabsBottomAccessoryContentComponentView.h",
+    "actual_path": "collected_documents/unclassified/b6f25ba2adde__rnstabsbottomaccessorycontentcomponentview.h",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/node_modules/react-native-screens/ios/tabs/bottom-accessory/RNSTabsBottomAccessoryEventEmitter.h",
+    "actual_path": "collected_documents/unclassified/739941ac8cdc__rnstabsbottomaccessoryeventemitter.h",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/node_modules/react-native-screens/ios/tabs/bottom-accessory/RNSTabsBottomAccessoryHelper.h",
+    "actual_path": "collected_documents/unclassified/8f04e12f07c6__rnstabsbottomaccessoryhelper.h",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/node_modules/react-native-screens/ios/tabs/bottom-accessory/RNSTabsBottomAccessoryShadowStateProxy.h",
+    "actual_path": "collected_documents/unclassified/f6621da3b098__rnstabsbottomaccessoryshadowstateproxy.h",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/node_modules/react-native-screens/ios/tabs/extensions/RNSTabsHostComponentView+RNSImageLoader.h",
+    "actual_path": "collected_documents/unclassified/3d1e1bd2deea__rnstabshostcomponentview-rnsimageloader.h",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/node_modules/react-native-screens/ios/tabs/host/RNSTabBarController.h",
+    "actual_path": "collected_documents/unclassified/d5dc8e2ca554__rnstabbarcontroller.h",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/node_modules/react-native-screens/ios/tabs/host/RNSTabsHostComponentView.h",
+    "actual_path": "collected_documents/unclassified/82e670ec5e75__rnstabshostcomponentview.h",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/node_modules/react-native-screens/ios/tabs/host/RNSTabsHostComponentViewManager.h",
+    "actual_path": "collected_documents/unclassified/324ba4d93423__rnstabshostcomponentviewmanager.h",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/node_modules/react-native-screens/ios/tabs/host/RNSTabsHostEventEmitter.h",
+    "actual_path": "collected_documents/unclassified/c77510dbdae3__rnstabshosteventemitter.h",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/node_modules/react-native-screens/ios/tabs/host/RNSTabsNavigationState.h",
+    "actual_path": "collected_documents/relay/b8ac15090d5a__rnstabsnavigationstate.h",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/node_modules/react-native-screens/ios/tabs/host/RNSTabsNavigationStateObserverRegistry.h",
+    "actual_path": "collected_documents/unclassified/cff4bc4226dc__rnstabsnavigationstateobserverregistry.h",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/node_modules/react-native-screens/ios/tabs/screen/RNSTabsScreenComponentView.h",
+    "actual_path": "collected_documents/unclassified/d99f74e963d7__rnstabsscreencomponentview.h",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/node_modules/react-native-screens/ios/tabs/screen/RNSTabsScreenComponentViewManager.h",
+    "actual_path": "collected_documents/unclassified/4b3146b44003__rnstabsscreencomponentviewmanager.h",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/node_modules/react-native-screens/ios/tabs/screen/RNSTabsScreenEventEmitter.h",
+    "actual_path": "collected_documents/unclassified/e84d565ee9ed__rnstabsscreeneventemitter.h",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/node_modules/react-native-screens/ios/tabs/screen/RNSTabsScreenViewController.h",
+    "actual_path": "collected_documents/unclassified/717cbc3a663b__rnstabsscreenviewcontroller.h",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/node_modules/react-native-screens/ios/utils/NSString+RNSUtility.h",
+    "actual_path": "collected_documents/unclassified/d953fd067fc7__nsstring-rnsutility.h",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/node_modules/react-native-screens/ios/utils/RCTSurfaceTouchHandler+RNSUtility.h",
+    "actual_path": "collected_documents/unclassified/62864965bb2e__rctsurfacetouchhandler-rnsutility.h",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/node_modules/react-native-screens/ios/utils/RCTTouchHandler+RNSUtility.h",
+    "actual_path": "collected_documents/unclassified/42eab9aaebd4__rcttouchhandler-rnsutility.h",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/node_modules/react-native-screens/ios/utils/RNSBackBarButtonItem.h",
+    "actual_path": "collected_documents/unclassified/c5ae5ed0c0cd__rnsbackbarbuttonitem.h",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/node_modules/react-native-screens/ios/utils/RNSDefines.h",
+    "actual_path": "collected_documents/unclassified/fdbda0984617__rnsdefines.h",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/node_modules/react-native-screens/ios/utils/RNSLog.h",
+    "actual_path": "collected_documents/unclassified/5d80bf9da012__rnslog.h",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/node_modules/react-native-screens/ios/utils/UINavigationBar+RNSUtility.h",
+    "actual_path": "collected_documents/unclassified/931446181898__uinavigationbar-rnsutility.h",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/node_modules/react-native-screens/ios/utils/UIView+RNSUtility.h",
+    "actual_path": "collected_documents/unclassified/9b528eee9ea6__uiview-rnsutility.h",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/node_modules/react-native-screens/ios/utils/extensions/RCTImageSource+AccessHiddenMembers.h",
+    "actual_path": "collected_documents/unclassified/5ddf198b9535__rctimagesource-accesshiddenmembers.h",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/opencode/.opencode.json",
+    "actual_path": "collected_documents/opencode/52385d82e002__.opencode.json",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/opencode/README.md",
+    "actual_path": "collected_documents/opencode/719f545372b0__readme.md",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/opencode/cmd/root.go",
+    "actual_path": "collected_documents/opencode/3a7e936753e7__root.go",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/opencode/cmd/schema/README.md",
+    "actual_path": "collected_documents/opencode/65c30ab5c086__readme.md",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/opencode/cmd/schema/main.go",
+    "actual_path": "collected_documents/opencode/aed65ae06f6f__main.go",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/opencode/internal/app/app.go",
+    "actual_path": "collected_documents/opencode/9588c1849b54__app.go",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/opencode/internal/app/lsp.go",
+    "actual_path": "collected_documents/opencode/ef0e6a2c9f44__lsp.go",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/opencode/internal/completions/files-folders.go",
+    "actual_path": "collected_documents/opencode/7245c8c033b9__files-folders.go",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/opencode/internal/config/config.go",
+    "actual_path": "collected_documents/opencode/3244bd2c90e3__config.go",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/opencode/internal/config/init.go",
+    "actual_path": "collected_documents/opencode/a0bd852cfc8b__init.go",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/opencode/internal/db/connect.go",
+    "actual_path": "collected_documents/opencode/bf7d68e18679__connect.go",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/opencode/internal/db/db.go",
+    "actual_path": "collected_documents/opencode/f1adff0f52f3__db.go",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/opencode/internal/db/embed.go",
+    "actual_path": "collected_documents/opencode/fea793765ad5__embed.go",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/opencode/internal/db/files.sql.go",
+    "actual_path": "collected_documents/opencode/fb4d6fc9e53b__files.sql.go",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/opencode/internal/db/messages.sql.go",
+    "actual_path": "collected_documents/opencode/1ec994854667__messages.sql.go",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/opencode/internal/db/migrations/20250424200609_initial.sql",
+    "actual_path": "collected_documents/opencode/090eab587936__20250424200609_initial.sql",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/opencode/internal/db/migrations/20250515105448_add_summary_message_id.sql",
+    "actual_path": "collected_documents/opencode/1d8597089034__20250515105448_add_summary_message_id.sql",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/opencode/internal/db/models.go",
+    "actual_path": "collected_documents/opencode/963b473597b7__models.go",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/opencode/internal/db/querier.go",
+    "actual_path": "collected_documents/opencode/3d3343bf19d1__querier.go",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/opencode/internal/db/sessions.sql.go",
+    "actual_path": "collected_documents/opencode/c71122e613a5__sessions.sql.go",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/opencode/internal/db/sql/files.sql",
+    "actual_path": "collected_documents/opencode/19ebe78f831a__files.sql",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/opencode/internal/db/sql/messages.sql",
+    "actual_path": "collected_documents/opencode/d0dfe6cd8f8a__messages.sql",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/opencode/internal/db/sql/sessions.sql",
+    "actual_path": "collected_documents/opencode/1d65f1f7b8a7__sessions.sql",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/opencode/internal/diff/diff.go",
+    "actual_path": "collected_documents/opencode/5407fbc83270__diff.go",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/opencode/internal/diff/patch.go",
+    "actual_path": "collected_documents/opencode/eef58acc84f5__patch.go",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/opencode/internal/fileutil/fileutil.go",
+    "actual_path": "collected_documents/opencode/ebaa640e4cc3__fileutil.go",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/opencode/internal/format/format.go",
+    "actual_path": "collected_documents/opencode/8cb21fec853b__format.go",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/opencode/internal/format/spinner.go",
+    "actual_path": "collected_documents/opencode/5f229e690e7b__spinner.go",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/opencode/internal/history/file.go",
+    "actual_path": "collected_documents/opencode/09aa26726363__file.go",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/opencode/internal/llm/agent/agent-tool.go",
+    "actual_path": "collected_documents/opencode/df1c273b8043__agent-tool.go",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/opencode/internal/llm/agent/agent.go",
+    "actual_path": "collected_documents/opencode/bb51d4d0844d__agent.go",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/opencode/internal/llm/agent/mcp-tools.go",
+    "actual_path": "collected_documents/opencode/b8c091c36336__mcp-tools.go",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/opencode/internal/llm/agent/tools.go",
+    "actual_path": "collected_documents/opencode/0a487263b475__tools.go",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/opencode/internal/llm/models/anthropic.go",
+    "actual_path": "collected_documents/opencode/6a0a0db54562__anthropic.go",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/opencode/internal/llm/models/azure.go",
+    "actual_path": "collected_documents/opencode/af7fa1adabaf__azure.go",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/opencode/internal/llm/models/copilot.go",
+    "actual_path": "collected_documents/opencode/c4e9428d3375__copilot.go",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/opencode/internal/llm/models/gemini.go",
+    "actual_path": "collected_documents/opencode/f7ebf7792256__gemini.go",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/opencode/internal/llm/models/groq.go",
+    "actual_path": "collected_documents/opencode/c05d577cd6fc__groq.go",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/opencode/internal/llm/models/local.go",
+    "actual_path": "collected_documents/opencode/2560cadb6cc5__local.go",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/opencode/internal/llm/models/models.go",
+    "actual_path": "collected_documents/opencode/687a9119daed__models.go",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/opencode/internal/llm/models/openai.go",
+    "actual_path": "collected_documents/opencode/988751979b2e__openai.go",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/opencode/internal/llm/models/openrouter.go",
+    "actual_path": "collected_documents/opencode/251b9eca2fa0__openrouter.go",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/opencode/internal/llm/models/vertexai.go",
+    "actual_path": "collected_documents/opencode/f39933a565f1__vertexai.go",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/opencode/internal/llm/models/xai.go",
+    "actual_path": "collected_documents/opencode/89d8e5b93fb9__xai.go",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/opencode/internal/llm/prompt/coder.go",
+    "actual_path": "collected_documents/opencode/03dc05b4a645__coder.go",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/opencode/internal/llm/prompt/prompt.go",
+    "actual_path": "collected_documents/opencode/5dbd0e094c12__prompt.go",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/opencode/internal/llm/prompt/prompt_test.go",
+    "actual_path": "collected_documents/opencode/087521c4ca98__prompt_test.go",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/opencode/internal/llm/prompt/summarizer.go",
+    "actual_path": "collected_documents/opencode/f22dd10bddba__summarizer.go",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/opencode/internal/llm/prompt/task.go",
+    "actual_path": "collected_documents/opencode/0cc6c4762bfe__task.go",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/opencode/internal/llm/prompt/title.go",
+    "actual_path": "collected_documents/opencode/8754575162b3__title.go",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/opencode/internal/llm/provider/anthropic.go",
+    "actual_path": "collected_documents/opencode/49c64c366f71__anthropic.go",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/opencode/internal/llm/provider/azure.go",
+    "actual_path": "collected_documents/opencode/7e0b0e5fa843__azure.go",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/opencode/internal/llm/provider/bedrock.go",
+    "actual_path": "collected_documents/opencode/6531719addf5__bedrock.go",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/opencode/internal/llm/provider/copilot.go",
+    "actual_path": "collected_documents/opencode/2803984284aa__copilot.go",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/opencode/internal/llm/provider/gemini.go",
+    "actual_path": "collected_documents/opencode/6fff59488995__gemini.go",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/opencode/internal/llm/provider/openai.go",
+    "actual_path": "collected_documents/opencode/f203d1e76035__openai.go",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/opencode/internal/llm/provider/provider.go",
+    "actual_path": "collected_documents/opencode/1945a448c8d3__provider.go",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/opencode/internal/llm/provider/vertexai.go",
+    "actual_path": "collected_documents/opencode/97b1d58ccf92__vertexai.go",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/opencode/internal/llm/tools/diagnostics.go",
+    "actual_path": "collected_documents/opencode/b14329353012__diagnostics.go",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/opencode/internal/llm/tools/edit.go",
+    "actual_path": "collected_documents/opencode/331693cd315c__edit.go",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/opencode/internal/llm/tools/fetch.go",
+    "actual_path": "collected_documents/opencode/2e4b7993a441__fetch.go",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/opencode/internal/llm/tools/file.go",
+    "actual_path": "collected_documents/opencode/0fd38cb05b59__file.go",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/opencode/internal/llm/tools/glob.go",
+    "actual_path": "collected_documents/opencode/d775ac03b5ff__glob.go",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/opencode/internal/llm/tools/grep.go",
+    "actual_path": "collected_documents/opencode/a1fadbdbc9c2__grep.go",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/opencode/internal/llm/tools/ls.go",
+    "actual_path": "collected_documents/opencode/9793cd217939__ls.go",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/opencode/internal/llm/tools/ls_test.go",
+    "actual_path": "collected_documents/opencode/93defe2aab00__ls_test.go",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/opencode/internal/llm/tools/patch.go",
+    "actual_path": "collected_documents/opencode/eb0dbcd9c3cc__patch.go",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/opencode/internal/llm/tools/shell/shell.go",
+    "actual_path": "collected_documents/opencode/87932e5654fd__shell.go",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/opencode/internal/llm/tools/sourcegraph.go",
+    "actual_path": "collected_documents/opencode/e7a7b7973fb3__sourcegraph.go",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/opencode/internal/llm/tools/tools.go",
+    "actual_path": "collected_documents/opencode/5038e8bf9bfd__tools.go",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/opencode/internal/llm/tools/view.go",
+    "actual_path": "collected_documents/opencode/3e5ee5662229__view.go",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/opencode/internal/llm/tools/write.go",
+    "actual_path": "collected_documents/opencode/0e7cc0384660__write.go",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/opencode/internal/logging/logger.go",
+    "actual_path": "collected_documents/opencode/cb4fd8a006f0__logger.go",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/opencode/internal/logging/message.go",
+    "actual_path": "collected_documents/opencode/93a19dcbd3f9__message.go",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/opencode/internal/logging/writer.go",
+    "actual_path": "collected_documents/opencode/0b05b1cc7c4e__writer.go",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/opencode/internal/lsp/client.go",
+    "actual_path": "collected_documents/opencode/cc8fd3292c7f__client.go",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/opencode/internal/lsp/handlers.go",
+    "actual_path": "collected_documents/opencode/75eb2d3e07fe__handlers.go",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/opencode/internal/lsp/language.go",
+    "actual_path": "collected_documents/opencode/ca40b2d70ad9__language.go",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/opencode/internal/lsp/methods.go",
+    "actual_path": "collected_documents/opencode/b1a10d64dcd1__methods.go",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/opencode/internal/lsp/protocol/interface.go",
+    "actual_path": "collected_documents/opencode/d10d98b6813d__interface.go",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/opencode/internal/lsp/protocol/pattern_interfaces.go",
+    "actual_path": "collected_documents/opencode/8f72a6265316__pattern_interfaces.go",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/opencode/internal/lsp/protocol/tables.go",
+    "actual_path": "collected_documents/opencode/2628f6440a05__tables.go",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/opencode/internal/lsp/protocol/tsdocument-changes.go",
+    "actual_path": "collected_documents/opencode/77a052a1523b__tsdocument-changes.go",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/opencode/internal/lsp/protocol/tsjson.go",
+    "actual_path": "collected_documents/opencode/f60a8260e393__tsjson.go",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/opencode/internal/lsp/protocol/tsprotocol.go",
+    "actual_path": "collected_documents/opencode/88f7448e0066__tsprotocol.go",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/opencode/internal/lsp/protocol/uri.go",
+    "actual_path": "collected_documents/opencode/9b528144f24e__uri.go",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/opencode/internal/lsp/protocol.go",
+    "actual_path": "collected_documents/opencode/eb3551aa3fd6__protocol.go",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/opencode/internal/lsp/transport.go",
+    "actual_path": "collected_documents/opencode/eefe5f7a8de2__transport.go",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/opencode/internal/lsp/util/edit.go",
+    "actual_path": "collected_documents/opencode/c5159f2a9d2b__edit.go",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/opencode/internal/lsp/watcher/watcher.go",
+    "actual_path": "collected_documents/opencode/2e5947186d76__watcher.go",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/opencode/internal/message/attachment.go",
+    "actual_path": "collected_documents/opencode/65f8f6cc5995__attachment.go",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/opencode/internal/message/content.go",
+    "actual_path": "collected_documents/opencode/8b5aab7757bc__content.go",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/opencode/internal/message/message.go",
+    "actual_path": "collected_documents/opencode/b96a2cfa253b__message.go",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/opencode/internal/permission/permission.go",
+    "actual_path": "collected_documents/opencode/4852bdfbca87__permission.go",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/opencode/internal/pubsub/broker.go",
+    "actual_path": "collected_documents/opencode/7420187ebdd4__broker.go",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/opencode/internal/pubsub/events.go",
+    "actual_path": "collected_documents/opencode/3199c3bfd00f__events.go",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/opencode/internal/session/session.go",
+    "actual_path": "collected_documents/opencode/005401ced25b__session.go",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/opencode/internal/tui/components/chat/chat.go",
+    "actual_path": "collected_documents/opencode/28a75456e72f__chat.go",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/opencode/internal/tui/components/chat/editor.go",
+    "actual_path": "collected_documents/opencode/435fd5266b39__editor.go",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/opencode/internal/tui/components/chat/list.go",
+    "actual_path": "collected_documents/opencode/9243b2b1aeb6__list.go",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/opencode/internal/tui/components/chat/message.go",
+    "actual_path": "collected_documents/opencode/634c1ecb3e06__message.go",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/opencode/internal/tui/components/chat/sidebar.go",
+    "actual_path": "collected_documents/opencode/3a699476abb2__sidebar.go",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/opencode/internal/tui/components/core/status.go",
+    "actual_path": "collected_documents/opencode/74f7ac35127c__status.go",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/opencode/internal/tui/components/dialog/arguments.go",
+    "actual_path": "collected_documents/opencode/18435f982367__arguments.go",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/opencode/internal/tui/components/dialog/commands.go",
+    "actual_path": "collected_documents/opencode/23bc505db647__commands.go",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/opencode/internal/tui/components/dialog/complete.go",
+    "actual_path": "collected_documents/opencode/0f04c988100e__complete.go",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/opencode/internal/tui/components/dialog/custom_commands.go",
+    "actual_path": "collected_documents/opencode/006129a6de7c__custom_commands.go",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/opencode/internal/tui/components/dialog/custom_commands_test.go",
+    "actual_path": "collected_documents/opencode/8d238eee62d4__custom_commands_test.go",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/opencode/internal/tui/components/dialog/filepicker.go",
+    "actual_path": "collected_documents/opencode/52045cf42b78__filepicker.go",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/opencode/internal/tui/components/dialog/help.go",
+    "actual_path": "collected_documents/opencode/252b76241372__help.go",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/opencode/internal/tui/components/dialog/init.go",
+    "actual_path": "collected_documents/opencode/938842a65ec9__init.go",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/opencode/internal/tui/components/dialog/models.go",
+    "actual_path": "collected_documents/opencode/0ae9e5cd5f19__models.go",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/opencode/internal/tui/components/dialog/permission.go",
+    "actual_path": "collected_documents/opencode/e2d3c3e6d912__permission.go",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/opencode/internal/tui/components/dialog/quit.go",
+    "actual_path": "collected_documents/opencode/f32909ec1604__quit.go",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/opencode/internal/tui/components/dialog/session.go",
+    "actual_path": "collected_documents/opencode/fcbb944c126e__session.go",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/opencode/internal/tui/components/dialog/theme.go",
+    "actual_path": "collected_documents/opencode/fbebf9492708__theme.go",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/opencode/internal/tui/components/logs/details.go",
+    "actual_path": "collected_documents/opencode/2edb0dd0e3b2__details.go",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/opencode/internal/tui/components/logs/table.go",
+    "actual_path": "collected_documents/opencode/58a36475e85f__table.go",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/opencode/internal/tui/components/util/simple-list.go",
+    "actual_path": "collected_documents/opencode/aeb270e20a0b__simple-list.go",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/opencode/internal/tui/image/images.go",
+    "actual_path": "collected_documents/opencode/7af41116dc80__images.go",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/opencode/internal/tui/layout/container.go",
+    "actual_path": "collected_documents/opencode/93441f40949d__container.go",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/opencode/internal/tui/layout/layout.go",
+    "actual_path": "collected_documents/opencode/1899a1ffa8b9__layout.go",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/opencode/internal/tui/layout/overlay.go",
+    "actual_path": "collected_documents/opencode/2481a9e6e061__overlay.go",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/opencode/internal/tui/layout/split.go",
+    "actual_path": "collected_documents/opencode/2ddf0712ad60__split.go",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/opencode/internal/tui/page/chat.go",
+    "actual_path": "collected_documents/opencode/2a048f0d7d4a__chat.go",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/opencode/internal/tui/page/logs.go",
+    "actual_path": "collected_documents/opencode/907551033476__logs.go",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/opencode/internal/tui/page/page.go",
+    "actual_path": "collected_documents/opencode/53d9aa7fb7c5__page.go",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/opencode/internal/tui/styles/background.go",
+    "actual_path": "collected_documents/opencode/3f2b94a21663__background.go",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/opencode/internal/tui/styles/icons.go",
+    "actual_path": "collected_documents/opencode/e20f9a30ba39__icons.go",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/opencode/internal/tui/styles/markdown.go",
+    "actual_path": "collected_documents/opencode/ad9004c32333__markdown.go",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/opencode/internal/tui/styles/styles.go",
+    "actual_path": "collected_documents/opencode/59363878c380__styles.go",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/opencode/internal/tui/theme/catppuccin.go",
+    "actual_path": "collected_documents/opencode/dd96cc645320__catppuccin.go",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/opencode/internal/tui/theme/dracula.go",
+    "actual_path": "collected_documents/opencode/7a2e2d9e130a__dracula.go",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/opencode/internal/tui/theme/flexoki.go",
+    "actual_path": "collected_documents/opencode/9ca72e9dfeec__flexoki.go",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/opencode/internal/tui/theme/gruvbox.go",
+    "actual_path": "collected_documents/opencode/eb60f58da372__gruvbox.go",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/opencode/internal/tui/theme/manager.go",
+    "actual_path": "collected_documents/opencode/f1b496f7df0f__manager.go",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/opencode/internal/tui/theme/monokai.go",
+    "actual_path": "collected_documents/opencode/1ad831785913__monokai.go",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/opencode/internal/tui/theme/onedark.go",
+    "actual_path": "collected_documents/opencode/85248eeb862b__onedark.go",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/opencode/internal/tui/theme/opencode.go",
+    "actual_path": "collected_documents/opencode/8337b18c32de__opencode.go",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/opencode/internal/tui/theme/theme.go",
+    "actual_path": "collected_documents/opencode/0778a295a0c5__theme.go",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/opencode/internal/tui/theme/theme_test.go",
+    "actual_path": "collected_documents/opencode/844f23824855__theme_test.go",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/opencode/internal/tui/theme/tokyonight.go",
+    "actual_path": "collected_documents/opencode/e5bf4d9eaf17__tokyonight.go",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/opencode/internal/tui/theme/tron.go",
+    "actual_path": "collected_documents/opencode/d281e3fec572__tron.go",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/opencode/internal/tui/tui.go",
+    "actual_path": "collected_documents/opencode/d2cadc5ac1e6__tui.go",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/opencode/internal/tui/util/util.go",
+    "actual_path": "collected_documents/opencode/a0e6bab77a61__util.go",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/opencode/internal/version/version.go",
+    "actual_path": "collected_documents/opencode/93bfc1d0d988__version.go",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/opencode/main.go",
+    "actual_path": "collected_documents/opencode/24f540f72505__main.go",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/opencode/opencode-schema.json",
+    "actual_path": "collected_documents/opencode/3b7429ec2280__opencode-schema.json",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/opencode/scripts/check_hidden_chars.sh",
+    "actual_path": "collected_documents/opencode/0c35fa4ce0fa__check_hidden_chars.sh",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/opencode/sqlc.yaml",
+    "actual_path": "collected_documents/opencode/0be9640e02de__sqlc.yaml",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/sql/create_game_records.sql",
+    "actual_path": "collected_documents/unclassified/0003bf4477e9__create_game_records.sql",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/src/components/CreatorPickWinner.tsx",
+    "actual_path": "collected_documents/unclassified/5b007e1b5f9c__creatorpickwinner.tsx",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/src/components/composite/CreateChallengeButton.tsx",
+    "actual_path": "collected_documents/unclassified/7c6ec36ada84__createchallengebutton.tsx",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/src/components/composite/CreateMeatPostSheet.tsx",
+    "actual_path": "collected_documents/unclassified/7d3015149774__createmeatpostsheet.tsx",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/src/components/composite/CreateStakePostSheet.tsx",
+    "actual_path": "collected_documents/unclassified/aa0de0d27808__createstakepostsheet.tsx",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/src/screens/activity/ActivityHistoryScreen.tsx",
+    "actual_path": "collected_documents/unclassified/c78d884d0129__activityhistoryscreen.tsx",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/src/screens/activity/ActivityScreen.tsx",
+    "actual_path": "collected_documents/unclassified/cd8b6aff6cd0__activityscreen.tsx",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/src/screens/auth/AgeGateScreen.tsx",
+    "actual_path": "collected_documents/unclassified/dc54048c53e4__agegatescreen.tsx",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/src/screens/auth/AppleSignInScreen.tsx",
+    "actual_path": "collected_documents/unclassified/7ca43767f433__applesigninscreen.tsx",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/src/screens/auth/GoogleSignInScreen.tsx",
+    "actual_path": "collected_documents/unclassified/7ebe11d9685b__googlesigninscreen.tsx",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/src/screens/auth/MagicLinkScreen.tsx",
+    "actual_path": "collected_documents/unclassified/74cf0708df3f__magiclinkscreen.tsx",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/src/screens/challenge/ChallengeDetailScreen.tsx",
+    "actual_path": "collected_documents/unclassified/ecbfcf66b53e__challengedetailscreen.tsx",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/src/screens/challenge/ChallengeListScreen.tsx",
+    "actual_path": "collected_documents/unclassified/be6450930178__challengelistscreen.tsx",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/src/screens/challenge/CreateChallengeScreen.tsx",
+    "actual_path": "collected_documents/unclassified/eb1ddb136188__createchallengescreen.tsx",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/src/screens/challenge/GameScreen.tsx",
+    "actual_path": "collected_documents/unclassified/0f6ae991059a__gamescreen.tsx",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/src/screens/challenge/PlaceBetScreen.tsx",
+    "actual_path": "collected_documents/unclassified/94954a4140f7__placebetscreen.tsx",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/src/screens/challenge/ResultsScreen.tsx",
+    "actual_path": "collected_documents/unclassified/11573119fc3e__resultsscreen.tsx",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/src/screens/charity/CharityPickerScreen.tsx",
+    "actual_path": "collected_documents/unclassified/82f92414b4ac__charitypickerscreen.tsx",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/src/screens/charity/CharityPoolScreen.tsx",
+    "actual_path": "collected_documents/unclassified/152ca776aa3f__charitypoolscreen.tsx",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/src/screens/charity/CharityScreen.tsx",
+    "actual_path": "collected_documents/unclassified/95aaad5d7cd4__charityscreen.tsx",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/src/screens/charity/RealMoneySettleScreen.tsx",
+    "actual_path": "collected_documents/unclassified/6b240efb430c__realmoneysettlescreen.tsx",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/src/screens/feed/ChallengeDetailScreen.tsx",
+    "actual_path": "collected_documents/unclassified/ce691adb34c7__challengedetailscreen.tsx",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/src/screens/feed/CreateChallengeScreen.tsx",
+    "actual_path": "collected_documents/unclassified/50d569e82e50__createchallengescreen.tsx",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/src/screens/feed/EnterStakeScreen.tsx",
+    "actual_path": "collected_documents/unclassified/43463eea4a40__enterstakescreen.tsx",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/src/screens/feed/FeedHomeScreen.tsx",
+    "actual_path": "collected_documents/unclassified/962fc839f018__feedhomescreen.tsx",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/src/screens/game/GameHistoryScreen.tsx",
+    "actual_path": "collected_documents/unclassified/1d78058f8ae7__gamehistoryscreen.tsx",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/src/screens/game/GameScreen.tsx",
+    "actual_path": "collected_documents/unclassified/2259c1b13f09__gamescreen.tsx",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/src/screens/game/MemoryScreen.tsx",
+    "actual_path": "collected_documents/unclassified/5e48aef48d9a__memoryscreen.tsx",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/src/screens/game/PlayHomeScreen.tsx",
+    "actual_path": "collected_documents/unclassified/552019022984__playhomescreen.tsx",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/src/screens/game/QuestionsScreen.tsx",
+    "actual_path": "collected_documents/unclassified/a3164a7682e6__questionsscreen.tsx",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/src/screens/game/QuickMathScreen.tsx",
+    "actual_path": "collected_documents/unclassified/dde6f5c780ff__quickmathscreen.tsx",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/src/screens/game/RpsScreen.tsx",
+    "actual_path": "collected_documents/unclassified/05a12e5771ac__rpsscreen.tsx",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/src/screens/game/TicTacToeScreen.tsx",
+    "actual_path": "collected_documents/unclassified/4f8bea1edda4__tictactoescreen.tsx",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/src/screens/game/WordGuessScreen.tsx",
+    "actual_path": "collected_documents/unclassified/df3c205fe1d5__wordguessscreen.tsx",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/src/screens/goal/CreateGoalScreen.tsx",
+    "actual_path": "collected_documents/unclassified/7fa691ad853a__creategoalscreen.tsx",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/src/screens/goal/GoalDetailScreen.tsx",
+    "actual_path": "collected_documents/unclassified/e7013e31f525__goaldetailscreen.tsx",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/src/screens/goal/GoalListScreen.tsx",
+    "actual_path": "collected_documents/unclassified/c82c87891578__goallistscreen.tsx",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/src/screens/home/PartyListScreen.tsx",
+    "actual_path": "collected_documents/unclassified/acece134b729__partylistscreen.tsx",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/src/screens/leaderboard/LeaderboardScreen.tsx",
+    "actual_path": "collected_documents/unclassified/bc5ded57de25__leaderboardscreen.tsx",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/src/screens/market/MarketDetail.tsx",
+    "actual_path": "collected_documents/unclassified/3f390fe506a5__marketdetail.tsx",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/src/screens/market/MarketDetailScreen.tsx",
+    "actual_path": "collected_documents/unclassified/eff70c23589d__marketdetailscreen.tsx",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/src/screens/market/MarketHome.tsx",
+    "actual_path": "collected_documents/unclassified/a39ed0842804__markethome.tsx",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/src/screens/market/MarketHomeScreen.tsx",
+    "actual_path": "collected_documents/unclassified/a4c4046fddf4__markethomescreen.tsx",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/src/screens/market/TradeScreen.tsx",
+    "actual_path": "collected_documents/unclassified/ecb7dd7bd198__tradescreen.tsx",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/src/screens/market/WatchlistScreen.tsx",
+    "actual_path": "collected_documents/unclassified/d045725ea2a7__watchlistscreen.tsx",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/src/screens/onboarding/CreateProfileScreen.tsx",
+    "actual_path": "collected_documents/unclassified/bcdfec2afe05__createprofilescreen.tsx",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/src/screens/onboarding/OnboardingCharityScreen.tsx",
+    "actual_path": "collected_documents/unclassified/8106cdd5c07f__onboardingcharityscreen.tsx",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/src/screens/onboarding/OnboardingCompleteScreen.tsx",
+    "actual_path": "collected_documents/unclassified/fe08e809ff85__onboardingcompletescreen.tsx",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/src/screens/onboarding/OnboardingFirstGoalScreen.tsx",
+    "actual_path": "collected_documents/unclassified/3ec2fabffa50__onboardingfirstgoalscreen.tsx",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/src/screens/onboarding/OnboardingFlowScreen.tsx",
+    "actual_path": "collected_documents/unclassified/e8e70cc443bb__onboardingflowscreen.tsx",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/src/screens/onboarding/OnboardingIntentionScreen.tsx",
+    "actual_path": "collected_documents/unclassified/5da31dc8318c__onboardingintentionscreen.tsx",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/src/screens/onboarding/OnboardingScreen.tsx",
+    "actual_path": "collected_documents/unclassified/011de2d7f7c6__onboardingscreen.tsx",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/src/screens/onboarding/OnboardingSlides.tsx",
+    "actual_path": "collected_documents/unclassified/e01a206e9bc1__onboardingslides.tsx",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/src/screens/onboarding/OnboardingTutorialScreen.tsx",
+    "actual_path": "collected_documents/unclassified/1c803aa9af7a__onboardingtutorialscreen.tsx",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/src/screens/onboarding/OnboardingWelcomeScreen.tsx",
+    "actual_path": "collected_documents/unclassified/79d683fb4b0e__onboardingwelcomescreen.tsx",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/src/screens/onboarding/SplashScreen.tsx",
+    "actual_path": "collected_documents/unclassified/ce7c14674704__splashscreen.tsx",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/src/screens/party/CreatePartyScreen.tsx",
+    "actual_path": "collected_documents/unclassified/29e93ef3caa7__createpartyscreen.tsx",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/src/screens/party/GlobalLeaderboardScreen.tsx",
+    "actual_path": "collected_documents/unclassified/2f7813bb6bbe__globalleaderboardscreen.tsx",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/src/screens/party/JoinPartyScreen.tsx",
+    "actual_path": "collected_documents/unclassified/dff53f59d04e__joinpartyscreen.tsx",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/src/screens/party/MemberProfileScreen.tsx",
+    "actual_path": "collected_documents/unclassified/6da52b1858bc__memberprofilescreen.tsx",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/src/screens/party/PartyDetailScreen.tsx",
+    "actual_path": "collected_documents/unclassified/c729931d1d6b__partydetailscreen.tsx",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/src/screens/party/PartyDiscoveryScreen.tsx",
+    "actual_path": "collected_documents/unclassified/414378605ab7__partydiscoveryscreen.tsx",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/src/screens/party/PartyListScreen.tsx",
+    "actual_path": "collected_documents/unclassified/4886a6a0dc46__partylistscreen.tsx",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/src/screens/party/PartySettingsScreen.tsx",
+    "actual_path": "collected_documents/unclassified/55a1ab332a20__partysettingsscreen.tsx",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/src/screens/play/GameScreen.tsx",
+    "actual_path": "collected_documents/unclassified/c7c95620eb47__gamescreen.tsx",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/src/screens/play/PlateStoreScreen.tsx",
+    "actual_path": "collected_documents/unclassified/d65f455fcc72__platestorescreen.tsx",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/src/screens/play/PlayHome.tsx",
+    "actual_path": "collected_documents/unclassified/7fcdbba972cb__playhome.tsx",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/src/screens/play/PlayHomeScreen.tsx",
+    "actual_path": "collected_documents/unclassified/ad1465930498__playhomescreen.tsx",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/src/screens/profile/CharitySettingsScreen.tsx",
+    "actual_path": "collected_documents/unclassified/1fa6974ce174__charitysettingsscreen.tsx",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/src/screens/profile/EditProfileScreen.tsx",
+    "actual_path": "collected_documents/unclassified/8fd9e183706c__editprofilescreen.tsx",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/src/screens/profile/GiverLeaderboardScreen.tsx",
+    "actual_path": "collected_documents/unclassified/bf7ef0a6b88b__giverleaderboardscreen.tsx",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/src/screens/profile/ProfileDashboardScreen.tsx",
+    "actual_path": "collected_documents/unclassified/2ba267fb2f6c__profiledashboardscreen.tsx",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/src/screens/profile/ProfileScreen.tsx",
+    "actual_path": "collected_documents/unclassified/306e17596898__profilescreen.tsx",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/src/screens/settings/SettingsScreen.tsx",
+    "actual_path": "collected_documents/unclassified/7043bd99c03a__settingsscreen.tsx",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/src/screens/stake/StakeDetailScreen.tsx",
+    "actual_path": "collected_documents/unclassified/458a9a4b32db__stakedetailscreen.tsx",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/src/screens/wager/BetConfirmedSheet.tsx",
+    "actual_path": "collected_documents/unclassified/73296a7ce173__betconfirmedsheet.tsx",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/src/screens/wager/CreateWagerScreen.tsx",
+    "actual_path": "collected_documents/unclassified/f9687890d90c__createwagerscreen.tsx",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/src/screens/wager/PlaceBetSheet.tsx",
+    "actual_path": "collected_documents/unclassified/a3c00aced4c3__placebetsheet.tsx",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/src/screens/wager/RevealScreen.tsx",
+    "actual_path": "collected_documents/unclassified/dc847966e40d__revealscreen.tsx",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/src/screens/wager/WagerDetailScreen.tsx",
+    "actual_path": "collected_documents/unclassified/88a19bd9c7e9__wagerdetailscreen.tsx",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/supabase/functions/create-challenge/index.ts",
+    "actual_path": "collected_documents/unclassified/1dfa216e93e5__index.ts",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Documents/plate-party/supabase/functions/create-game-session/index.ts",
+    "actual_path": "collected_documents/unclassified/8cf595698dcd__index.ts",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Downloads/CODEX_HANDOFF.md",
+    "actual_path": "collected_documents/codex/be997fcf9c46__codex_handoff.md",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Downloads/CODEX_PROMPT.txt",
+    "actual_path": "collected_documents/codex/e41736725e70__codex_prompt.txt",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Downloads/CRE_Codex_Project_OS_v2.2_RELEASE.json",
+    "actual_path": "collected_documents/codex/cfa1dfe91c9b__cre_codex_project_os_v2.2_release.json",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Downloads/CRE_LEVEL10_DOMAIN_SCORECARD_v2.2.md",
+    "actual_path": "collected_documents/codex/0493897bbc41__domain_scorecard.md",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Downloads/CRE_LEVEL10_SWEEPER_REPORT_v2.2 (1).md",
+    "actual_path": "collected_documents/codex/726cb898d445__level10_sweeper_report.md",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Downloads/PLATE_PARTY_CODEX_MASTER_AUDIT_PROMPT_V3.md",
+    "actual_path": "collected_documents/codex/d6c489008ab6__plate_party_codex_master_audit_prompt_v3.md",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Downloads/PLATE_PARTY_HANDOFF (1).md",
+    "actual_path": "collected_documents/kimi/1016bdd0713b__plate_party_handoff-1-.md",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Downloads/PLATE_PARTY_MEGA_PROMPT (1).md",
+    "actual_path": "collected_documents/kimi/3d303b2b845c__plate_party_mega_prompt-1-.md",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Downloads/codex_prompt_quant_hunter.txt",
+    "actual_path": "collected_documents/codex/cbcd3ca06d6a__codex_prompt_quant_hunter.txt",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Downloads/cre_codex_v0.11_release_verification.json",
+    "actual_path": "collected_documents/codex/deea4c468070__cre_codex_v0.11_release_verification.json",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Downloads/plate_party_codex_goal_prompt.md",
+    "actual_path": "collected_documents/codex/2826fceb2493__plate_party_codex_goal_prompt.md",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  },
+  {
+    "logical_path": "<USER_HOME>/Downloads/plate_party_feed_tabs_prompt.md",
+    "actual_path": "collected_documents/kimi/ccec32d3188f__plate_party_feed_tabs_prompt.md",
+    "findings": [],
+    "reason": "loose_file_not_project_specific"
+  }
+]

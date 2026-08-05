@@ -1,0 +1,56 @@
+{
+  "acceptance": [
+    "clean synthetic posture passes the closed schema",
+    "all nine required lineage stages form one deterministic chain",
+    "every artifact binds owner, version, as-of, and SHA-256",
+    "correlation identifiers agree across decision and logs",
+    "replay identity is recomputable from canonical inputs",
+    "sensitive payloads are excluded from general logs",
+    "all seven registered mutations are rejected",
+    "live permissions and external effects remain false"
+  ],
+  "artifact_id": "OBSERVABILITY-001-PUBLIC-EVALUATOR-CONTRACT",
+  "claim_ceiling": "Synthetic observability and lineage conformance only; no production telemetry, durability, recovery, operational completeness, sealed evaluation, or deployment claim.",
+  "diagnostic_registry": {
+    "missing_asof": "LINEAGE-MISSING-ASOF",
+    "missing_correlation": "LINEAGE-CORRELATION",
+    "missing_hash": "LINEAGE-MISSING-HASH",
+    "missing_lineage_edge": "LINEAGE-MISSING-EDGE",
+    "missing_replay_identity": "LINEAGE-REPLAY-IDENTITY",
+    "missing_version": "LINEAGE-MISSING-VERSION",
+    "protected_detail_log": "LINEAGE-PROTECTED-DETAIL-LOG"
+  },
+  "execution_scope": "SYNTHETIC_NON_INFLUENCING",
+  "implementation_gate": {
+    "all_registered_mutations_must_be_rejected": true,
+    "evaluator_must_pass_clean_subject": true,
+    "material_implementation_started": false
+  },
+  "independence": {
+    "legacy_evaluator_modified": false,
+    "legacy_evidence_modified": false,
+    "legacy_fixtures_modified": false,
+    "legacy_schema_modified": false,
+    "new_evaluator_may_not_import_material_code": true
+  },
+  "legacy_boundary": {
+    "artifacts/evaluations/observability_lineage.json": "1770d49540b1b8e3dd590a20f3b035842d3512f86cf8f5835dfd0c310a232b14",
+    "contracts/lineage_manifest.schema.json": "a6c9c49b065dd3e750b77cf7846900dc692f21e49ed708c1e60bb601ed4a789e",
+    "evals/known_bad/frontier/lineage_missing_asof.json": "8e43bbcb313b2b7011ece12ef3c5b362e0dda343a2316f9d64c63c22e567e5a2",
+    "evals/known_bad/frontier/lineage_protected_log.json": "701bc129a08f31e8b801467dc1c0d38bfac09ab2eefda21981387ff5687d6979",
+    "scripts/validate_observability_lineage.py": "d74660193693a1f6453d90eb4db8c38f331a5e629e152edc3e81c486a0684dbd"
+  },
+  "proof_level": 4,
+  "required_fixtures": [
+    "evals/known_bad/frontier/lineage_missing_asof.json",
+    "evals/known_bad/frontier/observability001/observability_missing_version.json",
+    "evals/known_bad/frontier/observability001/observability_missing_hash.json",
+    "evals/known_bad/frontier/observability001/observability_missing_correlation.json",
+    "evals/known_bad/frontier/observability001/observability_missing_replay_identity.json",
+    "evals/known_bad/frontier/observability001/observability_missing_lineage_edge.json",
+    "evals/known_bad/frontier/lineage_protected_log.json"
+  ],
+  "schema_version": "1.0.0",
+  "status": "FROZEN_BEFORE_MATERIAL_IMPLEMENTATION",
+  "task_id": "OBSERVABILITY-001"
+}

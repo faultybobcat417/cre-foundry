@@ -1,0 +1,41 @@
+{
+  "artifact_id": "AUTONOMOUS-FRONTIER-META-001",
+  "subject_commit": "702ea7821032aaa197bda7e8e37ee36bda9e1f07",
+  "covered_paths": [
+    {
+      "path": "scripts/evaluate_autonomous_frontier.py",
+      "sha256": "e3e07ffc2f4019940a5caf093ad7921c93ee0286e34b2c60f7f4081acea9a6db"
+    },
+    {
+      "path": "contracts/autonomous_frontier_contract.schema.json",
+      "sha256": "76e7eae14c36e87c09202bedb5a0be1f5a90da93b79e1af33fae8e4823542dc3"
+    },
+    {
+      "path": "control/AUTONOMOUS_FRONTIER_CONTRACT.json",
+      "sha256": "e21d0157c4365317ceb178d392956ad36d54816b875efbf0ee490f4fccc555df"
+    },
+    {
+      "path": "evals/public/test_autonomous_frontier.py",
+      "sha256": "9be2a4a1931d20125bae0cba18d560bdf128a67e98fda273189f5d9c19ee0294"
+    },
+    {
+      "path": "scripts/validate_mission_integrity.py",
+      "sha256": "1caced3e9605113693d7eb2713cd0cf45511ff76846eae65385f642b90fff293"
+    },
+    {
+      "path": "scripts/validate_frontier_meta.py",
+      "sha256": "6bd0f18502e4dedb77f1746bc792778a05361a73f66bab5e2d9a759dd9d3cdf7"
+    },
+    {
+      "path": "scripts/prove_known_bad_fails.py",
+      "sha256": "e6fa8063ded400a68024ae4dd53dae188280d521551e6c4b9e941e6ee3eb2f69"
+    }
+  ],
+  "command": "python evals/public/test_autonomous_frontier.py",
+  "exit_code": 1,
+  "tests_run": 19,
+  "tests_passed": 18,
+  "tests": [],
+  "proof_level": 4,
+  "claim_ceiling": "Mutation-resistant public frontier-evaluator mechanics; not evidence that domain gates pass or that sealed/hidden independence exists."
+}

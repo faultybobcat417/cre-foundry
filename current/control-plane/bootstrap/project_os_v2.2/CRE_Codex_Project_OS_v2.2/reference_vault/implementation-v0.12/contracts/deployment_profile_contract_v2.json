@@ -1,0 +1,87 @@
+{
+  "contract_version": "cre-deployment-profiles-v2",
+  "profiles": [
+    {
+      "profile": "research",
+      "purpose": "source inspection, historical reconstruction, simulations",
+      "required_components": [
+        "Python",
+        "DuckDB",
+        "Parquet",
+        "local immutable artifact store"
+      ],
+      "optional_components": [
+        "PostgreSQL/PostGIS"
+      ],
+      "forbidden": [
+        "live external writes",
+        "production credentials"
+      ]
+    },
+    {
+      "profile": "pilot_shadow",
+      "purpose": "daily source refresh, scoring and non-issued shadow routes",
+      "required_components": [
+        "containerized modular application",
+        "PostgreSQL/PostGIS",
+        "S3-compatible object store",
+        "scheduled workers",
+        "transactional outbox",
+        "OpenTelemetry collector"
+      ],
+      "optional_components": [
+        "MLflow-compatible registry",
+        "self-hosted OSRM"
+      ],
+      "forbidden": [
+        "unapproved live outreach",
+        "uncontrolled model promotion"
+      ]
+    },
+    {
+      "profile": "pilot_live",
+      "purpose": "authorized representative Tip Sheet issuance",
+      "required_components": [
+        "all pilot_shadow components",
+        "signed delegation verifier",
+        "protected-account service",
+        "route provider adapter",
+        "field application",
+        "emergency stop",
+        "immutable audit ledger"
+      ],
+      "optional_components": [
+        "calendar/CRM adapters"
+      ],
+      "forbidden": [
+        "capability outside delegation",
+        "silent fallback to stale data"
+      ]
+    },
+    {
+      "profile": "scaled_production",
+      "purpose": "multiple territories, representatives and independent workers",
+      "required_components": [
+        "horizontally scalable workers",
+        "managed relational stores",
+        "object storage lifecycle",
+        "isolated adapter plane",
+        "central telemetry and lineage",
+        "disaster recovery"
+      ],
+      "optional_components": [
+        "message broker",
+        "online feature store",
+        "graph database",
+        "compiled performance kernels"
+      ],
+      "promotion_requirement": "each optional component requires a measured split trigger and rollback plan"
+    }
+  ],
+  "environment_rules": [
+    "Infrastructure definitions are versioned and reviewed like application code.",
+    "Production credentials never enter agent prompts, repositories or test fixtures.",
+    "Migrations are expand-contract and backward compatible across one release boundary.",
+    "Every profile has a one-command validation and a documented rollback."
+  ]
+}

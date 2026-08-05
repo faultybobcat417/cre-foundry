@@ -1,0 +1,43 @@
+[
+  {
+    "logical_path": "repos/cre-relay-security-standalone/evals/public/test_autonomous_frontier.py",
+    "actual_path": "current/control-plane/evals/public/test_autonomous_frontier.py",
+    "findings": [
+      "email",
+      "possible_password_word"
+    ],
+    "reason": "test_or_public_evaluator_fixture"
+  },
+  {
+    "logical_path": "repos/cre-foundry/tests/unit/test_brampton_permit_directory_bridge.py",
+    "actual_path": "current/application/tests/unit/test_brampton_permit_directory_bridge.py",
+    "findings": [
+      "phone"
+    ],
+    "reason": "test_or_public_evaluator_fixture"
+  },
+  {
+    "logical_path": "repos/cre-foundry/tests/unit/test_brampton_verification_ledger.py",
+    "actual_path": "current/application/tests/unit/test_brampton_verification_ledger.py",
+    "findings": [
+      "email"
+    ],
+    "reason": "test_or_public_evaluator_fixture"
+  },
+  {
+    "logical_path": "repos/cre-foundry/tests/unit/test_brampton_business_directory_silver.py",
+    "actual_path": "current/application/tests/unit/test_brampton_business_directory_silver.py",
+    "findings": [
+      "phone"
+    ],
+    "reason": "test_or_public_evaluator_fixture"
+  },
+  {
+    "logical_path": "repos/cre-foundry/tests/unit/test_brampton_permit_opportunity_evidence.py",
+    "actual_path": "current/application/tests/unit/test_brampton_permit_opportunity_evidence.py",
+    "findings": [
+      "phone"
+    ],
+    "reason": "test_or_public_evaluator_fixture"
+  }
+]

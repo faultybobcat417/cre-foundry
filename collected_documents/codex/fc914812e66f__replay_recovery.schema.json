@@ -1,0 +1,246 @@
+{
+  "$id": "https://cre-foundry.local/schemas/replay-recovery-posture-v1.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "claim_ceiling": {
+      "const": "Synthetic REPLAY-001 conformance only; no production availability, durability, disaster recovery, recovery-time, migration, persistence, or deployment claim."
+    },
+    "compatibility": {
+      "additionalProperties": false,
+      "properties": {
+        "current_schema_version": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "migration": {
+          "additionalProperties": false,
+          "properties": {
+            "compatible": {
+              "type": "boolean"
+            },
+            "from_version": {
+              "minLength": 1,
+              "type": "string"
+            },
+            "rollback_defined": {
+              "type": "boolean"
+            },
+            "to_version": {
+              "minLength": 1,
+              "type": "string"
+            }
+          },
+          "required": [
+            "from_version",
+            "to_version",
+            "compatible",
+            "rollback_defined"
+          ],
+          "type": "object"
+        },
+        "supported_read_versions": {
+          "items": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "minItems": 1,
+          "type": "array",
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "current_schema_version",
+        "supported_read_versions",
+        "migration"
+      ],
+      "type": "object"
+    },
+    "crash_recovery": {
+      "additionalProperties": false,
+      "properties": {
+        "journal_state": {
+          "enum": [
+            "COMMITTED",
+            "PREPARED",
+            "ABORTED"
+          ]
+        },
+        "partial_state_accepted": {
+          "type": "boolean"
+        },
+        "resume_output_sha256": {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        },
+        "resumed": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "journal_state",
+        "partial_state_accepted",
+        "resumed",
+        "resume_output_sha256"
+      ],
+      "type": "object"
+    },
+    "document_kind": {
+      "const": "REPLAY_RECOVERY_POSTURE"
+    },
+    "effects": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "effect_id": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "effect_sha256": {
+            "pattern": "^[0-9a-f]{64}$",
+            "type": "string"
+          },
+          "idempotency_key": {
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "effect_id",
+          "idempotency_key",
+          "effect_sha256"
+        ],
+        "type": "object"
+      },
+      "minItems": 1,
+      "type": "array"
+    },
+    "execution_scope": {
+      "const": "SYNTHETIC_NON_INFLUENCING"
+    },
+    "external_effect_occurred": {
+      "const": false
+    },
+    "input_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "live_permissions": {
+      "const": false
+    },
+    "original_output_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "proof_level": {
+      "const": 4
+    },
+    "replay_output_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "restore": {
+      "additionalProperties": false,
+      "properties": {
+        "backup_sha256": {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        },
+        "restored_sha256": {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        },
+        "verified": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "backup_sha256",
+        "restored_sha256",
+        "verified"
+      ],
+      "type": "object"
+    },
+    "rollback": {
+      "additionalProperties": false,
+      "properties": {
+        "attempted_from_version": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "prior_version": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "restored_version": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "verified": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "prior_version",
+        "attempted_from_version",
+        "restored_version",
+        "verified"
+      ],
+      "type": "object"
+    },
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "snapshots": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "content_sha256": {
+            "pattern": "^[0-9a-f]{64}$",
+            "type": "string"
+          },
+          "readable": {
+            "type": "boolean"
+          },
+          "schema_version": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "snapshot_id": {
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "snapshot_id",
+          "schema_version",
+          "content_sha256",
+          "readable"
+        ],
+        "type": "object"
+      },
+      "minItems": 1,
+      "type": "array"
+    }
+  },
+  "required": [
+    "document_kind",
+    "schema_version",
+    "execution_scope",
+    "proof_level",
+    "live_permissions",
+    "external_effect_occurred",
+    "input_sha256",
+    "original_output_sha256",
+    "replay_output_sha256",
+    "effects",
+    "crash_recovery",
+    "snapshots",
+    "compatibility",
+    "restore",
+    "rollback",
+    "claim_ceiling"
+  ],
+  "title": "REPLAY-001 synthetic recovery posture",
+  "type": "object"
+}

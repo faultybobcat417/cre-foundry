@@ -1,0 +1,61 @@
+{
+  "controlled_pilot_execution_count": 0,
+  "future_off_policy_requirements": [
+    "behavior_policy_version",
+    "target_policy_version",
+    "propensity_overlap",
+    "effective_sample_size",
+    "inverse_propensity_estimate",
+    "doubly_robust_estimate",
+    "confidence_interval",
+    "nonstationarity_review"
+  ],
+  "incremental_roi_proven": false,
+  "model_version": "cre-foundry-pilot-experiment-design-v1",
+  "outreach_enabled": false,
+  "phases": [
+    {
+      "assignment_method": "parallel_observation",
+      "execution_approved": false,
+      "outreach_permitted": false,
+      "phase": "shadow_review"
+    },
+    {
+      "assignment_method": "randomized_or_matched_holdout",
+      "execution_approved": false,
+      "outreach_permitted": false,
+      "phase": "controlled_pilot"
+    }
+  ],
+  "primary_outcome": null,
+  "primary_outcome_confirmed": false,
+  "production_ranking_enabled": false,
+  "required_metrics": [
+    "precision_at_daily_review_limit",
+    "lift_over_random",
+    "lift_over_business_as_usual",
+    "decision_maker_reach_rate",
+    "confirmed_requirement_rate",
+    "meeting_rate",
+    "active_opportunity_rate",
+    "mandate_rate",
+    "transaction_rate",
+    "incremental_commission",
+    "representative_minutes_per_confirmed_requirement",
+    "travel_minutes_per_confirmed_requirement",
+    "false_positive_review_burden",
+    "incremental_net_value",
+    "return_on_investment"
+  ],
+  "required_policy_logging": [
+    "decision_run_id",
+    "policy_version",
+    "assignment_group",
+    "assignment_probability",
+    "as_of_at",
+    "evidence_bundle_id",
+    "eligible_action_set",
+    "exclusion_state"
+  ],
+  "shadow_pilot_execution_count": 0
+}

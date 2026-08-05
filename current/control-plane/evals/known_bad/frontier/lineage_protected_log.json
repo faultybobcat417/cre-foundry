@@ -1,0 +1,5 @@
+{
+  "case_id": "protected-detail-log",
+  "mutation_id": "protected_detail_log",
+  "expected_diagnostic": "LINEAGE-PROTECTED-DETAIL-LOG"
+}

@@ -1,0 +1,50 @@
+{
+  "attack_scope": "SYNTHETIC_EVALUATOR_SELF_TEST_ONLY",
+  "base_run_sha256": "e467dec2bdaa913919bb848d3aa9c490244c908c5d136e348c80708bff43325a",
+  "case_id": "rehashed-fit",
+  "document_kind": "REGISTERED_CALIBRATION_MUTATION",
+  "expected_diagnostic": "CALIBRATION-FIT-REPLAY-MISMATCH",
+  "patch": {
+    "operations": [
+      {
+        "document": "subject",
+        "operation": "replace",
+        "path": [
+          "fit",
+          "cells",
+          0,
+          "positive"
+        ],
+        "value": 2
+      },
+      {
+        "document": "subject",
+        "operation": "replace",
+        "path": [
+          "fit",
+          "fit_sha256"
+        ],
+        "value": "0f90a50d45914a622f9ad901e0c6f8c73adfc9c68b32f9adbbc48910a74fa861"
+      },
+      {
+        "document": "subject",
+        "operation": "replace",
+        "path": [
+          "replay_receipt",
+          "fit_sha256"
+        ],
+        "value": "0f90a50d45914a622f9ad901e0c6f8c73adfc9c68b32f9adbbc48910a74fa861"
+      },
+      {
+        "document": "subject",
+        "operation": "replace",
+        "path": [
+          "replay_receipt",
+          "receipt_sha256"
+        ],
+        "value": "acb345c16aaba2e52fd3882ab09339ea083d3dd550ab26d60a4799e9a8ecf68d"
+      }
+    ]
+  },
+  "schema_version": "1.0.0"
+}

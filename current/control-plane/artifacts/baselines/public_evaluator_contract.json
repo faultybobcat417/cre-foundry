@@ -1,0 +1,203 @@
+{
+  "artifact_id": "BASELINE-001-PUBLIC-EVALUATOR-CONTRACT",
+  "schema_version": "1.0.0",
+  "subject_task": "BASELINE-001",
+  "defined_before_policy_implementation": true,
+  "execution_scope": "SYNTHETIC_NON_INFLUENCING",
+  "normal_command": ["python", "scripts/validate_baseline_framework.py"],
+  "evaluator_architecture": {
+    "selected": "INDEPENDENT_DUAL_RECONSTRUCTION_WITH_COMMON_ADAPTER",
+    "rule": "The builder emits scores, MATH problems and decisions, metrics, replacement analysis, and a receipt. The public evaluator must not import src.cre_foundry.baselines and independently reconstructs all five policies, temporal admissibility, fitting, scores, MATH decisions, label eligibility, metrics, replacement disposition, and receipt.",
+    "rejected": [
+      {"architecture": "GOLDEN_TRANSCRIPT_ONLY", "reason": "A fully rehashed semantic error could be blessed and one fixture gives weak boundary evidence."},
+      {"architecture": "SHARED_ORCHESTRATOR_ONLY", "reason": "A shared semantic error could affect every policy symmetrically."},
+      {"architecture": "DUAL_PYTHON_SQL_ENGINES", "reason": "Premature implementation complexity for the bounded synthetic domain."}
+    ],
+    "existing_oracle": "Every policy decision must also validate through the frozen MATH evaluator and exhaustive exact-ten-or-abstain oracle."
+  },
+  "claim_ceiling": "Public builder-visible proof level 5 establishes deterministic conformance of five named policies to one frozen synthetic point-in-time split, feature, label, MATH, metric, replacement, and replay interface only. It establishes no real incumbent behavior, feature utility, source or history coverage, label accuracy, baseline rate, predictive association, calibration, generalization, causal or ITT lift, representative usability, operational feasibility, commercial value, policy superiority, live use, production replacement, or production readiness.",
+  "canonicalization": "SORTED_KEYS_COMPACT_INTEGER_JSON_V1",
+  "common_input_contract": {
+    "cohort_kind": "FROZEN_MULTI_ROUTE_DAY_SYNTHETIC",
+    "outcomes_canonical_route_day_role": "LABEL_LINEAGE_CONFORMANCE_ONLY_NOT_A_RANKING_OR_TRAINING_SAMPLE",
+    "separate_ledgers": ["feature_ledger", "label_ledger"],
+    "required_bindings": [
+      "frozen_benchmark_sha256",
+      "temporal_split_registry_sha256",
+      "policy_registry_sha256",
+      "metric_spec_sha256",
+      "replacement_rule_sha256",
+      "outcomes_policy_sha256",
+      "outcomes_canonical_run_sha256",
+      "math_problem_schema_sha256",
+      "math_decision_schema_sha256",
+      "math_policy_sha256",
+      "math_evaluator_sha256",
+      "baseline_policy_schema_sha256",
+      "baseline_evaluation_schema_sha256",
+      "public_evaluator_contract_sha256"
+    ],
+    "identical_universe_rule": "For a route-day, every policy receives byte-identical candidate IDs, physical locations, features, missingness, clocks, gates, protection, grains, service, proximity, composition constraints, split, label view, and MATH oracle. Only business_value_units, value_state, and the policy binding may differ.",
+    "candidate_count_bounds": {"minimum": 0, "maximum": 20},
+    "feature_clock_rule": "event_at <= recorded_at <= ingested_at <= validation_completed_at <= available_at <= decision_at <= issued_at < route_date",
+    "derived_feature_rule": "Every source assertion is bound and max(source.available_at) <= materialized_at <= decision_at.",
+    "allowed_stage": 1,
+    "forbidden_feature_ancestors": ["STAGE_2", "STAGE_3", "FIELD_EVENT", "OUTCOME", "BOOKING", "ATTENDANCE", "MANDATE", "TRANSACTION", "COMMISSION", "POST_DECISION_CORRECTION"],
+    "missing_feature_rule": "Missing features never delete a candidate; each policy uses its registered fallback or emits UNKNOWN, which follows MATH fail-closed semantics."
+  },
+  "temporal_split_contract": {
+    "partitions": ["TRAIN", "VALIDATION", "TEST"],
+    "ordering": "TRAIN decisions and eligible-label availability precede model_fit_at; validation predictions freeze before validation labels are available; all registered configuration freezes before TEST decisions; test predictions freeze before test labels are available.",
+    "partition_unit": "REPRESENTATIVE_ROUTE_DAY_GROUPED_BY_STABLE_ENTITY_LOCATION_FAMILY",
+    "candidate_random_split_forbidden": true,
+    "complete_partition_required": true,
+    "purge_embargo_rule": "The registered outcome window plus reporting grace and publication/correction latency is parameterized and enforced between fit-eligible labels and downstream decision partitions.",
+    "test_reuse_forbidden": ["feature_selection", "model_family_selection", "segment_selection", "seed_selection", "threshold_selection", "metric_selection", "margin_selection", "hyperparameter_tuning"],
+    "public_test_is_hidden_holdout": false
+  },
+  "label_contract": {
+    "source": "OUTCOMES_CURRENT_HEADS_AT_ONE_REGISTERED_COMMON_AS_OF",
+    "binary_mapping": {
+      "F9_CONFIRMED_SYNTHETIC": true,
+      "MATURE_NO_F9_SYNTHETIC": false,
+      "IMMATURE_UNKNOWN": null,
+      "CENSORED_UNKNOWN": null,
+      "COMPETING_EVENT_UNKNOWN": null,
+      "CONFLICTED_UNKNOWN": null,
+      "UNKNOWN": null
+    },
+    "training_eligibility": "Only mature binary labels available at or before model_fit_at may be used; null labels are excluded with an explicit reason.",
+    "evaluation_eligibility": "Primary final metrics are computed only for route-days whose entire common candidate universe has mature binary labels. Otherwise every policy receives PARTIAL_NOT_COMPARABLE on that route-day.",
+    "ranking_prohibition": "Labels, label states, label eligibility, outcome availability, and outcome lineage are evaluation metadata and never ranking features or candidate admission gates.",
+    "correction_rule": "Corrections create a new version and never rewrite an already-issued fit snapshot."
+  },
+  "required_policies": [
+    {
+      "policy_id": "INCUMBENT_SYNTHETIC_V1",
+      "family": "INCUMBENT_SYNTHETIC",
+      "complexity_tier": 0,
+      "semantics": "Descending registered pre-decision incumbent_priority_units, described only as a synthetic incumbent proxy."
+    },
+    {
+      "policy_id": "SEEDED_RANDOM_SYNTHETIC_V1",
+      "family": "SEEDED_RANDOM_SYNTHETIC",
+      "complexity_tier": 0,
+      "semantics": "For every registered seed and candidate, rank the unsigned big-endian SHA-256 of canonical domain, seed, benchmark, split digest, route-day, universe digest, candidate ID, and physical-location ID. Runtime RNG and seed picking are forbidden.",
+      "domain": "CRE_FOUNDRY_BASELINE_RANDOM_V1",
+      "registered_seed_count": 16
+    },
+    {
+      "policy_id": "TRANSPARENT_RULE_SYNTHETIC_V1",
+      "family": "TRANSPARENT_RULE_SYNTHETIC",
+      "complexity_tier": 1,
+      "semantics": "Exact registered integer weighted sum over allowlisted Stage-1 features; weights are frozen and not learned or tuned."
+    },
+    {
+      "policy_id": "RECENCY_SOURCE_SYNTHETIC_V1",
+      "family": "RECENCY_SOURCE_SYNTHETIC",
+      "complexity_tier": 1,
+      "semantics": "Descending latest qualifying Stage-1 source-event recency available by decision time, then registered source-family priority and canonical ties; outcome or booking recency is forbidden."
+    },
+    {
+      "policy_id": "BETA_BINOMIAL_BUCKET_SYNTHETIC_V1",
+      "family": "BETA_BINOMIAL_BUCKET_SYNTHETIC",
+      "complexity_tier": 2,
+      "semantics": "Train-only exact posterior bucket rate (positive_count+1)/(mature_count+2); null labels excluded; unseen buckets use the exact global train prior; fractions compare by cross multiplication and distinct tied levels map to ordinal integer MATH values without floats or rounding."
+    }
+  ],
+  "adapter_contract": {
+    "interface": "score(common_feature_view, frozen_policy_state) -> complete_candidate_score_vector",
+    "numeric_domain": "INTEGER_OR_EXACT_RATIONAL_ONLY",
+    "probability_claims_allowed": false,
+    "direct_selection_allowed": false,
+    "math_projection": "Copy the byte-identical common MATH problem, changing only business_value_units, value_state=REGISTERED_SYNTHETIC_PROXY, and the policy version/hash, then call the frozen MATH oracle.",
+    "valid_decisions": ["ISSUE_EXACTLY_TEN_DISTINCT_PHYSICAL_LOCATIONS", "ABSTAIN_NO_VALID_TEN"]
+  },
+  "metric_contract": {
+    "unit": "REPRESENTATIVE_ROUTE_DAY",
+    "aggregation": "PAIRED_ROUTE_DAY_MACRO_AND_EXACT_TOTALS",
+    "guardrails": ["exact_ten_violations", "duplicate_location_count", "protected_or_failed_or_unknown_gate_selections", "leakage_count", "deterministic_replay_failures", "common_candidate_coverage_failures"],
+    "required_counts": ["assigned_route_days", "test_policy_runs", "issue_policy_runs", "abstain_policy_runs", "confirmed_f9_lower_bound_at_10", "known_label_count_at_10", "unknown_label_count_at_10"],
+    "complete_route_day_metrics": ["final_f9_count_at_10", "synthetic_fixture_hits_at_10_total", "synthetic_fixture_hits_at_10_macro_mean", "synthetic_fixture_precision_at_10", "synthetic_fixture_recall_at_10", "synthetic_pairwise_rank_concordance"],
+    "zero_denominator_rule": "The affected rational metric is null with an explicit reason.",
+    "partial_route_day_rule": "Report only the confirmed-positive lower bound and coverage; final metrics and replacement comparison are null.",
+    "probability_metrics": "NOT_APPLICABLE_UNCALIBRATED_RANKING",
+    "empirical_uncertainty": {"status": "NOT_EMPIRICALLY_ESTIMABLE", "standard_error": null, "confidence_interval": null, "p_value": null, "reason": "Synthetic fixture; no independent historical route-day sample.", "required_gate": "GATE-OUTCOME-LABELS-MATURITY-001", "scenario_values_are_evidence": false},
+    "random_dispersion": "The full registered-seed mean, minimum, median, and maximum may be reported only as SYNTHETIC_SEED_SENSITIVITY, never sampling uncertainty."
+  },
+  "replacement_contract": {
+    "scope": "SYNTHETIC_MECHANICAL_DISPOSITION_ONLY",
+    "dispositions": ["SYNTHETIC_MECHANICAL_PREFERENCE", "NO_SYNTHETIC_REPLACEMENT", "NOT_COMPARABLE_INCOMPLETE_LABELS"],
+    "primary_quantity": "Total final synthetic F9 at 10 on identical held-out route-days; seeded random uses the exact mean over all 16 registered seeds.",
+    "tier_margins_total_hits": {"0": 0, "1": 1, "2": 2},
+    "guardrails": ["zero invariant regressions", "zero leakage", "identical cohort split and outcome as-of", "no additional abstentions", "noninferior on every registered temporal fold with tolerance zero", "no policy-specific row exclusion"],
+    "complexity_preference": ["complexity_tier", "feature_count", "trainable_parameter_count", "dependency_count", "canonical_policy_id"],
+    "production_replacement_authorized": false,
+    "real_margin_required_gate": "GATE-BASELINE-REPLACEMENT-AUTHORITY-001"
+  },
+  "required_properties": [
+    {"property_id": "BASELINE-P01", "rule": "All five policies consume the identical frozen universe, split, clocks, label view, metric spec, and non-score MATH bytes."},
+    {"property_id": "BASELINE-P02", "rule": "Only Stage-1 information available by the decision cutoff can affect a score."},
+    {"property_id": "BASELINE-P03", "rule": "Only mature binary training labels available by model-fit-as-of can fit the statistical policy; all other outcome states remain null."},
+    {"property_id": "BASELINE-P04", "rule": "Every policy delegates issuance to the frozen MATH oracle and returns exact ten distinct eligible physical locations or ABSTAIN_NO_VALID_TEN."},
+    {"property_id": "BASELINE-P05", "rule": "Random ranking replays the complete frozen seed schedule and cannot depend on input order or runtime RNG."},
+    {"property_id": "BASELINE-P06", "rule": "All scores and metrics use exact integer or rational semantics with deterministic canonical ties."},
+    {"property_id": "BASELINE-P07", "rule": "Final metrics and replacement are null unless every policy is comparable on the same fully mature route-day universes."},
+    {"property_id": "BASELINE-P08", "rule": "Replacement respects the frozen margin, guardrails, temporal-fold noninferiority, and lexicographic complexity preference."},
+    {"property_id": "BASELINE-P09", "rule": "Independent reconstruction must precede receipt validation so recomputed attacker-controlled hashes cannot mask semantic changes."},
+    {"property_id": "BASELINE-P10", "rule": "Every claim remains at the synthetic proof-level-5 ceiling and live ranking remains disabled."}
+  ],
+  "required_negative_controls": [
+    {"case_id": "future-feature", "expected_diagnostic": "BASELINE-FEATURE-AVAILABLE-LEAKAGE"},
+    {"case_id": "feature-clock-reordered", "expected_diagnostic": "BASELINE-FEATURE-CLOCK-ORDER"},
+    {"case_id": "outcome-feature", "expected_diagnostic": "BASELINE-OUTCOME-FEATURE-LEAKAGE"},
+    {"case_id": "test-label-in-fit", "expected_diagnostic": "BASELINE-SPLIT-LABEL-LEAKAGE"},
+    {"case_id": "immature-as-negative", "expected_diagnostic": "BASELINE-LABEL-CONTAMINATION"},
+    {"case_id": "split-overlap", "expected_diagnostic": "BASELINE-SPLIT-PARTITION"},
+    {"case_id": "split-temporal-order", "expected_diagnostic": "BASELINE-SPLIT-TEMPORAL-ORDER"},
+    {"case_id": "candidate-set-asymmetry", "expected_diagnostic": "BASELINE-COMPARISON-UNIVERSE-ASYMMETRY"},
+    {"case_id": "feature-view-asymmetry", "expected_diagnostic": "BASELINE-COMPARISON-INPUT-ASYMMETRY"},
+    {"case_id": "label-denominator-asymmetry", "expected_diagnostic": "BASELINE-COMPARISON-LABEL-ASYMMETRY"},
+    {"case_id": "missing-required-policy", "expected_diagnostic": "BASELINE-REQUIRED-POLICY-MISSING"},
+    {"case_id": "unseeded-random", "expected_diagnostic": "BASELINE-RANDOM-SEED-MISSING"},
+    {"case_id": "seed-cherrypick", "expected_diagnostic": "BASELINE-RANDOM-SEED-BINDING"},
+    {"case_id": "nondeterministic-random", "expected_diagnostic": "BASELINE-RANDOM-NONDETERMINISTIC"},
+    {"case_id": "stat-fraction-rounded", "expected_diagnostic": "BASELINE-NUMERIC-NONCANONICAL"},
+    {"case_id": "stat-null-label", "expected_diagnostic": "BASELINE-STATISTICAL-FIT-LEAKAGE"},
+    {"case_id": "policy-direct-selection", "expected_diagnostic": "BASELINE-EXACT-TEN-BYPASS"},
+    {"case_id": "issue-nine", "expected_diagnostic": "BASELINE-EXACT-TEN-BYPASS"},
+    {"case_id": "duplicate-location", "expected_diagnostic": "BASELINE-DUPLICATE-LOCATION"},
+    {"case_id": "protected-selected", "expected_diagnostic": "BASELINE-PROTECTED-BYPASS"},
+    {"case_id": "math-input-contamination", "expected_diagnostic": "BASELINE-MATH-INPUT-CONTAMINATION"},
+    {"case_id": "partial-labels-finalized", "expected_diagnostic": "BASELINE-METRIC-MATURITY"},
+    {"case_id": "metric-wrong-denominator", "expected_diagnostic": "BASELINE-COMPARISON-LABEL-ASYMMETRY"},
+    {"case_id": "winner-below-margin", "expected_diagnostic": "BASELINE-REPLACEMENT-RULE"},
+    {"case_id": "complexity-tie-promoted", "expected_diagnostic": "BASELINE-REPLACEMENT-RULE"},
+    {"case_id": "replacement-with-more-abstention", "expected_diagnostic": "BASELINE-REPLACEMENT-RULE"},
+    {"case_id": "test-reuse", "expected_diagnostic": "BASELINE-TEST-REUSE"},
+    {"case_id": "synthetic-as-predictive", "expected_diagnostic": "BASELINE-CLAIM-CEILING"},
+    {"case_id": "production-promotion", "expected_diagnostic": "BASELINE-PROMOTION-AUTHORITY"},
+    {"case_id": "rehashed-future-feature", "expected_diagnostic": "BASELINE-REPLAY-FEATURE-SEMANTIC-MISMATCH"},
+    {"case_id": "rehashed-split", "expected_diagnostic": "BASELINE-REPLAY-SPLIT-MISMATCH"},
+    {"case_id": "rehashed-universe", "expected_diagnostic": "BASELINE-REPLAY-UNIVERSE-MISMATCH"},
+    {"case_id": "rehashed-random", "expected_diagnostic": "BASELINE-REPLAY-RANDOM-MISMATCH"},
+    {"case_id": "rehashed-null-label", "expected_diagnostic": "BASELINE-REPLAY-LABEL-MISMATCH"},
+    {"case_id": "rehashed-policy-score", "expected_diagnostic": "BASELINE-REPLAY-POLICY-MISMATCH"},
+    {"case_id": "rehashed-metrics", "expected_diagnostic": "BASELINE-REPLAY-METRIC-MISMATCH"},
+    {"case_id": "receipt-only", "expected_diagnostic": "BASELINE-REPLAY-RECEIPT-MISMATCH"}
+    ,{"case_id": "coordinated-feature-rehash", "expected_diagnostic": "BASELINE-FROZEN-COHORT-MISMATCH"}
+    ,{"case_id": "coordinated-registry-rehash", "expected_diagnostic": "BASELINE-FROZEN-REGISTRY-MISMATCH"}
+    ,{"case_id": "all-row-score-projection", "expected_diagnostic": "BASELINE-MATH-SCORE-PROJECTION"}
+    ,{"case_id": "duplicate-route-seed", "expected_diagnostic": "BASELINE-RANDOM-SEED-SCHEDULE"}
+    ,{"case_id": "future-label-asof", "expected_diagnostic": "BASELINE-PREDICTION-ASOF-LEAKAGE"}
+    ,{"case_id": "future-recency-value", "expected_diagnostic": "BASELINE-FEATURE-AVAILABLE-LEAKAGE"}
+    ,{"case_id": "outcome-source-family", "expected_diagnostic": "BASELINE-OUTCOME-FEATURE-LEAKAGE"}
+    ,{"case_id": "forged-label-view", "expected_diagnostic": "BASELINE-COMPARISON-LABEL-ASYMMETRY"}
+    ,{"case_id": "forged-math-problem-hash", "expected_diagnostic": "BASELINE-REPLAY-MATH-PROBLEM-MISMATCH"}
+    ,{"case_id": "rehashed-receipt", "expected_diagnostic": "BASELINE-REPLAY-RECEIPT-MISMATCH"}
+  ],
+  "diagnostic_precedence": ["SHAPE_SCHEMA", "AUTHORITY_CLAIM", "FROZEN_BINDINGS", "CLOCK_LEAKAGE", "SPLIT_INTEGRITY", "UNIVERSE_INPUT_SYMMETRY", "POLICY_COMPLETENESS_DETERMINISM", "MATH_EXACT_TEN_PROTECTION", "LABEL_METRIC_REPLACEMENT", "INDEPENDENT_RECONSTRUCTION", "RECEIPT"],
+  "bounded_test_grid": ["candidate_counts_0_through_20", "clock_boundaries_minus_one_equal_plus_one_second", "all_outcomes_states", "train_validation_test_permutations", "protected_failed_unknown_and_duplicate_location", "all_zero_leading_zero_all_ff_and_malformed_seeds", "twenty_input_permutations", "score_ties_and_unseen_statistical_buckets", "issue_and_abstain_paths", "margin_minus_one_equal_plus_one", "all_mutations_with_recomputed_local_hashes"],
+  "required_replay_bindings": ["canonicalization", "builder_identity", "frozen_benchmark", "feature_ledger", "split_registry", "outcomes_label_view_and_common_as_of", "math_contracts_and_evaluator", "baseline_schemas_and_evaluator_contract", "policy_registry", "full_seed_schedule", "feature_and_excluded_label_traces", "statistical_fit_rows_labels_counts_and_denominator", "score_vectors", "math_problems_and_decisions", "selected_ids", "metric_spec_and_table", "replacement_rule_and_disposition", "proof_and_claim_ceiling"],
+  "implementation_gate": "Do not credit builder implementation until the independent public evaluator reconstructs every semantic output, the frozen MATH evaluator validates every decision, all registered negative controls are detected including rehashed attacks, and independent sweeps find no surviving asymmetry or overclaim."
+}

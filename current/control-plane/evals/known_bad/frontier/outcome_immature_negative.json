@@ -1,0 +1,5 @@
+{
+  "case_id": "immature-negative",
+  "mutation_id": "immature_as_negative",
+  "expected_diagnostic": "OUTCOMES-LABEL-IMMATURE-AS-NEGATIVE"
+}

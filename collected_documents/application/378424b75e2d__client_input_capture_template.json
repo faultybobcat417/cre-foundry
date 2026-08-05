@@ -1,0 +1,53 @@
+{
+  "confirmed_section_count": 0,
+  "invention_permitted": false,
+  "model_training_permitted": false,
+  "model_version": "cre-foundry-client-input-capture-v1",
+  "outreach_permitted": false,
+  "pilot_execution_permitted": false,
+  "production_ranking_permitted": false,
+  "schedule_activation_permitted": false,
+  "section_count": 5,
+  "sections": [
+    {
+      "authoritative_value": null,
+      "confirmed": false,
+      "confirmed_at": null,
+      "confirmed_by": null,
+      "evidence_reference": null,
+      "input_id": "primary_success_event"
+    },
+    {
+      "authoritative_value": null,
+      "confirmed": false,
+      "confirmed_at": null,
+      "confirmed_by": null,
+      "evidence_reference": null,
+      "input_id": "transaction_economics"
+    },
+    {
+      "authoritative_value": null,
+      "confirmed": false,
+      "confirmed_at": null,
+      "confirmed_by": null,
+      "evidence_reference": null,
+      "input_id": "pilot_representatives_and_capacity"
+    },
+    {
+      "authoritative_value": null,
+      "confirmed": false,
+      "confirmed_at": null,
+      "confirmed_by": null,
+      "evidence_reference": null,
+      "input_id": "protected_accounts_and_exclusions"
+    },
+    {
+      "authoritative_value": null,
+      "confirmed": false,
+      "confirmed_at": null,
+      "confirmed_by": null,
+      "evidence_reference": null,
+      "input_id": "operating_environment"
+    }
+  ]
+}

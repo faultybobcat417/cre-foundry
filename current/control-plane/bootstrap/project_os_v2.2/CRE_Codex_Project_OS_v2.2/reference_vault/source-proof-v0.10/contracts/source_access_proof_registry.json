@@ -1,0 +1,648 @@
+{
+  "registry_version": "cre-source-access-proof-v2",
+  "as_of": "2026-08-01",
+  "proof_count": 10,
+  "proofs": [
+    {
+      "proof_id": "SAP-001",
+      "source_id": "brampton_building_permits",
+      "source_name": "Brampton Building Permits",
+      "official_endpoint": "https://maps1.brampton.ca/arcgis/rest/services/BuildingPermit/Building_Permits/FeatureServer/0",
+      "access_class": "public_arcgis_feature_service",
+      "access_status": "metadata_and_query_interface_proven",
+      "queryable": true,
+      "download_formats": [
+        "json",
+        "geojson",
+        "pbf"
+      ],
+      "max_record_count": 1000,
+      "pagination_supported": true,
+      "historic_moment_supported": false,
+      "versioned_data": false,
+      "observed_fields": [
+        "PERMITNUMBER",
+        "ADDRESS",
+        "SUBDESC",
+        "WORKDESC",
+        "INDATE",
+        "ISSUEDATE",
+        "STATUSDESC",
+        "PROCESSDATE",
+        "BUILDER",
+        "CONTRACTOR",
+        "EXPIRYDATE",
+        "GFA"
+      ],
+      "earliest_verified_history": null,
+      "refresh_evidence": "live service; update cadence not published",
+      "legal_basis": "Brampton describes GeoHub as open data freely shared and built on; dataset-specific licence text must be archived with first snapshot.",
+      "point_in_time_risk": "No historic-moment support. Current service can overwrite status and corrected values.",
+      "format_risk": "GFA and several numeric-looking fields are strings; max page size 1000.",
+      "admissible_role": [
+        "permit precursor",
+        "historical event context after own snapshots"
+      ],
+      "forbidden_role": [
+        "assume current final state was known at application date",
+        "use upcoming inspections as early predictor"
+      ],
+      "minimum_snapshot_schedule": "daily during pilot; weekly immutable full reconciliation",
+      "first_sample_query": {
+        "where": "1=1",
+        "outFields": [
+          "PERMITNUMBER",
+          "ADDRESS",
+          "SUBDESC",
+          "WORKDESC",
+          "INDATE",
+          "ISSUEDATE",
+          "STATUSDESC",
+          "PROCESSDATE",
+          "GFA"
+        ],
+        "returnGeometry": false,
+        "resultRecordCount": 1000,
+        "orderByFields": "OBJECTID ASC"
+      },
+      "remaining_proof": [
+        "retrieve immutable first page and count",
+        "reconcile pagination",
+        "test duplicate permit numbers",
+        "archive licence and headers",
+        "measure field nulls and date monotonicity"
+      ],
+      "evidence_refs": [
+        "R-033"
+      ]
+    },
+    {
+      "proof_id": "SAP-002",
+      "source_id": "mississauga_building_permits",
+      "source_name": "Mississauga Issued Building Permits",
+      "official_endpoint": "https://services6.arcgis.com/hM5ymMLbxIyWTjn2/arcgis/rest/services/Issued_Building_Permits/FeatureServer/0",
+      "access_class": "public_arcgis_feature_service",
+      "access_status": "metadata_and_query_interface_proven",
+      "queryable": true,
+      "download_formats": [
+        "json",
+        "geojson",
+        "pbf"
+      ],
+      "max_record_count": 2000,
+      "pagination_supported": true,
+      "historic_moment_supported": false,
+      "versioned_data": false,
+      "observed_fields": [
+        "BP_NO",
+        "STATUS",
+        "ADDRESS",
+        "UNIT_NO",
+        "DESCRIPTION",
+        "SCOPE",
+        "FILE_TYPE",
+        "BLDG_TYPE",
+        "APP_DETAIL",
+        "APPL_AREA",
+        "EST_CON_VALUE",
+        "POSTAL_CODE",
+        "LATITUDE",
+        "LONGITUDE",
+        "APPLICATION_DATE",
+        "ISSUE_DATE",
+        "COMPLETE_DATE"
+      ],
+      "earliest_verified_history": "permits issued after 2018-01-01",
+      "refresh_evidence": "data updated 2026-07-02 at inspection",
+      "legal_basis": "City open-data catalogue states public data may be freely used for research, analysis, reporting and application development.",
+      "point_in_time_risk": "No versioning or historical-moment query. APPLICATION_DATE, ISSUE_DATE and COMPLETE_DATE coexist in current rows and must be snapshotted.",
+      "format_risk": "Schema can change and item terms should be archived; issued-only scope can omit rejected or never-issued applications.",
+      "admissible_role": [
+        "issued-permit history",
+        "application-to-issue lag where application date exists",
+        "construction-value and area context"
+      ],
+      "forbidden_role": [
+        "complete application universe",
+        "assume issue/completion fields were known at application date"
+      ],
+      "minimum_snapshot_schedule": "daily incremental plus monthly full reconciliation",
+      "first_sample_query": {
+        "where": "1=1",
+        "outFields": [
+          "BP_NO",
+          "STATUS",
+          "ADDRESS",
+          "UNIT_NO",
+          "DESCRIPTION",
+          "SCOPE",
+          "BLDG_TYPE",
+          "APPLICATION_DATE",
+          "ISSUE_DATE",
+          "COMPLETE_DATE",
+          "EST_CON_VALUE",
+          "APPL_AREA",
+          "LATITUDE",
+          "LONGITUDE"
+        ],
+        "returnGeometry": false,
+        "resultRecordCount": 2000,
+        "orderByFields": "OBJECTID ASC"
+      },
+      "remaining_proof": [
+        "retrieve count and first/last application dates",
+        "measure nonresidential coverage",
+        "test address/unit completeness",
+        "archive item terms",
+        "detect row updates across snapshots"
+      ],
+      "evidence_refs": [
+        "R-034"
+      ]
+    },
+    {
+      "proof_id": "SAP-003",
+      "source_id": "mississauga_business_directory",
+      "source_name": "Mississauga Public Business Directory 2019/2024/2025",
+      "official_endpoint": "https://services6.arcgis.com/hM5ymMLbxIyWTjn2/arcgis/rest/services/2025_Mississauga_Business_Directory/FeatureServer/0",
+      "access_class": "public_arcgis_feature_service",
+      "access_status": "current_and_historical_service_metadata_proven",
+      "queryable": true,
+      "download_formats": [
+        "feature_service",
+        "json",
+        "geojson"
+      ],
+      "max_record_count": 2000,
+      "pagination_supported": true,
+      "historic_moment_supported": false,
+      "versioned_data": false,
+      "observed_fields": [
+        "PIN",
+        "Business Name",
+        "Employee Range",
+        "NAICS Sector",
+        "NAICS Code",
+        "NAICS Description",
+        "Phone",
+        "Email",
+        "Web Address",
+        "Street Number",
+        "Street Name",
+        "Building Number",
+        "Unit Number",
+        "Postal Code",
+        "Character Area",
+        "Ward",
+        "BIA"
+      ],
+      "earliest_verified_history": "2019 public layer; separate 2024 and 2025 services also exposed",
+      "refresh_evidence": "2025 item data updated 2026-03-02; item updated 2026-05-15",
+      "legal_basis": "Businesses consent to directory publication; City open-data statements permit public research and application use. Contact data still requires minimization and outreach-law separation.",
+      "point_in_time_risk": "Voluntary participation creates appearance/disappearance unrelated to business entry or closure.",
+      "format_risk": "Field names and geometry types vary by vintage; 2025 metadata reports 13,651 geometric objects while a catalogue reports 14,637 rows\u2014must reconcile.",
+      "admissible_role": [
+        "candidate-universe seed",
+        "longitudinal establishment identity study",
+        "NAICS and employee-range context"
+      ],
+      "forbidden_role": [
+        "complete business census",
+        "absence equals closure",
+        "published phone/email equals outreach consent"
+      ],
+      "minimum_snapshot_schedule": "archive every released annual vintage and monthly current-service checksum",
+      "first_sample_query": {
+        "where": "1=1",
+        "outFields": [
+          "PIN",
+          "BusinessName",
+          "EmployeeRange",
+          "NAICSCode",
+          "NAICSDescription",
+          "StreetNumber",
+          "StreetName",
+          "BuildingNumber",
+          "UnitNumber",
+          "PostalCode"
+        ],
+        "returnGeometry": true,
+        "resultRecordCount": 2000,
+        "orderByFields": "OBJECTID ASC"
+      },
+      "remaining_proof": [
+        "resolve exact 2025 field names from layer metadata",
+        "reconcile 13,651 versus 14,637 counts",
+        "obtain 2024 and 2019 samples",
+        "estimate voluntary-participation churn",
+        "audit contact-data minimization"
+      ],
+      "evidence_refs": [
+        "R-035"
+      ]
+    },
+    {
+      "proof_id": "SAP-004",
+      "source_id": "job_bank_postings",
+      "source_name": "Canada Job Bank Monthly Postings",
+      "official_endpoint": "https://open.canada.ca/data/en/dataset/ea639e28-c0fc-48bf-b5dd-b8899bd43072",
+      "access_class": "open_government_download",
+      "access_status": "monthly_download_resources_proven",
+      "queryable": false,
+      "download_formats": [
+        "csv"
+      ],
+      "max_record_count": null,
+      "pagination_supported": false,
+      "historic_moment_supported": false,
+      "versioned_data": true,
+      "observed_fields": [
+        "posting location",
+        "postal code",
+        "NAICS",
+        "occupation/NOC",
+        "first posting date",
+        "vacancy count"
+      ],
+      "earliest_verified_history": "monthly resources publicly listed from at least 2025-12 through 2026-04 during inspection",
+      "refresh_evidence": "monthly; March 2026 resource was marked valid",
+      "legal_basis": "Open Government Portal dataset; archive exact licence metadata per resource.",
+      "point_in_time_risk": "A monthly file is a publication snapshot, not proof the job remained open all month.",
+      "format_risk": "Employer identity may be absent/ambiguous; duplicates, agencies, remote jobs and multi-location employers can distort counts.",
+      "admissible_role": [
+        "hiring-pressure source family",
+        "occupation-specific capacity hypothesis"
+      ],
+      "forbidden_role": [
+        "direct establishment identity without corroboration",
+        "employment growth label"
+      ],
+      "minimum_snapshot_schedule": "download each monthly English file and immutable metadata record",
+      "first_sample_query": {
+        "resource_selection": "latest two English CSV resources",
+        "filter_after_download": [
+          "Ontario",
+          "Brampton|Mississauga"
+        ],
+        "retain_raw": true
+      },
+      "remaining_proof": [
+        "retrieve two files",
+        "record headers and schema drift",
+        "measure employer-location matchability",
+        "deduplicate postings",
+        "identify agencies and remote records"
+      ],
+      "evidence_refs": [
+        "R-036"
+      ]
+    },
+    {
+      "proof_id": "SAP-005",
+      "source_id": "positive_lmia",
+      "source_name": "Positive LMIA Employer Lists",
+      "official_endpoint": "https://open.canada.ca/data/en/dataset/90fed587-1364-4f33-a9ee-208181dc0b97",
+      "access_class": "open_government_download",
+      "access_status": "quarterly_historical_resources_proven",
+      "queryable": false,
+      "download_formats": [
+        "csv",
+        "xlsx"
+      ],
+      "max_record_count": null,
+      "pagination_supported": false,
+      "historic_moment_supported": false,
+      "versioned_data": true,
+      "observed_fields": [
+        "employer",
+        "program stream",
+        "NOC",
+        "business location",
+        "approved positions"
+      ],
+      "earliest_verified_history": "2014 onward",
+      "refresh_evidence": "quarterly; 2025-Q4 published 2026-03-16",
+      "legal_basis": "Open Government Portal; archive resource licence and metadata.",
+      "point_in_time_risk": "Publication lag means the signal is known only after quarterly release.",
+      "format_risk": "Older resources are flagged invalid by portal validation; recent resource changed to XLSX and NOC 2021.",
+      "admissible_role": [
+        "lagged labour-pressure corroboration",
+        "historical employer-location feature"
+      ],
+      "forbidden_role": [
+        "proof workers were hired",
+        "real-time hiring signal"
+      ],
+      "minimum_snapshot_schedule": "quarterly resource download plus schema-version registry",
+      "first_sample_query": {
+        "resource_selection": [
+          "2025Q4 English",
+          "2024Q4 English",
+          "2019Q4 English"
+        ],
+        "filter_after_download": [
+          "Ontario",
+          "Brampton|Mississauga"
+        ]
+      },
+      "remaining_proof": [
+        "download cross-era files",
+        "map NOC 2011 to NOC 2021",
+        "test invalid legacy files",
+        "measure publication lag",
+        "match employer and city to establishments"
+      ],
+      "evidence_refs": [
+        "R-037"
+      ]
+    },
+    {
+      "proof_id": "SAP-006",
+      "source_id": "canadabuys_contracts",
+      "source_name": "CanadaBuys Contract History",
+      "official_endpoint": "https://open.canada.ca/data/en/dataset/4fe645a1-ffcd-40c1-9385-2c771be956a4",
+      "access_class": "open_government_download",
+      "access_status": "monthly_history_and_dictionary_proven",
+      "queryable": false,
+      "download_formats": [
+        "csv",
+        "xml_dictionary"
+      ],
+      "max_record_count": null,
+      "pagination_supported": false,
+      "historic_moment_supported": false,
+      "versioned_data": true,
+      "observed_fields": [
+        "contract identifiers",
+        "supplier",
+        "award date",
+        "value",
+        "commodity/classification",
+        "amendments",
+        "department"
+      ],
+      "earliest_verified_history": "2009-01",
+      "refresh_evidence": "monthly; CanadaBuys authoritative from 2023-06",
+      "legal_basis": "Open Government Licence - Canada.",
+      "point_in_time_risk": "Files are refreshed with later amendments; historical prediction requires preserving each retrieval vintage.",
+      "format_risk": "CSV structure was changed during 2026-03-17 to 2026-04-10; multiple procurement systems leave fields blank.",
+      "admissible_role": [
+        "contract-driven capacity hypothesis",
+        "historical award and amendment evidence"
+      ],
+      "forbidden_role": [
+        "assume supplier delivery location equals registered address",
+        "use amended current value as original award-time value"
+      ],
+      "minimum_snapshot_schedule": "monthly complete/current file and data dictionary, plus annual fiscal files",
+      "first_sample_query": {
+        "resource_selection": [
+          "current complete CSV",
+          "data dictionary XML",
+          "2025-2026 CSV"
+        ],
+        "filter_after_download": [
+          "supplier province/city where available",
+          "physical-delivery classifications"
+        ]
+      },
+      "remaining_proof": [
+        "retrieve current and prior schema files",
+        "map supplier identifiers",
+        "measure missing location fields",
+        "construct award-vintage and amendment-vintage records"
+      ],
+      "evidence_refs": [
+        "R-038"
+      ]
+    },
+    {
+      "proof_id": "SAP-007",
+      "source_id": "federal_grants",
+      "source_name": "Federal Grants and Contributions",
+      "official_endpoint": "https://open.canada.ca/data/en/dataset/432527ab-7aac-45b5-81d6-7597107a7013",
+      "access_class": "open_government_download",
+      "access_status": "schema_and_direct_csv_proven",
+      "queryable": false,
+      "download_formats": [
+        "csv",
+        "json_schema",
+        "xlsx_dictionary"
+      ],
+      "max_record_count": null,
+      "pagination_supported": false,
+      "historic_moment_supported": false,
+      "versioned_data": true,
+      "observed_fields": [
+        "reference number",
+        "agreement type",
+        "recipient type",
+        "recipient business number optional",
+        "recipient province",
+        "recipient city",
+        "postal code",
+        "agreement value",
+        "start/end",
+        "purpose"
+      ],
+      "earliest_verified_history": "consolidated proactive-disclosure history; exact earliest record pending sample",
+      "refresh_evidence": "quarterly; 2.3 GB CSV updated 2026-06",
+      "legal_basis": "Open Government Portal; exact Open Government Licence metadata to archive.",
+      "point_in_time_risk": "Belated reporting, amendments, novations and terminations can appear after the economic event.",
+      "format_risk": "Very large file; recipient city/postal describes recipient, not necessarily funded operating site.",
+      "admissible_role": [
+        "funding-stage and scale-up hypothesis",
+        "recipient/entity corroboration"
+      ],
+      "forbidden_role": [
+        "physical facility location without corroboration",
+        "assume announcement date equals agreement effective date"
+      ],
+      "minimum_snapshot_schedule": "quarterly immutable file or server-side filtered extract plus schema/dictionary",
+      "first_sample_query": {
+        "resource_selection": [
+          "grants.csv",
+          "grants.json schema"
+        ],
+        "streaming_filter": [
+          "recipient_province=ON",
+          "recipient_city in Brampton, Mississauga",
+          "recipient_type=F"
+        ]
+      },
+      "remaining_proof": [
+        "test streaming parser on large file",
+        "separate grant/contribution and amendment states",
+        "match recipient business number where populated",
+        "verify physical site independently"
+      ],
+      "evidence_refs": [
+        "R-039"
+      ]
+    },
+    {
+      "proof_id": "SAP-008",
+      "source_id": "medical_device_establishments",
+      "source_name": "Health Canada MDEL Listing",
+      "official_endpoint": "https://health-products.canada.ca/mdel-leim/",
+      "access_class": "public_search_application",
+      "access_status": "search_interface_and_fields_proven_bulk_access_unproven",
+      "queryable": true,
+      "download_formats": [
+        "html_search"
+      ],
+      "max_record_count": null,
+      "pagination_supported": null,
+      "historic_moment_supported": false,
+      "versioned_data": false,
+      "observed_fields": [
+        "company ID",
+        "licence number",
+        "company name",
+        "address",
+        "authorized activities",
+        "device classes",
+        "senior official name"
+      ],
+      "earliest_verified_history": "active listing only",
+      "refresh_evidence": "active MDELs only; no bulk cadence verified",
+      "legal_basis": "public regulatory listing; personal senior-official field must be excluded from the feature store.",
+      "point_in_time_risk": "Only active licences appear, so disappearance cannot distinguish lapse, cancellation, suspension or data change without snapshots.",
+      "format_risk": "No bulk API verified; site may require search-by-criteria and may change.",
+      "admissible_role": [
+        "active regulated-establishment identity and activity corroboration"
+      ],
+      "forbidden_role": [
+        "historic licence event without snapshots",
+        "use senior official personal information",
+        "infer specific approved devices"
+      ],
+      "minimum_snapshot_schedule": "monthly Ontario search/export if authorized and technically sustainable",
+      "first_sample_query": {
+        "search": {
+          "country": "Canada",
+          "province": "Ontario"
+        },
+        "exclude_fields": [
+          "senior official name"
+        ]
+      },
+      "remaining_proof": [
+        "verify pagination/export route",
+        "archive terms",
+        "measure Ontario result volume",
+        "snapshot active-state changes",
+        "link only to physical establishment after address audit"
+      ],
+      "evidence_refs": [
+        "R-040"
+      ]
+    },
+    {
+      "proof_id": "SAP-009",
+      "source_id": "health_product_apis",
+      "source_name": "Health Canada LNHPD and MDALL APIs",
+      "official_endpoint": "https://health-products.canada.ca/api/",
+      "access_class": "public_json_xml_api",
+      "access_status": "official_api_documentation_proven",
+      "queryable": true,
+      "download_formats": [
+        "json",
+        "xml"
+      ],
+      "max_record_count": null,
+      "pagination_supported": true,
+      "historic_moment_supported": false,
+      "versioned_data": true,
+      "observed_fields": [
+        "product licence dates",
+        "revised dates",
+        "company ID/name",
+        "product status",
+        "device licence/product identifiers"
+      ],
+      "earliest_verified_history": "licence-level dates available; snapshot history still required",
+      "refresh_evidence": "current API; no formal cadence stated in inspected documentation",
+      "legal_basis": "official reuse API documentation.",
+      "point_in_time_risk": "Current API can revise records; voluntary NHP market status is not reliable evidence of market presence.",
+      "format_risk": "Product licences are not establishment/site licences; company holder location may differ from manufacturing/distribution site.",
+      "admissible_role": [
+        "product/company corroboration",
+        "regulated activity breadth after establishment link"
+      ],
+      "forbidden_role": [
+        "physical facility proof",
+        "treat 'not marketed' as absence",
+        "substitute product API for site licence"
+      ],
+      "minimum_snapshot_schedule": "monthly API page snapshots for selected linked companies",
+      "first_sample_query": {
+        "endpoints": [
+          "natural-licences/productlicence",
+          "medical-devices"
+        ],
+        "lang": "en",
+        "type": "json"
+      },
+      "remaining_proof": [
+        "identify establishment-level bridge",
+        "test company ID stability",
+        "snapshot revisions",
+        "exclude product-only changes without facility mechanism"
+      ],
+      "evidence_refs": [
+        "R-041"
+      ]
+    },
+    {
+      "proof_id": "SAP-010",
+      "source_id": "toronto_active_permits",
+      "source_name": "Toronto Active/Cleared Permit Reference",
+      "official_endpoint": "https://open.toronto.ca/",
+      "access_class": "public_open_data",
+      "access_status": "historical_reference_role_previously_proven",
+      "queryable": true,
+      "download_formats": [
+        "open_data_resources"
+      ],
+      "max_record_count": null,
+      "pagination_supported": null,
+      "historic_moment_supported": false,
+      "versioned_data": true,
+      "observed_fields": [
+        "permit application and issue context",
+        "address",
+        "work and status fields"
+      ],
+      "earliest_verified_history": "deeper historical permit archives than pilot municipalities",
+      "refresh_evidence": "current and cleared resources maintained separately",
+      "legal_basis": "Toronto open data licence; exact resource licence to archive.",
+      "point_in_time_risk": "Active/cleared transitions must be reconstructed from vintages and publication clocks.",
+      "format_risk": "Toronto is a reference/transportability market, not the initial field geography.",
+      "admissible_role": [
+        "historical event reconstruction reference",
+        "cross-city schema and mechanism validation"
+      ],
+      "forbidden_role": [
+        "direct pilot universe without field-operability analysis"
+      ],
+      "minimum_snapshot_schedule": "monthly historical/reference extracts",
+      "first_sample_query": {
+        "resource_selection": [
+          "active permits",
+          "cleared permits"
+        ],
+        "nonresidential_filter": true
+      },
+      "remaining_proof": [
+        "freeze representative extracts",
+        "compare with Brampton/Mississauga field availability",
+        "map status transitions"
+      ],
+      "evidence_refs": [
+        "R-042"
+      ]
+    }
+  ],
+  "global_claim_boundary": "Metadata and official access routes are proven. Raw row-level acquisition and sample statistics remain pending where explicitly stated."
+}

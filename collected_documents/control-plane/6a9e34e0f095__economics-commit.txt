@@ -1,0 +1,29 @@
+commit dd44e5ee7f9195d140dfbd747b5a4812b199a81e
+Author: Engine <engine@local>
+Date:   Mon Aug 3 13:55:48 2026 -0400
+
+    economics: add symbolic ECV material layer
+
+ artifacts/economics/ECONOMICS-001-start.json       |  54 +++++
+ artifacts/economics/public_evaluator_contract.json |  65 +++++
+ artifacts/evaluations/economics_contracts.json     |  97 ++++++++
+ artifacts/task-results/ECONOMICS-001.json          |  96 ++++++++
+ contracts/economic_engine.schema.json              |  93 ++++++++
+ docs/economics/ECONOMICS_MATERIAL.md               |  93 ++++++++
+ evals/public/test_economics_contracts.py           |  81 +++++++
+ scripts/validate_economics_contracts.py            | 236 +++++++++++++++++++
+ src/cre_foundry/economics/__init__.py              |  17 ++
+ src/cre_foundry/economics/engine.py                | 262 +++++++++++++++++++++
+ tasks/ECONOMICS-001.json                           |  20 ++
+ 11 files changed, 1114 insertions(+)
+ create mode 100644 artifacts/economics/ECONOMICS-001-start.json
+ create mode 100644 artifacts/economics/public_evaluator_contract.json
+ create mode 100644 artifacts/evaluations/economics_contracts.json
+ create mode 100644 artifacts/task-results/ECONOMICS-001.json
+ create mode 100644 contracts/economic_engine.schema.json
+ create mode 100644 docs/economics/ECONOMICS_MATERIAL.md
+ create mode 100644 evals/public/test_economics_contracts.py
+ create mode 100644 scripts/validate_economics_contracts.py
+ create mode 100644 src/cre_foundry/economics/__init__.py
+ create mode 100644 src/cre_foundry/economics/engine.py
+ create mode 100644 tasks/ECONOMICS-001.json

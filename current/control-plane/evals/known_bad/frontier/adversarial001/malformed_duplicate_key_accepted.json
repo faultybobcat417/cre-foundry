@@ -1,0 +1,5 @@
+{
+  "case_id": "malformed-duplicate-key-accepted",
+  "expected_diagnostic": "ADVERSARIAL-MALFORMED-INPUT",
+  "mutation_id": "malformed_duplicate_key_accepted"
+}

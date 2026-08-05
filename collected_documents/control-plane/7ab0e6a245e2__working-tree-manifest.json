@@ -1,0 +1,56 @@
+[
+  {
+    "path": "artifacts/context/current_task_packet.json",
+    "sha256": "74781508cc852488aea21a7073078358406bb8b2522f77be82b7304dada237d5",
+    "size": 6606,
+    "state": "captured"
+  },
+  {
+    "path": "artifacts/context/current_task_packet.md",
+    "sha256": "497ca97c0f34c3d0dcfc21dfd0e0e6dd8d4a049ccd3b2f4746fe031bc3fe6503",
+    "size": 413225,
+    "state": "captured"
+  },
+  {
+    "path": "artifacts/evaluations/economics_contracts.json",
+    "sha256": "b2c98d1aebfc0564c860a552b095ec4a8bc3b5a24854dbed54c33c334ed8d680",
+    "size": 2768,
+    "state": "captured"
+  },
+  {
+    "path": "artifacts/evaluations/identity_contracts.json",
+    "sha256": "e0a901c33b7dea4ba9af8d76275c44eba090eba534068772667acaec4ea9bfb6",
+    "size": 2370,
+    "state": "captured"
+  },
+  {
+    "path": "control/CURRENT_STATE.json",
+    "sha256": "83192f86dceecb48182a1c40f182ea65e429672b809d94dfb31610de514540b8",
+    "size": 9839,
+    "state": "captured"
+  },
+  {
+    "path": "control/CURRENT_TASK.json",
+    "sha256": "483889bb64ed79f1bff0985a059796f44f5f0a6907b7eb2b06faf452356566ff",
+    "size": 458,
+    "state": "captured"
+  },
+  {
+    "path": "control/ONE_SHOT_READINESS.json",
+    "sha256": "e0fa1f1d03904d74fb948a8b7d22d028dd193a1090a6f41bcba235f11d46cbc0",
+    "size": 36140,
+    "state": "captured"
+  },
+  {
+    "path": "control/TASK_GRAPH.json",
+    "sha256": "8f44705c2db20f9be3f2cb38b95a8309ec509cd36aa9ac36ef48f55b9e711eed",
+    "size": 16849,
+    "state": "captured"
+  },
+  {
+    "path": "tasks/SECURITY-001.json",
+    "sha256": "1b8d2bbef566e07d1a3b6bdaefc096f8afaead5704f7015bdb77a7fb1e7a5993",
+    "size": 2426,
+    "state": "captured"
+  }
+]

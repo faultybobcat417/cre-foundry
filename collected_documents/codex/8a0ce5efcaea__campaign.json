@@ -1,0 +1,86 @@
+{
+  "version": "2.2",
+  "passed": true,
+  "runs": [
+    {
+      "name": "os_validation",
+      "command": "/Users/alimehdi/Documents/cre/.venv/bin/python3 scripts/validate_os.py",
+      "exit_code": 0,
+      "stdout": "{\n  \"passed\": true,\n  \"errors\": [],\n  \"files\": 87,\n  \"agents\": 7,\n  \"skills\": 10,\n  \"hard_invariants\": 10,\n  \"milestones\": 14,\n  \"sha256\": \"c0b6aa4e01da6b82e98ad39af379fa59a4349aa5fc0d0a4cbf4a2f6cdb552bed\"\n}\n",
+      "stderr": ""
+    },
+    {
+      "name": "research_readiness",
+      "command": "/Users/alimehdi/Documents/cre/.venv/bin/python3 scripts/validate_research_readiness.py",
+      "exit_code": 0,
+      "stdout": "{\n  \"passed\": true,\n  \"errors\": [],\n  \"capability_classes\": 6,\n  \"claims\": 7,\n  \"research_questions\": 12,\n  \"tasks\": 12\n}\n",
+      "stderr": ""
+    },
+    {
+      "name": "task_selection",
+      "command": "/Users/alimehdi/Documents/cre/.venv/bin/python3 scripts/select_next_task.py",
+      "exit_code": 0,
+      "stdout": "{\n  \"selected_task_id\": \"RESEARCH-001\",\n  \"score\": null,\n  \"reason\": \"no new executable queued task; preserve current task or gates\"\n}\n",
+      "stderr": ""
+    },
+    {
+      "name": "context_compile",
+      "command": "/Users/alimehdi/Documents/cre/.venv/bin/python3 scripts/compile_task_context.py",
+      "exit_code": 0,
+      "stdout": "{\n  \"task_id\": \"RESEARCH-001\",\n  \"included_files\": [\n    \"kernel/MISSION.md\",\n    \"kernel/INVARIANTS.json\",\n    \"control/CURRENT_STATE.json\",\n    \"control/CURRENT_TASK.json\",\n    \"kernel/PROOF_POLICY.md\",\n    \"kernel/CAPABILITY_BOUNDARY.md\",\n    \"control/RESEARCH_COMPLETION_PROTOCOL.md\",\n    \"context/CORE_RESEARCH_QUESTIONS.json\",\n    \"control/CLAIM_PROOF_REGISTER.json\"\n  ],\n  \"excluded_files\": [],\n  \"characters\": 19951,\n  \"estimated_tokens\": 4987,\n  \"packet_sha256\": \"ebfcbf7bf17fe25ffdca045538631edeafb1e9e1ab6d7fd9ed487de7613516d8\",\n  \"hard_invariant_count\": 10\n}\n",
+      "stderr": ""
+    },
+    {
+      "name": "prompt_audit",
+      "command": "/Users/alimehdi/Documents/cre/.venv/bin/python3 scripts/run_prompt_audit.py",
+      "exit_code": 0,
+      "stdout": "{\n  \"passed\": true,\n  \"score\": 100.0,\n  \"checks\": {\n    \"mission\": true,\n    \"repository_truth\": true,\n    \"depth_first_vertical_slice\": true,\n    \"evaluator_topology\": true,\n    \"best_of_n\": true,\n    \"progressive_context\": true,\n    \"role_relevance\": true,\n    \"state_resume\": true,\n    \"three_modes\": true,\n    \"security\": true,\n    \"claim_integrity\": true,\n    \"no_endless_turn_claim\": true\n  },\n  \"words\": 665,\n  \"characters\": 5107\n}\n",
+      "stderr": ""
+    },
+    {
+      "name": "full_system_simulation",
+      "command": "/Users/alimehdi/Documents/cre/.venv/bin/python3 scripts/run_level10_simulation.py",
+      "exit_code": 0,
+      "stdout": "{\n  \"result_version\": \"cre-level10-simulation-v1\",\n  \"seed\": 20260801,\n  \"scenario_count\": 51,\n  \"passed_count\": 51,\n  \"all_scenarios_passed\": true,\n  \"domain_count\": 24,\n  \"all_domains_pre_codex_design_score_10\": true,\n  \"empirical_claims_proven\": false,\n  \"claim_boundary\": \"Synthetic and deterministic campaign proves pre-Codex logic/evaluator behavior only. Real source, field, causal and commercial claims remain gated by their required proof levels.\"\n}\n",
+      "stderr": ""
+    }
+  ],
+  "sweeper_cycles": [
+    {
+      "cycle": 1,
+      "input": "v2.1",
+      "findings": [
+        "no external standards crosswalk",
+        "no dual-axis level-10 definition",
+        "no end-to-end synthetic truth campaign",
+        "no objective domain benchmark thresholds",
+        "no supply-chain benchmark"
+      ],
+      "resolution": "created standards registry, level definitions, benchmarks and synthetic suite"
+    },
+    {
+      "cycle": 2,
+      "input": "v2.2-rc1",
+      "findings": [
+        "empirical proof could be confused with readiness score",
+        "routing and experiment thresholds needed explicit claim boundary"
+      ],
+      "resolution": "separated design readiness from evidence maturity and added proof ceilings"
+    },
+    {
+      "cycle": 3,
+      "input": "v2.2-final",
+      "findings": [],
+      "resolution": "all pre-Codex deterministic/formal/synthetic gates pass; empirical gates remain explicit"
+    }
+  ],
+  "remaining_pre_codex_design_blockers": [],
+  "remaining_empirical_gates": [
+    "authorized source samples",
+    "entity and universe audit",
+    "historical point-in-time results",
+    "prospective shadow history",
+    "randomized F9 lift",
+    "mature commercial reconciliation"
+  ]
+}

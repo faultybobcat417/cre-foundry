@@ -1,0 +1,1086 @@
+{
+  "applicationProperties": {
+    "viewing": {
+      "basemapGallery": {
+        "enabled": true
+      },
+      "measure": {
+        "enabled": true
+      },
+      "routing": {
+        "enabled": true
+      }
+    }
+  },
+  "authoringApp": "WebMapViewer",
+  "authoringAppVersion": "6.3",
+  "baseMap": {
+    "baseMapLayers": [
+      {
+        "id": "defaultBasemap_0",
+        "layerType": "ArcGISTiledMapServiceLayer",
+        "opacity": 1,
+        "title": "World_Topo_Map",
+        "url": "https://services.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer",
+        "visibility": true
+      }
+    ],
+    "title": "Topographic"
+  },
+  "operationalLayers": [
+    {
+      "disablePopup": true,
+      "id": "Common_2049",
+      "itemId": "d837bf1134444bf1b22d69257480dfd0",
+      "layerType": "ArcGISFeatureLayer",
+      "mode": 1,
+      "opacity": 1,
+      "showLegend": false,
+      "title": "City Limit",
+      "url": "https://maps1.brampton.ca/arcgis/rest/services/COB/Common/MapServer/2",
+      "visibility": true
+    },
+    {
+      "disablePopup": true,
+      "id": "BramptonLayers_2287",
+      "itemId": "ce9231ab35464d76baefa6a6632a7357",
+      "layerDefinition": {
+        "drawingInfo": {
+          "renderer": {
+            "description": "",
+            "label": "",
+            "symbol": {
+              "color": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "outline": {
+                "color": [
+                  173,
+                  173,
+                  173,
+                  255
+                ],
+                "style": "esriSLSSolid",
+                "type": "esriSLS",
+                "width": 0.4
+              },
+              "style": "esriSFSSolid",
+              "type": "esriSFS"
+            },
+            "type": "simple"
+          }
+        },
+        "maxScale": 0,
+        "minScale": 6428
+      },
+      "layerType": "ArcGISFeatureLayer",
+      "mode": 1,
+      "opacity": 1,
+      "title": "Property Lines",
+      "url": "https://utility.arcgis.com/usrsvcs/servers/d1ef923eccd64eb18724d46734d52438/rest/services/COB/Zoning/MapServer/4",
+      "visibility": true
+    },
+    {
+      "id": "Zoning_7629",
+      "layerDefinition": {
+        "drawingInfo": {
+          "renderer": {
+            "defaultLabel": "Other",
+            "defaultSymbol": {
+              "color": [
+                170,
+                170,
+                170,
+                255
+              ],
+              "outline": {
+                "color": [
+                  153,
+                  153,
+                  153,
+                  255
+                ],
+                "style": "esriSLSSolid",
+                "type": "esriSLS",
+                "width": 0.75
+              },
+              "style": "esriSFSSolid",
+              "type": "esriSFS"
+            },
+            "field1": "CATEGORY",
+            "type": "uniqueValue",
+            "uniqueValueInfos": [
+              {
+                "label": "RESIDENTIAL",
+                "symbol": {
+                  "color": [
+                    237,
+                    81,
+                    81,
+                    255
+                  ],
+                  "outline": {
+                    "color": [
+                      153,
+                      153,
+                      153,
+                      255
+                    ],
+                    "style": "esriSLSSolid",
+                    "type": "esriSLS",
+                    "width": 0.75
+                  },
+                  "style": "esriSFSSolid",
+                  "type": "esriSFS"
+                },
+                "value": "RESIDENTIAL"
+              },
+              {
+                "label": "PUBLIC OWNERSHIP AND UTILITIES",
+                "symbol": {
+                  "color": [
+                    20,
+                    158,
+                    206,
+                    255
+                  ],
+                  "outline": {
+                    "color": [
+                      153,
+                      153,
+                      153,
+                      255
+                    ],
+                    "style": "esriSLSSolid",
+                    "type": "esriSLS",
+                    "width": 0.75
+                  },
+                  "style": "esriSFSSolid",
+                  "type": "esriSFS"
+                },
+                "value": "PUBLIC OWNERSHIP AND UTILITIES"
+              },
+              {
+                "label": "INDUSTRIAL",
+                "symbol": {
+                  "color": [
+                    167,
+                    198,
+                    54,
+                    255
+                  ],
+                  "outline": {
+                    "color": [
+                      153,
+                      153,
+                      153,
+                      255
+                    ],
+                    "style": "esriSLSSolid",
+                    "type": "esriSLS",
+                    "width": 0.75
+                  },
+                  "style": "esriSFSSolid",
+                  "type": "esriSFS"
+                },
+                "value": "INDUSTRIAL"
+              },
+              {
+                "label": "OPEN SPACE",
+                "symbol": {
+                  "color": [
+                    158,
+                    85,
+                    156,
+                    255
+                  ],
+                  "outline": {
+                    "color": [
+                      153,
+                      153,
+                      153,
+                      255
+                    ],
+                    "style": "esriSLSSolid",
+                    "type": "esriSLS",
+                    "width": 0.75
+                  },
+                  "style": "esriSFSSolid",
+                  "type": "esriSFS"
+                },
+                "value": "OPEN SPACE"
+              },
+              {
+                "label": "COMMERCIAL",
+                "symbol": {
+                  "color": [
+                    252,
+                    146,
+                    31,
+                    255
+                  ],
+                  "outline": {
+                    "color": [
+                      153,
+                      153,
+                      153,
+                      255
+                    ],
+                    "style": "esriSLSSolid",
+                    "type": "esriSLS",
+                    "width": 0.75
+                  },
+                  "style": "esriSFSSolid",
+                  "type": "esriSFS"
+                },
+                "value": "COMMERCIAL"
+              },
+              {
+                "label": "INSTITUTIONAL 1",
+                "symbol": {
+                  "color": [
+                    255,
+                    222,
+                    62,
+                    255
+                  ],
+                  "outline": {
+                    "color": [
+                      153,
+                      153,
+                      153,
+                      255
+                    ],
+                    "style": "esriSLSSolid",
+                    "type": "esriSLS",
+                    "width": 0.75
+                  },
+                  "style": "esriSFSSolid",
+                  "type": "esriSFS"
+                },
+                "value": "INSTITUTIONAL_1"
+              },
+              {
+                "label": "AGRICULTURAL",
+                "symbol": {
+                  "color": [
+                    247,
+                    137,
+                    216,
+                    255
+                  ],
+                  "outline": {
+                    "color": [
+                      153,
+                      153,
+                      153,
+                      255
+                    ],
+                    "style": "esriSLSSolid",
+                    "type": "esriSLS",
+                    "width": 0.75
+                  },
+                  "style": "esriSFSSolid",
+                  "type": "esriSFS"
+                },
+                "value": "AGRICULTURAL"
+              },
+              {
+                "label": "FLOODPLAIN",
+                "symbol": {
+                  "color": [
+                    183,
+                    129,
+                    74,
+                    255
+                  ],
+                  "outline": {
+                    "color": [
+                      153,
+                      153,
+                      153,
+                      255
+                    ],
+                    "style": "esriSLSSolid",
+                    "type": "esriSLS",
+                    "width": 0.75
+                  },
+                  "style": "esriSFSSolid",
+                  "type": "esriSFS"
+                },
+                "value": "FLOODPLAIN"
+              },
+              {
+                "label": "DEVELOPMENT PERMIT SYSTEM",
+                "symbol": {
+                  "color": [
+                    60,
+                    175,
+                    153,
+                    255
+                  ],
+                  "outline": {
+                    "color": [
+                      153,
+                      153,
+                      153,
+                      255
+                    ],
+                    "style": "esriSLSSolid",
+                    "type": "esriSLS",
+                    "width": 0.75
+                  },
+                  "style": "esriSFSSolid",
+                  "type": "esriSFS"
+                },
+                "value": "DEVELOPMENT PERMIT SYSTEM"
+              },
+              {
+                "label": "INSTITUTIONAL 2",
+                "symbol": {
+                  "color": [
+                    107,
+                    107,
+                    214,
+                    255
+                  ],
+                  "outline": {
+                    "color": [
+                      153,
+                      153,
+                      153,
+                      255
+                    ],
+                    "style": "esriSLSSolid",
+                    "type": "esriSLS",
+                    "width": 0.75
+                  },
+                  "style": "esriSFSSolid",
+                  "type": "esriSFS"
+                },
+                "value": "INSTITUTIONAL_2"
+              }
+            ],
+            "visualVariables": [
+              {
+                "expression": "view.scale",
+                "stops": [
+                  {
+                    "size": 1.5,
+                    "value": 1642
+                  },
+                  {
+                    "size": 0.75,
+                    "value": 5130
+                  },
+                  {
+                    "size": 0.375,
+                    "value": 20520
+                  },
+                  {
+                    "size": 0,
+                    "value": 41041
+                  }
+                ],
+                "target": "outline",
+                "type": "sizeInfo",
+                "valueExpression": "$view.scale"
+              }
+            ]
+          }
+        },
+        "maxScale": 0,
+        "minScale": 12028
+      },
+      "layerType": "ArcGISFeatureLayer",
+      "mode": 1,
+      "opacity": 0.81,
+      "popupInfo": {
+        "description": "Zoning Category:\u00a0<a href='{CATEGORY_URL}' target='_blank' rel='nofollow ugc noopener noreferrer'>{CATEGORY}</a><br />Zoning Type:\u00a0<a href='{TYPE_URL}' target='_blank' rel='nofollow ugc noopener noreferrer'>{TYPE}<br /></a>Special Section:\u00a0<a href='{SPECIAL_SECTION_URL}' target='_blank' rel='nofollow ugc noopener noreferrer'>{SPECIAL_SECTION}</a><br />Zone Code: {ZONE_CODE}<br /><a href='{GENERAL_PRO_URL}' target='_blank' rel='nofollow ugc noopener noreferrer'>General Pro<br /></a>Multi Zoned Property? {MULTIPLE_ZONES}",
+        "fieldInfos": [
+          {
+            "fieldName": "OBJECTID",
+            "isEditable": false,
+            "label": "OBJECTID",
+            "stringFieldOption": "textbox",
+            "tooltip": "",
+            "visible": false
+          },
+          {
+            "fieldName": "PIN",
+            "isEditable": true,
+            "label": "PIN",
+            "stringFieldOption": "textbox",
+            "tooltip": "",
+            "visible": true
+          },
+          {
+            "fieldName": "ROLL_NUMBER",
+            "isEditable": true,
+            "label": "ROLL NUMBER",
+            "stringFieldOption": "textbox",
+            "tooltip": "",
+            "visible": true
+          },
+          {
+            "fieldName": "ZONE_CODE",
+            "isEditable": true,
+            "label": "ZONE CODE",
+            "stringFieldOption": "textbox",
+            "tooltip": "",
+            "visible": true
+          },
+          {
+            "fieldName": "ZONING_HISTORY",
+            "isEditable": true,
+            "label": "ZONING HISTORY",
+            "stringFieldOption": "textbox",
+            "tooltip": "",
+            "visible": true
+          },
+          {
+            "fieldName": "CATEGORY",
+            "isEditable": true,
+            "label": "CATEGORY",
+            "stringFieldOption": "textbox",
+            "tooltip": "",
+            "visible": true
+          },
+          {
+            "fieldName": "MULTIPLE_ZONES",
+            "isEditable": true,
+            "label": "MULTIPLE ZONES",
+            "stringFieldOption": "textbox",
+            "tooltip": "",
+            "visible": true
+          },
+          {
+            "fieldName": "TYPE",
+            "isEditable": true,
+            "label": "TYPE",
+            "stringFieldOption": "textbox",
+            "tooltip": "",
+            "visible": true
+          },
+          {
+            "fieldName": "SPECIAL_SECTION",
+            "isEditable": true,
+            "label": "SPECIAL SECTION",
+            "stringFieldOption": "textbox",
+            "tooltip": "",
+            "visible": true
+          },
+          {
+            "fieldName": "SCH_C_URL",
+            "isEditable": true,
+            "label": "SCHEDULE C",
+            "stringFieldOption": "textbox",
+            "tooltip": "",
+            "visible": true
+          },
+          {
+            "fieldName": "COMMENTS",
+            "isEditable": true,
+            "label": "COMMENTS",
+            "stringFieldOption": "textbox",
+            "tooltip": "",
+            "visible": true
+          },
+          {
+            "fieldName": "ZONING_OVERRIDE",
+            "isEditable": true,
+            "label": "ZONING OVERRIDE",
+            "stringFieldOption": "textbox",
+            "tooltip": "",
+            "visible": true
+          },
+          {
+            "fieldName": "INTCONT_URL",
+            "isEditable": true,
+            "label": "INTERIM CONTROL URL",
+            "stringFieldOption": "textbox",
+            "tooltip": "",
+            "visible": true
+          },
+          {
+            "fieldName": "INTCONT_BYLAW",
+            "isEditable": true,
+            "label": "INTERIM CONTROL BYLAW",
+            "stringFieldOption": "textbox",
+            "tooltip": "",
+            "visible": true
+          },
+          {
+            "fieldName": "STATUS",
+            "isEditable": true,
+            "label": "STATUS",
+            "stringFieldOption": "textbox",
+            "tooltip": "",
+            "visible": true
+          },
+          {
+            "fieldName": "LOT_WIDTH",
+            "format": {
+              "digitSeparator": false,
+              "places": 2
+            },
+            "isEditable": true,
+            "label": "LOT WIDTH",
+            "stringFieldOption": "textbox",
+            "tooltip": "",
+            "visible": true
+          },
+          {
+            "fieldName": "AMENDING_BYLAW",
+            "isEditable": true,
+            "label": "AMENDING BYLAW",
+            "stringFieldOption": "textbox",
+            "tooltip": "",
+            "visible": true
+          },
+          {
+            "fieldName": "AMENDING_YEAR",
+            "isEditable": true,
+            "label": "AMENDING YEAR",
+            "stringFieldOption": "textbox",
+            "tooltip": "",
+            "visible": true
+          },
+          {
+            "fieldName": "OMN_BY_LAW",
+            "isEditable": true,
+            "label": "OMN BYLAW",
+            "stringFieldOption": "textbox",
+            "tooltip": "",
+            "visible": true
+          },
+          {
+            "fieldName": "GENERAL_PRO_URL",
+            "isEditable": true,
+            "label": "GENERAL PROVISIONS",
+            "stringFieldOption": "textbox",
+            "tooltip": "",
+            "visible": true
+          },
+          {
+            "fieldName": "CATEGORY_URL",
+            "isEditable": true,
+            "label": "CATEGORY URL",
+            "stringFieldOption": "textbox",
+            "tooltip": "",
+            "visible": true
+          },
+          {
+            "fieldName": "TYPE_URL",
+            "isEditable": true,
+            "label": "TYPE URL",
+            "stringFieldOption": "textbox",
+            "tooltip": "",
+            "visible": true
+          },
+          {
+            "fieldName": "SPECIAL_SECTION_URL",
+            "isEditable": true,
+            "label": "SPECIAL SECTION URL",
+            "stringFieldOption": "textbox",
+            "tooltip": "",
+            "visible": true
+          }
+        ],
+        "mediaInfos": [],
+        "showAttachments": true,
+        "title": ""
+      },
+      "title": "Zoning Bylaw",
+      "url": "https://utility.arcgis.com/usrsvcs/servers/b83c44cf31df4fd0854adf87177e4c86/rest/services/COB/Zoning/MapServer?f=pjson",
+      "visibility": false
+    },
+    {
+      "capabilities": "Query,Sync",
+      "id": "Economic_Development_2323",
+      "itemId": "3cd59a895f404612b57e4c84fc8931be",
+      "layerDefinition": {
+        "drawingInfo": {
+          "renderer": {
+            "description": "",
+            "label": "",
+            "symbol": {
+              "angle": 0,
+              "color": [
+                115,
+                178,
+                255,
+                128
+              ],
+              "outline": {
+                "color": [
+                  255,
+                  255,
+                  255,
+                  255
+                ],
+                "style": "esriSLSSolid",
+                "type": "esriSLS",
+                "width": 0.99975
+              },
+              "size": 9.75,
+              "style": "esriSMSCircle",
+              "type": "esriSMS",
+              "xoffset": 0,
+              "yoffset": 0
+            },
+            "type": "simple"
+          }
+        },
+        "featureReduction": {
+          "clusterRadius": 15,
+          "popupInfo": {
+            "description": "This cluster represents <b>{cluster_count}</b> Businesses.",
+            "fieldInfos": [
+              {
+                "fieldName": "cluster_count",
+                "format": {
+                  "digitSeparator": true,
+                  "places": 0
+                },
+                "label": "Number of features",
+                "visible": true
+              }
+            ],
+            "showAttachments": false,
+            "title": "Brampton Business Directory"
+          },
+          "type": "cluster"
+        }
+      },
+      "layerType": "ArcGISFeatureLayer",
+      "opacity": 1,
+      "popupInfo": {
+        "description": "{BUSINESS_FULL_ADDRESS}<br />{PHONE}<br /><a href='http://{WEBURL}' target='_blank' rel='nofollow ugc noopener noreferrer'>{WEBURL}</a><br /><br />Visit the\u00a0<a href='http://geohub.brampton.ca/datasets/brampton-business-directory' target='_blank' rel='nofollow ugc noopener noreferrer'>Open Data Portal</a>\u00a0to download this data.",
+        "fieldInfos": [
+          {
+            "fieldName": "OBJECTID",
+            "isEditable": false,
+            "isEditableOnLayer": false,
+            "label": "OBJECTID",
+            "stringFieldOption": "textbox",
+            "tooltip": "",
+            "visible": false
+          },
+          {
+            "fieldName": "COMPANY_NAME",
+            "isEditable": true,
+            "isEditableOnLayer": true,
+            "label": "Company Name",
+            "stringFieldOption": "textbox",
+            "tooltip": "",
+            "visible": true
+          },
+          {
+            "fieldName": "OPERATIONAL",
+            "isEditable": true,
+            "isEditableOnLayer": true,
+            "label": "Operational",
+            "stringFieldOption": "textbox",
+            "tooltip": "",
+            "visible": true
+          },
+          {
+            "fieldName": "STREET_NUM",
+            "isEditable": true,
+            "isEditableOnLayer": true,
+            "label": "Street Number",
+            "stringFieldOption": "textbox",
+            "tooltip": "",
+            "visible": true
+          },
+          {
+            "fieldName": "STREET_NAME",
+            "isEditable": true,
+            "isEditableOnLayer": true,
+            "label": "Street Name",
+            "stringFieldOption": "textbox",
+            "tooltip": "",
+            "visible": true
+          },
+          {
+            "fieldName": "STREET_TYPE",
+            "isEditable": true,
+            "isEditableOnLayer": true,
+            "label": "Street Type",
+            "stringFieldOption": "textbox",
+            "tooltip": "",
+            "visible": true
+          },
+          {
+            "fieldName": "STREET_DIRECTION",
+            "isEditable": true,
+            "isEditableOnLayer": true,
+            "label": "Street Direction",
+            "stringFieldOption": "textbox",
+            "tooltip": "",
+            "visible": true
+          },
+          {
+            "fieldName": "UNIT",
+            "isEditable": true,
+            "isEditableOnLayer": true,
+            "label": "Unit Number",
+            "stringFieldOption": "textbox",
+            "tooltip": "",
+            "visible": true
+          },
+          {
+            "fieldName": "BUSINESS_FULL_ADDRESS",
+            "isEditable": true,
+            "isEditableOnLayer": true,
+            "label": "Address",
+            "stringFieldOption": "textbox",
+            "tooltip": "",
+            "visible": true
+          },
+          {
+            "fieldName": "CITY",
+            "isEditable": true,
+            "isEditableOnLayer": true,
+            "label": "City",
+            "stringFieldOption": "textbox",
+            "tooltip": "",
+            "visible": true
+          },
+          {
+            "fieldName": "PROVINCE",
+            "isEditable": true,
+            "isEditableOnLayer": true,
+            "label": "Province",
+            "stringFieldOption": "textbox",
+            "tooltip": "",
+            "visible": true
+          },
+          {
+            "fieldName": "POSTAL_CODE",
+            "isEditable": true,
+            "isEditableOnLayer": true,
+            "label": "Postal Code",
+            "stringFieldOption": "textbox",
+            "tooltip": "",
+            "visible": true
+          },
+          {
+            "fieldName": "PHONE",
+            "isEditable": true,
+            "isEditableOnLayer": true,
+            "label": "Telephone",
+            "stringFieldOption": "textbox",
+            "tooltip": "",
+            "visible": true
+          },
+          {
+            "fieldName": "FAX",
+            "isEditable": true,
+            "isEditableOnLayer": true,
+            "label": "Fax",
+            "stringFieldOption": "textbox",
+            "tooltip": "",
+            "visible": true
+          },
+          {
+            "fieldName": "WEBURL",
+            "isEditable": true,
+            "isEditableOnLayer": true,
+            "label": "Website",
+            "stringFieldOption": "textbox",
+            "tooltip": "",
+            "visible": true
+          },
+          {
+            "fieldName": "DATE_EST_IN_CITY",
+            "isEditable": true,
+            "isEditableOnLayer": true,
+            "label": "Year Established in Brampton",
+            "stringFieldOption": "textbox",
+            "tooltip": "",
+            "visible": true
+          },
+          {
+            "fieldName": "STARTED_IN_CITY",
+            "isEditable": true,
+            "isEditableOnLayer": true,
+            "label": "Started in City",
+            "stringFieldOption": "textbox",
+            "tooltip": "",
+            "visible": true
+          },
+          {
+            "fieldName": "HEAD_OFFICE_LOCATION",
+            "isEditable": true,
+            "isEditableOnLayer": true,
+            "label": "Location of Head Office",
+            "stringFieldOption": "textbox",
+            "tooltip": "",
+            "visible": true
+          },
+          {
+            "fieldName": "TOTAL_EMPLOYEE",
+            "format": {
+              "digitSeparator": true,
+              "places": 2
+            },
+            "isEditable": true,
+            "isEditableOnLayer": true,
+            "label": "Total Number of Employees",
+            "stringFieldOption": "textbox",
+            "tooltip": "",
+            "visible": true
+          },
+          {
+            "fieldName": "SHIFTS",
+            "isEditable": true,
+            "isEditableOnLayer": true,
+            "label": "Shifts",
+            "stringFieldOption": "textbox",
+            "tooltip": "",
+            "visible": true
+          },
+          {
+            "fieldName": "SHIFT_NUMBER",
+            "format": {
+              "digitSeparator": true,
+              "places": 2
+            },
+            "isEditable": true,
+            "isEditableOnLayer": true,
+            "label": "Number of Shifts",
+            "stringFieldOption": "textbox",
+            "tooltip": "",
+            "visible": true
+          },
+          {
+            "fieldName": "GFA_SQUARE_FEET",
+            "format": {
+              "digitSeparator": true,
+              "places": 2
+            },
+            "isEditable": true,
+            "isEditableOnLayer": true,
+            "label": "GFA Sq Feet",
+            "stringFieldOption": "textbox",
+            "tooltip": "",
+            "visible": true
+          },
+          {
+            "fieldName": "GFA_SQUARE_METER",
+            "format": {
+              "digitSeparator": true,
+              "places": 2
+            },
+            "isEditable": true,
+            "isEditableOnLayer": true,
+            "label": "GFA Sq Meter",
+            "stringFieldOption": "textbox",
+            "tooltip": "",
+            "visible": true
+          },
+          {
+            "fieldName": "NAIC_2",
+            "isEditable": true,
+            "isEditableOnLayer": true,
+            "label": "North American Industry Classification 2",
+            "stringFieldOption": "textbox",
+            "tooltip": "",
+            "visible": true
+          },
+          {
+            "fieldName": "NAIC_3",
+            "isEditable": true,
+            "isEditableOnLayer": true,
+            "label": "North American Industry Classification 3",
+            "stringFieldOption": "textbox",
+            "tooltip": "",
+            "visible": true
+          },
+          {
+            "fieldName": "NAIC_4",
+            "isEditable": true,
+            "isEditableOnLayer": true,
+            "label": "North American Industry Classification 4",
+            "stringFieldOption": "textbox",
+            "tooltip": "",
+            "visible": true
+          },
+          {
+            "fieldName": "NAIC_6",
+            "isEditable": true,
+            "isEditableOnLayer": true,
+            "label": "North American Industry Classification 6",
+            "stringFieldOption": "textbox",
+            "tooltip": "",
+            "visible": true
+          },
+          {
+            "fieldName": "PRODUCT_DESC",
+            "isEditable": true,
+            "isEditableOnLayer": true,
+            "label": "Product Description",
+            "stringFieldOption": "textbox",
+            "tooltip": "",
+            "visible": true
+          },
+          {
+            "fieldName": "EXPORTS",
+            "isEditable": true,
+            "isEditableOnLayer": true,
+            "label": "Exports",
+            "stringFieldOption": "textbox",
+            "tooltip": "",
+            "visible": true
+          },
+          {
+            "fieldName": "EXPORT_COUNTRY1",
+            "isEditable": true,
+            "isEditableOnLayer": true,
+            "label": "Export Country 1",
+            "stringFieldOption": "textbox",
+            "tooltip": "",
+            "visible": true
+          },
+          {
+            "fieldName": "EXPORT_COUNTRY2",
+            "isEditable": true,
+            "isEditableOnLayer": true,
+            "label": "Export Country 2",
+            "stringFieldOption": "textbox",
+            "tooltip": "",
+            "visible": true
+          },
+          {
+            "fieldName": "EXPORT_COUNTRY3",
+            "isEditable": true,
+            "isEditableOnLayer": true,
+            "label": "Export Country 3",
+            "stringFieldOption": "textbox",
+            "tooltip": "",
+            "visible": true
+          },
+          {
+            "fieldName": "NAICS_DETAIL",
+            "format": {
+              "digitSeparator": true,
+              "places": 0
+            },
+            "isEditable": true,
+            "isEditableOnLayer": true,
+            "label": "North American Industry Classification",
+            "stringFieldOption": "textbox",
+            "tooltip": "",
+            "visible": true
+          },
+          {
+            "fieldName": "FACEBOOK",
+            "isEditable": true,
+            "isEditableOnLayer": true,
+            "label": "Facebook",
+            "stringFieldOption": "textbox",
+            "tooltip": "",
+            "visible": true
+          },
+          {
+            "fieldName": "TWITTER",
+            "isEditable": true,
+            "isEditableOnLayer": true,
+            "label": "Twitter",
+            "stringFieldOption": "textbox",
+            "tooltip": "",
+            "visible": true
+          },
+          {
+            "fieldName": "LINKEDIN",
+            "isEditable": true,
+            "isEditableOnLayer": true,
+            "label": "Linkedin",
+            "stringFieldOption": "textbox",
+            "tooltip": "",
+            "visible": true
+          },
+          {
+            "fieldName": "YOUTUBE",
+            "isEditable": true,
+            "isEditableOnLayer": true,
+            "label": "YouTube",
+            "stringFieldOption": "textbox",
+            "tooltip": "",
+            "visible": true
+          },
+          {
+            "fieldName": "INSTAGRAM",
+            "isEditable": true,
+            "isEditableOnLayer": true,
+            "label": "Instagram",
+            "stringFieldOption": "textbox",
+            "tooltip": "",
+            "visible": true
+          },
+          {
+            "fieldName": "UPDATE_DATE",
+            "format": {
+              "dateFormat": "shortDateShortTime",
+              "timezone": "utc"
+            },
+            "isEditable": false,
+            "isEditableOnLayer": false,
+            "label": "UPDATE_DATE",
+            "visible": false
+          },
+          {
+            "fieldName": "UPDATED_BY",
+            "isEditable": false,
+            "isEditableOnLayer": false,
+            "label": "UPDATED_BY",
+            "stringFieldOption": "textbox",
+            "visible": false
+          },
+          {
+            "fieldName": "CREATED_BY",
+            "isEditable": false,
+            "isEditableOnLayer": false,
+            "label": "CREATED_BY",
+            "stringFieldOption": "textbox",
+            "visible": false
+          },
+          {
+            "fieldName": "CREATE_DATE",
+            "format": {
+              "dateFormat": "shortDateShortTime",
+              "timezone": "utc"
+            },
+            "isEditable": false,
+            "isEditableOnLayer": false,
+            "label": "CREATE_DATE",
+            "visible": false
+          },
+          {
+            "fieldName": "GLOBALID",
+            "isEditable": false,
+            "isEditableOnLayer": false,
+            "label": "GLOBALID",
+            "visible": false
+          }
+        ],
+        "mediaInfos": [],
+        "showAttachments": true,
+        "title": "{COMPANY_NAME}"
+      },
+      "title": "Businesses",
+      "url": "https://services3.arcgis.com/rl7ACuZkiFsmDA2g/arcgis/rest/services/Economic_Development/FeatureServer/0",
+      "visibility": true
+    }
+  ],
+  "spatialReference": {
+    "latestWkid": 3857,
+    "wkid": 102100
+  },
+  "version": "2.12"
+}

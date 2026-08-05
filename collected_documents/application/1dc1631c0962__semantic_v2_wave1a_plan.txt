@@ -1,0 +1,244 @@
+{
+  "affected_file_count": 5,
+  "affected_files": [
+    "src/cre_foundry/brampton_business_directory_silver.py",
+    "src/cre_foundry/brampton_cross_source_reconciliation.py",
+    "src/cre_foundry/brampton_permit_silver.py",
+    "src/cre_foundry/brampton_verification_ledger.py",
+    "src/cre_foundry/primitive_quality.py"
+  ],
+  "automatic_rewrite_count": 0,
+  "automatic_risk_acceptance_count": 0,
+  "automatic_suppression_count": 0,
+  "candidates": [
+    {
+      "automatic_rewrite_performed": false,
+      "automatic_risk_acceptance_performed": false,
+      "automatic_suppression_performed": false,
+      "classification": "identifier_candidate",
+      "database_access_performed": false,
+      "database_write_performed": false,
+      "dynamic_expressions": [
+        "placeholders"
+      ],
+      "enclosing_scope": "build_brampton_business_directory_silver",
+      "line_number": 488,
+      "location": "src/cre_foundry/brampton_business_directory_silver.py:488",
+      "query_kind": "dynamic_insert",
+      "recommended_strategy": "Separate schema, table and column tokens from data values and route each token through the strict SQL identifier primitives.",
+      "sequence": 1,
+      "source_excerpt": "  00482:             \"\"\"\n  00483:         )\n  00484: \n  00485:         placeholders = \", \".join([\"?\"] * 48)\n  00486: \n  00487:         staging.executemany(\n> 00488:             f\"\"\"\n  00489:             INSERT INTO directory_rows\n  00490:             VALUES ({placeholders})\n  00491:             \"\"\",\n  00492:             rows,\n  00493:         )\n  00494: ",
+      "source_modification_performed": false,
+      "source_path": "src/cre_foundry/brampton_business_directory_silver.py",
+      "statement_ast_sha256": "0af711ecc6d6f1b777605ff2079cb38aaa805bebdb6ed3d0ec541676359d4364",
+      "statement_source": "staging.executemany(\n            f\"\"\"\n            INSERT INTO directory_rows\n            VALUES ({placeholders})\n            \"\"\",\n            rows,\n        )",
+      "test_reference_count": 1,
+      "test_references": [
+        "tests/unit/test_brampton_business_directory_silver.py"
+      ]
+    },
+    {
+      "automatic_rewrite_performed": false,
+      "automatic_risk_acceptance_performed": false,
+      "automatic_suppression_performed": false,
+      "classification": "manual_query_shape_review",
+      "database_access_performed": false,
+      "database_write_performed": false,
+      "dynamic_expressions": [
+        "placeholders"
+      ],
+      "enclosing_scope": "build_brampton_cross_source_reconciliation",
+      "line_number": 549,
+      "location": "src/cre_foundry/brampton_cross_source_reconciliation.py:549",
+      "query_kind": "dynamic_insert",
+      "recommended_strategy": "Inspect the complete statement and separate every identifier from every data value before selecting the canary migration.",
+      "sequence": 2,
+      "source_excerpt": "  00543:         )\n  00544: \n  00545:         if rows:\n  00546:             placeholders = \", \".join([\"?\"] * 37)\n  00547: \n  00548:             connection.executemany(\n> 00549:                 f\"\"\"\n  00550:                 INSERT INTO\n  00551:                     silver.brampton_permit_cross_source_reconciliation\n  00552:                 VALUES ({placeholders})\n  00553:                 \"\"\",\n  00554:                 rows,\n  00555:             )",
+      "source_modification_performed": false,
+      "source_path": "src/cre_foundry/brampton_cross_source_reconciliation.py",
+      "statement_ast_sha256": "12c5d1b3d88c19def44f9248514de8779749e20850c670118bcca99eacc0f998",
+      "statement_source": "connection.executemany(\n                f\"\"\"\n                INSERT INTO\n                    silver.brampton_permit_cross_source_reconciliation\n                VALUES ({placeholders})\n                \"\"\",\n                rows,\n            )",
+      "test_reference_count": 1,
+      "test_references": [
+        "tests/unit/test_brampton_cross_source_reconciliation.py"
+      ]
+    },
+    {
+      "automatic_rewrite_performed": false,
+      "automatic_risk_acceptance_performed": false,
+      "automatic_suppression_performed": false,
+      "classification": "identifier_candidate",
+      "database_access_performed": false,
+      "database_write_performed": false,
+      "dynamic_expressions": [
+        "placeholders"
+      ],
+      "enclosing_scope": "build_brampton_permit_silver",
+      "line_number": 361,
+      "location": "src/cre_foundry/brampton_permit_silver.py:361",
+      "query_kind": "dynamic_insert",
+      "recommended_strategy": "Separate schema, table and column tokens from data values and route each token through the strict SQL identifier primitives.",
+      "sequence": 3,
+      "source_excerpt": "  00355:             \"\"\"\n  00356:         )\n  00357: \n  00358:         placeholders = \", \".join([\"?\"] * 29)\n  00359: \n  00360:         staging.executemany(\n> 00361:             f\"\"\"\n  00362:             INSERT INTO permit_rows\n  00363:             VALUES ({placeholders})\n  00364:             \"\"\",\n  00365:             rows,\n  00366:         )\n  00367: ",
+      "source_modification_performed": false,
+      "source_path": "src/cre_foundry/brampton_permit_silver.py",
+      "statement_ast_sha256": "8d3ccb6c507035cd13f652faadf316a6e0ae43002f21080cb30d3677ad473e81",
+      "statement_source": "staging.executemany(\n            f\"\"\"\n            INSERT INTO permit_rows\n            VALUES ({placeholders})\n            \"\"\",\n            rows,\n        )",
+      "test_reference_count": 1,
+      "test_references": [
+        "tests/unit/test_brampton_permit_silver.py"
+      ]
+    },
+    {
+      "automatic_rewrite_performed": false,
+      "automatic_risk_acceptance_performed": false,
+      "automatic_suppression_performed": false,
+      "classification": "manual_query_shape_review",
+      "database_access_performed": false,
+      "database_write_performed": false,
+      "dynamic_expressions": [
+        "placeholders"
+      ],
+      "enclosing_scope": "project_verification_state",
+      "line_number": 1066,
+      "location": "src/cre_foundry/brampton_verification_ledger.py:1066",
+      "query_kind": "dynamic_insert",
+      "recommended_strategy": "Inspect the complete statement and separate every identifier from every data value before selecting the canary migration.",
+      "sequence": 4,
+      "source_excerpt": "  01060:         )\n  01061: \n  01062:         if state_rows:\n  01063:             placeholders = \", \".join([\"?\"] * 35)\n  01064: \n  01065:             connection.executemany(\n> 01066:                 f\"\"\"\n  01067:                 INSERT INTO\n  01068:                     control.brampton_verification_task_state\n  01069:                 VALUES ({placeholders})\n  01070:                 \"\"\",\n  01071:                 state_rows,\n  01072:             )",
+      "source_modification_performed": false,
+      "source_path": "src/cre_foundry/brampton_verification_ledger.py",
+      "statement_ast_sha256": "814a568f5461ebc08c77d965078c5cf0a4cf576c6000fb0aa54f149f31a356a3",
+      "statement_source": "connection.executemany(\n                f\"\"\"\n                INSERT INTO\n                    control.brampton_verification_task_state\n                VALUES ({placeholders})\n                \"\"\",\n                state_rows,\n            )",
+      "test_reference_count": 1,
+      "test_references": [
+        "tests/unit/test_brampton_verification_ledger.py"
+      ]
+    },
+    {
+      "automatic_rewrite_performed": false,
+      "automatic_risk_acceptance_performed": false,
+      "automatic_suppression_performed": false,
+      "classification": "manual_query_shape_review",
+      "database_access_performed": false,
+      "database_write_performed": false,
+      "dynamic_expressions": [
+        "placeholders"
+      ],
+      "enclosing_scope": "project_verification_state",
+      "line_number": 1109,
+      "location": "src/cre_foundry/brampton_verification_ledger.py:1109",
+      "query_kind": "dynamic_insert",
+      "recommended_strategy": "Inspect the complete statement and separate every identifier from every data value before selecting the canary migration.",
+      "sequence": 5,
+      "source_excerpt": "  01103:         )\n  01104: \n  01105:         if workflow_rows:\n  01106:             placeholders = \", \".join([\"?\"] * 23)\n  01107: \n  01108:             connection.executemany(\n> 01109:                 f\"\"\"\n  01110:                 INSERT INTO\n  01111:                     control.brampton_verification_workflow_state\n  01112:                 VALUES ({placeholders})\n  01113:                 \"\"\",\n  01114:                 workflow_rows,\n  01115:             )",
+      "source_modification_performed": false,
+      "source_path": "src/cre_foundry/brampton_verification_ledger.py",
+      "statement_ast_sha256": "3e02d2434645b505bc536416b4e22b598ee4eb2eabffca6d5b4d5c88e2565302",
+      "statement_source": "connection.executemany(\n                f\"\"\"\n                INSERT INTO\n                    control.brampton_verification_workflow_state\n                VALUES ({placeholders})\n                \"\"\",\n                workflow_rows,\n            )",
+      "test_reference_count": 1,
+      "test_references": [
+        "tests/unit/test_brampton_verification_ledger.py"
+      ]
+    },
+    {
+      "automatic_rewrite_performed": false,
+      "automatic_risk_acceptance_performed": false,
+      "automatic_suppression_performed": false,
+      "classification": "identifier_candidate",
+      "database_access_performed": false,
+      "database_write_performed": false,
+      "dynamic_expressions": [
+        "quoted_column",
+        "relation_identifier"
+      ],
+      "enclosing_scope": "_duckdb_profile_relation",
+      "line_number": 554,
+      "location": "src/cre_foundry/primitive_quality.py:554",
+      "query_kind": "dynamic_distinct_projection",
+      "recommended_strategy": "Separate schema, table and column tokens from data values and route each token through the strict SQL identifier primitives.",
+      "sequence": 6,
+      "source_excerpt": "  00548:         }\n  00549: \n  00550:         if profile[\"roles\"][\"safety\"]:\n  00551:             quoted_column = _quote_identifier(column_name)\n  00552: \n  00553:             safety_rows = connection.execute(\n> 00554:                 f\"\"\"\n  00555:                 SELECT DISTINCT\n  00556:                     CAST(\n  00557:                         {quoted_column}\n  00558:                         AS VARCHAR\n  00559:                     )\n  00560:                 FROM {relation_identifier}",
+      "source_modification_performed": false,
+      "source_path": "src/cre_foundry/primitive_quality.py",
+      "statement_ast_sha256": "d2c6d0391e77af00d446b040ec0f2a099b5217ce1a2d8b44c145c1ce586b825d",
+      "statement_source": "safety_rows = connection.execute(\n                f\"\"\"\n                SELECT DISTINCT\n                    CAST(\n                        {quoted_column}\n                        AS VARCHAR\n                    )\n                FROM {relation_identifier}\n                WHERE\n                    {quoted_column}\n                    IS NOT NULL\n                ORDER BY 1\n                LIMIT ?\n                \"\"\",\n                [maximum_safety_values],\n            ).fetchall()",
+      "test_reference_count": 5,
+      "test_references": [
+        "tests/unit/test_data_health.py",
+        "tests/unit/test_pilot_readiness.py",
+        "tests/unit/test_primitive_quality.py",
+        "tests/unit/test_shadow_learning.py",
+        "tests/unit/test_temporal_readiness.py"
+      ]
+    },
+    {
+      "automatic_rewrite_performed": false,
+      "automatic_risk_acceptance_performed": false,
+      "automatic_suppression_performed": false,
+      "classification": "identifier_candidate",
+      "database_access_performed": false,
+      "database_write_performed": false,
+      "dynamic_expressions": [
+        "quoted_column",
+        "relation_identifier"
+      ],
+      "enclosing_scope": "_sqlite_profile_relation",
+      "line_number": 675,
+      "location": "src/cre_foundry/primitive_quality.py:675",
+      "query_kind": "dynamic_distinct_projection",
+      "recommended_strategy": "Separate schema, table and column tokens from data values and route each token through the strict SQL identifier primitives.",
+      "sequence": 7,
+      "source_excerpt": "  00669:         }\n  00670: \n  00671:         if profile[\"roles\"][\"safety\"]:\n  00672:             quoted_column = _quote_identifier(column_name)\n  00673: \n  00674:             safety_rows = connection.execute(\n> 00675:                 f\"\"\"\n  00676:                 SELECT DISTINCT\n  00677:                     CAST(\n  00678:                         {quoted_column}\n  00679:                         AS TEXT\n  00680:                     )\n  00681:                 FROM {relation_identifier}",
+      "source_modification_performed": false,
+      "source_path": "src/cre_foundry/primitive_quality.py",
+      "statement_ast_sha256": "2f354e74662a536a32875996b033f5c01827a760719b362c1d2b656e142c8378",
+      "statement_source": "safety_rows = connection.execute(\n                f\"\"\"\n                SELECT DISTINCT\n                    CAST(\n                        {quoted_column}\n                        AS TEXT\n                    )\n                FROM {relation_identifier}\n                WHERE\n                    {quoted_column}\n                    IS NOT NULL\n                ORDER BY 1\n                LIMIT ?\n                \"\"\",\n                (maximum_safety_values,),\n            ).fetchall()",
+      "test_reference_count": 5,
+      "test_references": [
+        "tests/unit/test_data_health.py",
+        "tests/unit/test_pilot_readiness.py",
+        "tests/unit/test_primitive_quality.py",
+        "tests/unit/test_shadow_learning.py",
+        "tests/unit/test_temporal_readiness.py"
+      ]
+    }
+  ],
+  "classification_counts": {
+    "identifier_candidate": 4,
+    "manual_query_shape_review": 3
+  },
+  "database_access_count": 0,
+  "database_write_count": 0,
+  "model_training_execution_count": 0,
+  "model_version": "cre-foundry-sql-safety-wave1a-plan-v1",
+  "next_checkpoint": "sql-safety-wave1a-canary-migration",
+  "operating_mode": "shadow",
+  "outreach_execution_count": 0,
+  "parameter_aware_candidate_count": 7,
+  "pilot_execution_count": 0,
+  "production_ranking_execution_count": 0,
+  "ready_for_surgical_migration": true,
+  "snapshot_registration_count": 0,
+  "source_modification_count": 0
+}
+SQL SAFETY WAVE 1A PLAN PASSED
+
+Exact Wave 1A migration queue:
+  - src/cre_foundry/brampton_business_directory_silver.py:488 | build_brampton_business_directory_silver | identifier_candidate | tests 1
+  - src/cre_foundry/brampton_cross_source_reconciliation.py:549 | build_brampton_cross_source_reconciliation | manual_query_shape_review | tests 1
+  - src/cre_foundry/brampton_permit_silver.py:361 | build_brampton_permit_silver | identifier_candidate | tests 1
+  - src/cre_foundry/brampton_verification_ledger.py:1066 | project_verification_state | manual_query_shape_review | tests 1
+  - src/cre_foundry/brampton_verification_ledger.py:1109 | project_verification_state | manual_query_shape_review | tests 1
+  - src/cre_foundry/primitive_quality.py:554 | _duckdb_profile_relation | identifier_candidate | tests 5
+  - src/cre_foundry/primitive_quality.py:675 | _sqlite_profile_relation | identifier_candidate | tests 5
+
+Wave 1A planner safety state:
+  source modifications: 0
+  automatic rewrites: 0
+  suppressions: 0
+  risk acceptances: 0
+  database activity: 0
+  production activity: 0
+
+SQL SAFETY WAVE 1A PLAN COMPLETED

@@ -1,0 +1,10 @@
+{
+  "action_reference_count": 2,
+  "model_version": "cre-foundry-ci-workflow-policy-v1",
+  "pinned_action_reference_count": 2,
+  "policy_passed": true,
+  "violation_count": 0,
+  "violations": [],
+  "workflow_path": ".github/workflows/security-audit.yml",
+  "workflow_present": true
+}

@@ -1,0 +1,44 @@
+{
+  "config_version": "cre-foundry-sql-safety-remediation-inventory-v1",
+  "inputs": {
+    "normalized_findings": "docs/security/devsecops_scanner_findings.json",
+    "scanner_summary": "docs/security/devsecops_scanner_summary.json"
+  },
+  "outputs": {
+    "inventory": "docs/security/sql_safety_remediation_inventory.json",
+    "license_review_profile": "docs/security/license_review_profile.json",
+    "report": "docs/security/sql_safety_remediation_inventory.md",
+    "secret_noise_profile": "docs/security/secret_noise_profile.json",
+    "summary": "docs/security/sql_safety_remediation_summary.json"
+  },
+  "policy": {
+    "automatic_acquisition_enabled": false,
+    "automatic_risk_acceptance_enabled": false,
+    "automatic_source_rewrite_enabled": false,
+    "automatic_suppression_enabled": false,
+    "backtest_execution_enabled": false,
+    "database_access_enabled": false,
+    "database_write_enabled": false,
+    "enclosing_scope_capture_required": true,
+    "expected_blocking_b608_count": 19,
+    "file_path_parameterization_required": true,
+    "license_review_profiling_required": true,
+    "model_training_enabled": false,
+    "operating_mode": "shadow",
+    "outcome_event_insertion_enabled": false,
+    "outreach_enabled": false,
+    "persistent_outcome_ledger_enabled": false,
+    "pilot_execution_enabled": false,
+    "point_in_time_materialization_enabled": false,
+    "production_ranking_enabled": false,
+    "raw_secret_persistence_forbidden": true,
+    "secret_noise_profiling_required": true,
+    "snapshot_registration_enabled": false,
+    "source_digest_binding_required": true,
+    "statement_digest_binding_required": true,
+    "strict_identifier_quoting_required": true,
+    "strict_identifier_validation_required": true,
+    "test_coverage_discovery_required": true,
+    "value_parameterization_required": true
+  }
+}

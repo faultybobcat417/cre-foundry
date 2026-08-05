@@ -1,0 +1,202 @@
+{
+  "automatic_approval": false,
+  "candidate_record_keys": [
+    "PERMITNUMBER",
+    "OBJECTID",
+    "GIS_ID"
+  ],
+  "candidate_temporal_fields": [
+    "INDATE",
+    "ISSUEDATE",
+    "PROCESSDATE",
+    "EXPIRYDATE"
+  ],
+  "current_blockers": [
+    "approved_record_key_invalid_or_missing",
+    "approved_temporal_fields_missing",
+    "capture_policy_approved_false",
+    "change_contract_approved_false",
+    "evidence_reference_missing",
+    "parser_contract_approved_false",
+    "registration_approved_false",
+    "reviewed_at_missing_or_invalid",
+    "reviewer_id_missing",
+    "schema_contract_approved_false"
+  ],
+  "current_decision": {
+    "approved_record_key": null,
+    "approved_temporal_fields": [],
+    "capture_policy_approved": false,
+    "change_contract_approved": false,
+    "evidence_bundle_digest": "714a1be5231393f4a1e397820519ae62844563caeb5db5189b5013212badbaa4",
+    "evidence_reference": null,
+    "parser_contract_approved": false,
+    "registration_approved": false,
+    "reviewed_at": null,
+    "reviewer_id": null,
+    "schema_contract_approved": false,
+    "source_id": "brampton_building_permits"
+  },
+  "decision_complete": false,
+  "evidence": {
+    "artifact_path": "data/bronze/brampton_building_permits/2026/07/26/RUN-20260726T033516Z-e1388f64b1/layer_0_bae5f22db1bef14b.geojson.gz",
+    "artifact_sha256": "d5359d5308355a74e18f5e54d0022e1c49dcfd2909d17ea3cd084000488e6d4c",
+    "candidate_record_keys": [
+      "PERMITNUMBER",
+      "OBJECTID",
+      "GIS_ID"
+    ],
+    "candidate_temporal_fields": [
+      "INDATE",
+      "ISSUEDATE",
+      "PROCESSDATE",
+      "EXPIRYDATE"
+    ],
+    "change_contract": {
+      "added_record_detection": true,
+      "candidate_record_keys": [
+        "PERMITNUMBER",
+        "OBJECTID",
+        "GIS_ID"
+      ],
+      "change_contract_approved": false,
+      "change_detection_execution_count": 0,
+      "change_types": [
+        "record_added",
+        "record_removed",
+        "status_changed",
+        "issue_date_changed",
+        "expiry_date_changed",
+        "work_description_changed",
+        "address_changed",
+        "geometry_presence_changed"
+      ],
+      "changed_record_detection": true,
+      "field_level_diff_required": true,
+      "future_information_forbidden": true,
+      "publication_lag_required": true,
+      "removed_record_detection": true,
+      "row_hash_required": true,
+      "snapshot_hash_required": true,
+      "source_id": "brampton_building_permits",
+      "source_observed_at_required": true,
+      "unchanged_record_detection": true
+    },
+    "dataset_digest": "cb07d23f0c042cd14017877186168293b20282646570625d8cf4c88f16387252",
+    "field_count": 21,
+    "historical_coverage": {
+      "approved_history_months": null,
+      "approved_minimum_snapshots": null,
+      "backtest_eligible": false,
+      "candidate_history_months": 24,
+      "candidate_minimum_snapshots": 24,
+      "coverage_satisfied": false,
+      "model_training_eligible": false,
+      "point_in_time_dataset_eligible": false,
+      "registered_snapshot_count": 0,
+      "source_id": "brampton_building_permits"
+    },
+    "parser_type": "gzip_json_feature_collection",
+    "parser_validation_complete": true,
+    "record_count": 4652,
+    "reproducibility_match": true,
+    "schema_fingerprint": "13ad5c3d280f2132e1fb43be6f993865898fd240df4d9dea2a32acf57cb85dfc",
+    "source_id": "brampton_building_permits",
+    "source_plan": {
+      "automatic_acquisition_approved": false,
+      "candidate_history_months": 24,
+      "candidate_minimum_snapshots": 24,
+      "candidate_record_keys": [
+        "PERMITNUMBER",
+        "OBJECTID",
+        "GIS_ID"
+      ],
+      "candidate_temporal_fields": [
+        "INDATE",
+        "ISSUEDATE",
+        "PROCESSDATE",
+        "EXPIRYDATE"
+      ],
+      "capture_policy": "publication_aligned_change_detection",
+      "capture_policy_approved": false,
+      "change_types": [
+        "record_added",
+        "record_removed",
+        "status_changed",
+        "issue_date_changed",
+        "expiry_date_changed",
+        "work_description_changed",
+        "address_changed",
+        "geometry_presence_changed"
+      ],
+      "collection_execution_count": 0,
+      "collection_ready": false,
+      "historical_backfill_approved": false,
+      "parser_contract_approved": false,
+      "parser_evidence_available": true,
+      "record_key_approved": false,
+      "schedule_activation_approved": false,
+      "schema_contract_approved": false,
+      "snapshot_registration_count": 0,
+      "source_id": "brampton_building_permits",
+      "temporal_fields_approved": false
+    }
+  },
+  "evidence_bundle_digest": "714a1be5231393f4a1e397820519ae62844563caeb5db5189b5013212badbaa4",
+  "model_version": "cre-foundry-brampton-permit-review-workbook-v1",
+  "registration_execution_enabled": false,
+  "review_questions": [
+    {
+      "current_value": false,
+      "decision_id": "parser_contract_approved",
+      "question": "Does the parser reproduce the exact artifact deterministically?"
+    },
+    {
+      "current_value": false,
+      "decision_id": "schema_contract_approved",
+      "question": "Does the observed field set match the intended permit dataset semantics?"
+    },
+    {
+      "candidate_values": [
+        "PERMITNUMBER",
+        "OBJECTID",
+        "GIS_ID"
+      ],
+      "current_value": null,
+      "decision_id": "approved_record_key",
+      "question": "Which reviewed candidate uniquely and stably identifies a permit record?"
+    },
+    {
+      "candidate_values": [
+        "INDATE",
+        "ISSUEDATE",
+        "PROCESSDATE",
+        "EXPIRYDATE"
+      ],
+      "current_value": [],
+      "decision_id": "approved_temporal_fields",
+      "question": "Which fields are valid event or source timestamps for point-in-time use?"
+    },
+    {
+      "current_value": false,
+      "decision_id": "capture_policy_approved",
+      "question": "Is the proposed publication-aligned capture policy operationally valid?"
+    },
+    {
+      "current_value": false,
+      "decision_id": "change_contract_approved",
+      "question": "Are the permitted change types and future-information protections correct?"
+    },
+    {
+      "current_value": false,
+      "decision_id": "registration_approved",
+      "question": "May one checksum-pinned snapshot proceed to the separately authorized dry run?"
+    }
+  ],
+  "reviewer_attribution_required": [
+    "reviewer_id",
+    "reviewed_at",
+    "evidence_reference"
+  ],
+  "source_id": "brampton_building_permits"
+}

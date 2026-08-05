@@ -1,0 +1,9 @@
+ M artifacts/context/current_task_packet.json
+ M artifacts/context/current_task_packet.md
+ M artifacts/evaluations/economics_contracts.json
+ M artifacts/evaluations/identity_contracts.json
+ M control/CURRENT_STATE.json
+ M control/CURRENT_TASK.json
+ M control/TASK_GRAPH.json
+?? control/ONE_SHOT_READINESS.json
+?? tasks/SECURITY-001.json

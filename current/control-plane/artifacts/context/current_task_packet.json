@@ -1,0 +1,91 @@
+{
+  "task_id": "SECURITY-001",
+  "files": [
+    {
+      "path": "bootstrap/project_os_v2.2/CRE_Codex_Project_OS_v2.2/launch_kernel/kernel/MISSION.md",
+      "sha256": "5f2e73cc2de031fd23159fd5a3e326582e52e0d0e05bb4e3183b416b38baffbd"
+    },
+    {
+      "path": "bootstrap/project_os_v2.2/CRE_Codex_Project_OS_v2.2/launch_kernel/kernel/INVARIANTS.json",
+      "sha256": "0c80a1f00e5fa29041020d001da18123e28b4caa9eddb2b8f6c5dbc2868e8e45"
+    },
+    {
+      "path": "bootstrap/project_os_v2.2/CRE_Codex_Project_OS_v2.2/launch_kernel/kernel/PROOF_POLICY.md",
+      "sha256": "71bee62e05f7d4993d2b31098eedda807b560ecfb844ee7f5e27f339767c85a2"
+    },
+    {
+      "path": "bootstrap/project_os_v2.2/CRE_Codex_Project_OS_v2.2/launch_kernel/kernel/CAPABILITY_BOUNDARY.md",
+      "sha256": "51b61211e3320d1789837d85cd093b991408f6f474537ede04c0ca935b63baed"
+    },
+    {
+      "path": "bootstrap/project_os_v2.2/CRE_Codex_Project_OS_v2.2/launch_kernel/kernel/CAPABILITY_BOUNDARY.json",
+      "sha256": "08e5828cd0c7bc9859291285e668586c51e4a03c6c17dc5920110c884ff5277f"
+    },
+    {
+      "path": "bootstrap/project_os_v2.2/CRE_Codex_Project_OS_v2.2/launch_kernel/kernel/MATH_MODELING_CONSTITUTION.md",
+      "sha256": "3fef6d13fd41c9e1f5443581a656a0fcf8d24657729b104e1fe1db90914b5c42"
+    },
+    {
+      "path": "bootstrap/project_os_v2.2/CRE_Codex_Project_OS_v2.2/launch_kernel/schemas/task_result.schema.json",
+      "sha256": "7f03c69ac87a4073225d249d158a016b368cfce46cf90011cda445e923c047cb"
+    },
+    {
+      "path": "bootstrap/project_os_v2.2/CRE_Codex_Project_OS_v2.2/launch_kernel/control/WORKFLOW.md",
+      "sha256": "e23bb1a293857e79168a59176cae305378399a0cd6edf38949117f135a2c8e98"
+    },
+    {
+      "path": "control/CURRENT_STATE.json",
+      "sha256": "b5696a60ac2aada2cd0b22956df1391830b55472f8af7a095778d93cb6ac1921"
+    },
+    {
+      "path": "control/CURRENT_TASK.json",
+      "sha256": "0de2b557db64dc80dbab4cf7e464b0259a0c68499ec0a0ded50db8c66ce64173"
+    },
+    {
+      "path": "control/TASK_GRAPH.json",
+      "sha256": "b92ac97713ce154e99a05013f4c74aa9f5cb64dd672d7fd0c7beff87ed8dff5d"
+    },
+    {
+      "path": "control/GATES.json",
+      "sha256": "b3fb0832582c471652116872ef2ab2ef73e5a7f0574c2c86209f7146e2ef96ea"
+    },
+    {
+      "path": "control/AUTONOMOUS_FRONTIER_CONTRACT.json",
+      "sha256": "e21d0157c4365317ceb178d392956ad36d54816b875efbf0ee490f4fccc555df"
+    },
+    {
+      "path": "scripts/evaluate_autonomous_frontier.py",
+      "sha256": "e3e07ffc2f4019940a5caf093ad7921c93ee0286e34b2c60f7f4081acea9a6db"
+    },
+    {
+      "path": "tasks/SECURITY-001.json",
+      "sha256": "59fad773696d6d122a731fd2759d75463658c32425fece13b2d585e051e80411"
+    },
+    {
+      "path": "artifacts/task-results/ARCHITECTURE-001.json",
+      "sha256": "e3abafc9fb221c6f54262fe5a3488d472918eac7d5848804fc64dd124a6c04a2"
+    },
+    {
+      "path": "artifacts/task-results/RESEARCH-001.json",
+      "sha256": "809a7ae60b591fd5bb539871ab2d62bb52f732d0e4709f4a5130285451303c62"
+    },
+    {
+      "path": "artifacts/research/claim_evidence_graph.json",
+      "sha256": "ffb99149896a9e2134b7d5576ff9654547cb4c8c5c83d385ab1b57bec56cc5a8"
+    },
+    {
+      "path": "artifacts/research/source_feasibility_registry.json",
+      "sha256": "7b1e5cf1f5415c8e9434e13da6055d0702d63750bd51352ed253d39c39b34929"
+    },
+    {
+      "path": "contracts/product_workflow.schema.json",
+      "sha256": "ee1603ed941eea5520e9b8ab2763611cbf21c179bc1eb8b39a2aa5397f070d88"
+    },
+    {
+      "path": "scripts/validate_security_privacy.py",
+      "sha256": "ca0b03cece2b51b8999bca5dd641c76c569e601140eef965bffdf7a7d6eef5fb"
+    }
+  ],
+  "characters": 306743,
+  "packet_sha256": "b5b0e44763ff9882e6ccfc5dbb62030fa2f533b0e0fbefae6ea1ce6d06f284e1"
+}

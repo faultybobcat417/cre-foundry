@@ -1,0 +1,112 @@
+{
+  "gate_id": "GATE-OS-ARTIFACT-001",
+  "title": "Verified CRE Codex Project OS v2.2 artifact required",
+  "status": "RESOLVED",
+  "created_at": "2026-08-01T22:22:51Z",
+  "scope": "Launch and BOOTSTRAP-001 prerequisite only",
+  "observed_repository": {
+    "path": "/Users/alimehdi/Documents/cre",
+    "git_branch": "main",
+    "git_head": null,
+    "git_commits": 0,
+    "git_remotes": [],
+    "worktrees": [
+      "/Users/alimehdi/Documents/cre"
+    ],
+    "tracked_or_worktree_files": [],
+    "readable": true,
+    "writable": true
+  },
+  "missing_required_files": [
+    "README_START_HERE.md",
+    "AGENTS.md",
+    "kernel/MISSION.md",
+    "control/WORKFLOW.md",
+    "control/EXECUTION_MODES.md",
+    "kernel/CAPABILITY_BOUNDARY.json",
+    "kernel/CAPABILITY_BOUNDARY.md",
+    "kernel/MATH_MODELING_CONSTITUTION.md",
+    "kernel/PROOF_POLICY.md",
+    "standards/BENCHMARK_STANDARD_REGISTRY.json",
+    "evals/LEVEL10_BENCHMARKS.json",
+    "schemas/task_result.schema.json",
+    "scripts/validate_os.py",
+    "scripts/validate_research_readiness.py",
+    "scripts/run_level10_campaign.py",
+    "scripts/probe_codex_capabilities.py",
+    "scripts/select_next_task.py",
+    "scripts/compile_task_context.py"
+  ],
+  "required_artifact": {
+    "filename": "CRE_Codex_Project_OS_v2.2_ALL_IN_ONE.zip",
+    "expected_sha256": "135d98c62b2cacefdc727cf304fbabf8c9e58fcbdeeb1145f1845d5762ac16af",
+    "expected_members": 128,
+    "expected_kernel_files": 87,
+    "expected_vault_files": 41,
+    "acceptable_locations": [
+      "/Users/alimehdi/Downloads/CRE_Codex_Project_OS_v2.2_ALL_IN_ONE.zip",
+      "/Users/alimehdi/Documents/cre/CRE_Codex_Project_OS_v2.2_ALL_IN_ONE.zip"
+    ],
+    "acceptance": [
+      "SHA-256 exactly matches expected_sha256",
+      "archive listing contains no absolute paths or parent traversal",
+      "archive extracts to the intended empty repository",
+      "README_START_HERE.md and AGENTS.md are read before any OS task action"
+    ]
+  },
+  "recovery_attempts": [
+    {
+      "method": "filesystem search",
+      "result": "No launch kernel, reference vault, all-in-one archive, README_START_HERE.md, AGENTS.md, kernel/MISSION.md, or control/WORKFLOW.md found under /Users/alimehdi."
+    },
+    {
+      "method": "Spotlight, Trash, iCloud, and CloudStorage search",
+      "result": "No matching OS artifact found."
+    },
+    {
+      "method": "release provenance recovery",
+      "result": "The source ChatGPT project conversation redirects the only available browser session to sign-in; no alternate authenticated browser is available."
+    },
+    {
+      "method": "public filename search",
+      "result": "No public result found for the archive filename or BOOTSTRAP-001 mission signature."
+    },
+    {
+      "method": "Git object recovery",
+      "result": "The repository contains only Git's canonical empty-tree object; there are no dangling commits, trees, or blobs containing the OS."
+    }
+  ],
+  "contradictions_and_stale_assumptions": [
+    {
+      "claim": "The current workspace is the actual project repository.",
+      "observed": "It is an initialized but unborn, empty Git repository with no remote."
+    },
+    {
+      "claim": "The launch kernel and reference vault are locally available.",
+      "observed": "Only standalone release/evaluation files and an archive checksum sidecar are available; the referenced archives are absent."
+    },
+    {
+      "claim": "The prescribed validation commands are executable here.",
+      "observed": "All six commands exit 2 because their scripts are absent."
+    },
+    {
+      "claim": "campaign.json proves the current repository passes.",
+      "observed": "campaign.json records a prior run under /opt/pyvenv/bin/python and is evidence about that packaged environment, not this empty repository."
+    }
+  ],
+  "authority_required": {
+    "owner": "User or authorized custodian of the CRE Codex Project OS v2.2 archive",
+    "action": "Place the exact verified all-in-one archive at one acceptable location, or sign in to the source ChatGPT project in the in-app browser and make the archive accessible.",
+    "why_non_inferable": "The 128 repository files and their governing instructions cannot be reconstructed faithfully from six standalone reports without inventing repository truth."
+  },
+  "resume_action": "Verify the archive SHA-256, inspect it for safe paths, extract it into the empty repository, then restart at README_START_HERE.md and AGENTS.md.",
+  "resolution": {
+    "resolved_at": "2026-08-01T22:42:30Z",
+    "archive": "/Users/alimehdi/Downloads/CRE_Codex_Project_OS_v2.2_ALL_IN_ONE.zip",
+    "verified_sha256": "135d98c62b2cacefdc727cf304fbabf8c9e58fcbdeeb1145f1845d5762ac16af",
+    "safe_unique_members": 128,
+    "extraction_root": "bootstrap/project_os_v2.2",
+    "evidence": "artifacts/bootstrap/archive_verification.json"
+  },
+  "rollback": "Delete this bootstrap directory after the verified repository-owned OS has been installed and its own state system has absorbed this gate."
+}

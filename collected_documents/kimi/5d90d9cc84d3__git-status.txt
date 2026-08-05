@@ -1,0 +1,25 @@
+## handoff/kimi-architecture-001
+ M artifacts/context/current_task_packet.json
+ M artifacts/context/current_task_packet.md
+ M bootstrap/project_os_v2.2/CRE_Codex_Project_OS_v2.2/launch_kernel/artifacts/codex_capabilities.json
+ M control/CURRENT_STATE.json
+ M control/CURRENT_TASK.json
+ M control/TASK_GRAPH.json
+?? artifacts/economics/
+?? artifacts/evaluations/economics_contracts.json
+?? artifacts/evaluations/identity_contracts.json
+?? artifacts/task-results/ECONOMICS-001.json
+?? artifacts/task-results/IDENTITY-001.json
+?? contracts/economic_engine.schema.json
+?? contracts/synthetic_identity_graph.schema.json
+?? control/ONE_SHOT_READINESS.json
+?? docs/economics/
+?? docs/identity/
+?? evals/public/test_economics_contracts.py
+?? evals/public/test_identity_contracts.py
+?? scripts/validate_economics_contracts.py
+?? scripts/validate_identity_contracts.py
+?? src/cre_foundry/economics/
+?? src/cre_foundry/identity/
+?? tasks/ECONOMICS-001.json
+?? tasks/SECURITY-001.json

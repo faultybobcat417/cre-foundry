@@ -1,0 +1,8 @@
+{
+  "case_id": "scenario-as-measured",
+  "target": "artifacts/math/estimand_registry.json",
+  "pointer": "/inputs/risk_aversion_policy/value",
+  "expected_before": null,
+  "value": 1.0,
+  "expected_diagnostic": "MATH-P07 scenario value promoted to measured evidence"
+}

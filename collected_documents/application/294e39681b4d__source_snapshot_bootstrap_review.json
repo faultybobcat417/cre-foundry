@@ -1,0 +1,17 @@
+{
+  "automatic_registration_performed": false,
+  "blocked_review_count": 0,
+  "candidate_count": 3,
+  "human_approval_required": true,
+  "model_version": "cre-foundry-source-snapshot-bootstrap-review-v1",
+  "operating_mode": "shadow",
+  "opportunity_ranked": false,
+  "outreach_eligible": false,
+  "packet_count": 3,
+  "registration_execution_count": 0,
+  "registration_permitted": false,
+  "review_ready_count": 3,
+  "total_referenced_bytes": 23260285,
+  "violation_count": 0
+}
+SNAPSHOT BOOTSTRAP REVIEW PASSED

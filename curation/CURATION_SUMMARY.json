@@ -1,0 +1,18 @@
+{
+  "canonical_application": {
+    "slug": "cre-foundry",
+    "branch": "main",
+    "head": "00fa802e39e79c05804e4a38a4275bc9b4b6513b"
+  },
+  "canonical_control_plane": {
+    "slug": "cre-relay-security-standalone",
+    "branch": "kimi/security-001-golden-20260803-195956",
+    "head": "51a3714f611fb2eda8f3b81898d1691a3a998791"
+  },
+  "historical_snapshots": 5,
+  "files_removed": 671,
+  "synthetic_fixture_records_allowed": 5,
+  "critical_secret_findings": 0,
+  "non_allowlisted_pii_findings": 0,
+  "unexpected_copy_errors": 0
+}

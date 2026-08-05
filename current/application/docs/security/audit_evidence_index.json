@@ -1,0 +1,166 @@
+{
+  "evidence_item_count": 26,
+  "evidence_mutation_count": 0,
+  "index_digest": "452be37e168c2827592d1bbeb68c8bd4e5707c5eb7133e465dcfe07d070a8f85",
+  "items": [
+    {
+      "exists": true,
+      "path": "pyproject.toml",
+      "sha256": "f810aefbfceaad49d468a50b37400b8581fb1a7359a6160c85a4be5a54fdf4d4",
+      "size_bytes": 1457
+    },
+    {
+      "exists": true,
+      "path": "uv.lock",
+      "sha256": "d0ba3203d1228ce8e3fe33469bd979999146e1c3fe92728b0baa48bba3248c3d",
+      "size_bytes": 225772
+    },
+    {
+      "exists": true,
+      "path": "scripts/verify.sh",
+      "sha256": "2672fa2b3746e577eb00b9bde73fb5ea6ac8451090aaa9ffb455d52990325db8",
+      "size_bytes": 445
+    },
+    {
+      "exists": true,
+      "path": "config/governance_decisions.json",
+      "sha256": "023644806d87377d052d74f268ab40bd52c4b7e95334721ec68baccfb90fb605",
+      "size_bytes": 3255
+    },
+    {
+      "exists": true,
+      "path": "docs/data_contracts/source_parser_contract_validation.json",
+      "sha256": "c5c49e77ea45123977a22446d1187db61ff61b0623d113787f5d059ab065d93d",
+      "size_bytes": 12432
+    },
+    {
+      "exists": true,
+      "path": "docs/data_contracts/source_parser_isolation.json",
+      "sha256": "711641f96f232d034d0119c24d7f95569235c64bdf0b6331cb417ab7b73faf43",
+      "size_bytes": 2282
+    },
+    {
+      "exists": true,
+      "path": "docs/data_contracts/snapshot_registration_preflight.json",
+      "sha256": "44a68fabcc0ddece385f1e32a0b0f6a7b6be97f11bdf2b5a8b0690468051bb14",
+      "size_bytes": 6508
+    },
+    {
+      "exists": true,
+      "path": "docs/data_contracts/learning_capture_design_summary.json",
+      "sha256": "26f18b2053ab1bde984d385b94ec60494bb6927a358a2a2732d80e8104c4e437",
+      "size_bytes": 1682
+    },
+    {
+      "exists": true,
+      "path": "docs/data_contracts/manual_decision_validation.json",
+      "sha256": "125f6074b774ad10bf0d1e255493715a34e8d3fe9d43c2555d7f83e6fb6b59dd",
+      "size_bytes": 12476
+    },
+    {
+      "exists": true,
+      "path": "docs/data_contracts/human_input_workbench_summary.json",
+      "sha256": "d7b9a07d8fc5ec1f1731b414b2db37c768a518de1d5f2c2dbb76b4165b6a8df3",
+      "size_bytes": 2106
+    },
+    {
+      "exists": true,
+      "path": "docs/data_contracts/assurance_mesh_summary.json",
+      "sha256": "28bf78b52a2d77bbeaeac19fb943cb94f0ca110f7351420a54de859bf09c9599",
+      "size_bytes": 2460
+    },
+    {
+      "exists": true,
+      "path": "docs/data_contracts/assurance_drift_report.json",
+      "sha256": "31ebdb24f0280c59bf790284f40cda37a9106142490dee3558dea661c2961ac9",
+      "size_bytes": 4453
+    },
+    {
+      "exists": true,
+      "path": "docs/data_contracts/assurance_invariant_results.json",
+      "sha256": "3f1c47918e193feef239b2eca10eac03118f9f100890215f6fb78505b7d1b4fd",
+      "size_bytes": 2485
+    },
+    {
+      "exists": true,
+      "path": "docs/data_contracts/assurance_scenario_matrix.json",
+      "sha256": "6997627a8c4cf602657ab0d35d530ccdce53a37d75e6ba463d6f8016016251b5",
+      "size_bytes": 7205
+    },
+    {
+      "exists": true,
+      "path": "docs/data_contracts/activation_state_model_summary.json",
+      "sha256": "6f64738e1bbc6d5443b7b89ce9224195aa25429bbce32c81dfe9c43c8fb41472",
+      "size_bytes": 2607
+    },
+    {
+      "exists": true,
+      "path": "docs/data_contracts/activation_model_check_report.json",
+      "sha256": "99b5c085ebc23c704c1c9eec5908cea7447e961b21713be4b7dc376b3b5cc868",
+      "size_bytes": 1224
+    },
+    {
+      "exists": true,
+      "path": "docs/data_contracts/activation_mutation_report.json",
+      "sha256": "408dc4b64708a8ae89943d6ed05f8fe35ac528b5a3ff9966402a8efe1d709b5a",
+      "size_bytes": 7286
+    },
+    {
+      "exists": true,
+      "path": "docs/data_contracts/activation_chaos_matrix.json",
+      "sha256": "09522f936b06001045cc93af7fcd65f0f82e61e74c771209117dee74bdceb2db",
+      "size_bytes": 4652
+    },
+    {
+      "exists": true,
+      "path": "src/cre_foundry/source_parser_contracts.py",
+      "sha256": "94637de04f3ce052193ad8aa4a15dce1ddd31dcc7659bb9e915abc5300cbf49b",
+      "size_bytes": 16557
+    },
+    {
+      "exists": true,
+      "path": "src/cre_foundry/manual_activation_envelopes.py",
+      "sha256": "d7a7676fe974f22b7046b61a14bb383e6e318c0348247864fe2a75bc166daebc",
+      "size_bytes": 35344
+    },
+    {
+      "exists": true,
+      "path": "src/cre_foundry/assurance_mesh.py",
+      "sha256": "e3f7459bb4597b139bf407a8ac5ba0268a8b52982a998938f2a13ef80c87dee4",
+      "size_bytes": 54346
+    },
+    {
+      "exists": true,
+      "path": "src/cre_foundry/activation_state_model.py",
+      "sha256": "675a94a2bd7b538204e3433d98785814bfc9b77f1ecab357ab23acfe6bf2ed71",
+      "size_bytes": 38967
+    },
+    {
+      "exists": true,
+      "path": "tests/unit/test_source_parser_contracts.py",
+      "sha256": "c43d560e9b3922bde87ad30ec05cb743c64a650bb8a1808c13fec163709f75e4",
+      "size_bytes": 7417
+    },
+    {
+      "exists": true,
+      "path": "tests/unit/test_manual_activation_envelopes.py",
+      "sha256": "1eb91726bada264debc30dba7c813ba992b1dfafac4bf1bbf2fc9e2b024af7a9",
+      "size_bytes": 12486
+    },
+    {
+      "exists": true,
+      "path": "tests/unit/test_assurance_mesh.py",
+      "sha256": "472c121b07b6e3eaaf2041866ef7586558e97b3da52ffa8e84bd35bf8ad4eec7",
+      "size_bytes": 11545
+    },
+    {
+      "exists": true,
+      "path": "tests/unit/test_activation_state_model.py",
+      "sha256": "a8bfcac75b6d5d2b78204d04d98177e5144c4b47c98252d02ee83b821bd0fa4f",
+      "size_bytes": 5627
+    }
+  ],
+  "missing_evidence_item_count": 0,
+  "model_version": "cre-foundry-audit-evidence-index-v1",
+  "present_evidence_item_count": 26
+}

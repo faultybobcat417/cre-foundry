@@ -1,0 +1,19 @@
+Continue the CRE Foundry campaign from the live repository and curated reference folder.
+
+Before editing, read REFERENCE_INDEX.md and CONTINUATION_BRIEF.md, then verify:
+- branch handoff/kimi-architecture-001
+- HEAD dd44e5ee7f9195d140dfbd747b5a4812b199a81e
+- protected readiness SHA
+- exact modified, staged, and untracked paths
+- commits bb44ea0 and dd44e5e
+
+Begin with a read-only classification of every working-tree change.
+Confirm timestamp-only evaluator drift and environment-specific Codex probe noise independently before restoring anything.
+
+Then reconcile the control state, repair deterministic validator replay, and complete SECURITY-001 evaluator-first.
+
+Never modify, stage, or commit control/ONE_SHOT_READINESS.json.
+Never push.
+Never use real credentials or PII.
+Keep live permissions and external effects disabled.
+Checkpoint coherent passing work before quota or context exhaustion.

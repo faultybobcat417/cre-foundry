@@ -1,0 +1,12 @@
+ artifacts/context/current_task_packet.json     |  110 +-
+ artifacts/context/current_task_packet.md       | 4303 ++++++++----------------
+ artifacts/evaluations/economics_contracts.json |    2 +-
+ artifacts/evaluations/identity_contracts.json  |    2 +-
+ control/CURRENT_STATE.json                     |   41 +-
+ control/CURRENT_TASK.json                      |   10 +-
+ control/TASK_GRAPH.json                        |    8 +-
+ scripts/compile_repository_task_context.py     |    9 +
+ scripts/validate_economics_contracts.py        |   13 +
+ scripts/validate_identity_contracts.py         |   13 +
+ tasks/SECURITY-001.json                        |   20 +
+ 11 files changed, 1539 insertions(+), 2992 deletions(-)

@@ -1,0 +1,91 @@
+{
+  "source_id": "brampton_plantrak",
+  "name": "City of Brampton Plantrak Summary",
+  "access_state": "review",
+  "service_url": "https://mapsdev.brampton.ca/arcgis/rest/services/Plantrak/PlantrakSummary/MapServer",
+  "service_description": "Plantrak service containing polygon data for map viewing",
+  "service_max_record_count": 1000,
+  "supported_query_formats": "JSON, geoJSON, PBF",
+  "layers": [
+    {
+      "id": 0,
+      "name": "New Apps",
+      "geometryType": "esriGeometryPolygon",
+      "objectIdField": null,
+      "fieldCount": 7,
+      "maxRecordCount": 1000
+    },
+    {
+      "id": 1,
+      "name": "Development Apps",
+      "geometryType": "esriGeometryPolygon",
+      "objectIdField": null,
+      "fieldCount": 9,
+      "maxRecordCount": 1000
+    },
+    {
+      "id": 2,
+      "name": "Site Plan Apps",
+      "geometryType": "esriGeometryPolygon",
+      "objectIdField": null,
+      "fieldCount": 9,
+      "maxRecordCount": 1000
+    },
+    {
+      "id": 3,
+      "name": "Development Permit System (DPS)",
+      "geometryType": "esriGeometryPolygon",
+      "objectIdField": null,
+      "fieldCount": 9,
+      "maxRecordCount": 1000
+    },
+    {
+      "id": 4,
+      "name": "Approved Subdivision (ASB)",
+      "geometryType": "esriGeometryPolygon",
+      "objectIdField": null,
+      "fieldCount": 9,
+      "maxRecordCount": 1000
+    },
+    {
+      "id": 5,
+      "name": "Registered Plans",
+      "geometryType": "esriGeometryPolygon",
+      "objectIdField": null,
+      "fieldCount": 11,
+      "maxRecordCount": 1000
+    },
+    {
+      "id": 6,
+      "name": "Policy Apps",
+      "geometryType": "esriGeometryPolygon",
+      "objectIdField": null,
+      "fieldCount": 9,
+      "maxRecordCount": 1000
+    },
+    {
+      "id": 7,
+      "name": "C of A Apps",
+      "geometryType": "esriGeometryPolygon",
+      "objectIdField": null,
+      "fieldCount": 9,
+      "maxRecordCount": 1000
+    },
+    {
+      "id": 8,
+      "name": "Block Plans",
+      "geometryType": "esriGeometryPolygon",
+      "objectIdField": null,
+      "fieldCount": 9,
+      "maxRecordCount": 1000
+    },
+    {
+      "id": 9,
+      "name": "Condominium Plans",
+      "geometryType": "esriGeometryPolygon",
+      "objectIdField": null,
+      "fieldCount": 9,
+      "maxRecordCount": 1000
+    }
+  ]
+}

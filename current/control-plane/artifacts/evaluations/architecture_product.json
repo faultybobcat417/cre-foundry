@@ -1,0 +1,52 @@
+{
+  "artifact_id": "ARCHITECTURE-001-PRODUCT-EVALUATION",
+  "checks": {
+    "architecture_validator": "PASS",
+    "external_gates_open": "PASS",
+    "frozen_canonical": "PASS",
+    "product_invariants": "PASS",
+    "schema_conformance": "PASS",
+    "system_document": "PASS"
+  },
+  "claim": "Public proof level 4 establishes deterministic conformance of the synthetic representative product workflow surface: exactly-ten-or-abstain result, route-day unit, frozen-Stage-1 lineage bindings, zero-false-clear protection, single idempotent issuance without duplicate external effect, Stage isolation, live-disabled defaults, programmatic accessibility semantics, and five open external gates.",
+  "claim_ceiling": "No representative usability, WCAG or assistive-technology performance or certification, production durability or atomicity, operational reliability or error rate, security certification, route feasibility, deployment readiness, live authority, adoption, incremental F9 lift, or commercial value is established.",
+  "evaluator_id": "architecture-product-public-v1",
+  "execution_scope": "SYNTHETIC_NON_INFLUENCING",
+  "external_gates": [
+    "GATE-MANUAL-REVIEW-AUTHORITY-001",
+    "GATE-LIVE-WORKFLOW-AUTHORITY-001",
+    "GATE-ACCESSIBILITY-EMPIRICAL-VALIDATION-001",
+    "GATE-REPRESENTATIVE-USABILITY-001",
+    "GATE-PRODUCTION-DEPLOYMENT-001"
+  ],
+  "mutation_results": [
+    {
+      "case_id": "duplicate-issuance",
+      "diagnostic": "registered mutation detected: duplicate-issuance",
+      "fixture_sha256": "d7eb90276850f62c926f7a1abfe1b0c4c02efa7f94f6bb52112f12cb424811be",
+      "result": "DETECTED"
+    },
+    {
+      "case_id": "ui-bypass",
+      "diagnostic": "registered mutation detected: ui-bypass",
+      "fixture_sha256": "73051387382da5959bec9708f0912936597565cfddbc28ee6a6100c9682df435",
+      "result": "DETECTED"
+    }
+  ],
+  "proof_level": 4,
+  "result": "PASS",
+  "schema_version": "1.0.0",
+  "subject_hashes": {
+    "artifacts/architecture/canonical_run.json": "1a44025fbbd4547b9c322d83d432239d3943b0839ab398cbf1034125397c075e",
+    "artifacts/architecture/public_evaluator_contract.json": "10c5804d07194d66927cbd4acd2798c1044493b09ef3dab671e76efdee5aeefe",
+    "artifacts/evaluations/architecture.json": "3b1b1dca7ffcbae82891be4902838d8f496f45d4fe3ea19a1a1a2e46d024050a",
+    "contracts/product_workflow.schema.json": "ee1603ed941eea5520e9b8ab2763611cbf21c179bc1eb8b39a2aa5397f070d88",
+    "control/GATES.json": "b3fb0832582c471652116872ef2ab2ef73e5a7f0574c2c86209f7146e2ef96ea",
+    "docs/architecture/system.md": "ba4f579c107994646bd6a75237cafdebd8e39deeee1d7ba594922db9bc87848b",
+    "scripts/validate_architecture_product.py": "26cbe81fa8e659033156553c48941c4f9b9c24f9e6b924711f047e1031d35785"
+  },
+  "upstream": {
+    "architecture_evaluation_sha256": "3b1b1dca7ffcbae82891be4902838d8f496f45d4fe3ea19a1a1a2e46d024050a",
+    "canonical_run_sha256": "1a44025fbbd4547b9c322d83d432239d3943b0839ab398cbf1034125397c075e"
+  }
+}

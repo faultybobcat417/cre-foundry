@@ -1,0 +1,5 @@
+{
+  "case_id": "stage3-changes-stage1",
+  "mutation_id": "stage3_changes_stage1",
+  "expected_diagnostic": "OUTCOMES-STAGE1-CONTAMINATION"
+}

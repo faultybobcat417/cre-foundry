@@ -1,0 +1,40 @@
+{
+  "decision_id": "DEC-EVAL-001",
+  "baseline": "no repository-specific evaluator",
+  "alternatives": [
+    {
+      "id": "encrypted_in_repo_capsule",
+      "advantages": ["single repository", "low initial infrastructure"],
+      "limitations": ["builder can replace ciphertext unless an external signature check is non-bypassable", "requires external key authority"],
+      "selected": false
+    },
+    {
+      "id": "split_application_and_evaluator_repositories",
+      "advantages": ["ordinary Git/CI isolation", "immutable application SHA input", "strong custody separation"],
+      "limitations": ["requires an assigned external custodian and repository"],
+      "selected": true
+    },
+    {
+      "id": "black_box_evaluator_service",
+      "advantages": ["strongest fixture isolation", "signed aggregate output"],
+      "limitations": ["premature service, identity, credential, budget, and deployment burden"],
+      "selected": false
+    }
+  ],
+  "public_layer": {
+    "location": "evals/public",
+    "status": "INSTALLED_BUILDER_VISIBLE",
+    "scope": "contracts, deterministic fixtures, meta-tests, and known-bad detection"
+  },
+  "sealed_layer": {
+    "location": "UNASSIGNED_EXTERNAL_REPOSITORY",
+    "status": "GATED_NOT_CLAIMED",
+    "gate": "GATE-SEALED-EVALUATOR-CUSTODY-001"
+  },
+  "external_hidden_layer": {
+    "location": "UNASSIGNED_EXTERNAL_RESOURCE",
+    "status": "GATED_NOT_CLAIMED",
+    "gate": "GATE-HIDDEN-HOLDOUT-OWNER-001"
+  },
+  "rollback": "Public evaluator changes revert by Git commit. Sealed results are invalid after evaluator digest drift and require custodian restoration and re-attestation."
+}

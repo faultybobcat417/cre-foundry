@@ -1,0 +1,31 @@
+{
+  "conflicts_parquet_path": "data/quarantine/statscan_odbus_2023/RUN-20260726T024102Z-16fb53d196/silver-v1/target_market_conflicts.parquet",
+  "contract_path": "docs/data_contracts/statscan_odbus_target_market_silver.json",
+  "current_status_verified": false,
+  "duckdb_conflict_count": 69,
+  "duckdb_target_count": 28986,
+  "duplicate_entity_fingerprint_count": 736,
+  "employee_unparsed_count": 3474,
+  "invalid_coordinate_count": 0,
+  "municipality_counts": {
+    "brampton": 10679,
+    "mississauga": 18307
+  },
+  "municipality_resolution_counts": {
+    "city_fallback": 811,
+    "csd": 28175
+  },
+  "ontario_row_count": 205122,
+  "pruid_unknown_count": 324,
+  "quarantined_conflict_count": 69,
+  "reused_existing": false,
+  "silver_row_count": 28986,
+  "source_id": "statscan_odbus_2023",
+  "source_row_count": 446575,
+  "target_candidate_count": 29055,
+  "target_parquet_path": "data/silver/statscan_odbus_2023/RUN-20260726T024102Z-16fb53d196/silver-v1/target_market.parquet",
+  "target_parquet_sha256": "d14127d6e81c1beef28df419d768ac38eb2fbbd0e960233c1738d3afa935e8ec",
+  "transformation_version": "silver-v1",
+  "warehouse_path": "data/warehouse/cre.duckdb"
+}
+ODBUS SILVER BUILD PASSED

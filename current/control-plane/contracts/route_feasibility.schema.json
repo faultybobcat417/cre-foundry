@@ -1,0 +1,57 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://cre-foundry.local/schemas/route-feasibility-v1.json",
+  "title": "CRE Foundry route feasibility contract",
+  "description": "Proves ten locations are operationally feasible for the representative, route-day, capacity, specialty, service-time, reserve, matrix, and substitution constraints without weakening value priority. A matrix passes only when it is versioned, monotonic in time, never silently replaced by straight-line distance, and symmetric/asymmetric per the measured road network with no stale or infeasible ten accepted. Recursive-closed and intended to be judged by scripts/validate_routing_feasibility.py.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "document_kind",
+    "schema_version",
+    "execution_scope",
+    "matrix_version",
+    "generated_at",
+    "travel_time",
+    "service_times",
+    "capacity",
+    "reserve",
+    "ten_locations",
+    "proof",
+    "claim_ceiling"
+  ],
+  "properties": {
+    "document_kind": { "const": "ROUTE_FEASIBILITY_MATRIX" },
+    "schema_version": { "const": "1.0.0" },
+    "execution_scope": { "const": "SYNTHETIC_NON_INFLUENCING" },
+    "matrix_version": { "type": "string" },
+    "generated_at": { "type": "string" },
+    "travel_time": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "array",
+        "items": { "type": "number", "minimum": 0 }
+      }
+    },
+    "service_times": {
+      "type": "array",
+      "items": { "type": "number", "minimum": 0 }
+    },
+    "capacity": { "type": "integer", "minimum": 1 },
+    "reserve": { "type": "integer", "minimum": 0 },
+    "ten_locations": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "proof": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["level", "result"],
+      "properties": {
+        "level": { "const": 5 },
+        "result": { "const": "PASS" }
+      }
+    },
+    "claim_ceiling": { "type": "string" }
+  }
+}

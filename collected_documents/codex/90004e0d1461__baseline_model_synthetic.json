@@ -1,0 +1,742 @@
+{
+  "artifact_id": "BASELINE-001-FRONTIER-COMPATIBILITY-EVALUATION",
+  "claim": "Five policy families conform to one frozen synthetic point-in-time, label, MATH, metric, replacement, and replay interface.",
+  "claim_ceiling": "Public builder-visible proof level 5 establishes deterministic conformance of five named policies to one frozen synthetic point-in-time split, feature, label, MATH, metric, replacement, and replay interface only. It establishes no real incumbent behavior, feature utility, source or history coverage, label accuracy, baseline rate, predictive association, calibration, generalization, causal or ITT lift, representative usability, operational feasibility, commercial value, policy superiority, live use, production replacement, or production readiness.",
+  "commands": [
+    {
+      "argv": [
+        "python",
+        "scripts/validate_baseline_framework.py"
+      ],
+      "exit_code": 0,
+      "stdout": "PASS"
+    },
+    {
+      "argv": [
+        "python",
+        "-m",
+        "unittest",
+        "evals.public.test_baseline_framework"
+      ],
+      "exit_code": 0,
+      "result": "21 tests passed"
+    },
+    {
+      "argv": [
+        "python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "evals/public",
+        "-p",
+        "test_*.py"
+      ],
+      "exit_code": 0,
+      "result": "91 tests passed"
+    }
+  ],
+  "evaluator_id": "baseline-framework-public-v1",
+  "execution_scope": "SYNTHETIC_NON_INFLUENCING",
+  "metrics": {
+    "BETA_BINOMIAL_BUCKET_SYNTHETIC_V1": {
+      "abstain_policy_runs": 0,
+      "assigned_route_days": 2,
+      "comparison_status": "COMPARABLE_COMPLETE_SYNTHETIC",
+      "confirmed_f9_lower_bound_at_10": {
+        "denominator": 1,
+        "numerator": 7
+      },
+      "empirical_uncertainty": {
+        "confidence_interval": null,
+        "p_value": null,
+        "reason": "Synthetic fixture; no independent historical route-day sample.",
+        "required_gate": "GATE-OUTCOME-LABELS-MATURITY-001",
+        "scenario_values_are_evidence": false,
+        "standard_error": null,
+        "status": "NOT_EMPIRICALLY_ESTIMABLE"
+      },
+      "invariant_violations": 0,
+      "issue_policy_runs": 2,
+      "known_label_count_at_10": {
+        "denominator": 1,
+        "numerator": 20
+      },
+      "leakage_count": 0,
+      "macro_mean_final_f9_at_10": {
+        "denominator": 2,
+        "numerator": 7
+      },
+      "pairwise_rank_concordance": {
+        "denominator": 18,
+        "numerator": 11
+      },
+      "precision_at_10": {
+        "denominator": 20,
+        "numerator": 7
+      },
+      "probability_metrics": "NOT_APPLICABLE_UNCALIBRATED_RANKING",
+      "recall_at_10": {
+        "denominator": 4,
+        "numerator": 3
+      },
+      "recall_micro_at_10": {
+        "denominator": 9,
+        "numerator": 7
+      },
+      "seed_route_run_totals": {
+        "confirmed_f9_lower_bound": 7,
+        "known_labels": 20,
+        "policy_runs": 2,
+        "unknown_labels": 0
+      },
+      "test_partial_not_comparable_route_days": [],
+      "test_policy_runs": 2,
+      "total_final_f9_at_10": {
+        "denominator": 1,
+        "numerator": 7
+      },
+      "unknown_label_count_at_10": {
+        "denominator": 1,
+        "numerator": 0
+      }
+    },
+    "INCUMBENT_SYNTHETIC_V1": {
+      "abstain_policy_runs": 0,
+      "assigned_route_days": 2,
+      "comparison_status": "COMPARABLE_COMPLETE_SYNTHETIC",
+      "confirmed_f9_lower_bound_at_10": {
+        "denominator": 1,
+        "numerator": 8
+      },
+      "empirical_uncertainty": {
+        "confidence_interval": null,
+        "p_value": null,
+        "reason": "Synthetic fixture; no independent historical route-day sample.",
+        "required_gate": "GATE-OUTCOME-LABELS-MATURITY-001",
+        "scenario_values_are_evidence": false,
+        "standard_error": null,
+        "status": "NOT_EMPIRICALLY_ESTIMABLE"
+      },
+      "invariant_violations": 0,
+      "issue_policy_runs": 2,
+      "known_label_count_at_10": {
+        "denominator": 1,
+        "numerator": 20
+      },
+      "leakage_count": 0,
+      "macro_mean_final_f9_at_10": {
+        "denominator": 2,
+        "numerator": 8
+      },
+      "pairwise_rank_concordance": {
+        "denominator": 108,
+        "numerator": 67
+      },
+      "precision_at_10": {
+        "denominator": 20,
+        "numerator": 8
+      },
+      "probability_metrics": "NOT_APPLICABLE_UNCALIBRATED_RANKING",
+      "recall_at_10": {
+        "denominator": 12,
+        "numerator": 11
+      },
+      "recall_micro_at_10": {
+        "denominator": 9,
+        "numerator": 8
+      },
+      "seed_route_run_totals": {
+        "confirmed_f9_lower_bound": 8,
+        "known_labels": 20,
+        "policy_runs": 2,
+        "unknown_labels": 0
+      },
+      "test_partial_not_comparable_route_days": [],
+      "test_policy_runs": 2,
+      "total_final_f9_at_10": {
+        "denominator": 1,
+        "numerator": 8
+      },
+      "unknown_label_count_at_10": {
+        "denominator": 1,
+        "numerator": 0
+      }
+    },
+    "RECENCY_SOURCE_SYNTHETIC_V1": {
+      "abstain_policy_runs": 0,
+      "assigned_route_days": 2,
+      "comparison_status": "COMPARABLE_COMPLETE_SYNTHETIC",
+      "confirmed_f9_lower_bound_at_10": {
+        "denominator": 1,
+        "numerator": 8
+      },
+      "empirical_uncertainty": {
+        "confidence_interval": null,
+        "p_value": null,
+        "reason": "Synthetic fixture; no independent historical route-day sample.",
+        "required_gate": "GATE-OUTCOME-LABELS-MATURITY-001",
+        "scenario_values_are_evidence": false,
+        "standard_error": null,
+        "status": "NOT_EMPIRICALLY_ESTIMABLE"
+      },
+      "invariant_violations": 0,
+      "issue_policy_runs": 2,
+      "known_label_count_at_10": {
+        "denominator": 1,
+        "numerator": 20
+      },
+      "leakage_count": 0,
+      "macro_mean_final_f9_at_10": {
+        "denominator": 2,
+        "numerator": 8
+      },
+      "pairwise_rank_concordance": {
+        "denominator": 48,
+        "numerator": 29
+      },
+      "precision_at_10": {
+        "denominator": 20,
+        "numerator": 8
+      },
+      "probability_metrics": "NOT_APPLICABLE_UNCALIBRATED_RANKING",
+      "recall_at_10": {
+        "denominator": 12,
+        "numerator": 11
+      },
+      "recall_micro_at_10": {
+        "denominator": 9,
+        "numerator": 8
+      },
+      "seed_route_run_totals": {
+        "confirmed_f9_lower_bound": 8,
+        "known_labels": 20,
+        "policy_runs": 2,
+        "unknown_labels": 0
+      },
+      "test_partial_not_comparable_route_days": [],
+      "test_policy_runs": 2,
+      "total_final_f9_at_10": {
+        "denominator": 1,
+        "numerator": 8
+      },
+      "unknown_label_count_at_10": {
+        "denominator": 1,
+        "numerator": 0
+      }
+    },
+    "SEEDED_RANDOM_SYNTHETIC_V1": {
+      "abstain_policy_runs": 0,
+      "assigned_route_days": 2,
+      "comparison_status": "COMPARABLE_COMPLETE_SYNTHETIC",
+      "confirmed_f9_lower_bound_at_10": {
+        "denominator": 16,
+        "numerator": 113
+      },
+      "empirical_uncertainty": {
+        "confidence_interval": null,
+        "p_value": null,
+        "reason": "Synthetic fixture; no independent historical route-day sample.",
+        "required_gate": "GATE-OUTCOME-LABELS-MATURITY-001",
+        "scenario_values_are_evidence": false,
+        "standard_error": null,
+        "status": "NOT_EMPIRICALLY_ESTIMABLE"
+      },
+      "invariant_violations": 0,
+      "issue_policy_runs": 32,
+      "known_label_count_at_10": {
+        "denominator": 16,
+        "numerator": 320
+      },
+      "leakage_count": 0,
+      "macro_mean_final_f9_at_10": {
+        "denominator": 32,
+        "numerator": 113
+      },
+      "pairwise_rank_concordance": {
+        "denominator": 576,
+        "numerator": 265
+      },
+      "precision_at_10": {
+        "denominator": 320,
+        "numerator": 113
+      },
+      "probability_metrics": "NOT_APPLICABLE_UNCALIBRATED_RANKING",
+      "recall_at_10": {
+        "denominator": 192,
+        "numerator": 151
+      },
+      "recall_micro_at_10": {
+        "denominator": 144,
+        "numerator": 113
+      },
+      "seed_route_run_totals": {
+        "confirmed_f9_lower_bound": 113,
+        "known_labels": 320,
+        "policy_runs": 32,
+        "unknown_labels": 0
+      },
+      "synthetic_seed_sensitivity": {
+        "maximum": 9,
+        "mean": {
+          "denominator": 16,
+          "numerator": 113
+        },
+        "median": {
+          "denominator": 2,
+          "numerator": 14
+        },
+        "minimum": 5,
+        "status": "ALGORITHMIC_NOT_SAMPLING_UNCERTAINTY"
+      },
+      "test_partial_not_comparable_route_days": [],
+      "test_policy_runs": 32,
+      "total_final_f9_at_10": {
+        "denominator": 16,
+        "numerator": 113
+      },
+      "unknown_label_count_at_10": {
+        "denominator": 16,
+        "numerator": 0
+      }
+    },
+    "TRANSPARENT_RULE_SYNTHETIC_V1": {
+      "abstain_policy_runs": 0,
+      "assigned_route_days": 2,
+      "comparison_status": "COMPARABLE_COMPLETE_SYNTHETIC",
+      "confirmed_f9_lower_bound_at_10": {
+        "denominator": 1,
+        "numerator": 7
+      },
+      "empirical_uncertainty": {
+        "confidence_interval": null,
+        "p_value": null,
+        "reason": "Synthetic fixture; no independent historical route-day sample.",
+        "required_gate": "GATE-OUTCOME-LABELS-MATURITY-001",
+        "scenario_values_are_evidence": false,
+        "standard_error": null,
+        "status": "NOT_EMPIRICALLY_ESTIMABLE"
+      },
+      "invariant_violations": 0,
+      "issue_policy_runs": 2,
+      "known_label_count_at_10": {
+        "denominator": 1,
+        "numerator": 20
+      },
+      "leakage_count": 0,
+      "macro_mean_final_f9_at_10": {
+        "denominator": 2,
+        "numerator": 7
+      },
+      "pairwise_rank_concordance": {
+        "denominator": 72,
+        "numerator": 19
+      },
+      "precision_at_10": {
+        "denominator": 20,
+        "numerator": 7
+      },
+      "probability_metrics": "NOT_APPLICABLE_UNCALIBRATED_RANKING",
+      "recall_at_10": {
+        "denominator": 4,
+        "numerator": 3
+      },
+      "recall_micro_at_10": {
+        "denominator": 9,
+        "numerator": 7
+      },
+      "seed_route_run_totals": {
+        "confirmed_f9_lower_bound": 7,
+        "known_labels": 20,
+        "policy_runs": 2,
+        "unknown_labels": 0
+      },
+      "test_partial_not_comparable_route_days": [],
+      "test_policy_runs": 2,
+      "total_final_f9_at_10": {
+        "denominator": 1,
+        "numerator": 7
+      },
+      "unknown_label_count_at_10": {
+        "denominator": 1,
+        "numerator": 0
+      }
+    }
+  },
+  "mutation_results": [
+    {
+      "case_id": "all-row-score-projection",
+      "diagnostic": "BASELINE-MATH-SCORE-PROJECTION",
+      "fixture_sha256": "de0cc969ac0a44be92effcc4775561004cf1ed0a29339286857a1c948d0dc15a",
+      "result": "DETECTED"
+    },
+    {
+      "case_id": "candidate-set-asymmetry",
+      "diagnostic": "BASELINE-COMPARISON-UNIVERSE-ASYMMETRY",
+      "fixture_sha256": "8281dcfb9ff046644554c6e3e409a8132b588c7149eaae9feb65a9db4bc5df50",
+      "result": "DETECTED"
+    },
+    {
+      "case_id": "complexity-tie-promoted",
+      "diagnostic": "BASELINE-REPLACEMENT-RULE",
+      "fixture_sha256": "928cc494c38950d75dc2c0304af71d548eb1b9f60b3636e9695160c1b8d0248f",
+      "result": "DETECTED"
+    },
+    {
+      "case_id": "coordinated-feature-rehash",
+      "diagnostic": "BASELINE-FROZEN-COHORT-MISMATCH",
+      "fixture_sha256": "b6d92cd245122ef1b373385813ed3e04425a4ea5e53fd090b5d0e10cbc8aa4c4",
+      "result": "DETECTED"
+    },
+    {
+      "case_id": "coordinated-registry-rehash",
+      "diagnostic": "BASELINE-FROZEN-REGISTRY-MISMATCH",
+      "fixture_sha256": "605a5e28f1136ed0ed4dc3465752261dc687a9c551d12479fb2ae0f9d9ed4d0c",
+      "result": "DETECTED"
+    },
+    {
+      "case_id": "duplicate-location",
+      "diagnostic": "BASELINE-DUPLICATE-LOCATION",
+      "fixture_sha256": "facd1bc37a2479e566b6f7ce5ffc3478d1339bc3f8082e48cba04ba8a21ba529",
+      "result": "DETECTED"
+    },
+    {
+      "case_id": "duplicate-route-seed",
+      "diagnostic": "BASELINE-RANDOM-SEED-SCHEDULE",
+      "fixture_sha256": "680178e2beb70f23af9708efb5eb31ca4d252e95111fa8700dcbc90b472f4e55",
+      "result": "DETECTED"
+    },
+    {
+      "case_id": "feature-clock-reordered",
+      "diagnostic": "BASELINE-FEATURE-CLOCK-ORDER",
+      "fixture_sha256": "968764dc0e2b37eea30255e39b03e5bd3c376e5ae12519d041dea0d85c527293",
+      "result": "DETECTED"
+    },
+    {
+      "case_id": "feature-view-asymmetry",
+      "diagnostic": "BASELINE-COMPARISON-INPUT-ASYMMETRY",
+      "fixture_sha256": "fbf7bad1dce6500c716f564f3834aa20bed20211102651f476bdf5789c8a4213",
+      "result": "DETECTED"
+    },
+    {
+      "case_id": "forged-label-view",
+      "diagnostic": "BASELINE-COMPARISON-LABEL-ASYMMETRY",
+      "fixture_sha256": "48ab907d9681ba79e683ba67039c1876259997d8a9f8442c9833a0ef5c9eecdf",
+      "result": "DETECTED"
+    },
+    {
+      "case_id": "forged-math-problem-hash",
+      "diagnostic": "BASELINE-REPLAY-MATH-PROBLEM-MISMATCH",
+      "fixture_sha256": "50fd69e78e18fb1ce7b140fed678ae881c1b9d2d7e7f915636615f4227c46d01",
+      "result": "DETECTED"
+    },
+    {
+      "case_id": "future-feature",
+      "diagnostic": "BASELINE-FEATURE-AVAILABLE-LEAKAGE",
+      "fixture_sha256": "4205136502c77d4441d024120c2adeacf84e0f47edd20afdd6f8ab408defd08e",
+      "result": "DETECTED"
+    },
+    {
+      "case_id": "future-label-asof",
+      "diagnostic": "BASELINE-PREDICTION-ASOF-LEAKAGE",
+      "fixture_sha256": "8dd5fb1d18db250c0037537c6a35f045bb7d8897ceeae81fe8a1e02c72b025d5",
+      "result": "DETECTED"
+    },
+    {
+      "case_id": "future-recency-value",
+      "diagnostic": "BASELINE-FEATURE-AVAILABLE-LEAKAGE",
+      "fixture_sha256": "005251083532861c8adda7049e8ecd47d3fb2ecb8d2fdb1e6c90b887c39e8b14",
+      "result": "DETECTED"
+    },
+    {
+      "case_id": "immature-as-negative",
+      "diagnostic": "BASELINE-LABEL-CONTAMINATION",
+      "fixture_sha256": "4db0ab75ffa7ab1d6e04cf24dbb1e952be8e6757be53c6ec1facee8a066f69e4",
+      "result": "DETECTED"
+    },
+    {
+      "case_id": "issue-nine",
+      "diagnostic": "BASELINE-EXACT-TEN-BYPASS",
+      "fixture_sha256": "92236f4fb86b994c826804d7f990003297066ede13f6bb2b920fb69ac87931e5",
+      "result": "DETECTED"
+    },
+    {
+      "case_id": "label-denominator-asymmetry",
+      "diagnostic": "BASELINE-COMPARISON-LABEL-ASYMMETRY",
+      "fixture_sha256": "83f5fc51afba907cf325a29fe070fd5df056a724651db8f6e6e911b4aa60ef75",
+      "result": "DETECTED"
+    },
+    {
+      "case_id": "math-input-contamination",
+      "diagnostic": "BASELINE-MATH-INPUT-CONTAMINATION",
+      "fixture_sha256": "68ff7cc99a7fc1a191dcd226b55196ed0b1bf588714aa4c22209aabb9bbf2532",
+      "result": "DETECTED"
+    },
+    {
+      "case_id": "metric-wrong-denominator",
+      "diagnostic": "BASELINE-COMPARISON-LABEL-ASYMMETRY",
+      "fixture_sha256": "11307e1b6c3d49daa802f2c408eaa04908c8088449d59ce064059e681bf9da28",
+      "result": "DETECTED"
+    },
+    {
+      "case_id": "missing-required-policy",
+      "diagnostic": "BASELINE-REQUIRED-POLICY-MISSING",
+      "fixture_sha256": "3b950f2839a285030d40d9c4f177648f95214f6312a7bb9ff25377d5ac588596",
+      "result": "DETECTED"
+    },
+    {
+      "case_id": "nondeterministic-random",
+      "diagnostic": "BASELINE-RANDOM-NONDETERMINISTIC",
+      "fixture_sha256": "d676788e2d8967182e7a308555ede3aa56bd353b3a49f84ec87f882941d72fb2",
+      "result": "DETECTED"
+    },
+    {
+      "case_id": "outcome-feature",
+      "diagnostic": "BASELINE-OUTCOME-FEATURE-LEAKAGE",
+      "fixture_sha256": "990404d2a79ac8bcd6a21da3376fccfb68c33cb6daad57e15c49f1957344e33c",
+      "result": "DETECTED"
+    },
+    {
+      "case_id": "outcome-source-family",
+      "diagnostic": "BASELINE-OUTCOME-FEATURE-LEAKAGE",
+      "fixture_sha256": "c6aa5044b59b31c568fa603a45b5ceeb78adca277e0f77aad97aa4807b785ffc",
+      "result": "DETECTED"
+    },
+    {
+      "case_id": "partial-labels-finalized",
+      "diagnostic": "BASELINE-METRIC-MATURITY",
+      "fixture_sha256": "4e7d93185641bd05dace13940f61c4d4b600d04068ec9246931dbf7914dd7d54",
+      "result": "DETECTED"
+    },
+    {
+      "case_id": "policy-direct-selection",
+      "diagnostic": "BASELINE-EXACT-TEN-BYPASS",
+      "fixture_sha256": "49a12cbe5f992d7d025c5417c2dc95488d55ab20dafed360c766865d056f8265",
+      "result": "DETECTED"
+    },
+    {
+      "case_id": "production-promotion",
+      "diagnostic": "BASELINE-PROMOTION-AUTHORITY",
+      "fixture_sha256": "1f58c3cda963fe2049d72480d15728f5c125da41ffbd39b8012e55952e3ac8af",
+      "result": "DETECTED"
+    },
+    {
+      "case_id": "protected-selected",
+      "diagnostic": "BASELINE-PROTECTED-BYPASS",
+      "fixture_sha256": "795a43edfab5c087cb9269672c313d7ba8c6838ea1a633d8ee5290195c9d7ba6",
+      "result": "DETECTED"
+    },
+    {
+      "case_id": "receipt-only",
+      "diagnostic": "BASELINE-REPLAY-RECEIPT-MISMATCH",
+      "fixture_sha256": "30c4a659a649b27b9b63e5c0d1e5ae4cb93689ce88087c95d94ea4b7e72aacbe",
+      "result": "DETECTED"
+    },
+    {
+      "case_id": "rehashed-future-feature",
+      "diagnostic": "BASELINE-REPLAY-FEATURE-SEMANTIC-MISMATCH",
+      "fixture_sha256": "c0f9fd1f17cfe78cb7d7d22e1517b47ea5050fdde342e17c7d7b05a046adb9d7",
+      "result": "DETECTED"
+    },
+    {
+      "case_id": "rehashed-metrics",
+      "diagnostic": "BASELINE-REPLAY-METRIC-MISMATCH",
+      "fixture_sha256": "6e8c2cea77665872ea7cd3fc597d0ad170600c8ca749c15051cfda08020fff5c",
+      "result": "DETECTED"
+    },
+    {
+      "case_id": "rehashed-null-label",
+      "diagnostic": "BASELINE-REPLAY-LABEL-MISMATCH",
+      "fixture_sha256": "410dfe8afa13e3c72c4789b7eb014ff983c6fbe34a544eb0e5d402acf9394748",
+      "result": "DETECTED"
+    },
+    {
+      "case_id": "rehashed-policy-score",
+      "diagnostic": "BASELINE-REPLAY-POLICY-MISMATCH",
+      "fixture_sha256": "e4c30e5d54d61140f3e2306515c1c7d330e662f0bdf72d79bc83c0e322f0bfd4",
+      "result": "DETECTED"
+    },
+    {
+      "case_id": "rehashed-random",
+      "diagnostic": "BASELINE-REPLAY-RANDOM-MISMATCH",
+      "fixture_sha256": "85ca359d7326fcaf1444300e55a6eee493c0b5d706e32667a514551aea9cb422",
+      "result": "DETECTED"
+    },
+    {
+      "case_id": "rehashed-receipt",
+      "diagnostic": "BASELINE-REPLAY-RECEIPT-MISMATCH",
+      "fixture_sha256": "337ded0404610607e7a381d5cf87118c03bd1f7f1bc75706bcbda9e02e48e221",
+      "result": "DETECTED"
+    },
+    {
+      "case_id": "rehashed-split",
+      "diagnostic": "BASELINE-REPLAY-SPLIT-MISMATCH",
+      "fixture_sha256": "6746dbb67f21b9ce23780a68ba9bb4986c7c10b361efc7376ef447c3cd6b591f",
+      "result": "DETECTED"
+    },
+    {
+      "case_id": "rehashed-universe",
+      "diagnostic": "BASELINE-REPLAY-UNIVERSE-MISMATCH",
+      "fixture_sha256": "2c67bbf3944a0b8ebd9705f1a582c0872d208e4c67b113b2e452090c163fd1ed",
+      "result": "DETECTED"
+    },
+    {
+      "case_id": "replacement-with-more-abstention",
+      "diagnostic": "BASELINE-REPLACEMENT-RULE",
+      "fixture_sha256": "47804e27213f6cf4bd570a31eb89dea6dc250348827d044b4af2aa91d72b3b36",
+      "result": "DETECTED"
+    },
+    {
+      "case_id": "seed-cherrypick",
+      "diagnostic": "BASELINE-RANDOM-SEED-BINDING",
+      "fixture_sha256": "5a6318ce3b8f6968f899a244843f2a7bfb679fd85badf2b35b3ff2b8d5c229ef",
+      "result": "DETECTED"
+    },
+    {
+      "case_id": "split-overlap",
+      "diagnostic": "BASELINE-SPLIT-PARTITION",
+      "fixture_sha256": "49257919b8db284013243a1b05cf1840dbf372615acdcde2cf1a3df24bea9f6c",
+      "result": "DETECTED"
+    },
+    {
+      "case_id": "split-temporal-order",
+      "diagnostic": "BASELINE-SPLIT-TEMPORAL-ORDER",
+      "fixture_sha256": "b4c360963d105c144fab3157b29d18852ff706d97322d4c640115a411ddda33b",
+      "result": "DETECTED"
+    },
+    {
+      "case_id": "stat-fraction-rounded",
+      "diagnostic": "BASELINE-NUMERIC-NONCANONICAL",
+      "fixture_sha256": "35fbfdb4fbcbce486f702af2228a5c7d494d60ea72ddf1194883403d9b76476f",
+      "result": "DETECTED"
+    },
+    {
+      "case_id": "stat-null-label",
+      "diagnostic": "BASELINE-STATISTICAL-FIT-LEAKAGE",
+      "fixture_sha256": "6db80ef564f5f47a82cad03702d58d7ffb7042dcab32dfa26c22bf4d9bec06b0",
+      "result": "DETECTED"
+    },
+    {
+      "case_id": "synthetic-as-predictive",
+      "diagnostic": "BASELINE-CLAIM-CEILING",
+      "fixture_sha256": "6c4b7b1e846e08030be8e66c5eb549f817a4d51c8e05852db1f0cce93d0cc298",
+      "result": "DETECTED"
+    },
+    {
+      "case_id": "test-label-in-fit",
+      "diagnostic": "BASELINE-SPLIT-LABEL-LEAKAGE",
+      "fixture_sha256": "5de1d75df8a59aca7a89cf2196d079d7afe0818e064b734394e23194a44f86ed",
+      "result": "DETECTED"
+    },
+    {
+      "case_id": "test-reuse",
+      "diagnostic": "BASELINE-TEST-REUSE",
+      "fixture_sha256": "b293a9b2d49c2ceb590d804d33e91f8a122bda817976e0c8cd590d186cef6e28",
+      "result": "DETECTED"
+    },
+    {
+      "case_id": "unseeded-random",
+      "diagnostic": "BASELINE-RANDOM-SEED-MISSING",
+      "fixture_sha256": "3afd1f17bfee0306720b06d3f4ebda418ea718aa31a51d4f75d0e64724485c81",
+      "result": "DETECTED"
+    },
+    {
+      "case_id": "winner-below-margin",
+      "diagnostic": "BASELINE-REPLACEMENT-RULE",
+      "fixture_sha256": "207468fb8d24d0c54cceec08ff0c8432ab51095e2fc1432c88378c015dbf700d",
+      "result": "DETECTED"
+    }
+  ],
+  "proof": {
+    "claim": "synthetic baseline framework and replay conformance only",
+    "commercial_value_proven": false,
+    "incremental_lift_proven": false,
+    "level": 5,
+    "live_use_authorized": false,
+    "production_replacement_authorized": false,
+    "real_predictive_validity_proven": false
+  },
+  "proof_level": 5,
+  "registered_mutations_detected": 47,
+  "registered_mutations_total": 47,
+  "replacement_analysis": {
+    "best_simple_comparator_policy_id": "INCUMBENT_SYNTHETIC_V1",
+    "challenger_policy_id": "BETA_BINOMIAL_BUCKET_SYNTHETIC_V1",
+    "challenger_total": {
+      "denominator": 1,
+      "numerator": 7
+    },
+    "comparator_total": {
+      "denominator": 1,
+      "numerator": 8
+    },
+    "complexity_order": [
+      "complexity_tier",
+      "feature_count",
+      "trainable_parameter_count",
+      "dependency_count",
+      "canonical_policy_id"
+    ],
+    "disposition": "NO_SYNTHETIC_REPLACEMENT",
+    "gain": {
+      "denominator": 1,
+      "numerator": -1
+    },
+    "guardrails": {
+      "all_test_universes_complete": true,
+      "every_temporal_fold_noninferior": false,
+      "identical_cohort_split_asof": true,
+      "no_additional_abstentions": true,
+      "no_policy_specific_row_exclusion": true,
+      "zero_invariant_regressions": true,
+      "zero_leakage": true
+    },
+    "guardrails_pass": false,
+    "production_replacement_authorized": false,
+    "real_margin_required_gate": "GATE-BASELINE-REPLACEMENT-AUTHORITY-001",
+    "required_margin": {
+      "denominator": 1,
+      "numerator": 2
+    },
+    "scope": "SYNTHETIC_MECHANICAL_DISPOSITION_ONLY",
+    "temporal_fold_differences": [
+      {
+        "denominator": 1,
+        "numerator": -1,
+        "route_day_id": "ROUTE_DAY:SYN_BASE_07"
+      },
+      {
+        "denominator": 1,
+        "numerator": 0,
+        "route_day_id": "ROUTE_DAY:SYN_BASE_08"
+      }
+    ]
+  },
+  "result": "PASS",
+  "schema_version": "1.0.0",
+  "subject_hashes": {
+    "artifacts/baselines/canonical_run.json": "504f42bb36bee7cb537f7c253eb21aa5d254ce3842a70c065a4087e1664e4377",
+    "artifacts/baselines/frozen_benchmark.json": "c932f637f9476b03bb5694dcfa8d01c55a67aef8dff59befb4c44a31c427e776",
+    "artifacts/baselines/policy_registry.json": "643021f63f0749098a6d89f646d6679b9ce37b67f20af600294117c7fe95033f",
+    "artifacts/baselines/public_evaluator_contract.json": "90767067ad97dc84ab4cf2857ab2b7263df05a7400953133bd4270e129dfd425",
+    "contracts/baseline_evaluation.schema.json": "891130fadfa3c00bae200a2939058150384085664249b3543dfb5716da68a499",
+    "contracts/baseline_policy.schema.json": "ab078cd80e2dedf2c2252467a3b387f13dcaa6c0a37bf27f4d4e6c8b14795618",
+    "evals/public/baseline_framework_evaluator.py": "796201881a3a1133b951bb73dcb26a02791c2fadc5ae2775b8961813ab769c23",
+    "evals/public/test_baseline_framework.py": "75c958a63240e7d7913c0e2adae6b9fc74e995d717595f0ff266fe2a1846a13a",
+    "scripts/validate_baseline_framework.py": "d1958a545aab7a6185f9fd0c55aaa9d38de030907b07d5f471b2b7d58ffd809d",
+    "src/cre_foundry/baselines/framework.py": "2917f8cf8b7c563d874c57f916527a71577e4f6c40b11691274eb0d8d9649bc9"
+  },
+  "subjects": {
+    "candidates": 96,
+    "policy_families": 5,
+    "policy_route_runs": 160,
+    "registered_random_seeds": 16,
+    "route_days": 8
+  },
+  "tests": {
+    "focused_public_tests": 21,
+    "full_public_suite_tests": 91,
+    "registered_mutations_detected": 47,
+    "registered_mutations_total": 47
+  }
+}

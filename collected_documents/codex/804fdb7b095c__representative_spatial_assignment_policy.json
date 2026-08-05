@@ -1,0 +1,46 @@
+{
+  "policy_version": "cre-representative-spatial-assignment-v1",
+  "objective": "Preserve territory familiarity and relationship continuity while balancing workload and preventing protected-account conflicts.",
+  "assignment_units": [
+    "persistent_spatial_pod",
+    "industry_or_property_specialty",
+    "protected_relationship_owner"
+  ],
+  "spatial_pod_definition": {
+    "method": "H3_or_data_driven_connected_cluster",
+    "minimum_duration": "one registered experiment or operating period",
+    "repartition_triggers": [
+      "candidate_density_change",
+      "source_coverage_change",
+      "representative_capacity_change",
+      "measured_cross_pod_travel_or_interference"
+    ]
+  },
+  "primary_backup_model": {
+    "primary_representative": 1,
+    "backup_representatives": 1,
+    "random_daily_reassignment": false,
+    "exceptions": [
+      "absence",
+      "capacity overload",
+      "specialty requirement",
+      "conflict",
+      "experimental assignment"
+    ]
+  },
+  "consistency_metrics": [
+    "share_of_visits_in_primary_pods",
+    "repeat_contact_continuity",
+    "local_correction_rate",
+    "route_completion_rate",
+    "cross_pod_deadhead",
+    "protected_account_conflicts"
+  ],
+  "anti_gaming_rules": [
+    "representative cannot self-select only easy candidates",
+    "territory ownership cannot override experimental assignment",
+    "relationship claims require a dated protected-account record",
+    "pod boundaries cannot be changed after seeing outcomes"
+  ],
+  "status": "planning_ready_real_representative_inputs_missing"
+}

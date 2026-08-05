@@ -1,0 +1,1660 @@
+{
+  "archive_path": "data/bronze/statscan_odbus_2023/2026/07/26/RUN-20260726T024102Z-16fb53d196/ODBus_2023_0ec6388eb16584d0.zip",
+  "archive_sha256": "0ec6388eb16584d025252026cee22d95bf3b603fccb5cc471710a619d89dca2f",
+  "coordinate_quality": {
+    "latitude": {
+      "blank_count": 1,
+      "invalid_count": 134477,
+      "invalid_examples": [
+        ".."
+      ],
+      "out_of_range_count": 0,
+      "out_of_range_examples": [],
+      "valid_count": 312097
+    },
+    "longitude": {
+      "blank_count": 1,
+      "invalid_count": 134477,
+      "invalid_examples": [
+        ".."
+      ],
+      "out_of_range_count": 0,
+      "out_of_range_examples": [],
+      "valid_count": 312097
+    }
+  },
+  "data_delimiter": ",",
+  "data_encoding": "utf-8-sig",
+  "data_member": "ODBus_v1/ODBus_v1.csv",
+  "employee_field": {
+    "blank_count": 1,
+    "integer_like_count": 75440,
+    "non_integer_count": 371134,
+    "non_integer_examples": [
+      "..",
+      "NOT AVAILABLE",
+      "5 to 9",
+      "20 to 49",
+      "50 to 99",
+      "10 to 19",
+      "1 to 4",
+      "100 to 199",
+      "200 to 499",
+      "500+"
+    ],
+    "top_values": [
+      {
+        "count": 318230,
+        "value": ".."
+      },
+      {
+        "count": 22254,
+        "value": "0"
+      },
+      {
+        "count": 16871,
+        "value": "1"
+      },
+      {
+        "count": 14853,
+        "value": "1--4"
+      },
+      {
+        "count": 8375,
+        "value": "1 to 4"
+      },
+      {
+        "count": 7775,
+        "value": "5--9"
+      },
+      {
+        "count": 7637,
+        "value": "2"
+      },
+      {
+        "count": 4809,
+        "value": "10--19"
+      },
+      {
+        "count": 4728,
+        "value": "3"
+      },
+      {
+        "count": 3766,
+        "value": "5 to 9"
+      },
+      {
+        "count": 3540,
+        "value": "4"
+      },
+      {
+        "count": 3249,
+        "value": "20--49"
+      },
+      {
+        "count": 3081,
+        "value": "5"
+      },
+      {
+        "count": 2477,
+        "value": "10 to 19"
+      },
+      {
+        "count": 2366,
+        "value": "6"
+      },
+      {
+        "count": 1980,
+        "value": "NOT AVAILABLE"
+      },
+      {
+        "count": 1865,
+        "value": "20 to 49"
+      },
+      {
+        "count": 1608,
+        "value": "10"
+      },
+      {
+        "count": 1445,
+        "value": "8"
+      },
+      {
+        "count": 1418,
+        "value": "7"
+      },
+      {
+        "count": 1288,
+        "value": "50--99"
+      },
+      {
+        "count": 979,
+        "value": "100--499"
+      },
+      {
+        "count": 867,
+        "value": "12"
+      },
+      {
+        "count": 788,
+        "value": "15"
+      },
+      {
+        "count": 786,
+        "value": "50 to 99"
+      },
+      {
+        "count": 740,
+        "value": "9"
+      },
+      {
+        "count": 707,
+        "value": "20"
+      },
+      {
+        "count": 492,
+        "value": "11"
+      },
+      {
+        "count": 455,
+        "value": "100 to 299"
+      },
+      {
+        "count": 410,
+        "value": "25"
+      },
+      {
+        "count": 399,
+        "value": "30"
+      },
+      {
+        "count": 381,
+        "value": "14"
+      },
+      {
+        "count": 363,
+        "value": "13"
+      },
+      {
+        "count": 298,
+        "value": "16"
+      },
+      {
+        "count": 261,
+        "value": "50"
+      },
+      {
+        "count": 260,
+        "value": "18"
+      },
+      {
+        "count": 255,
+        "value": "40"
+      },
+      {
+        "count": 180,
+        "value": "17"
+      },
+      {
+        "count": 170,
+        "value": "35"
+      },
+      {
+        "count": 167,
+        "value": "60"
+      },
+      {
+        "count": 148,
+        "value": "22"
+      },
+      {
+        "count": 146,
+        "value": "19"
+      },
+      {
+        "count": 130,
+        "value": "100"
+      },
+      {
+        "count": 114,
+        "value": "28"
+      },
+      {
+        "count": 113,
+        "value": "85"
+      },
+      {
+        "count": 110,
+        "value": "45"
+      },
+      {
+        "count": 108,
+        "value": "21"
+      },
+      {
+        "count": 106,
+        "value": "23"
+      },
+      {
+        "count": 98,
+        "value": "24"
+      },
+      {
+        "count": 95,
+        "value": "26"
+      }
+    ]
+  },
+  "geo_source_counts": [
+    {
+      "count": 183035,
+      "value": "Source"
+    },
+    {
+      "count": 134493,
+      "value": "oda_match"
+    },
+    {
+      "count": 129046,
+      "value": ".."
+    },
+    {
+      "count": 1,
+      "value": "<BLANK>"
+    }
+  ],
+  "manifest_path": "data/bronze/statscan_odbus_2023/2026/07/26/RUN-20260726T024102Z-16fb53d196/manifest.json",
+  "naics_field": {
+    "derived_top_values": [
+      {
+        "count": 78435,
+        "value": "72"
+      },
+      {
+        "count": 71158,
+        "value": "44"
+      },
+      {
+        "count": 64428,
+        "value": ".."
+      },
+      {
+        "count": 50189,
+        "value": "23"
+      },
+      {
+        "count": 41762,
+        "value": "81"
+      },
+      {
+        "count": 23418,
+        "value": "54"
+      },
+      {
+        "count": 21505,
+        "value": "53"
+      },
+      {
+        "count": 17323,
+        "value": "62"
+      },
+      {
+        "count": 13256,
+        "value": "91"
+      },
+      {
+        "count": 10753,
+        "value": "41"
+      },
+      {
+        "count": 8497,
+        "value": "56"
+      },
+      {
+        "count": 7554,
+        "value": "61"
+      },
+      {
+        "count": 6718,
+        "value": "52"
+      },
+      {
+        "count": 6480,
+        "value": "71"
+      },
+      {
+        "count": 5640,
+        "value": "31"
+      },
+      {
+        "count": 4491,
+        "value": "48"
+      },
+      {
+        "count": 4219,
+        "value": "33"
+      },
+      {
+        "count": 3135,
+        "value": "45"
+      },
+      {
+        "count": 2203,
+        "value": "32"
+      },
+      {
+        "count": 1864,
+        "value": "51"
+      },
+      {
+        "count": 999,
+        "value": "55"
+      },
+      {
+        "count": 991,
+        "value": "11"
+      },
+      {
+        "count": 812,
+        "value": "49"
+      },
+      {
+        "count": 577,
+        "value": "21"
+      },
+      {
+        "count": 152,
+        "value": "22"
+      },
+      {
+        "count": 15,
+        "value": "42"
+      },
+      {
+        "count": 1,
+        "value": "<BLANK>"
+      }
+    ],
+    "primary_blank_count": 1,
+    "primary_invalid_count": 350376,
+    "primary_invalid_examples": [
+      "..",
+      "1",
+      "0"
+    ],
+    "primary_top_values": [
+      {
+        "count": 350249,
+        "value": ".."
+      },
+      {
+        "count": 2642,
+        "value": "72251"
+      },
+      {
+        "count": 1887,
+        "value": "722512"
+      },
+      {
+        "count": 1318,
+        "value": "81211"
+      },
+      {
+        "count": 1250,
+        "value": "722511"
+      },
+      {
+        "count": 1226,
+        "value": "23"
+      },
+      {
+        "count": 1018,
+        "value": "621210"
+      },
+      {
+        "count": 1003,
+        "value": "811111"
+      },
+      {
+        "count": 993,
+        "value": "236110"
+      },
+      {
+        "count": 930,
+        "value": "812115"
+      },
+      {
+        "count": 847,
+        "value": "621110"
+      },
+      {
+        "count": 787,
+        "value": "722210"
+      },
+      {
+        "count": 777,
+        "value": "54"
+      },
+      {
+        "count": 752,
+        "value": "62111"
+      },
+      {
+        "count": 751,
+        "value": "541110"
+      },
+      {
+        "count": 721,
+        "value": "54121"
+      },
+      {
+        "count": 700,
+        "value": "238220"
+      },
+      {
+        "count": 690,
+        "value": "62121"
+      },
+      {
+        "count": 685,
+        "value": "81111"
+      },
+      {
+        "count": 658,
+        "value": "62"
+      },
+      {
+        "count": 657,
+        "value": "624410"
+      },
+      {
+        "count": 634,
+        "value": "81"
+      },
+      {
+        "count": 633,
+        "value": "54151"
+      },
+      {
+        "count": 619,
+        "value": "54111"
+      },
+      {
+        "count": 588,
+        "value": "813110"
+      },
+      {
+        "count": 572,
+        "value": "621340"
+      },
+      {
+        "count": 527,
+        "value": "23822"
+      },
+      {
+        "count": 504,
+        "value": "541212"
+      },
+      {
+        "count": 503,
+        "value": "56"
+      },
+      {
+        "count": 502,
+        "value": "23611"
+      },
+      {
+        "count": 475,
+        "value": "446110"
+      },
+      {
+        "count": 475,
+        "value": "62139"
+      },
+      {
+        "count": 469,
+        "value": "61111"
+      },
+      {
+        "count": 460,
+        "value": "81219"
+      },
+      {
+        "count": 454,
+        "value": "445120"
+      },
+      {
+        "count": 452,
+        "value": "44"
+      },
+      {
+        "count": 452,
+        "value": "61169"
+      },
+      {
+        "count": 446,
+        "value": "621390"
+      },
+      {
+        "count": 438,
+        "value": "524210"
+      },
+      {
+        "count": 435,
+        "value": "812116"
+      },
+      {
+        "count": 427,
+        "value": "53"
+      },
+      {
+        "count": 419,
+        "value": "611110"
+      },
+      {
+        "count": 418,
+        "value": "713940"
+      },
+      {
+        "count": 404,
+        "value": "52421"
+      },
+      {
+        "count": 401,
+        "value": "53121"
+      },
+      {
+        "count": 398,
+        "value": "812190"
+      },
+      {
+        "count": 376,
+        "value": "238210"
+      },
+      {
+        "count": 374,
+        "value": "445110"
+      },
+      {
+        "count": 372,
+        "value": "611690"
+      },
+      {
+        "count": 366,
+        "value": "71394"
+      }
+    ],
+    "primary_valid_count": 96198
+  },
+  "ontario_city_counts": [
+    {
+      "count": 85547,
+      "value": "Toronto"
+    },
+    {
+      "count": 17547,
+      "value": "Mississauga"
+    },
+    {
+      "count": 10329,
+      "value": "Brampton"
+    },
+    {
+      "count": 2501,
+      "value": "Oshawa"
+    },
+    {
+      "count": 2465,
+      "value": "Hamilton"
+    },
+    {
+      "count": 1921,
+      "value": "Cambridge"
+    },
+    {
+      "count": 1839,
+      "value": "Whitby"
+    },
+    {
+      "count": 1743,
+      "value": "Pickering"
+    },
+    {
+      "count": 1607,
+      "value": "Ajax"
+    },
+    {
+      "count": 1463,
+      "value": "Caledon"
+    },
+    {
+      "count": 800,
+      "value": "Welland"
+    },
+    {
+      "count": 689,
+      "value": "Markham"
+    },
+    {
+      "count": 617,
+      "value": "Woodbridge"
+    },
+    {
+      "count": 604,
+      "value": "Bowmanville"
+    },
+    {
+      "count": 448,
+      "value": "Richmond Hill"
+    },
+    {
+      "count": 428,
+      "value": "Ottawa"
+    },
+    {
+      "count": 411,
+      "value": "Port Perry"
+    },
+    {
+      "count": 392,
+      "value": "Uxbridge"
+    },
+    {
+      "count": 334,
+      "value": "Concord"
+    },
+    {
+      "count": 266,
+      "value": "Thornhill"
+    },
+    {
+      "count": 197,
+      "value": "Oakville"
+    },
+    {
+      "count": 195,
+      "value": "Courtice"
+    },
+    {
+      "count": 164,
+      "value": "Beaverton"
+    },
+    {
+      "count": 163,
+      "value": "Brooklin"
+    },
+    {
+      "count": 149,
+      "value": "Maple"
+    },
+    {
+      "count": 144,
+      "value": "Newcastle"
+    },
+    {
+      "count": 137,
+      "value": "Sunderland"
+    },
+    {
+      "count": 112,
+      "value": "Cannington"
+    },
+    {
+      "count": 103,
+      "value": "Uxbridge Rural"
+    },
+    {
+      "count": 90,
+      "value": "Newmarket"
+    },
+    {
+      "count": 85,
+      "value": "Stouffville"
+    },
+    {
+      "count": 84,
+      "value": "Bolton"
+    },
+    {
+      "count": 72,
+      "value": "Aurora"
+    },
+    {
+      "count": 64,
+      "value": "Orono"
+    },
+    {
+      "count": 64,
+      "value": "Scugog"
+    },
+    {
+      "count": 45,
+      "value": "Brock"
+    },
+    {
+      "count": 42,
+      "value": "Clarington"
+    },
+    {
+      "count": 39,
+      "value": "Georgina"
+    },
+    {
+      "count": 37,
+      "value": "Barrie"
+    },
+    {
+      "count": 37,
+      "value": "Burlington"
+    },
+    {
+      "count": 37,
+      "value": "Hampton"
+    },
+    {
+      "count": 29,
+      "value": "Nobleton"
+    },
+    {
+      "count": 29,
+      "value": "Sandford"
+    },
+    {
+      "count": 28,
+      "value": "Claremont"
+    },
+    {
+      "count": 27,
+      "value": "Blackstock"
+    },
+    {
+      "count": 26,
+      "value": "Vaughan"
+    },
+    {
+      "count": 22,
+      "value": "King City"
+    },
+    {
+      "count": 19,
+      "value": "Goodwood"
+    },
+    {
+      "count": 19,
+      "value": "Newtonville"
+    },
+    {
+      "count": 19,
+      "value": "Shelburne"
+    },
+    {
+      "count": 18,
+      "value": "Holland Landing"
+    },
+    {
+      "count": 17,
+      "value": "Kitchener"
+    },
+    {
+      "count": 14,
+      "value": "Nestleton Station"
+    },
+    {
+      "count": 13,
+      "value": "Stoney Creek"
+    },
+    {
+      "count": 12,
+      "value": "Seagrave"
+    },
+    {
+      "count": 11,
+      "value": "Sharon"
+    },
+    {
+      "count": 11,
+      "value": "Utica"
+    },
+    {
+      "count": 10,
+      "value": "Ashburn"
+    },
+    {
+      "count": 10,
+      "value": "Greenwood"
+    },
+    {
+      "count": 10,
+      "value": "Port Bolster"
+    },
+    {
+      "count": 10,
+      "value": "Unionville"
+    },
+    {
+      "count": 10,
+      "value": "Zephyr"
+    },
+    {
+      "count": 9,
+      "value": "Enniskillen"
+    },
+    {
+      "count": 9,
+      "value": "Kleinburg"
+    },
+    {
+      "count": 9,
+      "value": "Scugog Island"
+    },
+    {
+      "count": 8,
+      "value": "Leaskdale"
+    },
+    {
+      "count": 8,
+      "value": "London"
+    },
+    {
+      "count": 8,
+      "value": "Nestleton"
+    },
+    {
+      "count": 8,
+      "value": "Orangeville"
+    },
+    {
+      "count": 8,
+      "value": "Sanford"
+    },
+    {
+      "count": 8,
+      "value": "Wilfrid"
+    },
+    {
+      "count": 7,
+      "value": "Columbus"
+    },
+    {
+      "count": 7,
+      "value": "East Gwillimbury"
+    },
+    {
+      "count": 7,
+      "value": "Gormley"
+    },
+    {
+      "count": 7,
+      "value": "Greenbank"
+    },
+    {
+      "count": 7,
+      "value": "Kendal"
+    },
+    {
+      "count": 7,
+      "value": "Keswick"
+    },
+    {
+      "count": 7,
+      "value": "King"
+    },
+    {
+      "count": 7,
+      "value": "Niagara On The Lake"
+    },
+    {
+      "count": 7,
+      "value": "Sandy Hook"
+    },
+    {
+      "count": 7,
+      "value": "Sonya"
+    },
+    {
+      "count": 6,
+      "value": "Brantford"
+    },
+    {
+      "count": 6,
+      "value": "Manilla"
+    },
+    {
+      "count": 6,
+      "value": "Waterloo"
+    },
+    {
+      "count": 5,
+      "value": "Guelph"
+    },
+    {
+      "count": 5,
+      "value": "Mono"
+    },
+    {
+      "count": 5,
+      "value": "Mount Albert"
+    },
+    {
+      "count": 5,
+      "value": "Raglan"
+    },
+    {
+      "count": 5,
+      "value": "Sutton"
+    },
+    {
+      "count": 4,
+      "value": "Ancaster"
+    },
+    {
+      "count": 4,
+      "value": "Brougham"
+    },
+    {
+      "count": 4,
+      "value": "Burketon"
+    },
+    {
+      "count": 4,
+      "value": "Caesarea"
+    },
+    {
+      "count": 4,
+      "value": "Gamebridge"
+    },
+    {
+      "count": 4,
+      "value": "Kettleby"
+    },
+    {
+      "count": 4,
+      "value": "Palgrave"
+    },
+    {
+      "count": 4,
+      "value": "Udora"
+    },
+    {
+      "count": 4,
+      "value": "Waterdown"
+    },
+    {
+      "count": 4,
+      "value": "Whitevale"
+    },
+    {
+      "count": 3,
+      "value": "Belle Ewart"
+    }
+  ],
+  "ontario_csd_counts": [
+    {
+      "count": 80107,
+      "value": "Toronto"
+    },
+    {
+      "count": 17598,
+      "value": "Mississauga"
+    },
+    {
+      "count": 10646,
+      "value": "Brampton"
+    },
+    {
+      "count": 2564,
+      "value": "Hamilton"
+    },
+    {
+      "count": 2546,
+      "value": "Oshawa"
+    },
+    {
+      "count": 2012,
+      "value": "Whitby"
+    },
+    {
+      "count": 1991,
+      "value": "Kitchener"
+    },
+    {
+      "count": 1857,
+      "value": "Pickering"
+    },
+    {
+      "count": 1705,
+      "value": "Caledon"
+    },
+    {
+      "count": 1600,
+      "value": "Ajax"
+    },
+    {
+      "count": 1346,
+      "value": "Vaughan"
+    },
+    {
+      "count": 1252,
+      "value": "Clarington"
+    },
+    {
+      "count": 807,
+      "value": "Markham"
+    },
+    {
+      "count": 585,
+      "value": "Welland"
+    },
+    {
+      "count": 585,
+      "value": "Uxbridge"
+    },
+    {
+      "count": 578,
+      "value": "Scugog"
+    },
+    {
+      "count": 557,
+      "value": "Oakville"
+    },
+    {
+      "count": 514,
+      "value": "King"
+    },
+    {
+      "count": 491,
+      "value": "Brock"
+    },
+    {
+      "count": 464,
+      "value": "Richmond Hill"
+    },
+    {
+      "count": 373,
+      "value": "Burlington"
+    },
+    {
+      "count": 369,
+      "value": "Ottawa"
+    },
+    {
+      "count": 298,
+      "value": "Milton"
+    },
+    {
+      "count": 294,
+      "value": "Madoc"
+    },
+    {
+      "count": 274,
+      "value": "Halton Hills"
+    },
+    {
+      "count": 248,
+      "value": "The Archipelago"
+    },
+    {
+      "count": 213,
+      "value": "Newmarket"
+    },
+    {
+      "count": 199,
+      "value": "Puslinch"
+    },
+    {
+      "count": 115,
+      "value": "North Dumfries"
+    },
+    {
+      "count": 114,
+      "value": "Blandford-Blenheim"
+    },
+    {
+      "count": 109,
+      "value": "Whitchurch-Stouffville"
+    },
+    {
+      "count": 75,
+      "value": "Haldimand County"
+    },
+    {
+      "count": 74,
+      "value": "Barrie"
+    },
+    {
+      "count": 72,
+      "value": "Melancthon"
+    },
+    {
+      "count": 70,
+      "value": "Perth East"
+    },
+    {
+      "count": 67,
+      "value": "Brant"
+    },
+    {
+      "count": 67,
+      "value": "London"
+    },
+    {
+      "count": 66,
+      "value": "Georgina"
+    },
+    {
+      "count": 64,
+      "value": "Aurora"
+    },
+    {
+      "count": 63,
+      "value": "Innisfil"
+    },
+    {
+      "count": 62,
+      "value": "Cambridge"
+    },
+    {
+      "count": 60,
+      "value": "St. Catharines"
+    },
+    {
+      "count": 56,
+      "value": "Erin"
+    },
+    {
+      "count": 55,
+      "value": "Wellington North"
+    },
+    {
+      "count": 53,
+      "value": "Woolwich"
+    },
+    {
+      "count": 53,
+      "value": "Greater Napanee"
+    },
+    {
+      "count": 51,
+      "value": "Alnwick/Haldimand"
+    },
+    {
+      "count": 46,
+      "value": "Marmora and Lake"
+    },
+    {
+      "count": 45,
+      "value": "Asphodel-Norwood"
+    },
+    {
+      "count": 44,
+      "value": "East Gwillimbury"
+    },
+    {
+      "count": 41,
+      "value": "Oro-Medonte"
+    },
+    {
+      "count": 41,
+      "value": "New Tecumseth"
+    },
+    {
+      "count": 39,
+      "value": "Pelham"
+    },
+    {
+      "count": 39,
+      "value": "Port Hope"
+    },
+    {
+      "count": 36,
+      "value": "Kawartha Lakes"
+    },
+    {
+      "count": 34,
+      "value": "Centre Wellington"
+    },
+    {
+      "count": 32,
+      "value": "Prince Edward County"
+    },
+    {
+      "count": 31,
+      "value": "Thorold"
+    },
+    {
+      "count": 31,
+      "value": "Quinte West"
+    },
+    {
+      "count": 30,
+      "value": "Wellesley"
+    },
+    {
+      "count": 27,
+      "value": "Springwater"
+    },
+    {
+      "count": 26,
+      "value": "Guelph/Eramosa"
+    },
+    {
+      "count": 26,
+      "value": "Georgian Bay"
+    },
+    {
+      "count": 25,
+      "value": "Otonabee-South Monaghan"
+    },
+    {
+      "count": 24,
+      "value": "Trent Hills"
+    },
+    {
+      "count": 23,
+      "value": "Grand Valley"
+    },
+    {
+      "count": 22,
+      "value": "Wilmot"
+    },
+    {
+      "count": 22,
+      "value": "Essa"
+    },
+    {
+      "count": 22,
+      "value": "Mono"
+    },
+    {
+      "count": 22,
+      "value": "Stirling-Rawdon"
+    },
+    {
+      "count": 21,
+      "value": "Grimsby"
+    },
+    {
+      "count": 20,
+      "value": "Guelph"
+    },
+    {
+      "count": 20,
+      "value": "Tyendinaga"
+    },
+    {
+      "count": 19,
+      "value": "Mapleton"
+    },
+    {
+      "count": 19,
+      "value": "West Lincoln"
+    },
+    {
+      "count": 18,
+      "value": "Norfolk County"
+    },
+    {
+      "count": 17,
+      "value": "Severn"
+    },
+    {
+      "count": 17,
+      "value": "Amaranth"
+    },
+    {
+      "count": 16,
+      "value": "Adjala-Tosorontio"
+    },
+    {
+      "count": 16,
+      "value": "Brantford"
+    },
+    {
+      "count": 16,
+      "value": "Greater Sudbury / Grand Sudbury"
+    },
+    {
+      "count": 14,
+      "value": "Bradford West Gwillimbury"
+    },
+    {
+      "count": 14,
+      "value": "Collingwood"
+    },
+    {
+      "count": 13,
+      "value": "Port Colborne"
+    },
+    {
+      "count": 13,
+      "value": "Orangeville"
+    },
+    {
+      "count": 12,
+      "value": "Trent Lakes"
+    },
+    {
+      "count": 12,
+      "value": "Belleville"
+    },
+    {
+      "count": 12,
+      "value": "Waterloo"
+    },
+    {
+      "count": 11,
+      "value": "Clearview"
+    },
+    {
+      "count": 11,
+      "value": "Grey Highlands"
+    },
+    {
+      "count": 11,
+      "value": "Brighton"
+    },
+    {
+      "count": 10,
+      "value": "Deseronto"
+    },
+    {
+      "count": 9,
+      "value": "East Zorra-Tavistock"
+    },
+    {
+      "count": 9,
+      "value": "Lakeshore"
+    },
+    {
+      "count": 8,
+      "value": "Norwich"
+    },
+    {
+      "count": 8,
+      "value": "Niagara-on-the-Lake"
+    },
+    {
+      "count": 8,
+      "value": "Kingston"
+    },
+    {
+      "count": 8,
+      "value": "Lincoln"
+    },
+    {
+      "count": 7,
+      "value": "Niagara Falls"
+    },
+    {
+      "count": 7,
+      "value": "Windsor"
+    }
+  ],
+  "provider_counts": [
+    {
+      "count": 125681,
+      "value": "City of Toronto"
+    },
+    {
+      "count": 66846,
+      "value": "City of Vancouver"
+    },
+    {
+      "count": 38573,
+      "value": "City of Edmonton"
+    },
+    {
+      "count": 34997,
+      "value": "Regional Municipality of York"
+    },
+    {
+      "count": 34302,
+      "value": "City of Calgary"
+    },
+    {
+      "count": 18768,
+      "value": "City of Burnaby"
+    },
+    {
+      "count": 17099,
+      "value": "City of Surrey"
+    },
+    {
+      "count": 16506,
+      "value": "City of Mississauga"
+    },
+    {
+      "count": 11201,
+      "value": "Government of British Columbia"
+    },
+    {
+      "count": 10917,
+      "value": "City of Kelowna"
+    },
+    {
+      "count": 10095,
+      "value": "Regional Municipality of Durham"
+    },
+    {
+      "count": 9826,
+      "value": "City of Brampton"
+    },
+    {
+      "count": 7107,
+      "value": "City of Victoria"
+    },
+    {
+      "count": 6911,
+      "value": "Township of Langley"
+    },
+    {
+      "count": 6189,
+      "value": "City of Nanaimo"
+    },
+    {
+      "count": 4399,
+      "value": "City of Prince George"
+    },
+    {
+      "count": 4285,
+      "value": "City of New Westminster"
+    },
+    {
+      "count": 3358,
+      "value": "City of Chilliwack"
+    },
+    {
+      "count": 3014,
+      "value": "City of Maple Ridge"
+    },
+    {
+      "count": 2790,
+      "value": "City of Hamilton"
+    },
+    {
+      "count": 2721,
+      "value": "City of Squamish"
+    },
+    {
+      "count": 2474,
+      "value": "Stathcona County"
+    },
+    {
+      "count": 1898,
+      "value": "City of Kitchener"
+    },
+    {
+      "count": 1445,
+      "value": "City of Yellowknife"
+    },
+    {
+      "count": 1408,
+      "value": "Regional Municipality of Peel"
+    },
+    {
+      "count": 942,
+      "value": "Town of Banff"
+    },
+    {
+      "count": 941,
+      "value": "City of Welland"
+    },
+    {
+      "count": 693,
+      "value": "City of Port Moody"
+    },
+    {
+      "count": 522,
+      "value": "City of Ottawa"
+    },
+    {
+      "count": 249,
+      "value": "Province of Ontario"
+    },
+    {
+      "count": 171,
+      "value": "Government of Nunavut"
+    },
+    {
+      "count": 138,
+      "value": "City of Chestermere"
+    },
+    {
+      "count": 92,
+      "value": "City of Moncton"
+    },
+    {
+      "count": 16,
+      "value": "City of Saint John"
+    },
+    {
+      "count": 1,
+      "value": "<BLANK>"
+    }
+  ],
+  "province_alignment": {
+    "ontario_by_prov_terr": 205122,
+    "ontario_by_pruid": 134697,
+    "ontario_intersection": 134697,
+    "ontario_union": 205122,
+    "prov_terr_pruid_disagreements": 70425,
+    "province_counts": [
+      {
+        "count": 205122,
+        "value": "ON"
+      },
+      {
+        "count": 163200,
+        "value": "BC"
+      },
+      {
+        "count": 76526,
+        "value": "AB"
+      },
+      {
+        "count": 1445,
+        "value": "NT"
+      },
+      {
+        "count": 171,
+        "value": "NU"
+      },
+      {
+        "count": 110,
+        "value": "NB"
+      },
+      {
+        "count": 1,
+        "value": "<BLANK>"
+      }
+    ],
+    "pruid_counts": [
+      {
+        "count": 134697,
+        "value": "35"
+      },
+      {
+        "count": 131644,
+        "value": ".."
+      },
+      {
+        "count": 116296,
+        "value": "59"
+      },
+      {
+        "count": 62551,
+        "value": "48"
+      },
+      {
+        "count": 1244,
+        "value": "61"
+      },
+      {
+        "count": 108,
+        "value": "13"
+      },
+      {
+        "count": 33,
+        "value": "24"
+      },
+      {
+        "count": 1,
+        "value": "60"
+      },
+      {
+        "count": 1,
+        "value": "<BLANK>"
+      }
+    ]
+  },
+  "row_anomalies": {
+    "blank_province_rows": 1,
+    "extra_field_rows": 0,
+    "missing_business_name_rows": 0
+  },
+  "row_count": 446575,
+  "source_id": "statscan_odbus_2023",
+  "status_counts": [
+    {
+      "count": 284422,
+      "value": ".."
+    },
+    {
+      "count": 109590,
+      "value": "Active"
+    },
+    {
+      "count": 52444,
+      "value": "Pending"
+    },
+    {
+      "count": 118,
+      "value": "Not Active"
+    },
+    {
+      "count": 1,
+      "value": "<BLANK>"
+    }
+  ],
+  "target_market": {
+    "city_csd_target_conflicts": 69,
+    "city_exact_any_province": 28200,
+    "csd_exact_any_province": 28244,
+    "municipalities": [
+      "brampton",
+      "mississauga"
+    ],
+    "municipality_counts": [
+      {
+        "count": 18063,
+        "value": "mississauga"
+      },
+      {
+        "count": 10668,
+        "value": "brampton"
+      }
+    ],
+    "union_any_province": 29055,
+    "union_ontario_intersection": 28731
+  }
+}

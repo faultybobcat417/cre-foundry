@@ -1,0 +1,97 @@
+{
+  "artifact_id": "ECONOMICS-001-MATERIAL-CONTRACT-VALIDATION",
+  "schema_version": "1.0.0",
+  "execution_scope": "SYNTHETIC_NON_INFLUENCING",
+  "proof_level": 5,
+  "evaluator_id": "economics-ecv-public-v1",
+  "generated_at": "2026-08-03T18:03:30Z",
+  "subject_task": "ECONOMICS-001",
+  "passed": true,
+  "results": {
+    "determinism_byte_identical": true,
+    "frozen_byte_identical": true,
+    "frozen_schema_errors": [],
+    "frozen_evaluator": {
+      "passed": true,
+      "diagnostics": []
+    },
+    "material_diagnostics": [],
+    "clean_object": true
+  },
+  "subject_bindings": {
+    "subject_sha256": "9e066e1663d8d5ae296d4e9a566811feb5c0bed45e1f589fa721e35dd2c829fe",
+    "schema_sha256": "a39c1f1d8a6419c89ff65627f62804fa06005b85f1e8b42a428acec396714cd5"
+  },
+  "economic_machinery": {
+    "expected_net_value": {
+      "expected_gross_commission": 0.10799999999999998,
+      "expected_net_value": -209.892,
+      "downside_net_value": -209.96892,
+      "total_cost": 210.0,
+      "downside_conversion": 0.051799999999999985
+    },
+    "sensitivity": {
+      "conversion_mean": 0.6,
+      "commission_rate": 1.7999999999999998,
+      "total_cost": -1.0
+    },
+    "downside_fallback": {
+      "downside_net_value": -209.96892,
+      "threshold": -200.0,
+      "triggered": true,
+      "decision": "ABSTAIN"
+    },
+    "deterministic": true,
+    "resolved": true
+  },
+  "schemas": {
+    "subject": {
+      "path": "contracts/commercial_economics.schema.json",
+      "draft2020_12_valid": true,
+      "error": ""
+    },
+    "policy": {
+      "path": "contracts/economic_engine.schema.json",
+      "draft2020_12_valid": true,
+      "error": ""
+    }
+  },
+  "known_bad_fixtures": [
+    {
+      "fixture": "economics_modeled_as_realized.json",
+      "case_id": "modeled-as-realized",
+      "expected_diagnostic": "ECONOMICS-MODELED-AS-REALIZED",
+      "frozen_detected": true,
+      "material_detected": true,
+      "frozen_extra": [],
+      "material_extra": [
+        "ECONOMICS-FALLBACK-VIOLATED",
+        "ECONOMICS-REALIZED-CEILING"
+      ],
+      "result": "DETECTED_BOTH"
+    },
+    {
+      "fixture": "economics_omitted_costs.json",
+      "case_id": "omitted-costs",
+      "expected_diagnostic": "ECONOMICS-OMITTED-COSTS",
+      "frozen_detected": true,
+      "material_detected": true,
+      "frozen_extra": [],
+      "material_extra": [],
+      "result": "DETECTED_BOTH"
+    }
+  ],
+  "source_independence": [],
+  "claims_not_established": [
+    "realized-commercial-value",
+    "firm-authoritative-economics",
+    "firm-cost-data",
+    "calibrated-real-uncertainty",
+    "commercial-lift",
+    "production-readiness",
+    "deployment-readiness",
+    "field-effectiveness",
+    "sealed-evaluator-independence",
+    "hidden-holdout-performance"
+  ]
+}

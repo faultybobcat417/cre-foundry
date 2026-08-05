@@ -1,0 +1,65 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://cre-foundry.local/schemas/synthetic-route-day-v1.json",
+  "title": "Synthetic non-influencing route-day manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["document_kind", "schema_version", "execution_scope", "route_manifest_id", "upstream_binding", "representative_id", "route_date", "issued_at", "route_status", "stop_count", "route_order_state", "feasibility_claim", "stops", "quality", "owner", "live_issuance_authorized"],
+  "properties": {
+    "document_kind": {"const": "SYNTHETIC_ROUTE_DAY"},
+    "schema_version": {"const": "1.0.0"},
+    "execution_scope": {"const": "SYNTHETIC_NON_INFLUENCING"},
+    "route_manifest_id": {"type": "string", "pattern": "^ROUTE:[A-Z0-9_-]+$"},
+    "upstream_binding": {"$ref": "#/$defs/upstream"},
+    "representative_id": {"type": "string", "minLength": 1},
+    "route_date": {"type": "string", "format": "date"},
+    "issued_at": {"type": "string", "format": "date-time"},
+    "route_status": {"const": "ISSUED_SYNTHETIC"},
+    "stop_count": {"const": 10},
+    "route_order_state": {"const": "CANONICAL_SYNTHETIC_NOT_TRAVEL_OPTIMIZED"},
+    "feasibility_claim": {"const": "SYNTHETIC_FIXTURE_ONLY"},
+    "stops": {"type": "array", "minItems": 10, "maxItems": 10, "uniqueItems": true, "items": {"$ref": "#/$defs/stop"}},
+    "quality": {"$ref": "#/$defs/quality"},
+    "owner": {"$ref": "#/$defs/owner"},
+    "live_issuance_authorized": {"const": false}
+  },
+  "$defs": {
+    "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "upstream": {
+      "type": "object", "additionalProperties": false,
+      "required": ["source_snapshot_sha256", "candidate_snapshot_sha256", "math_problem_sha256", "math_decision_sha256", "decision_id", "policy_version", "policy_sha256", "upstream_decision_scope"],
+      "properties": {
+        "source_snapshot_sha256": {"$ref": "#/$defs/sha256"},
+        "candidate_snapshot_sha256": {"$ref": "#/$defs/sha256"},
+        "math_problem_sha256": {"$ref": "#/$defs/sha256"},
+        "math_decision_sha256": {"$ref": "#/$defs/sha256"},
+        "decision_id": {"type": "string", "minLength": 1},
+        "policy_version": {"const": "math-policy-v1"},
+        "policy_sha256": {"$ref": "#/$defs/sha256"},
+        "upstream_decision_scope": {"const": "SYNTHETIC_FORMAL_ONLY"}
+      }
+    },
+    "stop": {
+      "type": "object", "additionalProperties": false,
+      "required": ["sequence_position", "candidate_id", "physical_location_id", "synthetic_service_minutes", "synthetic_travel_minutes_from_previous", "stop_feasibility_state"],
+      "properties": {
+        "sequence_position": {"type": "integer", "minimum": 1, "maximum": 10},
+        "candidate_id": {"type": "string", "minLength": 1},
+        "physical_location_id": {"type": "string", "pattern": "^LOCATION:[0-9a-f]{24}$"},
+        "synthetic_service_minutes": {"type": "integer", "minimum": 0},
+        "synthetic_travel_minutes_from_previous": {"type": "integer", "minimum": 0},
+        "stop_feasibility_state": {"const": "SYNTHETIC_FIXTURE_PASS"}
+      }
+    },
+    "quality": {
+      "type": "object", "additionalProperties": false,
+      "required": ["synthetic_fixture", "real_route_feasibility_proven"],
+      "properties": {"synthetic_fixture": {"const": true}, "real_route_feasibility_proven": {"const": false}}
+    },
+    "owner": {
+      "type": "object", "additionalProperties": false,
+      "required": ["system", "real_world_authority"],
+      "properties": {"system": {"const": "CRE_FOUNDRY"}, "real_world_authority": {"const": "UNASSIGNED_EXTERNAL_AUTHORITY"}}
+    }
+  }
+}

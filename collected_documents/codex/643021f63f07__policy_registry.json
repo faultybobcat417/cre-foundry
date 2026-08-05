@@ -1,0 +1,123 @@
+{
+  "canonicalization": "SORTED_KEYS_COMPACT_INTEGER_JSON_V1",
+  "claim_ceiling": "Synthetic point-in-time baseline mechanics only; no real incumbent behavior, feature utility, predictive validity, calibration, causal lift, commercial value, live use, policy superiority, or production replacement is established.",
+  "document_kind": "SYNTHETIC_BASELINE_POLICY_REGISTRY",
+  "execution_scope": "SYNTHETIC_NON_INFLUENCING",
+  "feature_allowlist": [
+    "incumbent_priority_units",
+    "market_segment",
+    "recency_source_event",
+    "rule_signal_a_units",
+    "rule_signal_b_units"
+  ],
+  "forbidden_feature_families": [
+    "STAGE_2",
+    "STAGE_3",
+    "FIELD_EVENT",
+    "OUTCOME",
+    "BOOKING",
+    "ATTENDANCE",
+    "MANDATE",
+    "TRANSACTION",
+    "COMMISSION",
+    "POST_DECISION_CORRECTION"
+  ],
+  "model_fit_at": "2026-04-15T00:00:00Z",
+  "policies": [
+    {
+      "complexity_tier": 0,
+      "dependency_count": 0,
+      "family": "INCUMBENT_SYNTHETIC",
+      "feature_names": [
+        "incumbent_priority_units"
+      ],
+      "parameters": {
+        "direction": "DESCENDING"
+      },
+      "policy_id": "INCUMBENT_SYNTHETIC_V1",
+      "trainable_parameter_count": 0
+    },
+    {
+      "complexity_tier": 0,
+      "dependency_count": 1,
+      "family": "SEEDED_RANDOM_SYNTHETIC",
+      "feature_names": [],
+      "parameters": {
+        "digest": "SHA256_UNSIGNED_BIG_ENDIAN",
+        "domain": "CRE_FOUNDRY_BASELINE_RANDOM_V1"
+      },
+      "policy_id": "SEEDED_RANDOM_SYNTHETIC_V1",
+      "trainable_parameter_count": 0
+    },
+    {
+      "complexity_tier": 1,
+      "dependency_count": 0,
+      "family": "TRANSPARENT_RULE_SYNTHETIC",
+      "feature_names": [
+        "rule_signal_a_units",
+        "rule_signal_b_units"
+      ],
+      "parameters": {
+        "weights": {
+          "rule_signal_a_units": 3,
+          "rule_signal_b_units": 2
+        }
+      },
+      "policy_id": "TRANSPARENT_RULE_SYNTHETIC_V1",
+      "trainable_parameter_count": 0
+    },
+    {
+      "complexity_tier": 1,
+      "dependency_count": 0,
+      "family": "RECENCY_SOURCE_SYNTHETIC",
+      "feature_names": [
+        "recency_source_event"
+      ],
+      "parameters": {
+        "direction": "LATEST_FIRST",
+        "source_family_priority": [
+          "SYNTHETIC_STAGE1_REGISTRY"
+        ]
+      },
+      "policy_id": "RECENCY_SOURCE_SYNTHETIC_V1",
+      "trainable_parameter_count": 0
+    },
+    {
+      "complexity_tier": 2,
+      "dependency_count": 0,
+      "family": "BETA_BINOMIAL_BUCKET_SYNTHETIC",
+      "feature_names": [
+        "market_segment"
+      ],
+      "parameters": {
+        "alpha": 1,
+        "beta": 1,
+        "numeric_domain": "EXACT_RATIONAL_ORDINAL_TIERS",
+        "unseen_fallback": "GLOBAL_TRAIN_POSTERIOR"
+      },
+      "policy_id": "BETA_BINOMIAL_BUCKET_SYNTHETIC_V1",
+      "trainable_parameter_count": 3
+    }
+  ],
+  "random_seed_schedule": [
+    "1a99c452f94b664ba4d5bc0307ab8b1365ea641494e582767610a701ebcf69f4",
+    "ecd1438cf25caec40a4314f35b1e6c58b4fddca4f230e011b289669ae139ff81",
+    "dd3fa35dbd6180c0d0fd2ac1fb01ca0dbe2d6f08962404ef303bc56f23a985b4",
+    "412d140d99184d8d37ec7cf5509b8803acf8de3cb4e15bc30e59c2562710c9af",
+    "d05d839f9a8453d0b5fcf38371df78f006129324ea0eedcf99e074143d140dfb",
+    "c7dca6454e858cc5b19a2083c47b401dc0fbf1ee7826131064a481c32183fa9e",
+    "2881b111ff894499e32ace2c48f51b1c961e5fb3bb963eca4cfeb64ff0586103",
+    "6bc58c50cbfc68597fd527f6a70c88bd4e966f59a06488867a3634b7bd4aa67a",
+    "e9e74a88194e8c0d307eb3f75bd956833fc2896f4186d0c0d8635bd5c15eb009",
+    "000b2146b3a0ace67a6debcee7cb91119e1f3f569046c5db0629d7351205f2fe",
+    "52f8b5e24c8aa405a14f1470153dea3a5381579131e4d50ca46caae87abdb232",
+    "7c889a5caf7065923fb9b13e39445b60355b82aa2597f306fd3832d546f89c91",
+    "481f97871fad37202f3b4fe59e2014605f6c61e15a1b3ddd55b962e679a7c128",
+    "e763aaa901d70c296964f896aa27c1ff8ff2ecb24f609b6d125e71ee19e4a63b",
+    "bc15b6d34775727019682c51486faa6575aba0087c3cec47fe6151659f80936d",
+    "2d88c1ae637afa8867a9087dfefb648bc21e84a8579f70aba7e015a56c901f44"
+  ],
+  "registered_at": "2026-04-15T00:00:00Z",
+  "registry_id": "BASELINE_POLICY_REGISTRY:V1",
+  "schema_version": "1.0.0"
+}

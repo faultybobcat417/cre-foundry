@@ -1,0 +1,192 @@
+{
+  "admission_ready_count": 3,
+  "all_packets_admission_ready": true,
+  "artifact_copy_execution_count": 0,
+  "artifact_count": 3,
+  "automatic_acquisition": false,
+  "blocked_count": 0,
+  "contract_paths": {
+    "admission": "docs/data_contracts/source_snapshot_admission.json",
+    "markdown": "docs/data_contracts/source_snapshot_admission.md",
+    "replay_index": "docs/data_contracts/source_replay_fixture_index.json"
+  },
+  "manual_approval_required": true,
+  "model_version": "cre-foundry-source-snapshot-admission-v1",
+  "opportunity_ranked": false,
+  "outreach_eligible": false,
+  "packets": [
+    {
+      "admission_ready": true,
+      "artifact_count": 1,
+      "artifacts": [
+        {
+          "admission_ready": true,
+          "artifact_index": 0,
+          "declared_path": "/Users/alimehdi/Projects/comfiance/cre-foundry/data/bronze/statscan_odbus_2023/2026/07/26/RUN-20260726T024102Z-16fb53d196/ODBus_2023_0ec6388eb16584d0.zip",
+          "probe": {
+            "actual_sha256": "0ec6388eb16584d025252026cee22d95bf3b603fccb5cc471710a619d89dca2f",
+            "content_kind": "zip",
+            "delimited_header": null,
+            "header_bytes_read": 65536,
+            "header_sha256": "644a3c6a87b9c5f09b10e888a63f85f593a1c1f8abbdae7cd71ab306cf1ecaf6",
+            "json_parse_attempted": false,
+            "json_parse_succeeded": false,
+            "json_top_level_count": null,
+            "json_top_level_type": null,
+            "size_bytes": 21860048,
+            "suffix": ".zip",
+            "text_header_decodable": false,
+            "text_header_line_count": null
+          },
+          "resolved_relative_path": "data/bronze/statscan_odbus_2023/2026/07/26/RUN-20260726T024102Z-16fb53d196/ODBus_2023_0ec6388eb16584d0.zip",
+          "violations": []
+        }
+      ],
+      "bundle_sha256": "347ab9a3ddd029b3485809948691e2050fcafcb0422b83fd2b1676593b4343cf",
+      "manifest_path": "data/bronze/statscan_odbus_2023/2026/07/26/RUN-20260726T024102Z-16fb53d196/manifest.json",
+      "manifest_probe": {
+        "actual_sha256": "9cb3e48f9436f53680bfd2007e2e0c2ae124cba2c0d84933537492364d1ef081",
+        "content_kind": "json_like",
+        "delimited_header": null,
+        "header_bytes_read": 3811,
+        "header_sha256": "9cb3e48f9436f53680bfd2007e2e0c2ae124cba2c0d84933537492364d1ef081",
+        "json_parse_attempted": true,
+        "json_parse_succeeded": true,
+        "json_top_level_count": 19,
+        "json_top_level_type": "object",
+        "size_bytes": 3811,
+        "suffix": ".json",
+        "text_header_decodable": true,
+        "text_header_line_count": 87
+      },
+      "manual_approval_required": true,
+      "packet_index": 0,
+      "snapshot_registration_executed": false,
+      "snapshot_registration_permitted": false,
+      "source_id": "statscan_odbus_2023",
+      "violations": []
+    },
+    {
+      "admission_ready": true,
+      "artifact_count": 1,
+      "artifacts": [
+        {
+          "admission_ready": true,
+          "artifact_index": 0,
+          "declared_path": "/Users/alimehdi/Projects/comfiance/cre-foundry/data/bronze/brampton_building_permits/2026/07/26/RUN-20260726T033516Z-e1388f64b1/layer_0_bae5f22db1bef14b.geojson.gz",
+          "probe": {
+            "actual_sha256": "d5359d5308355a74e18f5e54d0022e1c49dcfd2909d17ea3cd084000488e6d4c",
+            "content_kind": "gzip",
+            "delimited_header": null,
+            "header_bytes_read": 65536,
+            "header_sha256": "a1bc63b59c818c68319881a12392313c30dd9e438f88a38a57ca41b37bc09fc1",
+            "json_parse_attempted": false,
+            "json_parse_succeeded": false,
+            "json_top_level_count": null,
+            "json_top_level_type": null,
+            "size_bytes": 336333,
+            "suffix": ".gz",
+            "text_header_decodable": false,
+            "text_header_line_count": null
+          },
+          "resolved_relative_path": "data/bronze/brampton_building_permits/2026/07/26/RUN-20260726T033516Z-e1388f64b1/layer_0_bae5f22db1bef14b.geojson.gz",
+          "violations": []
+        }
+      ],
+      "bundle_sha256": "5d9d5858eb070ff1ebf430a58ee3388a437964ced347d185be69ff4bd9ef8e21",
+      "manifest_path": "data/bronze/brampton_building_permits/2026/07/26/RUN-20260726T033516Z-e1388f64b1/manifest.json",
+      "manifest_probe": {
+        "actual_sha256": "699d9834c84fddd6f6bc0eb095ff3e5bdb629888271397142b883c89b797c8a8",
+        "content_kind": "json_like",
+        "delimited_header": null,
+        "header_bytes_read": 1086,
+        "header_sha256": "699d9834c84fddd6f6bc0eb095ff3e5bdb629888271397142b883c89b797c8a8",
+        "json_parse_attempted": true,
+        "json_parse_succeeded": true,
+        "json_top_level_count": 10,
+        "json_top_level_type": "object",
+        "size_bytes": 1086,
+        "suffix": ".json",
+        "text_header_decodable": true,
+        "text_header_line_count": 25
+      },
+      "manual_approval_required": true,
+      "packet_index": 1,
+      "snapshot_registration_executed": false,
+      "snapshot_registration_permitted": false,
+      "source_id": "brampton_building_permits",
+      "violations": []
+    },
+    {
+      "admission_ready": true,
+      "artifact_count": 1,
+      "artifacts": [
+        {
+          "admission_ready": true,
+          "artifact_index": 0,
+          "declared_path": "/Users/alimehdi/Projects/comfiance/cre-foundry/data/bronze/brampton_business_directory/2026/07/26/RUN-20260726T040418Z-b394f90ee8/layer_0_0c90be8f6d4c89fe.geojson.gz",
+          "probe": {
+            "actual_sha256": "8a7a0add73e0bd57215880ceb2f216d3799748aba8baed8fa32fb02a1aca7c6a",
+            "content_kind": "gzip",
+            "delimited_header": null,
+            "header_bytes_read": 65536,
+            "header_sha256": "38f3c70a890412e0bf65623d15de034ad16aca5aad7ef6549fb6186af12e8819",
+            "json_parse_attempted": false,
+            "json_parse_succeeded": false,
+            "json_top_level_count": null,
+            "json_top_level_type": null,
+            "size_bytes": 1063904,
+            "suffix": ".gz",
+            "text_header_decodable": false,
+            "text_header_line_count": null
+          },
+          "resolved_relative_path": "data/bronze/brampton_business_directory/2026/07/26/RUN-20260726T040418Z-b394f90ee8/layer_0_0c90be8f6d4c89fe.geojson.gz",
+          "violations": []
+        }
+      ],
+      "bundle_sha256": "6eb58360f23790922ff30e06f2d61f9e1732330b528ec0a900d6a8a2dd136dc1",
+      "manifest_path": "data/bronze/brampton_business_directory/2026/07/26/RUN-20260726T040418Z-b394f90ee8/manifest.json",
+      "manifest_probe": {
+        "actual_sha256": "e0d129a35c077d8e64d421d66d799855d3f0af9d678420dc745d43a42e1b0010",
+        "content_kind": "json_like",
+        "delimited_header": null,
+        "header_bytes_read": 1101,
+        "header_sha256": "e0d129a35c077d8e64d421d66d799855d3f0af9d678420dc745d43a42e1b0010",
+        "json_parse_attempted": true,
+        "json_parse_succeeded": true,
+        "json_top_level_count": 10,
+        "json_top_level_type": "object",
+        "size_bytes": 1101,
+        "suffix": ".json",
+        "text_header_decodable": true,
+        "text_header_line_count": 25
+      },
+      "manual_approval_required": true,
+      "packet_index": 2,
+      "snapshot_registration_executed": false,
+      "snapshot_registration_permitted": false,
+      "source_id": "brampton_business_directory",
+      "violations": []
+    }
+  ],
+  "policy": {
+    "automatic_acquisition": false,
+    "automatic_conclusions": false,
+    "automatic_snapshot_registration": false,
+    "checksum_verification_required": true,
+    "exact_path_required": true,
+    "manual_review_required": true,
+    "operating_mode": "shadow",
+    "opportunity_ranked": false,
+    "outreach_eligible": false,
+    "project_boundary_required": true,
+    "read_only": true,
+    "regular_file_required": true,
+    "source_identity_match_required": true,
+    "symlink_allowed": false
+  },
+  "snapshot_registration_execution_count": 0,
+  "snapshot_registration_permitted": false,
+  "source_packet_count": 3,
+  "total_referenced_bytes": 23260285
+}

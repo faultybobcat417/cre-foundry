@@ -1,0 +1,1922 @@
+{
+  "bomFormat": "CycloneDX",
+  "components": [
+    {
+      "name": "aiosqlite",
+      "properties": [
+        {
+          "name": "cre-foundry:inventory-source",
+          "value": "uv.lock"
+        }
+      ],
+      "purl": "pkg:pypi/aiosqlite@0.22.1",
+      "type": "library",
+      "version": "0.22.1"
+    },
+    {
+      "name": "alembic",
+      "properties": [
+        {
+          "name": "cre-foundry:inventory-source",
+          "value": "uv.lock"
+        }
+      ],
+      "purl": "pkg:pypi/alembic@1.18.5",
+      "type": "library",
+      "version": "1.18.5"
+    },
+    {
+      "name": "amplitude-analytics",
+      "properties": [
+        {
+          "name": "cre-foundry:inventory-source",
+          "value": "uv.lock"
+        }
+      ],
+      "purl": "pkg:pypi/amplitude-analytics@1.2.3",
+      "type": "library",
+      "version": "1.2.3"
+    },
+    {
+      "name": "annotated-doc",
+      "properties": [
+        {
+          "name": "cre-foundry:inventory-source",
+          "value": "uv.lock"
+        }
+      ],
+      "purl": "pkg:pypi/annotated-doc@0.0.4",
+      "type": "library",
+      "version": "0.0.4"
+    },
+    {
+      "name": "annotated-types",
+      "properties": [
+        {
+          "name": "cre-foundry:inventory-source",
+          "value": "uv.lock"
+        }
+      ],
+      "purl": "pkg:pypi/annotated-types@0.8.0",
+      "type": "library",
+      "version": "0.8.0"
+    },
+    {
+      "name": "anyio",
+      "properties": [
+        {
+          "name": "cre-foundry:inventory-source",
+          "value": "uv.lock"
+        }
+      ],
+      "purl": "pkg:pypi/anyio@4.14.1",
+      "type": "library",
+      "version": "4.14.1"
+    },
+    {
+      "name": "apprise",
+      "properties": [
+        {
+          "name": "cre-foundry:inventory-source",
+          "value": "uv.lock"
+        }
+      ],
+      "purl": "pkg:pypi/apprise@1.12.0",
+      "type": "library",
+      "version": "1.12.0"
+    },
+    {
+      "name": "asgi-lifespan",
+      "properties": [
+        {
+          "name": "cre-foundry:inventory-source",
+          "value": "uv.lock"
+        }
+      ],
+      "purl": "pkg:pypi/asgi-lifespan@2.1.0",
+      "type": "library",
+      "version": "2.1.0"
+    },
+    {
+      "name": "ast-serialize",
+      "properties": [
+        {
+          "name": "cre-foundry:inventory-source",
+          "value": "uv.lock"
+        }
+      ],
+      "purl": "pkg:pypi/ast-serialize@0.6.0",
+      "type": "library",
+      "version": "0.6.0"
+    },
+    {
+      "name": "asyncpg",
+      "properties": [
+        {
+          "name": "cre-foundry:inventory-source",
+          "value": "uv.lock"
+        }
+      ],
+      "purl": "pkg:pypi/asyncpg@0.31.0",
+      "type": "library",
+      "version": "0.31.0"
+    },
+    {
+      "name": "attrs",
+      "properties": [
+        {
+          "name": "cre-foundry:inventory-source",
+          "value": "uv.lock"
+        }
+      ],
+      "purl": "pkg:pypi/attrs@26.1.0",
+      "type": "library",
+      "version": "26.1.0"
+    },
+    {
+      "name": "bandit",
+      "properties": [
+        {
+          "name": "cre-foundry:inventory-source",
+          "value": "uv.lock"
+        }
+      ],
+      "purl": "pkg:pypi/bandit@1.9.4",
+      "type": "library",
+      "version": "1.9.4"
+    },
+    {
+      "name": "beartype",
+      "properties": [
+        {
+          "name": "cre-foundry:inventory-source",
+          "value": "uv.lock"
+        }
+      ],
+      "purl": "pkg:pypi/beartype@0.22.9",
+      "type": "library",
+      "version": "0.22.9"
+    },
+    {
+      "name": "boolean-py",
+      "properties": [
+        {
+          "name": "cre-foundry:inventory-source",
+          "value": "uv.lock"
+        }
+      ],
+      "purl": "pkg:pypi/boolean-py@5.0",
+      "type": "library",
+      "version": "5.0"
+    },
+    {
+      "name": "burner-redis",
+      "properties": [
+        {
+          "name": "cre-foundry:inventory-source",
+          "value": "uv.lock"
+        }
+      ],
+      "purl": "pkg:pypi/burner-redis@0.1.7",
+      "type": "library",
+      "version": "0.1.7"
+    },
+    {
+      "name": "cachecontrol",
+      "properties": [
+        {
+          "name": "cre-foundry:inventory-source",
+          "value": "uv.lock"
+        }
+      ],
+      "purl": "pkg:pypi/cachecontrol@0.14.4",
+      "type": "library",
+      "version": "0.14.4"
+    },
+    {
+      "name": "cachetools",
+      "properties": [
+        {
+          "name": "cre-foundry:inventory-source",
+          "value": "uv.lock"
+        }
+      ],
+      "purl": "pkg:pypi/cachetools@7.1.6",
+      "type": "library",
+      "version": "7.1.6"
+    },
+    {
+      "name": "certifi",
+      "properties": [
+        {
+          "name": "cre-foundry:inventory-source",
+          "value": "uv.lock"
+        }
+      ],
+      "purl": "pkg:pypi/certifi@2026.7.22",
+      "type": "library",
+      "version": "2026.7.22"
+    },
+    {
+      "name": "cffi",
+      "properties": [
+        {
+          "name": "cre-foundry:inventory-source",
+          "value": "uv.lock"
+        }
+      ],
+      "purl": "pkg:pypi/cffi@2.1.0",
+      "type": "library",
+      "version": "2.1.0"
+    },
+    {
+      "name": "charset-normalizer",
+      "properties": [
+        {
+          "name": "cre-foundry:inventory-source",
+          "value": "uv.lock"
+        }
+      ],
+      "purl": "pkg:pypi/charset-normalizer@3.4.9",
+      "type": "library",
+      "version": "3.4.9"
+    },
+    {
+      "name": "click",
+      "properties": [
+        {
+          "name": "cre-foundry:inventory-source",
+          "value": "uv.lock"
+        }
+      ],
+      "purl": "pkg:pypi/click@8.4.2",
+      "type": "library",
+      "version": "8.4.2"
+    },
+    {
+      "name": "cloudpickle",
+      "properties": [
+        {
+          "name": "cre-foundry:inventory-source",
+          "value": "uv.lock"
+        }
+      ],
+      "purl": "pkg:pypi/cloudpickle@3.1.2",
+      "type": "library",
+      "version": "3.1.2"
+    },
+    {
+      "name": "colorama",
+      "properties": [
+        {
+          "name": "cre-foundry:inventory-source",
+          "value": "uv.lock"
+        }
+      ],
+      "purl": "pkg:pypi/colorama@0.4.6",
+      "type": "library",
+      "version": "0.4.6"
+    },
+    {
+      "name": "coolname",
+      "properties": [
+        {
+          "name": "cre-foundry:inventory-source",
+          "value": "uv.lock"
+        }
+      ],
+      "purl": "pkg:pypi/coolname@5.0.0",
+      "type": "library",
+      "version": "5.0.0"
+    },
+    {
+      "name": "coverage",
+      "properties": [
+        {
+          "name": "cre-foundry:inventory-source",
+          "value": "uv.lock"
+        }
+      ],
+      "purl": "pkg:pypi/coverage@7.15.2",
+      "type": "library",
+      "version": "7.15.2"
+    },
+    {
+      "name": "cre-foundry",
+      "properties": [
+        {
+          "name": "cre-foundry:inventory-source",
+          "value": "uv.lock"
+        }
+      ],
+      "purl": "pkg:pypi/cre-foundry@0.1.0",
+      "type": "library",
+      "version": "0.1.0"
+    },
+    {
+      "name": "cronsim",
+      "properties": [
+        {
+          "name": "cre-foundry:inventory-source",
+          "value": "uv.lock"
+        }
+      ],
+      "purl": "pkg:pypi/cronsim@2.7",
+      "type": "library",
+      "version": "2.7"
+    },
+    {
+      "name": "cryptography",
+      "properties": [
+        {
+          "name": "cre-foundry:inventory-source",
+          "value": "uv.lock"
+        }
+      ],
+      "purl": "pkg:pypi/cryptography@49.0.0",
+      "type": "library",
+      "version": "49.0.0"
+    },
+    {
+      "name": "cyclonedx-python-lib",
+      "properties": [
+        {
+          "name": "cre-foundry:inventory-source",
+          "value": "uv.lock"
+        }
+      ],
+      "purl": "pkg:pypi/cyclonedx-python-lib@11.11.0",
+      "type": "library",
+      "version": "11.11.0"
+    },
+    {
+      "name": "cyclopts",
+      "properties": [
+        {
+          "name": "cre-foundry:inventory-source",
+          "value": "uv.lock"
+        }
+      ],
+      "purl": "pkg:pypi/cyclopts@4.22.2",
+      "type": "library",
+      "version": "4.22.2"
+    },
+    {
+      "name": "dateparser",
+      "properties": [
+        {
+          "name": "cre-foundry:inventory-source",
+          "value": "uv.lock"
+        }
+      ],
+      "purl": "pkg:pypi/dateparser@1.4.1",
+      "type": "library",
+      "version": "1.4.1"
+    },
+    {
+      "name": "defusedxml",
+      "properties": [
+        {
+          "name": "cre-foundry:inventory-source",
+          "value": "uv.lock"
+        }
+      ],
+      "purl": "pkg:pypi/defusedxml@0.7.1",
+      "type": "library",
+      "version": "0.7.1"
+    },
+    {
+      "name": "detect-secrets",
+      "properties": [
+        {
+          "name": "cre-foundry:inventory-source",
+          "value": "uv.lock"
+        }
+      ],
+      "purl": "pkg:pypi/detect-secrets@1.5.0",
+      "type": "library",
+      "version": "1.5.0"
+    },
+    {
+      "name": "docker",
+      "properties": [
+        {
+          "name": "cre-foundry:inventory-source",
+          "value": "uv.lock"
+        }
+      ],
+      "purl": "pkg:pypi/docker@7.2.0",
+      "type": "library",
+      "version": "7.2.0"
+    },
+    {
+      "name": "docstring-parser",
+      "properties": [
+        {
+          "name": "cre-foundry:inventory-source",
+          "value": "uv.lock"
+        }
+      ],
+      "purl": "pkg:pypi/docstring-parser@0.18.0",
+      "type": "library",
+      "version": "0.18.0"
+    },
+    {
+      "name": "duckdb",
+      "properties": [
+        {
+          "name": "cre-foundry:inventory-source",
+          "value": "uv.lock"
+        }
+      ],
+      "purl": "pkg:pypi/duckdb@1.5.5",
+      "type": "library",
+      "version": "1.5.5"
+    },
+    {
+      "name": "exceptiongroup",
+      "properties": [
+        {
+          "name": "cre-foundry:inventory-source",
+          "value": "uv.lock"
+        }
+      ],
+      "purl": "pkg:pypi/exceptiongroup@1.3.1",
+      "type": "library",
+      "version": "1.3.1"
+    },
+    {
+      "name": "fastapi",
+      "properties": [
+        {
+          "name": "cre-foundry:inventory-source",
+          "value": "uv.lock"
+        }
+      ],
+      "purl": "pkg:pypi/fastapi@0.140.0",
+      "type": "library",
+      "version": "0.140.0"
+    },
+    {
+      "name": "filelock",
+      "properties": [
+        {
+          "name": "cre-foundry:inventory-source",
+          "value": "uv.lock"
+        }
+      ],
+      "purl": "pkg:pypi/filelock@3.32.0",
+      "type": "library",
+      "version": "3.32.0"
+    },
+    {
+      "name": "fsspec",
+      "properties": [
+        {
+          "name": "cre-foundry:inventory-source",
+          "value": "uv.lock"
+        }
+      ],
+      "purl": "pkg:pypi/fsspec@2026.6.0",
+      "type": "library",
+      "version": "2026.6.0"
+    },
+    {
+      "name": "graphviz",
+      "properties": [
+        {
+          "name": "cre-foundry:inventory-source",
+          "value": "uv.lock"
+        }
+      ],
+      "purl": "pkg:pypi/graphviz@0.21",
+      "type": "library",
+      "version": "0.21"
+    },
+    {
+      "name": "greenlet",
+      "properties": [
+        {
+          "name": "cre-foundry:inventory-source",
+          "value": "uv.lock"
+        }
+      ],
+      "purl": "pkg:pypi/greenlet@3.5.4",
+      "type": "library",
+      "version": "3.5.4"
+    },
+    {
+      "name": "griffe",
+      "properties": [
+        {
+          "name": "cre-foundry:inventory-source",
+          "value": "uv.lock"
+        }
+      ],
+      "purl": "pkg:pypi/griffe@2.1.0",
+      "type": "library",
+      "version": "2.1.0"
+    },
+    {
+      "name": "griffecli",
+      "properties": [
+        {
+          "name": "cre-foundry:inventory-source",
+          "value": "uv.lock"
+        }
+      ],
+      "purl": "pkg:pypi/griffecli@2.1.0",
+      "type": "library",
+      "version": "2.1.0"
+    },
+    {
+      "name": "griffelib",
+      "properties": [
+        {
+          "name": "cre-foundry:inventory-source",
+          "value": "uv.lock"
+        }
+      ],
+      "purl": "pkg:pypi/griffelib@2.1.0",
+      "type": "library",
+      "version": "2.1.0"
+    },
+    {
+      "name": "h11",
+      "properties": [
+        {
+          "name": "cre-foundry:inventory-source",
+          "value": "uv.lock"
+        }
+      ],
+      "purl": "pkg:pypi/h11@0.16.0",
+      "type": "library",
+      "version": "0.16.0"
+    },
+    {
+      "name": "h2",
+      "properties": [
+        {
+          "name": "cre-foundry:inventory-source",
+          "value": "uv.lock"
+        }
+      ],
+      "purl": "pkg:pypi/h2@4.4.0",
+      "type": "library",
+      "version": "4.4.0"
+    },
+    {
+      "name": "hpack",
+      "properties": [
+        {
+          "name": "cre-foundry:inventory-source",
+          "value": "uv.lock"
+        }
+      ],
+      "purl": "pkg:pypi/hpack@4.2.0",
+      "type": "library",
+      "version": "4.2.0"
+    },
+    {
+      "name": "httpcore",
+      "properties": [
+        {
+          "name": "cre-foundry:inventory-source",
+          "value": "uv.lock"
+        }
+      ],
+      "purl": "pkg:pypi/httpcore@1.0.9",
+      "type": "library",
+      "version": "1.0.9"
+    },
+    {
+      "name": "httpx",
+      "properties": [
+        {
+          "name": "cre-foundry:inventory-source",
+          "value": "uv.lock"
+        }
+      ],
+      "purl": "pkg:pypi/httpx@0.28.1",
+      "type": "library",
+      "version": "0.28.1"
+    },
+    {
+      "name": "humanize",
+      "properties": [
+        {
+          "name": "cre-foundry:inventory-source",
+          "value": "uv.lock"
+        }
+      ],
+      "purl": "pkg:pypi/humanize@4.16.0",
+      "type": "library",
+      "version": "4.16.0"
+    },
+    {
+      "name": "hyperframe",
+      "properties": [
+        {
+          "name": "cre-foundry:inventory-source",
+          "value": "uv.lock"
+        }
+      ],
+      "purl": "pkg:pypi/hyperframe@6.1.0",
+      "type": "library",
+      "version": "6.1.0"
+    },
+    {
+      "name": "idna",
+      "properties": [
+        {
+          "name": "cre-foundry:inventory-source",
+          "value": "uv.lock"
+        }
+      ],
+      "purl": "pkg:pypi/idna@3.18",
+      "type": "library",
+      "version": "3.18"
+    },
+    {
+      "name": "iniconfig",
+      "properties": [
+        {
+          "name": "cre-foundry:inventory-source",
+          "value": "uv.lock"
+        }
+      ],
+      "purl": "pkg:pypi/iniconfig@2.3.0",
+      "type": "library",
+      "version": "2.3.0"
+    },
+    {
+      "name": "jaraco-classes",
+      "properties": [
+        {
+          "name": "cre-foundry:inventory-source",
+          "value": "uv.lock"
+        }
+      ],
+      "purl": "pkg:pypi/jaraco-classes@3.4.0",
+      "type": "library",
+      "version": "3.4.0"
+    },
+    {
+      "name": "jaraco-context",
+      "properties": [
+        {
+          "name": "cre-foundry:inventory-source",
+          "value": "uv.lock"
+        }
+      ],
+      "purl": "pkg:pypi/jaraco-context@6.1.2",
+      "type": "library",
+      "version": "6.1.2"
+    },
+    {
+      "name": "jaraco-functools",
+      "properties": [
+        {
+          "name": "cre-foundry:inventory-source",
+          "value": "uv.lock"
+        }
+      ],
+      "purl": "pkg:pypi/jaraco-functools@4.6.0",
+      "type": "library",
+      "version": "4.6.0"
+    },
+    {
+      "name": "jeepney",
+      "properties": [
+        {
+          "name": "cre-foundry:inventory-source",
+          "value": "uv.lock"
+        }
+      ],
+      "purl": "pkg:pypi/jeepney@0.9.0",
+      "type": "library",
+      "version": "0.9.0"
+    },
+    {
+      "name": "jinja2",
+      "properties": [
+        {
+          "name": "cre-foundry:inventory-source",
+          "value": "uv.lock"
+        }
+      ],
+      "purl": "pkg:pypi/jinja2@3.1.6",
+      "type": "library",
+      "version": "3.1.6"
+    },
+    {
+      "name": "jinja2-humanize-extension",
+      "properties": [
+        {
+          "name": "cre-foundry:inventory-source",
+          "value": "uv.lock"
+        }
+      ],
+      "purl": "pkg:pypi/jinja2-humanize-extension@0.4.0",
+      "type": "library",
+      "version": "0.4.0"
+    },
+    {
+      "name": "jsonpatch",
+      "properties": [
+        {
+          "name": "cre-foundry:inventory-source",
+          "value": "uv.lock"
+        }
+      ],
+      "purl": "pkg:pypi/jsonpatch@1.33",
+      "type": "library",
+      "version": "1.33"
+    },
+    {
+      "name": "jsonpointer",
+      "properties": [
+        {
+          "name": "cre-foundry:inventory-source",
+          "value": "uv.lock"
+        }
+      ],
+      "purl": "pkg:pypi/jsonpointer@3.1.1",
+      "type": "library",
+      "version": "3.1.1"
+    },
+    {
+      "name": "jsonschema",
+      "properties": [
+        {
+          "name": "cre-foundry:inventory-source",
+          "value": "uv.lock"
+        }
+      ],
+      "purl": "pkg:pypi/jsonschema@4.26.0",
+      "type": "library",
+      "version": "4.26.0"
+    },
+    {
+      "name": "jsonschema-specifications",
+      "properties": [
+        {
+          "name": "cre-foundry:inventory-source",
+          "value": "uv.lock"
+        }
+      ],
+      "purl": "pkg:pypi/jsonschema-specifications@2025.9.1",
+      "type": "library",
+      "version": "2025.9.1"
+    },
+    {
+      "name": "keyring",
+      "properties": [
+        {
+          "name": "cre-foundry:inventory-source",
+          "value": "uv.lock"
+        }
+      ],
+      "purl": "pkg:pypi/keyring@25.7.0",
+      "type": "library",
+      "version": "25.7.0"
+    },
+    {
+      "name": "librt",
+      "properties": [
+        {
+          "name": "cre-foundry:inventory-source",
+          "value": "uv.lock"
+        }
+      ],
+      "purl": "pkg:pypi/librt@0.13.0",
+      "type": "library",
+      "version": "0.13.0"
+    },
+    {
+      "name": "license-expression",
+      "properties": [
+        {
+          "name": "cre-foundry:inventory-source",
+          "value": "uv.lock"
+        }
+      ],
+      "purl": "pkg:pypi/license-expression@30.4.4",
+      "type": "library",
+      "version": "30.4.4"
+    },
+    {
+      "name": "mako",
+      "properties": [
+        {
+          "name": "cre-foundry:inventory-source",
+          "value": "uv.lock"
+        }
+      ],
+      "purl": "pkg:pypi/mako@1.3.12",
+      "type": "library",
+      "version": "1.3.12"
+    },
+    {
+      "name": "markdown",
+      "properties": [
+        {
+          "name": "cre-foundry:inventory-source",
+          "value": "uv.lock"
+        }
+      ],
+      "purl": "pkg:pypi/markdown@3.10.2",
+      "type": "library",
+      "version": "3.10.2"
+    },
+    {
+      "name": "markdown-it-py",
+      "properties": [
+        {
+          "name": "cre-foundry:inventory-source",
+          "value": "uv.lock"
+        }
+      ],
+      "purl": "pkg:pypi/markdown-it-py@4.2.0",
+      "type": "library",
+      "version": "4.2.0"
+    },
+    {
+      "name": "markupsafe",
+      "properties": [
+        {
+          "name": "cre-foundry:inventory-source",
+          "value": "uv.lock"
+        }
+      ],
+      "purl": "pkg:pypi/markupsafe@3.0.3",
+      "type": "library",
+      "version": "3.0.3"
+    },
+    {
+      "name": "mdurl",
+      "properties": [
+        {
+          "name": "cre-foundry:inventory-source",
+          "value": "uv.lock"
+        }
+      ],
+      "purl": "pkg:pypi/mdurl@0.1.2",
+      "type": "library",
+      "version": "0.1.2"
+    },
+    {
+      "name": "more-itertools",
+      "properties": [
+        {
+          "name": "cre-foundry:inventory-source",
+          "value": "uv.lock"
+        }
+      ],
+      "purl": "pkg:pypi/more-itertools@11.1.0",
+      "type": "library",
+      "version": "11.1.0"
+    },
+    {
+      "name": "msgpack",
+      "properties": [
+        {
+          "name": "cre-foundry:inventory-source",
+          "value": "uv.lock"
+        }
+      ],
+      "purl": "pkg:pypi/msgpack@1.2.1",
+      "type": "library",
+      "version": "1.2.1"
+    },
+    {
+      "name": "mypy",
+      "properties": [
+        {
+          "name": "cre-foundry:inventory-source",
+          "value": "uv.lock"
+        }
+      ],
+      "purl": "pkg:pypi/mypy@2.3.0",
+      "type": "library",
+      "version": "2.3.0"
+    },
+    {
+      "name": "mypy-extensions",
+      "properties": [
+        {
+          "name": "cre-foundry:inventory-source",
+          "value": "uv.lock"
+        }
+      ],
+      "purl": "pkg:pypi/mypy-extensions@1.1.0",
+      "type": "library",
+      "version": "1.1.0"
+    },
+    {
+      "name": "numpy",
+      "properties": [
+        {
+          "name": "cre-foundry:inventory-source",
+          "value": "uv.lock"
+        }
+      ],
+      "purl": "pkg:pypi/numpy@2.5.1",
+      "type": "library",
+      "version": "2.5.1"
+    },
+    {
+      "name": "oauthlib",
+      "properties": [
+        {
+          "name": "cre-foundry:inventory-source",
+          "value": "uv.lock"
+        }
+      ],
+      "purl": "pkg:pypi/oauthlib@3.3.1",
+      "type": "library",
+      "version": "3.3.1"
+    },
+    {
+      "name": "opentelemetry-api",
+      "properties": [
+        {
+          "name": "cre-foundry:inventory-source",
+          "value": "uv.lock"
+        }
+      ],
+      "purl": "pkg:pypi/opentelemetry-api@1.44.0",
+      "type": "library",
+      "version": "1.44.0"
+    },
+    {
+      "name": "orjson",
+      "properties": [
+        {
+          "name": "cre-foundry:inventory-source",
+          "value": "uv.lock"
+        }
+      ],
+      "purl": "pkg:pypi/orjson@3.11.9",
+      "type": "library",
+      "version": "3.11.9"
+    },
+    {
+      "name": "packageurl-python",
+      "properties": [
+        {
+          "name": "cre-foundry:inventory-source",
+          "value": "uv.lock"
+        }
+      ],
+      "purl": "pkg:pypi/packageurl-python@0.17.6",
+      "type": "library",
+      "version": "0.17.6"
+    },
+    {
+      "name": "packaging",
+      "properties": [
+        {
+          "name": "cre-foundry:inventory-source",
+          "value": "uv.lock"
+        }
+      ],
+      "purl": "pkg:pypi/packaging@26.2",
+      "type": "library",
+      "version": "26.2"
+    },
+    {
+      "name": "pathspec",
+      "properties": [
+        {
+          "name": "cre-foundry:inventory-source",
+          "value": "uv.lock"
+        }
+      ],
+      "purl": "pkg:pypi/pathspec@1.1.1",
+      "type": "library",
+      "version": "1.1.1"
+    },
+    {
+      "name": "pendulum",
+      "properties": [
+        {
+          "name": "cre-foundry:inventory-source",
+          "value": "uv.lock"
+        }
+      ],
+      "purl": "pkg:pypi/pendulum@3.2.0",
+      "type": "library",
+      "version": "3.2.0"
+    },
+    {
+      "name": "pip",
+      "properties": [
+        {
+          "name": "cre-foundry:inventory-source",
+          "value": "uv.lock"
+        }
+      ],
+      "purl": "pkg:pypi/pip@26.1.2",
+      "type": "library",
+      "version": "26.1.2"
+    },
+    {
+      "name": "pip-api",
+      "properties": [
+        {
+          "name": "cre-foundry:inventory-source",
+          "value": "uv.lock"
+        }
+      ],
+      "purl": "pkg:pypi/pip-api@0.0.34",
+      "type": "library",
+      "version": "0.0.34"
+    },
+    {
+      "name": "pip-audit",
+      "properties": [
+        {
+          "name": "cre-foundry:inventory-source",
+          "value": "uv.lock"
+        }
+      ],
+      "purl": "pkg:pypi/pip-audit@2.10.1",
+      "type": "library",
+      "version": "2.10.1"
+    },
+    {
+      "name": "pip-licenses",
+      "properties": [
+        {
+          "name": "cre-foundry:inventory-source",
+          "value": "uv.lock"
+        }
+      ],
+      "purl": "pkg:pypi/pip-licenses@5.5.5",
+      "type": "library",
+      "version": "5.5.5"
+    },
+    {
+      "name": "pip-requirements-parser",
+      "properties": [
+        {
+          "name": "cre-foundry:inventory-source",
+          "value": "uv.lock"
+        }
+      ],
+      "purl": "pkg:pypi/pip-requirements-parser@32.0.1",
+      "type": "library",
+      "version": "32.0.1"
+    },
+    {
+      "name": "platformdirs",
+      "properties": [
+        {
+          "name": "cre-foundry:inventory-source",
+          "value": "uv.lock"
+        }
+      ],
+      "purl": "pkg:pypi/platformdirs@4.11.0",
+      "type": "library",
+      "version": "4.11.0"
+    },
+    {
+      "name": "pluggy",
+      "properties": [
+        {
+          "name": "cre-foundry:inventory-source",
+          "value": "uv.lock"
+        }
+      ],
+      "purl": "pkg:pypi/pluggy@1.6.0",
+      "type": "library",
+      "version": "1.6.0"
+    },
+    {
+      "name": "polars",
+      "properties": [
+        {
+          "name": "cre-foundry:inventory-source",
+          "value": "uv.lock"
+        }
+      ],
+      "purl": "pkg:pypi/polars@1.43.0",
+      "type": "library",
+      "version": "1.43.0"
+    },
+    {
+      "name": "polars-runtime-32",
+      "properties": [
+        {
+          "name": "cre-foundry:inventory-source",
+          "value": "uv.lock"
+        }
+      ],
+      "purl": "pkg:pypi/polars-runtime-32@1.43.0",
+      "type": "library",
+      "version": "1.43.0"
+    },
+    {
+      "name": "prefect",
+      "properties": [
+        {
+          "name": "cre-foundry:inventory-source",
+          "value": "uv.lock"
+        }
+      ],
+      "purl": "pkg:pypi/prefect@3.8.0",
+      "type": "library",
+      "version": "3.8.0"
+    },
+    {
+      "name": "prettytable",
+      "properties": [
+        {
+          "name": "cre-foundry:inventory-source",
+          "value": "uv.lock"
+        }
+      ],
+      "purl": "pkg:pypi/prettytable@3.18.0",
+      "type": "library",
+      "version": "3.18.0"
+    },
+    {
+      "name": "prometheus-client",
+      "properties": [
+        {
+          "name": "cre-foundry:inventory-source",
+          "value": "uv.lock"
+        }
+      ],
+      "purl": "pkg:pypi/prometheus-client@0.26.0",
+      "type": "library",
+      "version": "0.26.0"
+    },
+    {
+      "name": "py-key-value-aio",
+      "properties": [
+        {
+          "name": "cre-foundry:inventory-source",
+          "value": "uv.lock"
+        }
+      ],
+      "purl": "pkg:pypi/py-key-value-aio@0.4.5",
+      "type": "library",
+      "version": "0.4.5"
+    },
+    {
+      "name": "py-serializable",
+      "properties": [
+        {
+          "name": "cre-foundry:inventory-source",
+          "value": "uv.lock"
+        }
+      ],
+      "purl": "pkg:pypi/py-serializable@2.1.0",
+      "type": "library",
+      "version": "2.1.0"
+    },
+    {
+      "name": "pycparser",
+      "properties": [
+        {
+          "name": "cre-foundry:inventory-source",
+          "value": "uv.lock"
+        }
+      ],
+      "purl": "pkg:pypi/pycparser@3.0",
+      "type": "library",
+      "version": "3.0"
+    },
+    {
+      "name": "pydantic",
+      "properties": [
+        {
+          "name": "cre-foundry:inventory-source",
+          "value": "uv.lock"
+        }
+      ],
+      "purl": "pkg:pypi/pydantic@2.13.4",
+      "type": "library",
+      "version": "2.13.4"
+    },
+    {
+      "name": "pydantic-core",
+      "properties": [
+        {
+          "name": "cre-foundry:inventory-source",
+          "value": "uv.lock"
+        }
+      ],
+      "purl": "pkg:pypi/pydantic-core@2.46.4",
+      "type": "library",
+      "version": "2.46.4"
+    },
+    {
+      "name": "pydantic-extra-types",
+      "properties": [
+        {
+          "name": "cre-foundry:inventory-source",
+          "value": "uv.lock"
+        }
+      ],
+      "purl": "pkg:pypi/pydantic-extra-types@2.11.1",
+      "type": "library",
+      "version": "2.11.1"
+    },
+    {
+      "name": "pydantic-settings",
+      "properties": [
+        {
+          "name": "cre-foundry:inventory-source",
+          "value": "uv.lock"
+        }
+      ],
+      "purl": "pkg:pypi/pydantic-settings@2.14.2",
+      "type": "library",
+      "version": "2.14.2"
+    },
+    {
+      "name": "pydocket",
+      "properties": [
+        {
+          "name": "cre-foundry:inventory-source",
+          "value": "uv.lock"
+        }
+      ],
+      "purl": "pkg:pypi/pydocket@0.23.1",
+      "type": "library",
+      "version": "0.23.1"
+    },
+    {
+      "name": "pygments",
+      "properties": [
+        {
+          "name": "cre-foundry:inventory-source",
+          "value": "uv.lock"
+        }
+      ],
+      "purl": "pkg:pypi/pygments@2.20.0",
+      "type": "library",
+      "version": "2.20.0"
+    },
+    {
+      "name": "pyparsing",
+      "properties": [
+        {
+          "name": "cre-foundry:inventory-source",
+          "value": "uv.lock"
+        }
+      ],
+      "purl": "pkg:pypi/pyparsing@3.3.2",
+      "type": "library",
+      "version": "3.3.2"
+    },
+    {
+      "name": "pytest",
+      "properties": [
+        {
+          "name": "cre-foundry:inventory-source",
+          "value": "uv.lock"
+        }
+      ],
+      "purl": "pkg:pypi/pytest@9.1.1",
+      "type": "library",
+      "version": "9.1.1"
+    },
+    {
+      "name": "pytest-asyncio",
+      "properties": [
+        {
+          "name": "cre-foundry:inventory-source",
+          "value": "uv.lock"
+        }
+      ],
+      "purl": "pkg:pypi/pytest-asyncio@1.4.0",
+      "type": "library",
+      "version": "1.4.0"
+    },
+    {
+      "name": "pytest-cov",
+      "properties": [
+        {
+          "name": "cre-foundry:inventory-source",
+          "value": "uv.lock"
+        }
+      ],
+      "purl": "pkg:pypi/pytest-cov@7.1.0",
+      "type": "library",
+      "version": "7.1.0"
+    },
+    {
+      "name": "python-dateutil",
+      "properties": [
+        {
+          "name": "cre-foundry:inventory-source",
+          "value": "uv.lock"
+        }
+      ],
+      "purl": "pkg:pypi/python-dateutil@2.9.0.post0",
+      "type": "library",
+      "version": "2.9.0.post0"
+    },
+    {
+      "name": "python-dotenv",
+      "properties": [
+        {
+          "name": "cre-foundry:inventory-source",
+          "value": "uv.lock"
+        }
+      ],
+      "purl": "pkg:pypi/python-dotenv@1.2.2",
+      "type": "library",
+      "version": "1.2.2"
+    },
+    {
+      "name": "python-json-logger",
+      "properties": [
+        {
+          "name": "cre-foundry:inventory-source",
+          "value": "uv.lock"
+        }
+      ],
+      "purl": "pkg:pypi/python-json-logger@4.1.0",
+      "type": "library",
+      "version": "4.1.0"
+    },
+    {
+      "name": "python-slugify",
+      "properties": [
+        {
+          "name": "cre-foundry:inventory-source",
+          "value": "uv.lock"
+        }
+      ],
+      "purl": "pkg:pypi/python-slugify@8.0.4",
+      "type": "library",
+      "version": "8.0.4"
+    },
+    {
+      "name": "pytz",
+      "properties": [
+        {
+          "name": "cre-foundry:inventory-source",
+          "value": "uv.lock"
+        }
+      ],
+      "purl": "pkg:pypi/pytz@2026.3.post1",
+      "type": "library",
+      "version": "2026.3.post1"
+    },
+    {
+      "name": "pywin32",
+      "properties": [
+        {
+          "name": "cre-foundry:inventory-source",
+          "value": "uv.lock"
+        }
+      ],
+      "purl": "pkg:pypi/pywin32@312",
+      "type": "library",
+      "version": "312"
+    },
+    {
+      "name": "pywin32-ctypes",
+      "properties": [
+        {
+          "name": "cre-foundry:inventory-source",
+          "value": "uv.lock"
+        }
+      ],
+      "purl": "pkg:pypi/pywin32-ctypes@0.2.3",
+      "type": "library",
+      "version": "0.2.3"
+    },
+    {
+      "name": "pyyaml",
+      "properties": [
+        {
+          "name": "cre-foundry:inventory-source",
+          "value": "uv.lock"
+        }
+      ],
+      "purl": "pkg:pypi/pyyaml@6.0.3",
+      "type": "library",
+      "version": "6.0.3"
+    },
+    {
+      "name": "rapidfuzz",
+      "properties": [
+        {
+          "name": "cre-foundry:inventory-source",
+          "value": "uv.lock"
+        }
+      ],
+      "purl": "pkg:pypi/rapidfuzz@3.14.5",
+      "type": "library",
+      "version": "3.14.5"
+    },
+    {
+      "name": "readchar",
+      "properties": [
+        {
+          "name": "cre-foundry:inventory-source",
+          "value": "uv.lock"
+        }
+      ],
+      "purl": "pkg:pypi/readchar@4.2.2",
+      "type": "library",
+      "version": "4.2.2"
+    },
+    {
+      "name": "redis",
+      "properties": [
+        {
+          "name": "cre-foundry:inventory-source",
+          "value": "uv.lock"
+        }
+      ],
+      "purl": "pkg:pypi/redis@8.0.1",
+      "type": "library",
+      "version": "8.0.1"
+    },
+    {
+      "name": "referencing",
+      "properties": [
+        {
+          "name": "cre-foundry:inventory-source",
+          "value": "uv.lock"
+        }
+      ],
+      "purl": "pkg:pypi/referencing@0.37.0",
+      "type": "library",
+      "version": "0.37.0"
+    },
+    {
+      "name": "regex",
+      "properties": [
+        {
+          "name": "cre-foundry:inventory-source",
+          "value": "uv.lock"
+        }
+      ],
+      "purl": "pkg:pypi/regex@2026.7.19",
+      "type": "library",
+      "version": "2026.7.19"
+    },
+    {
+      "name": "requests",
+      "properties": [
+        {
+          "name": "cre-foundry:inventory-source",
+          "value": "uv.lock"
+        }
+      ],
+      "purl": "pkg:pypi/requests@2.34.2",
+      "type": "library",
+      "version": "2.34.2"
+    },
+    {
+      "name": "requests-oauthlib",
+      "properties": [
+        {
+          "name": "cre-foundry:inventory-source",
+          "value": "uv.lock"
+        }
+      ],
+      "purl": "pkg:pypi/requests-oauthlib@2.0.0",
+      "type": "library",
+      "version": "2.0.0"
+    },
+    {
+      "name": "rfc3339-validator",
+      "properties": [
+        {
+          "name": "cre-foundry:inventory-source",
+          "value": "uv.lock"
+        }
+      ],
+      "purl": "pkg:pypi/rfc3339-validator@0.1.4",
+      "type": "library",
+      "version": "0.1.4"
+    },
+    {
+      "name": "rich",
+      "properties": [
+        {
+          "name": "cre-foundry:inventory-source",
+          "value": "uv.lock"
+        }
+      ],
+      "purl": "pkg:pypi/rich@15.0.0",
+      "type": "library",
+      "version": "15.0.0"
+    },
+    {
+      "name": "rich-rst",
+      "properties": [
+        {
+          "name": "cre-foundry:inventory-source",
+          "value": "uv.lock"
+        }
+      ],
+      "purl": "pkg:pypi/rich-rst@2.1.0",
+      "type": "library",
+      "version": "2.1.0"
+    },
+    {
+      "name": "rpds-py",
+      "properties": [
+        {
+          "name": "cre-foundry:inventory-source",
+          "value": "uv.lock"
+        }
+      ],
+      "purl": "pkg:pypi/rpds-py@2026.6.3",
+      "type": "library",
+      "version": "2026.6.3"
+    },
+    {
+      "name": "ruamel-yaml",
+      "properties": [
+        {
+          "name": "cre-foundry:inventory-source",
+          "value": "uv.lock"
+        }
+      ],
+      "purl": "pkg:pypi/ruamel-yaml@0.19.1",
+      "type": "library",
+      "version": "0.19.1"
+    },
+    {
+      "name": "ruamel-yaml-clib",
+      "properties": [
+        {
+          "name": "cre-foundry:inventory-source",
+          "value": "uv.lock"
+        }
+      ],
+      "purl": "pkg:pypi/ruamel-yaml-clib@0.2.15",
+      "type": "library",
+      "version": "0.2.15"
+    },
+    {
+      "name": "ruff",
+      "properties": [
+        {
+          "name": "cre-foundry:inventory-source",
+          "value": "uv.lock"
+        }
+      ],
+      "purl": "pkg:pypi/ruff@0.16.0",
+      "type": "library",
+      "version": "0.16.0"
+    },
+    {
+      "name": "secretstorage",
+      "properties": [
+        {
+          "name": "cre-foundry:inventory-source",
+          "value": "uv.lock"
+        }
+      ],
+      "purl": "pkg:pypi/secretstorage@3.5.0",
+      "type": "library",
+      "version": "3.5.0"
+    },
+    {
+      "name": "semver",
+      "properties": [
+        {
+          "name": "cre-foundry:inventory-source",
+          "value": "uv.lock"
+        }
+      ],
+      "purl": "pkg:pypi/semver@3.0.4",
+      "type": "library",
+      "version": "3.0.4"
+    },
+    {
+      "name": "shapely",
+      "properties": [
+        {
+          "name": "cre-foundry:inventory-source",
+          "value": "uv.lock"
+        }
+      ],
+      "purl": "pkg:pypi/shapely@2.1.2",
+      "type": "library",
+      "version": "2.1.2"
+    },
+    {
+      "name": "shellingham",
+      "properties": [
+        {
+          "name": "cre-foundry:inventory-source",
+          "value": "uv.lock"
+        }
+      ],
+      "purl": "pkg:pypi/shellingham@1.5.4",
+      "type": "library",
+      "version": "1.5.4"
+    },
+    {
+      "name": "six",
+      "properties": [
+        {
+          "name": "cre-foundry:inventory-source",
+          "value": "uv.lock"
+        }
+      ],
+      "purl": "pkg:pypi/six@1.17.0",
+      "type": "library",
+      "version": "1.17.0"
+    },
+    {
+      "name": "sniffio",
+      "properties": [
+        {
+          "name": "cre-foundry:inventory-source",
+          "value": "uv.lock"
+        }
+      ],
+      "purl": "pkg:pypi/sniffio@1.3.1",
+      "type": "library",
+      "version": "1.3.1"
+    },
+    {
+      "name": "sortedcontainers",
+      "properties": [
+        {
+          "name": "cre-foundry:inventory-source",
+          "value": "uv.lock"
+        }
+      ],
+      "purl": "pkg:pypi/sortedcontainers@2.4.0",
+      "type": "library",
+      "version": "2.4.0"
+    },
+    {
+      "name": "sqlalchemy",
+      "properties": [
+        {
+          "name": "cre-foundry:inventory-source",
+          "value": "uv.lock"
+        }
+      ],
+      "purl": "pkg:pypi/sqlalchemy@2.0.51",
+      "type": "library",
+      "version": "2.0.51"
+    },
+    {
+      "name": "starlette",
+      "properties": [
+        {
+          "name": "cre-foundry:inventory-source",
+          "value": "uv.lock"
+        }
+      ],
+      "purl": "pkg:pypi/starlette@1.3.1",
+      "type": "library",
+      "version": "1.3.1"
+    },
+    {
+      "name": "stevedore",
+      "properties": [
+        {
+          "name": "cre-foundry:inventory-source",
+          "value": "uv.lock"
+        }
+      ],
+      "purl": "pkg:pypi/stevedore@5.9.0",
+      "type": "library",
+      "version": "5.9.0"
+    },
+    {
+      "name": "structlog",
+      "properties": [
+        {
+          "name": "cre-foundry:inventory-source",
+          "value": "uv.lock"
+        }
+      ],
+      "purl": "pkg:pypi/structlog@26.1.0",
+      "type": "library",
+      "version": "26.1.0"
+    },
+    {
+      "name": "tenacity",
+      "properties": [
+        {
+          "name": "cre-foundry:inventory-source",
+          "value": "uv.lock"
+        }
+      ],
+      "purl": "pkg:pypi/tenacity@9.1.4",
+      "type": "library",
+      "version": "9.1.4"
+    },
+    {
+      "name": "text-unidecode",
+      "properties": [
+        {
+          "name": "cre-foundry:inventory-source",
+          "value": "uv.lock"
+        }
+      ],
+      "purl": "pkg:pypi/text-unidecode@1.3",
+      "type": "library",
+      "version": "1.3"
+    },
+    {
+      "name": "toml",
+      "properties": [
+        {
+          "name": "cre-foundry:inventory-source",
+          "value": "uv.lock"
+        }
+      ],
+      "purl": "pkg:pypi/toml@0.10.2",
+      "type": "library",
+      "version": "0.10.2"
+    },
+    {
+      "name": "tomli",
+      "properties": [
+        {
+          "name": "cre-foundry:inventory-source",
+          "value": "uv.lock"
+        }
+      ],
+      "purl": "pkg:pypi/tomli@2.4.1",
+      "type": "library",
+      "version": "2.4.1"
+    },
+    {
+      "name": "tomli-w",
+      "properties": [
+        {
+          "name": "cre-foundry:inventory-source",
+          "value": "uv.lock"
+        }
+      ],
+      "purl": "pkg:pypi/tomli-w@1.2.0",
+      "type": "library",
+      "version": "1.2.0"
+    },
+    {
+      "name": "typer",
+      "properties": [
+        {
+          "name": "cre-foundry:inventory-source",
+          "value": "uv.lock"
+        }
+      ],
+      "purl": "pkg:pypi/typer@0.27.0",
+      "type": "library",
+      "version": "0.27.0"
+    },
+    {
+      "name": "types-pyyaml",
+      "properties": [
+        {
+          "name": "cre-foundry:inventory-source",
+          "value": "uv.lock"
+        }
+      ],
+      "purl": "pkg:pypi/types-pyyaml@6.0.12.20260724",
+      "type": "library",
+      "version": "6.0.12.20260724"
+    },
+    {
+      "name": "typing-extensions",
+      "properties": [
+        {
+          "name": "cre-foundry:inventory-source",
+          "value": "uv.lock"
+        }
+      ],
+      "purl": "pkg:pypi/typing-extensions@4.16.0",
+      "type": "library",
+      "version": "4.16.0"
+    },
+    {
+      "name": "typing-inspection",
+      "properties": [
+        {
+          "name": "cre-foundry:inventory-source",
+          "value": "uv.lock"
+        }
+      ],
+      "purl": "pkg:pypi/typing-inspection@0.4.2",
+      "type": "library",
+      "version": "0.4.2"
+    },
+    {
+      "name": "tzdata",
+      "properties": [
+        {
+          "name": "cre-foundry:inventory-source",
+          "value": "uv.lock"
+        }
+      ],
+      "purl": "pkg:pypi/tzdata@2026.3",
+      "type": "library",
+      "version": "2026.3"
+    },
+    {
+      "name": "tzlocal",
+      "properties": [
+        {
+          "name": "cre-foundry:inventory-source",
+          "value": "uv.lock"
+        }
+      ],
+      "purl": "pkg:pypi/tzlocal@5.4.4",
+      "type": "library",
+      "version": "5.4.4"
+    },
+    {
+      "name": "uncalled-for",
+      "properties": [
+        {
+          "name": "cre-foundry:inventory-source",
+          "value": "uv.lock"
+        }
+      ],
+      "purl": "pkg:pypi/uncalled-for@0.3.2",
+      "type": "library",
+      "version": "0.3.2"
+    },
+    {
+      "name": "urllib3",
+      "properties": [
+        {
+          "name": "cre-foundry:inventory-source",
+          "value": "uv.lock"
+        }
+      ],
+      "purl": "pkg:pypi/urllib3@2.7.0",
+      "type": "library",
+      "version": "2.7.0"
+    },
+    {
+      "name": "uvicorn",
+      "properties": [
+        {
+          "name": "cre-foundry:inventory-source",
+          "value": "uv.lock"
+        }
+      ],
+      "purl": "pkg:pypi/uvicorn@0.51.0",
+      "type": "library",
+      "version": "0.51.0"
+    },
+    {
+      "name": "wcwidth",
+      "properties": [
+        {
+          "name": "cre-foundry:inventory-source",
+          "value": "uv.lock"
+        }
+      ],
+      "purl": "pkg:pypi/wcwidth@0.8.2",
+      "type": "library",
+      "version": "0.8.2"
+    },
+    {
+      "name": "websockets",
+      "properties": [
+        {
+          "name": "cre-foundry:inventory-source",
+          "value": "uv.lock"
+        }
+      ],
+      "purl": "pkg:pypi/websockets@16.1.1",
+      "type": "library",
+      "version": "16.1.1"
+    }
+  ],
+  "metadata": {
+    "component": {
+      "name": "cre-foundry",
+      "purl": "pkg:pypi/cre-foundry@0.1.0",
+      "type": "application",
+      "version": "0.1.0"
+    },
+    "properties": [
+      {
+        "name": "cre-foundry:lockfile-sha256",
+        "value": "d0ba3203d1228ce8e3fe33469bd979999146e1c3fe92728b0baa48bba3248c3d"
+      },
+      {
+        "name": "cre-foundry:schema-validation",
+        "value": "pending-independent-cyclonedx-validator"
+      }
+    ]
+  },
+  "serialNumber": "urn:uuid:30bea78e-82b0-5ccc-b7f3-8bb8833e2c4b",
+  "specVersion": "1.7",
+  "version": 1
+}

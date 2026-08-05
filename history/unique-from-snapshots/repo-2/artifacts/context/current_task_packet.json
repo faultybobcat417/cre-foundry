@@ -1,0 +1,163 @@
+{
+  "task_id": "IDENTITY-001",
+  "files": [
+    {
+      "path": "bootstrap/project_os_v2.2/CRE_Codex_Project_OS_v2.2/launch_kernel/kernel/MISSION.md",
+      "sha256": "5f2e73cc2de031fd23159fd5a3e326582e52e0d0e05bb4e3183b416b38baffbd"
+    },
+    {
+      "path": "bootstrap/project_os_v2.2/CRE_Codex_Project_OS_v2.2/launch_kernel/kernel/INVARIANTS.json",
+      "sha256": "0c80a1f00e5fa29041020d001da18123e28b4caa9eddb2b8f6c5dbc2868e8e45"
+    },
+    {
+      "path": "bootstrap/project_os_v2.2/CRE_Codex_Project_OS_v2.2/launch_kernel/kernel/PROOF_POLICY.md",
+      "sha256": "71bee62e05f7d4993d2b31098eedda807b560ecfb844ee7f5e27f339767c85a2"
+    },
+    {
+      "path": "bootstrap/project_os_v2.2/CRE_Codex_Project_OS_v2.2/launch_kernel/kernel/CAPABILITY_BOUNDARY.md",
+      "sha256": "51b61211e3320d1789837d85cd093b991408f6f474537ede04c0ca935b63baed"
+    },
+    {
+      "path": "bootstrap/project_os_v2.2/CRE_Codex_Project_OS_v2.2/launch_kernel/kernel/CAPABILITY_BOUNDARY.json",
+      "sha256": "08e5828cd0c7bc9859291285e668586c51e4a03c6c17dc5920110c884ff5277f"
+    },
+    {
+      "path": "bootstrap/project_os_v2.2/CRE_Codex_Project_OS_v2.2/launch_kernel/kernel/MATH_MODELING_CONSTITUTION.md",
+      "sha256": "3fef6d13fd41c9e1f5443581a656a0fcf8d24657729b104e1fe1db90914b5c42"
+    },
+    {
+      "path": "bootstrap/project_os_v2.2/CRE_Codex_Project_OS_v2.2/launch_kernel/schemas/task_result.schema.json",
+      "sha256": "7f03c69ac87a4073225d249d158a016b368cfce46cf90011cda445e923c047cb"
+    },
+    {
+      "path": "bootstrap/project_os_v2.2/CRE_Codex_Project_OS_v2.2/launch_kernel/control/WORKFLOW.md",
+      "sha256": "e23bb1a293857e79168a59176cae305378399a0cd6edf38949117f135a2c8e98"
+    },
+    {
+      "path": "control/CURRENT_STATE.json",
+      "sha256": "50cf3c0789cd301eaecce335d9ae7bb453020528e1eee2371be87bc1b527128b"
+    },
+    {
+      "path": "control/CURRENT_TASK.json",
+      "sha256": "5eb19d8096af20f8f656a978170c68c1d56d842e51b11a00a2a62e27cf251506"
+    },
+    {
+      "path": "control/TASK_GRAPH.json",
+      "sha256": "c778dbdb82d10d43b56edba4dc6ff0d9ae4c2ecdc2655a18dab48e8d3753964b"
+    },
+    {
+      "path": "control/GATES.json",
+      "sha256": "b3fb0832582c471652116872ef2ab2ef73e5a7f0574c2c86209f7146e2ef96ea"
+    },
+    {
+      "path": "control/AUTONOMOUS_FRONTIER_CONTRACT.json",
+      "sha256": "e00a0dc3358a06a1b559a849546f697fe04c2bb35c3a6914dee93852ac160900"
+    },
+    {
+      "path": "scripts/evaluate_autonomous_frontier.py",
+      "sha256": "e3e07ffc2f4019940a5caf093ad7921c93ee0286e34b2c60f7f4081acea9a6db"
+    },
+    {
+      "path": "tasks/IDENTITY-001.json",
+      "sha256": "7feaa4dc3d3d8b892ec74f56d2735a3934789b92b3b3b7b4a5cd60203a0538a9"
+    },
+    {
+      "path": "artifacts/task-results/CONTRACT-001.json",
+      "sha256": "32d3c8f843a23f609c1a52d202767d887ded9bc55c1acb4be620f6726a59054a"
+    },
+    {
+      "path": "artifacts/task-results/VERTICAL-001.json",
+      "sha256": "9a7a4ab3c1f9e5490c887da5c660c2e7f96d6abe5ab6f2d401f3b3629dbdc2b0"
+    },
+    {
+      "path": "artifacts/task-results/ARCHITECTURE-001.json",
+      "sha256": "e3abafc9fb221c6f54262fe5a3488d472918eac7d5848804fc64dd124a6c04a2"
+    },
+    {
+      "path": "artifacts/contracts/contract_spine.json",
+      "sha256": "d10d27041d7cee071514c5995af0879d354c5f34177004603ac1379b3dae4dc9"
+    },
+    {
+      "path": "artifacts/contracts/public_evaluator_contract.json",
+      "sha256": "e2f0cadfd5613ad490a98973dd51694c13aa3d1e905160ae6d7d1f0cee98082a"
+    },
+    {
+      "path": "docs/contracts/THIN_SLICE_CONTRACT.md",
+      "sha256": "25b57b2839f48e2269d6254137835a6937d465ed5de159298c754ce7d44f3ad8"
+    },
+    {
+      "path": "contracts/synthetic_route_day.schema.json",
+      "sha256": "a04bc6e1fd6f70a984d61f4314bb07c81ef00a37e7fd1cb96705256d36ecff0f"
+    },
+    {
+      "path": "contracts/synthetic_field_event.schema.json",
+      "sha256": "9e00bdb5104f3d5ec7e87371ca59b5dc045b280308a470095cd34661ffe66913"
+    },
+    {
+      "path": "contracts/synthetic_f9_outcome.schema.json",
+      "sha256": "0d26f5f317f87c014b91f0f73e3a677d048f94fe8eeda1d49b332265813c854c"
+    },
+    {
+      "path": "contracts/thin_slice_observation.schema.json",
+      "sha256": "16b26b4ab05f138af9e886ce09709acfce434b5f5cd2942952d5cfe1e00d368f"
+    },
+    {
+      "path": "contracts/thin_slice_candidate.schema.json",
+      "sha256": "2321437dbee53e2a04bfd1121682447cdfb947828d7ba4fa4e6e12f761aa2e15"
+    },
+    {
+      "path": "contracts/math_decision_policy.schema.json",
+      "sha256": "3942db4a53405c57c8cf7edfcbcda26262b6457de80f55ca4620278ec0ae04fd"
+    },
+    {
+      "path": "contracts/math_route_decision.schema.json",
+      "sha256": "b3929312d94633c5fdebb68f2df705c51bdb2868fa4941b97993e0fd6a1c0cb1"
+    },
+    {
+      "path": "src/cre_foundry/contracts/thin_slice.py",
+      "sha256": "ebd0e08ddcf099e1c8b92ac9b495784e191101fdeb7f057b0e47223c2d2608fa"
+    },
+    {
+      "path": "src/cre_foundry/vertical/shadow_slice.py",
+      "sha256": "07e05cfe5ae21f9a45211ce7f6b4a71adb8f4874c7bbd0ac59f641994a1da6f8"
+    },
+    {
+      "path": "src/cre_foundry/math/reference_oracle.py",
+      "sha256": "3308f1a99c8f9e0bb2b9284a94bde3ff9ac8657a45c8ce2e7e095c69674d44d0"
+    },
+    {
+      "path": "evals/public/contract_spine_evaluator.py",
+      "sha256": "306aaada1ee1ce0af40a8d2c845df5c04cc1fc107d42f66f3e1232d0d8184cda"
+    },
+    {
+      "path": "evals/public/vertical_slice_evaluator.py",
+      "sha256": "6023f3019b9a6089b7b986719749ae4da326a757d038813e70ebe450bc2b648a"
+    },
+    {
+      "path": "evals/public/math_oracle_evaluator.py",
+      "sha256": "5521bb4e224df013b5232bb8be7d41bf8f472b762087bd6b734829cea73f870e"
+    },
+    {
+      "path": "evals/known_bad/frontier/contract_brand_location_collapse.json",
+      "sha256": "086c26ab60b9ed5370ba90979ab72e0a5915d04eec1e29eee0933e23d4398a1b"
+    },
+    {
+      "path": "evals/known_bad/frontier/contract_protected_alias_omission.json",
+      "sha256": "a2eb4f7c22893a498285ab73d366e36715ec951a81a417b9c849ac32aafffb40"
+    },
+    {
+      "path": "evals/known_bad/frontier/contract_future_observation.json",
+      "sha256": "ec1ff84ce9925b6e64fa50badcc48a51dea72370c45f761362d6ed9b594317eb"
+    },
+    {
+      "path": "evals/known_bad/frontier/vertical_protected_stop.json",
+      "sha256": "4aace451dc008344c1597dd8672682ea299c83afb0a926f6ffc146e19476480d"
+    },
+    {
+      "path": "evals/known_bad/frontier/exact_ten_protected_fill.json",
+      "sha256": "838aec100587b78d0d2ca8ee78b44e7c7593c45b1466fd74b480ac987ae56be4"
+    }
+  ],
+  "characters": 412435,
+  "packet_sha256": "527d61ab08af5d5625d09b727431123edcc26ce2dc712bd976baaa326cf8e90a"
+}

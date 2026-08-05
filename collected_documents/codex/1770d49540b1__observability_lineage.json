@@ -1,0 +1,37 @@
+{
+  "artifact_id": "OBSERVABILITY-LINEAGE-001-PUBLIC-EVIDENCE",
+  "checks": {
+    "registered_fixtures_detected": true,
+    "registered_mutation_count": 2
+  },
+  "claim": "Synthetic complete-path lineage, correlation, replay identity, and sensitive-log mutation report only.",
+  "claim_ceiling": "Synthetic lineage, correlation, replay-identity, and sensitive-log control; no real trace, telemetry, or operational claim.",
+  "evaluator_id": "observability-lineage-public-v1",
+  "execution_scope": "SYNTHETIC_NON_INFLUENCING",
+  "mutation_results": [
+    {
+      "case_id": "missing-as-of",
+      "diagnostic": "LINEAGE-MISSING-ASOF",
+      "fixture": "evals/known_bad/frontier/lineage_missing_asof.json",
+      "fixture_sha256": "8e43bbcb313b2b7011ece12ef3c5b362e0dda343a2316f9d64c63c22e567e5a2",
+      "result": "DETECTED"
+    },
+    {
+      "case_id": "protected-detail-log",
+      "diagnostic": "LINEAGE-PROTECTED-DETAIL-LOG",
+      "fixture": "evals/known_bad/frontier/lineage_protected_log.json",
+      "fixture_sha256": "701bc129a08f31e8b801467dc1c0d38bfac09ab2eefda21981387ff5687d6979",
+      "result": "DETECTED"
+    }
+  ],
+  "proof_level": 4,
+  "result": "PASS",
+  "schema_version": "1.0.0",
+  "subject_hashes": {
+    "contracts/lineage_manifest.schema.json": "a6c9c49b065dd3e750b77cf7846900dc692f21e49ed708c1e60bb601ed4a789e",
+    "evals/known_bad/frontier/lineage_missing_asof.json": "8e43bbcb313b2b7011ece12ef3c5b362e0dda343a2316f9d64c63c22e567e5a2",
+    "evals/known_bad/frontier/lineage_protected_log.json": "701bc129a08f31e8b801467dc1c0d38bfac09ab2eefda21981387ff5687d6979",
+    "scripts/validate_observability_lineage.py": "d74660193693a1f6453d90eb4db8c38f331a5e629e152edc3e81c486a0684dbd"
+  },
+  "task_id": "OBSERVABILITY-LINEAGE-001"
+}

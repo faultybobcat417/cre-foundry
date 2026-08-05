@@ -1,0 +1,326 @@
+{
+  "registry_version": "cre-research-evidence-v2",
+  "as_of": "2026-07-31",
+  "items": [
+    {
+      "evidence_id": "R-001",
+      "title": "Toronto Development Pipeline",
+      "publisher": "City of Toronto",
+      "type": "official_dataset",
+      "url": "https://open.toronto.ca/dataset/development-pipeline/",
+      "finding": "Quarterly analytical pipeline combining planning and building-permit stages; address geocoding remains incomplete.",
+      "use": "development context and project clocks",
+      "status": "inspected"
+    },
+    {
+      "evidence_id": "R-002",
+      "title": "Toronto Active and Cleared Building Permits",
+      "publisher": "City of Toronto",
+      "type": "official_dataset",
+      "url": "https://open.toronto.ca/exploring-cleared-building-permits/",
+      "finding": "Permit history extends to 2000 and exposes application, issue and completion dates plus current/proposed use.",
+      "use": "event clocks, use change, fit-out and completion labels",
+      "status": "inspected"
+    },
+    {
+      "evidence_id": "R-003",
+      "title": "Brampton Building Permits FeatureServer",
+      "publisher": "City of Brampton",
+      "type": "official_api",
+      "url": "https://maps1.brampton.ca/arcgis/rest/services/BuildingPermit/Building_Permits/FeatureServer/0",
+      "finding": "Live point layer supports pagination, statistics, distinct values and advanced queries.",
+      "use": "permit and address primitives",
+      "status": "inspected"
+    },
+    {
+      "evidence_id": "R-004",
+      "title": "Mississauga Employment Survey and Business Directory",
+      "publisher": "City of Mississauga",
+      "type": "official_dataset",
+      "url": "https://web.mississauga.ca/services-and-programs/business/employment-survey/",
+      "finding": "Annual survey since 2001; public directory is consent-based and point-in-time, with business address, activity and employment range.",
+      "use": "candidate backbone and longitudinal employment proxies",
+      "status": "inspected"
+    },
+    {
+      "evidence_id": "R-005",
+      "title": "Mississauga Site Plan Applications",
+      "publisher": "City of Mississauga",
+      "type": "official_api",
+      "url": "https://ext.maps.mississauga.ca/Geocortex/Essentials/REST/sites/eMapsTest/map/mapservices/79",
+      "finding": "Public GIS service exposes site-plan application boundaries and attributes but warns older records may be missing or inconsistent.",
+      "use": "development and occupier displacement context",
+      "status": "inspected"
+    },
+    {
+      "evidence_id": "R-006",
+      "title": "Positive LMIA Employers",
+      "publisher": "Employment and Social Development Canada",
+      "type": "official_dataset",
+      "url": "https://open.canada.ca/data/en/dataset/90fed587-1364-4f33-a9ee-208181dc0b97",
+      "finding": "Quarterly employer, occupation and business-location history is available from 2014; lists are incomplete and approvals do not prove hires.",
+      "use": "labour-pressure precursor",
+      "status": "inspected"
+    },
+    {
+      "evidence_id": "R-007",
+      "title": "Canadian Importers Database",
+      "publisher": "Innovation, Science and Economic Development Canada",
+      "type": "official_database",
+      "url": "https://ised-isde.canada.ca/site/ised/en/research-and-business-intelligence/canadian-importers-database",
+      "finding": "Lists major importers by product, city and origin using 2023 customs data; includes brokers and only firms representing up to 80 percent of imports.",
+      "use": "trade-intensive establishment context",
+      "status": "inspected"
+    },
+    {
+      "evidence_id": "R-008",
+      "title": "CanadaBuys Contract History",
+      "publisher": "Public Services and Procurement Canada",
+      "type": "official_dataset",
+      "url": "https://open.canada.ca/data/en/dataset/4fe645a1-ffcd-40c1-9385-2c771be956a4",
+      "finding": "Federal contract history is downloadable from 2009 onward; OCDS pilot includes tenders, awards and history since 2012.",
+      "use": "award and capacity-pressure precursor",
+      "status": "inspected"
+    },
+    {
+      "evidence_id": "R-009",
+      "title": "Federal Grants and Contributions",
+      "publisher": "Government of Canada",
+      "type": "official_dataset",
+      "url": "https://search.open.canada.ca/grants/",
+      "finding": "Recipient, value, program, dates, description and location can expose funded expansion or equipment projects.",
+      "use": "capital investment precursor",
+      "status": "inspected"
+    },
+    {
+      "evidence_id": "R-010",
+      "title": "Ontario ECA and EASR Permissions",
+      "publisher": "Government of Ontario",
+      "type": "official_dataset",
+      "url": "https://data.ontario.ca/en/dataset/permissions-enterprise-platform-environmental-approvals-and-sector-registryeasr",
+      "finding": "Open permissions data includes business and facility location; applications and amendments can indicate new or upgraded regulated capacity.",
+      "use": "regulated-facility capacity precursor",
+      "status": "inspected"
+    },
+    {
+      "evidence_id": "R-011",
+      "title": "Federal Corporations",
+      "publisher": "Corporations Canada",
+      "type": "official_dataset",
+      "url": "https://open.canada.ca/data/en/dataset/0032ce54-c5dd-4b66-99a0-320a7b5e99f2",
+      "finding": "Active and inactive federal corporations are published as separate CSV resources with an API.",
+      "use": "legal-entity status and alias resolution",
+      "status": "inspected"
+    },
+    {
+      "evidence_id": "R-012",
+      "title": "Health Canada MDEL Listing",
+      "publisher": "Health Canada",
+      "type": "official_database",
+      "url": "https://health-products.canada.ca/mdel-leim/index-eng.jsp",
+      "finding": "Contains company ID, licence, company name, address, authorized activities and device classes.",
+      "use": "medical-device facility identity and change",
+      "status": "inspected"
+    },
+    {
+      "evidence_id": "R-013",
+      "title": "Natural Health Product Site Licence Holders",
+      "publisher": "Health Canada",
+      "type": "official_dataset",
+      "url": "https://www.canada.ca/en/health-canada/services/drugs-health-products/natural-non-prescription/applications-submissions/site-licensing/list-site-licence-holders.html",
+      "finding": "Daily-updated searchable CSV/PDF contains company, address, licence number and status.",
+      "use": "regulated-site identity and status change",
+      "status": "inspected"
+    },
+    {
+      "evidence_id": "R-014",
+      "title": "CFIA Food Export Registers and Lists",
+      "publisher": "Canadian Food Inspection Agency",
+      "type": "official_registry",
+      "url": "https://inspection.canada.ca/en/exporting-food-plants-animals/food-exports/registers-and-lists",
+      "finding": "Establishment and export-eligibility lists expose licensed food facilities and changes in operator, production or product eligibility.",
+      "use": "food-processing establishment and capacity changes",
+      "status": "inspected"
+    },
+    {
+      "evidence_id": "R-015",
+      "title": "Health Canada Cannabis Licence Holders",
+      "publisher": "Health Canada",
+      "type": "official_registry",
+      "url": "https://www.canada.ca/en/health-canada/services/drugs-medication/cannabis/industry-licensees-applicants/licensed-cultivators-processors-sellers.html",
+      "finding": "Lists cultivators, processors and sellers, licence classes and initial licence dates.",
+      "use": "specialized-facility identity and lifecycle",
+      "status": "inspected"
+    },
+    {
+      "evidence_id": "R-016",
+      "title": "Longitudinal Business Database Redesign",
+      "publisher": "NBER / US Census researchers",
+      "type": "research_paper",
+      "url": "https://www.nber.org/papers/w28839",
+      "finding": "Longitudinal business data require administrative curation, matching, retiming, vintage-consistent industry codes and cleaning.",
+      "use": "establishment identity and historical vintages",
+      "status": "inspected"
+    },
+    {
+      "evidence_id": "R-017",
+      "title": "Worker Flows and Establishment Turnover",
+      "publisher": "NBER",
+      "type": "research_paper",
+      "url": "https://www.nber.org/papers/w19730",
+      "finding": "Identifier births and deaths frequently reflect restructuring rather than true establishment entry or exit; independent continuity evidence materially improves classification.",
+      "use": "anti-false-entry identity rules",
+      "status": "inspected"
+    },
+    {
+      "evidence_id": "R-018",
+      "title": "Nowcasting Local Economy with Yelp",
+      "publisher": "NBER",
+      "type": "research_paper",
+      "url": "https://www.nber.org/papers/w24010",
+      "finding": "Contemporaneous online-platform changes can complement lagged government data at fine geography, but require validation against official establishment measures.",
+      "use": "alternative-data validation pattern",
+      "status": "inspected"
+    },
+    {
+      "evidence_id": "R-019",
+      "title": "New versus Relocating Firm Accessibility Preferences",
+      "publisher": "Papers in Regional Science",
+      "type": "research_paper",
+      "url": "https://doi.org/10.1111/pirs.12458",
+      "finding": "New and relocating establishments value accessibility differently by sector, supporting separate event and location-choice models.",
+      "use": "relocation mechanism design",
+      "status": "inspected"
+    },
+    {
+      "evidence_id": "R-020",
+      "title": "Policy Learning with Observational Data",
+      "publisher": "Athey and Wager",
+      "type": "research_paper",
+      "url": "https://arxiv.org/abs/1702.02896",
+      "finding": "Treatment policies can be optimized under constraints using doubly robust scores, but identification assumptions and observational selection remain decisive.",
+      "use": "later-stage policy learning",
+      "status": "inspected"
+    },
+    {
+      "evidence_id": "R-021",
+      "title": "Doubly Robust Policy Evaluation and Learning",
+      "publisher": "Dudik, Langford and Li",
+      "type": "research_paper",
+      "url": "https://arxiv.org/abs/1103.4601",
+      "finding": "Off-policy value estimation benefits from combining reward and logging-policy models; historical action propensities must be recorded.",
+      "use": "policy evaluation and exploration logging",
+      "status": "inspected"
+    },
+    {
+      "evidence_id": "R-022",
+      "title": "Multiconstraint Team Orienteering with Time Windows",
+      "publisher": "Transportation Science",
+      "type": "research_paper",
+      "url": "https://doi.org/10.1287/trsc.1110.0377",
+      "finding": "Profitable visit selection and sequencing can be solved jointly under route length, service time, time windows and additional constraints.",
+      "use": "route optimization formulation",
+      "status": "inspected"
+    },
+    {
+      "evidence_id": "R-023",
+      "title": "Dynamic Orienteering on Queues",
+      "publisher": "Transportation Science",
+      "type": "research_paper",
+      "url": "https://doi.org/10.1287/trsc.2017.0761",
+      "finding": "Stochastic wait and service times justify dynamic recourse rather than treating a route as fixed after issue.",
+      "use": "field-route recourse",
+      "status": "inspected"
+    },
+    {
+      "evidence_id": "R-024",
+      "title": "Robust Team Orienteering with Decreasing Profits",
+      "publisher": "INFORMS Journal on Computing",
+      "type": "research_paper",
+      "url": "https://doi.org/10.1287/ijoc.2022.1240",
+      "finding": "Robust routes can materially reduce deadline violations with modest expected-profit loss under service-time uncertainty.",
+      "use": "route uncertainty and slack",
+      "status": "inspected"
+    },
+    {
+      "evidence_id": "R-025",
+      "title": "Toronto Industrial Q2 2026",
+      "publisher": "CBRE",
+      "type": "industry_report",
+      "url": "https://www.cbre.com/insights/figures/toronto-industrial-figures-q2-2026",
+      "finding": "GTA availability held at 5.0 percent, absorption was positive and asking rents continued declining more slowly.",
+      "use": "market context only",
+      "status": "inspected"
+    },
+    {
+      "evidence_id": "R-026",
+      "title": "Toronto Industrial Q2 2026",
+      "publisher": "Colliers",
+      "type": "industry_report",
+      "url": "https://www.collierscanada.com/en-ca/news/colliers-q2-2026-national-snapshot-press-release",
+      "finding": "Colliers reported Toronto industrial vacancy at 2.2 percent and positive absorption; metric definitions differ from CBRE availability.",
+      "use": "market context only",
+      "status": "inspected"
+    },
+    {
+      "evidence_id": "R-027",
+      "title": "Toronto Employment Survey 2025/2026",
+      "publisher": "City of Toronto",
+      "type": "official_program",
+      "url": "https://www.toronto.ca/city-government/data-research-maps/research-reports/planning-development/toronto-employment-survey/",
+      "finding": "Annual establishment survey has operated since 1983, but establishment responses are confidential and public releases are aggregate; 2025 counted 74,560 establishments.",
+      "use": "aggregate sector/geographic context and denominator checks, not an open establishment-level candidate backbone",
+      "status": "inspected"
+    },
+    {
+      "evidence_id": "R-028",
+      "title": "Open Database of Businesses",
+      "publisher": "Statistics Canada",
+      "type": "official_dataset",
+      "url": "https://www150.statcan.gc.ca/n1/pub/21-26-0003/212600032023001-eng.htm",
+      "finding": "Version 1.0 contains about 450,000 harmonized records primarily collected May\u2013December 2022 and explicitly does not cover all Canadian businesses.",
+      "use": "entity seeds and coverage comparison only; not a current complete universe",
+      "status": "inspected"
+    },
+    {
+      "evidence_id": "R-029",
+      "title": "Job Postings Advertised on Canada's National Job Bank Website",
+      "publisher": "Employment and Social Development Canada",
+      "type": "official_dataset",
+      "url": "https://open.canada.ca/data/en/dataset/ea639e28-c0fc-48bf-b5dd-b8899bd43072",
+      "finding": "Monthly downloadable posting files include location, postal code, NAICS, occupation, first posting date and vacancy count.",
+      "use": "prospective hiring-pressure evidence after employer, duplicate, remote and staffing-agency controls",
+      "status": "inspected"
+    },
+    {
+      "evidence_id": "R-030",
+      "title": "Canadian Business Counts, December 2025",
+      "publisher": "Statistics Canada",
+      "type": "official_aggregate_dataset",
+      "url": "https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=3310109501",
+      "finding": "Semiannual location counts are available by industry and employment size, but Statistics Canada warns that methodological changes mean changes are not pure business-population time series.",
+      "use": "aggregate denominators and coverage diagnostics with methodological-change controls",
+      "status": "inspected"
+    },
+    {
+      "evidence_id": "R-031",
+      "title": "Ontario Business Registry",
+      "publisher": "Government of Ontario",
+      "type": "official_search_service",
+      "url": "https://www.ontario.ca/page/ontario-business-registry",
+      "finding": "Basic business information is publicly searchable, while detailed products are ordered individually for fees; no open bulk feed was verified.",
+      "use": "manual or targeted legal-entity verification, aliases and status",
+      "status": "inspected"
+    },
+    {
+      "evidence_id": "R-032",
+      "title": "OnLand Terms of Use",
+      "publisher": "Teranet / Government of Ontario service",
+      "type": "official_terms",
+      "url": "https://help.onland.ca/en/terms-of-service/",
+      "finding": "Standard access is record-by-record for prescribed fees, grants limited internal-use rights and restricts merging content with another system unless expressly permitted.",
+      "use": "manual specialized due diligence only unless a separate licence explicitly permits automated integration",
+      "status": "inspected"
+    }
+  ]
+}

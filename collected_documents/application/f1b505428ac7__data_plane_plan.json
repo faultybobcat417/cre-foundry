@@ -1,0 +1,176 @@
+{
+  "discovered_source_command_count": 27,
+  "discovered_source_commands": [
+    "acquire-brampton-business-directory",
+    "acquire-brampton-permits",
+    "acquire-odbus",
+    "audit-data-plane",
+    "build-brampton-business-directory-silver",
+    "build-brampton-cross-source-reconciliation",
+    "build-brampton-permit-directory-bridge",
+    "build-brampton-permit-entity-bridge",
+    "build-brampton-permit-opportunity-evidence",
+    "build-brampton-permit-silver",
+    "build-brampton-permit-verification-plan",
+    "build-odbus-entities",
+    "build-odbus-segments",
+    "build-odbus-silver",
+    "export-brampton-verification-review-packets",
+    "fetch-plantrak",
+    "initialize-brampton-verification-ledger",
+    "inspect-brampton-business-directory",
+    "inspect-brampton-permits",
+    "inspect-odbus-schema",
+    "inspect-plantrak",
+    "plan-data-plane",
+    "preflight-odbus",
+    "profile-odbus-values",
+    "project-brampton-verification-state",
+    "record-brampton-verification-event",
+    "run-data-plane"
+  ],
+  "generated_at": "2026-07-26T16:14:09.496652Z",
+  "include_acquisition": false,
+  "pipeline": "brampton_operational",
+  "plan_version": "cre-foundry-data-plane-plan-v1",
+  "policy": {
+    "automatic_conclusions": false,
+    "operating_mode": "shadow",
+    "opportunity_ranked": false,
+    "outreach_eligible": false,
+    "queue_priority_is_ranking": false
+  },
+  "stages": [
+    {
+      "command": null,
+      "enabled": false,
+      "kind": "transform",
+      "position": 1,
+      "required": false,
+      "resolution": "optional_static_binding_absent",
+      "skip_reason": "optional command unavailable",
+      "stage_id": "permit_rules"
+    },
+    {
+      "command": "acquire-brampton-permits",
+      "enabled": false,
+      "kind": "acquisition",
+      "position": 2,
+      "required": true,
+      "resolution": "exact_static_binding",
+      "skip_reason": "acquisition disabled",
+      "stage_id": "permits_bronze"
+    },
+    {
+      "command": "inspect-brampton-permits",
+      "enabled": true,
+      "kind": "validation",
+      "position": 3,
+      "required": true,
+      "resolution": "exact_static_binding",
+      "skip_reason": null,
+      "stage_id": "permit_lifecycle"
+    },
+    {
+      "command": "build-brampton-permit-silver",
+      "enabled": true,
+      "kind": "transform",
+      "position": 4,
+      "required": true,
+      "resolution": "exact_static_binding",
+      "skip_reason": null,
+      "stage_id": "permit_silver"
+    },
+    {
+      "command": "build-brampton-permit-entity-bridge",
+      "enabled": true,
+      "kind": "transform",
+      "position": 5,
+      "required": true,
+      "resolution": "exact_static_binding",
+      "skip_reason": null,
+      "stage_id": "permit_entity_bridge"
+    },
+    {
+      "command": "acquire-brampton-business-directory",
+      "enabled": false,
+      "kind": "acquisition",
+      "position": 6,
+      "required": true,
+      "resolution": "exact_static_binding",
+      "skip_reason": "acquisition disabled",
+      "stage_id": "business_directory_bronze"
+    },
+    {
+      "command": "build-brampton-business-directory-silver",
+      "enabled": true,
+      "kind": "transform",
+      "position": 7,
+      "required": true,
+      "resolution": "exact_static_binding",
+      "skip_reason": null,
+      "stage_id": "business_directory_silver"
+    },
+    {
+      "command": "build-brampton-permit-directory-bridge",
+      "enabled": true,
+      "kind": "transform",
+      "position": 8,
+      "required": true,
+      "resolution": "exact_static_binding",
+      "skip_reason": null,
+      "stage_id": "permit_directory_bridge"
+    },
+    {
+      "command": "build-brampton-cross-source-reconciliation",
+      "enabled": true,
+      "kind": "transform",
+      "position": 9,
+      "required": true,
+      "resolution": "exact_static_binding",
+      "skip_reason": null,
+      "stage_id": "cross_source_reconciliation"
+    },
+    {
+      "command": "build-brampton-permit-opportunity-evidence",
+      "enabled": true,
+      "kind": "transform",
+      "position": 10,
+      "required": true,
+      "resolution": "exact_static_binding",
+      "skip_reason": null,
+      "stage_id": "opportunity_evidence"
+    },
+    {
+      "command": "build-brampton-permit-verification-plan",
+      "enabled": true,
+      "kind": "transform",
+      "position": 11,
+      "required": true,
+      "resolution": "exact_static_binding",
+      "skip_reason": null,
+      "stage_id": "verification_plan"
+    },
+    {
+      "command": "initialize-brampton-verification-ledger",
+      "enabled": true,
+      "kind": "control",
+      "position": 12,
+      "required": false,
+      "resolution": "exact_static_binding",
+      "skip_reason": null,
+      "stage_id": "initialize_verification_ledger"
+    },
+    {
+      "command": "project-brampton-verification-state",
+      "enabled": true,
+      "kind": "control",
+      "position": 13,
+      "required": true,
+      "resolution": "exact_static_binding",
+      "skip_reason": null,
+      "stage_id": "project_verification_state"
+    }
+  ]
+}
+DATA-PLANE PLAN PASSED

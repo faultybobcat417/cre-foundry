@@ -1,0 +1,69 @@
+{
+  "access": "public",
+  "accessInformation": "City of Brampton",
+  "advancedSettings": null,
+  "apiToken1ExpirationDate": -1,
+  "apiToken2ExpirationDate": -1,
+  "appCategories": [],
+  "avgRating": 0,
+  "banner": null,
+  "categories": [],
+  "classification": null,
+  "commentsEnabled": true,
+  "created": 1590173577000,
+  "culture": "en-ca",
+  "description": "Ec.Dev. Business Development and Downtown Business Improvement Area layers.",
+  "documentation": null,
+  "extent": [
+    [
+      -79.8520128063858,
+      43.604057443942416
+    ],
+    [
+      -79.63439232339464,
+      43.83390899129131
+    ]
+  ],
+  "groupDesignations": null,
+  "guid": null,
+  "id": "9e0656bfa1174df08d99c1ef4c11759e",
+  "industries": [],
+  "languages": [],
+  "largeThumbnail": null,
+  "lastViewed": 1785013200000,
+  "licenseInfo": "For Internal Use Only, for testing purposes.",
+  "listed": false,
+  "modified": 1782484363000,
+  "name": "Economic_Development_UAT",
+  "numComments": 0,
+  "numRatings": 0,
+  "numViews": 541,
+  "orgId": "rl7ACuZkiFsmDA2g",
+  "owner": "BramptonMaps",
+  "ownerId": "fcfa4d9609ee9742e0316e35c17ad8d6",
+  "properties": null,
+  "proxyFilter": null,
+  "scoreCompleteness": 61,
+  "screenshots": [],
+  "size": 6979584,
+  "snippet": "Economic Development layers",
+  "spatialReference": "102100",
+  "subInfo": 0,
+  "tags": [
+    "Economic Development"
+  ],
+  "thumbnail": "thumbnail/thumbnail.png",
+  "title": "Economic_Development_UAT",
+  "type": "Feature Service",
+  "typeKeywords": [
+    "ArcGIS Server",
+    "Data",
+    "Feature Access",
+    "Feature Service",
+    "Metadata",
+    "Multilayer",
+    "Service",
+    "Hosted Service"
+  ],
+  "url": "https://services3.arcgis.com/rl7ACuZkiFsmDA2g/arcgis/rest/services/Economic_Development_UAT/FeatureServer"
+}

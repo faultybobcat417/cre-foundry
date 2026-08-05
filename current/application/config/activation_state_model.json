@@ -1,0 +1,181 @@
+{
+  "config_version": "cre-foundry-activation-state-model-v1",
+  "policy": {
+    "operating_mode": "shadow",
+    "exhaustive_state_enumeration_required": true,
+    "transition_monotonicity_required": true,
+    "prerequisite_integrity_required": true,
+    "minimal_cut_set_analysis_required": true,
+    "critical_rule_mutation_testing_required": true,
+    "chaos_rehearsal_required": true,
+    "current_state_reconciliation_required": true,
+    "deterministic_double_build_required": true,
+    "approval_invention_forbidden": true,
+    "client_value_invention_forbidden": true,
+    "database_access_enabled": false,
+    "database_write_enabled": false,
+    "snapshot_registration_enabled": false,
+    "automatic_acquisition_enabled": false,
+    "persistent_outcome_ledger_enabled": false,
+    "outcome_event_insertion_enabled": false,
+    "point_in_time_materialization_enabled": false,
+    "model_training_enabled": false,
+    "backtest_execution_enabled": false,
+    "pilot_execution_enabled": false,
+    "production_ranking_enabled": false,
+    "outreach_enabled": false
+  },
+  "exogenous_inputs": [
+    "source_review_complete",
+    "client_inputs_complete",
+    "outcome_template_current",
+    "separate_execution_authorization",
+    "schedule_and_acquisition_approval",
+    "change_contract_approved",
+    "separate_ledger_activation_authorization",
+    "pilot_actions_and_windows_complete",
+    "sufficient_history",
+    "held_out_calibration_window",
+    "client_pilot_authorization",
+    "transaction_economics_confirmed",
+    "monitoring_and_rollback_ready",
+    "production_audit_ready"
+  ],
+  "derived_order": [
+    "historical_registration_dry_run_ready",
+    "first_authoritative_snapshot_ready",
+    "repeated_snapshot_collection_ready",
+    "change_detection_ready",
+    "outcome_ledger_ephemeral_bootstrap_ready",
+    "persistent_outcome_ledger_ready",
+    "real_outcome_labels_ready",
+    "point_in_time_dataset_ready",
+    "baseline_model_training_ready",
+    "temporal_backtesting_ready",
+    "probability_calibration_ready",
+    "shadow_pilot_ready",
+    "controlled_pilot_ready",
+    "incremental_roi_proven",
+    "codex_contract_handoff_ready",
+    "production_governance_ready",
+    "production_ranking_ready",
+    "outreach_ready",
+    "codex_final_product_handoff_ready"
+  ],
+  "rules": {
+    "historical_registration_dry_run_ready": [
+      "source_review_complete"
+    ],
+    "first_authoritative_snapshot_ready": [
+      "historical_registration_dry_run_ready",
+      "separate_execution_authorization"
+    ],
+    "repeated_snapshot_collection_ready": [
+      "first_authoritative_snapshot_ready",
+      "schedule_and_acquisition_approval"
+    ],
+    "change_detection_ready": [
+      "repeated_snapshot_collection_ready",
+      "change_contract_approved"
+    ],
+    "outcome_ledger_ephemeral_bootstrap_ready": [
+      "client_inputs_complete",
+      "outcome_template_current"
+    ],
+    "persistent_outcome_ledger_ready": [
+      "outcome_ledger_ephemeral_bootstrap_ready",
+      "separate_ledger_activation_authorization"
+    ],
+    "real_outcome_labels_ready": [
+      "persistent_outcome_ledger_ready",
+      "pilot_actions_and_windows_complete"
+    ],
+    "point_in_time_dataset_ready": [
+      "repeated_snapshot_collection_ready",
+      "change_detection_ready",
+      "real_outcome_labels_ready"
+    ],
+    "baseline_model_training_ready": [
+      "point_in_time_dataset_ready"
+    ],
+    "temporal_backtesting_ready": [
+      "baseline_model_training_ready",
+      "sufficient_history"
+    ],
+    "probability_calibration_ready": [
+      "temporal_backtesting_ready",
+      "held_out_calibration_window"
+    ],
+    "shadow_pilot_ready": [
+      "probability_calibration_ready",
+      "client_inputs_complete"
+    ],
+    "controlled_pilot_ready": [
+      "shadow_pilot_ready",
+      "client_pilot_authorization"
+    ],
+    "incremental_roi_proven": [
+      "controlled_pilot_ready",
+      "transaction_economics_confirmed"
+    ],
+    "codex_contract_handoff_ready": [
+      "client_inputs_complete",
+      "outcome_template_current"
+    ],
+    "production_governance_ready": [
+      "incremental_roi_proven",
+      "monitoring_and_rollback_ready",
+      "production_audit_ready"
+    ],
+    "production_ranking_ready": [
+      "probability_calibration_ready",
+      "production_governance_ready"
+    ],
+    "outreach_ready": [
+      "controlled_pilot_ready",
+      "production_governance_ready"
+    ],
+    "codex_final_product_handoff_ready": [
+      "codex_contract_handoff_ready",
+      "incremental_roi_proven",
+      "production_governance_ready"
+    ]
+  },
+  "critical_mutations": [
+    {
+      "mutation_id": "remove_source_review_from_history",
+      "gate": "historical_registration_dry_run_ready",
+      "remove_prerequisite": "source_review_complete"
+    },
+    {
+      "mutation_id": "remove_template_from_outcome",
+      "gate": "outcome_ledger_ephemeral_bootstrap_ready",
+      "remove_prerequisite": "outcome_template_current"
+    },
+    {
+      "mutation_id": "remove_client_inputs_from_codex",
+      "gate": "codex_contract_handoff_ready",
+      "remove_prerequisite": "client_inputs_complete"
+    },
+    {
+      "mutation_id": "remove_ledger_from_labels",
+      "gate": "real_outcome_labels_ready",
+      "remove_prerequisite": "persistent_outcome_ledger_ready"
+    },
+    {
+      "mutation_id": "remove_labels_from_point_in_time",
+      "gate": "point_in_time_dataset_ready",
+      "remove_prerequisite": "real_outcome_labels_ready"
+    },
+    {
+      "mutation_id": "remove_economics_from_roi",
+      "gate": "incremental_roi_proven",
+      "remove_prerequisite": "transaction_economics_confirmed"
+    },
+    {
+      "mutation_id": "remove_governance_from_final_handoff",
+      "gate": "codex_final_product_handoff_ready",
+      "remove_prerequisite": "production_governance_ready"
+    }
+  ]
+}

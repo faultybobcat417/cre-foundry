@@ -1,0 +1,5 @@
+{
+  "case_id": "modeled-as-realized",
+  "mutation_id": "modeled_as_realized",
+  "expected_diagnostic": "ECONOMICS-MODELED-AS-REALIZED"
+}

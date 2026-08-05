@@ -1,0 +1,74 @@
+{
+  "model_version": "cre-foundry-activation-minimal-cut-sets-v1",
+  "targets": [
+    {
+      "minimal_cut_set_count": 1,
+      "minimal_cut_sets": [
+        [
+          "source_review_complete"
+        ]
+      ],
+      "target_gate": "historical_registration_dry_run_ready"
+    },
+    {
+      "minimal_cut_set_count": 2,
+      "minimal_cut_sets": [
+        [
+          "client_inputs_complete"
+        ],
+        [
+          "outcome_template_current"
+        ]
+      ],
+      "target_gate": "outcome_ledger_ephemeral_bootstrap_ready"
+    },
+    {
+      "minimal_cut_set_count": 14,
+      "minimal_cut_sets": [
+        [
+          "change_contract_approved"
+        ],
+        [
+          "client_inputs_complete"
+        ],
+        [
+          "client_pilot_authorization"
+        ],
+        [
+          "held_out_calibration_window"
+        ],
+        [
+          "monitoring_and_rollback_ready"
+        ],
+        [
+          "outcome_template_current"
+        ],
+        [
+          "pilot_actions_and_windows_complete"
+        ],
+        [
+          "production_audit_ready"
+        ],
+        [
+          "schedule_and_acquisition_approval"
+        ],
+        [
+          "separate_execution_authorization"
+        ],
+        [
+          "separate_ledger_activation_authorization"
+        ],
+        [
+          "source_review_complete"
+        ],
+        [
+          "sufficient_history"
+        ],
+        [
+          "transaction_economics_confirmed"
+        ]
+      ],
+      "target_gate": "codex_final_product_handoff_ready"
+    }
+  ]
+}

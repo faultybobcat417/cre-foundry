@@ -1,0 +1,40 @@
+{
+  "config_version": "cre-foundry-pilot-readiness-v1",
+  "policy": {
+    "operating_mode": "shadow",
+    "read_only": true,
+    "automatic_acquisition": false,
+    "browser_execution": false,
+    "computer_vision_execution": false,
+    "automatic_conclusions": false,
+    "opportunity_ranked": false,
+    "outreach_eligible": false
+  },
+  "required_client_inputs": [
+    {
+      "input_id": "pilot_success_event",
+      "description": "Exact event defining a successful pilot result.",
+      "provided": false
+    },
+    {
+      "input_id": "transaction_economics",
+      "description": "Commission, transaction-size, service-mix and cycle-time ranges.",
+      "provided": false
+    },
+    {
+      "input_id": "pilot_representatives",
+      "description": "Representative territories, capacity, specializations and existing relationships.",
+      "provided": false
+    },
+    {
+      "input_id": "protected_accounts_and_exclusions",
+      "description": "Clients, protected relationships, conflicts, active assignments and do-not-contact accounts.",
+      "provided": false
+    },
+    {
+      "input_id": "operating_environment",
+      "description": "Approved spreadsheet, CRM, browser, mobile or local-application workflow.",
+      "provided": false
+    }
+  ]
+}

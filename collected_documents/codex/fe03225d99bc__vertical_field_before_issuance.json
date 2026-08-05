@@ -1,0 +1,5 @@
+{
+  "case_id": "vertical-field-before-issuance",
+  "mutation_id": "field_event_before_issuance",
+  "expected_diagnostic": "VERTICAL-FIELD-BEFORE-ISSUANCE"
+}

@@ -1,0 +1,257 @@
+{
+  "version": "2.2",
+  "as_of": "2026-08-01T17:42:00-04:00",
+  "standards": [
+    {
+      "id": "STD-OPENAI-HARNESS",
+      "domain": "agentic_engineering",
+      "name": "OpenAI Harness Engineering",
+      "version_or_date": "2026-02-11",
+      "url": "https://openai.com/index/harness-engineering/",
+      "use": "repository legibility, progressive disclosure, depth-first development, agent reviews, continuous cleanup",
+      "required_artifacts": [
+        "short AGENTS map",
+        "repository system of record",
+        "executable feedback loops",
+        "quality grades",
+        "cleanup loop"
+      ]
+    },
+    {
+      "id": "STD-OPENAI-SYMPHONY",
+      "domain": "orchestration",
+      "name": "OpenAI Symphony orchestration specification",
+      "version_or_date": "2026-04-27",
+      "url": "https://openai.com/index/open-source-codex-orchestration-symphony/",
+      "use": "issue-backed control plane, isolated workspace per task, continuous reconciliation, bounded concurrency",
+      "required_artifacts": [
+        "task tracker contract",
+        "workspace isolation",
+        "retry policy",
+        "reconciliation",
+        "observability"
+      ]
+    },
+    {
+      "id": "STD-OPENAI-APP-SERVER",
+      "domain": "session_persistence",
+      "name": "Codex App Server",
+      "version_or_date": "2026-02-04",
+      "url": "https://openai.com/index/unlocking-the-codex-harness/",
+      "use": "thread lifecycle, persistence, resume, tool execution and approval interactions",
+      "required_artifacts": [
+        "thread/session IDs",
+        "resume contract",
+        "event log",
+        "approval pause/resume"
+      ]
+    },
+    {
+      "id": "STD-OPENAI-EVALS",
+      "domain": "evaluation",
+      "name": "OpenAI Evals and Graders",
+      "version_or_date": "current API",
+      "url": "https://platform.openai.com/docs/api-reference/evals",
+      "use": "dataset schemas, repeatable eval runs, multiple grader types and model comparisons",
+      "required_artifacts": [
+        "eval dataset",
+        "grader definitions",
+        "run manifest",
+        "threshold",
+        "regression history"
+      ]
+    },
+    {
+      "id": "STD-NIST-AI-RMF",
+      "domain": "ai_risk",
+      "name": "NIST AI RMF 1.0 and Generative AI Profile NIST AI 600-1",
+      "version_or_date": "AI RMF 1.0; AI 600-1 updated 2026-04-08",
+      "url": "https://www.nist.gov/itl/ai-risk-management-framework",
+      "use": "govern, map, measure and manage AI risks across lifecycle",
+      "required_artifacts": [
+        "risk register",
+        "measurement plan",
+        "accountability",
+        "monitoring",
+        "incident response"
+      ]
+    },
+    {
+      "id": "STD-NIST-SSDF",
+      "domain": "secure_development",
+      "name": "NIST Secure Software Development Framework 1.1",
+      "version_or_date": "SP 800-218 final",
+      "url": "https://csrc.nist.gov/pubs/sp/800/218/final",
+      "use": "secure development practices integrated into SDLC",
+      "required_artifacts": [
+        "secure design",
+        "protected code",
+        "vulnerability response",
+        "root-cause remediation"
+      ]
+    },
+    {
+      "id": "STD-OWASP-ASVS",
+      "domain": "application_security",
+      "name": "OWASP Application Security Verification Standard",
+      "version_or_date": "5.0.0",
+      "url": "https://owasp.org/www-project-application-security-verification-standard/",
+      "use": "application security verification requirements and confidence levels",
+      "required_artifacts": [
+        "threat model",
+        "verification checklist",
+        "security tests",
+        "evidence mapping"
+      ]
+    },
+    {
+      "id": "STD-SLSA",
+      "domain": "supply_chain",
+      "name": "Supply-chain Levels for Software Artifacts",
+      "version_or_date": "1.0",
+      "url": "https://openssf.org/projects/slsa/",
+      "use": "build provenance and artifact integrity",
+      "required_artifacts": [
+        "immutable provenance",
+        "source revision",
+        "builder identity",
+        "artifact digest"
+      ]
+    },
+    {
+      "id": "STD-OTEL",
+      "domain": "observability",
+      "name": "OpenTelemetry Specification and Semantic Conventions",
+      "version_or_date": "spec 1.59.0; semantic conventions 1.43.0",
+      "url": "https://opentelemetry.io/docs/specs/",
+      "use": "consistent traces, metrics, logs and resource attributes",
+      "required_artifacts": [
+        "trace IDs",
+        "bounded metrics",
+        "structured logs",
+        "semantic attribute registry"
+      ]
+    },
+    {
+      "id": "STD-OPENLINEAGE",
+      "domain": "lineage",
+      "name": "OpenLineage specification",
+      "version_or_date": "current JSON Schema",
+      "url": "https://github.com/OpenLineage/OpenLineage/blob/main/spec/OpenLineage.md",
+      "use": "job, run and dataset lineage with extensible facets",
+      "required_artifacts": [
+        "job/run/dataset IDs",
+        "input/output lineage",
+        "schema facets",
+        "quality facets"
+      ]
+    },
+    {
+      "id": "STD-MLFLOW",
+      "domain": "ml_lifecycle",
+      "name": "MLflow Model Registry lifecycle concepts",
+      "version_or_date": "current",
+      "url": "https://mlflow.org/docs/latest/ml/model-registry/",
+      "use": "model lineage, versions, aliases, metadata, promotion and rollback",
+      "required_artifacts": [
+        "model version",
+        "training run",
+        "dataset lineage",
+        "alias",
+        "validation tags",
+        "rollback"
+      ]
+    },
+    {
+      "id": "STD-ORTOOLS",
+      "domain": "routing",
+      "name": "Google OR-Tools Vehicle Routing with Time Windows",
+      "version_or_date": "current",
+      "url": "https://developers.google.com/optimization/routing/vrptw",
+      "use": "route optimization with time windows, capacities and resource constraints",
+      "required_artifacts": [
+        "distance/time matrix",
+        "constraint manifest",
+        "solver parameters",
+        "feasibility proof"
+      ]
+    },
+    {
+      "id": "STD-CONSORT",
+      "domain": "experiments",
+      "name": "CONSORT 2025 plus cluster-randomized extension",
+      "version_or_date": "2025 statement; cluster extension",
+      "url": "https://www.equator-network.org/reporting-guidelines/consort/",
+      "use": "preregistered randomized trial design/reporting, cluster rationale and contamination handling",
+      "required_artifacts": [
+        "protocol",
+        "allocation",
+        "cluster design",
+        "flow",
+        "ITT analysis",
+        "harms/deviations"
+      ]
+    },
+    {
+      "id": "STD-JSON-SCHEMA",
+      "domain": "data_contracts",
+      "name": "JSON Schema Draft 2020-12",
+      "version_or_date": "2020-12",
+      "url": "https://json-schema.org/draft/2020-12",
+      "use": "machine-validatable JSON contracts",
+      "required_artifacts": [
+        "schemas",
+        "examples",
+        "negative fixtures",
+        "compatibility rules"
+      ]
+    },
+    {
+      "id": "STD-OPENAPI",
+      "domain": "api_contracts",
+      "name": "OpenAPI Specification",
+      "version_or_date": "3.2.0",
+      "url": "https://spec.openapis.org/oas/",
+      "use": "machine-readable synchronous API contracts",
+      "required_artifacts": [
+        "operation contracts",
+        "error schemas",
+        "idempotency",
+        "generated tests"
+      ]
+    },
+    {
+      "id": "STD-ASYNCAPI",
+      "domain": "event_contracts",
+      "name": "AsyncAPI Specification",
+      "version_or_date": "3.1.0",
+      "url": "https://github.com/asyncapi/spec",
+      "use": "machine-readable asynchronous interface contracts",
+      "required_artifacts": [
+        "channels",
+        "messages",
+        "correlation",
+        "compatibility",
+        "consumer tests"
+      ]
+    },
+    {
+      "id": "STD-CLOUDEVENTS",
+      "domain": "event_envelope",
+      "name": "CloudEvents",
+      "version_or_date": "1.0",
+      "url": "https://github.com/cloudevents/spec",
+      "use": "portable event envelope and contextual metadata",
+      "required_artifacts": [
+        "event ID",
+        "type",
+        "source",
+        "subject",
+        "time",
+        "schema",
+        "data"
+      ]
+    }
+  ],
+  "rule": "Use current primary sources as benchmark authorities; pin the version/date in every implementation evidence packet."
+}

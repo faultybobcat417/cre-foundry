@@ -1,0 +1,5 @@
+{
+  "case_id": "contract-decision-digest-mismatch",
+  "mutation_id": "decision_digest_mismatch",
+  "expected_diagnostic": "CONTRACT-DECISION-DIGEST-MISMATCH"
+}

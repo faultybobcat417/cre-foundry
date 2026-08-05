@@ -1,0 +1,464 @@
+{
+  "artifact_id": "RESEARCH-001-CLAIM-GRAPH",
+  "schema_version": "2.0.0",
+  "as_of": "2026-08-01",
+  "scope": "Repository-authoritative research questions and mission proof claims, bounded by current public-source observations.",
+  "claim_ceiling": "No coverage, join accuracy, predictive lift, causal lift, operational feasibility, or realized value is proven.",
+  "research_questions": [
+    {
+      "question": "What physical establishments form the true eligible universe at each historical prediction date?",
+      "decision_lane": "candidate universe",
+      "information_class": "EMPIRICAL_ONLY",
+      "question_id": "RQ-001",
+      "classification": "unknown",
+      "disposition": "gated",
+      "claim_ids": [
+        "CLM-002"
+      ],
+      "evidence_refs": [
+        {
+          "ref_type": "probe",
+          "ref_id": "PROBE-ON-SCHEMA"
+        },
+        {
+          "ref_type": "probe",
+          "ref_id": "PROBE-TOR-ACTIVE"
+        },
+        {
+          "ref_type": "gate",
+          "ref_id": "GATE-PUBLICATION-HISTORY-001"
+        }
+      ],
+      "counterevidence_ids": [
+        "CE-001",
+        "CE-002",
+        "CE-004"
+      ],
+      "gate_or_experiment_id": "GATE-PUBLICATION-HISTORY-001",
+      "claim_ceiling": "Decision disposition only; no empirical mission claim is promoted.",
+      "decision_effect": "Current category-limited sources cannot establish the eligible historical universe.",
+      "as_of": "2026-08-01"
+    },
+    {
+      "question": "Which source combinations identify the correct operating business, unit, property, occupier, and parent?",
+      "decision_lane": "entity resolution",
+      "information_class": "EMPIRICAL_ONLY",
+      "question_id": "RQ-002",
+      "classification": "unknown",
+      "disposition": "gated",
+      "claim_ids": [
+        "CLM-003"
+      ],
+      "evidence_refs": [
+        {
+          "ref_type": "probe",
+          "ref_id": "WITNESS-ON-LICENCE-MULTIPLICITY"
+        },
+        {
+          "ref_type": "probe",
+          "ref_id": "WITNESS-TOR-3209741"
+        },
+        {
+          "ref_type": "gate",
+          "ref_id": "GATE-ENTITY-TRUTH-001"
+        }
+      ],
+      "counterevidence_ids": [
+        "CE-002",
+        "CE-005"
+      ],
+      "gate_or_experiment_id": "GATE-ENTITY-TRUTH-001",
+      "claim_ceiling": "Decision disposition only; no empirical mission claim is promoted.",
+      "decision_effect": "Preserve source grains; require an adjudicated entity/location audit.",
+      "as_of": "2026-08-01"
+    },
+    {
+      "question": "Which observable precursors occur early enough to support a useful first-touch action?",
+      "decision_lane": "signal mechanisms",
+      "information_class": "PUBLICLY_RESEARCHABLE",
+      "question_id": "RQ-003",
+      "classification": "hypothesis",
+      "disposition": "experiment",
+      "claim_ids": [
+        "CLM-004"
+      ],
+      "evidence_refs": [
+        {
+          "ref_type": "probe",
+          "ref_id": "PROBE-TOR-CLOSED"
+        },
+        {
+          "ref_type": "experiment",
+          "ref_id": "EXP-PRECURSOR-TIMING-001"
+        }
+      ],
+      "counterevidence_ids": [
+        "CE-003",
+        "CE-004"
+      ],
+      "gate_or_experiment_id": "EXP-PRECURSOR-TIMING-001",
+      "claim_ceiling": "Decision disposition only; no empirical mission claim is promoted.",
+      "decision_effect": "Measure first-public timestamps before admitting precursor features.",
+      "as_of": "2026-08-01"
+    },
+    {
+      "question": "Which signals retain lift after time, municipality, source-family, and entity-error controls?",
+      "decision_lane": "historical modeling",
+      "information_class": "EMPIRICAL_ONLY",
+      "question_id": "RQ-004",
+      "classification": "hypothesis",
+      "disposition": "experiment",
+      "claim_ids": [
+        "CLM-004"
+      ],
+      "evidence_refs": [
+        {
+          "ref_type": "experiment",
+          "ref_id": "EXP-OUT-OF-TIME-LIFT-001"
+        }
+      ],
+      "counterevidence_ids": [
+        "CE-004"
+      ],
+      "gate_or_experiment_id": "EXP-OUT-OF-TIME-LIFT-001",
+      "claim_ceiling": "Decision disposition only; no empirical mission claim is promoted.",
+      "decision_effect": "Require point-in-time validation and controlled ablations.",
+      "as_of": "2026-08-01"
+    },
+    {
+      "question": "What is the representative/firm baseline F9 booking rate and variance?",
+      "decision_lane": "power/economics",
+      "information_class": "ACCESS_DEPENDENT",
+      "question_id": "RQ-005",
+      "classification": "unknown",
+      "disposition": "gated",
+      "claim_ids": [
+        "CLM-006"
+      ],
+      "evidence_refs": [
+        {
+          "ref_type": "gate",
+          "ref_id": "GATE-OUTCOME-LABELS-MATURITY-001"
+        }
+      ],
+      "counterevidence_ids": [],
+      "gate_or_experiment_id": "GATE-OUTCOME-LABELS-MATURITY-001",
+      "claim_ceiling": "Decision disposition only; no empirical mission claim is promoted.",
+      "decision_effect": "Obtain authorized firm outcome data; do not fabricate a baseline.",
+      "as_of": "2026-08-01"
+    },
+    {
+      "question": "What minimum F9 lift is economically meaningful?",
+      "decision_lane": "decision threshold",
+      "information_class": "HUMAN_AUTHORITATIVE",
+      "question_id": "RQ-006",
+      "classification": "unknown",
+      "disposition": "gated",
+      "claim_ids": [
+        "CLM-007"
+      ],
+      "evidence_refs": [
+        {
+          "ref_type": "gate",
+          "ref_id": "firm_economics_services_territories"
+        }
+      ],
+      "counterevidence_ids": [],
+      "gate_or_experiment_id": "firm_economics_services_territories",
+      "claim_ceiling": "Decision disposition only; no empirical mission claim is promoted.",
+      "decision_effect": "A named firm owner must set the minimum meaningful lift and economics.",
+      "as_of": "2026-08-01"
+    },
+    {
+      "question": "How long do visits, access failures, conversations, and substitutions actually take?",
+      "decision_lane": "routing",
+      "information_class": "EMPIRICAL_ONLY",
+      "question_id": "RQ-007",
+      "classification": "hypothesis",
+      "disposition": "experiment",
+      "claim_ids": [
+        "CLM-005"
+      ],
+      "evidence_refs": [
+        {
+          "ref_type": "experiment",
+          "ref_id": "EXP-ROUTE-TIME-001"
+        }
+      ],
+      "counterevidence_ids": [],
+      "gate_or_experiment_id": "EXP-ROUTE-TIME-001",
+      "claim_ceiling": "Decision disposition only; no empirical mission claim is promoted.",
+      "decision_effect": "Instrument a prospective shadow pilot for service and substitution time.",
+      "as_of": "2026-08-01"
+    },
+    {
+      "question": "How much spatial/relationship interference exists between nearby businesses?",
+      "decision_lane": "causal experiment",
+      "information_class": "EMPIRICAL_ONLY",
+      "question_id": "RQ-008",
+      "classification": "hypothesis",
+      "disposition": "experiment",
+      "claim_ids": [
+        "CLM-006"
+      ],
+      "evidence_refs": [
+        {
+          "ref_type": "experiment",
+          "ref_id": "EXP-SPATIAL-INTERFERENCE-001"
+        }
+      ],
+      "counterevidence_ids": [],
+      "gate_or_experiment_id": "EXP-SPATIAL-INTERFERENCE-001",
+      "claim_ceiling": "Decision disposition only; no empirical mission claim is promoted.",
+      "decision_effect": "Use cluster-aware experimental measurement.",
+      "as_of": "2026-08-01"
+    },
+    {
+      "question": "Which representative specialties and territories modify treatment response?",
+      "decision_lane": "heterogeneity",
+      "information_class": "ACCESS_DEPENDENT",
+      "question_id": "RQ-009",
+      "classification": "unknown",
+      "disposition": "gated",
+      "claim_ids": [
+        "CLM-006"
+      ],
+      "evidence_refs": [
+        {
+          "ref_type": "gate",
+          "ref_id": "representative_origins_capacity_specialties"
+        }
+      ],
+      "counterevidence_ids": [],
+      "gate_or_experiment_id": "representative_origins_capacity_specialties",
+      "claim_ceiling": "Decision disposition only; no empirical mission claim is promoted.",
+      "decision_effect": "Require authorized representative and territory data plus subgroup adequacy.",
+      "as_of": "2026-08-01"
+    },
+    {
+      "question": "How do F9 bookings mature into attendance, mandate, transaction, and commission?",
+      "decision_lane": "commercial value",
+      "information_class": "ACCESS_DEPENDENT",
+      "question_id": "RQ-010",
+      "classification": "unknown",
+      "disposition": "gated",
+      "claim_ids": [
+        "CLM-007"
+      ],
+      "evidence_refs": [
+        {
+          "ref_type": "gate",
+          "ref_id": "GATE-OUTCOME-LABELS-MATURITY-001"
+        }
+      ],
+      "counterevidence_ids": [],
+      "gate_or_experiment_id": "GATE-OUTCOME-LABELS-MATURITY-001",
+      "claim_ceiling": "Decision disposition only; no empirical mission claim is promoted.",
+      "decision_effect": "Require authorized longitudinal funnel outcomes and maturity rules.",
+      "as_of": "2026-08-01"
+    },
+    {
+      "question": "Which source rights, privacy constraints, and retention rules apply to each feature?",
+      "decision_lane": "governance",
+      "information_class": "HUMAN_AUTHORITATIVE",
+      "question_id": "RQ-011",
+      "classification": "inference",
+      "disposition": "partially_supported_gated",
+      "claim_ids": [
+        "CLM-002",
+        "CLM-003"
+      ],
+      "evidence_refs": [
+        {
+          "ref_type": "source",
+          "ref_id": "ON-SELECT"
+        },
+        {
+          "ref_type": "source",
+          "ref_id": "TOR-COA"
+        },
+        {
+          "ref_type": "gate",
+          "ref_id": "approved_source_envelope"
+        }
+      ],
+      "counterevidence_ids": [
+        "CE-001",
+        "CE-006"
+      ],
+      "gate_or_experiment_id": "approved_source_envelope",
+      "claim_ceiling": "Decision disposition only; no empirical mission claim is promoted.",
+      "decision_effect": "Public OGL terms bound reuse; internal privacy, retention, and live-use authority remain gated.",
+      "as_of": "2026-08-01"
+    },
+    {
+      "question": "Which implementation architecture performs best under the real repository and pilot load?",
+      "decision_lane": "engineering",
+      "information_class": "CODEX_DERIVABLE",
+      "question_id": "RQ-012",
+      "classification": "hypothesis",
+      "disposition": "experiment",
+      "claim_ids": [
+        "CLM-001",
+        "CLM-005"
+      ],
+      "evidence_refs": [
+        {
+          "ref_type": "experiment",
+          "ref_id": "EXP-ARCHITECTURE-LOAD-001"
+        }
+      ],
+      "counterevidence_ids": [],
+      "gate_or_experiment_id": "EXP-ARCHITECTURE-LOAD-001",
+      "claim_ceiling": "Decision disposition only; no empirical mission claim is promoted.",
+      "decision_effect": "Benchmark candidate architectures under real repository and pilot load.",
+      "as_of": "2026-08-01"
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "CLM-001",
+      "claim": "The system can produce exactly ten valid primary locations or abstain.",
+      "required_proof_level": 4,
+      "minimum_evidence": "deterministic/property/mutation tests",
+      "current_status": "unproven_unless_existing_artifact_verifies",
+      "classification": "hypothesis",
+      "disposition": "experiment",
+      "evidence_refs": [
+        {
+          "ref_type": "experiment",
+          "ref_id": "EXP-EXACT-TEN-VERTICAL-001"
+        }
+      ],
+      "counterevidence_ids": [
+        "CE-001"
+      ],
+      "claim_ceiling": "Unproven at system level; public boundary tests may reach proof level 4 only.",
+      "decision_effect": "Build and mutation-test the thin exact-ten-or-abstain slice.",
+      "as_of": "2026-08-01"
+    },
+    {
+      "claim_id": "CLM-002",
+      "claim": "The pilot source portfolio yields adequate establishment coverage.",
+      "required_proof_level": 6,
+      "minimum_evidence": "authorized immutable samples and universe audit",
+      "current_status": "unproven_unless_existing_artifact_verifies",
+      "classification": "unknown",
+      "disposition": "gate",
+      "evidence_refs": [
+        {
+          "ref_type": "gate",
+          "ref_id": "GATE-PUBLICATION-HISTORY-001"
+        }
+      ],
+      "counterevidence_ids": [
+        "CE-001",
+        "CE-002",
+        "CE-004"
+      ],
+      "claim_ceiling": "No coverage claim without authorized immutable samples and a universe audit.",
+      "decision_effect": "Keep establishment coverage unproven.",
+      "as_of": "2026-08-01"
+    },
+    {
+      "claim_id": "CLM-003",
+      "claim": "Entity/location joins are accurate enough for eligibility.",
+      "required_proof_level": 6,
+      "minimum_evidence": "blind temporal entity audit plus protected-account tests",
+      "current_status": "unproven_unless_existing_artifact_verifies",
+      "classification": "unknown",
+      "disposition": "gate",
+      "evidence_refs": [
+        {
+          "ref_type": "gate",
+          "ref_id": "GATE-ENTITY-TRUTH-001"
+        }
+      ],
+      "counterevidence_ids": [
+        "CE-002",
+        "CE-005"
+      ],
+      "claim_ceiling": "No join-accuracy claim without a blind temporal entity audit.",
+      "decision_effect": "Keep identity and location grains separate.",
+      "as_of": "2026-08-01"
+    },
+    {
+      "claim_id": "CLM-004",
+      "claim": "Signals predict future F9 opportunity better than baselines.",
+      "required_proof_level": 6,
+      "minimum_evidence": "point-in-time historical validation and ablations",
+      "current_status": "unproven_unless_existing_artifact_verifies",
+      "classification": "hypothesis",
+      "disposition": "experiment",
+      "evidence_refs": [
+        {
+          "ref_type": "experiment",
+          "ref_id": "EXP-OUT-OF-TIME-LIFT-001"
+        }
+      ],
+      "counterevidence_ids": [
+        "CE-004"
+      ],
+      "claim_ceiling": "No predictive claim before point-in-time validation and ablations.",
+      "decision_effect": "Require out-of-time comparison with transparent baselines.",
+      "as_of": "2026-08-01"
+    },
+    {
+      "claim_id": "CLM-005",
+      "claim": "The list policy is operationally feasible.",
+      "required_proof_level": 7,
+      "minimum_evidence": "prospective shadow route/service/access history",
+      "current_status": "unproven_unless_existing_artifact_verifies",
+      "classification": "hypothesis",
+      "disposition": "experiment",
+      "evidence_refs": [
+        {
+          "ref_type": "experiment",
+          "ref_id": "EXP-ROUTE-TIME-001"
+        }
+      ],
+      "counterevidence_ids": [],
+      "claim_ceiling": "No operational-feasibility claim before prospective shadow evidence.",
+      "decision_effect": "Instrument route/service/access outcomes.",
+      "as_of": "2026-08-01"
+    },
+    {
+      "claim_id": "CLM-006",
+      "claim": "The policy increases F9 bookings incrementally.",
+      "required_proof_level": 8,
+      "minimum_evidence": "preregistered randomized route-day experiment",
+      "current_status": "unproven_unless_existing_artifact_verifies",
+      "classification": "hypothesis",
+      "disposition": "experiment",
+      "evidence_refs": [
+        {
+          "ref_type": "experiment",
+          "ref_id": "EXP-RANDOMIZED-ROUTE-DAY-001"
+        }
+      ],
+      "counterevidence_ids": [],
+      "claim_ceiling": "No incremental-lift claim before a preregistered randomized experiment.",
+      "decision_effect": "Preserve causal proof gate.",
+      "as_of": "2026-08-01"
+    },
+    {
+      "claim_id": "CLM-007",
+      "claim": "The system creates positive realized net commercial value.",
+      "required_proof_level": 9,
+      "minimum_evidence": "mature production cohorts and cost reconciliation",
+      "current_status": "unproven_unless_existing_artifact_verifies",
+      "classification": "unknown",
+      "disposition": "gate",
+      "evidence_refs": [
+        {
+          "ref_type": "gate",
+          "ref_id": "GATE-FULL-EXTERNAL-EVIDENCE-001"
+        }
+      ],
+      "counterevidence_ids": [],
+      "claim_ceiling": "No realized-value claim before mature cohorts and cost reconciliation.",
+      "decision_effect": "Preserve commercial-maturity gate.",
+      "as_of": "2026-08-01"
+    }
+  ]
+}

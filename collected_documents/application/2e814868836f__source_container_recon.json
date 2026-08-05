@@ -1,0 +1,27 @@
+{
+  "config_version": "cre-foundry-source-container-recon-v1",
+  "policy": {
+    "operating_mode": "shadow",
+    "read_only": true,
+    "checksum_revalidation_required": true,
+    "project_boundary_required": true,
+    "symlink_allowed": false,
+    "zip_central_directory_inspection": true,
+    "zip_extraction_enabled": false,
+    "gzip_header_inspection": true,
+    "gzip_decompression_enabled": false,
+    "parser_execution_enabled": false,
+    "schema_validation_enabled": false,
+    "row_validation_enabled": false,
+    "snapshot_registration_enabled": false,
+    "automatic_acquisition": false,
+    "browser_execution": false,
+    "computer_vision_execution": false,
+    "opportunity_ranked": false,
+    "outreach_eligible": false
+  },
+  "limits": {
+    "maximum_zip_members": 10000,
+    "maximum_member_name_length": 1024
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "captured_at": "2026-08-01T22:42:30Z",
+  "items": [
+    {
+      "id": "CONTRA-001",
+      "reference_claim": "actual_repository_access is open",
+      "repository_truth": "Access is now proven; the repository is intentionally greenfield.",
+      "resolution": "Close the access gate without claiming application conformance."
+    },
+    {
+      "id": "CONTRA-002",
+      "reference_claim": "Python/SQL modular monolith is the reference path",
+      "repository_truth": "No application runtime, package, schema, or module existed.",
+      "resolution": "Adopt Python 3.12 as a reversible control-plane baseline; retain the architecture as a preference pending measured replacement evidence."
+    },
+    {
+      "id": "CONTRA-003",
+      "reference_claim": "PostgreSQL/PostGIS, DuckDB/Parquet, object storage, lineage, and provider interfaces are reference components",
+      "repository_truth": "Only unmanaged local PostgreSQL is detected; PostGIS and DuckDB are absent and no project configuration exists.",
+      "resolution": "Treat every component as an unverified downstream task, not installed capability."
+    },
+    {
+      "id": "CONTRA-004",
+      "reference_claim": "The packaged Level-10 campaign passes",
+      "repository_truth": "The recovered Project OS campaign passes, while application code and empirical evidence did not exist.",
+      "resolution": "Preserve the 10/10 design/evaluator-readiness axis and keep real evidence maturity unproven."
+    },
+    {
+      "id": "CONTRA-005",
+      "reference_claim": "A sealed and external evaluator topology is required",
+      "repository_truth": "No independent custodian, external evaluator repository, CI status publisher, or hidden holdout resource is evidenced.",
+      "resolution": "Install only the public evaluator locally and open separate sealed-custody and hidden-holdout gates."
+    }
+  ]
+}

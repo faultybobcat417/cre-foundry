@@ -1,0 +1,85 @@
+{
+  "approval_count": 3,
+  "approvals": [
+    {
+      "approval_evidence_reference": null,
+      "approved_at": null,
+      "approved_by": null,
+      "approved_record_key": null,
+      "approved_temporal_fields": [],
+      "artifact_sha256": "d5359d5308355a74e18f5e54d0022e1c49dcfd2909d17ea3cd084000488e6d4c",
+      "candidate_record_keys": [
+        "PERMITNUMBER",
+        "OBJECTID",
+        "GIS_ID"
+      ],
+      "candidate_temporal_fields": [
+        "INDATE",
+        "ISSUEDATE",
+        "PROCESSDATE",
+        "EXPIRYDATE"
+      ],
+      "dataset_digest": "cb07d23f0c042cd14017877186168293b20282646570625d8cf4c88f16387252",
+      "parser_contract_approved": false,
+      "parser_type": "gzip_json_feature_collection",
+      "record_count": 4652,
+      "registration_permitted": false,
+      "schema_contract_approved": false,
+      "schema_fingerprint": "13ad5c3d280f2132e1fb43be6f993865898fd240df4d9dea2a32acf57cb85dfc",
+      "source_id": "brampton_building_permits"
+    },
+    {
+      "approval_evidence_reference": null,
+      "approved_at": null,
+      "approved_by": null,
+      "approved_record_key": null,
+      "approved_temporal_fields": [],
+      "artifact_sha256": "8a7a0add73e0bd57215880ceb2f216d3799748aba8baed8fa32fb02a1aca7c6a",
+      "candidate_record_keys": [
+        "GLOBALID",
+        "OBJECTID"
+      ],
+      "candidate_temporal_fields": [
+        "DATE_EST_IN_CITY",
+        "STARTED_IN_CITY"
+      ],
+      "dataset_digest": "ee7f0d5ef75a9ec30c8691d8d71735d3d56c50e11b36a09eaef0a4af928e6851",
+      "parser_contract_approved": false,
+      "parser_type": "gzip_json_feature_collection",
+      "record_count": 6152,
+      "registration_permitted": false,
+      "schema_contract_approved": false,
+      "schema_fingerprint": "2b58643e512a697901148adf2a7027fb7ca76f30c171b442a3b5f5ba10bcfac3",
+      "source_id": "brampton_business_directory"
+    },
+    {
+      "approval_evidence_reference": null,
+      "approved_at": null,
+      "approved_by": null,
+      "approved_record_key": null,
+      "approved_temporal_fields": [],
+      "artifact_sha256": "0ec6388eb16584d025252026cee22d95bf3b603fccb5cc471710a619d89dca2f",
+      "candidate_record_keys": [
+        "idx",
+        "business_id_no",
+        "licence_number"
+      ],
+      "candidate_temporal_fields": [],
+      "dataset_digest": "f576785572f52788a2b6d0037b7e34b63b3fffe3f7fa38cc2a2a249d3c9ba38b",
+      "parser_contract_approved": false,
+      "parser_type": "zip_csv_member",
+      "record_count": 446575,
+      "registration_permitted": false,
+      "schema_contract_approved": false,
+      "schema_fingerprint": "d68848c0bbf054d8f7ec3e11411025157748dcf299cbd07ff426d42bccf7d684",
+      "source_id": "statscan_odbus_2023"
+    }
+  ],
+  "approved_parser_contract_count": 0,
+  "approved_schema_contract_count": 0,
+  "automatic_approval": false,
+  "model_version": "cre-foundry-source-parser-approval-template-v1",
+  "outreach_enabled": false,
+  "production_ranking_enabled": false,
+  "registration_permitted_count": 0
+}

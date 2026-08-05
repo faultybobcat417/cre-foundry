@@ -1,0 +1,93 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://cre-foundry.local/schemas/economic-engine-v1.json",
+  "title": "CRE Foundry versioned authoritative economics policy",
+  "description": "Input contract for the symbolic risk-adjusted expected-net-commercial-value engine. The engine accepts only versioned authoritative economics: an in-scope, signed, dated economics policy that declares services, territories, commission, costs, conversion uncertainty, downside, and fallback policy. It is the material layer input contract; the frozen subject is contracts/commercial_economics.schema.json. Recursive-closed.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "document_kind",
+    "schema_version",
+    "execution_scope",
+    "policy_version",
+    "authority",
+    "services",
+    "territories",
+    "commission",
+    "costs",
+    "conversion",
+    "downside",
+    "fallback_policy",
+    "claim_ceiling"
+  ],
+  "properties": {
+    "document_kind": { "const": "AUTHORITATIVE_ECONOMICS_POLICY" },
+    "schema_version": { "const": "1.0.0" },
+    "execution_scope": { "const": "SYNTHETIC_NON_INFLUENCING" },
+    "policy_version": { "type": "string", "minLength": 1 },
+    "authority": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["issued_by", "effective_from", "signature"],
+      "properties": {
+        "issued_by": { "type": "string", "minLength": 1 },
+        "effective_from": { "type": "string", "format": "date-time" },
+        "signature": { "type": "string", "minLength": 1 }
+      }
+    },
+    "services": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "type": "string" }
+    },
+    "territories": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "type": "string" }
+    },
+    "commission": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["rate", "basis"],
+      "properties": {
+        "rate": { "type": "number", "minimum": 0 },
+        "basis": { "type": "string" }
+      }
+    },
+    "costs": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["line_item", "amount", "currency"],
+        "properties": {
+          "line_item": { "type": "string" },
+          "amount": { "type": "number", "minimum": 0 },
+          "currency": { "type": "string" }
+        }
+      }
+    },
+    "conversion": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["distribution", "mean", "variance"],
+      "properties": {
+        "distribution": { "type": "string" },
+        "mean": { "type": "number" },
+        "variance": { "type": "number", "minimum": 0 }
+      }
+    },
+    "downside": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["metric", "threshold"],
+      "properties": {
+        "metric": { "type": "string" },
+        "threshold": { "type": "number" }
+      }
+    },
+    "fallback_policy": { "type": "string" },
+    "claim_ceiling": { "type": "string" }
+  }
+}

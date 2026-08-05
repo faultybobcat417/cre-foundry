@@ -1,0 +1,5 @@
+{
+  "case_id": "rollback-failure",
+  "expected_diagnostic": "REPLAY-ROLLBACK-FAILURE",
+  "mutation_id": "rollback_failure"
+}

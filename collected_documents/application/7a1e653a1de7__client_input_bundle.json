@@ -1,0 +1,100 @@
+{
+  "all_inputs_complete": false,
+  "automatic_approval": false,
+  "contract_paths": {
+    "json": "docs/data_contracts/client_input_bundle.json",
+    "markdown": "docs/data_contracts/client_input_bundle.md"
+  },
+  "model_training_enabled": false,
+  "model_version": "cre-foundry-client-input-bundle-v1",
+  "opportunity_ranked": false,
+  "outreach_eligible": false,
+  "section_count": 5,
+  "sections": [
+    {
+      "approved_at": null,
+      "approved_by": null,
+      "authoritative_source": null,
+      "description": "Exact event defining a successful pilot result.",
+      "input_id": "pilot_success_event",
+      "provided": false,
+      "values": {
+        "acceptable_evidence": [],
+        "decision_maker_confirmation_required": null,
+        "event_name": null,
+        "measurement_window_days": null,
+        "notes": null
+      }
+    },
+    {
+      "approved_at": null,
+      "approved_by": null,
+      "authoritative_source": null,
+      "description": "Commission, transaction-size, service-mix and cycle-time ranges.",
+      "input_id": "transaction_economics",
+      "provided": false,
+      "values": {
+        "commission_ranges": [],
+        "representative_time_cost_assumptions": [],
+        "service_segments": [],
+        "transaction_size_ranges": [],
+        "typical_cycle_time_days": []
+      }
+    },
+    {
+      "approved_at": null,
+      "approved_by": null,
+      "authoritative_source": null,
+      "description": "Representative territories, capacity, specializations and existing relationships.",
+      "input_id": "pilot_representatives",
+      "provided": false,
+      "values": {
+        "representatives": [],
+        "required_fields": [
+          "representative_id",
+          "starting_location",
+          "territory",
+          "specializations",
+          "existing_relationships",
+          "daily_capacity",
+          "preferred_channels"
+        ]
+      }
+    },
+    {
+      "approved_at": null,
+      "approved_by": null,
+      "authoritative_source": null,
+      "description": "Clients, protected relationships, conflicts, active assignments and do-not-contact accounts.",
+      "input_id": "protected_accounts_and_exclusions",
+      "provided": false,
+      "values": {
+        "active_assignments": [],
+        "broker_owned_accounts": [],
+        "conflicts": [],
+        "do_not_contact": [],
+        "existing_clients": [],
+        "protected_relationships": [],
+        "territory_restrictions": []
+      }
+    },
+    {
+      "approved_at": null,
+      "approved_by": null,
+      "authoritative_source": null,
+      "description": "Approved spreadsheet, CRM, browser, mobile or local-application workflow.",
+      "input_id": "operating_environment",
+      "provided": false,
+      "values": {
+        "approved_interface": null,
+        "browser_requirement": null,
+        "crm_system": null,
+        "data_export_format": null,
+        "data_import_format": null,
+        "mobile_requirement": null,
+        "spreadsheet_system": null
+      }
+    }
+  ]
+}
+CLIENT INPUT BUNDLE PASSED

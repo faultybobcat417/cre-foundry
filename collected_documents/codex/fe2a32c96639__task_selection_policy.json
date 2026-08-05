@@ -1,0 +1,38 @@
+{
+  "version": "2.0",
+  "hard_vetoes": [
+    "missing required authority",
+    "protected evaluator is writable by builder",
+    "unresolved protected-account risk",
+    "temporal leakage in decision inputs",
+    "task would violate exactly-ten-or-abstain",
+    "task requires fabricated evidence or facts",
+    "rollback is required but absent"
+  ],
+  "lexicographic_order": [
+    "unblocks critical dependency",
+    "reduces existential correctness or security risk",
+    "creates earliest integrated vertical evidence",
+    "maximizes expected information gain",
+    "maximizes expected business impact",
+    "improves agent/repository legibility",
+    "reduces recurring cost or technical debt"
+  ],
+  "tie_breaker_formula": {
+    "numerator": [
+      "mission_impact",
+      "success_probability",
+      "dependency_unlock",
+      "information_gain",
+      "reusability"
+    ],
+    "denominator": [
+      "cost",
+      "risk",
+      "irreversibility",
+      "coordination_burden"
+    ],
+    "scale": "1_to_5_each",
+    "note": "Numeric score is a tie-breaker after vetoes and lexicographic priorities, not an authority override."
+  }
+}

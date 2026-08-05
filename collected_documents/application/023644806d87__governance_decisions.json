@@ -1,0 +1,103 @@
+{
+  "client_inputs": [
+    {
+      "authoritative_value": null,
+      "confirmed": false,
+      "confirmed_at": null,
+      "confirmed_by": null,
+      "evidence_reference": null,
+      "input_id": "primary_success_event"
+    },
+    {
+      "authoritative_value": null,
+      "confirmed": false,
+      "confirmed_at": null,
+      "confirmed_by": null,
+      "evidence_reference": null,
+      "input_id": "transaction_economics"
+    },
+    {
+      "authoritative_value": null,
+      "confirmed": false,
+      "confirmed_at": null,
+      "confirmed_by": null,
+      "evidence_reference": null,
+      "input_id": "pilot_representatives_and_capacity"
+    },
+    {
+      "authoritative_value": null,
+      "confirmed": false,
+      "confirmed_at": null,
+      "confirmed_by": null,
+      "evidence_reference": null,
+      "input_id": "protected_accounts_and_exclusions"
+    },
+    {
+      "authoritative_value": null,
+      "confirmed": false,
+      "confirmed_at": null,
+      "confirmed_by": null,
+      "evidence_reference": null,
+      "input_id": "operating_environment"
+    }
+  ],
+  "decision_bundle_version": "cre-foundry-governance-decisions-v1",
+  "source_decisions": [
+    {
+      "approved_record_key": null,
+      "approved_temporal_fields": [],
+      "capture_policy_approved": false,
+      "change_contract_approved": false,
+      "evidence_bundle_digest": "714a1be5231393f4a1e397820519ae62844563caeb5db5189b5013212badbaa4",
+      "evidence_reference": null,
+      "parser_contract_approved": false,
+      "registration_approved": false,
+      "reviewed_at": null,
+      "reviewer_id": null,
+      "schema_contract_approved": false,
+      "source_id": "brampton_building_permits"
+    },
+    {
+      "approved_record_key": null,
+      "approved_temporal_fields": [],
+      "capture_policy_approved": false,
+      "change_contract_approved": false,
+      "evidence_bundle_digest": "d2f3f315a55bd11930ee30c9efca9ca1c8b281e5a7c9e20e6e1aa61660a10111",
+      "evidence_reference": null,
+      "parser_contract_approved": false,
+      "registration_approved": false,
+      "reviewed_at": null,
+      "reviewer_id": null,
+      "schema_contract_approved": false,
+      "source_id": "brampton_business_directory"
+    },
+    {
+      "approved_record_key": null,
+      "approved_temporal_fields": [],
+      "capture_policy_approved": false,
+      "change_contract_approved": false,
+      "evidence_bundle_digest": "5574fd7787d35755cd953bd46e650d391933d6f13944a549f42d9d127da0883e",
+      "evidence_reference": null,
+      "parser_contract_approved": false,
+      "registration_approved": false,
+      "reviewed_at": null,
+      "reviewer_id": null,
+      "schema_contract_approved": false,
+      "source_id": "statscan_odbus_2023"
+    },
+    {
+      "approved_record_key": null,
+      "approved_temporal_fields": [],
+      "capture_policy_approved": false,
+      "change_contract_approved": false,
+      "evidence_bundle_digest": "51220256dd186910447925379db3922e6839fd27a4b02e4e5576dd9e77ae57c2",
+      "evidence_reference": null,
+      "parser_contract_approved": false,
+      "registration_approved": false,
+      "reviewed_at": null,
+      "reviewer_id": null,
+      "schema_contract_approved": false,
+      "source_id": "brampton_plantrak"
+    }
+  ]
+}

@@ -1,0 +1,345 @@
+{
+  "artifact_id": "OUTCOMES-001-PUBLIC-EVALUATION",
+  "claim": "The bounded synthetic outcome ledger, common-as-of maturity projection, correction lineage, active-evidence booking deduplication, route-day aggregation, ITT inclusion registry, and replay receipt conform to the frozen public contract.",
+  "claim_ceiling": "No real F9 outcome, authorized maturity policy, label accuracy, baseline rate, predictive validity, incremental lift, downstream funnel, commercial value, live-use, or production claim is established.",
+  "commands": [
+    {
+      "argv": [
+        "python",
+        "scripts/validate_outcomes_labels.py"
+      ],
+      "exit_code": 0,
+      "stdout": "PASS"
+    },
+    {
+      "argv": [
+        "python",
+        "-m",
+        "unittest",
+        "evals.public.test_outcomes_labels"
+      ],
+      "exit_code": 0,
+      "result": "14 tests passed"
+    },
+    {
+      "argv": [
+        "python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "evals/public",
+        "-p",
+        "test_*.py"
+      ],
+      "exit_code": 0,
+      "result": "70 tests passed"
+    }
+  ],
+  "evaluated_at": "2026-08-02T05:59:14Z",
+  "evaluator_id": "outcomes-labels-public-v1",
+  "execution_scope": "SYNTHETIC_NON_INFLUENCING",
+  "independent_sweeps": [
+    {
+      "result": "PASS_AFTER_REPAIR",
+      "sweep": "adversarial_evaluator_design",
+      "verified": [
+        "frozen-ledger binding",
+        "rehashed input attacks",
+        "strict policy/ledger parsing",
+        "future booking and maturity boundaries",
+        "assignment chronology"
+      ]
+    },
+    {
+      "result": "PASS_AFTER_REPAIR",
+      "sweep": "outcome_proof_and_capability",
+      "verified": [
+        "synthetic PL5 ceiling",
+        "ITT inclusion without outcome-count invention",
+        "capability classification reconciliation",
+        "exact mechanically checked report evidence"
+      ]
+    },
+    {
+      "result": "PASS_AFTER_REPAIR",
+      "sweep": "state_model_and_lineage",
+      "verified": [
+        "seven exact schema branches",
+        "common-as-of active dedupe",
+        "cross-unit dedupe lineage digest",
+        "complete-watermark negatives",
+        "stopping-event evidence digest"
+      ]
+    }
+  ],
+  "mutation_results": [
+    {
+      "case_id": "appointment-before-booking",
+      "diagnostic": "OUTCOMES-F9-APPOINTMENT-CHRONOLOGY",
+      "fixture_sha256": "170e668a8dd83e576ca34de1d932656829e6bcfb7adfb84bb05754a8e4174f60",
+      "result": "DETECTED"
+    },
+    {
+      "case_id": "assertion-unit-mismatch",
+      "diagnostic": "OUTCOMES-ASSERTION-UNIT-BINDING",
+      "fixture_sha256": "fd0274c21ed6a759a9934bc3e136875b44b479b785f64be9718d1773e042044b",
+      "result": "DETECTED"
+    },
+    {
+      "case_id": "booking-as-commission",
+      "diagnostic": "OUTCOMES-DOWNSTREAM-INFERENCE",
+      "fixture_sha256": "110a8813d959aba30a4a06ba428dd11c72c0c24b6cf254f6ded7cc5cdab9d10c",
+      "result": "DETECTED"
+    },
+    {
+      "case_id": "censored-negative",
+      "diagnostic": "OUTCOMES-LABEL-CENSORED-AS-NEGATIVE",
+      "fixture_sha256": "86d52ff7f4444fde286eec5705b870f658d86ecba74aeec482438f7a053dfb9c",
+      "result": "DETECTED"
+    },
+    {
+      "case_id": "nonmonotonic-clock-chain",
+      "diagnostic": "OUTCOMES-CLOCK-ORDER",
+      "fixture_sha256": "4bf9044576c6c23dcd2e36369842988190e927eab1f16160c136467ba304c994",
+      "result": "DETECTED"
+    },
+    {
+      "case_id": "common-asof-divergence",
+      "diagnostic": "OUTCOMES-ROUTE-DAY-ASOF-MISMATCH",
+      "fixture_sha256": "9133b2d569c578122e210fe02f403b6ce389fcee94c940ee90fdbfa5694b0a68",
+      "result": "DETECTED"
+    },
+    {
+      "case_id": "competing-event-negative",
+      "diagnostic": "OUTCOMES-LABEL-COMPETING-AS-NEGATIVE",
+      "fixture_sha256": "7e1b6127c620ca7e9b3c4e6d40db7fa40bed66a57f82629d9f7a7422c8a358da",
+      "result": "DETECTED"
+    },
+    {
+      "case_id": "correction-cycle-or-fork",
+      "diagnostic": "OUTCOMES-CORRECTION-LINEAGE",
+      "fixture_sha256": "e3f8a7b1cd2dd5ec1dc0133fafea5b86e748a295813d4642242f27b17ba153d7",
+      "result": "DETECTED"
+    },
+    {
+      "case_id": "correction-target-missing",
+      "diagnostic": "OUTCOMES-CORRECTION-ASSERTION-LINEAGE",
+      "fixture_sha256": "048ae0ad30fc3a36c4f58231649796a48c93eff7a2ab6a2adaf1d48572d2aeff",
+      "result": "DETECTED"
+    },
+    {
+      "case_id": "duplicate-booking-double-counted",
+      "diagnostic": "OUTCOMES-DEDUPE-DOUBLE-COUNT",
+      "fixture_sha256": "98d432e50780bb972e3b9fd7588ac3281ffd5bc6e834a5cf3780f1e753956af4",
+      "result": "DETECTED"
+    },
+    {
+      "case_id": "extra-ledger-field",
+      "diagnostic": "OUTCOMES-INPUT-LEDGER-SCHEMA",
+      "fixture_sha256": "758a421a00017a245a501ebb61903532b4f203704697439ba2bfef2267d3e9aa",
+      "result": "DETECTED"
+    },
+    {
+      "case_id": "failed-competing-adjudication",
+      "diagnostic": "OUTCOMES-INPUT-LEDGER-SCHEMA",
+      "fixture_sha256": "618b65e8656920438d83ef2d291474968a134c01734788a5bbd0e844214b6430",
+      "result": "DETECTED"
+    },
+    {
+      "case_id": "forged-stopper-evidence",
+      "diagnostic": "OUTCOMES-STOPPER-EVIDENCE-DIGEST",
+      "fixture_sha256": "6e6be3385059a8b5455a601ecdf8a9d45eaf15d6b8cb2bd7cb961927fdeea041",
+      "result": "DETECTED"
+    },
+    {
+      "case_id": "forged-supporting-evidence",
+      "diagnostic": "OUTCOMES-F9-EVIDENCE-DIGEST",
+      "fixture_sha256": "f42ed004b90848a86088ad013096ca9bfccd21c5a560e435823eee2ecca0f977",
+      "result": "DETECTED"
+    },
+    {
+      "case_id": "future-booking-before-assessment",
+      "diagnostic": "OUTCOMES-F9-EVENT-TIME",
+      "fixture_sha256": "4b8d4a14ce10cfa816c72c11c117993d6b5e0bbff928b007391494895715dc63",
+      "result": "DETECTED"
+    },
+    {
+      "case_id": "future-available-evidence-used",
+      "diagnostic": "OUTCOMES-ASOF-LEAKAGE",
+      "fixture_sha256": "3db8550baec9c1c6707721e0bf31bd97fd5fb8e86baafcc047dd34794299a8c2",
+      "result": "DETECTED"
+    },
+    {
+      "case_id": "immature-negative",
+      "diagnostic": "OUTCOMES-LABEL-IMMATURE-AS-NEGATIVE",
+      "fixture_sha256": "b273fcf3a9d69c0ecdb08f6e62fe666858707f1ab3c9d743364e55bf1414f054",
+      "result": "DETECTED"
+    },
+    {
+      "case_id": "incomplete-watermark-negative",
+      "diagnostic": "OUTCOMES-MATURITY-INCOMPLETE-WATERMARK",
+      "fixture_sha256": "fd363d41b2df7bfef739972580be993bf1f8975016b98b250711efca18fdd8d1",
+      "result": "DETECTED"
+    },
+    {
+      "case_id": "missing-f9-conjunct-positive",
+      "diagnostic": "OUTCOMES-F9-MISSING-CONJUNCT",
+      "fixture_sha256": "aa680b1745fb5685f7f1994ed18dc4862919fd4fb417b5e325dfdacdc3cb1277",
+      "result": "DETECTED"
+    },
+    {
+      "case_id": "missing-realtor-identity",
+      "diagnostic": "OUTCOMES-INPUT-LEDGER-SCHEMA",
+      "fixture_sha256": "1dd6fd950228bdd7d582f620df25930505c2a0c86e7164ffea568573aaf877d0",
+      "result": "DETECTED"
+    },
+    {
+      "case_id": "outside-window-positive",
+      "diagnostic": "OUTCOMES-F9-OUTSIDE-WINDOW",
+      "fixture_sha256": "33209a3bd9c0957d9a61c351f67517d563ac7d4e751c96ddeda118c4b41d8adf",
+      "result": "DETECTED"
+    },
+    {
+      "case_id": "partial-route-day-finalized",
+      "diagnostic": "OUTCOMES-ROUTE-DAY-PREMATURE-FINAL",
+      "fixture_sha256": "d4fb45f1ff3e5ddd0b50092614ae439c5f626044b1e636c8862c44b56107dd07",
+      "result": "DETECTED"
+    },
+    {
+      "case_id": "post-window-rewrites-prior",
+      "diagnostic": "OUTCOMES-CORRECTION-PRIOR-REWRITE",
+      "fixture_sha256": "89db20741ca6511cbd2c8920b72fe46ed7b8cc88fb9b2e7717b8026b817350ce",
+      "result": "DETECTED"
+    },
+    {
+      "case_id": "post-window-stopper",
+      "diagnostic": "OUTCOMES-STOPPER-OUTSIDE-WINDOW",
+      "fixture_sha256": "effdecc536901ee7a0941d4c1c8ba3c91c94e512a3855fba28274af4e83ca706",
+      "result": "DETECTED"
+    },
+    {
+      "case_id": "rehashed-correction-history",
+      "diagnostic": "OUTCOMES-REPLAY-LINEAGE-MISMATCH",
+      "fixture_sha256": "58a2b1dc1392365bb0b61425d3972456862e601897015cd1af1ea3d394e61aef",
+      "result": "DETECTED"
+    },
+    {
+      "case_id": "rehashed-dedupe-reassignment",
+      "diagnostic": "OUTCOMES-REPLAY-DEDUPE-MISMATCH",
+      "fixture_sha256": "1eff285644a1fc18e05fd8622853280b09fc2ade676191a3464053f29225c6fa",
+      "result": "DETECTED"
+    },
+    {
+      "case_id": "rehashed-dedupe-split-input",
+      "diagnostic": "OUTCOMES-INPUT-LEDGER-MISMATCH",
+      "fixture_sha256": "b31a41e11ddc6d541a1df67f59c3952e7943342e9ea656dd09ba37f5b77d4547",
+      "result": "DETECTED"
+    },
+    {
+      "case_id": "rehashed-input-new-f9",
+      "diagnostic": "OUTCOMES-INPUT-LEDGER-MISMATCH",
+      "fixture_sha256": "3dbe7ada30a103c024956ef549974f2b7e2a0830099aa39a3c47d633723a1102",
+      "result": "DETECTED"
+    },
+    {
+      "case_id": "rehashed-label-contamination",
+      "diagnostic": "OUTCOMES-REPLAY-SEMANTIC-MISMATCH",
+      "fixture_sha256": "ebba0c5731970d701cbab7e8b4ebd05f7bbb8393d8f3cd88051ce0fa82e66d85",
+      "result": "DETECTED"
+    },
+    {
+      "case_id": "rehashed-policy-binding",
+      "diagnostic": "OUTCOMES-INPUT-POLICY-BINDING",
+      "fixture_sha256": "e3e641aa0ba53e017c77ba0cbd83177016cd7291323e593d5eec6bd7d5b9e749",
+      "result": "DETECTED"
+    },
+    {
+      "case_id": "replay-receipt-mismatch",
+      "diagnostic": "OUTCOMES-REPLAY-RECEIPT-MISMATCH",
+      "fixture_sha256": "c0b74cf436467d11a3aad5dbaa30c776cc1f603566c3f245b7aeeffb19c58e2a",
+      "result": "DETECTED"
+    },
+    {
+      "case_id": "shifted-assignment-anchor",
+      "diagnostic": "OUTCOMES-ASSIGNMENT-CHRONOLOGY",
+      "fixture_sha256": "de4e3224f60a10b882f0a370b37c1fd46f2891581b47b2f6ad8cff03053293b4",
+      "result": "DETECTED"
+    },
+    {
+      "case_id": "stage3-changes-stage1",
+      "diagnostic": "OUTCOMES-STAGE1-CONTAMINATION",
+      "fixture_sha256": "535f4540abaf26803f90b1b47ccce54968924e67c553fefbc2109fb9f3afe39c",
+      "result": "DETECTED"
+    },
+    {
+      "case_id": "unknown-assertion-type",
+      "diagnostic": "OUTCOMES-INPUT-LEDGER-SCHEMA",
+      "fixture_sha256": "f8334dd93adba30ef3f7605115f87f6c4d26a39a432fd0f94a50ea2fc72e989a",
+      "result": "DETECTED"
+    },
+    {
+      "case_id": "unregistered-stopper-cause",
+      "diagnostic": "OUTCOMES-INPUT-LEDGER-SCHEMA",
+      "fixture_sha256": "1e84a1ad1d0dd0361399d4d4ed74bcf04ce217b59f1c3ea400da21dd475f500c",
+      "result": "DETECTED"
+    },
+    {
+      "case_id": "unauthorized-window-promoted",
+      "diagnostic": "OUTCOMES-WINDOW-AUTHORITY",
+      "fixture_sha256": "d034a02955fc66f876c2e175ac3eb1ac1aff7ddfc87c85c020f62dc5f693f91c",
+      "result": "DETECTED"
+    }
+  ],
+  "proof_level": 5,
+  "registered_mutations_detected": 36,
+  "registered_mutations_total": 36,
+  "result": "PASS",
+  "route_day_aggregate": {
+    "assignment_id": "ROUTE_DAY_ASSIGNMENT:SYNTHETIC_001",
+    "assignment_result": "ISSUE",
+    "confirmed_f9_lower_bound": 3,
+    "final_f9_count": null,
+    "include_in_itt": true,
+    "outcome_unit_count": 10,
+    "representative_id": "REP:SYNTHETIC_001",
+    "route_date": "2026-08-01",
+    "route_day_ascertainment_state": "IMMATURE_PARTIAL",
+    "state_counts": {
+      "CENSORED_UNKNOWN": 1,
+      "COMPETING_EVENT_UNKNOWN": 1,
+      "CONFLICTED_UNKNOWN": 2,
+      "F9_CONFIRMED_SYNTHETIC": 3,
+      "IMMATURE_UNKNOWN": 1,
+      "MATURE_NO_F9_SYNTHETIC": 1,
+      "UNKNOWN": 1
+    }
+  },
+  "schema_version": "1.0.1",
+  "subject_hashes": {
+    "artifacts/outcomes/canonical_run.json": "6b3d6a91ba3397481ddb332f2ca2c37c8fab44f3de85b28a4e9e6ec2c764a0b2",
+    "artifacts/outcomes/capability_classification_reconciliation.json": "4c221248af94bfe1496fb2ff5218dcd8722d2ec348fa790b4c56101d90150c38",
+    "artifacts/outcomes/itt_inclusion_cases.json": "79252355b2f2346fbd5dc7ff6f9a8c094f84dbc7697b30059eae97d2192751f2",
+    "artifacts/outcomes/public_evaluator_contract.json": "69f19bea1007183d8566b47d2a9a6015132f94832c3ec5abe2fb12367afae518",
+    "artifacts/outcomes/scenario_matrix.json": "871d0eb5c46cf4e114c96a8d6ad1481cd8ff1513045c56488dbb28f15efd7d94",
+    "artifacts/outcomes/synthetic_input_ledger.json": "d3a4575ea06ac89bd188efdebdcb68af59216d91fdbc50c80cca9ece959c86eb",
+    "artifacts/outcomes/synthetic_window_policy.json": "fba35b2df51769c558844792d84bff7270c970912464a2833e9f999d6cefd5e6",
+    "contracts/f9_outcome.schema.json": "8c901a1ad724779a25b5fc90f19426d765a6da9bb95491043e755fbd9819730d",
+    "contracts/f9_outcome_input_ledger.schema.json": "2bd91f4dda2f7859dfd58a2407e6d16790f1f65f314962722f549df16f00f286",
+    "contracts/f9_window_policy.schema.json": "11ef31edcfb717c60bd6c3f6dd558386b4859264b7aa89f2824fd77294d6f601",
+    "contracts/synthetic_f9_outcome.schema.json": "0d26f5f317f87c014b91f0f73e3a677d048f94fe8eeda1d49b332265813c854c",
+    "contracts/synthetic_field_event.schema.json": "9e00bdb5104f3d5ec7e87371ca59b5dc045b280308a470095cd34661ffe66913",
+    "evals/public/outcomes_labels_evaluator.py": "71f9dc53247d1152df846b22b927854c1dec4a66c5d3b2828646f962d7c1ee67",
+    "evals/public/test_outcomes_labels.py": "38c86c5006f1097026629e19c85127bc36266eebe601cbf8dd24a1cc011868a9",
+    "scripts/validate_outcomes_labels.py": "debd6ca4d13dd2e0e4817038053abe5d7151e4f241626d7df120576821803335",
+    "src/cre_foundry/outcomes/ledger.py": "af7d617bfc8ab84c17e7e1d2fc0a001b904dcdbd060d436b9cff93f52bd95e22"
+  },
+  "tests": {
+    "assessment_revisions": 20,
+    "current_outcome_units": 10,
+    "full_public_suite_tests": 70,
+    "public_test_cases": 14,
+    "registered_mutations_detected": 36,
+    "registered_mutations_total": 36
+  }
+}

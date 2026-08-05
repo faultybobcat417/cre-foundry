@@ -1,0 +1,8 @@
+{
+  "case_id": "ontario-multi-address-collapse",
+  "target": {"artifact": "canonical_field_map.json", "collection": "maps", "selector": {"field": "source_id", "equals": "ON-SELECT"}, "field": "/candidate_keys/location/components"},
+  "operation": "replace",
+  "expected_before": ["dataset_id", "licence_number_raw", "normalized_address"],
+  "value": ["dataset_id", "licence_number_raw"],
+  "expected_diagnostic": "R001_ON_MULTI_ADDRESS_COLLAPSE: ON-SELECT licence key cannot identify a location; observed multiplicity witness requires address-bearing identity"
+}

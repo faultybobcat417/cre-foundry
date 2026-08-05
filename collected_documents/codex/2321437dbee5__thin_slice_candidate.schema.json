@@ -1,0 +1,155 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://cre-foundry.local/schemas/thin-slice-candidate-v1.json",
+  "title": "Synthetic physical-location candidate assertion",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["document_kind", "schema_version", "decision_scope", "candidate_id", "lineage", "identity", "protection", "evaluations", "score", "available_at", "stage1_cutoff", "math_candidate", "quality", "owner", "live_issuance_authorized"],
+  "properties": {
+    "document_kind": {"const": "THIN_SLICE_CANDIDATE"},
+    "schema_version": {"const": "1.0.0"},
+    "decision_scope": {"const": "SYNTHETIC_FORMAL_ONLY"},
+    "candidate_id": {"type": "string", "pattern": "^CAND:[A-Z0-9_-]+$"},
+    "lineage": {"$ref": "#/$defs/lineage"},
+    "identity": {"$ref": "#/$defs/identity"},
+    "protection": {"$ref": "#/$defs/protection"},
+    "evaluations": {"$ref": "#/$defs/evaluations"},
+    "score": {"$ref": "#/$defs/score"},
+    "available_at": {"type": "string", "format": "date-time"},
+    "stage1_cutoff": {"type": "string", "format": "date-time"},
+    "math_candidate": {"$ref": "#/$defs/math_candidate"},
+    "quality": {"$ref": "#/$defs/quality"},
+    "owner": {"$ref": "#/$defs/owner"},
+    "live_issuance_authorized": {"const": false}
+  },
+  "$defs": {
+    "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "gate_state": {"enum": ["PASS", "FAIL", "UNKNOWN"]},
+    "nullable_typed_id": {
+      "anyOf": [
+        {"type": "string", "pattern": "^(LEGAL|BUSINESS|BRAND|ESTABLISHMENT|UNIT|PROPERTY|PARCEL|OWNER|OCCUPIER|PARENT):[A-Za-z0-9_-]+$"},
+        {"type": "null"}
+      ]
+    },
+    "grain_ids": {
+      "type": "object", "additionalProperties": false,
+      "required": ["legal_entity_id", "operating_business_id", "brand_id", "establishment_id", "unit_id", "property_id", "parcel_id", "owner_id", "occupier_id", "parent_group_id"],
+      "properties": {
+        "legal_entity_id": {"anyOf": [{"type": "string", "pattern": "^LEGAL:[A-Za-z0-9_-]+$"}, {"type": "null"}]},
+        "operating_business_id": {"anyOf": [{"type": "string", "pattern": "^BUSINESS:[A-Za-z0-9_-]+$"}, {"type": "null"}]},
+        "brand_id": {"anyOf": [{"type": "string", "pattern": "^BRAND:[A-Za-z0-9_-]+$"}, {"type": "null"}]},
+        "establishment_id": {"anyOf": [{"type": "string", "pattern": "^ESTABLISHMENT:[A-Za-z0-9_-]+$"}, {"type": "null"}]},
+        "unit_id": {"anyOf": [{"type": "string", "pattern": "^UNIT:[A-Za-z0-9_-]+$"}, {"type": "null"}]},
+        "property_id": {"anyOf": [{"type": "string", "pattern": "^PROPERTY:[A-Za-z0-9_-]+$"}, {"type": "null"}]},
+        "parcel_id": {"anyOf": [{"type": "string", "pattern": "^PARCEL:[A-Za-z0-9_-]+$"}, {"type": "null"}]},
+        "owner_id": {"anyOf": [{"type": "string", "pattern": "^OWNER:[A-Za-z0-9_-]+$"}, {"type": "null"}]},
+        "occupier_id": {"anyOf": [{"type": "string", "pattern": "^OCCUPIER:[A-Za-z0-9_-]+$"}, {"type": "null"}]},
+        "parent_group_id": {"anyOf": [{"type": "string", "pattern": "^PARENT:[A-Za-z0-9_-]+$"}, {"type": "null"}]}
+      }
+    },
+    "lineage": {
+      "type": "object", "additionalProperties": false,
+      "required": ["observation_id", "observation_sha256", "source_snapshot_sha256", "adapter_version", "adapter_sha256"],
+      "properties": {
+        "observation_id": {"type": "string", "pattern": "^OBS:[A-Z0-9_-]+$"},
+        "observation_sha256": {"$ref": "#/$defs/sha256"},
+        "source_snapshot_sha256": {"$ref": "#/$defs/sha256"},
+        "adapter_version": {"const": "thin-spine-adapter-v1"},
+        "adapter_sha256": {"$ref": "#/$defs/sha256"}
+      }
+    },
+    "basis": {
+      "type": "object", "additionalProperties": false,
+      "required": ["method_version", "normalized_address", "normalized_unit"],
+      "properties": {
+        "method_version": {"const": "synthetic-address-unit-v1"},
+        "normalized_address": {"type": "string", "minLength": 1},
+        "normalized_unit": {"type": ["string", "null"]}
+      }
+    },
+    "identity": {
+      "type": "object", "additionalProperties": false,
+      "required": ["mode", "assertion_id", "resolved_at", "physical_location_basis", "physical_location_id", "alias_tokens", "grain_ids"],
+      "properties": {
+        "mode": {"const": "SYNTHETIC_IDENTITY_ASSERTION"},
+        "assertion_id": {"type": "string", "pattern": "^IDENT:[A-Z0-9_-]+$"},
+        "resolved_at": {"type": "string", "format": "date-time"},
+        "physical_location_basis": {"$ref": "#/$defs/basis"},
+        "physical_location_id": {"type": "string", "pattern": "^LOCATION:[0-9a-f]{24}$"},
+        "alias_tokens": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"}},
+        "grain_ids": {"$ref": "#/$defs/grain_ids"}
+      }
+    },
+    "protection": {
+      "type": "object", "additionalProperties": false,
+      "required": ["bundle_id", "bundle_sha256", "bundle_complete", "token_extraction_complete", "evaluated_at", "candidate_tokens", "matched_tokens", "status"],
+      "properties": {
+        "bundle_id": {"const": "SYNTHETIC-PROTECTED-BUNDLE"},
+        "bundle_sha256": {"$ref": "#/$defs/sha256"},
+        "bundle_complete": {"type": "boolean"},
+        "token_extraction_complete": {"type": "boolean"},
+        "evaluated_at": {"type": "string", "format": "date-time"},
+        "candidate_tokens": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string", "minLength": 1}},
+        "matched_tokens": {"type": "array", "uniqueItems": true, "items": {"type": "string", "minLength": 1}},
+        "status": {"enum": ["CLEAR", "PROTECTED", "UNKNOWN"]}
+      }
+    },
+    "evaluation": {
+      "type": "object", "additionalProperties": false,
+      "required": ["state", "evaluated_at"],
+      "properties": {"state": {"$ref": "#/$defs/gate_state"}, "evaluated_at": {"type": "string", "format": "date-time"}}
+    },
+    "evaluations": {
+      "type": "object", "additionalProperties": false,
+      "required": ["evidence", "identity", "eligibility", "safety", "access", "operational"],
+      "properties": {
+        "evidence": {"$ref": "#/$defs/evaluation"}, "identity": {"$ref": "#/$defs/evaluation"},
+        "eligibility": {"$ref": "#/$defs/evaluation"}, "safety": {"$ref": "#/$defs/evaluation"},
+        "access": {"$ref": "#/$defs/evaluation"}, "operational": {"$ref": "#/$defs/evaluation"}
+      }
+    },
+    "score": {
+      "type": "object", "additionalProperties": false,
+      "required": ["state", "policy_version", "policy_sha256", "computed_at", "business_value_units", "proximity_cost_units", "service_minutes", "composition_group"],
+      "properties": {
+        "state": {"enum": ["REGISTERED_SYNTHETIC_PROXY", "UNKNOWN"]},
+        "policy_version": {"const": "synthetic-score-v1"},
+        "policy_sha256": {"$ref": "#/$defs/sha256"},
+        "computed_at": {"type": "string", "format": "date-time"},
+        "business_value_units": {"type": ["integer", "null"]},
+        "proximity_cost_units": {"type": "integer", "minimum": 0},
+        "service_minutes": {"type": "integer", "minimum": 0},
+        "composition_group": {"type": ["string", "null"]}
+      }
+    },
+    "math_candidate": {
+      "type": "object", "additionalProperties": false,
+      "required": ["candidate_id", "physical_location_id", "grain_ids", "protection_tokens", "evidence_stage", "observed_at", "gates", "protected_status", "value_state", "business_value_units", "proximity_cost_units", "service_minutes", "composition_group"],
+      "properties": {
+        "candidate_id": {"type": "string", "minLength": 1},
+        "physical_location_id": {"type": "string", "minLength": 1},
+        "grain_ids": {"$ref": "#/$defs/grain_ids"},
+        "protection_tokens": {"type": "array", "uniqueItems": true, "items": {"type": "string", "minLength": 1}},
+        "evidence_stage": {"const": 1},
+        "observed_at": {"type": "string", "format": "date-time"},
+        "gates": {"type": "object", "additionalProperties": false, "required": ["evidence", "identity", "eligibility", "safety", "access", "operational"], "properties": {"evidence": {"$ref": "#/$defs/gate_state"}, "identity": {"$ref": "#/$defs/gate_state"}, "eligibility": {"$ref": "#/$defs/gate_state"}, "safety": {"$ref": "#/$defs/gate_state"}, "access": {"$ref": "#/$defs/gate_state"}, "operational": {"$ref": "#/$defs/gate_state"}}},
+        "protected_status": {"enum": ["CLEAR", "PROTECTED", "UNKNOWN"]},
+        "value_state": {"enum": ["REGISTERED_SYNTHETIC_PROXY", "UNKNOWN"]},
+        "business_value_units": {"type": ["integer", "null"]},
+        "proximity_cost_units": {"type": "integer", "minimum": 0},
+        "service_minutes": {"type": "integer", "minimum": 0},
+        "composition_group": {"type": ["string", "null"]}
+      }
+    },
+    "quality": {
+      "type": "object", "additionalProperties": false,
+      "required": ["synthetic_fixture", "identity_claim"],
+      "properties": {"synthetic_fixture": {"const": true}, "identity_claim": {"const": "SYNTHETIC_ONLY_NOT_REAL_ENTITY_TRUTH"}}
+    },
+    "owner": {
+      "type": "object", "additionalProperties": false,
+      "required": ["system", "real_world_authority"],
+      "properties": {"system": {"const": "CRE_FOUNDRY"}, "real_world_authority": {"const": "UNASSIGNED_EXTERNAL_AUTHORITY"}}
+    }
+  }
+}

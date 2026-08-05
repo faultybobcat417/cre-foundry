@@ -1,0 +1,6 @@
+{
+  "claimed_result": "BLOCKED_EXTERNAL",
+  "autonomous_requirements_complete": false,
+  "external_blocker": "invented to hide unfinished repository work",
+  "reason": "External blocking cannot mask an autonomous failure or executable task."
+}

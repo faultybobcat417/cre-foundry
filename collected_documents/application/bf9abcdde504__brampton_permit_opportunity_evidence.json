@@ -1,0 +1,42 @@
+{
+  "contract_path": "docs/data_contracts/brampton_permit_opportunity_evidence.json",
+  "cross_source_corroborated_count": 11,
+  "current_directory_record_count": 15,
+  "duplicate_opportunity_id_count": 0,
+  "duplicate_permit_id_count": 0,
+  "evidence_status_distribution": {
+    "cross_source_conflict": 2,
+    "cross_source_corroborated": 11,
+    "current_address_ambiguity": 1,
+    "current_only": 1,
+    "current_resolves_historical_ambiguity": 1,
+    "historical_only": 3,
+    "unresolved": 11
+  },
+  "missing_verification_gate_count": 0,
+  "model_version": "brampton-permit-opportunity-evidence-v1",
+  "policy": {
+    "business_name_is_provisional": true,
+    "commercial_requirement_verified": false,
+    "cross_source_name_agreement_is_occupant_proof": false,
+    "current_directory_record_is_occupant_proof": false,
+    "decision_maker_verified": false,
+    "exclusions_cleared": false,
+    "identity_verified": false,
+    "one_row_per_active_permit": true,
+    "operating_mode": "shadow",
+    "outreach_eligible": false,
+    "permit_occupant_verified": false,
+    "ranking_enabled": false
+  },
+  "ranked_count": 0,
+  "record_count": 30,
+  "review_queue_count": 8,
+  "review_queue_view": "silver.brampton_permit_opportunity_review_queue",
+  "safety_violation_count": 0,
+  "source_record_count": 30,
+  "summary_view": "silver.brampton_permit_opportunity_summary",
+  "table": "silver.brampton_permit_opportunity_evidence",
+  "unresolved_count": 11,
+  "unresolved_view": "silver.brampton_permit_opportunity_unresolved"
+}

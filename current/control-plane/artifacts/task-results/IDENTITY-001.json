@@ -1,0 +1,94 @@
+{
+  "task_id": "IDENTITY-001",
+  "status": "completed",
+  "objective": "Implement synthetic temporal identity, alternative-link, ambiguity, conflict, relocation, unit, franchise, and fail-closed protected-account primitives while preserving distinct entity grains.",
+  "state_transition": {
+    "from": "in_progress frozen_evaluator_boundary_resumed",
+    "to": "completed public_identity_proof_level_4; ECONOMICS-001 and SECURITY-001 executable next",
+    "reason": "The frozen public evaluator contract, frozen temporal identity schema, registered mutation fixtures, and 59 public tests were already committed and green. This run implemented the missing material layer (src/cre_foundry/identity), the graph input schema, the house validator, documentation, and a new public material test; the frozen independent evaluator passes the material-rendered subject with zero diagnostics, the material checks agree with the evaluator reconstruction, and both detect every registered known-bad mutation. No gate assignment was invented and no real identity or protection claim is made."
+  },
+  "files_changed": [
+    "artifacts/evaluations/identity_contracts.json",
+    "artifacts/task-results/IDENTITY-001.json",
+    "contracts/synthetic_identity_graph.schema.json",
+    "docs/identity/IDENTITY_MATERIAL.md",
+    "evals/public/test_identity_contracts.py",
+    "scripts/validate_identity_contracts.py",
+    "src/cre_foundry/identity/__init__.py",
+    "src/cre_foundry/identity/graph.py"
+  ],
+  "commands": [
+    {"command": "uv run --python 3.12 python scripts/validate_identity_contracts.py", "exit_code": 0, "artifact": "artifacts/evaluations/identity_contracts.json"},
+    {"command": "uv run --python 3.12 python -m unittest evals.public.test_identity_contracts -v", "exit_code": 0, "artifact": "artifacts/evaluations/identity_contracts.json"},
+    {"command": "uv run --python 3.12 python scripts/validate_temporal_identity.py", "exit_code": 0, "artifact": null},
+    {"command": "uv run --python 3.12 python -m unittest evals.public.test_temporal_identity", "exit_code": 0, "artifact": "artifacts/evaluations/identity_synthetic.json"}
+  ],
+  "evaluations": [
+    {"name": "frozen schema conformance", "passed": true, "proof": "The material-rendered subject validates against contracts/temporal_identity.schema.json with zero errors under Draft 2020-12 with format checking."},
+    {"name": "frozen independent evaluator acceptance", "passed": true, "proof": "evaluate_subject on the material-rendered subject returns passed=true with zero diagnostics and the evaluator reconstruction digest equals the subject binding."},
+    {"name": "material/evaluator agreement", "passed": true, "proof": "material_checks on the clean subject returns [] and the evaluator reconstruction protection verdict is CLEAR; both implementations agree byte-for-byte on the canonical render (deterministic)."},
+    {"name": "registered mutation rejection", "passed": true, "proof": "identity_suite_collapse and identity_protected_alias fixtures replayed onto the material subject are detected by BOTH the frozen evaluator and the material checks with exactly the registered diagnostic and no extras."},
+    {"name": "material graph schema", "passed": true, "proof": "contracts/synthetic_identity_graph.schema.json is a valid Draft 2020-12 schema; the material layer consumes it as its strict input contract."},
+    {"name": "full public regression suite", "passed": true, "proof": "59 frozen temporal identity tests plus 5 new material tests pass; the frozen gate validator still prints PASS."}
+  ],
+  "expertise_coverage": [
+    {"domain": "entity_resolution", "state": "ACTIVE", "reason": "Implemented typed-grain distinctness primitives (grain collapse, unit separation, duplicate active truth) and the material renderer across the full grain ontology."},
+    {"domain": "temporal_data", "state": "ACTIVE", "reason": "Implemented append-only relocation, permanent/temporary closure, alias supersession, corporate temporal, and as-of evaluation against decision_cutoff."},
+    {"domain": "commercial_real_estate_identity", "state": "ACTIVE", "reason": "Preserved legal/operating/brand/establishment/unit/property/parcel/owner/occupier/parent grains as distinct and rejected prohibited merges."},
+    {"domain": "security_privacy", "state": "ACTIVE", "reason": "Implemented fail-closed protected coverage (alias/linked-location/former-address omission detection) with zero false-clear tolerance in synthetic scope."},
+    {"domain": "testing_verification", "state": "ACTIVE", "reason": "Added an independent material test suite and a house validator that cross-checks the material implementation against the frozen independent evaluator on every registered mutation."}
+  ],
+  "agents_used": [
+    "primary writer in the main worktree",
+    "frozen independent evaluator evals/public/temporal_identity_evaluator.py as the neutral judge",
+    "independent reviewer over the material implementation and its coupling boundary"
+  ],
+  "alternatives": [
+    {"choice": "independent material implementation with byte-for-byte deterministic render", "over": ["reuse the evaluator builder as the material layer", "a golden-receipt-only material layer"], "reason": "The frozen contract rejects GOLDEN_RECEIPT_ONLY and SHARED_BUILDER_LIBRARY; two independent implementations agreeing on the canonical subject and every registered mutation is the strongest evidence."},
+    {"choice": "material subject declares its own builder identity and determinism note", "over": ["claim the evaluator's builder identity"], "reason": "Honest provenance: the material layer rendered the subject; agreement with the evaluator is proven by evaluation, not by identity label."},
+    {"choice": "graph input schema as the material layer's strict contract", "over": ["no material-side schema", "reuse the subject schema for the seed"], "reason": "The seed is declarative and pre-digest; its own closed schema keeps the renderer's input strict while the subject schema stays frozen."}
+  ],
+  "findings": [
+    {"id": "IDENTITY-FIND-001", "finding": "A material subject that is schema-conformant and digest-self-consistent but independently rendered is still accepted by the frozen evaluator only if its semantics reconstruct; the evaluator's reconstruction scope, not the label, is authoritative."},
+    {"id": "IDENTITY-FIND-002", "finding": "Raw document JSON hashing differs from the canonical subject digest; subject binding must use the canonical serialization with digest fields removed."},
+    {"id": "IDENTITY-FIND-003", "finding": "Replaying registered mutations onto the material subject and requiring BOTH implementations to emit exactly the registered diagnostic with no extras is the decisive agreement check."},
+    {"id": "IDENTITY-FIND-004", "finding": "Material checks must be independent code paths, not calls into the evaluator; the house validator imports both only because it is the cross-check, not the judge."}
+  ],
+  "assumptions": [
+    "All identity facts are synthetic fixture data; no real entity truth, protected-account bundle, adjudication, or live eligibility is claimed.",
+    "The material subject is a separate, honestly-labelled render; byte identity to the frozen fixture is not required because the frozen evaluator judges semantics, not labels.",
+    "The graph input schema is the material layer's contract and does not replace the frozen subject schema."
+  ],
+  "decisions": [
+    "Implement the material layer as an independent code path that never imports evals.public.temporal_identity_evaluator.",
+    "Bind the replay receipt evaluator_sha256 to the frozen independent evaluator's file digest (bytes only, no import).",
+    "Require both the frozen evaluator and the material checks to detect every registered mutation on the material subject.",
+    "Persist the material validation report to artifacts/evaluations/identity_contracts.json and keep the frozen gate validator unchanged.",
+    "Mark IDENTITY-001 completed at public proof level 4 and leave all real-world identity/protection gates OPEN_BLOCKING."
+  ],
+  "risks": [
+    "The material implementation and evaluator remain repository-visible and do not constitute a sealed holdout (GATE-SEALED-EVALUATOR-CUSTODY-001 remains open).",
+    "Byte identity is not claimed; a future schema change could drift the material render from the frozen fixture and must be caught by the cross-check.",
+    "Proof level 4 establishes synthetic mechanics only; no measured zero false clears on production, precision/recall, or protected-account completeness.",
+    "The next executable tasks (ECONOMICS-001, SECURITY-001) must not inherit this layer's claim ceiling without their own task-results."
+  ],
+  "gates": [
+    "GATE-ENTITY-TRUTH-001 remains open for real entity and physical-location truth",
+    "protected_account_bundle (GATE-PROTECTED-ACCOUNT-BUNDLE-001) remains open for authorized protected-account completeness",
+    "GATE-IDENTITY-EMPIRICAL-VALIDATION-001 remains open for empirical identity validation",
+    "GATE-SEALED-EVALUATOR-CUSTODY-001 remains open for independent sealed proof",
+    "GATE-HIDDEN-HOLDOUT-OWNER-001 remains open for external hidden-holdout ownership"
+  ],
+  "proof_level": 4,
+  "artifacts": [
+    {"name": "material identity graph implementation", "path": "src/cre_foundry/identity/graph.py", "result": "independent renderer and semantic primitives; deterministic canonical render"},
+    {"name": "material graph schema", "path": "contracts/synthetic_identity_graph.schema.json", "result": "strict Draft 2020-12 input contract for the material layer"},
+    {"name": "material house validator", "path": "scripts/validate_identity_contracts.py", "result": "PASS with zero schema errors, zero diagnostics, DETECTED_BOTH on all registered fixtures"},
+    {"name": "material validation report", "path": "artifacts/evaluations/identity_contracts.json", "result": "PASS at public proof level 4"},
+    {"name": "material public tests", "path": "evals/public/test_identity_contracts.py", "result": "5 tests pass"},
+    {"name": "material documentation", "path": "docs/identity/IDENTITY_MATERIAL.md", "result": "rendering, binding, checks, verification, boundaries"},
+    {"name": "existing frozen evidence", "path": "artifacts/evaluations/identity_synthetic.json", "result": "proof_level 4, claim ceiling 4, 28 registered mutations, 8 stable diagnostics"}
+  ],
+  "rollback": "Revert the material layer (src/cre_foundry/identity, scripts/validate_identity_contracts.py, contracts/synthetic_identity_graph.schema.json, evals/public/test_identity_contracts.py, docs/identity/IDENTITY_MATERIAL.md, artifacts/evaluations/identity_contracts.json) and return IDENTITY-001 to the frozen evaluator boundary; the frozen evaluator, schema, and fixtures remain untouched and green.",
+  "next_action": "Proceed to the next executable dependency-valid task per the autonomous frontier: audit then implement ECONOMICS-001 and SECURITY-001 material layers with truthful task-results and control-state updates, keeping all external gates OPEN_BLOCKING; only then return to terminal manifest closure."
+}

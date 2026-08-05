@@ -1,0 +1,16 @@
+{
+  "approved_schedule_count": 0,
+  "automatic_acquisition_execution_count": 0,
+  "candidate_file_count": 3,
+  "candidate_file_overflow_count": 0,
+  "configured_source_count": 4,
+  "enabled_schedule_count": 0,
+  "insufficient_history_count": 2,
+  "model_version": "cre-foundry-source-cadence-observations-v1",
+  "observed_baseline_count": 0,
+  "opportunity_ranked": false,
+  "outreach_eligible": false,
+  "parse_error_count": 0,
+  "provisional_history_count": 2
+}
+SOURCE CADENCE AUDIT PASSED

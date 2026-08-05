@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "score": 100.0,
+  "checks": {
+    "mission": true,
+    "repository_truth": true,
+    "depth_first_vertical_slice": true,
+    "evaluator_topology": true,
+    "best_of_n": true,
+    "progressive_context": true,
+    "role_relevance": true,
+    "state_resume": true,
+    "three_modes": true,
+    "security": true,
+    "claim_integrity": true,
+    "no_endless_turn_claim": true
+  },
+  "words": 665,
+  "characters": 5107
+}

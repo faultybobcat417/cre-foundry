@@ -1,0 +1,5 @@
+{
+  "case_id": "omitted-costs",
+  "mutation_id": "omitted_costs",
+  "expected_diagnostic": "ECONOMICS-OMITTED-COSTS"
+}

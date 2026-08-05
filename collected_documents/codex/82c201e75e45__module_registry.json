@@ -1,0 +1,215 @@
+{
+  "registry_id": "MODULE_REGISTRY:ARCHITECTURE-001",
+  "schema_version": "1.0.0",
+  "execution_scope": "SYNTHETIC_NON_INFLUENCING",
+  "canonicalization": "SORTED_KEYS_INTEGER_JSON_V1",
+  "module_roles": [
+    "observation_port",
+    "candidate_port",
+    "decision_port",
+    "issuance_port",
+    "field_event_port",
+    "outcome_port",
+    "workflow_query_port"
+  ],
+  "module_contract": {
+    "required_fields": [
+      "module_id",
+      "role",
+      "interface_version",
+      "input_schema_sha256",
+      "output_schema_sha256",
+      "implementation_id",
+      "implementation_sha256",
+      "replacement_family",
+      "deterministic",
+      "idempotency_mode",
+      "effect_class",
+      "live_enabled"
+    ],
+    "exactly_one_module_per_role": true,
+    "live_enabled": false
+  },
+  "interface_versions": [
+    "1.0.0"
+  ],
+  "effect_classes": [
+    "NO_EXTERNAL_EFFECT",
+    "EXTERNAL_EFFECT_HELD_UNAUTHORIZED"
+  ],
+  "idempotency_modes": [
+    "REPLAY_SAFE"
+  ],
+  "interface_schema_bindings": {
+    "observation_port": {
+      "input": {
+        "path": "contracts/thin_slice_observation.schema.json",
+        "sha256": "16b26b4ab05f138af9e886ce09709acfce434b5f5cd2942952d5cfe1e00d368f"
+      },
+      "output": {
+        "path": "contracts/thin_slice_observation.schema.json",
+        "sha256": "16b26b4ab05f138af9e886ce09709acfce434b5f5cd2942952d5cfe1e00d368f"
+      }
+    },
+    "candidate_port": {
+      "input": {
+        "path": "contracts/thin_slice_candidate.schema.json",
+        "sha256": "2321437dbee53e2a04bfd1121682447cdfb947828d7ba4fa4e6e12f761aa2e15"
+      },
+      "output": {
+        "path": "contracts/thin_slice_candidate.schema.json",
+        "sha256": "2321437dbee53e2a04bfd1121682447cdfb947828d7ba4fa4e6e12f761aa2e15"
+      }
+    },
+    "decision_port": {
+      "input": {
+        "path": "contracts/math_decision_policy.schema.json",
+        "sha256": "3942db4a53405c57c8cf7edfcbcda26262b6457de80f55ca4620278ec0ae04fd"
+      },
+      "output": {
+        "path": "contracts/math_route_decision.schema.json",
+        "sha256": "b3929312d94633c5fdebb68f2df705c51bdb2868fa4941b97993e0fd6a1c0cb1"
+      }
+    },
+    "issuance_port": {
+      "input": {
+        "path": "contracts/math_route_decision.schema.json",
+        "sha256": "b3929312d94633c5fdebb68f2df705c51bdb2868fa4941b97993e0fd6a1c0cb1"
+      },
+      "output": {
+        "path": "contracts/synthetic_route_day.schema.json",
+        "sha256": "a04bc6e1fd6f70a984d61f4314bb07c81ef00a37e7fd1cb96705256d36ecff0f"
+      }
+    },
+    "field_event_port": {
+      "input": {
+        "path": "contracts/synthetic_route_day.schema.json",
+        "sha256": "a04bc6e1fd6f70a984d61f4314bb07c81ef00a37e7fd1cb96705256d36ecff0f"
+      },
+      "output": {
+        "path": "contracts/synthetic_field_event.schema.json",
+        "sha256": "9e00bdb5104f3d5ec7e87371ca59b5dc045b280308a470095cd34661ffe66913"
+      }
+    },
+    "outcome_port": {
+      "input": {
+        "path": "contracts/synthetic_field_event.schema.json",
+        "sha256": "9e00bdb5104f3d5ec7e87371ca59b5dc045b280308a470095cd34661ffe66913"
+      },
+      "output": {
+        "path": "contracts/synthetic_f9_outcome.schema.json",
+        "sha256": "0d26f5f317f87c014b91f0f73e3a677d048f94fe8eeda1d49b332265813c854c"
+      }
+    },
+    "workflow_query_port": {
+      "input": {
+        "path": "contracts/architecture_workflow_run.schema.json",
+        "sha256": "57a68f662d5c3f5936a636cde96db0262cb844d3c182265ddae15ff6f2d3d314"
+      },
+      "output": {
+        "path": "contracts/architecture_workflow_run.schema.json",
+        "sha256": "57a68f662d5c3f5936a636cde96db0262cb844d3c182265ddae15ff6f2d3d314"
+      }
+    }
+  },
+  "modules": [
+    {
+      "module_id": "module-observation-v1",
+      "role": "observation_port",
+      "interface_version": "1.0.0",
+      "input_schema_sha256": "16b26b4ab05f138af9e886ce09709acfce434b5f5cd2942952d5cfe1e00d368f",
+      "output_schema_sha256": "16b26b4ab05f138af9e886ce09709acfce434b5f5cd2942952d5cfe1e00d368f",
+      "implementation_id": "stub-not-implemented-v1",
+      "implementation_sha256": "8397b27169628dec68f49ad1a5b0cbf5c4ce3fbc470730c1b54d9903bb4a3928",
+      "replacement_family": "observation-port-family",
+      "deterministic": true,
+      "idempotency_mode": "REPLAY_SAFE",
+      "effect_class": "NO_EXTERNAL_EFFECT",
+      "live_enabled": false
+    },
+    {
+      "module_id": "module-candidate-v1",
+      "role": "candidate_port",
+      "interface_version": "1.0.0",
+      "input_schema_sha256": "2321437dbee53e2a04bfd1121682447cdfb947828d7ba4fa4e6e12f761aa2e15",
+      "output_schema_sha256": "2321437dbee53e2a04bfd1121682447cdfb947828d7ba4fa4e6e12f761aa2e15",
+      "implementation_id": "stub-not-implemented-v1",
+      "implementation_sha256": "8397b27169628dec68f49ad1a5b0cbf5c4ce3fbc470730c1b54d9903bb4a3928",
+      "replacement_family": "candidate-port-family",
+      "deterministic": true,
+      "idempotency_mode": "REPLAY_SAFE",
+      "effect_class": "NO_EXTERNAL_EFFECT",
+      "live_enabled": false
+    },
+    {
+      "module_id": "module-decision-v1",
+      "role": "decision_port",
+      "interface_version": "1.0.0",
+      "input_schema_sha256": "3942db4a53405c57c8cf7edfcbcda26262b6457de80f55ca4620278ec0ae04fd",
+      "output_schema_sha256": "b3929312d94633c5fdebb68f2df705c51bdb2868fa4941b97993e0fd6a1c0cb1",
+      "implementation_id": "stub-not-implemented-v1",
+      "implementation_sha256": "8397b27169628dec68f49ad1a5b0cbf5c4ce3fbc470730c1b54d9903bb4a3928",
+      "replacement_family": "decision-port-family",
+      "deterministic": true,
+      "idempotency_mode": "REPLAY_SAFE",
+      "effect_class": "NO_EXTERNAL_EFFECT",
+      "live_enabled": false
+    },
+    {
+      "module_id": "module-issuance-v1",
+      "role": "issuance_port",
+      "interface_version": "1.0.0",
+      "input_schema_sha256": "b3929312d94633c5fdebb68f2df705c51bdb2868fa4941b97993e0fd6a1c0cb1",
+      "output_schema_sha256": "a04bc6e1fd6f70a984d61f4314bb07c81ef00a37e7fd1cb96705256d36ecff0f",
+      "implementation_id": "stub-not-implemented-v1",
+      "implementation_sha256": "8397b27169628dec68f49ad1a5b0cbf5c4ce3fbc470730c1b54d9903bb4a3928",
+      "replacement_family": "issuance-port-family",
+      "deterministic": true,
+      "idempotency_mode": "REPLAY_SAFE",
+      "effect_class": "EXTERNAL_EFFECT_HELD_UNAUTHORIZED",
+      "live_enabled": false
+    },
+    {
+      "module_id": "module-field-event-v1",
+      "role": "field_event_port",
+      "interface_version": "1.0.0",
+      "input_schema_sha256": "a04bc6e1fd6f70a984d61f4314bb07c81ef00a37e7fd1cb96705256d36ecff0f",
+      "output_schema_sha256": "9e00bdb5104f3d5ec7e87371ca59b5dc045b280308a470095cd34661ffe66913",
+      "implementation_id": "stub-not-implemented-v1",
+      "implementation_sha256": "8397b27169628dec68f49ad1a5b0cbf5c4ce3fbc470730c1b54d9903bb4a3928",
+      "replacement_family": "field-event-port-family",
+      "deterministic": true,
+      "idempotency_mode": "REPLAY_SAFE",
+      "effect_class": "NO_EXTERNAL_EFFECT",
+      "live_enabled": false
+    },
+    {
+      "module_id": "module-outcome-v1",
+      "role": "outcome_port",
+      "interface_version": "1.0.0",
+      "input_schema_sha256": "9e00bdb5104f3d5ec7e87371ca59b5dc045b280308a470095cd34661ffe66913",
+      "output_schema_sha256": "0d26f5f317f87c014b91f0f73e3a677d048f94fe8eeda1d49b332265813c854c",
+      "implementation_id": "stub-not-implemented-v1",
+      "implementation_sha256": "8397b27169628dec68f49ad1a5b0cbf5c4ce3fbc470730c1b54d9903bb4a3928",
+      "replacement_family": "outcome-port-family",
+      "deterministic": true,
+      "idempotency_mode": "REPLAY_SAFE",
+      "effect_class": "NO_EXTERNAL_EFFECT",
+      "live_enabled": false
+    },
+    {
+      "module_id": "module-workflow-query-v1",
+      "role": "workflow_query_port",
+      "interface_version": "1.0.0",
+      "input_schema_sha256": "57a68f662d5c3f5936a636cde96db0262cb844d3c182265ddae15ff6f2d3d314",
+      "output_schema_sha256": "57a68f662d5c3f5936a636cde96db0262cb844d3c182265ddae15ff6f2d3d314",
+      "implementation_id": "stub-not-implemented-v1",
+      "implementation_sha256": "8397b27169628dec68f49ad1a5b0cbf5c4ce3fbc470730c1b54d9903bb4a3928",
+      "replacement_family": "workflow-query-port-family",
+      "deterministic": true,
+      "idempotency_mode": "REPLAY_SAFE",
+      "effect_class": "NO_EXTERNAL_EFFECT",
+      "live_enabled": false
+    }
+  ]
+}

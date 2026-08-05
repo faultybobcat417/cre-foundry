@@ -1,0 +1,1071 @@
+===== PROJECT VERIFICATION =====
+===== RUFF =====
+All checks passed!
+
+===== MYPY =====
+Success: no issues found in 67 source files
+
+===== PYTEST =====
+........................................................................ [ 26%]
+........................................................................ [ 53%]
+........................................................................ [ 80%]
+...................................................                      [100%]
+267 passed in 20.04s
+
+===== DOCTOR =====
+                            CRE Foundry Environment                             
+┏━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ Check          ┃ Value                                                       ┃
+┡━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┩
+│ Project root   │ /Users/alimehdi/Projects/comfiance/cre-foundry              │
+│ Python         │ 3.12.13                                                     │
+│ Architecture   │ arm64                                                       │
+│ Executable     │ /Users/alimehdi/Projects/comfiance/cre-foundry/.venv/bin/p… │
+│ DuckDB         │ v1.5.5                                                      │
+│ Polars         │ 1.43.0                                                      │
+│ Warehouse      │ /Users/alimehdi/Projects/comfiance/cre-foundry/data/wareho… │
+│ Operating mode │ shadow                                                      │
+│ Disk available │ 27.8 GiB                                                    │
+└────────────────┴─────────────────────────────────────────────────────────────┘
+
+FOUNDATION CHECK PASSED
+Native ARM64, shadow mode, DuckDB, and Polars are operational.
+
+ALL PROJECT CHECKS PASSED
+
+===== ASSURANCE MESH =====
+{
+  "activation_summary_digest_match": true,
+  "archive_creation_count": 0,
+  "artifact_count": 15,
+  "assurance_layer_count": 8,
+  "automatic_approval_count": 0,
+  "backtest_execution_count": 0,
+  "client_input_complete_count": 0,
+  "client_input_required_count": 5,
+  "client_value_invention_count": 0,
+  "codex_contract_handoff_ready": false,
+  "codex_final_product_handoff_ready": false,
+  "codex_manifest_drift_count": 0,
+  "database_access_count": 0,
+  "database_write_count": 0,
+  "decision_bundle_digest_match": true,
+  "decision_bundle_mutation_count": 0,
+  "dependency_edge_count": 13,
+  "dependency_graph_acyclic": true,
+  "dependency_node_count": 15,
+  "executable_command_creation_count": 0,
+  "failed_invariant_count": 0,
+  "failed_scenario_count": 0,
+  "historical_dry_run_ready": false,
+  "invariant_count": 13,
+  "missing_required_artifact_count": 0,
+  "model_training_execution_count": 0,
+  "model_version": "cre-foundry-assurance-mesh-v1",
+  "outcome_bootstrap_ready": false,
+  "outcome_event_insertion_count": 0,
+  "outreach_execution_count": 0,
+  "passed_invariant_count": 13,
+  "passed_scenario_count": 8,
+  "pilot_execution_count": 0,
+  "point_in_time_dataset_execution_count": 0,
+  "policy": {
+    "adversarial_scenario_matrix_required": true,
+    "approval_invention_forbidden": true,
+    "archive_generation_enabled": false,
+    "artifact_digest_continuity_required": true,
+    "automatic_acquisition_enabled": false,
+    "backtest_execution_enabled": false,
+    "client_value_invention_forbidden": true,
+    "database_access_enabled": false,
+    "database_write_enabled": false,
+    "dependency_dag_required": true,
+    "deterministic_double_build_required": true,
+    "executable_command_generation_enabled": false,
+    "model_training_enabled": false,
+    "operating_mode": "shadow",
+    "outcome_event_insertion_enabled": false,
+    "outreach_enabled": false,
+    "persistent_outcome_ledger_enabled": false,
+    "pilot_execution_enabled": false,
+    "point_in_time_materialization_enabled": false,
+    "production_ranking_enabled": false,
+    "read_only_input_validation": true,
+    "snapshot_registration_enabled": false,
+    "source_schedule_activation_enabled": false,
+    "state_aware_invariants_required": true
+  },
+  "production_ranking_execution_count": 0,
+  "recommended_source_ready": false,
+  "reproducibility_match": true,
+  "scenario_count": 8,
+  "snapshot_registration_count": 0,
+  "stale_source_evidence_count": 0
+}
+ASSURANCE MESH PASSED
+
+===== ACTIVATION MODEL CHECK =====
+{
+  "all_true_final_handoff_ready": true,
+  "automatic_acquisition_count": 0,
+  "automatic_approval_count": 0,
+  "backtest_execution_count": 0,
+  "chaos_scenario_count": 11,
+  "client_value_invention_count": 0,
+  "current_codex_contract_handoff_ready": false,
+  "current_codex_final_handoff_ready": false,
+  "current_gate_mismatch_count": 0,
+  "current_historical_dry_run_ready": false,
+  "current_outcome_bootstrap_ready": false,
+  "database_access_count": 0,
+  "database_write_count": 0,
+  "derived_gate_count": 19,
+  "enumerated_state_count": 16384,
+  "exogenous_input_count": 14,
+  "failed_chaos_scenario_count": 0,
+  "final_handoff_minimal_cut_set_count": 14,
+  "first_build_digest": "1455b9be1e5453f7a5afe1cb696e25d8dcbfce2ba20d9b543ac086117e16b48c",
+  "input_mutation_count": 0,
+  "killed_mutation_count": 7,
+  "model_check_passed": true,
+  "model_training_execution_count": 0,
+  "model_version": "cre-foundry-activation-state-model-v1",
+  "monotonicity_check_count": 114688,
+  "monotonicity_violation_count": 0,
+  "mutation_count": 7,
+  "outcome_event_insertion_count": 0,
+  "outreach_execution_count": 0,
+  "passed_chaos_scenario_count": 11,
+  "persistent_outcome_database_creation_count": 0,
+  "pilot_execution_count": 0,
+  "point_in_time_dataset_execution_count": 0,
+  "policy": {
+    "approval_invention_forbidden": true,
+    "automatic_acquisition_enabled": false,
+    "backtest_execution_enabled": false,
+    "chaos_rehearsal_required": true,
+    "client_value_invention_forbidden": true,
+    "critical_rule_mutation_testing_required": true,
+    "current_state_reconciliation_required": true,
+    "database_access_enabled": false,
+    "database_write_enabled": false,
+    "deterministic_double_build_required": true,
+    "exhaustive_state_enumeration_required": true,
+    "minimal_cut_set_analysis_required": true,
+    "model_training_enabled": false,
+    "operating_mode": "shadow",
+    "outcome_event_insertion_enabled": false,
+    "outreach_enabled": false,
+    "persistent_outcome_ledger_enabled": false,
+    "pilot_execution_enabled": false,
+    "point_in_time_materialization_enabled": false,
+    "prerequisite_integrity_required": true,
+    "production_ranking_enabled": false,
+    "snapshot_registration_enabled": false,
+    "transition_monotonicity_required": true
+  },
+  "prerequisite_check_count": 311296,
+  "prerequisite_violation_count": 0,
+  "production_ranking_execution_count": 0,
+  "reproducibility_match": true,
+  "second_build_digest": "1455b9be1e5453f7a5afe1cb696e25d8dcbfce2ba20d9b543ac086117e16b48c",
+  "snapshot_registration_count": 0,
+  "surviving_mutation_count": 0
+}
+ACTIVATION STATE MODEL PASSED
+
+===== CONTRACT RESILIENCE =====
+{
+  "all_resilience_properties_passed": true,
+  "ambiguous_configuration_version_count": 0,
+  "atomic_recovery_scenario_count": 6,
+  "audit_control_count": 28,
+  "audit_evidence_item_count": 26,
+  "automatic_acquisition_count": 0,
+  "automatic_approval_count": 0,
+  "backtest_execution_count": 0,
+  "certification_claimed": false,
+  "client_value_invention_count": 0,
+  "compliance_claimed": false,
+  "configuration_document_count": 32,
+  "database_access_count": 0,
+  "database_write_count": 0,
+  "escaped_fuzz_case_count": 0,
+  "future_version_rejected": true,
+  "fuzz_case_count": 2048,
+  "governance_decision_digest_unchanged": true,
+  "independent_audit_complete": false,
+  "migration_reproducible": true,
+  "missing_audit_evidence_item_count": 0,
+  "model_training_execution_count": 0,
+  "model_version": "cre-foundry-contract-resilience-audit-v1",
+  "network_access_count": 0,
+  "outcome_event_insertion_count": 0,
+  "outreach_execution_count": 0,
+  "passed_atomic_recovery_scenario_count": 6,
+  "persistent_outcome_database_creation_count": 0,
+  "pilot_execution_count": 0,
+  "point_in_time_dataset_execution_count": 0,
+  "policy": {
+    "approval_invention_forbidden": true,
+    "atomic_write_recovery_required": true,
+    "audit_evidence_index_required": true,
+    "automatic_acquisition_enabled": false,
+    "backtest_execution_enabled": false,
+    "client_value_invention_forbidden": true,
+    "compliance_claim_permitted": false,
+    "configuration_versioning_required": true,
+    "database_access_enabled": false,
+    "database_write_enabled": false,
+    "deterministic_fuzzing_required": true,
+    "deterministic_migration_rehearsal_required": true,
+    "duplicate_key_rejection_required": true,
+    "future_version_rejection_required": true,
+    "model_training_enabled": false,
+    "network_access_enabled": false,
+    "non_finite_number_rejection_required": true,
+    "operating_mode": "shadow",
+    "outcome_event_insertion_enabled": false,
+    "outreach_enabled": false,
+    "persistent_outcome_ledger_enabled": false,
+    "pilot_execution_enabled": false,
+    "point_in_time_materialization_enabled": false,
+    "production_ranking_enabled": false,
+    "serialization_round_trip_required": true,
+    "snapshot_registration_enabled": false,
+    "software_inventory_required": true,
+    "steelman_audit_plan_required": true,
+    "strict_json_parsing_required": true
+  },
+  "production_ranking_execution_count": 0,
+  "rejected_fuzz_case_count": 2048,
+  "rejected_serialization_negative_case_count": 5,
+  "sbom_component_count": 158,
+  "serialization_case_count": 4096,
+  "serialization_negative_case_count": 5,
+  "snapshot_registration_count": 0,
+  "steelman_audit_phase_count": 10,
+  "steelman_question_count": 12,
+  "successful_serialization_case_count": 4096,
+  "unversioned_configuration_count": 0
+}
+CONTRACT RESILIENCE AUDIT PASSED
+
+===== SQL SAFETY PRIMITIVES =====
+..............................................                           [100%]
+46 passed in 0.13s
+{
+  "accepted_deterministic_case_count": 512,
+  "all_properties_passed": true,
+  "application_database_access_count": 0,
+  "application_database_write_count": 0,
+  "automatic_risk_acceptance_count": 0,
+  "automatic_source_rewrite_count": 0,
+  "automatic_suppression_count": 0,
+  "deterministic_case_count": 4096,
+  "deterministic_case_violation_count": 0,
+  "hostile_example_acceptance_count": 0,
+  "hostile_example_count": 16,
+  "identifier_parameterization_claimed": false,
+  "identifier_segment_pattern": "[A-Za-z_][A-Za-z0-9_]*",
+  "identifier_segments_quoted_independently": true,
+  "invalid_qualified_acceptance_count": 0,
+  "invalid_qualified_case_count": 11,
+  "maximum_identifier_segment_length": 128,
+  "maximum_qualified_identifier_segments": 3,
+  "model_version": "cre-foundry-sql-safety-primitives-v1",
+  "production_action_count": 0,
+  "qualified_rendering_case_count": 4,
+  "qualified_rendering_violation_count": 0,
+  "rejected_deterministic_case_count": 3584,
+  "strict_ascii_identifier_policy": true,
+  "valid_example_count": 5,
+  "valid_example_failure_count": 0,
+  "value_parameterization_required": true
+}
+SQL SAFETY PRIMITIVES PASSED
+SQL-safety primitives validated:
+  deterministic cases: 4096
+  accepted cases: 512
+  rejected cases: 3584
+  property violations: 0
+  hostile acceptances: 0
+  automatic rewrites: 0
+  suppressions: 0
+  application database activity: 0
+
+SQL SAFETY PRIMITIVES CHECK PASSED
+
+===== DEVSECOPS SCANNER CONTROL PLANE =====
+===== LOCKED ENVIRONMENT =====
+
+===== TOOL VERSIONS =====
+
+===== DEPENDENCY VULNERABILITIES =====
+
+===== PYTHON SECURITY STATIC ANALYSIS =====
+Working... ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:01
+
+===== WORKTREE SECRET SCAN =====
+
+===== LICENSE INVENTORY =====
+
+===== NORMALIZE AND GOVERN FINDINGS =====
+{
+  "automatic_acquisition_count": 0,
+  "backtest_execution_count": 0,
+  "bandit_finding_count": 51,
+  "blocking_finding_count": 20,
+  "certification_claimed": false,
+  "ci_policy_violation_count": 0,
+  "compliance_claimed": false,
+  "database_access_count": 0,
+  "database_write_count": 0,
+  "dependency_vulnerability_count": 0,
+  "duplicate_finding_count": 0,
+  "finding_count": 560,
+  "history_secret_finding_count": 0,
+  "independent_audit_complete": false,
+  "model_training_execution_count": 0,
+  "model_version": "cre-foundry-devsecops-scanner-control-plane-v1",
+  "outcome_event_insertion_count": 0,
+  "outreach_execution_count": 0,
+  "overall_release_blockers": [
+    "five_authoritative_client_inputs",
+    "named_brampton_permit_review",
+    "real_historical_snapshots",
+    "real_outcome_labels",
+    "point_in_time_dataset",
+    "model_backtesting_and_calibration",
+    "controlled_pilot",
+    "incremental_roi_proof",
+    "production_governance"
+  ],
+  "overall_release_eligible": false,
+  "persistent_outcome_database_creation_count": 0,
+  "pilot_execution_count": 0,
+  "point_in_time_dataset_execution_count": 0,
+  "policy": {
+    "automatic_acquisition_enabled": false,
+    "backtest_execution_enabled": false,
+    "ci_least_privilege_required": true,
+    "critical_secret_suppression_forbidden": true,
+    "database_access_enabled": false,
+    "database_write_enabled": false,
+    "deterministic_fingerprints_required": true,
+    "expired_suppressions_forbidden": true,
+    "finding_normalization_required": true,
+    "git_history_secret_scan_required": true,
+    "immutable_action_pinning_required": true,
+    "machine_readable_results_required": true,
+    "model_training_enabled": false,
+    "network_access_scope": "pip-audit-vulnerability-service-only",
+    "operating_mode": "shadow",
+    "outcome_event_insertion_enabled": false,
+    "outreach_enabled": false,
+    "persistent_outcome_ledger_enabled": false,
+    "pilot_execution_enabled": false,
+    "point_in_time_materialization_enabled": false,
+    "production_ranking_enabled": false,
+    "raw_secret_persistence_forbidden": true,
+    "sbom_lockfile_reconciliation_required": true,
+    "scanner_execution_required": true,
+    "silent_suppressions_forbidden": true,
+    "snapshot_registration_enabled": false,
+    "suppression_governance_required": true,
+    "wildcard_suppressions_forbidden": true
+  },
+  "production_ranking_execution_count": 0,
+  "prohibited_license_count": 0,
+  "raw_secret_value_count": 0,
+  "review_finding_count": 540,
+  "review_license_count": 5,
+  "sbom_duplicate_component_count": 0,
+  "sbom_extra_component_count": 0,
+  "sbom_missing_component_count": 0,
+  "scanner_control_plane_operational": true,
+  "scanner_count": 5,
+  "scanner_execution_error_count": 0,
+  "scanner_statuses": [
+    {
+      "accepted_exit_codes": [
+        0,
+        1
+      ],
+      "execution_complete": true,
+      "exit_code": 0,
+      "scanner": "pip-audit"
+    },
+    {
+      "accepted_exit_codes": [
+        0,
+        1
+      ],
+      "execution_complete": true,
+      "exit_code": 1,
+      "scanner": "bandit"
+    },
+    {
+      "accepted_exit_codes": [
+        0
+      ],
+      "execution_complete": true,
+      "exit_code": 0,
+      "scanner": "detect-secrets"
+    },
+    {
+      "accepted_exit_codes": [
+        0
+      ],
+      "execution_complete": true,
+      "exit_code": 0,
+      "scanner": "pip-licenses"
+    }
+  ],
+  "security_gate_passed": false,
+  "snapshot_registration_count": 0,
+  "suppressed_finding_count": 0,
+  "suppression_violation_count": 0,
+  "tool_version_mismatch_count": 0,
+  "worktree_secret_finding_count": 504
+}
+DEVSECOPS SCANNER CONTROL PLANE PASSED
+
+SECURITY SCANNER LOOP COMPLETED
+
+===== SQL SAFETY REMEDIATION INVENTORY =====
+{
+  "affected_file_count": 11,
+  "affected_scope_count": 15,
+  "automatic_acquisition_count": 0,
+  "automatic_risk_acceptance_count": 0,
+  "automatic_source_rewrite_count": 0,
+  "automatic_suppression_count": 0,
+  "backtest_execution_count": 0,
+  "blocking_b608_count": 20,
+  "database_access_count": 0,
+  "database_write_count": 0,
+  "identifier_safety_signal_count": 0,
+  "license_review_count": 5,
+  "likely_digest_artifact_count": 445,
+  "model_training_execution_count": 0,
+  "model_version": "cre-foundry-sql-safety-remediation-summary-v1",
+  "network_access_count": 0,
+  "next_required_checkpoint": "sql-safety-remediation-wave-1",
+  "outcome_event_insertion_count": 0,
+  "outreach_execution_count": 0,
+  "parameter_binding_present_count": 7,
+  "persistent_outcome_database_creation_count": 0,
+  "pilot_execution_count": 0,
+  "point_in_time_dataset_execution_count": 0,
+  "policy": {
+    "automatic_acquisition_enabled": false,
+    "automatic_risk_acceptance_enabled": false,
+    "automatic_source_rewrite_enabled": false,
+    "automatic_suppression_enabled": false,
+    "backtest_execution_enabled": false,
+    "database_access_enabled": false,
+    "database_write_enabled": false,
+    "enclosing_scope_capture_required": true,
+    "expected_blocking_b608_count": 20,
+    "file_path_parameterization_required": true,
+    "license_review_profiling_required": true,
+    "model_training_enabled": false,
+    "operating_mode": "shadow",
+    "outcome_event_insertion_enabled": false,
+    "outreach_enabled": false,
+    "persistent_outcome_ledger_enabled": false,
+    "pilot_execution_enabled": false,
+    "point_in_time_materialization_enabled": false,
+    "production_ranking_enabled": false,
+    "raw_secret_persistence_forbidden": true,
+    "secret_noise_profiling_required": true,
+    "snapshot_registration_enabled": false,
+    "source_digest_binding_required": true,
+    "statement_digest_binding_required": true,
+    "strict_identifier_quoting_required": true,
+    "strict_identifier_validation_required": true,
+    "test_coverage_discovery_required": true,
+    "value_parameterization_required": true
+  },
+  "production_ranking_execution_count": 0,
+  "prohibited_license_count": 0,
+  "raw_secret_value_count": 0,
+  "scanner_control_plane_operational": true,
+  "secret_review_finding_count": 504,
+  "security_gate_passed": false,
+  "snapshot_registration_count": 0,
+  "test_reference_count": 46
+}
+SQL SAFETY REMEDIATION INVENTORY PASSED
+
+SQL SAFETY INVENTORY COMPLETED
+
+===== SQL SAFETY WAVE 1A PLAN =====
+{
+  "affected_file_count": 5,
+  "affected_files": [
+    "src/cre_foundry/brampton_business_directory_silver.py",
+    "src/cre_foundry/brampton_cross_source_reconciliation.py",
+    "src/cre_foundry/brampton_permit_silver.py",
+    "src/cre_foundry/brampton_verification_ledger.py",
+    "src/cre_foundry/primitive_quality.py"
+  ],
+  "automatic_rewrite_count": 0,
+  "automatic_risk_acceptance_count": 0,
+  "automatic_suppression_count": 0,
+  "candidates": [
+    {
+      "automatic_rewrite_performed": false,
+      "automatic_risk_acceptance_performed": false,
+      "automatic_suppression_performed": false,
+      "classification": "identifier_candidate",
+      "database_access_performed": false,
+      "database_write_performed": false,
+      "dynamic_expressions": [
+        "placeholders"
+      ],
+      "enclosing_scope": "build_brampton_business_directory_silver",
+      "line_number": 488,
+      "location": "src/cre_foundry/brampton_business_directory_silver.py:488",
+      "query_kind": "dynamic_insert",
+      "recommended_strategy": "Separate schema, table and column tokens from data values and route each token through the strict SQL identifier primitives.",
+      "sequence": 1,
+      "source_excerpt": "  00482:             \"\"\"\n  00483:         )\n  00484: \n  00485:         placeholders = \", \".join([\"?\"] * 48)\n  00486: \n  00487:         staging.executemany(\n> 00488:             f\"\"\"\n  00489:             INSERT INTO directory_rows\n  00490:             VALUES ({placeholders})\n  00491:             \"\"\",\n  00492:             rows,\n  00493:         )\n  00494: ",
+      "source_modification_performed": false,
+      "source_path": "src/cre_foundry/brampton_business_directory_silver.py",
+      "statement_ast_sha256": "0af711ecc6d6f1b777605ff2079cb38aaa805bebdb6ed3d0ec541676359d4364",
+      "statement_source": "staging.executemany(\n            f\"\"\"\n            INSERT INTO directory_rows\n            VALUES ({placeholders})\n            \"\"\",\n            rows,\n        )",
+      "test_reference_count": 1,
+      "test_references": [
+        "tests/unit/test_brampton_business_directory_silver.py"
+      ]
+    },
+    {
+      "automatic_rewrite_performed": false,
+      "automatic_risk_acceptance_performed": false,
+      "automatic_suppression_performed": false,
+      "classification": "manual_query_shape_review",
+      "database_access_performed": false,
+      "database_write_performed": false,
+      "dynamic_expressions": [
+        "placeholders"
+      ],
+      "enclosing_scope": "build_brampton_cross_source_reconciliation",
+      "line_number": 549,
+      "location": "src/cre_foundry/brampton_cross_source_reconciliation.py:549",
+      "query_kind": "dynamic_insert",
+      "recommended_strategy": "Inspect the complete statement and separate every identifier from every data value before selecting the canary migration.",
+      "sequence": 2,
+      "source_excerpt": "  00543:         )\n  00544: \n  00545:         if rows:\n  00546:             placeholders = \", \".join([\"?\"] * 37)\n  00547: \n  00548:             connection.executemany(\n> 00549:                 f\"\"\"\n  00550:                 INSERT INTO\n  00551:                     silver.brampton_permit_cross_source_reconciliation\n  00552:                 VALUES ({placeholders})\n  00553:                 \"\"\",\n  00554:                 rows,\n  00555:             )",
+      "source_modification_performed": false,
+      "source_path": "src/cre_foundry/brampton_cross_source_reconciliation.py",
+      "statement_ast_sha256": "12c5d1b3d88c19def44f9248514de8779749e20850c670118bcca99eacc0f998",
+      "statement_source": "connection.executemany(\n                f\"\"\"\n                INSERT INTO\n                    silver.brampton_permit_cross_source_reconciliation\n                VALUES ({placeholders})\n                \"\"\",\n                rows,\n            )",
+      "test_reference_count": 1,
+      "test_references": [
+        "tests/unit/test_brampton_cross_source_reconciliation.py"
+      ]
+    },
+    {
+      "automatic_rewrite_performed": false,
+      "automatic_risk_acceptance_performed": false,
+      "automatic_suppression_performed": false,
+      "classification": "identifier_candidate",
+      "database_access_performed": false,
+      "database_write_performed": false,
+      "dynamic_expressions": [
+        "placeholders"
+      ],
+      "enclosing_scope": "build_brampton_permit_silver",
+      "line_number": 361,
+      "location": "src/cre_foundry/brampton_permit_silver.py:361",
+      "query_kind": "dynamic_insert",
+      "recommended_strategy": "Separate schema, table and column tokens from data values and route each token through the strict SQL identifier primitives.",
+      "sequence": 3,
+      "source_excerpt": "  00355:             \"\"\"\n  00356:         )\n  00357: \n  00358:         placeholders = \", \".join([\"?\"] * 29)\n  00359: \n  00360:         staging.executemany(\n> 00361:             f\"\"\"\n  00362:             INSERT INTO permit_rows\n  00363:             VALUES ({placeholders})\n  00364:             \"\"\",\n  00365:             rows,\n  00366:         )\n  00367: ",
+      "source_modification_performed": false,
+      "source_path": "src/cre_foundry/brampton_permit_silver.py",
+      "statement_ast_sha256": "8d3ccb6c507035cd13f652faadf316a6e0ae43002f21080cb30d3677ad473e81",
+      "statement_source": "staging.executemany(\n            f\"\"\"\n            INSERT INTO permit_rows\n            VALUES ({placeholders})\n            \"\"\",\n            rows,\n        )",
+      "test_reference_count": 1,
+      "test_references": [
+        "tests/unit/test_brampton_permit_silver.py"
+      ]
+    },
+    {
+      "automatic_rewrite_performed": false,
+      "automatic_risk_acceptance_performed": false,
+      "automatic_suppression_performed": false,
+      "classification": "manual_query_shape_review",
+      "database_access_performed": false,
+      "database_write_performed": false,
+      "dynamic_expressions": [
+        "placeholders"
+      ],
+      "enclosing_scope": "project_verification_state",
+      "line_number": 1066,
+      "location": "src/cre_foundry/brampton_verification_ledger.py:1066",
+      "query_kind": "dynamic_insert",
+      "recommended_strategy": "Inspect the complete statement and separate every identifier from every data value before selecting the canary migration.",
+      "sequence": 4,
+      "source_excerpt": "  01060:         )\n  01061: \n  01062:         if state_rows:\n  01063:             placeholders = \", \".join([\"?\"] * 35)\n  01064: \n  01065:             connection.executemany(\n> 01066:                 f\"\"\"\n  01067:                 INSERT INTO\n  01068:                     control.brampton_verification_task_state\n  01069:                 VALUES ({placeholders})\n  01070:                 \"\"\",\n  01071:                 state_rows,\n  01072:             )",
+      "source_modification_performed": false,
+      "source_path": "src/cre_foundry/brampton_verification_ledger.py",
+      "statement_ast_sha256": "814a568f5461ebc08c77d965078c5cf0a4cf576c6000fb0aa54f149f31a356a3",
+      "statement_source": "connection.executemany(\n                f\"\"\"\n                INSERT INTO\n                    control.brampton_verification_task_state\n                VALUES ({placeholders})\n                \"\"\",\n                state_rows,\n            )",
+      "test_reference_count": 1,
+      "test_references": [
+        "tests/unit/test_brampton_verification_ledger.py"
+      ]
+    },
+    {
+      "automatic_rewrite_performed": false,
+      "automatic_risk_acceptance_performed": false,
+      "automatic_suppression_performed": false,
+      "classification": "manual_query_shape_review",
+      "database_access_performed": false,
+      "database_write_performed": false,
+      "dynamic_expressions": [
+        "placeholders"
+      ],
+      "enclosing_scope": "project_verification_state",
+      "line_number": 1109,
+      "location": "src/cre_foundry/brampton_verification_ledger.py:1109",
+      "query_kind": "dynamic_insert",
+      "recommended_strategy": "Inspect the complete statement and separate every identifier from every data value before selecting the canary migration.",
+      "sequence": 5,
+      "source_excerpt": "  01103:         )\n  01104: \n  01105:         if workflow_rows:\n  01106:             placeholders = \", \".join([\"?\"] * 23)\n  01107: \n  01108:             connection.executemany(\n> 01109:                 f\"\"\"\n  01110:                 INSERT INTO\n  01111:                     control.brampton_verification_workflow_state\n  01112:                 VALUES ({placeholders})\n  01113:                 \"\"\",\n  01114:                 workflow_rows,\n  01115:             )",
+      "source_modification_performed": false,
+      "source_path": "src/cre_foundry/brampton_verification_ledger.py",
+      "statement_ast_sha256": "3e02d2434645b505bc536416b4e22b598ee4eb2eabffca6d5b4d5c88e2565302",
+      "statement_source": "connection.executemany(\n                f\"\"\"\n                INSERT INTO\n                    control.brampton_verification_workflow_state\n                VALUES ({placeholders})\n                \"\"\",\n                workflow_rows,\n            )",
+      "test_reference_count": 1,
+      "test_references": [
+        "tests/unit/test_brampton_verification_ledger.py"
+      ]
+    },
+    {
+      "automatic_rewrite_performed": false,
+      "automatic_risk_acceptance_performed": false,
+      "automatic_suppression_performed": false,
+      "classification": "identifier_candidate",
+      "database_access_performed": false,
+      "database_write_performed": false,
+      "dynamic_expressions": [
+        "quoted_column",
+        "relation_identifier"
+      ],
+      "enclosing_scope": "_duckdb_profile_relation",
+      "line_number": 554,
+      "location": "src/cre_foundry/primitive_quality.py:554",
+      "query_kind": "dynamic_distinct_projection",
+      "recommended_strategy": "Separate schema, table and column tokens from data values and route each token through the strict SQL identifier primitives.",
+      "sequence": 6,
+      "source_excerpt": "  00548:         }\n  00549: \n  00550:         if profile[\"roles\"][\"safety\"]:\n  00551:             quoted_column = _quote_identifier(column_name)\n  00552: \n  00553:             safety_rows = connection.execute(\n> 00554:                 f\"\"\"\n  00555:                 SELECT DISTINCT\n  00556:                     CAST(\n  00557:                         {quoted_column}\n  00558:                         AS VARCHAR\n  00559:                     )\n  00560:                 FROM {relation_identifier}",
+      "source_modification_performed": false,
+      "source_path": "src/cre_foundry/primitive_quality.py",
+      "statement_ast_sha256": "d2c6d0391e77af00d446b040ec0f2a099b5217ce1a2d8b44c145c1ce586b825d",
+      "statement_source": "safety_rows = connection.execute(\n                f\"\"\"\n                SELECT DISTINCT\n                    CAST(\n                        {quoted_column}\n                        AS VARCHAR\n                    )\n                FROM {relation_identifier}\n                WHERE\n                    {quoted_column}\n                    IS NOT NULL\n                ORDER BY 1\n                LIMIT ?\n                \"\"\",\n                [maximum_safety_values],\n            ).fetchall()",
+      "test_reference_count": 5,
+      "test_references": [
+        "tests/unit/test_data_health.py",
+        "tests/unit/test_pilot_readiness.py",
+        "tests/unit/test_primitive_quality.py",
+        "tests/unit/test_shadow_learning.py",
+        "tests/unit/test_temporal_readiness.py"
+      ]
+    },
+    {
+      "automatic_rewrite_performed": false,
+      "automatic_risk_acceptance_performed": false,
+      "automatic_suppression_performed": false,
+      "classification": "identifier_candidate",
+      "database_access_performed": false,
+      "database_write_performed": false,
+      "dynamic_expressions": [
+        "quoted_column",
+        "relation_identifier"
+      ],
+      "enclosing_scope": "_sqlite_profile_relation",
+      "line_number": 675,
+      "location": "src/cre_foundry/primitive_quality.py:675",
+      "query_kind": "dynamic_distinct_projection",
+      "recommended_strategy": "Separate schema, table and column tokens from data values and route each token through the strict SQL identifier primitives.",
+      "sequence": 7,
+      "source_excerpt": "  00669:         }\n  00670: \n  00671:         if profile[\"roles\"][\"safety\"]:\n  00672:             quoted_column = _quote_identifier(column_name)\n  00673: \n  00674:             safety_rows = connection.execute(\n> 00675:                 f\"\"\"\n  00676:                 SELECT DISTINCT\n  00677:                     CAST(\n  00678:                         {quoted_column}\n  00679:                         AS TEXT\n  00680:                     )\n  00681:                 FROM {relation_identifier}",
+      "source_modification_performed": false,
+      "source_path": "src/cre_foundry/primitive_quality.py",
+      "statement_ast_sha256": "2f354e74662a536a32875996b033f5c01827a760719b362c1d2b656e142c8378",
+      "statement_source": "safety_rows = connection.execute(\n                f\"\"\"\n                SELECT DISTINCT\n                    CAST(\n                        {quoted_column}\n                        AS TEXT\n                    )\n                FROM {relation_identifier}\n                WHERE\n                    {quoted_column}\n                    IS NOT NULL\n                ORDER BY 1\n                LIMIT ?\n                \"\"\",\n                (maximum_safety_values,),\n            ).fetchall()",
+      "test_reference_count": 5,
+      "test_references": [
+        "tests/unit/test_data_health.py",
+        "tests/unit/test_pilot_readiness.py",
+        "tests/unit/test_primitive_quality.py",
+        "tests/unit/test_shadow_learning.py",
+        "tests/unit/test_temporal_readiness.py"
+      ]
+    }
+  ],
+  "classification_counts": {
+    "identifier_candidate": 4,
+    "manual_query_shape_review": 3
+  },
+  "database_access_count": 0,
+  "database_write_count": 0,
+  "model_training_execution_count": 0,
+  "model_version": "cre-foundry-sql-safety-wave1a-plan-v1",
+  "next_checkpoint": "sql-safety-wave1a-canary-migration",
+  "operating_mode": "shadow",
+  "outreach_execution_count": 0,
+  "parameter_aware_candidate_count": 7,
+  "pilot_execution_count": 0,
+  "production_ranking_execution_count": 0,
+  "ready_for_surgical_migration": true,
+  "snapshot_registration_count": 0,
+  "source_modification_count": 0
+}
+SQL SAFETY WAVE 1A PLAN PASSED
+
+Exact Wave 1A migration queue:
+  - src/cre_foundry/brampton_business_directory_silver.py:488 | build_brampton_business_directory_silver | identifier_candidate | tests 1
+  - src/cre_foundry/brampton_cross_source_reconciliation.py:549 | build_brampton_cross_source_reconciliation | manual_query_shape_review | tests 1
+  - src/cre_foundry/brampton_permit_silver.py:361 | build_brampton_permit_silver | identifier_candidate | tests 1
+  - src/cre_foundry/brampton_verification_ledger.py:1066 | project_verification_state | manual_query_shape_review | tests 1
+  - src/cre_foundry/brampton_verification_ledger.py:1109 | project_verification_state | manual_query_shape_review | tests 1
+  - src/cre_foundry/primitive_quality.py:554 | _duckdb_profile_relation | identifier_candidate | tests 5
+  - src/cre_foundry/primitive_quality.py:675 | _sqlite_profile_relation | identifier_candidate | tests 5
+
+Wave 1A planner safety state:
+  source modifications: 0
+  automatic rewrites: 0
+  suppressions: 0
+  risk acceptances: 0
+  database activity: 0
+  production activity: 0
+
+SQL SAFETY WAVE 1A PLAN COMPLETED
+
+===== SECURITY BLOCKER RATCHET =====
+{
+  "automatic_risk_acceptance_count": 0,
+  "automatic_suppression_count": 0,
+  "baseline_blocker_count": 20,
+  "baseline_is_risk_acceptance": false,
+  "baseline_is_suppression": false,
+  "current_blocker_count": 20,
+  "database_access_count": 0,
+  "database_write_count": 0,
+  "formatting_sensitive_identity_used": false,
+  "full_enforcement_ready": false,
+  "line_number_identity_used": false,
+  "location_drift_count": 0,
+  "location_drifts": [],
+  "model_version": "cre-foundry-security-blocker-ratchet-v2",
+  "new_blocker_count": 0,
+  "new_blockers": [],
+  "production_action_count": 0,
+  "ratchet_passed": true,
+  "remediated_blocker_count": 0,
+  "remediated_blockers": [],
+  "retained_blocker_count": 20,
+  "retained_blockers": [
+    {
+      "current_location": "src/cre_foundry/source_operations.py:490",
+      "identity": {
+        "advisory_id": "B608",
+        "enclosing_scope": "initialize_source_operations",
+        "query_kind": "dynamic_relation_count",
+        "scanner": "bandit",
+        "source_path": "src/cre_foundry/source_operations.py",
+        "statement_ast_sha256": "b30a4fe32dd1174a28aac0dbe6163d5b47cb560df1257403fa2c82d85d52f754",
+        "title": "B608: Possible SQL injection vector through string-based query construction."
+      },
+      "initial_location": "src/cre_foundry/source_operations.py:490",
+      "semantic_id": "0696b78d1f2eea335789237e54aaaf35bc833b24d96310155cfb7c8824d1b158"
+    },
+    {
+      "current_location": "src/cre_foundry/data_plane.py:834",
+      "identity": {
+        "advisory_id": "B608",
+        "enclosing_scope": "_warehouse_inventory",
+        "query_kind": "dynamic_projection_or_relation",
+        "scanner": "bandit",
+        "source_path": "src/cre_foundry/data_plane.py",
+        "statement_ast_sha256": "e26545362c98eb336e0970b6ce74fb45ce6f1f7ab0df4ee1cc6cfb7cc0828eb6",
+        "title": "B608: Possible SQL injection vector through string-based query construction."
+      },
+      "initial_location": "src/cre_foundry/data_plane.py:834",
+      "semantic_id": "08c791ba88c2b328ee53344ac72f7ac0b00be8f7c1a5d59eb7567785cc45ae7d"
+    },
+    {
+      "current_location": "src/cre_foundry/brampton_business_directory_silver.py:528",
+      "identity": {
+        "advisory_id": "B608",
+        "enclosing_scope": "build_brampton_business_directory_silver",
+        "query_kind": "parquet_path_ingestion",
+        "scanner": "bandit",
+        "source_path": "src/cre_foundry/brampton_business_directory_silver.py",
+        "statement_ast_sha256": "633017e3059a577129bb45e9c53c3fe199f085fff97ea9ac43fe2f925becfbb9",
+        "title": "B608: Possible SQL injection vector through string-based query construction."
+      },
+      "initial_location": "src/cre_foundry/brampton_business_directory_silver.py:528",
+      "semantic_id": "09b6e3bb5ec4e3ce95379231920af8bedbb7d177033c3fbc7e802db3a948fd3c"
+    },
+    {
+      "current_location": "src/cre_foundry/brampton_business_directory_silver.py:488",
+      "identity": {
+        "advisory_id": "B608",
+        "enclosing_scope": "build_brampton_business_directory_silver",
+        "query_kind": "dynamic_insert",
+        "scanner": "bandit",
+        "source_path": "src/cre_foundry/brampton_business_directory_silver.py",
+        "statement_ast_sha256": "0af711ecc6d6f1b777605ff2079cb38aaa805bebdb6ed3d0ec541676359d4364",
+        "title": "B608: Possible SQL injection vector through string-based query construction."
+      },
+      "initial_location": "src/cre_foundry/brampton_business_directory_silver.py:488",
+      "semantic_id": "18c2bb548df2a85815c89018e5a1f52798dc2a1ac1d7f1762f05112904371972"
+    },
+    {
+      "current_location": "src/cre_foundry/odbus_silver.py:505",
+      "identity": {
+        "advisory_id": "B608",
+        "enclosing_scope": "load_silver_into_duckdb",
+        "query_kind": "parquet_path_ingestion",
+        "scanner": "bandit",
+        "source_path": "src/cre_foundry/odbus_silver.py",
+        "statement_ast_sha256": "a5d14b04ce8f11da2c43433a868663a8b2821b8cd63118e28760bfff52097e38",
+        "title": "B608: Possible SQL injection vector through string-based query construction."
+      },
+      "initial_location": "src/cre_foundry/odbus_silver.py:505",
+      "semantic_id": "23d967d3ed73367027b8f9c5a22ac5f588178c1a7561da13d6215fd852996e57"
+    },
+    {
+      "current_location": "src/cre_foundry/brampton_cross_source_reconciliation.py:549",
+      "identity": {
+        "advisory_id": "B608",
+        "enclosing_scope": "build_brampton_cross_source_reconciliation",
+        "query_kind": "dynamic_insert",
+        "scanner": "bandit",
+        "source_path": "src/cre_foundry/brampton_cross_source_reconciliation.py",
+        "statement_ast_sha256": "12c5d1b3d88c19def44f9248514de8779749e20850c670118bcca99eacc0f998",
+        "title": "B608: Possible SQL injection vector through string-based query construction."
+      },
+      "initial_location": "src/cre_foundry/brampton_cross_source_reconciliation.py:549",
+      "semantic_id": "32d134a92c1fd389f148b09bafba45344ff5983892a4ac097e2d3fe50a3e4169"
+    },
+    {
+      "current_location": "src/cre_foundry/data_plane.py:923",
+      "identity": {
+        "advisory_id": "B608",
+        "enclosing_scope": "_sqlite_inventory",
+        "query_kind": "dynamic_relation_count",
+        "scanner": "bandit",
+        "source_path": "src/cre_foundry/data_plane.py",
+        "statement_ast_sha256": "f33455de507bd71669f0737c7732dbef28e6f91a51434fb68e9453ae823d8cf4",
+        "title": "B608: Possible SQL injection vector through string-based query construction."
+      },
+      "initial_location": "src/cre_foundry/data_plane.py:923",
+      "semantic_id": "3309070d43fff41f2a84498637ff36ab0bc86bda2c8ad23beed8322d90e3898d"
+    },
+    {
+      "current_location": "src/cre_foundry/brampton_verification_ledger.py:1066",
+      "identity": {
+        "advisory_id": "B608",
+        "enclosing_scope": "project_verification_state",
+        "query_kind": "dynamic_insert",
+        "scanner": "bandit",
+        "source_path": "src/cre_foundry/brampton_verification_ledger.py",
+        "statement_ast_sha256": "814a568f5461ebc08c77d965078c5cf0a4cf576c6000fb0aa54f149f31a356a3",
+        "title": "B608: Possible SQL injection vector through string-based query construction."
+      },
+      "initial_location": "src/cre_foundry/brampton_verification_ledger.py:1066",
+      "semantic_id": "45222d6a2d774c77a8969ab22b349694047b0734b79c6f6bb6561c5f799fa2e6"
+    },
+    {
+      "current_location": "src/cre_foundry/primitive_inventory.py:419",
+      "identity": {
+        "advisory_id": "B608",
+        "enclosing_scope": "_sqlite_inventory",
+        "query_kind": "dynamic_relation_count",
+        "scanner": "bandit",
+        "source_path": "src/cre_foundry/primitive_inventory.py",
+        "statement_ast_sha256": "4ade5f3984063becd16feae760f812cb8fddee278f1c578f11faeb15f9c9d5a8",
+        "title": "B608: Possible SQL injection vector through string-based query construction."
+      },
+      "initial_location": "src/cre_foundry/primitive_inventory.py:419",
+      "semantic_id": "577b343342f787563e5ea0e7f2ea50222ba0dd34eb148f564defe4b1e1c0ec57"
+    },
+    {
+      "current_location": "src/cre_foundry/brampton_verification_ledger.py:1109",
+      "identity": {
+        "advisory_id": "B608",
+        "enclosing_scope": "project_verification_state",
+        "query_kind": "dynamic_insert",
+        "scanner": "bandit",
+        "source_path": "src/cre_foundry/brampton_verification_ledger.py",
+        "statement_ast_sha256": "3e02d2434645b505bc536416b4e22b598ee4eb2eabffca6d5b4d5c88e2565302",
+        "title": "B608: Possible SQL injection vector through string-based query construction."
+      },
+      "initial_location": "src/cre_foundry/brampton_verification_ledger.py:1109",
+      "semantic_id": "6477c941730b4b01177cabce679176920f75ceb44840785e044a1173084c8b11"
+    },
+    {
+      "current_location": "src/cre_foundry/source_operations.py:895",
+      "identity": {
+        "advisory_id": "B608",
+        "enclosing_scope": "audit_source_operations",
+        "query_kind": "dynamic_relation_count",
+        "scanner": "bandit",
+        "source_path": "src/cre_foundry/source_operations.py",
+        "statement_ast_sha256": "b30a4fe32dd1174a28aac0dbe6163d5b47cb560df1257403fa2c82d85d52f754",
+        "title": "B608: Possible SQL injection vector through string-based query construction."
+      },
+      "initial_location": "src/cre_foundry/source_operations.py:895",
+      "semantic_id": "79927f303303d0e945d0c643217460924c3f3602fa2406fbb76916131f39c146"
+    },
+    {
+      "current_location": "src/cre_foundry/primitive_quality.py:675",
+      "identity": {
+        "advisory_id": "B608",
+        "enclosing_scope": "_sqlite_profile_relation",
+        "query_kind": "dynamic_distinct_projection",
+        "scanner": "bandit",
+        "source_path": "src/cre_foundry/primitive_quality.py",
+        "statement_ast_sha256": "2f354e74662a536a32875996b033f5c01827a760719b362c1d2b656e142c8378",
+        "title": "B608: Possible SQL injection vector through string-based query construction."
+      },
+      "initial_location": "src/cre_foundry/primitive_quality.py:675",
+      "semantic_id": "7c437de0671eaf9eff53d6fcaf6696b46455d74a5e5b086dcbe93972107eb4d7"
+    },
+    {
+      "current_location": "src/cre_foundry/data_plane.py:813",
+      "identity": {
+        "advisory_id": "B608",
+        "enclosing_scope": "_warehouse_inventory",
+        "query_kind": "dynamic_relation_count",
+        "scanner": "bandit",
+        "source_path": "src/cre_foundry/data_plane.py",
+        "statement_ast_sha256": "b151c99795ac0e35689d27c94de128430ec7a88a492ab012b07e1dbba2d8f46a",
+        "title": "B608: Possible SQL injection vector through string-based query construction."
+      },
+      "initial_location": "src/cre_foundry/data_plane.py:813",
+      "semantic_id": "beff2cf95a897c008ee65194c1249250d57fe8dfad32f7cc7d4519242fc74ddf"
+    },
+    {
+      "current_location": "src/cre_foundry/odbus_silver.py:515",
+      "identity": {
+        "advisory_id": "B608",
+        "enclosing_scope": "load_silver_into_duckdb",
+        "query_kind": "parquet_path_ingestion",
+        "scanner": "bandit",
+        "source_path": "src/cre_foundry/odbus_silver.py",
+        "statement_ast_sha256": "dc06f3cb73a175ca06af2868e995f494ae115e8d094f9688765383a8dd1c26b6",
+        "title": "B608: Possible SQL injection vector through string-based query construction."
+      },
+      "initial_location": "src/cre_foundry/odbus_silver.py:515",
+      "semantic_id": "c78d030decdd6f9b14fb3ce640f7c1285b5bb85dfaf2c6e1f76612d6cbfeef25"
+    },
+    {
+      "current_location": "src/cre_foundry/brampton_permit_silver.py:396",
+      "identity": {
+        "advisory_id": "B608",
+        "enclosing_scope": "build_brampton_permit_silver",
+        "query_kind": "parquet_path_ingestion",
+        "scanner": "bandit",
+        "source_path": "src/cre_foundry/brampton_permit_silver.py",
+        "statement_ast_sha256": "7b7cd6c7c7ffbb3919e67f9038b32875c7a20b943eaf470b49520cba3a99271f",
+        "title": "B608: Possible SQL injection vector through string-based query construction."
+      },
+      "initial_location": "src/cre_foundry/brampton_permit_silver.py:396",
+      "semantic_id": "cfdeb3793f270fe5c7400a32f5f46adbaca20ffdd78e7e19fa3e75190420c368"
+    },
+    {
+      "current_location": "src/cre_foundry/shadow_learning.py:472",
+      "identity": {
+        "advisory_id": "B608",
+        "enclosing_scope": "audit_shadow_learning",
+        "query_kind": "dynamic_relation_count",
+        "scanner": "bandit",
+        "source_path": "src/cre_foundry/shadow_learning.py",
+        "statement_ast_sha256": "a569ab109df582bfaa348aadcb5ba9ef9320880f049e1a7034ef1df8d927bbdc",
+        "title": "B608: Possible SQL injection vector through string-based query construction."
+      },
+      "initial_location": "src/cre_foundry/shadow_learning.py:472",
+      "semantic_id": "d338880a89f0bdd63f3545e39512df7b20d0b953c9708923f6f6c7d73d1baf04"
+    },
+    {
+      "current_location": "src/cre_foundry/pilot_readiness.py:197",
+      "identity": {
+        "advisory_id": "B608",
+        "enclosing_scope": "_relation_metrics",
+        "query_kind": "dynamic_projection_or_relation",
+        "scanner": "bandit",
+        "source_path": "src/cre_foundry/pilot_readiness.py",
+        "statement_ast_sha256": "eb1ee71503fb324ca2be36bf31c2b09ceefecf93ee2fcb726f08e90e9e2fab15",
+        "title": "B608: Possible SQL injection vector through string-based query construction."
+      },
+      "initial_location": "src/cre_foundry/pilot_readiness.py:197",
+      "semantic_id": "df0ecce856dcddaf983adf2bd9f430efd80c3050f7dd0cb1dd10370ea83bd9a8"
+    },
+    {
+      "current_location": "src/cre_foundry/primitive_inventory.py:291",
+      "identity": {
+        "advisory_id": "B608",
+        "enclosing_scope": "_duckdb_inventory",
+        "query_kind": "dynamic_relation_count",
+        "scanner": "bandit",
+        "source_path": "src/cre_foundry/primitive_inventory.py",
+        "statement_ast_sha256": "fcce499ada02c30659562bcc42f95482e6b56beb0dd29f245c66ae59db3c9915",
+        "title": "B608: Possible SQL injection vector through string-based query construction."
+      },
+      "initial_location": "src/cre_foundry/primitive_inventory.py:291",
+      "semantic_id": "f3e41f7595f5ce2881ad6e17a3cdcf2bd3acf6271f4b35cbe4aa420ea82aa5f3"
+    },
+    {
+      "current_location": "src/cre_foundry/brampton_permit_silver.py:361",
+      "identity": {
+        "advisory_id": "B608",
+        "enclosing_scope": "build_brampton_permit_silver",
+        "query_kind": "dynamic_insert",
+        "scanner": "bandit",
+        "source_path": "src/cre_foundry/brampton_permit_silver.py",
+        "statement_ast_sha256": "8d3ccb6c507035cd13f652faadf316a6e0ae43002f21080cb30d3677ad473e81",
+        "title": "B608: Possible SQL injection vector through string-based query construction."
+      },
+      "initial_location": "src/cre_foundry/brampton_permit_silver.py:361",
+      "semantic_id": "f7be83fe7d9f29828fd0b8f810133946d6f4428b7ecc507369c86078a3b415c8"
+    },
+    {
+      "current_location": "src/cre_foundry/primitive_quality.py:554",
+      "identity": {
+        "advisory_id": "B608",
+        "enclosing_scope": "_duckdb_profile_relation",
+        "query_kind": "dynamic_distinct_projection",
+        "scanner": "bandit",
+        "source_path": "src/cre_foundry/primitive_quality.py",
+        "statement_ast_sha256": "d2c6d0391e77af00d446b040ec0f2a099b5217ce1a2d8b44c145c1ce586b825d",
+        "title": "B608: Possible SQL injection vector through string-based query construction."
+      },
+      "initial_location": "src/cre_foundry/primitive_quality.py:554",
+      "semantic_id": "ff3c84bd44399bc602402179fa5e43e16e8a2789f7005856ddd32bb6f2522c05"
+    }
+  ],
+  "scanner_blocker_count": 20,
+  "scanner_control_plane_operational": true,
+  "semantic_ast_identity_used": true,
+  "semantic_identity_version": "python-ast-no-attributes-v1",
+  "zero_blocker_state": false
+}
+SECURITY BLOCKER RATCHET BUILT
+Security blocker ratchet passed:
+  baseline blockers: 20
+  current blockers: 20
+  remediated blockers: 0
+  new blockers: 0
+  full enforcement ready: False
+
+===== DIFF SAFETY =====
+
+AUDIT READINESS LOOP PASSED

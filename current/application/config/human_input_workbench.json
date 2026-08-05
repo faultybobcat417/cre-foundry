@@ -1,0 +1,44 @@
+{
+  "config_version": "cre-foundry-human-input-workbench-v1",
+  "policy": {
+    "operating_mode": "shadow",
+    "read_only_inputs_required": true,
+    "human_completion_required": true,
+    "approval_invention_forbidden": true,
+    "client_value_invention_forbidden": true,
+    "executable_command_generation_enabled": false,
+    "archive_generation_enabled": false,
+    "database_access_enabled": false,
+    "database_write_enabled": false,
+    "snapshot_registration_enabled": false,
+    "source_schedule_activation_enabled": false,
+    "automatic_acquisition_enabled": false,
+    "persistent_outcome_ledger_enabled": false,
+    "outcome_event_insertion_enabled": false,
+    "point_in_time_materialization_enabled": false,
+    "model_training_enabled": false,
+    "backtest_execution_enabled": false,
+    "pilot_execution_enabled": false,
+    "production_ranking_enabled": false,
+    "outreach_enabled": false
+  },
+  "review_source_id": "brampton_building_permits",
+  "decision_bundle_path": "config/governance_decisions.json",
+  "client_input_order": [
+    "primary_success_event",
+    "transaction_economics",
+    "pilot_representatives_and_capacity",
+    "protected_accounts_and_exclusions",
+    "operating_environment"
+  ],
+  "codex_contract_artifacts": [
+    "docs/data_contracts/governance_decision_schema.json",
+    "docs/data_contracts/client_input_questionnaire.json",
+    "docs/data_contracts/governance_approval_packet_template.json",
+    "docs/data_contracts/outcome_collection_contract.json",
+    "docs/data_contracts/pilot_experiment_design.json",
+    "docs/data_contracts/codex_handoff_gate_graph.json",
+    "docs/data_contracts/historical_registration_execution_envelope.json",
+    "docs/data_contracts/outcome_ledger_bootstrap_envelope.json"
+  ]
+}

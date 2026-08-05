@@ -1,0 +1,815 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://cre-foundry.local/schemas/synthetic-identity-graph-v1.json",
+  "title": "Material synthetic identity graph (IDENTITY-001 input contract)",
+  "description": "The material implementation's own strict contract for the identity graph the builder consumes.  Records carry no digest fields; digest binding, lineage, journal, and protection decision are rendered by the material builder into the frozen temporal identity subject.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "document_kind",
+    "schema_version",
+    "graph_id",
+    "subject_id",
+    "grains",
+    "temporal_assertions",
+    "links",
+    "alternatives",
+    "corrections",
+    "protection_bundle_projection",
+    "protection_expansion"
+  ],
+  "properties": {
+    "document_kind": {
+      "const": "SYNTHETIC_IDENTITY_GRAPH"
+    },
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "graph_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "subject_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "grains": {
+      "$ref": "#/$defs/grain_list"
+    },
+    "temporal_assertions": {
+      "$ref": "#/$defs/temporal_assertion_list"
+    },
+    "links": {
+      "$ref": "#/$defs/typed_link_list"
+    },
+    "alternatives": {
+      "$ref": "#/$defs/alternative_list"
+    },
+    "corrections": {
+      "$ref": "#/$defs/correction_list"
+    },
+    "protection_bundle_projection": {
+      "$ref": "#/$defs/protection_bundle_projection"
+    },
+    "protection_expansion": {
+      "$ref": "#/$defs/protection_expansion"
+    }
+  },
+  "$defs": {
+    "rfc3339": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "grain_id": {
+      "type": "string",
+      "pattern": "^(LEGAL_ENTITY|PARENT|SUBSIDIARY|OPERATING_BUSINESS|BRAND|FRANCHISE_SYSTEM|FRANCHISEE|ESTABLISHMENT|PHYSICAL_LOCATION|ADDRESS|BUILDING|UNIT|PARCEL|PROPERTY|PROPERTY_OWNER|OCCUPIER|PROTECTED_ACCOUNT|REPRESENTATIVE_RELATIONSHIP):[A-Za-z0-9_-]+$"
+    },
+    "grain_type": {
+      "enum": [
+        "LEGAL_ENTITY",
+        "PARENT",
+        "SUBSIDIARY",
+        "OPERATING_BUSINESS",
+        "BRAND",
+        "FRANCHISE_SYSTEM",
+        "FRANCHISEE",
+        "ESTABLISHMENT",
+        "PHYSICAL_LOCATION",
+        "ADDRESS",
+        "BUILDING",
+        "UNIT",
+        "PARCEL",
+        "PROPERTY",
+        "PROPERTY_OWNER",
+        "OCCUPIER",
+        "PROTECTED_ACCOUNT",
+        "REPRESENTATIVE_RELATIONSHIP"
+      ]
+    },
+    "evidence_reference": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "evidence_ref",
+        "evidence_type",
+        "evidence_sha256"
+      ],
+      "properties": {
+        "evidence_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "evidence_type": {
+          "enum": [
+            "OBSERVATION",
+            "ASSERTION",
+            "LINK",
+            "ALTERNATIVE",
+            "CORRECTION",
+            "PROTECTION_BUNDLE",
+            "EXTERNAL_ATTESTATION",
+            "ROUTE_DAY"
+          ]
+        },
+        "evidence_sha256": {
+          "$ref": "#/$defs/sha256"
+        }
+      }
+    },
+    "evidence_ref_list": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "$ref": "#/$defs/evidence_reference"
+      }
+    },
+    "clock_set": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "observed_at",
+        "published_at",
+        "retrieved_at",
+        "source_snapshot_time",
+        "available_at",
+        "effective_from",
+        "valid_from"
+      ],
+      "properties": {
+        "observed_at": {
+          "$ref": "#/$defs/rfc3339"
+        },
+        "published_at": {
+          "$ref": "#/$defs/rfc3339"
+        },
+        "retrieved_at": {
+          "$ref": "#/$defs/rfc3339"
+        },
+        "source_snapshot_time": {
+          "$ref": "#/$defs/rfc3339"
+        },
+        "available_at": {
+          "$ref": "#/$defs/rfc3339"
+        },
+        "effective_from": {
+          "$ref": "#/$defs/rfc3339"
+        },
+        "effective_to": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/rfc3339"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "valid_from": {
+          "$ref": "#/$defs/rfc3339"
+        },
+        "valid_to": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/rfc3339"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "superseded_at": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/rfc3339"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "correction_at": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/rfc3339"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      }
+    },
+    "grain_record": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "grain_id",
+        "grain_type",
+        "observed_at",
+        "published_at",
+        "retrieved_at",
+        "source_snapshot_time",
+        "available_at",
+        "effective_from",
+        "valid_from",
+        "evidence_refs"
+      ],
+      "properties": {
+        "grain_id": {
+          "$ref": "#/$defs/grain_id"
+        },
+        "grain_type": {
+          "$ref": "#/$defs/grain_type"
+        },
+        "observed_at": {
+          "$ref": "#/$defs/rfc3339"
+        },
+        "published_at": {
+          "$ref": "#/$defs/rfc3339"
+        },
+        "retrieved_at": {
+          "$ref": "#/$defs/rfc3339"
+        },
+        "source_snapshot_time": {
+          "$ref": "#/$defs/rfc3339"
+        },
+        "available_at": {
+          "$ref": "#/$defs/rfc3339"
+        },
+        "effective_from": {
+          "$ref": "#/$defs/rfc3339"
+        },
+        "effective_to": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/rfc3339"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "valid_from": {
+          "$ref": "#/$defs/rfc3339"
+        },
+        "valid_to": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/rfc3339"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "superseded_at": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/rfc3339"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "correction_at": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/rfc3339"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "grain_status": {
+          "enum": [
+            "ACTIVE",
+            "SUPERSEDED",
+            "CLOSED",
+            "FORMER"
+          ]
+        },
+        "evidence_refs": {
+          "$ref": "#/$defs/evidence_ref_list"
+        }
+      }
+    },
+    "grain_list": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "$ref": "#/$defs/grain_record"
+      }
+    },
+    "temporal_assertion": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "assertion_id",
+        "subject_grain_id",
+        "assertion_type",
+        "observed_at",
+        "published_at",
+        "retrieved_at",
+        "source_snapshot_time",
+        "available_at",
+        "effective_from",
+        "valid_from",
+        "decision_cutoff",
+        "evidence_refs"
+      ],
+      "properties": {
+        "assertion_id": {
+          "type": "string",
+          "pattern": "^ASSERT:[A-Za-z0-9_-]+$"
+        },
+        "subject_grain_id": {
+          "$ref": "#/$defs/grain_id"
+        },
+        "assertion_type": {
+          "enum": [
+            "OBSERVED",
+            "RELOCATED",
+            "CLOSED_TEMPORARY",
+            "CLOSED_PERMANENT",
+            "RENAMED",
+            "LEGAL_NAME_CHANGE",
+            "FORMER_OCCUPANCY",
+            "CURRENT_OCCUPANCY"
+          ]
+        },
+        "observed_at": {
+          "$ref": "#/$defs/rfc3339"
+        },
+        "published_at": {
+          "$ref": "#/$defs/rfc3339"
+        },
+        "retrieved_at": {
+          "$ref": "#/$defs/rfc3339"
+        },
+        "source_snapshot_time": {
+          "$ref": "#/$defs/rfc3339"
+        },
+        "available_at": {
+          "$ref": "#/$defs/rfc3339"
+        },
+        "effective_from": {
+          "$ref": "#/$defs/rfc3339"
+        },
+        "effective_to": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/rfc3339"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "valid_from": {
+          "$ref": "#/$defs/rfc3339"
+        },
+        "valid_to": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/rfc3339"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "decision_cutoff": {
+          "$ref": "#/$defs/rfc3339"
+        },
+        "superseded_at": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/rfc3339"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "correction_at": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/rfc3339"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "evidence_refs": {
+          "$ref": "#/$defs/evidence_ref_list"
+        }
+      }
+    },
+    "temporal_assertion_list": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "$ref": "#/$defs/temporal_assertion"
+      }
+    },
+    "typed_link": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "link_id",
+        "link_type",
+        "from_grain_id",
+        "to_grain_id",
+        "effective_from",
+        "valid_from",
+        "observed_at",
+        "published_at",
+        "retrieved_at",
+        "source_snapshot_time",
+        "available_at",
+        "evidence_refs",
+        "support_state"
+      ],
+      "properties": {
+        "link_id": {
+          "type": "string",
+          "pattern": "^LINK:[A-Za-z0-9_-]+$"
+        },
+        "link_type": {
+          "enum": [
+            "OWNS",
+            "OCCUPIES",
+            "OPERATES",
+            "BRAND_OF",
+            "SUBSIDIARY_OF",
+            "PARENT_OF",
+            "FRANCHISE_SYSTEM_OF",
+            "FRANCHISEE_OF",
+            "LOCATED_AT",
+            "PART_OF",
+            "PREDECESSOR_OF",
+            "SUCCESSOR_OF",
+            "ALIAS_OF",
+            "PROTECTED_LINK"
+          ]
+        },
+        "from_grain_id": {
+          "$ref": "#/$defs/grain_id"
+        },
+        "to_grain_id": {
+          "$ref": "#/$defs/grain_id"
+        },
+        "effective_from": {
+          "$ref": "#/$defs/rfc3339"
+        },
+        "effective_to": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/rfc3339"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "valid_from": {
+          "$ref": "#/$defs/rfc3339"
+        },
+        "valid_to": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/rfc3339"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "observed_at": {
+          "$ref": "#/$defs/rfc3339"
+        },
+        "published_at": {
+          "$ref": "#/$defs/rfc3339"
+        },
+        "retrieved_at": {
+          "$ref": "#/$defs/rfc3339"
+        },
+        "source_snapshot_time": {
+          "$ref": "#/$defs/rfc3339"
+        },
+        "available_at": {
+          "$ref": "#/$defs/rfc3339"
+        },
+        "superseded_at": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/rfc3339"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "evidence_refs": {
+          "$ref": "#/$defs/evidence_ref_list"
+        },
+        "support_state": {
+          "enum": [
+            "SUPPORTED",
+            "CONFLICTED",
+            "UNSUPPORTED",
+            "UNKNOWN",
+            "AMBIGUOUS"
+          ]
+        }
+      }
+    },
+    "typed_link_list": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "$ref": "#/$defs/typed_link"
+      }
+    },
+    "alternative": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "alternative_id",
+        "resolution_kind",
+        "resolution_reference",
+        "evidence_refs",
+        "deterministic_rank",
+        "rank_basis",
+        "rank_version",
+        "resolution_status"
+      ],
+      "properties": {
+        "alternative_id": {
+          "type": "string",
+          "pattern": "^ALT:[A-Za-z0-9_-]+$"
+        },
+        "resolution_kind": {
+          "enum": [
+            "LINK",
+            "ASSERTION",
+            "PROTECTION_INTERPRETATION"
+          ]
+        },
+        "resolution_reference": {
+          "type": "string",
+          "minLength": 1
+        },
+        "evidence_refs": {
+          "$ref": "#/$defs/evidence_ref_list"
+        },
+        "deterministic_rank": {
+          "type": "integer"
+        },
+        "rank_basis": {
+          "type": "string",
+          "minLength": 1
+        },
+        "rank_version": {
+          "type": "string",
+          "minLength": 1
+        },
+        "rank_digest": {
+          "$ref": "#/$defs/sha256"
+        },
+        "resolution_status": {
+          "enum": [
+            "SUPPORTED",
+            "CONFLICTED",
+            "UNSUPPORTED",
+            "UNKNOWN",
+            "AMBIGUOUS"
+          ]
+        }
+      }
+    },
+    "alternative_list": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "$ref": "#/$defs/alternative"
+      }
+    },
+    "correction": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "correction_id",
+        "superseded_record_id",
+        "correction_at",
+        "corrected_grain_id",
+        "evidence_refs"
+      ],
+      "properties": {
+        "correction_id": {
+          "type": "string",
+          "pattern": "^CORR:[A-Za-z0-9_-]+$"
+        },
+        "superseded_record_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "correction_at": {
+          "$ref": "#/$defs/rfc3339"
+        },
+        "corrected_grain_id": {
+          "$ref": "#/$defs/grain_id"
+        },
+        "evidence_refs": {
+          "$ref": "#/$defs/evidence_ref_list"
+        }
+      }
+    },
+    "correction_list": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "$ref": "#/$defs/correction"
+      }
+    },
+    "grain_id_list": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "$ref": "#/$defs/grain_id"
+      }
+    },
+    "protection_bundle_projection": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "bundle_id",
+        "bundle_version",
+        "bundle_completeness",
+        "token_extraction_completeness",
+        "authoritative_status",
+        "valid_from",
+        "valid_to",
+        "refreshed_at",
+        "expansion_policy_id",
+        "expansion_policy_version",
+        "maximum_relationship_depth",
+        "root_protected_identities",
+        "aliases",
+        "related_entities",
+        "former_addresses",
+        "linked_locations",
+        "expansion_paths",
+        "evaluated_at"
+      ],
+      "properties": {
+        "bundle_id": {
+          "type": "string",
+          "pattern": "^BUNDLE:[A-Za-z0-9_-]+$"
+        },
+        "bundle_version": {
+          "type": "string",
+          "minLength": 1
+        },
+        "bundle_completeness": {
+          "enum": [
+            "COMPLETE",
+            "INCOMPLETE",
+            "UNKNOWN"
+          ]
+        },
+        "token_extraction_completeness": {
+          "enum": [
+            "COMPLETE",
+            "INCOMPLETE",
+            "UNKNOWN"
+          ]
+        },
+        "authoritative_status": {
+          "enum": [
+            "AUTHORITATIVE",
+            "PROVISIONAL",
+            "UNAUTHORIZED",
+            "UNKNOWN"
+          ]
+        },
+        "valid_from": {
+          "$ref": "#/$defs/rfc3339"
+        },
+        "valid_to": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/rfc3339"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "refreshed_at": {
+          "$ref": "#/$defs/rfc3339"
+        },
+        "expansion_policy_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "expansion_policy_version": {
+          "type": "string",
+          "minLength": 1
+        },
+        "maximum_relationship_depth": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "root_protected_identities": {
+          "$ref": "#/$defs/grain_id_list"
+        },
+        "aliases": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "related_entities": {
+          "$ref": "#/$defs/grain_id_list"
+        },
+        "former_addresses": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "linked_locations": {
+          "$ref": "#/$defs/grain_id_list"
+        },
+        "expansion_paths": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "pattern": "^EXPATH:[A-Za-z0-9_-]+$"
+          }
+        },
+        "evaluated_at": {
+          "$ref": "#/$defs/rfc3339"
+        }
+      }
+    },
+    "protection_expansion_path": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "path_id",
+        "depth",
+        "from_grain_id",
+        "to_grain_id",
+        "relationship_type",
+        "evidence_refs"
+      ],
+      "properties": {
+        "path_id": {
+          "type": "string",
+          "pattern": "^EXPATH:[A-Za-z0-9_-]+$"
+        },
+        "depth": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "from_grain_id": {
+          "$ref": "#/$defs/grain_id"
+        },
+        "to_grain_id": {
+          "$ref": "#/$defs/grain_id"
+        },
+        "relationship_type": {
+          "type": "string",
+          "minLength": 1
+        },
+        "evidence_refs": {
+          "$ref": "#/$defs/evidence_ref_list"
+        }
+      }
+    },
+    "protection_expansion": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "$ref": "#/$defs/protection_expansion_path"
+      }
+    }
+  }
+}

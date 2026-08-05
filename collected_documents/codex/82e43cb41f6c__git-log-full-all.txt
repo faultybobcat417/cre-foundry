@@ -1,0 +1,1210 @@
+commit 9a5462d5144196ef944ee884952fd25f433a05a2
+Author:     Engine <engine@local>
+AuthorDate: 2026-08-02T05:51:54-04:00
+Commit:     Engine <engine@local>
+CommitDate: 2026-08-02T05:51:54-04:00
+
+    wip: preserve interrupted ARCHITECTURE-001 handoff
+
+ .../architecture/public_evaluator_contract.json    | 408 +++++++++++++++++
+ artifacts/context/current_task_packet.json         |  14 +-
+ artifacts/context/current_task_packet.md           | 482 ++++++++++++++++++++-
+ control/CURRENT_STATE.json                         |  10 +-
+ control/GATES.json                                 |  60 +++
+ scripts/compile_repository_task_context.py         |   1 +
+ tasks/ARCHITECTURE-001.json                        |   2 +-
+ 7 files changed, 966 insertions(+), 11 deletions(-)
+
+commit aecb0fd68f2a0c722a781edd1a08cff9f59709e4
+Author:     Engine <engine@local>
+AuthorDate: 2026-08-02T05:16:50-04:00
+Commit:     Engine <engine@local>
+CommitDate: 2026-08-02T05:16:50-04:00
+
+    control: checkpoint calibration and start architecture
+
+ artifacts/architecture/ARCHITECTURE-001-start.json |    54 +
+ artifacts/context/current_task_packet.json         |   128 +-
+ artifacts/context/current_task_packet.md           | 28062 ++-----------------
+ .../evaluations/autonomous_frontier_meta.json      |     4 +-
+ .../evaluations/autonomous_frontier_report.json    |    54 +-
+ artifacts/task-results/CALIBRATION-001.json        |   163 +
+ control/CURRENT_STATE.json                         |    27 +-
+ control/CURRENT_TASK.json                          |    10 +-
+ control/TASK_GRAPH.json                            |     4 +-
+ scripts/compile_repository_task_context.py         |    25 +
+ tasks/ARCHITECTURE-001.json                        |     2 +-
+ tasks/CALIBRATION-001.json                         |     2 +-
+ 12 files changed, 3327 insertions(+), 25208 deletions(-)
+
+commit 55cc918db780bb52450388c69f28e26529ecf429
+Author:     Engine <engine@local>
+AuthorDate: 2026-08-02T05:04:22-04:00
+Commit:     Engine <engine@local>
+CommitDate: 2026-08-02T05:04:22-04:00
+
+    calibration: implement exact synthetic uncertainty framework
+
+ artifacts/calibration/canonical_run.json           | 5594 ++++++++++++
+ artifacts/calibration/frozen_input.json            |  143 +
+ .../calibration/public_evaluator_contract.json     |   10 +-
+ artifacts/context/current_task_packet.json         |   60 +-
+ artifacts/context/current_task_packet.md           | 9430 +++++++++++++++++++-
+ artifacts/evaluations/calibration_framework.json   |  702 ++
+ artifacts/evaluations/calibration_synthetic.json   |  702 ++
+ contracts/calibration_evaluation.schema.json       |   56 +
+ contracts/calibration_input.schema.json            |   23 +
+ contracts/calibration_uncertainty.schema.json      |    6 +
+ control/AUTONOMOUS_FRONTIER_CONTRACT.json          |    6 +-
+ ...ration_abstain_as_negative_or_itt_excluded.json |   24 +
+ .../frontier/calibration_abstain_dropped.json      |   22 +
+ .../frontier/calibration_bin_gap_or_overlap.json   |   25 +
+ ...calibration_calibrated_value_not_projected.json |   25 +
+ .../calibration_calibrator_fit_count_change.json   |   23 +
+ .../calibration_common_asof_divergence.json        |   22 +
+ .../calibration_common_nonscore_math_change.json   |   25 +
+ .../calibration_drop_unknown_candidate.json        |   23 +
+ .../calibration_empty_bin_point_estimate.json      |   26 +
+ .../frontier/calibration_forged_label_lineage.json |   22 +
+ .../calibration_future_feature_in_probability.json |   21 +
+ .../frontier/calibration_future_label_in_fit.json  |   21 +
+ ...calibration_issue_nine_or_direct_selection.json |   23 +
+ ...ion_label_visible_before_prediction_freeze.json |   22 +
+ .../calibration_micro_reported_as_macro.json       |   25 +
+ .../calibration_missing_probability_as_zero.json   |   24 +
+ .../calibration_missing_subgroup_as_reference.json |   23 +
+ ...calibration_nonmonotonic_calibration_clock.json |   22 +
+ .../calibration_null_label_as_negative.json        |   22 +
+ .../calibration_ordinal_tier_as_probability.json   |   21 +
+ ...calibration_outcome_derived_temporal_slice.json |   22 +
+ .../calibration_partial_route_finalized.json       |   25 +
+ .../known_bad/frontier/calibration_point_only.json |    7 +
+ .../calibration_pooled_subgroup_hides_cell.json    |   22 +
+ .../calibration_post_test_config_change.json       |   21 +
+ ...ibration_probability_float_or_noncanonical.json |   25 +
+ .../calibration_probability_out_of_range.json      |   25 +
+ .../calibration_probability_target_rebind.json     |   21 +
+ .../frontier/calibration_production_promotion.json |   21 +
+ .../calibration_purge_embargo_shortened.json       |   21 +
+ .../calibration_rank_score_as_probability.json     |   24 +
+ ...ibration_rehashed_bin_or_subgroup_registry.json |   26 +
+ .../calibration_rehashed_cohort_or_split.json      |   21 +
+ .../frontier/calibration_rehashed_fit.json         |   50 +
+ .../frontier/calibration_rehashed_label_view.json  |   42 +
+ ...bration_rehashed_math_problem_and_decision.json |  134 +
+ .../frontier/calibration_rehashed_metrics.json     |   43 +
+ .../frontier/calibration_rehashed_predictions.json |   53 +
+ .../calibration_rehashed_probability_contract.json |   21 +
+ .../frontier/calibration_rehashed_receipt.json     |   31 +
+ .../calibration_sparse_bin_point_estimate.json     |   28 +
+ .../calibration_sparse_group_disparity.json        |   28 +
+ ...libration_split_overlap_or_duplicate_route.json |   22 +
+ .../frontier/calibration_split_temporal_order.json |   22 +
+ .../frontier/calibration_stale_current_head.json   |   22 +
+ .../frontier/calibration_subgroup_hidden.json      |    7 +
+ .../calibration_subgroup_wrong_denominator.json    |   24 +
+ .../calibration_synthetic_as_real_calibration.json |   21 +
+ .../calibration_synthetic_range_as_confidence.json |   24 +
+ .../calibration_temporal_slices_pooled.json        |   23 +
+ .../calibration_test_adaptive_bin_edges.json       |   21 +
+ .../calibration_test_label_selects_calibrator.json |   22 +
+ .../calibration_unknown_probability_to_zero.json   |   25 +
+ .../calibration_validation_label_in_base_fit.json  |   22 +
+ .../calibration_wrong_edge_membership.json         |   22 +
+ evals/public/calibration_framework_evaluator.py    |  852 ++
+ evals/public/test_calibration_framework.py         |  254 +
+ scripts/compile_repository_task_context.py         |   13 +
+ scripts/generate_calibration_artifacts.py          |   39 +
+ scripts/validate_calibration_framework.py          |   83 +
+ scripts/validate_calibration_uncertainty.py        |   42 +
+ src/cre_foundry/calibration/__init__.py            |    1 +
+ src/cre_foundry/calibration/framework.py           |  470 +
+ 74 files changed, 19712 insertions(+), 223 deletions(-)
+
+commit 8513578490a00e7802d910b0ada1616967c84507
+Author:     Engine <engine@local>
+AuthorDate: 2026-08-02T03:40:41-04:00
+Commit:     Engine <engine@local>
+CommitDate: 2026-08-02T03:40:41-04:00
+
+    calibration: freeze synthetic evaluator contract
+
+ .../calibration/public_evaluator_contract.json     | 161 ++++++++++++++++++
+ artifacts/context/current_task_packet.json         |  14 +-
+ artifacts/context/current_task_packet.md           | 187 ++++++++++++++++++++-
+ control/CURRENT_STATE.json                         |   4 +-
+ control/GATES.json                                 |  18 ++
+ scripts/compile_repository_task_context.py         |   1 +
+ tasks/CALIBRATION-001.json                         |   2 +-
+ 7 files changed, 378 insertions(+), 9 deletions(-)
+
+commit b6471dfbdc09ba9534f985f25cb70b47c0fcd4ab
+Author:     Engine <engine@local>
+AuthorDate: 2026-08-02T03:24:29-04:00
+Commit:     Engine <engine@local>
+CommitDate: 2026-08-02T03:24:29-04:00
+
+    chore: complete baseline and select calibration
+
+ artifacts/calibration/CALIBRATION-001-start.json   |    33 +
+ artifacts/context/current_task_packet.json         |   116 +-
+ artifacts/context/current_task_packet.md           | 35652 ++++++++-----------
+ .../evaluations/autonomous_frontier_meta.json      |     4 +-
+ .../evaluations/autonomous_frontier_report.json    |    75 +-
+ artifacts/task-results/BASELINE-001.json           |   163 +
+ control/CURRENT_STATE.json                         |    35 +-
+ control/CURRENT_TASK.json                          |     8 +-
+ control/TASK_GRAPH.json                            |     4 +-
+ scripts/compile_repository_task_context.py         |    18 +
+ tasks/BASELINE-001.json                            |     2 +-
+ tasks/CALIBRATION-001.json                         |    60 +
+ 12 files changed, 14581 insertions(+), 21589 deletions(-)
+
+commit 05137e8c671f6a6fe14b24b050bf5b380203c19b
+Author:     Engine <engine@local>
+AuthorDate: 2026-08-02T03:08:01-04:00
+Commit:     Engine <engine@local>
+CommitDate: 2026-08-02T03:08:01-04:00
+
+    baseline: implement point-in-time synthetic comparisons
+
+ artifacts/baselines/canonical_run.json             | 95837 +++++++++++++++++++
+ .../capability_classification_reconciliation.json  |    17 +
+ artifacts/baselines/frozen_benchmark.json          | 12636 +++
+ artifacts/baselines/policy_registry.json           |   123 +
+ artifacts/baselines/public_evaluator_contract.json |    12 +-
+ artifacts/context/current_task_packet.json         |    62 +-
+ artifacts/context/current_task_packet.md           | 16523 +++-
+ artifacts/evaluations/baseline_framework.json      |   742 +
+ .../evaluations/baseline_model_synthetic.json      |   742 +
+ artifacts/models/model_registry.json               |   128 +
+ contracts/baseline_evaluation.schema.json          |    78 +
+ contracts/baseline_policy.schema.json              |    38 +
+ control/AUTONOMOUS_FRONTIER_CONTRACT.json          |     6 +-
+ control/GATES.json                                 |    13 +
+ .../baseline_all_row_score_projection.json         |     8 +
+ .../frontier/baseline_candidate_set_asymmetry.json |     8 +
+ .../frontier/baseline_complexity_tie_promoted.json |     8 +
+ .../baseline_coordinated_feature_rehash.json       |     8 +
+ .../baseline_coordinated_registry_rehash.json      |     8 +
+ .../frontier/baseline_duplicate_location.json      |     8 +
+ .../frontier/baseline_duplicate_route_seed.json    |     8 +
+ .../frontier/baseline_feature_clock_reordered.json |     8 +
+ .../frontier/baseline_feature_view_asymmetry.json  |     8 +
+ .../frontier/baseline_forged_label_view.json       |     8 +
+ .../baseline_forged_math_problem_hash.json         |     8 +
+ .../frontier/baseline_future_feature.json          |     8 +
+ .../frontier/baseline_future_label_asof.json       |     8 +
+ .../frontier/baseline_future_recency_value.json    |     8 +
+ .../frontier/baseline_immature_as_negative.json    |     8 +
+ evals/known_bad/frontier/baseline_issue_nine.json  |     8 +
+ .../baseline_label_denominator_asymmetry.json      |     8 +
+ .../baseline_math_input_contamination.json         |     8 +
+ .../baseline_metric_wrong_denominator.json         |     8 +
+ .../frontier/baseline_missing_required_policy.json |     8 +
+ .../frontier/baseline_nondeterministic_random.json |     8 +
+ .../frontier/baseline_outcome_feature.json         |     8 +
+ .../frontier/baseline_outcome_source_family.json   |     8 +
+ .../baseline_partial_labels_finalized.json         |     8 +
+ .../frontier/baseline_policy_direct_selection.json |     8 +
+ .../frontier/baseline_production_promotion.json    |     8 +
+ .../frontier/baseline_protected_selected.json      |     8 +
+ .../known_bad/frontier/baseline_receipt_only.json  |     8 +
+ .../frontier/baseline_rehashed_future_feature.json |     8 +
+ .../frontier/baseline_rehashed_metrics.json        |     8 +
+ .../frontier/baseline_rehashed_null_label.json     |     8 +
+ .../frontier/baseline_rehashed_policy_score.json   |     8 +
+ .../frontier/baseline_rehashed_random.json         |     8 +
+ .../frontier/baseline_rehashed_receipt.json        |     8 +
+ .../frontier/baseline_rehashed_split.json          |     8 +
+ .../frontier/baseline_rehashed_universe.json       |     8 +
+ .../baseline_replacement_with_more_abstention.json |     8 +
+ .../frontier/baseline_seed_cherrypick.json         |     8 +
+ .../known_bad/frontier/baseline_split_overlap.json |     8 +
+ .../frontier/baseline_split_temporal_order.json    |     8 +
+ .../frontier/baseline_stat_fraction_rounded.json   |     8 +
+ .../frontier/baseline_stat_null_label.json         |     8 +
+ .../frontier/baseline_synthetic_as_predictive.json |     8 +
+ .../frontier/baseline_test_label_in_fit.json       |     8 +
+ evals/known_bad/frontier/baseline_test_reuse.json  |     8 +
+ .../frontier/baseline_unseeded_random.json         |     8 +
+ .../frontier/baseline_winner_below_margin.json     |     8 +
+ evals/known_bad/frontier/model_future_feature.json |     7 +
+ .../frontier/model_missing_baselines.json          |     7 +
+ evals/public/baseline_framework_evaluator.py       |   689 +
+ evals/public/test_baseline_framework.py            |   204 +
+ scripts/compile_repository_task_context.py         |    13 +
+ scripts/generate_baseline_artifacts.py             |    50 +
+ scripts/validate_baseline_framework.py             |   124 +
+ scripts/validate_baseline_models.py                |    41 +
+ src/cre_foundry/baselines/__init__.py              |     5 +
+ src/cre_foundry/baselines/framework.py             |   472 +
+ 71 files changed, 128716 insertions(+), 229 deletions(-)
+
+commit 8fd5cf8ec1e2e8365dac4286ecf5c9d7ef99f631
+Author:     Engine <engine@local>
+AuthorDate: 2026-08-02T02:24:23-04:00
+Commit:     Engine <engine@local>
+CommitDate: 2026-08-02T02:24:23-04:00
+
+    baseline: freeze synthetic evaluator contract
+
+ artifacts/baselines/BASELINE-001-start.json        |  34 ++
+ artifacts/baselines/public_evaluator_contract.json | 193 +++++++
+ artifacts/context/current_task_packet.json         |  20 +-
+ artifacts/context/current_task_packet.md           | 591 +++++++++++++++++++++
+ scripts/compile_repository_task_context.py         |   4 +
+ 5 files changed, 840 insertions(+), 2 deletions(-)
+
+commit b802776ecb8335b4cb18bd81fb5fa5794dc4afa2
+Author:     Engine <engine@local>
+AuthorDate: 2026-08-02T02:15:48-04:00
+Commit:     Engine <engine@local>
+CommitDate: 2026-08-02T02:15:48-04:00
+
+    chore: complete outcomes and select baseline
+
+ artifacts/context/current_task_packet.json         |   74 +-
+ artifacts/context/current_task_packet.md           | 9174 +++++++++++++++-----
+ .../evaluations/autonomous_frontier_report.json    |  432 +-
+ artifacts/task-results/OUTCOMES-001.json           |  306 +
+ control/CURRENT_STATE.json                         |  106 +-
+ control/CURRENT_TASK.json                          |    8 +-
+ control/TASK_GRAPH.json                            |  141 +-
+ scripts/compile_repository_task_context.py         |   18 +
+ tasks/BASELINE-001.json                            |   20 +
+ tasks/OUTCOMES-001.json                            |    2 +-
+ 10 files changed, 7903 insertions(+), 2378 deletions(-)
+
+commit 5c19588b7935c0602f49f662fbaa406bfde78e7f
+Author:     Engine <engine@local>
+AuthorDate: 2026-08-02T02:02:31-04:00
+Commit:     Engine <engine@local>
+CommitDate: 2026-08-02T02:02:31-04:00
+
+    chore: rebind frontier meta to outcomes proof
+
+ artifacts/evaluations/autonomous_frontier_meta.json | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+commit 746702d9a46106c33633017d43f571cfb906149d
+Author:     Engine <engine@local>
+AuthorDate: 2026-08-02T02:01:38-04:00
+Commit:     Engine <engine@local>
+CommitDate: 2026-08-02T02:01:38-04:00
+
+    outcomes: harden synthetic maturity and lineage contracts
+
+ artifacts/evaluations/outcomes_synthetic.json      |  345 ++
+ artifacts/outcomes/canonical_run.json              | 3389 ++++++++++++++++++++
+ .../capability_classification_reconciliation.json  |   46 +
+ artifacts/outcomes/itt_inclusion_cases.json        |   29 +
+ artifacts/outcomes/public_evaluator_contract.json  |   61 +-
+ artifacts/outcomes/scenario_matrix.json            |   34 +
+ artifacts/outcomes/synthetic_input_ledger.json     |  497 +++
+ artifacts/outcomes/synthetic_window_policy.json    |   30 +
+ contracts/f9_outcome.schema.json                   |  150 +
+ contracts/f9_outcome_input_ledger.schema.json      |  133 +
+ contracts/f9_window_policy.schema.json             |   45 +
+ control/AUTONOMOUS_FRONTIER_CONTRACT.json          |  290 +-
+ .../outcome_appointment_before_booking.json        |    5 +
+ .../frontier/outcome_assertion_unit_mismatch.json  |    5 +
+ .../frontier/outcome_booking_as_commission.json    |    5 +
+ .../frontier/outcome_censored_negative.json        |    5 +
+ evals/known_bad/frontier/outcome_clock_order.json  |    5 +
+ .../frontier/outcome_common_asof_divergence.json   |    5 +
+ .../frontier/outcome_competing_negative.json       |    5 +
+ .../frontier/outcome_correction_cycle.json         |    5 +
+ .../outcome_correction_target_missing.json         |    5 +
+ .../frontier/outcome_duplicate_booking.json        |    5 +
+ .../frontier/outcome_extra_ledger_field.json       |    5 +
+ .../outcome_failed_competing_adjudication.json     |    5 +
+ .../frontier/outcome_forged_stopper_evidence.json  |    5 +
+ .../outcome_forged_supporting_evidence.json        |    5 +
+ .../outcome_future_booking_before_assessment.json  |    5 +
+ .../frontier/outcome_future_evidence.json          |    5 +
+ .../frontier/outcome_immature_negative.json        |    5 +
+ .../outcome_incomplete_watermark_negative.json     |    5 +
+ .../frontier/outcome_missing_f9_conjunct.json      |    5 +
+ .../frontier/outcome_missing_realtor_identity.json |    5 +
+ .../frontier/outcome_outside_window_positive.json  |    5 +
+ .../frontier/outcome_partial_route_final.json      |    5 +
+ .../frontier/outcome_post_window_rewrite.json      |    5 +
+ .../frontier/outcome_post_window_stopper.json      |    5 +
+ .../frontier/outcome_rehashed_correction.json      |    5 +
+ .../frontier/outcome_rehashed_dedupe.json          |    5 +
+ .../outcome_rehashed_dedupe_split_input.json       |    5 +
+ .../frontier/outcome_rehashed_input_new_f9.json    |    5 +
+ .../known_bad/frontier/outcome_rehashed_label.json |    5 +
+ .../frontier/outcome_rehashed_policy_binding.json  |    5 +
+ .../known_bad/frontier/outcome_replay_receipt.json |    5 +
+ .../outcome_shifted_assignment_anchor.json         |    5 +
+ .../frontier/outcome_stage1_contamination.json     |    5 +
+ .../frontier/outcome_unknown_assertion_type.json   |    5 +
+ .../outcome_unregistered_stopper_cause.json        |    5 +
+ .../frontier/outcome_window_authority.json         |    5 +
+ evals/public/outcomes_labels_evaluator.py          |  664 ++++
+ evals/public/test_outcomes_labels.py               |  183 ++
+ scripts/validate_outcomes_labels.py                |  284 ++
+ src/cre_foundry/outcomes/__init__.py               |    1 +
+ src/cre_foundry/outcomes/ledger.py                 |  614 ++++
+ 53 files changed, 6945 insertions(+), 30 deletions(-)
+
+commit 0b4638dbf1424d1dd4efcefb52db08db5912ef24
+Author:     Engine <engine@local>
+AuthorDate: 2026-08-02T01:11:00-04:00
+Commit:     Engine <engine@local>
+CommitDate: 2026-08-02T01:11:00-04:00
+
+    outcomes: freeze maturity evaluator contract
+
+ artifacts/context/current_task_packet.json        |  12 +-
+ artifacts/context/current_task_packet.md          | 177 +++++++++++++++++++++-
+ artifacts/outcomes/OUTCOMES-001-start.json        |  44 ++++++
+ artifacts/outcomes/public_evaluator_contract.json | 123 +++++++++++++++
+ control/CURRENT_STATE.json                        |   2 +-
+ control/GATES.json                                |  36 +++++
+ scripts/compile_repository_task_context.py        |   1 +
+ tasks/OUTCOMES-001.json                           |   2 +-
+ 8 files changed, 389 insertions(+), 8 deletions(-)
+
+commit 8330a8f7c0212b4ce2c7641cf698859de9e235b2
+Author:     Engine <engine@local>
+AuthorDate: 2026-08-02T01:03:29-04:00
+Commit:     Engine <engine@local>
+CommitDate: 2026-08-02T01:03:29-04:00
+
+    chore: complete vertical and select outcomes
+
+ artifacts/context/current_task_packet.json         |   62 +-
+ artifacts/context/current_task_packet.md           | 3630 +++++++++++++-------
+ .../evaluations/autonomous_frontier_report.json    |  102 +-
+ artifacts/task-results/VERTICAL-001.json           |  125 +
+ control/CURRENT_STATE.json                         |   26 +-
+ control/CURRENT_TASK.json                          |    8 +-
+ control/TASK_GRAPH.json                            |    8 +-
+ scripts/compile_repository_task_context.py         |   14 +
+ tasks/ARCHITECTURE-001.json                        |   20 +
+ tasks/IDENTITY-001.json                            |   20 +
+ tasks/OUTCOMES-001.json                            |   20 +
+ tasks/VERTICAL-001.json                            |    2 +-
+ 12 files changed, 2626 insertions(+), 1411 deletions(-)
+
+commit c263aa7eee102af7e3a8518c387f111028ce0c63
+Author:     Engine <engine@local>
+AuthorDate: 2026-08-02T00:55:01-04:00
+Commit:     Engine <engine@local>
+CommitDate: 2026-08-02T00:55:01-04:00
+
+    chore: rebind frontier meta to vertical proof
+
+ artifacts/evaluations/autonomous_frontier_meta.json | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+commit 9d28360c217475fd2eacd6fa5039dd1a40946be0
+Author:     Engine <engine@local>
+AuthorDate: 2026-08-02T00:49:16-04:00
+Commit:     Engine <engine@local>
+CommitDate: 2026-08-02T00:49:16-04:00
+
+    vertical: complete deterministic synthetic shadow slice
+
+ artifacts/context/current_task_packet.json         |   64 +-
+ artifacts/context/current_task_packet.md           | 5550 +++++++++++++++++++-
+ artifacts/evaluations/vertical_slice.json          |   96 +
+ artifacts/vertical-slice/run_manifest.json         |  284 +
+ contracts/synthetic_f9_outcome.schema.json         |    6 +-
+ contracts/synthetic_field_event.schema.json        |    5 +-
+ control/AUTONOMOUS_FRONTIER_CONTRACT.json          |   57 +-
+ .../frontier/vertical_duplicate_stop.json          |    5 +
+ .../frontier/vertical_field_before_issuance.json   |    5 +
+ .../vertical_immature_outcome_counted.json         |    5 +
+ .../frontier/vertical_protected_stop.json          |    5 +
+ .../frontier/vertical_replay_receipt_mismatch.json |    5 +
+ .../vertical_route_selection_mismatch.json         |    5 +
+ .../frontier/vertical_stage2_rewrite.json          |    5 +
+ evals/public/test_vertical_slice.py                |  188 +
+ evals/public/vertical_slice_evaluator.py           |  445 ++
+ scripts/compile_repository_task_context.py         |   15 +
+ scripts/validate_vertical_slice.py                 |  225 +
+ src/cre_foundry/vertical/__init__.py               |    1 +
+ src/cre_foundry/vertical/shadow_slice.py           |  288 +
+ 20 files changed, 7234 insertions(+), 25 deletions(-)
+
+commit 061423015acd81f71003f35ade3ed7e311a237c7
+Author:     Engine <engine@local>
+AuthorDate: 2026-08-02T00:00:20-04:00
+Commit:     Engine <engine@local>
+CommitDate: 2026-08-02T00:00:20-04:00
+
+    vertical: define route event and outcome contracts
+
+ artifacts/context/current_task_packet.json        |  6 +-
+ artifacts/context/current_task_packet.md          |  6 +-
+ artifacts/vertical/public_evaluator_contract.json | 17 ++---
+ contracts/synthetic_f9_outcome.schema.json        | 85 +++++++++++++++++++++++
+ contracts/synthetic_field_event.schema.json       | 64 +++++++++++++++++
+ contracts/synthetic_route_day.schema.json         | 65 +++++++++++++++++
+ tasks/VERTICAL-001.json                           |  6 +-
+ 7 files changed, 232 insertions(+), 17 deletions(-)
+
+commit cff23389cf12fe667d544a9f588e35dfab716abf
+Author:     Engine <engine@local>
+AuthorDate: 2026-08-01T23:56:31-04:00
+Commit:     Engine <engine@local>
+CommitDate: 2026-08-01T23:56:31-04:00
+
+    vertical: freeze synthetic slice evaluator contract
+
+ artifacts/vertical/VERTICAL-001-start.json        | 62 +++++++++++++++++++++++
+ artifacts/vertical/public_evaluator_contract.json | 39 ++++++++++++++
+ 2 files changed, 101 insertions(+)
+
+commit 63b5be5804f62dae8c61314065e7251689f11ec8
+Author:     Engine <engine@local>
+AuthorDate: 2026-08-01T23:53:56-04:00
+Commit:     Engine <engine@local>
+CommitDate: 2026-08-01T23:53:56-04:00
+
+    chore: complete contract spine and begin vertical slice
+
+ artifacts/context/current_task_packet.json |   34 +-
+ artifacts/context/current_task_packet.md   | 1979 ++++++----------------------
+ artifacts/task-results/CONTRACT-001.json   |  118 ++
+ control/CURRENT_STATE.json                 |   25 +-
+ control/CURRENT_TASK.json                  |   10 +-
+ control/TASK_GRAPH.json                    |    4 +-
+ scripts/compile_repository_task_context.py |   10 +
+ tasks/CONTRACT-001.json                    |    2 +-
+ tasks/VERTICAL-001.json                    |   20 +
+ 9 files changed, 617 insertions(+), 1585 deletions(-)
+
+commit beebe4437fde3908ea59207ede6367f585155374
+Author:     Engine <engine@local>
+AuthorDate: 2026-08-01T23:50:00-04:00
+Commit:     Engine <engine@local>
+CommitDate: 2026-08-01T23:50:00-04:00
+
+    test: bind contract evaluation report
+
+ artifacts/evaluations/contract_spine.json |  2 +-
+ scripts/validate_contract_spine.py        | 27 ++++++++++++++++++++++++++-
+ 2 files changed, 27 insertions(+), 2 deletions(-)
+
+commit 551c90d93125c7ed28e7ee27ced54b3dbf1b9343
+Author:     Engine <engine@local>
+AuthorDate: 2026-08-01T23:48:25-04:00
+Commit:     Engine <engine@local>
+CommitDate: 2026-08-01T23:48:25-04:00
+
+    contract: implement synthetic source-to-decision spine
+
+ artifacts/contracts/CONTRACT-001-start.json        |  13 +-
+ artifacts/contracts/contract_spine.json            |  67 ++++
+ artifacts/contracts/public_evaluator_contract.json |  19 +-
+ artifacts/evaluations/contract_spine.json          |  45 +++
+ contracts/thin_slice_candidate.schema.json         | 155 +++++++++
+ contracts/thin_slice_observation.schema.json       | 114 +++++++
+ docs/contracts/THIN_SLICE_CONTRACT.md              |  35 ++
+ .../frontier/contract_brand_location_collapse.json |   5 +
+ .../contract_decision_digest_mismatch.json         |   5 +
+ .../frontier/contract_future_observation.json      |   5 +
+ .../contract_protected_alias_omission.json         |   5 +
+ .../frontier/contract_silent_schema_upgrade.json   |   5 +
+ evals/public/contract_spine_evaluator.py           | 361 +++++++++++++++++++++
+ evals/public/test_contract_spine.py                | 138 ++++++++
+ scripts/validate_contract_spine.py                 | 156 +++++++++
+ src/cre_foundry/contracts/__init__.py              |   2 +
+ src/cre_foundry/contracts/thin_slice.py            | 334 +++++++++++++++++++
+ 17 files changed, 1454 insertions(+), 10 deletions(-)
+
+commit a918e2bc65ba47933ace9e21f388c294b84ff876
+Author:     Engine <engine@local>
+AuthorDate: 2026-08-01T23:24:37-04:00
+Commit:     Engine <engine@local>
+CommitDate: 2026-08-01T23:24:37-04:00
+
+    contract: freeze thin-spine evaluator contract
+
+ artifacts/contracts/CONTRACT-001-start.json        | 58 ++++++++++++++++++++++
+ artifacts/contracts/public_evaluator_contract.json | 51 +++++++++++++++++++
+ 2 files changed, 109 insertions(+)
+
+commit b44d73bde5d28b24de01edf5c0af8b12dbe33105
+Author:     Engine <engine@local>
+AuthorDate: 2026-08-01T23:22:11-04:00
+Commit:     Engine <engine@local>
+CommitDate: 2026-08-01T23:22:11-04:00
+
+    chore: advance to contract spine task
+
+ artifacts/context/current_task_packet.json         |  4 +-
+ artifacts/context/current_task_packet.md           |  2 +-
+ .../evaluations/autonomous_frontier_report.json    | 97 ++++++++++++----------
+ control/CURRENT_STATE.json                         |  2 +-
+ 4 files changed, 58 insertions(+), 47 deletions(-)
+
+commit 096dc9e1112f74520ff51de9f28e1fc9a1cb2755
+Author:     Engine <engine@local>
+AuthorDate: 2026-08-01T23:20:30-04:00
+Commit:     Engine <engine@local>
+CommitDate: 2026-08-01T23:20:30-04:00
+
+    test: bind frontier meta to math completion
+
+ artifacts/evaluations/autonomous_frontier_meta.json | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+commit 3950c534de0de4aef86415095dc3e4a59034d191
+Author:     Engine <engine@local>
+AuthorDate: 2026-08-01T23:19:50-04:00
+Commit:     Engine <engine@local>
+CommitDate: 2026-08-01T23:19:50-04:00
+
+    math: complete public formal contract
+
+ artifacts/context/current_task_packet.json         |   42 +-
+ artifacts/context/current_task_packet.md           | 2328 ++++++++++++++------
+ artifacts/evaluations/math_contracts.json          |   36 +-
+ artifacts/math/estimand_registry.json              |   60 +-
+ artifacts/math/formal_decisions.json               |    4 +-
+ artifacts/math/human_authority_input_template.json |    9 +-
+ artifacts/task-results/MATH-001.json               |  131 ++
+ contracts/estimand_registry.schema.json            |   38 +-
+ contracts/math_authority_input.schema.json         |   12 +-
+ contracts/math_decision_policy.schema.json         |    7 +-
+ contracts/math_route_decision.schema.json          |    8 +-
+ control/AUTONOMOUS_FRONTIER_CONTRACT.json          |   10 +-
+ control/CURRENT_STATE.json                         |   28 +-
+ control/CURRENT_TASK.json                          |    8 +-
+ control/GATES.json                                 |   11 +
+ control/TASK_GRAPH.json                            |    4 +-
+ evals/known_bad/math/_support.py                   |    2 +-
+ evals/known_bad/math/permutation_sensitive.py      |    2 +-
+ evals/public/math_oracle_evaluator.py              |   36 +-
+ evals/public/test_math_contracts.py                |   30 +-
+ scripts/build_math_contracts.py                    |   31 +-
+ scripts/compile_repository_task_context.py         |   12 +-
+ scripts/finalize_math_contracts.py                 |    2 +
+ scripts/validate_math_contracts.py                 |   48 +-
+ src/cre_foundry/math/reference_oracle.py           |    2 +
+ tasks/CONTRACT-001.json                            |   20 +
+ tasks/MATH-001.json                                |    8 +-
+ 27 files changed, 2138 insertions(+), 791 deletions(-)
+
+commit a15bf297f679d7521c4459030112fee969474045
+Author:     Engine <engine@local>
+AuthorDate: 2026-08-01T23:03:54-04:00
+Commit:     Engine <engine@local>
+CommitDate: 2026-08-01T23:03:54-04:00
+
+    test: bind frontier meta to math checkpoint
+
+ artifacts/evaluations/autonomous_frontier_meta.json | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+commit 6b9fc937b8812b238085798287935a5b59a7f6d1
+Author:     Engine <engine@local>
+AuthorDate: 2026-08-01T23:02:59-04:00
+Commit:     Engine <engine@local>
+CommitDate: 2026-08-01T23:02:59-04:00
+
+    math: implement bounded exact-ten oracle
+
+ artifacts/evaluations/math_contracts.json          | 170 ++++++
+ artifacts/math/estimand_registry.json              | 579 +++++++++++++++++++++
+ artifacts/math/formal_decisions.json               |   6 +-
+ artifacts/math/human_authority_input_template.json |  53 ++
+ artifacts/math/public_evaluator_contract.json      |   2 +-
+ contracts/estimand_registry.schema.json            | 128 +++++
+ contracts/math_authority_input.schema.json         |  27 +
+ contracts/math_decision_policy.schema.json         | 108 ++++
+ contracts/math_route_decision.schema.json          |  48 ++
+ control/AUTONOMOUS_FRONTIER_CONTRACT.json          |  36 +-
+ .../frontier/exact_ten_protected_fill.json         |   7 +
+ .../frontier/exact_ten_wrong_cardinality.json      |   7 +
+ evals/known_bad/frontier/math_hardcoded_power.json |   8 +
+ .../frontier/math_scenario_as_measured.json        |   8 +
+ .../frontier/math_undefined_estimand.json          |   8 +
+ evals/known_bad/math/_support.py                   |  15 +
+ .../math/collapse_duplicate_physical_locations.py  |   5 +
+ evals/known_bad/math/fill_with_protected_alias.py  |   6 +
+ evals/known_bad/math/greedy_individual_value.py    |  14 +
+ evals/known_bad/math/issue_nine.py                 |   5 +
+ evals/known_bad/math/permutation_sensitive.py      |  19 +
+ .../math/prefer_proximity_below_value_floor.py     |   6 +
+ .../known_bad/math/use_stage2_field_observation.py |   6 +
+ evals/public/math_oracle_evaluator.py              | 109 ++++
+ evals/public/test_math_contracts.py                | 263 ++++++++++
+ scripts/build_math_contracts.py                    | 105 ++++
+ scripts/finalize_math_contracts.py                 |  70 +++
+ scripts/validate_math_contracts.py                 | 419 +++++++++++++++
+ src/cre_foundry/__init__.py                        |   1 +
+ src/cre_foundry/math/__init__.py                   |   5 +
+ src/cre_foundry/math/reference_oracle.py           | 211 ++++++++
+ tasks/MATH-001.json                                |   4 +-
+ 32 files changed, 2436 insertions(+), 22 deletions(-)
+
+commit 50df16e226a3d5ae3c96a2e9d84d73326b805b10
+Author:     Engine <engine@local>
+AuthorDate: 2026-08-01T22:26:43-04:00
+Commit:     Engine <engine@local>
+CommitDate: 2026-08-01T22:26:43-04:00
+
+    math: freeze public evaluator contract
+
+ artifacts/math/formal_decisions.json          | 24 ++++++++++++++
+ artifacts/math/public_evaluator_contract.json | 45 +++++++++++++++++++++++++++
+ control/CURRENT_STATE.json                    |  4 +++
+ tasks/MATH-001.json                           |  4 +--
+ 4 files changed, 75 insertions(+), 2 deletions(-)
+
+commit 61147e20f224d062b618bc5b6822eda60c6ad346
+Author:     Engine <engine@local>
+AuthorDate: 2026-08-01T22:23:57-04:00
+Commit:     Engine <engine@local>
+CommitDate: 2026-08-01T22:23:57-04:00
+
+    math: begin evaluator-first oracle task
+
+ artifacts/math/MATH-001-start.json | 38 ++++++++++++++++++++++++++++++++++++++
+ tasks/MATH-001.json                |  5 +++++
+ 2 files changed, 43 insertions(+)
+
+commit f2cb17433d3b23086543dff0ff6badbe7703ad22
+Author:     Engine <engine@local>
+AuthorDate: 2026-08-01T22:21:38-04:00
+Commit:     Engine <engine@local>
+CommitDate: 2026-08-01T22:21:38-04:00
+
+    research: complete task and begin math contract
+
+ artifacts/context/current_task_packet.json         |  43 +
+ artifacts/context/current_task_packet.md           | 910 +++++++++++++++++++++
+ .../evaluations/autonomous_frontier_report.json    |  68 +-
+ artifacts/task-results/RESEARCH-001.json           | 138 ++++
+ control/CURRENT_STATE.json                         |  29 +-
+ control/CURRENT_TASK.json                          |   8 +-
+ control/TASK_GRAPH.json                            |   4 +-
+ scripts/compile_repository_task_context.py         |  58 ++
+ tasks/MATH-001.json                                |   2 +-
+ tasks/RESEARCH-001.json                            |  10 +-
+ 10 files changed, 1212 insertions(+), 58 deletions(-)
+
+commit 2f8d2a7355f29e3fd97240a7085459b7099338f5
+Author:     Engine <engine@local>
+AuthorDate: 2026-08-01T22:15:17-04:00
+Commit:     Engine <engine@local>
+CommitDate: 2026-08-01T22:15:17-04:00
+
+    chore: refresh frontier meta binding
+
+ artifacts/evaluations/autonomous_frontier_meta.json | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+commit 89d5d294bf4fb80f4829d29e83f7a9aa7f77ac29
+Author:     Engine <engine@local>
+AuthorDate: 2026-08-01T22:15:12-04:00
+Commit:     Engine <engine@local>
+CommitDate: 2026-08-01T22:15:12-04:00
+
+    test: reconcile mutation completion reports
+
+ scripts/run_research_mutation.py | 10 ++++++++++
+ 1 file changed, 10 insertions(+)
+
+commit b737122f20a3a437d8952422fbe453083645bdba
+Author:     Engine <engine@local>
+AuthorDate: 2026-08-01T22:14:18-04:00
+Commit:     Engine <engine@local>
+CommitDate: 2026-08-01T22:14:18-04:00
+
+    research: reconcile completion evidence and gates
+
+ artifacts/research/bundle_manifest.json                |  6 +++---
+ artifacts/research/research_completion_report.json     | 18 ++++++++----------
+ artifacts/research/source_feasibility_registry.json    |  6 ++++--
+ .../research/source_feasibility_registry.schema.json   |  3 ++-
+ control/AUTONOMOUS_FRONTIER_CONTRACT.json              |  6 +++---
+ control/CURRENT_STATE.json                             |  2 +-
+ control/TASK_GRAPH.json                                |  2 +-
+ scripts/build_research_contract.py                     |  2 ++
+ scripts/finalize_research_bundle.py                    | 12 +++++++++---
+ scripts/validate_research_completion.py                | 14 +++++++++++++-
+ 10 files changed, 46 insertions(+), 25 deletions(-)
+
+commit c8949fea8719f4e34e245a16b1f0b1412d205c90
+Author:     Engine <engine@local>
+AuthorDate: 2026-08-01T22:09:51-04:00
+Commit:     Engine <engine@local>
+CommitDate: 2026-08-01T22:09:51-04:00
+
+    research: bind independent source evidence
+
+ artifacts/research/bundle_manifest.json            |  103 +-
+ artifacts/research/claim_evidence_graph.json       |   24 +-
+ artifacts/research/counterevidence_register.json   |    9 +-
+ .../research/raw/independent/capture_manifest.json |  107 ++
+ .../research/raw/independent/on_ogl_terms.html     | 1034 ++++++++++++++++++++
+ .../raw/independent/on_select_package.json         |    1 +
+ .../research/raw/independent/on_select_schema.json |    1 +
+ .../raw/independent/tor_coa_2001_schema.json       |    1 +
+ .../raw/independent/tor_coa_2016_schema.json       |    1 +
+ .../raw/independent/tor_coa_active_schema.json     |    1 +
+ .../raw/independent/tor_coa_closed_schema.json     |    1 +
+ .../research/raw/independent/tor_coa_package.json  |    1 +
+ .../research/raw/independent/tor_ogl_terms.html    |  369 +++++++
+ artifacts/research/raw/manifest.json               |   18 +
+ artifacts/research/raw/on_ogl_terms.html           | 1034 ++++++++++++++++++++
+ .../research/raw/row_witness/capture_manifest.json |  260 +++++
+ .../row_witness/on_distinct_licence_limit0.json    |    1 +
+ .../raw/row_witness/on_licence_4716137_count.json  |    1 +
+ .../on_licence_4716137_distinct_address.json       |    1 +
+ .../research/raw/row_witness/on_max_address.json   |   63 ++
+ .../raw/row_witness/on_max_address_post.json       |   63 ++
+ artifacts/research/raw/row_witness/on_summary.json |   63 ++
+ .../research/raw/row_witness/on_total_limit0.json  |    1 +
+ .../research/raw/row_witness/tor_2016_3209741.json |    1 +
+ .../raw/row_witness/tor_closed_3209741.json        |    1 +
+ artifacts/research/raw/tor_ogl_terms.html          |  369 +++++++
+ .../research/source_feasibility_registry.json      |   22 +-
+ artifacts/research/source_reproduction_report.json |  100 +-
+ .../source_reproduction_report.schema.json         |   44 +-
+ control/AUTONOMOUS_FRONTIER_CONTRACT.json          |   32 +-
+ control/GATES.json                                 |   15 +
+ .../frontier/source_mutable_as_snapshot.json       |    8 +
+ .../frontier/source_unspecified_licence.json       |    8 +
+ evals/public/test_research_completion.py           |   55 ++
+ scripts/build_research_contract.py                 |   43 +-
+ scripts/capture_public_research_evidence.py        |   27 +-
+ scripts/finalize_research_bundle.py                |    6 +-
+ scripts/import_independent_research_capture.py     |   46 +
+ scripts/import_independent_row_witness.py          |   44 +
+ scripts/run_research_mutation.py                   |   15 +-
+ scripts/validate_research_completion.py            |   82 ++
+ scripts/validate_source_feasibility.py             |   22 +
+ 42 files changed, 3991 insertions(+), 107 deletions(-)
+
+commit dcdc9d35e6481cc855bfdc5ff3c4dd6bf373a39f
+Author:     Engine <engine@local>
+AuthorDate: 2026-08-01T21:56:07-04:00
+Commit:     Engine <engine@local>
+CommitDate: 2026-08-01T21:56:07-04:00
+
+    chore: refresh frontier evidence after research contract
+
+ .../evaluations/autonomous_frontier_meta.json      |  4 +-
+ .../evaluations/autonomous_frontier_report.json    | 53 +++++++++++++++-------
+ 2 files changed, 38 insertions(+), 19 deletions(-)
+
+commit 657feb189ad4138c5eebce883faa96206faee0cf
+Author:     Engine <engine@local>
+AuthorDate: 2026-08-01T21:51:35-04:00
+Commit:     Engine <engine@local>
+CommitDate: 2026-08-01T21:51:35-04:00
+
+    research: enforce strict mutation-tested contract
+
+ artifacts/research/bundle_manifest.json            |   80 ++
+ artifacts/research/canonical_field_map.json        | 1161 +++++++++++++++++++-
+ artifacts/research/claim_evidence_graph.json       |  465 +++++++-
+ artifacts/research/counterevidence_register.json   |  108 +-
+ artifacts/research/raw/manifest.json               |   96 ++
+ artifacts/research/raw/on_select_package.json      |    1 +
+ artifacts/research/raw/on_select_schema.json       |    1 +
+ artifacts/research/raw/tor_coa_2001_schema.json    |    1 +
+ artifacts/research/raw/tor_coa_2016_schema.json    |    1 +
+ artifacts/research/raw/tor_coa_active_schema.json  |    1 +
+ artifacts/research/raw/tor_coa_closed_schema.json  |    1 +
+ artifacts/research/raw/tor_coa_package.json        |    1 +
+ artifacts/research/research_completion_report.json |   38 +-
+ .../research/source_feasibility_registry.json      |  224 +++-
+ artifacts/research/source_reproduction_report.json |  519 ++++++++-
+ contracts/research/canonical_field_map.schema.json |   24 +
+ .../research/claim_evidence_graph.schema.json      |   68 ++
+ .../research/counterevidence_register.schema.json  |   13 +
+ .../source_feasibility_registry.schema.json        |   54 +
+ .../source_reproduction_report.schema.json         |   85 ++
+ control/AUTONOMOUS_FRONTIER_CONTRACT.json          |   38 +-
+ .../frontier/research_brand_as_location.json       |    9 +-
+ .../frontier/research_current_as_historical.json   |    9 +-
+ .../frontier/research_inference_as_fact.json       |    9 +-
+ .../frontier/research_metadata_as_access.json      |    9 +-
+ .../frontier/research_ontario_multi_address.json   |    8 +
+ .../frontier/research_retrieved_as_authority.json  |    9 +-
+ .../frontier/research_toronto_sysid_conflict.json  |    8 +
+ evals/public/test_research_completion.py           |   69 ++
+ scripts/build_research_contract.py                 |  151 +++
+ scripts/capture_public_research_evidence.py        |  117 ++
+ scripts/finalize_research_bundle.py                |   51 +
+ scripts/run_research_mutation.py                   |  115 ++
+ scripts/validate_research_completion.py            |  231 +++-
+ 34 files changed, 3675 insertions(+), 100 deletions(-)
+
+commit 3d8407eb615aab41b16097573b16f5f7c46cc724
+Author:     Engine <engine@local>
+AuthorDate: 2026-08-01T21:33:09-04:00
+Commit:     Engine <engine@local>
+CommitDate: 2026-08-01T21:33:09-04:00
+
+    research: record closure evaluator failures
+
+ artifacts/research/RESEARCH-001-adversarial-sweep.json | 12 ++++++++++++
+ tasks/RESEARCH-001.json                                | 10 +++++-----
+ 2 files changed, 17 insertions(+), 5 deletions(-)
+
+commit 071f8beeebc6ba91c5603d9c083ca153236328b6
+Author:     Engine <engine@local>
+AuthorDate: 2026-08-01T21:32:14-04:00
+Commit:     Engine <engine@local>
+CommitDate: 2026-08-01T21:32:14-04:00
+
+    research: persist public schema reproduction
+
+ artifacts/research/source_reproduction_report.json | 14 ++++++++++++++
+ scripts/validate_research_completion.py            |  3 +++
+ 2 files changed, 17 insertions(+)
+
+commit bec9ce04530dd3c072568972a58a765f8dd3dd9b
+Author:     Engine <engine@local>
+AuthorDate: 2026-08-01T21:30:48-04:00
+Commit:     Engine <engine@local>
+CommitDate: 2026-08-01T21:30:48-04:00
+
+    research: checkpoint evaluated source closure
+
+ .../evaluations/autonomous_frontier_meta.json      |  4 +-
+ .../evaluations/autonomous_frontier_report.json    | 91 ++++++++++++----------
+ 2 files changed, 51 insertions(+), 44 deletions(-)
+
+commit 4b606c0a6b2e1231fe784c005579b55953e7f13d
+Author:     Engine <engine@local>
+AuthorDate: 2026-08-01T21:28:51-04:00
+Commit:     Engine <engine@local>
+CommitDate: 2026-08-01T21:28:51-04:00
+
+    research: add canonical source evidence artifacts
+
+ artifacts/research/canonical_field_map.json        |  9 ++++
+ artifacts/research/claim_evidence_graph.json       | 13 ++++++
+ artifacts/research/counterevidence_register.json   | 12 +++++
+ artifacts/research/research_completion_report.json |  8 ++++
+ .../research/source_feasibility_registry.json      | 11 +++++
+ control/AUTONOMOUS_FRONTIER_CONTRACT.json          | 10 ++---
+ docs/research/RESEARCH-001-source-feasibility.md   |  8 ++++
+ .../frontier/research_brand_as_location.json       |  1 +
+ .../frontier/research_current_as_historical.json   |  1 +
+ .../frontier/research_inference_as_fact.json       |  1 +
+ .../frontier/research_metadata_as_access.json      |  1 +
+ .../frontier/research_retrieved_as_authority.json  |  1 +
+ scripts/validate_research_completion.py            | 51 ++++++++++++++++++++++
+ 13 files changed, 122 insertions(+), 5 deletions(-)
+
+commit e5cc92e7e4f91cb09c5238ba8f1f7c0b7c91ecff
+Author:     Engine <engine@local>
+AuthorDate: 2026-08-01T21:25:31-04:00
+Commit:     Engine <engine@local>
+CommitDate: 2026-08-01T21:25:31-04:00
+
+    chore: complete frontier checkpoint
+
+ .../evaluations/autonomous_frontier_meta.json      |  25 +-
+ .../evaluations/autonomous_frontier_report.json    | 950 +++++++++++++++++++++
+ artifacts/task-results/FRONTIER-001.json           |  31 +-
+ control/CURRENT_STATE.json                         |  24 +-
+ control/CURRENT_TASK.json                          |   8 +-
+ control/TASK_GRAPH.json                            |   4 +-
+ tasks/FRONTIER-001.json                            |   2 +-
+ tasks/RESEARCH-001.json                            |   4 +-
+ 8 files changed, 1005 insertions(+), 43 deletions(-)
+
+commit e14892d8243057c2498ffc3e1d0cc829b44a3026
+Author:     Engine <engine@local>
+AuthorDate: 2026-08-01T21:21:58-04:00
+Commit:     Engine <engine@local>
+CommitDate: 2026-08-01T21:21:58-04:00
+
+    eval: bind frontier negative-control diagnostics
+
+ contracts/autonomous_frontier_contract.schema.json |    5 +-
+ control/AUTONOMOUS_FRONTIER_CONTRACT.json          | 2359 +++++++++++++++++---
+ evals/public/test_autonomous_frontier.py           |   25 +-
+ scripts/evaluate_autonomous_frontier.py            |    7 +-
+ scripts/prove_known_bad_fails.py                   |    8 +-
+ 5 files changed, 2077 insertions(+), 327 deletions(-)
+
+commit eeaa128829386438a7a785d95d09d467ad2d24f8
+Author:     Engine <engine@local>
+AuthorDate: 2026-08-01T21:16:19-04:00
+Commit:     Engine <engine@local>
+CommitDate: 2026-08-01T21:16:19-04:00
+
+    eval: close frontier trust and mutation bypasses
+
+ evals/public/test_autonomous_frontier.py | 139 ++++++++++++++++++++++++++++---
+ scripts/evaluate_autonomous_frontier.py  | 101 ++++++++++++++++++----
+ scripts/prove_known_bad_fails.py         |  21 ++++-
+ scripts/validate_control_plane.py        |  22 ++++-
+ scripts/validate_frontier_meta.py        |   8 +-
+ scripts/validate_mission_integrity.py    |   8 +-
+ 6 files changed, 261 insertions(+), 38 deletions(-)
+
+commit 94890ec2ca1e838882a5e81cb2223d23006fe5ed
+Author:     Engine <engine@local>
+AuthorDate: 2026-08-01T21:03:23-04:00
+Commit:     Engine <engine@local>
+CommitDate: 2026-08-01T21:03:23-04:00
+
+    eval: establish autonomous frontier contract
+
+ AGENTS.md                                          |    6 +
+ README.md                                          |    8 +
+ .../evaluations/autonomous_frontier_meta.json      |   37 +
+ artifacts/task-results/FRONTIER-001.json           |  165 ++++
+ contracts/autonomous_frontier_contract.schema.json |  126 +++
+ control/AUTONOMOUS_FRONTIER_CONTRACT.json          |  716 ++++++++++++++
+ control/CURRENT_STATE.json                         |   29 +-
+ control/CURRENT_TASK.json                          |   10 +-
+ control/GATES.json                                 |   38 +
+ control/TASK_GRAPH.json                            |  130 ++-
+ evals/known_bad/frontier/frontier_cycle.json       |    7 +
+ .../frontier/frontier_external_block_abuse.json    |    6 +
+ .../frontier/frontier_self_attested_pass.json      |    6 +
+ evals/public/test_autonomous_frontier.py           |  405 ++++++++
+ scripts/evaluate_autonomous_frontier.py            | 1044 ++++++++++++++++++++
+ scripts/prove_known_bad_fails.py                   |   93 +-
+ scripts/validate_control_plane.py                  |   27 +-
+ scripts/validate_frontier_meta.py                  |   37 +
+ scripts/validate_mission_integrity.py              |   35 +
+ tasks/FRONTIER-001.json                            |   20 +
+ tasks/MATH-001.json                                |    2 +-
+ tasks/RESEARCH-001.json                            |    4 +-
+ 22 files changed, 2893 insertions(+), 58 deletions(-)
+
+commit 04e2581928eb701b8a4b4ab558cebfe19b9b4b1a
+Author:     Engine <engine@local>
+AuthorDate: 2026-08-01T19:14:57-04:00
+Commit:     Engine <engine@local>
+CommitDate: 2026-08-01T19:14:57-04:00
+
+    research: checkpoint source feasibility
+
+ artifacts/research/RESEARCH-001-start.json         |  12 +-
+ .../research/source_feasibility_registry.v0.json   | 258 +++++++++++++++++++++
+ ...oronto_business_licences_metadata_probe.v0.json |  53 +++++
+ artifacts/task-results/RESEARCH-001.partial.json   | 177 ++++++++++++++
+ control/CURRENT_STATE.json                         |  11 +-
+ control/GATES.json                                 |   9 +-
+ docs/research/RESEARCH-001-source-feasibility.md   |  64 +++++
+ tasks/RESEARCH-001.json                            |  18 ++
+ 8 files changed, 597 insertions(+), 5 deletions(-)
+
+commit 16f78b17d9ff94123d96af4e5d2d3e3004079b5e
+Author:     Engine <engine@local>
+AuthorDate: 2026-08-01T19:14:46-04:00
+Commit:     Engine <engine@local>
+CommitDate: 2026-08-01T19:14:46-04:00
+
+    fix: make bootstrap replay isolated and reproducible
+
+ README.md                                          |   5 +-
+ artifacts/task-results/BOOTSTRAP-001.json          |   8 +-
+ .../launch_kernel/artifacts/level10/campaign.json  |  14 +-
+ .../artifacts/level10/full_system_simulation.json  |  16 +--
+ pyproject.toml                                     |   3 +
+ scripts/validate_control_plane.py                  | 122 +++++++++++++++-
+ uv.lock                                            | 155 ++++++++++++++++++++-
+ 7 files changed, 297 insertions(+), 26 deletions(-)
+
+commit 22fab43d59572b3c84865947b46944bcbb9277a5
+Author:     Engine <engine@local>
+AuthorDate: 2026-08-01T18:58:19-04:00
+Commit:     Engine <engine@local>
+CommitDate: 2026-08-01T18:58:19-04:00
+
+    fix: harden bootstrap evaluator and checkpoint
+
+ artifacts/bootstrap/repository_inventory.json                     | 6 +++---
+ artifacts/task-results/BOOTSTRAP-001.json                         | 2 +-
+ .../CRE_Codex_Project_OS_v2.2/launch_kernel/CHECKSUMS.sha256      | 2 +-
+ .../launch_kernel/artifacts/context/current_task_packet.json      | 6 +++---
+ .../launch_kernel/artifacts/context/current_task_packet.md        | 6 +++---
+ .../launch_kernel/artifacts/level10/campaign.json                 | 2 +-
+ .../launch_kernel/artifacts/level10/full_system_simulation.json   | 8 ++++----
+ .../launch_kernel/control/CURRENT_STATE.json                      | 6 +++---
+ control/CURRENT_STATE.json                                        | 6 +++---
+ 9 files changed, 22 insertions(+), 22 deletions(-)
+
+commit 1f31dd334dad330b1fba645d8b168e32f40cc164
+Author:     Engine <engine@local>
+AuthorDate: 2026-08-01T18:57:26-04:00
+Commit:     Engine <engine@local>
+CommitDate: 2026-08-01T18:57:26-04:00
+
+    chore: initialize CRE Foundry control plane
+
+ .gitignore                                         |   14 +
+ AGENTS.md                                          |   37 +
+ README.md                                          |   31 +
+ artifacts/bootstrap/archive_verification.json      |   11 +
+ artifacts/bootstrap/capability_manifest.json       |   46 +
+ artifacts/bootstrap/contradiction_register.json    |   35 +
+ artifacts/bootstrap/expertise_coverage.json        |   21 +
+ artifacts/bootstrap/input_classification.json      |   59 +
+ artifacts/bootstrap/repository_inventory.json      |   37 +
+ artifacts/evaluations/known_bad_direct_result.json |    7 +
+ artifacts/evaluations/known_bad_public_result.json |   40 +
+ .../evaluations/public_evaluator_manifest.json     |   20 +
+ artifacts/research/RESEARCH-001-start.json         |   15 +
+ artifacts/task-results/BOOTSTRAP-001.json          |  137 ++
+ bootstrap/BOOTSTRAP-001.partial.json               |  175 +++
+ bootstrap/GATE-OS-ARTIFACT-001.json                |  112 ++
+ .../launch_kernel/.codex/agents/builder.toml       |   10 +
+ .../launch_kernel/.codex/agents/cre_reviewer.toml  |    9 +
+ .../.codex/agents/data_identity_reviewer.toml      |    9 +
+ .../.codex/agents/quant_ml_reviewer.toml           |   10 +
+ .../.codex/agents/research_mapper.toml             |    9 +
+ .../.codex/agents/systems_security_reviewer.toml   |   10 +
+ .../launch_kernel/.codex/agents/verifier.toml      |   10 +
+ .../launch_kernel/.codex/config.template.toml      |   11 +
+ .../launch_kernel/AGENTS.md                        |   59 +
+ .../launch_kernel/CHECKSUMS.sha256                 |   75 ++
+ .../launch_kernel/FINAL_AUDIT_REPORT.md            |   72 +
+ .../FINAL_CODEX_LAUNCH_PROMPT_v2.2.md              |  110 ++
+ .../launch_kernel/LEVEL10_SWEEPER_REPORT.md        |   24 +
+ .../launch_kernel/MANIFEST.json                    |  432 ++++++
+ .../launch_kernel/README_START_HERE.md             |   50 +
+ .../launch_kernel/RESEARCH_BASIS.md                |   38 +
+ .../launch_kernel/RUNBOOK.md                       |   56 +
+ .../artifacts/codex_capabilities.json              |   32 +
+ .../artifacts/context/current_task_packet.json     |   19 +
+ .../artifacts/context/current_task_packet.md       |  550 ++++++++
+ .../artifacts/level10/DOMAIN_SCORECARD.md          |   32 +
+ .../launch_kernel/artifacts/level10/campaign.json  |   86 ++
+ .../artifacts/level10/full_system_simulation.json  |  935 +++++++++++++
+ .../artifacts/level10/release_validation.json      |    8 +
+ .../launch_kernel/artifacts/os_validation.json     |   10 +
+ .../launch_kernel/artifacts/prompt_audit.json      |   20 +
+ .../artifacts/research_readiness_validation.json   |    8 +
+ .../launch_kernel/artifacts/selected_task.json     |    5 +
+ .../context/AGENT_DATA_PRIMITIVES.json             |  143 ++
+ .../context/CORE_RESEARCH_QUESTIONS.json           |   89 ++
+ .../launch_kernel/context/EXPERTISE_MAP.json       |   66 +
+ .../launch_kernel/context/PRODUCT_BRIEF.md         |   28 +
+ .../context/REFERENCE_ARCHITECTURE.md              |   22 +
+ .../launch_kernel/context/VAULT_ROUTER.json        |   46 +
+ .../control/AUTHORIZED_FALLBACK_LADDER.md          |   47 +
+ .../control/CLAIM_PROOF_REGISTER.json              |   54 +
+ .../launch_kernel/control/CONTEXT_POLICY.json      |   32 +
+ .../launch_kernel/control/CURRENT_STATE.json       |   23 +
+ .../launch_kernel/control/CURRENT_TASK.json        |   16 +
+ .../launch_kernel/control/EVALUATOR_TOPOLOGY.md    |   25 +
+ .../launch_kernel/control/EXECUTION_MODES.md       |   51 +
+ .../control/LEVEL10_DOMAIN_DEFINITIONS.json        |  462 +++++++
+ .../launch_kernel/control/MILESTONES.json          |  124 ++
+ .../control/PRE_CODEX_LEVEL10_POLICY.md            |   23 +
+ .../control/RESEARCH_COMPLETION_PROTOCOL.md        |  121 ++
+ .../control/ROLE_ACTIVATION_POLICY.json            |  157 +++
+ .../launch_kernel/control/SYMPHONY_WORKFLOW.md     |   35 +
+ .../launch_kernel/control/TASK_GRAPH.json          |  155 +++
+ .../control/TASK_SELECTION_POLICY.json             |   38 +
+ .../launch_kernel/control/WORKFLOW.md              |  109 ++
+ .../launch_kernel/evals/ADVERSARIAL_CASES.json     |  149 +++
+ .../launch_kernel/evals/LEVEL10_BENCHMARKS.json    |   36 +
+ .../launch_kernel/evals/TRIAL_PROTOCOL.md          |   37 +
+ .../launch_kernel/kernel/AUTHORITY.md              |   39 +
+ .../launch_kernel/kernel/CAPABILITY_BOUNDARY.json  |   82 ++
+ .../launch_kernel/kernel/CAPABILITY_BOUNDARY.md    |   66 +
+ .../launch_kernel/kernel/INVARIANTS.json           |   73 +
+ .../kernel/MATH_MODELING_CONSTITUTION.md           |  182 +++
+ .../launch_kernel/kernel/MISSION.md                |   34 +
+ .../launch_kernel/kernel/PROOF_POLICY.md           |   42 +
+ .../launch_kernel/kernel/STOP_POLICY.md            |   22 +
+ .../schemas/capability_manifest.schema.json        |   34 +
+ .../schemas/context_packet.schema.json             |   35 +
+ .../launch_kernel/schemas/task_result.schema.json  |  186 +++
+ .../launch_kernel/scripts/compile_task_context.py  |   62 +
+ .../launch_kernel/scripts/launch_headless_once.sh  |   38 +
+ .../scripts/probe_codex_capabilities.py            |   72 +
+ .../launch_kernel/scripts/run_level10_campaign.py  |   28 +
+ .../scripts/run_level10_simulation.py              |  328 +++++
+ .../launch_kernel/scripts/run_prompt_audit.py      |   36 +
+ .../launch_kernel/scripts/select_next_task.py      |   61 +
+ .../scripts/validate_level10_release.py            |   22 +
+ .../launch_kernel/scripts/validate_os.py           |  125 ++
+ .../scripts/validate_research_readiness.py         |   65 +
+ .../launch_kernel/scripts/verify_checksums.py      |   18 +
+ .../launch_kernel/skills/best-of-n/SKILL.md        |   10 +
+ .../launch_kernel/skills/build/SKILL.md            |   10 +
+ .../launch_kernel/skills/context-compile/SKILL.md  |   10 +
+ .../launch_kernel/skills/decompose/SKILL.md        |   10 +
+ .../skills/identity-provenance/SKILL.md            |   10 +
+ .../launch_kernel/skills/integrate-resume/SKILL.md |   10 +
+ .../launch_kernel/skills/orient/SKILL.md           |   10 +
+ .../launch_kernel/skills/quant-economics/SKILL.md  |   10 +
+ .../skills/research-evidence/SKILL.md              |   10 +
+ .../launch_kernel/skills/verify-sweep/SKILL.md     |   10 +
+ .../launch_kernel/standards/BENCHMARK_CROSSWALK.md |   31 +
+ .../standards/BENCHMARK_STANDARD_REGISTRY.json     |  257 ++++
+ .../reference_vault/CHECKSUMS.sha256               |   40 +
+ .../reference_vault/MANIFEST.json                  |  202 +++
+ .../contracts/cold_start_experiment_design_v2.json |   70 +
+ .../contracts/entity_relationship_ontology_v2.json |  341 +++++
+ .../domain-v0.9/contracts/field_question_bank.json |  617 +++++++++
+ .../contracts/historical_label_factory_v2.json     |   68 +
+ .../contracts/mechanism_signal_chain_registry.json | 1024 ++++++++++++++
+ .../contracts/pilot_segment_decision.json          |   50 +
+ .../contracts/research_evidence_registry.json      |  326 +++++
+ .../contracts/source_intelligence_registry.json    | 1406 ++++++++++++++++++++
+ .../COLD_START_AND_EXPERIMENT_POWER_V2.md          |   48 +
+ .../docs/phase-zero/CRE_EVENT_TAXONOMY_V2.md       |   77 ++
+ .../phase-zero/MARKET_SEGMENT_PRIORITIZATION.md    |   38 +
+ .../docs/phase-zero/SIGNAL_PRIMITIVE_CATALOG_V2.md |   64 +
+ .../contracts/canonical_data_product_registry.json |  646 +++++++++
+ .../contracts/codex_milestone_acceptance_plan.json |  418 ++++++
+ .../contracts/deployment_profile_contract_v2.json  |   87 ++
+ .../implementation_architecture_contract.json      |  385 ++++++
+ .../contracts/ml_lifecycle_contract_v2.json        |   70 +
+ .../contracts/workflow_state_machine_contract.json |  239 ++++
+ .../CODEX_MILESTONE_ACCEPTANCE_PLAN_V0.12.md       |   48 +
+ ...IMPLEMENTATION_CONTRACT_AND_BUILD_SPEC_V0.12.md |  282 ++++
+ .../implementation-v0.12/interfaces/asyncapi.json  |  385 ++++++
+ .../implementation-v0.12/interfaces/openapi.json   |  891 +++++++++++++
+ .../implementation-v0.12/proof/manifest.json       |  478 +++++++
+ .../reference_vault/index/VAULT_INDEX.json         |  229 ++++
+ .../reference_vault/index/VAULT_INDEX.md           |   24 +
+ .../immutable_source_snapshot_contract.json        |   61 +
+ .../pilot_cross_source_join_contract.json          |  142 ++
+ .../pilot_historical_sample_protocol.json          |   61 +
+ .../contracts/source_access_proof_registry.json    |  648 +++++++++
+ .../phase-zero/PILOT_SOURCE_ACQUISITION_DOSSIER.md |   81 ++
+ .../docs/phase-zero/SOURCE_INTELLIGENCE_ATLAS.md   |  112 ++
+ .../contracts/backup_substitution_policy.json      |   34 +
+ .../contracts/daily_list_composition_policy.json   |   69 +
+ .../contracts/final_planning_readiness_matrix.json |  127 ++
+ .../representative_spatial_assignment_policy.json  |   46 +
+ .../spatial_experiment_interference_policy.json    |   40 +
+ .../contracts/spatial_proximity_policy.json        |   79 ++
+ .../phase-zero/MASTER_SYSTEM_BLUEPRINT_V0.11.md    |  425 ++++++
+ .../SPATIAL_PROXIMITY_AND_DAILY_LIST_V2.md         |  189 +++
+ contracts/route_decision.schema.json               |   31 +
+ control/CURRENT_STATE.json                         |   24 +
+ control/CURRENT_TASK.json                          |    8 +
+ control/DECISIONS.md                               |   36 +
+ control/EVALUATOR_DECISION.json                    |   40 +
+ control/GATES.json                                 |   64 +
+ control/TASK_GRAPH.json                            |  126 ++
+ evals/known_bad/always_abstain.py                  |   10 +
+ evals/known_bad/exact_name_only_clearance.py       |   12 +
+ .../public/fixtures/protected_alias_exact_ten.json |   16 +
+ evals/public/fixtures/ten_valid.json               |   16 +
+ evals/public/route_decision_evaluator.py           |   86 ++
+ evals/public/test_route_decision_evaluator.py      |   51 +
+ evals/reference/fail_closed_reference.py           |   19 +
+ pyproject.toml                                     |   11 +
+ scripts/prove_known_bad_fails.py                   |   71 +
+ scripts/validate_control_plane.py                  |  154 +++
+ tasks/MATH-001.json                                |   20 +
+ tasks/RESEARCH-001.json                            |   20 +
+ uv.lock                                            |   96 ++
+ 164 files changed, 19200 insertions(+)

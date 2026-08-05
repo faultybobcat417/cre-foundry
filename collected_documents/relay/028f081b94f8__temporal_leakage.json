@@ -1,0 +1,5 @@
+{
+  "case_id": "temporal-leakage-survives",
+  "expected_diagnostic": "ADVERSARIAL-TEMPORAL-LEAKAGE",
+  "mutation_id": "temporal_leakage"
+}

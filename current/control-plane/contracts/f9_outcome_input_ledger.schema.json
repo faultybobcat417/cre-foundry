@@ -1,0 +1,133 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://cre-foundry.local/schemas/f9-outcome-input-ledger-v1.json",
+  "title": "Strict synthetic F9 outcome input ledger",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["document_kind", "schema_version", "execution_scope", "ledger_id", "canonicalization", "policy_sha256", "vertical_slice_sha256", "stage1_unchanged_sha256", "route_assignment", "units", "owner", "live_data"],
+  "properties": {
+    "document_kind": {"const": "SYNTHETIC_OUTCOME_INPUT_LEDGER"},
+    "schema_version": {"const": "1.0.0"},
+    "execution_scope": {"const": "SYNTHETIC_NON_INFLUENCING"},
+    "ledger_id": {"const": "OUTCOME_LEDGER:SYNTHETIC_ROUTE_DAY_001"},
+    "canonicalization": {"const": "SORTED_KEYS_INTEGER_JSON_V1"},
+    "policy_sha256": {"$ref": "#/$defs/sha256"},
+    "vertical_slice_sha256": {"$ref": "#/$defs/sha256"},
+    "stage1_unchanged_sha256": {"$ref": "#/$defs/sha256"},
+    "route_assignment": {"$ref": "#/$defs/route_assignment"},
+    "units": {"type": "array", "minItems": 10, "maxItems": 10, "items": {"$ref": "#/$defs/unit"}},
+    "owner": {"$ref": "#/$defs/owner"},
+    "live_data": {"const": false}
+  },
+  "$defs": {
+    "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "timestamp": {"type": "string", "format": "date-time"},
+    "owner": {
+      "type": "object", "additionalProperties": false,
+      "required": ["system", "real_world_authority"],
+      "properties": {"system": {"const": "CRE_FOUNDRY"}, "real_world_authority": {"const": "UNASSIGNED_EXTERNAL_AUTHORITY"}}
+    },
+    "route_assignment": {
+      "type": "object", "additionalProperties": false,
+      "required": ["assignment_id", "representative_id", "route_date", "assigned_at", "assignment_result", "include_in_itt"],
+      "properties": {
+        "assignment_id": {"const": "ROUTE_DAY_ASSIGNMENT:SYNTHETIC_001"},
+        "representative_id": {"type": "string", "minLength": 1},
+        "route_date": {"type": "string", "format": "date"},
+        "assigned_at": {"$ref": "#/$defs/timestamp"},
+        "assignment_result": {"const": "ISSUE"},
+        "include_in_itt": {"const": true}
+      }
+    },
+    "binding": {
+      "type": "object", "additionalProperties": false,
+      "required": ["source_snapshot_sha256", "candidate_snapshot_sha256", "math_decision_sha256", "route_manifest_sha256", "field_event_id", "field_event_sha256", "candidate_id", "physical_location_id", "representative_id", "route_date"],
+      "properties": {
+        "source_snapshot_sha256": {"$ref": "#/$defs/sha256"}, "candidate_snapshot_sha256": {"$ref": "#/$defs/sha256"},
+        "math_decision_sha256": {"$ref": "#/$defs/sha256"}, "route_manifest_sha256": {"$ref": "#/$defs/sha256"},
+        "field_event_id": {"type": "string", "minLength": 1}, "field_event_sha256": {"$ref": "#/$defs/sha256"},
+        "candidate_id": {"type": "string", "minLength": 1}, "physical_location_id": {"type": "string", "minLength": 1},
+        "representative_id": {"type": "string", "minLength": 1}, "route_date": {"type": "string", "format": "date"}
+      }
+    },
+    "unit": {
+      "type": "object", "additionalProperties": false,
+      "required": ["outcome_unit_id", "sequence_position", "binding", "scenario", "assessment_cutoffs", "assertions"],
+      "properties": {
+        "outcome_unit_id": {"type": "string", "pattern": "^OUTCOME_UNIT:ROUTE_DAY_001:[0-9]{2}$"},
+        "sequence_position": {"type": "integer", "minimum": 1, "maximum": 10},
+        "binding": {"$ref": "#/$defs/binding"},
+        "scenario": {"enum": ["F9_UNIQUE", "MATURE_NEGATIVE", "IMMATURE", "CENSORED", "COMPETING_EVENT", "TIED_CONFLICT", "UNKNOWN_INPUT", "F9_DEDUPE_CANONICAL", "F9_DEDUPE_COLLISION", "CORRECTED_CONFLICT_TO_F9"]},
+        "assessment_cutoffs": {"type": "array", "minItems": 1, "maxItems": 3, "uniqueItems": true, "items": {"$ref": "#/$defs/timestamp"}},
+        "assertions": {"type": "array", "minItems": 1, "maxItems": 4, "items": {"$ref": "#/$defs/assertion"}}
+      }
+    },
+    "assertion": {
+      "type": "object", "additionalProperties": false,
+      "required": ["assertion_id", "assertion_type", "outcome_unit_id", "occurred_at", "recorded_at", "ingested_at", "validation_completed_at", "available_at", "payload"],
+      "properties": {
+        "assertion_id": {"type": "string", "pattern": "^ASSERTION:ROUTE_DAY_001:[0-9]{2}:[0-9]{2}$"},
+        "assertion_type": {"enum": ["F9_EVIDENCE", "OBSERVATION_WATERMARK", "NEGATIVE_ADJUDICATION", "CENSORING", "COMPETING_EVENT", "CONFLICT", "UNKNOWN_INPUT", "CORRECTION"]},
+        "outcome_unit_id": {"type": "string", "pattern": "^OUTCOME_UNIT:ROUTE_DAY_001:[0-9]{2}$"},
+        "occurred_at": {"$ref": "#/$defs/timestamp"}, "recorded_at": {"$ref": "#/$defs/timestamp"},
+        "ingested_at": {"$ref": "#/$defs/timestamp"}, "validation_completed_at": {"$ref": "#/$defs/timestamp"},
+        "available_at": {"$ref": "#/$defs/timestamp"}, "payload": {"type": "object"}
+      },
+      "allOf": [
+        {"if": {"properties": {"assertion_type": {"const": "F9_EVIDENCE"}}}, "then": {"properties": {"payload": {"$ref": "#/$defs/f9_payload"}}}},
+        {"if": {"properties": {"assertion_type": {"const": "OBSERVATION_WATERMARK"}}}, "then": {"properties": {"payload": {"$ref": "#/$defs/watermark_payload"}}}},
+        {"if": {"properties": {"assertion_type": {"const": "NEGATIVE_ADJUDICATION"}}}, "then": {"properties": {"payload": {"$ref": "#/$defs/negative_payload"}}}},
+        {"if": {"properties": {"assertion_type": {"const": "CENSORING"}}}, "then": {"properties": {"payload": {"$ref": "#/$defs/censor_payload"}}}},
+        {"if": {"properties": {"assertion_type": {"const": "COMPETING_EVENT"}}}, "then": {"properties": {"payload": {"$ref": "#/$defs/competing_payload"}}}},
+        {"if": {"properties": {"assertion_type": {"const": "CONFLICT"}}}, "then": {"properties": {"payload": {"$ref": "#/$defs/conflict_payload"}}}},
+        {"if": {"properties": {"assertion_type": {"const": "UNKNOWN_INPUT"}}}, "then": {"properties": {"payload": {"$ref": "#/$defs/unknown_payload"}}}},
+        {"if": {"properties": {"assertion_type": {"const": "CORRECTION"}}}, "then": {"properties": {"payload": {"$ref": "#/$defs/correction_payload"}}}}
+      ]
+    },
+    "f9_payload": {
+      "type": "object", "additionalProperties": false,
+      "required": ["source_namespace", "booking_episode_id", "booking_confirmed_at", "appointment_scheduled_at", "actor_role", "requirement_type", "appointment", "senior_commercial_realtor_id", "supporting_evidence", "adjudication", "supporting_evidence_sha256"],
+      "properties": {
+        "source_namespace": {"const": "SYNTHETIC_CRM"}, "booking_episode_id": {"type": "string", "minLength": 1},
+        "booking_confirmed_at": {"$ref": "#/$defs/timestamp"}, "appointment_scheduled_at": {"$ref": "#/$defs/timestamp"},
+        "actor_role": {"enum": ["RELEVANT_DECISION_MAKER", "AUTHORIZED_REPRESENTATIVE"]},
+        "requirement_type": {"enum": ["CURRENT_CRE_REQUIREMENT", "CREDIBLE_FUTURE_CRE_REQUIREMENT"]},
+        "appointment": {"const": "SCHEDULED_WITH_IDENTIFIED_SENIOR_COMMERCIAL_REALTOR"},
+        "senior_commercial_realtor_id": {"type": "string", "minLength": 1},
+        "supporting_evidence": {"const": "INDEPENDENTLY_ADJUDICABLE_SYNTHETIC"},
+        "adjudication": {"const": "PASS_SYNTHETIC"}, "supporting_evidence_sha256": {"$ref": "#/$defs/sha256"}
+      }
+    },
+    "watermark_payload": {
+      "type": "object", "additionalProperties": false, "required": ["observed_through_at", "source_complete"],
+      "properties": {"observed_through_at": {"$ref": "#/$defs/timestamp"}, "source_complete": {"type": "boolean"}}
+    },
+    "negative_payload": {
+      "type": "object", "additionalProperties": false, "required": ["verdict", "adjudication"],
+      "properties": {"verdict": {"const": "NO_QUALIFYING_F9_SYNTHETIC"}, "adjudication": {"const": "FAIL_SYNTHETIC"}}
+    },
+    "censor_payload": {
+      "type": "object", "additionalProperties": false, "required": ["cause", "evidence_sha256"],
+      "properties": {"cause": {"enum": ["SYNTHETIC_LOSS_TO_FOLLOW_UP", "SYNTHETIC_SOURCE_OUTAGE", "SYNTHETIC_ACCESS_REVOKED"]}, "evidence_sha256": {"$ref": "#/$defs/sha256"}}
+    },
+    "competing_payload": {
+      "type": "object", "additionalProperties": false, "required": ["cause", "evidence_sha256", "adjudication"],
+      "properties": {"cause": {"enum": ["SYNTHETIC_TERMINAL_CLOSURE", "SYNTHETIC_IDENTITY_INVALIDATED"]}, "evidence_sha256": {"$ref": "#/$defs/sha256"}, "adjudication": {"const": "PASS_SYNTHETIC"}}
+    },
+    "conflict_payload": {
+      "type": "object", "additionalProperties": false, "required": ["reason"],
+      "properties": {"reason": {"const": "SYNTHETIC_CONFLICTING_BOOKING_EVIDENCE"}}
+    },
+    "unknown_payload": {
+      "type": "object", "additionalProperties": false, "required": ["missing"],
+      "properties": {"missing": {"const": "AUTHORIZED_POLICY_OR_BINDING"}}
+    },
+    "correction_payload": {
+      "type": "object", "additionalProperties": false, "required": ["action", "corrects_assertion_id", "corrects_assertion_sha256", "reason"],
+      "properties": {
+        "action": {"const": "RETRACT"}, "corrects_assertion_id": {"type": "string", "minLength": 1},
+        "corrects_assertion_sha256": {"$ref": "#/$defs/sha256"}, "reason": {"const": "SYNTHETIC_ADJUDICATED_RETRACTION"}
+      }
+    }
+  }
+}

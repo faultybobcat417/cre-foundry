@@ -1,0 +1,5 @@
+{
+  "case_id": "stale-asymmetric",
+  "mutation_id": "stale_asymmetric_matrix",
+  "expected_diagnostic": "ROUTING-STALE-ASYMMETRIC"
+}

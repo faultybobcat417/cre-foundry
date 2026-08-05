@@ -1,0 +1,393 @@
+{
+  "contract_paths": {
+    "baseline": "docs/data_contracts/data_health_baseline.json",
+    "dependencies": "docs/data_contracts/relation_dependency_graph.json",
+    "remediation": "docs/data_contracts/data_health_remediation_plan.json"
+  },
+  "edge_count": 20,
+  "edges": [
+    {
+      "from_relation": "duckdb:control.brampton_verification_task_state",
+      "relationship": "strict_view_sql_reference",
+      "to_relation": "duckdb:control.brampton_verification_active_queue"
+    },
+    {
+      "from_relation": "duckdb:control.brampton_verification_task_state",
+      "relationship": "strict_view_sql_reference",
+      "to_relation": "duckdb:control.brampton_verification_state_summary"
+    },
+    {
+      "from_relation": "duckdb:silver.brampton_business_directory",
+      "relationship": "strict_view_sql_reference",
+      "to_relation": "duckdb:silver.brampton_business_directory_summary"
+    },
+    {
+      "from_relation": "duckdb:silver.brampton_industrial_permits",
+      "relationship": "strict_view_sql_reference",
+      "to_relation": "duckdb:silver.brampton_active_permit_signals"
+    },
+    {
+      "from_relation": "duckdb:silver.brampton_industrial_permits",
+      "relationship": "strict_view_sql_reference",
+      "to_relation": "duckdb:silver.brampton_permit_signal_summary"
+    },
+    {
+      "from_relation": "duckdb:silver.brampton_permit_cross_source_reconciliation",
+      "relationship": "strict_view_sql_reference",
+      "to_relation": "duckdb:silver.brampton_permit_cross_source_agreement"
+    },
+    {
+      "from_relation": "duckdb:silver.brampton_permit_cross_source_reconciliation",
+      "relationship": "strict_view_sql_reference",
+      "to_relation": "duckdb:silver.brampton_permit_cross_source_review_queue"
+    },
+    {
+      "from_relation": "duckdb:silver.brampton_permit_cross_source_reconciliation",
+      "relationship": "strict_view_sql_reference",
+      "to_relation": "duckdb:silver.brampton_permit_cross_source_summary"
+    },
+    {
+      "from_relation": "duckdb:silver.brampton_permit_directory_match_candidates",
+      "relationship": "strict_view_sql_reference",
+      "to_relation": "duckdb:silver.brampton_permit_directory_unique_address_links"
+    },
+    {
+      "from_relation": "duckdb:silver.brampton_permit_directory_resolution",
+      "relationship": "strict_view_sql_reference",
+      "to_relation": "duckdb:silver.brampton_permit_directory_unique_address_links"
+    },
+    {
+      "from_relation": "duckdb:silver.brampton_permit_entity_match_candidates",
+      "relationship": "strict_view_sql_reference",
+      "to_relation": "duckdb:silver.brampton_permit_entity_unique_links"
+    },
+    {
+      "from_relation": "duckdb:silver.brampton_permit_entity_resolution",
+      "relationship": "strict_view_sql_reference",
+      "to_relation": "duckdb:silver.brampton_permit_entity_unique_links"
+    },
+    {
+      "from_relation": "duckdb:silver.brampton_permit_opportunity_evidence",
+      "relationship": "strict_view_sql_reference",
+      "to_relation": "duckdb:silver.brampton_permit_opportunity_review_queue"
+    },
+    {
+      "from_relation": "duckdb:silver.brampton_permit_opportunity_evidence",
+      "relationship": "strict_view_sql_reference",
+      "to_relation": "duckdb:silver.brampton_permit_opportunity_summary"
+    },
+    {
+      "from_relation": "duckdb:silver.brampton_permit_opportunity_evidence",
+      "relationship": "strict_view_sql_reference",
+      "to_relation": "duckdb:silver.brampton_permit_opportunity_unresolved"
+    },
+    {
+      "from_relation": "duckdb:silver.brampton_permit_verification_tasks",
+      "relationship": "strict_view_sql_reference",
+      "to_relation": "duckdb:silver.brampton_permit_verification_queue"
+    },
+    {
+      "from_relation": "duckdb:silver.brampton_permit_verification_tasks",
+      "relationship": "strict_view_sql_reference",
+      "to_relation": "duckdb:silver.brampton_permit_verification_summary"
+    },
+    {
+      "from_relation": "duckdb:silver.odbus_entities",
+      "relationship": "strict_view_sql_reference",
+      "to_relation": "duckdb:silver.odbus_entity_resolution_summary"
+    },
+    {
+      "from_relation": "duckdb:silver.odbus_industrial_entities",
+      "relationship": "strict_view_sql_reference",
+      "to_relation": "duckdb:silver.odbus_industrial_segment_summary"
+    },
+    {
+      "from_relation": "duckdb:silver.odbus_target_businesses",
+      "relationship": "strict_view_sql_reference",
+      "to_relation": "duckdb:silver.odbus_target_summary"
+    }
+  ],
+  "graph_ready": true,
+  "method": "strict_information_schema_view_definition_reference",
+  "model_version": "cre-foundry-relation-dependency-graph-v1",
+  "node_count": 53,
+  "nodes": [
+    {
+      "downstream_relation_count": 0,
+      "relation": "duckdb:control.brampton_verification_active_queue",
+      "upstream_dependency_count": 1
+    },
+    {
+      "downstream_relation_count": 0,
+      "relation": "duckdb:control.brampton_verification_events",
+      "upstream_dependency_count": 0
+    },
+    {
+      "downstream_relation_count": 0,
+      "relation": "duckdb:control.brampton_verification_state_summary",
+      "upstream_dependency_count": 1
+    },
+    {
+      "downstream_relation_count": 2,
+      "relation": "duckdb:control.brampton_verification_task_state",
+      "upstream_dependency_count": 0
+    },
+    {
+      "downstream_relation_count": 0,
+      "relation": "duckdb:control.brampton_verification_workflow_state",
+      "upstream_dependency_count": 0
+    },
+    {
+      "downstream_relation_count": 0,
+      "relation": "duckdb:main.system_metadata",
+      "upstream_dependency_count": 0
+    },
+    {
+      "downstream_relation_count": 0,
+      "relation": "duckdb:meta.dataset_registry",
+      "upstream_dependency_count": 0
+    },
+    {
+      "downstream_relation_count": 0,
+      "relation": "duckdb:quarantine.odbus_target_conflicts",
+      "upstream_dependency_count": 0
+    },
+    {
+      "downstream_relation_count": 0,
+      "relation": "duckdb:silver.brampton_active_permit_signals",
+      "upstream_dependency_count": 1
+    },
+    {
+      "downstream_relation_count": 1,
+      "relation": "duckdb:silver.brampton_business_directory",
+      "upstream_dependency_count": 0
+    },
+    {
+      "downstream_relation_count": 0,
+      "relation": "duckdb:silver.brampton_business_directory_summary",
+      "upstream_dependency_count": 1
+    },
+    {
+      "downstream_relation_count": 2,
+      "relation": "duckdb:silver.brampton_industrial_permits",
+      "upstream_dependency_count": 0
+    },
+    {
+      "downstream_relation_count": 0,
+      "relation": "duckdb:silver.brampton_permit_cross_source_agreement",
+      "upstream_dependency_count": 1
+    },
+    {
+      "downstream_relation_count": 3,
+      "relation": "duckdb:silver.brampton_permit_cross_source_reconciliation",
+      "upstream_dependency_count": 0
+    },
+    {
+      "downstream_relation_count": 0,
+      "relation": "duckdb:silver.brampton_permit_cross_source_review_queue",
+      "upstream_dependency_count": 1
+    },
+    {
+      "downstream_relation_count": 0,
+      "relation": "duckdb:silver.brampton_permit_cross_source_summary",
+      "upstream_dependency_count": 1
+    },
+    {
+      "downstream_relation_count": 1,
+      "relation": "duckdb:silver.brampton_permit_directory_match_candidates",
+      "upstream_dependency_count": 0
+    },
+    {
+      "downstream_relation_count": 1,
+      "relation": "duckdb:silver.brampton_permit_directory_resolution",
+      "upstream_dependency_count": 0
+    },
+    {
+      "downstream_relation_count": 0,
+      "relation": "duckdb:silver.brampton_permit_directory_unique_address_links",
+      "upstream_dependency_count": 2
+    },
+    {
+      "downstream_relation_count": 1,
+      "relation": "duckdb:silver.brampton_permit_entity_match_candidates",
+      "upstream_dependency_count": 0
+    },
+    {
+      "downstream_relation_count": 1,
+      "relation": "duckdb:silver.brampton_permit_entity_resolution",
+      "upstream_dependency_count": 0
+    },
+    {
+      "downstream_relation_count": 0,
+      "relation": "duckdb:silver.brampton_permit_entity_unique_links",
+      "upstream_dependency_count": 2
+    },
+    {
+      "downstream_relation_count": 3,
+      "relation": "duckdb:silver.brampton_permit_opportunity_evidence",
+      "upstream_dependency_count": 0
+    },
+    {
+      "downstream_relation_count": 0,
+      "relation": "duckdb:silver.brampton_permit_opportunity_review_queue",
+      "upstream_dependency_count": 1
+    },
+    {
+      "downstream_relation_count": 0,
+      "relation": "duckdb:silver.brampton_permit_opportunity_summary",
+      "upstream_dependency_count": 1
+    },
+    {
+      "downstream_relation_count": 0,
+      "relation": "duckdb:silver.brampton_permit_opportunity_unresolved",
+      "upstream_dependency_count": 1
+    },
+    {
+      "downstream_relation_count": 0,
+      "relation": "duckdb:silver.brampton_permit_signal_summary",
+      "upstream_dependency_count": 1
+    },
+    {
+      "downstream_relation_count": 0,
+      "relation": "duckdb:silver.brampton_permit_verification_queue",
+      "upstream_dependency_count": 1
+    },
+    {
+      "downstream_relation_count": 0,
+      "relation": "duckdb:silver.brampton_permit_verification_summary",
+      "upstream_dependency_count": 1
+    },
+    {
+      "downstream_relation_count": 2,
+      "relation": "duckdb:silver.brampton_permit_verification_tasks",
+      "upstream_dependency_count": 0
+    },
+    {
+      "downstream_relation_count": 0,
+      "relation": "duckdb:silver.brampton_permit_verification_workflow",
+      "upstream_dependency_count": 0
+    },
+    {
+      "downstream_relation_count": 1,
+      "relation": "duckdb:silver.odbus_entities",
+      "upstream_dependency_count": 0
+    },
+    {
+      "downstream_relation_count": 0,
+      "relation": "duckdb:silver.odbus_entity_observations",
+      "upstream_dependency_count": 0
+    },
+    {
+      "downstream_relation_count": 0,
+      "relation": "duckdb:silver.odbus_entity_resolution_summary",
+      "upstream_dependency_count": 1
+    },
+    {
+      "downstream_relation_count": 1,
+      "relation": "duckdb:silver.odbus_industrial_entities",
+      "upstream_dependency_count": 0
+    },
+    {
+      "downstream_relation_count": 0,
+      "relation": "duckdb:silver.odbus_industrial_observation_evidence",
+      "upstream_dependency_count": 0
+    },
+    {
+      "downstream_relation_count": 0,
+      "relation": "duckdb:silver.odbus_industrial_segment_summary",
+      "upstream_dependency_count": 1
+    },
+    {
+      "downstream_relation_count": 1,
+      "relation": "duckdb:silver.odbus_target_businesses",
+      "upstream_dependency_count": 0
+    },
+    {
+      "downstream_relation_count": 0,
+      "relation": "duckdb:silver.odbus_target_summary",
+      "upstream_dependency_count": 1
+    },
+    {
+      "downstream_relation_count": 0,
+      "relation": "sqlite:main.source_health",
+      "upstream_dependency_count": 0
+    },
+    {
+      "downstream_relation_count": 0,
+      "relation": "sqlite:main.source_locks",
+      "upstream_dependency_count": 0
+    },
+    {
+      "downstream_relation_count": 0,
+      "relation": "sqlite:main.source_operation_policies",
+      "upstream_dependency_count": 0
+    },
+    {
+      "downstream_relation_count": 0,
+      "relation": "sqlite:main.source_quarantine_events",
+      "upstream_dependency_count": 0
+    },
+    {
+      "downstream_relation_count": 0,
+      "relation": "sqlite:main.source_registry",
+      "upstream_dependency_count": 0
+    },
+    {
+      "downstream_relation_count": 0,
+      "relation": "sqlite:main.source_replay_events",
+      "upstream_dependency_count": 0
+    },
+    {
+      "downstream_relation_count": 0,
+      "relation": "sqlite:main.source_runs",
+      "upstream_dependency_count": 0
+    },
+    {
+      "downstream_relation_count": 0,
+      "relation": "sqlite:main.source_runtime_events",
+      "upstream_dependency_count": 0
+    },
+    {
+      "downstream_relation_count": 0,
+      "relation": "sqlite:main.source_runtime_state",
+      "upstream_dependency_count": 0
+    },
+    {
+      "downstream_relation_count": 0,
+      "relation": "sqlite:main.source_schedule_events",
+      "upstream_dependency_count": 0
+    },
+    {
+      "downstream_relation_count": 0,
+      "relation": "sqlite:main.source_schema_versions",
+      "upstream_dependency_count": 0
+    },
+    {
+      "downstream_relation_count": 0,
+      "relation": "sqlite:main.source_snapshot_events",
+      "upstream_dependency_count": 0
+    },
+    {
+      "downstream_relation_count": 0,
+      "relation": "sqlite:main.source_snapshots",
+      "upstream_dependency_count": 0
+    },
+    {
+      "downstream_relation_count": 0,
+      "relation": "sqlite:main.verification_events",
+      "upstream_dependency_count": 0
+    }
+  ],
+  "opportunity_ranking": false,
+  "outreach_eligible": false,
+  "policy": {
+    "automatic_acquisition": false,
+    "automatic_backfill": false,
+    "automatic_conclusions": false,
+    "automatic_schema_mutation": false,
+    "operating_mode": "shadow",
+    "opportunity_ranked": false,
+    "outreach_eligible": false,
+    "read_only": true
+  }
+}

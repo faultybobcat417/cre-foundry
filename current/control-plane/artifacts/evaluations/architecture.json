@@ -1,0 +1,495 @@
+{
+  "artifact_id": "ARCHITECTURE-001-PUBLIC-EVALUATION",
+  "canonical": {
+    "aggregate_version": 7,
+    "diagnostics": [],
+    "evaluator_result": "PASS",
+    "events": 7,
+    "frozen_sha256": "1a44025fbbd4547b9c322d83d432239d3943b0839ab398cbf1034125397c075e",
+    "result": "ISSUE",
+    "selected_count": 10,
+    "subject_kind": "ARCHITECTURE_WORKFLOW_SUBJECT"
+  },
+  "claim": "Public proof level 4 establishes deterministic mutation- and fault-resistant conformance of synthetic architecture module/API boundaries, workflow transitions, idempotency, issuance uniqueness, manual-edit protections, structured ERROR and ABSTAIN visibility, programmatic accessibility metadata, Stage isolation, live-disabled defaults, and replay bindings.",
+  "claim_ceiling": "Public proof level 4 establishes mutation- and fault-resistant deterministic conformance of synthetic module and API boundaries, workflow transitions, idempotency, issuance uniqueness, manual-edit protections, structured ERROR and ABSTAIN visibility, programmatic accessibility metadata, Stage isolation, live-disabled defaults, and replay bindings only. It establishes no representative usability, WCAG or assistive-technology performance or certification, production durability or atomicity, operational reliability or error rate, security certification, route feasibility, deployment readiness, live authority, adoption, incremental F9 lift, or commercial value.",
+  "evaluator_id": "architecture-workflow-public-v1",
+  "execution_scope": "SYNTHETIC_NON_INFLUENCING",
+  "mutation_results": [
+    {
+      "actual_codes": [
+        "ARCH-ABSTAIN-HAS-EFFECTS",
+        "ARCH-SHAPE-INVALID"
+      ],
+      "case_id": "abstain-creates-route-event-outbox-or-effect",
+      "expected_codes": [
+        "ARCH-ABSTAIN-HAS-EFFECTS",
+        "ARCH-SHAPE-INVALID"
+      ],
+      "expected_diagnostic": "ARCH-ABSTAIN-HAS-EFFECTS",
+      "fixture_sha256": "67e0efc296909ab68b052365e56687fd14fcf5da1859f0d78695785a03fad723",
+      "result": "DETECTED"
+    },
+    {
+      "actual_codes": [
+        "ARCH-ABSTAIN-REASON-HIDDEN"
+      ],
+      "case_id": "abstain-reason-hidden",
+      "expected_codes": [
+        "ARCH-ABSTAIN-REASON-HIDDEN"
+      ],
+      "expected_diagnostic": "ARCH-ABSTAIN-REASON-HIDDEN",
+      "fixture_sha256": "60af4d6202c1a232982a23749bcd1c1b18f13cf4e3bfa332a2857d974c40638b",
+      "result": "DETECTED"
+    },
+    {
+      "actual_codes": [
+        "ARCH-AUTHORITY-ESCALATION"
+      ],
+      "case_id": "authority-self-granted-from-role-env-credential-or-content",
+      "expected_codes": [
+        "ARCH-AUTHORITY-ESCALATION"
+      ],
+      "expected_diagnostic": "ARCH-AUTHORITY-ESCALATION",
+      "fixture_sha256": "e523b25246fd402ac026dbbf9b26d24f374bde5a8f9157bb5e2876771e332c7b",
+      "result": "DETECTED"
+    },
+    {
+      "actual_codes": [
+        "ARCH-COMMIT-WITHOUT-PREPARE",
+        "ARCH-ILLEGAL-TRANSITION"
+      ],
+      "case_id": "commit-without-prepare",
+      "expected_codes": [
+        "ARCH-COMMIT-WITHOUT-PREPARE",
+        "ARCH-ILLEGAL-TRANSITION"
+      ],
+      "expected_diagnostic": "ARCH-COMMIT-WITHOUT-PREPARE",
+      "fixture_sha256": "7023c0ae665f41e4d40dbb687e7ccf0ace51f8f03f5bc11c1e86d0dedb3037ac",
+      "result": "DETECTED"
+    },
+    {
+      "actual_codes": [
+        "ARCH-RECONSTRUCTION-MISMATCH"
+      ],
+      "case_id": "coordinated-rehash-around-semantic-defect",
+      "expected_codes": [
+        "ARCH-RECONSTRUCTION-MISMATCH"
+      ],
+      "expected_diagnostic": "ARCH-RECONSTRUCTION-MISMATCH",
+      "fixture_sha256": "3c282b381300737be1b65462e44d830bda83bef499dc18222eeb8c43906e40df",
+      "result": "DETECTED"
+    },
+    {
+      "actual_codes": [
+        "ARCH-POLICY-BYPASS"
+      ],
+      "case_id": "direct-issuance-bypass",
+      "expected_codes": [
+        "ARCH-POLICY-BYPASS"
+      ],
+      "expected_diagnostic": "ARCH-POLICY-BYPASS",
+      "fixture_sha256": "c2d4abd38ca92eba2a1d43c9968c32126497fdd4406f83d8f2bc9b9d6dcd7f4e",
+      "result": "DETECTED"
+    },
+    {
+      "actual_codes": [
+        "ARCH-SHAPE-INVALID"
+      ],
+      "case_id": "duplicate-json-key-or-open-object",
+      "expected_codes": [
+        "ARCH-SHAPE-INVALID"
+      ],
+      "expected_diagnostic": "ARCH-SHAPE-INVALID",
+      "fixture_sha256": "6a5b5c979908503454ab2f4d36a826d8a729df68f020f7c2a8f0313de46c35b9",
+      "result": "DETECTED"
+    },
+    {
+      "actual_codes": [
+        "ARCH-DECISION-MISMATCH",
+        "ARCH-DUPLICATE-LOCATION",
+        "ARCH-PROTECTION-BYPASS"
+      ],
+      "case_id": "duplicate-physical-location",
+      "expected_codes": [
+        "ARCH-DECISION-MISMATCH",
+        "ARCH-DUPLICATE-LOCATION",
+        "ARCH-PROTECTION-BYPASS"
+      ],
+      "expected_diagnostic": "ARCH-DUPLICATE-LOCATION",
+      "fixture_sha256": "e580c83a91e1c443ff450eb23e8930b3df4ee1cffa7d6378c904db49d26fc4ad",
+      "result": "DETECTED"
+    },
+    {
+      "actual_codes": [
+        "ARCH-ERROR-HIDDEN",
+        "ARCH-SHAPE-INVALID"
+      ],
+      "case_id": "error-swallowed-or-converted-to-abstain",
+      "expected_codes": [
+        "ARCH-ERROR-HIDDEN",
+        "ARCH-SHAPE-INVALID"
+      ],
+      "expected_diagnostic": "ARCH-ERROR-HIDDEN",
+      "fixture_sha256": "2502ba45e912f0652b6335dc9bc5f8dfde58b37b3c6831ae885418108f64605d",
+      "result": "DETECTED"
+    },
+    {
+      "actual_codes": [
+        "ARCH-EVALUATOR-COUPLING"
+      ],
+      "case_id": "evaluator-imports-architecture-builder",
+      "expected_codes": [
+        "ARCH-EVALUATOR-COUPLING"
+      ],
+      "expected_diagnostic": "ARCH-EVALUATOR-COUPLING",
+      "fixture_sha256": "45233f69c7539ba6a6c50bef565838e4dce1d0a21405388a2af0ecffd2ed040e",
+      "result": "DETECTED"
+    },
+    {
+      "actual_codes": [
+        "ARCH-EXTERNAL-EFFECT",
+        "ARCH-SHAPE-INVALID"
+      ],
+      "case_id": "external-effect-recorded",
+      "expected_codes": [
+        "ARCH-EXTERNAL-EFFECT",
+        "ARCH-SHAPE-INVALID"
+      ],
+      "expected_diagnostic": "ARCH-EXTERNAL-EFFECT",
+      "fixture_sha256": "73a31dc92ecdc269e71667d7efa87f4285e8cb5371e7d584b61ab18b5ad031b3",
+      "result": "DETECTED"
+    },
+    {
+      "actual_codes": [
+        "ARCH-PARTIAL-FAILURE-AMBIGUOUS"
+      ],
+      "case_id": "fault-leaves-ambiguous-partial-state",
+      "expected_codes": [
+        "ARCH-PARTIAL-FAILURE-AMBIGUOUS"
+      ],
+      "expected_diagnostic": "ARCH-PARTIAL-FAILURE-AMBIGUOUS",
+      "fixture_sha256": "594503a777f835a321125b45d51f3def6d6611df632c954d6004b199be2f1410",
+      "result": "DETECTED"
+    },
+    {
+      "actual_codes": [
+        "ARCH-ACCESSIBLE-STATUS",
+        "ARCH-SHAPE-INVALID"
+      ],
+      "case_id": "focus-reading-association-or-announcement-invalid",
+      "expected_codes": [
+        "ARCH-ACCESSIBLE-STATUS",
+        "ARCH-SHAPE-INVALID"
+      ],
+      "expected_diagnostic": "ARCH-ACCESSIBLE-STATUS",
+      "fixture_sha256": "84107fcc8405377195fa70adb59085e126254e144125e93a3db6df98d8af6ede",
+      "result": "DETECTED"
+    },
+    {
+      "actual_codes": [
+        "ARCH-ILLEGAL-TRANSITION"
+      ],
+      "case_id": "illegal-skip-backward-or-terminal-reopen",
+      "expected_codes": [
+        "ARCH-ILLEGAL-TRANSITION"
+      ],
+      "expected_diagnostic": "ARCH-ILLEGAL-TRANSITION",
+      "fixture_sha256": "0c3a30e0c0fae0297e96527e49df8b1ff694f4845140fd5d0351225f7ccd1567",
+      "result": "DETECTED"
+    },
+    {
+      "actual_codes": [
+        "ARCH-DECISION-MISMATCH",
+        "ARCH-DUPLICATE-LOCATION",
+        "ARCH-EXACT-TEN",
+        "ARCH-SHAPE-INVALID"
+      ],
+      "case_id": "issue-nine-eleven-or-direct-selection",
+      "expected_codes": [
+        "ARCH-DECISION-MISMATCH",
+        "ARCH-DUPLICATE-LOCATION",
+        "ARCH-EXACT-TEN",
+        "ARCH-SHAPE-INVALID"
+      ],
+      "expected_diagnostic": "ARCH-EXACT-TEN",
+      "fixture_sha256": "013a746db3bdf1bb7803c871acca21972423456c3e17776e9f013ef6fd203dd6",
+      "result": "DETECTED"
+    },
+    {
+      "actual_codes": [
+        "ARCH-JOURNAL-CHAIN"
+      ],
+      "case_id": "journal-reordered-forked-cycled-or-rehashed",
+      "expected_codes": [
+        "ARCH-JOURNAL-CHAIN"
+      ],
+      "expected_diagnostic": "ARCH-JOURNAL-CHAIN",
+      "fixture_sha256": "e83b2e857aa41990371e37fa00c7990aae8c31eefc10f2b81581a734bc90eb49",
+      "result": "DETECTED"
+    },
+    {
+      "actual_codes": [
+        "ARCH-JOURNAL-CHAIN",
+        "ARCH-LINEAGE-BINDING"
+      ],
+      "case_id": "lineage-node-or-edge-dropped-substituted-or-rehashed",
+      "expected_codes": [
+        "ARCH-JOURNAL-CHAIN",
+        "ARCH-LINEAGE-BINDING"
+      ],
+      "expected_diagnostic": "ARCH-LINEAGE-BINDING",
+      "fixture_sha256": "767327b95293d148a405d17c6a1e13a26258f345fe00ca42b5fd9e14da0415a5",
+      "result": "DETECTED"
+    },
+    {
+      "actual_codes": [
+        "ARCH-LIVE-DENIAL"
+      ],
+      "case_id": "live-enabled-default-or-request",
+      "expected_codes": [
+        "ARCH-LIVE-DENIAL"
+      ],
+      "expected_diagnostic": "ARCH-LIVE-DENIAL",
+      "fixture_sha256": "8bf077bd32a6cd28d1e3da714cf13a96e83338524ce16467c63dc582375b78f7",
+      "result": "DETECTED"
+    },
+    {
+      "actual_codes": [
+        "ARCH-MANUAL-BYPASS"
+      ],
+      "case_id": "manual-stage1-protection-gate-rank-or-selection-rewrite",
+      "expected_codes": [
+        "ARCH-MANUAL-BYPASS"
+      ],
+      "expected_diagnostic": "ARCH-MANUAL-BYPASS",
+      "fixture_sha256": "7e562ca974a3c58d9a7faebabe0442afa8f64fcd8e90f6d4d7434f6701556fdc",
+      "result": "DETECTED"
+    },
+    {
+      "actual_codes": [
+        "ARCH-MODULE-REGISTRY"
+      ],
+      "case_id": "missing-or-duplicate-module-role",
+      "expected_codes": [
+        "ARCH-MODULE-REGISTRY"
+      ],
+      "expected_diagnostic": "ARCH-MODULE-REGISTRY",
+      "fixture_sha256": "7065f7a80433749e09e9831e3b16f32ba12f3b8f0401d51e4e38899f13e73884",
+      "result": "DETECTED"
+    },
+    {
+      "actual_codes": [
+        "ARCH-ACCESSIBLE-ACTION"
+      ],
+      "case_id": "programmatic-name-role-state-missing",
+      "expected_codes": [
+        "ARCH-ACCESSIBLE-ACTION"
+      ],
+      "expected_diagnostic": "ARCH-ACCESSIBLE-ACTION",
+      "fixture_sha256": "305e4ce4c6443522a284ce6f1d88bf52efe555db0da6c211e3ca619bec441e30",
+      "result": "DETECTED"
+    },
+    {
+      "actual_codes": [
+        "ARCH-DECISION-MISMATCH",
+        "ARCH-PROTECTION-BYPASS"
+      ],
+      "case_id": "protected-unknown-or-drifted-stop-issued",
+      "expected_codes": [
+        "ARCH-DECISION-MISMATCH",
+        "ARCH-PROTECTION-BYPASS"
+      ],
+      "expected_diagnostic": "ARCH-PROTECTION-BYPASS",
+      "fixture_sha256": "ef74d9a6cd4d9bc936e1affcbe00c2dec3899032d7f9fb73dc394279b7939c9f",
+      "result": "DETECTED"
+    },
+    {
+      "actual_codes": [
+        "ARCH-STATUS-DISCLOSURE"
+      ],
+      "case_id": "reason-evidence-or-safe-next-action-hidden",
+      "expected_codes": [
+        "ARCH-STATUS-DISCLOSURE"
+      ],
+      "expected_diagnostic": "ARCH-STATUS-DISCLOSURE",
+      "fixture_sha256": "ffbd48830d814367585c24c5355d06bb3133ed7193536dfb8c95073a7ffab277",
+      "result": "DETECTED"
+    },
+    {
+      "actual_codes": [
+        "ARCH-DECISION-MISMATCH"
+      ],
+      "case_id": "route-differs-from-math-selection",
+      "expected_codes": [
+        "ARCH-DECISION-MISMATCH"
+      ],
+      "expected_diagnostic": "ARCH-DECISION-MISMATCH",
+      "fixture_sha256": "18c97b24694338d2e4f43786e7886f4c1b17d719a88115b286cf552dc36d9ced",
+      "result": "DETECTED"
+    },
+    {
+      "actual_codes": [
+        "ARCH-DUPLICATE-ISSUANCE",
+        "ARCH-ISSUANCE-SLOT-CONFLICT",
+        "ARCH-RECONSTRUCTION-MISMATCH"
+      ],
+      "case_id": "same-key-commits-twice-or-rekeys-retry",
+      "expected_codes": [
+        "ARCH-DUPLICATE-ISSUANCE",
+        "ARCH-ISSUANCE-SLOT-CONFLICT",
+        "ARCH-RECONSTRUCTION-MISMATCH"
+      ],
+      "expected_diagnostic": "ARCH-DUPLICATE-ISSUANCE",
+      "fixture_sha256": "2e18077e33adf302a2dd0faa6958a4ae38ab82956bb10988e0879c24aaf7d172",
+      "result": "DETECTED"
+    },
+    {
+      "actual_codes": [
+        "ARCH-IDEMPOTENCY-CONFLICT"
+      ],
+      "case_id": "same-key-different-payload-accepted",
+      "expected_codes": [
+        "ARCH-IDEMPOTENCY-CONFLICT"
+      ],
+      "expected_diagnostic": "ARCH-IDEMPOTENCY-CONFLICT",
+      "fixture_sha256": "f202ff3673ca23bd8c0ba3a4fa44db2f971c9a4bf10f4c60b8925724a56238c8",
+      "result": "DETECTED"
+    },
+    {
+      "actual_codes": [
+        "ARCH-STAGE1-REWRITE"
+      ],
+      "case_id": "stage2-or-stage3-rewrites-stage1",
+      "expected_codes": [
+        "ARCH-STAGE1-REWRITE"
+      ],
+      "expected_diagnostic": "ARCH-STAGE1-REWRITE",
+      "fixture_sha256": "ccd5423aad8f46a6a51ffc913c80b6d804c92aa7e94f97b7b1712b1ef023fb51",
+      "result": "DETECTED"
+    },
+    {
+      "actual_codes": [
+        "ARCH-DOWNSTREAM-BINDING"
+      ],
+      "case_id": "stage2-or-stage3-unbound-rebound-or-conflicting-duplicate",
+      "expected_codes": [
+        "ARCH-DOWNSTREAM-BINDING"
+      ],
+      "expected_diagnostic": "ARCH-DOWNSTREAM-BINDING",
+      "fixture_sha256": "d5aabb82a8c32f9b227d8e4614decc50187752851f6bbcbf719560f33faa08a2",
+      "result": "DETECTED"
+    },
+    {
+      "actual_codes": [
+        "ARCH-ACCESSIBLE-NONVISUAL",
+        "ARCH-SHAPE-INVALID"
+      ],
+      "case_id": "status-color-icon-or-position-only",
+      "expected_codes": [
+        "ARCH-ACCESSIBLE-NONVISUAL",
+        "ARCH-SHAPE-INVALID"
+      ],
+      "expected_diagnostic": "ARCH-ACCESSIBLE-NONVISUAL",
+      "fixture_sha256": "0d4b0b366c348adcf1568c5322f52571874d4ef3a083421c8dda821609606208",
+      "result": "DETECTED"
+    },
+    {
+      "actual_codes": [
+        "ARCH-CLAIM-CEILING"
+      ],
+      "case_id": "synthetic-as-usability-accessibility-production-or-live",
+      "expected_codes": [
+        "ARCH-CLAIM-CEILING"
+      ],
+      "expected_diagnostic": "ARCH-CLAIM-CEILING",
+      "fixture_sha256": "fc84a16e4f4b3192ca315962db17c6175a2b0635fe427a7cc50fd0966ab84dba",
+      "result": "DETECTED"
+    },
+    {
+      "actual_codes": [
+        "ARCH-ISSUANCE-SLOT-CONFLICT",
+        "ARCH-RECONSTRUCTION-MISMATCH"
+      ],
+      "case_id": "two-keys-commit-same-issuance-slot",
+      "expected_codes": [
+        "ARCH-ISSUANCE-SLOT-CONFLICT",
+        "ARCH-RECONSTRUCTION-MISMATCH"
+      ],
+      "expected_diagnostic": "ARCH-ISSUANCE-SLOT-CONFLICT",
+      "fixture_sha256": "f400e1217ae82451893a06dae93776bfddf29b0b35bf2c329cad3ec60a55bf63",
+      "result": "DETECTED"
+    },
+    {
+      "actual_codes": [
+        "ARCH-SHAPE-INVALID",
+        "ARCH-UNKNOWN-COMMAND"
+      ],
+      "case_id": "unknown-command-fails-open",
+      "expected_codes": [
+        "ARCH-SHAPE-INVALID",
+        "ARCH-UNKNOWN-COMMAND"
+      ],
+      "expected_diagnostic": "ARCH-UNKNOWN-COMMAND",
+      "fixture_sha256": "f623f332a535e335dc6ec7f6e1f7fcde08c7eae23bb2007e717802e9ed24dc55",
+      "result": "DETECTED"
+    },
+    {
+      "actual_codes": [
+        "ARCH-SCHEMA-UNREGISTERED"
+      ],
+      "case_id": "unknown-schema-or-contract-version",
+      "expected_codes": [
+        "ARCH-SCHEMA-UNREGISTERED"
+      ],
+      "expected_diagnostic": "ARCH-SCHEMA-UNREGISTERED",
+      "fixture_sha256": "260f34296b1be291e2b530649661a6686d58d28905d20a19c71337e2c6fa32ba",
+      "result": "DETECTED"
+    },
+    {
+      "actual_codes": [
+        "ARCH-MODULE-BINDING"
+      ],
+      "case_id": "unsupported-interface-or-schema-digest",
+      "expected_codes": [
+        "ARCH-MODULE-BINDING"
+      ],
+      "expected_diagnostic": "ARCH-MODULE-BINDING",
+      "fixture_sha256": "8023c2ba38235a1105f750696240f684556b940c2f9188d351ab2ae7fc14bce8",
+      "result": "DETECTED"
+    }
+  ],
+  "proof": {
+    "accessibility_performance_or_conformance_proven": false,
+    "commercial_value_proven": false,
+    "deployment_authorized": false,
+    "incremental_lift_proven": false,
+    "level": 4,
+    "live_workflow_authorized": false,
+    "production_atomicity_or_reliability_proven": false,
+    "real_route_feasibility_proven": false,
+    "real_usability_proven": false,
+    "security_proven": false
+  },
+  "proof_level": 4,
+  "registered_mutations_detected": 34,
+  "registered_mutations_total": 34,
+  "result": "PASS",
+  "schema_version": "1.0.0",
+  "subject_hashes": {
+    "artifacts/architecture/module_registry.json": "82c201e75e456de79e1b41d73bb8c2c08247bb1ce58ff6707a1c976b9ae00496",
+    "artifacts/architecture/public_evaluator_contract.json": "10c5804d07194d66927cbd4acd2798c1044493b09ef3dab671e76efdee5aeefe",
+    "artifacts/architecture/scenario_registry.json": "718e8e1614742a7a2426307d6050c1b8e83311ca30975cf8a8db43240fdadb8b",
+    "artifacts/architecture/state_machine_registry.json": "0211e03d9d40f9f24288f20d144e04a3f32ffeb355be26a87ba61375b351feb4",
+    "contracts/architecture_accessibility_projection.schema.json": "2de68d6a7544fbbd29f817791d218933571af9605aa8e16a368947208382c81b",
+    "contracts/architecture_command.schema.json": "2390acdca30303470c1672d17d20f2665d3cd67d9c6efdb4f0cb3c3e37507a9e",
+    "contracts/architecture_review_record.schema.json": "69bbcc87099921d1149969da2730d5a790c08343e7d3eeff918e3d0bfa38e6be",
+    "contracts/architecture_workflow_run.schema.json": "57a68f662d5c3f5936a636cde96db0262cb844d3c182265ddae15ff6f2d3d314",
+    "evals/public/architecture_workflow_evaluator.py": "d735b7a56c4491ea341d3e056fea9306ad0a05773de7f14a5f4f0354527b3f1c",
+    "evals/public/math_oracle_evaluator.py": "5521bb4e224df013b5232bb8be7d41bf8f472b762087bd6b734829cea73f870e",
+    "evals/public/test_architecture_workflow.py": "ab5c6ea685fa751971f3bf669e69241af795e4e08484b91f76ac781ad9016cc7",
+    "scripts/run_architecture_protocol.py": "4eadec1f06b04da880a725decb9eac7a4c50dfb12d941eae2a1ab5066ff2ae46",
+    "scripts/validate_architecture_schemas.py": "b8c849d0dd5645d9d9d3f0624ff3e88b8cf3bda8b6731e7b7684858e896810c3",
+    "src/cre_foundry/architecture/protocol.py": "a78c5b196e1bea4b465a60dd78196d8f8d1337e73c717b7743385471ee35ab7d",
+    "src/cre_foundry/architecture/workflow.py": "7bb475ee963aff7b24c18e75d2b42127a92e8a9a9607c8792618dcac4ea4c355"
+  }
+}

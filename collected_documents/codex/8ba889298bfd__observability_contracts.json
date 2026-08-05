@@ -1,0 +1,185 @@
+{
+  "artifact_id": "OBSERVABILITY-001-MATERIAL-CONTRACT-VALIDATION",
+  "bindings": {
+    "contract_sha256": "1427701b087f5fc5ceb25afaadb5935a0ec8ea83ef010f55720de0d0e3b71036",
+    "frozen_evaluator_sha256": "83abf1f707f46343a8e8c2dcc99e86bbbd73526a333e1d7b2551329450facf4c",
+    "material_sha256": "877dfa24499be595a2185a0480cf96c29694aa04873d397ca27c9e5881015b52",
+    "material_subject_sha256": "0d4d08f40a2d6a1245ca104db5e9ab889a8898375be70609e16cd8e5884a1a13",
+    "replay_input_sha256": "ee3791060650c686ced996d360625a929f16fe0cf2438fd61255ad34856b9f39",
+    "schema_sha256": "d3ac4bcd4073c445541f834d7476549b5c85ee65d76859472d690709b79d9c93"
+  },
+  "claims_not_established": [
+    "production telemetry completeness",
+    "production durability",
+    "production recovery",
+    "operational observability effectiveness",
+    "sealed evaluator independence",
+    "external hidden-holdout performance",
+    "deployment readiness"
+  ],
+  "clean_subject": {
+    "artifact_bindings_complete": true,
+    "complete_chain": true,
+    "correlation_complete": true,
+    "deterministic": true,
+    "external_effect_occurred": false,
+    "frozen_diagnostics": [],
+    "frozen_passed": true,
+    "lineage_stage_count": 9,
+    "live_permissions": false,
+    "material_diagnostics": [],
+    "material_equals_frozen": true,
+    "passed": true,
+    "replay_identity_complete": true,
+    "schema_errors": []
+  },
+  "evaluator_id": "observability-posture-public-v1",
+  "execution_scope": "SYNTHETIC_NON_INFLUENCING",
+  "legacy_boundary": {
+    "bindings": {
+      "artifacts/evaluations/observability_lineage.json": {
+        "actual_sha256": "1770d49540b1b8e3dd590a20f3b035842d3512f86cf8f5835dfd0c310a232b14",
+        "expected_sha256": "1770d49540b1b8e3dd590a20f3b035842d3512f86cf8f5835dfd0c310a232b14",
+        "preserved": true
+      },
+      "contracts/lineage_manifest.schema.json": {
+        "actual_sha256": "a6c9c49b065dd3e750b77cf7846900dc692f21e49ed708c1e60bb601ed4a789e",
+        "expected_sha256": "a6c9c49b065dd3e750b77cf7846900dc692f21e49ed708c1e60bb601ed4a789e",
+        "preserved": true
+      },
+      "evals/known_bad/frontier/lineage_missing_asof.json": {
+        "actual_sha256": "8e43bbcb313b2b7011ece12ef3c5b362e0dda343a2316f9d64c63c22e567e5a2",
+        "expected_sha256": "8e43bbcb313b2b7011ece12ef3c5b362e0dda343a2316f9d64c63c22e567e5a2",
+        "preserved": true
+      },
+      "evals/known_bad/frontier/lineage_protected_log.json": {
+        "actual_sha256": "701bc129a08f31e8b801467dc1c0d38bfac09ab2eefda21981387ff5687d6979",
+        "expected_sha256": "701bc129a08f31e8b801467dc1c0d38bfac09ab2eefda21981387ff5687d6979",
+        "preserved": true
+      },
+      "scripts/validate_observability_lineage.py": {
+        "actual_sha256": "d74660193693a1f6453d90eb4db8c38f331a5e629e152edc3e81c486a0684dbd",
+        "expected_sha256": "d74660193693a1f6453d90eb4db8c38f331a5e629e152edc3e81c486a0684dbd",
+        "preserved": true
+      }
+    },
+    "passed": true
+  },
+  "material_independence": {
+    "forbidden_imports": [],
+    "forbidden_references": [],
+    "passed": true
+  },
+  "mutation_results": [
+    {
+      "case_id": "missing-as-of",
+      "expected_diagnostic": "LINEAGE-MISSING-ASOF",
+      "fixture": "evals/known_bad/frontier/lineage_missing_asof.json",
+      "fixture_sha256": "8e43bbcb313b2b7011ece12ef3c5b362e0dda343a2316f9d64c63c22e567e5a2",
+      "frozen_diagnostics": [
+        "LINEAGE-MISSING-ASOF"
+      ],
+      "material_diagnostics": [
+        "LINEAGE-MISSING-ASOF"
+      ],
+      "mutation_id": "missing_asof",
+      "result": "DETECTED_BOTH"
+    },
+    {
+      "case_id": "missing-version",
+      "expected_diagnostic": "LINEAGE-MISSING-VERSION",
+      "fixture": "evals/known_bad/frontier/observability001/observability_missing_version.json",
+      "fixture_sha256": "44f5f30bf4bb1b5aafe0194bbbabbbabaa3c9d1f744c5962b4264f04976e1292",
+      "frozen_diagnostics": [
+        "LINEAGE-MISSING-VERSION"
+      ],
+      "material_diagnostics": [
+        "LINEAGE-MISSING-VERSION"
+      ],
+      "mutation_id": "missing_version",
+      "result": "DETECTED_BOTH"
+    },
+    {
+      "case_id": "missing-hash",
+      "expected_diagnostic": "LINEAGE-MISSING-HASH",
+      "fixture": "evals/known_bad/frontier/observability001/observability_missing_hash.json",
+      "fixture_sha256": "8b2caa158d57ab3f2b6543f8a4e4191dbc4f25348fc82941975e3337e6089b6b",
+      "frozen_diagnostics": [
+        "LINEAGE-MISSING-HASH"
+      ],
+      "material_diagnostics": [
+        "LINEAGE-MISSING-HASH"
+      ],
+      "mutation_id": "missing_hash",
+      "result": "DETECTED_BOTH"
+    },
+    {
+      "case_id": "missing-correlation",
+      "expected_diagnostic": "LINEAGE-CORRELATION",
+      "fixture": "evals/known_bad/frontier/observability001/observability_missing_correlation.json",
+      "fixture_sha256": "9118bde12855efdc3c6f8d10edf3fa45c24b0da70434919c4fecb4fad073b3d3",
+      "frozen_diagnostics": [
+        "LINEAGE-CORRELATION"
+      ],
+      "material_diagnostics": [
+        "LINEAGE-CORRELATION"
+      ],
+      "mutation_id": "missing_correlation",
+      "result": "DETECTED_BOTH"
+    },
+    {
+      "case_id": "missing-replay-identity",
+      "expected_diagnostic": "LINEAGE-REPLAY-IDENTITY",
+      "fixture": "evals/known_bad/frontier/observability001/observability_missing_replay_identity.json",
+      "fixture_sha256": "bd134cd3a62e99055e1e1e66d5f1d49691327a472198a1325fbba8a4d76b1628",
+      "frozen_diagnostics": [
+        "LINEAGE-REPLAY-IDENTITY"
+      ],
+      "material_diagnostics": [
+        "LINEAGE-REPLAY-IDENTITY"
+      ],
+      "mutation_id": "missing_replay_identity",
+      "result": "DETECTED_BOTH"
+    },
+    {
+      "case_id": "missing-lineage-edge",
+      "expected_diagnostic": "LINEAGE-MISSING-EDGE",
+      "fixture": "evals/known_bad/frontier/observability001/observability_missing_lineage_edge.json",
+      "fixture_sha256": "c91c2c075c2fe8a5f893d4567f5f08fa3d8d46a377702622cb4bc74e47aa8d9c",
+      "frozen_diagnostics": [
+        "LINEAGE-MISSING-EDGE"
+      ],
+      "material_diagnostics": [
+        "LINEAGE-MISSING-EDGE"
+      ],
+      "mutation_id": "missing_lineage_edge",
+      "result": "DETECTED_BOTH"
+    },
+    {
+      "case_id": "protected-detail-log",
+      "expected_diagnostic": "LINEAGE-PROTECTED-DETAIL-LOG",
+      "fixture": "evals/known_bad/frontier/lineage_protected_log.json",
+      "fixture_sha256": "701bc129a08f31e8b801467dc1c0d38bfac09ab2eefda21981387ff5687d6979",
+      "frozen_diagnostics": [
+        "LINEAGE-PROTECTED-DETAIL-LOG"
+      ],
+      "material_diagnostics": [
+        "LINEAGE-PROTECTED-DETAIL-LOG"
+      ],
+      "mutation_id": "protected_detail_log",
+      "result": "DETECTED_BOTH"
+    }
+  ],
+  "passed": true,
+  "proof_level": 4,
+  "registered_mutation_count": 7,
+  "registered_mutations_detected": 7,
+  "result": "PASS",
+  "schema_version": "1.0.0",
+  "sensitive_log_controls": {
+    "passed": true,
+    "protected_log_rejected": true,
+    "secret_log_rejected": true
+  },
+  "task_id": "OBSERVABILITY-001"
+}

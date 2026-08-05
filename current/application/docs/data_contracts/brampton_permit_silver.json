@@ -1,0 +1,54 @@
+{
+  "active_90_day_signal_count": 30,
+  "active_signal_view": "silver.brampton_active_permit_signals",
+  "category_distribution": {
+    "F1: Industrial": 71,
+    "F2: Industrial": 4476,
+    "F3: Industrial": 105
+  },
+  "contract_path": "docs/data_contracts/brampton_permit_silver.json",
+  "event_distribution": {
+    "alteration": 776,
+    "building_addition": 187,
+    "change_of_use": 6,
+    "other": 265,
+    "revision": 3168,
+    "tenant_fitout": 250
+  },
+  "lifecycle_distribution": {
+    "application": 113,
+    "cancelled": 123,
+    "closed": 3549,
+    "deemed_abandoned": 82,
+    "issued": 634,
+    "occupancy_granted": 31,
+    "ready_to_issue": 14,
+    "revoked": 106
+  },
+  "manifest_path": "data/bronze/brampton_building_permits/2026/07/26/RUN-20260726T033516Z-e1388f64b1/manifest.json",
+  "model_version": "brampton-permit-silver-v1",
+  "null_application_date_count": 1,
+  "outreach_eligible_count": 0,
+  "parquet_path": "data/silver/brampton_building_permits/2026/07/26/RUN-20260726T033516Z-e1388f64b1/silver-v1/industrial_permits.parquet",
+  "parquet_sha256": "3c3337cd3b179eaf85299ceb4ef24284f777bf37568c8caae2eb17ffb0b8d8c6",
+  "policy": {
+    "active_window_days": 90,
+    "approved_categories": [
+      "F1: Industrial",
+      "F2: Industrial",
+      "F3: Industrial"
+    ],
+    "outreach_eligible": false
+  },
+  "run_id": "RUN-20260726T033516Z-e1388f64b1",
+  "silver_record_count": 4652,
+  "source_id": "brampton_building_permits",
+  "source_record_count": 4652,
+  "source_snapshot_path": "data/bronze/brampton_building_permits/2026/07/26/RUN-20260726T033516Z-e1388f64b1/layer_0_bae5f22db1bef14b.geojson.gz",
+  "source_snapshot_sha256": "bae5f22db1bef14bac2e242d32b4c8058decabee05da47e795e7639f1133137e",
+  "summary_view": "silver.brampton_permit_signal_summary",
+  "table": "silver.brampton_industrial_permits",
+  "unknown_lifecycle_count": 0,
+  "warehouse_path": "data/warehouse/cre.duckdb",
+  "warehouse_record_count": 4652
+}

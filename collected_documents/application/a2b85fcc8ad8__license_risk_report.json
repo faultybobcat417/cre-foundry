@@ -1,0 +1,1369 @@
+{
+  "allowed_package_count": 145,
+  "model_version": "cre-foundry-license-risk-report-v1",
+  "package_count": 150,
+  "packages": [
+    {
+      "license": "MIT License",
+      "name": "aiosqlite",
+      "prohibited_matches": [],
+      "review_matches": [],
+      "risk": "allowed",
+      "url": "https://aiosqlite.omnilib.dev",
+      "version": "0.22.1"
+    },
+    {
+      "license": "MIT",
+      "name": "alembic",
+      "prohibited_matches": [],
+      "review_matches": [],
+      "risk": "allowed",
+      "url": "https://alembic.sqlalchemy.org",
+      "version": "1.18.5"
+    },
+    {
+      "license": "MIT License",
+      "name": "amplitude-analytics",
+      "prohibited_matches": [],
+      "review_matches": [],
+      "risk": "allowed",
+      "url": "https://github.com/amplitude/Amplitude-Python",
+      "version": "1.2.3"
+    },
+    {
+      "license": "MIT",
+      "name": "annotated-doc",
+      "prohibited_matches": [],
+      "review_matches": [],
+      "risk": "allowed",
+      "url": "https://github.com/fastapi/annotated-doc",
+      "version": "0.0.4"
+    },
+    {
+      "license": "MIT",
+      "name": "annotated-types",
+      "prohibited_matches": [],
+      "review_matches": [],
+      "risk": "allowed",
+      "url": "https://github.com/annotated-types/annotated-types",
+      "version": "0.8.0"
+    },
+    {
+      "license": "MIT",
+      "name": "anyio",
+      "prohibited_matches": [],
+      "review_matches": [],
+      "risk": "allowed",
+      "url": "https://anyio.readthedocs.io/en/stable/versionhistory.html",
+      "version": "4.14.1"
+    },
+    {
+      "license": "BSD-2-Clause",
+      "name": "apprise",
+      "prohibited_matches": [],
+      "review_matches": [],
+      "risk": "allowed",
+      "url": "https://appriseit.com",
+      "version": "1.12.0"
+    },
+    {
+      "license": "MIT",
+      "name": "asgi-lifespan",
+      "prohibited_matches": [],
+      "review_matches": [],
+      "risk": "allowed",
+      "url": "https://github.com/florimondmanca/asgi-lifespan",
+      "version": "2.1.0"
+    },
+    {
+      "license": "MIT",
+      "name": "ast_serialize",
+      "prohibited_matches": [],
+      "review_matches": [],
+      "risk": "allowed",
+      "url": "https://github.com/mypyc/ast_serialize",
+      "version": "0.6.0"
+    },
+    {
+      "license": "Apache-2.0",
+      "name": "asyncpg",
+      "prohibited_matches": [],
+      "review_matches": [],
+      "risk": "allowed",
+      "url": "UNKNOWN",
+      "version": "0.31.0"
+    },
+    {
+      "license": "MIT",
+      "name": "attrs",
+      "prohibited_matches": [],
+      "review_matches": [],
+      "risk": "allowed",
+      "url": "https://www.attrs.org/en/stable/changelog.html",
+      "version": "26.1.0"
+    },
+    {
+      "license": "Apache-2.0",
+      "name": "bandit",
+      "prohibited_matches": [],
+      "review_matches": [],
+      "risk": "allowed",
+      "url": "https://bandit.readthedocs.io/",
+      "version": "1.9.4"
+    },
+    {
+      "license": "MIT License",
+      "name": "beartype",
+      "prohibited_matches": [],
+      "review_matches": [],
+      "risk": "allowed",
+      "url": "UNKNOWN",
+      "version": "0.22.9"
+    },
+    {
+      "license": "BSD-2-Clause",
+      "name": "boolean.py",
+      "prohibited_matches": [],
+      "review_matches": [],
+      "risk": "allowed",
+      "url": "https://github.com/bastikr/boolean.py",
+      "version": "5.0"
+    },
+    {
+      "license": "MIT License",
+      "name": "burner-redis",
+      "prohibited_matches": [],
+      "review_matches": [],
+      "risk": "allowed",
+      "url": "https://github.com/PrefectHQ/burner-redis",
+      "version": "0.1.7"
+    },
+    {
+      "license": "Apache-2.0",
+      "name": "CacheControl",
+      "prohibited_matches": [],
+      "review_matches": [],
+      "risk": "allowed",
+      "url": "https://pypi.org/project/CacheControl/",
+      "version": "0.14.4"
+    },
+    {
+      "license": "MIT",
+      "name": "cachetools",
+      "prohibited_matches": [],
+      "review_matches": [],
+      "risk": "allowed",
+      "url": "https://github.com/tkem/cachetools/",
+      "version": "7.1.6"
+    },
+    {
+      "license": "Mozilla Public License 2.0 (MPL 2.0)",
+      "name": "certifi",
+      "prohibited_matches": [],
+      "review_matches": [
+        "MPL"
+      ],
+      "risk": "review",
+      "url": "https://github.com/certifi/python-certifi",
+      "version": "2026.7.22"
+    },
+    {
+      "license": "MIT-0",
+      "name": "cffi",
+      "prohibited_matches": [],
+      "review_matches": [],
+      "risk": "allowed",
+      "url": "https://cffi.readthedocs.io/en/latest/whatsnew.html",
+      "version": "2.1.0"
+    },
+    {
+      "license": "MIT",
+      "name": "charset-normalizer",
+      "prohibited_matches": [],
+      "review_matches": [],
+      "risk": "allowed",
+      "url": "https://github.com/jawah/charset_normalizer/blob/master/CHANGELOG.md",
+      "version": "3.4.9"
+    },
+    {
+      "license": "BSD-3-Clause",
+      "name": "click",
+      "prohibited_matches": [],
+      "review_matches": [],
+      "risk": "allowed",
+      "url": "https://github.com/pallets/click/",
+      "version": "8.4.2"
+    },
+    {
+      "license": "BSD License",
+      "name": "cloudpickle",
+      "prohibited_matches": [],
+      "review_matches": [],
+      "risk": "allowed",
+      "url": "https://github.com/cloudpipe/cloudpickle",
+      "version": "3.1.2"
+    },
+    {
+      "license": "BSD License",
+      "name": "colorama",
+      "prohibited_matches": [],
+      "review_matches": [],
+      "risk": "allowed",
+      "url": "https://github.com/tartley/colorama",
+      "version": "0.4.6"
+    },
+    {
+      "license": "BSD-2-Clause",
+      "name": "coolname",
+      "prohibited_matches": [],
+      "review_matches": [],
+      "risk": "allowed",
+      "url": "https://github.com/alexanderlukanin13/coolname",
+      "version": "5.0.0"
+    },
+    {
+      "license": "Apache-2.0",
+      "name": "coverage",
+      "prohibited_matches": [],
+      "review_matches": [],
+      "risk": "allowed",
+      "url": "https://github.com/coveragepy/coveragepy",
+      "version": "7.15.2"
+    },
+    {
+      "license": "UNKNOWN",
+      "name": "cre-foundry",
+      "prohibited_matches": [],
+      "review_matches": [
+        "UNKNOWN"
+      ],
+      "risk": "review",
+      "url": "UNKNOWN",
+      "version": "0.1.0"
+    },
+    {
+      "license": "BSD License",
+      "name": "cronsim",
+      "prohibited_matches": [],
+      "review_matches": [],
+      "risk": "allowed",
+      "url": "https://github.com/cuu508/cronsim.git",
+      "version": "2.7"
+    },
+    {
+      "license": "Apache-2.0 OR BSD-3-Clause",
+      "name": "cryptography",
+      "prohibited_matches": [],
+      "review_matches": [],
+      "risk": "allowed",
+      "url": "https://github.com/pyca/cryptography",
+      "version": "49.0.0"
+    },
+    {
+      "license": "Apache Software License",
+      "name": "cyclonedx-python-lib",
+      "prohibited_matches": [],
+      "review_matches": [],
+      "risk": "allowed",
+      "url": "https://github.com/CycloneDX/cyclonedx-python-lib/#readme",
+      "version": "11.11.0"
+    },
+    {
+      "license": "Apache-2.0",
+      "name": "cyclopts",
+      "prohibited_matches": [],
+      "review_matches": [],
+      "risk": "allowed",
+      "url": "https://github.com/BrianPugh/cyclopts",
+      "version": "4.22.2"
+    },
+    {
+      "license": "BSD-3-Clause",
+      "name": "dateparser",
+      "prohibited_matches": [],
+      "review_matches": [],
+      "risk": "allowed",
+      "url": "https://github.com/scrapinghub/dateparser",
+      "version": "1.4.1"
+    },
+    {
+      "license": "Python Software Foundation License",
+      "name": "defusedxml",
+      "prohibited_matches": [],
+      "review_matches": [],
+      "risk": "allowed",
+      "url": "https://github.com/tiran/defusedxml",
+      "version": "0.7.1"
+    },
+    {
+      "license": "Apache Software License",
+      "name": "detect-secrets",
+      "prohibited_matches": [],
+      "review_matches": [],
+      "risk": "allowed",
+      "url": "https://github.com/Yelp/detect-secrets",
+      "version": "1.5.0"
+    },
+    {
+      "license": "Apache-2.0",
+      "name": "docker",
+      "prohibited_matches": [],
+      "review_matches": [],
+      "risk": "allowed",
+      "url": "https://github.com/docker/docker-py",
+      "version": "7.2.0"
+    },
+    {
+      "license": "MIT License",
+      "name": "docstring_parser",
+      "prohibited_matches": [],
+      "review_matches": [],
+      "risk": "allowed",
+      "url": "https://github.com/rr-/docstring_parser",
+      "version": "0.18.0"
+    },
+    {
+      "license": "MIT License",
+      "name": "duckdb",
+      "prohibited_matches": [],
+      "review_matches": [],
+      "risk": "allowed",
+      "url": "https://github.com/duckdb/duckdb-python",
+      "version": "1.5.5"
+    },
+    {
+      "license": "MIT License",
+      "name": "exceptiongroup",
+      "prohibited_matches": [],
+      "review_matches": [],
+      "risk": "allowed",
+      "url": "https://github.com/agronholm/exceptiongroup/blob/main/CHANGES.rst",
+      "version": "1.3.1"
+    },
+    {
+      "license": "MIT",
+      "name": "fastapi",
+      "prohibited_matches": [],
+      "review_matches": [],
+      "risk": "allowed",
+      "url": "https://github.com/fastapi/fastapi",
+      "version": "0.140.0"
+    },
+    {
+      "license": "MIT",
+      "name": "filelock",
+      "prohibited_matches": [],
+      "review_matches": [],
+      "risk": "allowed",
+      "url": "https://github.com/tox-dev/py-filelock",
+      "version": "3.32.0"
+    },
+    {
+      "license": "BSD-3-Clause",
+      "name": "fsspec",
+      "prohibited_matches": [],
+      "review_matches": [],
+      "risk": "allowed",
+      "url": "https://github.com/fsspec/filesystem_spec",
+      "version": "2026.6.0"
+    },
+    {
+      "license": "MIT",
+      "name": "graphviz",
+      "prohibited_matches": [],
+      "review_matches": [],
+      "risk": "allowed",
+      "url": "https://github.com/xflr6/graphviz",
+      "version": "0.21"
+    },
+    {
+      "license": "MIT AND PSF-2.0",
+      "name": "greenlet",
+      "prohibited_matches": [],
+      "review_matches": [],
+      "risk": "allowed",
+      "url": "https://greenlet.readthedocs.io",
+      "version": "3.5.4"
+    },
+    {
+      "license": "ISC",
+      "name": "griffe",
+      "prohibited_matches": [],
+      "review_matches": [],
+      "risk": "allowed",
+      "url": "https://mkdocstrings.github.io/griffe",
+      "version": "2.1.0"
+    },
+    {
+      "license": "ISC",
+      "name": "griffecli",
+      "prohibited_matches": [],
+      "review_matches": [],
+      "risk": "allowed",
+      "url": "UNKNOWN",
+      "version": "2.1.0"
+    },
+    {
+      "license": "ISC",
+      "name": "griffelib",
+      "prohibited_matches": [],
+      "review_matches": [],
+      "risk": "allowed",
+      "url": "UNKNOWN",
+      "version": "2.1.0"
+    },
+    {
+      "license": "MIT License",
+      "name": "h11",
+      "prohibited_matches": [],
+      "review_matches": [],
+      "risk": "allowed",
+      "url": "https://github.com/python-hyper/h11",
+      "version": "0.16.0"
+    },
+    {
+      "license": "MIT",
+      "name": "h2",
+      "prohibited_matches": [],
+      "review_matches": [],
+      "risk": "allowed",
+      "url": "https://github.com/python-hyper/h2/",
+      "version": "4.4.0"
+    },
+    {
+      "license": "MIT",
+      "name": "hpack",
+      "prohibited_matches": [],
+      "review_matches": [],
+      "risk": "allowed",
+      "url": "https://github.com/python-hyper/hpack/",
+      "version": "4.2.0"
+    },
+    {
+      "license": "BSD-3-Clause",
+      "name": "httpcore",
+      "prohibited_matches": [],
+      "review_matches": [],
+      "risk": "allowed",
+      "url": "https://www.encode.io/httpcore/",
+      "version": "1.0.9"
+    },
+    {
+      "license": "BSD License",
+      "name": "httpx",
+      "prohibited_matches": [],
+      "review_matches": [],
+      "risk": "allowed",
+      "url": "https://github.com/encode/httpx",
+      "version": "0.28.1"
+    },
+    {
+      "license": "MIT",
+      "name": "humanize",
+      "prohibited_matches": [],
+      "review_matches": [],
+      "risk": "allowed",
+      "url": "https://github.com/python-humanize/humanize",
+      "version": "4.16.0"
+    },
+    {
+      "license": "MIT License",
+      "name": "hyperframe",
+      "prohibited_matches": [],
+      "review_matches": [],
+      "risk": "allowed",
+      "url": "https://github.com/python-hyper/hyperframe/",
+      "version": "6.1.0"
+    },
+    {
+      "license": "BSD-3-Clause",
+      "name": "idna",
+      "prohibited_matches": [],
+      "review_matches": [],
+      "risk": "allowed",
+      "url": "https://github.com/kjd/idna",
+      "version": "3.18"
+    },
+    {
+      "license": "MIT",
+      "name": "iniconfig",
+      "prohibited_matches": [],
+      "review_matches": [],
+      "risk": "allowed",
+      "url": "https://github.com/pytest-dev/iniconfig",
+      "version": "2.3.0"
+    },
+    {
+      "license": "MIT License",
+      "name": "jaraco.classes",
+      "prohibited_matches": [],
+      "review_matches": [],
+      "risk": "allowed",
+      "url": "https://github.com/jaraco/jaraco.classes",
+      "version": "3.4.0"
+    },
+    {
+      "license": "MIT",
+      "name": "jaraco.context",
+      "prohibited_matches": [],
+      "review_matches": [],
+      "risk": "allowed",
+      "url": "https://github.com/jaraco/jaraco.context",
+      "version": "6.1.2"
+    },
+    {
+      "license": "MIT",
+      "name": "jaraco.functools",
+      "prohibited_matches": [],
+      "review_matches": [],
+      "risk": "allowed",
+      "url": "https://github.com/jaraco/jaraco.functools",
+      "version": "4.6.0"
+    },
+    {
+      "license": "BSD License",
+      "name": "Jinja2",
+      "prohibited_matches": [],
+      "review_matches": [],
+      "risk": "allowed",
+      "url": "https://github.com/pallets/jinja/",
+      "version": "3.1.6"
+    },
+    {
+      "license": "BSD License",
+      "name": "jinja2-humanize-extension",
+      "prohibited_matches": [],
+      "review_matches": [],
+      "risk": "allowed",
+      "url": "https://github.com/metwork-framework/jinja2_humanize_extension",
+      "version": "0.4.0"
+    },
+    {
+      "license": "BSD License",
+      "name": "jsonpatch",
+      "prohibited_matches": [],
+      "review_matches": [],
+      "risk": "allowed",
+      "url": "https://github.com/stefankoegl/python-json-patch",
+      "version": "1.33"
+    },
+    {
+      "license": "BSD License",
+      "name": "jsonpointer",
+      "prohibited_matches": [],
+      "review_matches": [],
+      "risk": "allowed",
+      "url": "https://github.com/stefankoegl/python-json-pointer",
+      "version": "3.1.1"
+    },
+    {
+      "license": "MIT",
+      "name": "jsonschema",
+      "prohibited_matches": [],
+      "review_matches": [],
+      "risk": "allowed",
+      "url": "https://github.com/python-jsonschema/jsonschema",
+      "version": "4.26.0"
+    },
+    {
+      "license": "MIT",
+      "name": "jsonschema-specifications",
+      "prohibited_matches": [],
+      "review_matches": [],
+      "risk": "allowed",
+      "url": "https://github.com/python-jsonschema/jsonschema-specifications",
+      "version": "2025.9.1"
+    },
+    {
+      "license": "MIT",
+      "name": "keyring",
+      "prohibited_matches": [],
+      "review_matches": [],
+      "risk": "allowed",
+      "url": "https://github.com/jaraco/keyring",
+      "version": "25.7.0"
+    },
+    {
+      "license": "MIT",
+      "name": "librt",
+      "prohibited_matches": [],
+      "review_matches": [],
+      "risk": "allowed",
+      "url": "https://github.com/mypyc/librt",
+      "version": "0.13.0"
+    },
+    {
+      "license": "Apache-2.0",
+      "name": "license-expression",
+      "prohibited_matches": [],
+      "review_matches": [],
+      "risk": "allowed",
+      "url": "https://github.com/aboutcode-org/license-expression",
+      "version": "30.4.4"
+    },
+    {
+      "license": "MIT License",
+      "name": "Mako",
+      "prohibited_matches": [],
+      "review_matches": [],
+      "risk": "allowed",
+      "url": "https://www.makotemplates.org/",
+      "version": "1.3.12"
+    },
+    {
+      "license": "BSD-3-Clause",
+      "name": "Markdown",
+      "prohibited_matches": [],
+      "review_matches": [],
+      "risk": "allowed",
+      "url": "https://Python-Markdown.github.io/",
+      "version": "3.10.2"
+    },
+    {
+      "license": "MIT License",
+      "name": "markdown-it-py",
+      "prohibited_matches": [],
+      "review_matches": [],
+      "risk": "allowed",
+      "url": "https://github.com/executablebooks/markdown-it-py",
+      "version": "4.2.0"
+    },
+    {
+      "license": "BSD-3-Clause",
+      "name": "MarkupSafe",
+      "prohibited_matches": [],
+      "review_matches": [],
+      "risk": "allowed",
+      "url": "https://github.com/pallets/markupsafe/",
+      "version": "3.0.3"
+    },
+    {
+      "license": "MIT License",
+      "name": "mdurl",
+      "prohibited_matches": [],
+      "review_matches": [],
+      "risk": "allowed",
+      "url": "https://github.com/executablebooks/mdurl",
+      "version": "0.1.2"
+    },
+    {
+      "license": "MIT",
+      "name": "more-itertools",
+      "prohibited_matches": [],
+      "review_matches": [],
+      "risk": "allowed",
+      "url": "https://github.com/more-itertools/more-itertools",
+      "version": "11.1.0"
+    },
+    {
+      "license": "Apache-2.0",
+      "name": "msgpack",
+      "prohibited_matches": [],
+      "review_matches": [],
+      "risk": "allowed",
+      "url": "https://msgpack.org/",
+      "version": "1.2.1"
+    },
+    {
+      "license": "MIT",
+      "name": "mypy",
+      "prohibited_matches": [],
+      "review_matches": [],
+      "risk": "allowed",
+      "url": "https://www.mypy-lang.org/",
+      "version": "2.3.0"
+    },
+    {
+      "license": "MIT",
+      "name": "mypy_extensions",
+      "prohibited_matches": [],
+      "review_matches": [],
+      "risk": "allowed",
+      "url": "https://github.com/python/mypy_extensions",
+      "version": "1.1.0"
+    },
+    {
+      "license": "BSD-3-Clause AND 0BSD AND MIT AND Zlib AND CC0-1.0",
+      "name": "numpy",
+      "prohibited_matches": [],
+      "review_matches": [],
+      "risk": "allowed",
+      "url": "https://numpy.org",
+      "version": "2.5.1"
+    },
+    {
+      "license": "BSD-3-Clause",
+      "name": "oauthlib",
+      "prohibited_matches": [],
+      "review_matches": [],
+      "risk": "allowed",
+      "url": "https://github.com/oauthlib/oauthlib",
+      "version": "3.3.1"
+    },
+    {
+      "license": "Apache-2.0",
+      "name": "opentelemetry-api",
+      "prohibited_matches": [],
+      "review_matches": [],
+      "risk": "allowed",
+      "url": "https://github.com/open-telemetry/opentelemetry-python/tree/main/opentelemetry-api",
+      "version": "1.44.0"
+    },
+    {
+      "license": "MPL-2.0 AND (Apache-2.0 OR MIT)",
+      "name": "orjson",
+      "prohibited_matches": [],
+      "review_matches": [
+        "MPL"
+      ],
+      "risk": "review",
+      "url": "https://github.com/ijl/orjson",
+      "version": "3.11.9"
+    },
+    {
+      "license": "MIT License",
+      "name": "packageurl-python",
+      "prohibited_matches": [],
+      "review_matches": [],
+      "risk": "allowed",
+      "url": "https://github.com/package-url/packageurl-python",
+      "version": "0.17.6"
+    },
+    {
+      "license": "Apache-2.0 OR BSD-2-Clause",
+      "name": "packaging",
+      "prohibited_matches": [],
+      "review_matches": [],
+      "risk": "allowed",
+      "url": "https://github.com/pypa/packaging",
+      "version": "26.2"
+    },
+    {
+      "license": "Mozilla Public License 2.0 (MPL 2.0)",
+      "name": "pathspec",
+      "prohibited_matches": [],
+      "review_matches": [
+        "MPL"
+      ],
+      "risk": "review",
+      "url": "https://python-path-specification.readthedocs.io/en/latest/index.html",
+      "version": "1.1.1"
+    },
+    {
+      "license": "MIT License",
+      "name": "pendulum",
+      "prohibited_matches": [],
+      "review_matches": [],
+      "risk": "allowed",
+      "url": "https://pendulum.eustace.io",
+      "version": "3.2.0"
+    },
+    {
+      "license": "Apache Software License",
+      "name": "pip-api",
+      "prohibited_matches": [],
+      "review_matches": [],
+      "risk": "allowed",
+      "url": "http://github.com/di/pip-api",
+      "version": "0.0.34"
+    },
+    {
+      "license": "MIT",
+      "name": "pip-requirements-parser",
+      "prohibited_matches": [],
+      "review_matches": [],
+      "risk": "allowed",
+      "url": "https://github.com/nexB/pip-requirements-parser",
+      "version": "32.0.1"
+    },
+    {
+      "license": "Apache Software License",
+      "name": "pip_audit",
+      "prohibited_matches": [],
+      "review_matches": [],
+      "risk": "allowed",
+      "url": "https://pypi.org/project/pip-audit/",
+      "version": "2.10.1"
+    },
+    {
+      "license": "MIT",
+      "name": "platformdirs",
+      "prohibited_matches": [],
+      "review_matches": [],
+      "risk": "allowed",
+      "url": "https://github.com/tox-dev/platformdirs",
+      "version": "4.11.0"
+    },
+    {
+      "license": "MIT License",
+      "name": "pluggy",
+      "prohibited_matches": [],
+      "review_matches": [],
+      "risk": "allowed",
+      "url": "UNKNOWN",
+      "version": "1.6.0"
+    },
+    {
+      "license": "MIT License",
+      "name": "polars",
+      "prohibited_matches": [],
+      "review_matches": [],
+      "risk": "allowed",
+      "url": "https://www.pola.rs/",
+      "version": "1.43.0"
+    },
+    {
+      "license": "MIT License",
+      "name": "polars-runtime-32",
+      "prohibited_matches": [],
+      "review_matches": [],
+      "risk": "allowed",
+      "url": "https://www.pola.rs/",
+      "version": "1.43.0"
+    },
+    {
+      "license": "Apache Software License",
+      "name": "prefect",
+      "prohibited_matches": [],
+      "review_matches": [],
+      "risk": "allowed",
+      "url": "https://github.com/PrefectHQ/prefect",
+      "version": "3.8.0"
+    },
+    {
+      "license": "Apache-2.0 AND BSD-2-Clause",
+      "name": "prometheus_client",
+      "prohibited_matches": [],
+      "review_matches": [],
+      "risk": "allowed",
+      "url": "https://github.com/prometheus/client_python",
+      "version": "0.26.0"
+    },
+    {
+      "license": "Apache-2.0",
+      "name": "py-key-value-aio",
+      "prohibited_matches": [],
+      "review_matches": [],
+      "risk": "allowed",
+      "url": "UNKNOWN",
+      "version": "0.4.5"
+    },
+    {
+      "license": "Apache Software License",
+      "name": "py-serializable",
+      "prohibited_matches": [],
+      "review_matches": [],
+      "risk": "allowed",
+      "url": "https://github.com/madpah/serializable#readme",
+      "version": "2.1.0"
+    },
+    {
+      "license": "BSD-3-Clause",
+      "name": "pycparser",
+      "prohibited_matches": [],
+      "review_matches": [],
+      "risk": "allowed",
+      "url": "https://github.com/eliben/pycparser",
+      "version": "3.0"
+    },
+    {
+      "license": "MIT",
+      "name": "pydantic",
+      "prohibited_matches": [],
+      "review_matches": [],
+      "risk": "allowed",
+      "url": "https://github.com/pydantic/pydantic",
+      "version": "2.13.4"
+    },
+    {
+      "license": "MIT",
+      "name": "pydantic-extra-types",
+      "prohibited_matches": [],
+      "review_matches": [],
+      "risk": "allowed",
+      "url": "https://github.com/pydantic/pydantic-extra-types",
+      "version": "2.11.1"
+    },
+    {
+      "license": "MIT",
+      "name": "pydantic-settings",
+      "prohibited_matches": [],
+      "review_matches": [],
+      "risk": "allowed",
+      "url": "https://github.com/pydantic/pydantic-settings",
+      "version": "2.14.2"
+    },
+    {
+      "license": "MIT",
+      "name": "pydantic_core",
+      "prohibited_matches": [],
+      "review_matches": [],
+      "risk": "allowed",
+      "url": "https://github.com/pydantic",
+      "version": "2.46.4"
+    },
+    {
+      "license": "MIT License",
+      "name": "pydocket",
+      "prohibited_matches": [],
+      "review_matches": [],
+      "risk": "allowed",
+      "url": "https://docket.lol/",
+      "version": "0.23.1"
+    },
+    {
+      "license": "BSD-2-Clause",
+      "name": "Pygments",
+      "prohibited_matches": [],
+      "review_matches": [],
+      "risk": "allowed",
+      "url": "https://pygments.org",
+      "version": "2.20.0"
+    },
+    {
+      "license": "MIT",
+      "name": "pyparsing",
+      "prohibited_matches": [],
+      "review_matches": [],
+      "risk": "allowed",
+      "url": "https://github.com/pyparsing/pyparsing/",
+      "version": "3.3.2"
+    },
+    {
+      "license": "MIT",
+      "name": "pytest",
+      "prohibited_matches": [],
+      "review_matches": [],
+      "risk": "allowed",
+      "url": "https://docs.pytest.org/en/latest/",
+      "version": "9.1.1"
+    },
+    {
+      "license": "Apache-2.0",
+      "name": "pytest-asyncio",
+      "prohibited_matches": [],
+      "review_matches": [],
+      "risk": "allowed",
+      "url": "https://github.com/pytest-dev/pytest-asyncio",
+      "version": "1.4.0"
+    },
+    {
+      "license": "MIT",
+      "name": "pytest-cov",
+      "prohibited_matches": [],
+      "review_matches": [],
+      "risk": "allowed",
+      "url": "https://pytest-cov.readthedocs.io/en/latest/changelog.html",
+      "version": "7.1.0"
+    },
+    {
+      "license": "Apache Software License; BSD License",
+      "name": "python-dateutil",
+      "prohibited_matches": [],
+      "review_matches": [],
+      "risk": "allowed",
+      "url": "https://github.com/dateutil/dateutil",
+      "version": "2.9.0.post0"
+    },
+    {
+      "license": "BSD-3-Clause",
+      "name": "python-dotenv",
+      "prohibited_matches": [],
+      "review_matches": [],
+      "risk": "allowed",
+      "url": "https://github.com/theskumar/python-dotenv",
+      "version": "1.2.2"
+    },
+    {
+      "license": "BSD-2-Clause",
+      "name": "python-json-logger",
+      "prohibited_matches": [],
+      "review_matches": [],
+      "risk": "allowed",
+      "url": "https://nhairs.github.io/python-json-logger",
+      "version": "4.1.0"
+    },
+    {
+      "license": "MIT License",
+      "name": "python-slugify",
+      "prohibited_matches": [],
+      "review_matches": [],
+      "risk": "allowed",
+      "url": "https://github.com/un33k/python-slugify",
+      "version": "8.0.4"
+    },
+    {
+      "license": "MIT License",
+      "name": "pytz",
+      "prohibited_matches": [],
+      "review_matches": [],
+      "risk": "allowed",
+      "url": "http://pythonhosted.org/pytz",
+      "version": "2026.3.post1"
+    },
+    {
+      "license": "MIT License",
+      "name": "PyYAML",
+      "prohibited_matches": [],
+      "review_matches": [],
+      "risk": "allowed",
+      "url": "https://pyyaml.org/",
+      "version": "6.0.3"
+    },
+    {
+      "license": "MIT",
+      "name": "RapidFuzz",
+      "prohibited_matches": [],
+      "review_matches": [],
+      "risk": "allowed",
+      "url": "https://github.com/rapidfuzz/RapidFuzz",
+      "version": "3.14.5"
+    },
+    {
+      "license": "MIT License",
+      "name": "readchar",
+      "prohibited_matches": [],
+      "review_matches": [],
+      "risk": "allowed",
+      "url": "https://pypi.org/project/readchar",
+      "version": "4.2.2"
+    },
+    {
+      "license": "MIT",
+      "name": "redis",
+      "prohibited_matches": [],
+      "review_matches": [],
+      "risk": "allowed",
+      "url": "https://github.com/redis/redis-py",
+      "version": "8.0.1"
+    },
+    {
+      "license": "MIT",
+      "name": "referencing",
+      "prohibited_matches": [],
+      "review_matches": [],
+      "risk": "allowed",
+      "url": "https://github.com/python-jsonschema/referencing",
+      "version": "0.37.0"
+    },
+    {
+      "license": "Apache-2.0 AND CNRI-Python",
+      "name": "regex",
+      "prohibited_matches": [],
+      "review_matches": [],
+      "risk": "allowed",
+      "url": "https://github.com/mrabarnett/mrab-regex",
+      "version": "2026.7.19"
+    },
+    {
+      "license": "Apache Software License",
+      "name": "requests",
+      "prohibited_matches": [],
+      "review_matches": [],
+      "risk": "allowed",
+      "url": "https://github.com/psf/requests",
+      "version": "2.34.2"
+    },
+    {
+      "license": "BSD License",
+      "name": "requests-oauthlib",
+      "prohibited_matches": [],
+      "review_matches": [],
+      "risk": "allowed",
+      "url": "https://github.com/requests/requests-oauthlib",
+      "version": "2.0.0"
+    },
+    {
+      "license": "MIT License",
+      "name": "rfc3339-validator",
+      "prohibited_matches": [],
+      "review_matches": [],
+      "risk": "allowed",
+      "url": "https://github.com/naimetti/rfc3339-validator",
+      "version": "0.1.4"
+    },
+    {
+      "license": "MIT License",
+      "name": "rich",
+      "prohibited_matches": [],
+      "review_matches": [],
+      "risk": "allowed",
+      "url": "https://github.com/Textualize/rich",
+      "version": "15.0.0"
+    },
+    {
+      "license": "MIT",
+      "name": "rich-rst",
+      "prohibited_matches": [],
+      "review_matches": [],
+      "risk": "allowed",
+      "url": "https://wasi-master.github.io/rich-rst",
+      "version": "2.1.0"
+    },
+    {
+      "license": "MIT",
+      "name": "rpds-py",
+      "prohibited_matches": [],
+      "review_matches": [],
+      "risk": "allowed",
+      "url": "https://github.com/crate-py/rpds",
+      "version": "2026.6.3"
+    },
+    {
+      "license": "MIT License",
+      "name": "ruamel.yaml",
+      "prohibited_matches": [],
+      "review_matches": [],
+      "risk": "allowed",
+      "url": "https://sourceforge.net/p/ruamel-yaml/code/ci/default/tree/",
+      "version": "0.19.1"
+    },
+    {
+      "license": "MIT License",
+      "name": "ruamel.yaml.clib",
+      "prohibited_matches": [],
+      "review_matches": [],
+      "risk": "allowed",
+      "url": "https://sourceforge.net/p/ruamel-yaml-clib/code/ci/default/tree/",
+      "version": "0.2.15"
+    },
+    {
+      "license": "MIT",
+      "name": "ruff",
+      "prohibited_matches": [],
+      "review_matches": [],
+      "risk": "allowed",
+      "url": "https://docs.astral.sh/ruff",
+      "version": "0.16.0"
+    },
+    {
+      "license": "BSD License",
+      "name": "semver",
+      "prohibited_matches": [],
+      "review_matches": [],
+      "risk": "allowed",
+      "url": "https://python-semver.readthedocs.io/en/latest/changelog.html",
+      "version": "3.0.4"
+    },
+    {
+      "license": "BSD License",
+      "name": "shapely",
+      "prohibited_matches": [],
+      "review_matches": [],
+      "risk": "allowed",
+      "url": "https://github.com/shapely/shapely",
+      "version": "2.1.2"
+    },
+    {
+      "license": "ISC License (ISCL)",
+      "name": "shellingham",
+      "prohibited_matches": [],
+      "review_matches": [],
+      "risk": "allowed",
+      "url": "https://github.com/sarugaku/shellingham",
+      "version": "1.5.4"
+    },
+    {
+      "license": "MIT License",
+      "name": "six",
+      "prohibited_matches": [],
+      "review_matches": [],
+      "risk": "allowed",
+      "url": "https://github.com/benjaminp/six",
+      "version": "1.17.0"
+    },
+    {
+      "license": "Apache Software License; MIT License",
+      "name": "sniffio",
+      "prohibited_matches": [],
+      "review_matches": [],
+      "risk": "allowed",
+      "url": "https://github.com/python-trio/sniffio",
+      "version": "1.3.1"
+    },
+    {
+      "license": "Apache Software License",
+      "name": "sortedcontainers",
+      "prohibited_matches": [],
+      "review_matches": [],
+      "risk": "allowed",
+      "url": "http://www.grantjenks.com/docs/sortedcontainers/",
+      "version": "2.4.0"
+    },
+    {
+      "license": "MIT",
+      "name": "SQLAlchemy",
+      "prohibited_matches": [],
+      "review_matches": [],
+      "risk": "allowed",
+      "url": "https://www.sqlalchemy.org",
+      "version": "2.0.51"
+    },
+    {
+      "license": "BSD-3-Clause",
+      "name": "starlette",
+      "prohibited_matches": [],
+      "review_matches": [],
+      "risk": "allowed",
+      "url": "https://github.com/Kludex/starlette",
+      "version": "1.3.1"
+    },
+    {
+      "license": "Apache-2.0",
+      "name": "stevedore",
+      "prohibited_matches": [],
+      "review_matches": [],
+      "risk": "allowed",
+      "url": "https://docs.openstack.org/stevedore",
+      "version": "5.9.0"
+    },
+    {
+      "license": "MIT OR Apache-2.0",
+      "name": "structlog",
+      "prohibited_matches": [],
+      "review_matches": [],
+      "risk": "allowed",
+      "url": "https://github.com/hynek/structlog/blob/main/CHANGELOG.md",
+      "version": "26.1.0"
+    },
+    {
+      "license": "Apache Software License",
+      "name": "tenacity",
+      "prohibited_matches": [],
+      "review_matches": [],
+      "risk": "allowed",
+      "url": "https://github.com/jd/tenacity",
+      "version": "9.1.4"
+    },
+    {
+      "license": "Artistic License; GNU General Public License (GPL); GNU General Public License v2 or later (GPLv2+)",
+      "name": "text-unidecode",
+      "prohibited_matches": [],
+      "review_matches": [
+        "GPL"
+      ],
+      "risk": "review",
+      "url": "https://github.com/kmike/text-unidecode/",
+      "version": "1.3"
+    },
+    {
+      "license": "MIT License",
+      "name": "toml",
+      "prohibited_matches": [],
+      "review_matches": [],
+      "risk": "allowed",
+      "url": "https://github.com/uiri/toml",
+      "version": "0.10.2"
+    },
+    {
+      "license": "MIT",
+      "name": "tomli",
+      "prohibited_matches": [],
+      "review_matches": [],
+      "risk": "allowed",
+      "url": "https://github.com/hukkin/tomli",
+      "version": "2.4.1"
+    },
+    {
+      "license": "MIT License",
+      "name": "tomli_w",
+      "prohibited_matches": [],
+      "review_matches": [],
+      "risk": "allowed",
+      "url": "https://github.com/hukkin/tomli-w",
+      "version": "1.2.0"
+    },
+    {
+      "license": "MIT",
+      "name": "typer",
+      "prohibited_matches": [],
+      "review_matches": [],
+      "risk": "allowed",
+      "url": "https://github.com/fastapi/typer",
+      "version": "0.27.0"
+    },
+    {
+      "license": "Apache-2.0",
+      "name": "types-PyYAML",
+      "prohibited_matches": [],
+      "review_matches": [],
+      "risk": "allowed",
+      "url": "https://github.com/python/typeshed",
+      "version": "6.0.12.20260724"
+    },
+    {
+      "license": "MIT",
+      "name": "typing-inspection",
+      "prohibited_matches": [],
+      "review_matches": [],
+      "risk": "allowed",
+      "url": "https://github.com/pydantic/typing-inspection",
+      "version": "0.4.2"
+    },
+    {
+      "license": "PSF-2.0",
+      "name": "typing_extensions",
+      "prohibited_matches": [],
+      "review_matches": [],
+      "risk": "allowed",
+      "url": "https://github.com/python/typing_extensions",
+      "version": "4.16.0"
+    },
+    {
+      "license": "Apache-2.0",
+      "name": "tzdata",
+      "prohibited_matches": [],
+      "review_matches": [],
+      "risk": "allowed",
+      "url": "https://github.com/python/tzdata",
+      "version": "2026.3"
+    },
+    {
+      "license": "MIT",
+      "name": "tzlocal",
+      "prohibited_matches": [],
+      "review_matches": [],
+      "risk": "allowed",
+      "url": "https://github.com/regebro/tzlocal/blob/master/CHANGES.txt",
+      "version": "5.4.4"
+    },
+    {
+      "license": "MIT License",
+      "name": "uncalled-for",
+      "prohibited_matches": [],
+      "review_matches": [],
+      "risk": "allowed",
+      "url": "https://github.com/chrisguidry/uncalled-for",
+      "version": "0.3.2"
+    },
+    {
+      "license": "MIT",
+      "name": "urllib3",
+      "prohibited_matches": [],
+      "review_matches": [],
+      "risk": "allowed",
+      "url": "https://github.com/urllib3/urllib3/blob/main/CHANGES.rst",
+      "version": "2.7.0"
+    },
+    {
+      "license": "BSD-3-Clause",
+      "name": "uvicorn",
+      "prohibited_matches": [],
+      "review_matches": [],
+      "risk": "allowed",
+      "url": "https://uvicorn.dev/",
+      "version": "0.51.0"
+    },
+    {
+      "license": "BSD-3-Clause",
+      "name": "websockets",
+      "prohibited_matches": [],
+      "review_matches": [],
+      "risk": "allowed",
+      "url": "https://github.com/python-websockets/websockets",
+      "version": "16.1.1"
+    }
+  ],
+  "prohibited_package_count": 0,
+  "review_package_count": 5
+}

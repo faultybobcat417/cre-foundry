@@ -1,0 +1,121 @@
+========================================================================
+control/CURRENT_STATE.json
+========================================================================
+phase:
+"application_architecture_hardening"
+========================================================================
+control/CURRENT_TASK.json
+========================================================================
+task_id:
+"ECONOMICS-001"
+status:
+"in_progress"
+========================================================================
+control/TASK_GRAPH.json
+========================================================================
+========================================================================
+tasks/IDENTITY-001.json
+========================================================================
+task_id:
+"IDENTITY-001"
+title:
+"Synthetic temporal identity and fail-closed protection primitives"
+status:
+"in_progress"
+gates:
+[]
+dependencies:
+[
+  "CONTRACT-001",
+  "VERTICAL-001"
+]
+objective:
+"Implement synthetic temporal identity, alternative-link, ambiguity, conflict, relocation, unit, franchise, and fail-closed protected-account primitives while preserving distinct entity grains."
+rollback:
+"Remove the synthetic identity layer and return to the narrow CONTRACT-001 identity assertion; keep all real identity and protection claims blocked."
+========================================================================
+tasks/ECONOMICS-001.json
+========================================================================
+task_id:
+"ECONOMICS-001"
+title:
+"Symbolic risk-adjusted net commercial value and sensitivity machinery"
+status:
+"in_progress"
+gates:
+[]
+dependencies:
+[
+  "MATH-001",
+  "CALIBRATION-001"
+]
+objective:
+"Implement symbolic risk-adjusted expected net commercial value, cost, downside, sensitivity, and omitted-cost machinery without inventing firm inputs."
+rollback:
+"Disable the ECV policy and retain transparent component outputs and sensitivity-only ranking."
+========================================================================
+tasks/SECURITY-001.json
+========================================================================
+task_id:
+"SECURITY-001"
+title:
+"Threat model, data classification, least privilege, and negative authorization"
+status:
+"pending"
+gates:
+[]
+dependencies:
+[
+  "ARCHITECTURE-001",
+  "RESEARCH-001"
+]
+objective:
+"Implement threat model, data classification, least privilege, privacy/retention, untrusted-input isolation, and negative authorization machinery."
+rollback:
+"Disable affected adapters/surfaces, revoke credentials when applicable, and return to no-live-write mode."
+========================================================================
+artifacts/task-results/IDENTITY-001.json
+========================================================================
+task_id:
+"IDENTITY-001"
+status:
+"completed"
+proof_level:
+4
+gates:
+[
+  "GATE-ENTITY-TRUTH-001 remains open for real entity and physical-location truth",
+  "protected_account_bundle (GATE-PROTECTED-ACCOUNT-BUNDLE-001) remains open for authorized protected-account completeness",
+  "GATE-IDENTITY-EMPIRICAL-VALIDATION-001 remains open for empirical identity validation",
+  "GATE-SEALED-EVALUATOR-CUSTODY-001 remains open for independent sealed proof",
+  "GATE-HIDDEN-HOLDOUT-OWNER-001 remains open for external hidden-holdout ownership"
+]
+objective:
+"Implement synthetic temporal identity, alternative-link, ambiguity, conflict, relocation, unit, franchise, and fail-closed protected-account primitives while preserving distinct entity grains."
+next_action:
+"Proceed to the next executable dependency-valid task per the autonomous frontier: audit then implement ECONOMICS-001 and SECURITY-001 material layers with truthful task-results and control-state updates, keeping all external gates OPEN_BLOCKING; only then return to terminal manifest closure."
+rollback:
+"Revert the material layer (src/cre_foundry/identity, scripts/validate_identity_contracts.py, contracts/synthetic_identity_graph.schema.json, evals/public/test_identity_contracts.py, docs/identity/IDENTITY_MATERIAL.md, artifacts/evaluations/identity_contracts.json) and return IDENTITY-001 to the frozen evaluator boundary; the frozen evaluator, schema, and fixtures remain untouched and green."
+========================================================================
+artifacts/task-results/ECONOMICS-001.json
+========================================================================
+task_id:
+"ECONOMICS-001"
+status:
+"completed"
+proof_level:
+5
+gates:
+[
+  "firm_economics_services_territories remains OPEN_BLOCKING for authorized service, territory, economics, cost, risk-policy, and effective-date inputs"
+]
+objective:
+"Implement symbolic risk-adjusted expected net commercial value, cost, downside, and sensitivity machinery without inventing firm inputs."
+next_action:
+"Proceed to the next executable task SECURITY-001 per the autonomous frontier: implement its material layer with truthful task-result and control-state update, keeping live permissions disabled and all data-access gates OPEN_BLOCKING; only then return to terminal manifest closure."
+rollback:
+"Revert the material layer (src/cre_foundry/economics, scripts/validate_economics_contracts.py, contracts/economic_engine.schema.json, evals/public/test_economics_contracts.py, docs/economics/ECONOMICS_MATERIAL.md, artifacts/evaluations/economics_contracts.json) and disable the ECV policy while retaining transparent component outputs and sensitivity-only ranking; the frozen evaluator, schema, and fixtures remain unchanged and green."
+========================================================================
+artifacts/task-results/SECURITY-001.json
+========================================================================
+MISSING

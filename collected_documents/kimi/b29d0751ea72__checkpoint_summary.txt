@@ -1,0 +1,191 @@
+CRE COMPLETION CHECKPOINT VERIFICATION
+Verification folder: /Users/alimehdi/Desktop/CRE-Checkpoint-Verification-20260803-183510
+Source repository unchanged: YES
+
+BRANCH / HEAD
+handoff/kimi-architecture-001
+f47e87defbfff9384d49e6d23c5494c0bdafcf68
+
+COMMITS SINCE LAST VERIFIED CHECKPOINT
+5b477d8 chore: complete economics and select security
+f47e87d (HEAD -> handoff/kimi-architecture-001, origin/handoff/kimi-architecture-001, origin/HEAD) fix: repair Identity and Economics validator byte stability
+
+COMMITTED DIFF STAT
+ artifacts/context/current_task_packet.json     |  110 +-
+ artifacts/context/current_task_packet.md       | 4303 ++++++++----------------
+ artifacts/evaluations/economics_contracts.json |    2 +-
+ artifacts/evaluations/identity_contracts.json  |    2 +-
+ control/CURRENT_STATE.json                     |   41 +-
+ control/CURRENT_TASK.json                      |   10 +-
+ control/TASK_GRAPH.json                        |    8 +-
+ scripts/compile_repository_task_context.py     |    9 +
+ scripts/validate_economics_contracts.py        |   13 +
+ scripts/validate_identity_contracts.py         |   13 +
+ tasks/SECURITY-001.json                        |   20 +
+ 11 files changed, 1539 insertions(+), 2992 deletions(-)
+
+CURRENT TASK STATE
+==============================================================================
+control/CURRENT_STATE.json
+==============================================================================
+phase:
+"application_architecture_hardening"
+current_task_id:
+"SECURITY-001"
+last_checkpoint:
+"ECONOMICS-001"
+completed_tasks:
+[
+  "BOOTSTRAP-001",
+  "FRONTIER-001",
+  "RESEARCH-001",
+  "MATH-001",
+  "CONTRACT-001",
+  "VERTICAL-001",
+  "OUTCOMES-001",
+  "BASELINE-001",
+  "CALIBRATION-001",
+  "ARCHITECTURE-001",
+  "IDENTITY-001",
+  "ECONOMICS-001"
+]
+executable_tasks:
+[
+  "SECURITY-001"
+]
+blocked_tasks:
+[
+  "EVAL-001",
+  "OBSERVABILITY-001",
+  "REPLAY-001",
+  "ADVERSARIAL-001",
+  "EXTERNAL-READINESS-001",
+  "CONVERGENCE-001",
+  "SOURCE-PILOT-001",
+  "IDENTITY-CAL-001",
+  "ROUTE-CAL-001",
+  "POLICY-001",
+  "SHADOW-001"
+]
+==============================================================================
+control/CURRENT_TASK.json
+==============================================================================
+task_id:
+"SECURITY-001"
+status:
+"in_progress"
+==============================================================================
+control/TASK_GRAPH.json
+==============================================================================
+==============================================================================
+tasks/IDENTITY-001.json
+==============================================================================
+task_id:
+"IDENTITY-001"
+title:
+"Synthetic temporal identity and fail-closed protection primitives"
+status:
+"in_progress"
+dependencies:
+[
+  "CONTRACT-001",
+  "VERTICAL-001"
+]
+gates:
+[]
+==============================================================================
+tasks/ECONOMICS-001.json
+==============================================================================
+task_id:
+"ECONOMICS-001"
+title:
+"Symbolic risk-adjusted net commercial value and sensitivity machinery"
+status:
+"in_progress"
+dependencies:
+[
+  "MATH-001",
+  "CALIBRATION-001"
+]
+gates:
+[]
+==============================================================================
+tasks/SECURITY-001.json
+==============================================================================
+task_id:
+"SECURITY-001"
+title:
+"Threat model, data classification, least privilege, and negative authorization"
+status:
+"in_progress"
+dependencies:
+[
+  "ARCHITECTURE-001",
+  "RESEARCH-001"
+]
+gates:
+[]
+==============================================================================
+artifacts/task-results/IDENTITY-001.json
+==============================================================================
+task_id:
+"IDENTITY-001"
+status:
+"completed"
+proof_level:
+4
+gates:
+[
+  "GATE-ENTITY-TRUTH-001 remains open for real entity and physical-location truth",
+  "protected_account_bundle (GATE-PROTECTED-ACCOUNT-BUNDLE-001) remains open for authorized protected-account completeness",
+  "GATE-IDENTITY-EMPIRICAL-VALIDATION-001 remains open for empirical identity validation",
+  "GATE-SEALED-EVALUATOR-CUSTODY-001 remains open for independent sealed proof",
+  "GATE-HIDDEN-HOLDOUT-OWNER-001 remains open for external hidden-holdout ownership"
+]
+next_action:
+"Proceed to the next executable dependency-valid task per the autonomous frontier: audit then implement ECONOMICS-001 and SECURITY-001 material layers with truthful task-results and control-state updates, keeping all external gates OPEN_BLOCKING; only then return to terminal manifest closure."
+==============================================================================
+artifacts/task-results/ECONOMICS-001.json
+==============================================================================
+task_id:
+"ECONOMICS-001"
+status:
+"completed"
+proof_level:
+5
+gates:
+[
+  "firm_economics_services_territories remains OPEN_BLOCKING for authorized service, territory, economics, cost, risk-policy, and effective-date inputs"
+]
+next_action:
+"Proceed to the next executable task SECURITY-001 per the autonomous frontier: implement its material layer with truthful task-result and control-state update, keeping live permissions disabled and all data-access gates OPEN_BLOCKING; only then return to terminal manifest closure."
+==============================================================================
+artifacts/task-results/SECURITY-001.json
+==============================================================================
+MISSING
+
+VALIDATION RESULTS
+check                       exit_code  log
+identity_validator_first    0          /Users/alimehdi/Desktop/CRE-Checkpoint-Verification-20260803-183510/logs/identity_validator_first.log
+economics_validator_first   0          /Users/alimehdi/Desktop/CRE-Checkpoint-Verification-20260803-183510/logs/economics_validator_first.log
+identity_validator_second   0          /Users/alimehdi/Desktop/CRE-Checkpoint-Verification-20260803-183510/logs/identity_validator_second.log
+economics_validator_second  0          /Users/alimehdi/Desktop/CRE-Checkpoint-Verification-20260803-183510/logs/economics_validator_second.log
+all_public_tests            0          /Users/alimehdi/Desktop/CRE-Checkpoint-Verification-20260803-183510/logs/all_public_tests.log
+control_plane               0          /Users/alimehdi/Desktop/CRE-Checkpoint-Verification-20260803-183510/logs/control_plane.log
+existing_security_privacy   1          /Users/alimehdi/Desktop/CRE-Checkpoint-Verification-20260803-183510/logs/existing_security_privacy.log
+git_diff_check              0          /Users/alimehdi/Desktop/CRE-Checkpoint-Verification-20260803-183510/logs/git_diff_check.log
+
+VALIDATOR BYTE-STABLE
+YES
+
+DISPOSABLE CLONE FINAL STATUS
+## handoff/kimi-architecture-001...origin/handoff/kimi-architecture-001
+?? control/ONE_SHOT_READINESS.json
+?? evals/known_bad/frontier/security_secret_log.json
+
+SECURITY FIXTURE
+{
+    "case_id": "secret-log",
+    "mutation_id": "secret_log",
+    "expected_diagnostic": "SECURITY-SECRET-LOG"
+}

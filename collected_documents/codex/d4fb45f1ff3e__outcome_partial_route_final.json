@@ -1,0 +1,5 @@
+{
+  "case_id": "partial-route-day-finalized",
+  "mutation_id": "partial_route_day_finalized",
+  "expected_diagnostic": "OUTCOMES-ROUTE-DAY-PREMATURE-FINAL"
+}

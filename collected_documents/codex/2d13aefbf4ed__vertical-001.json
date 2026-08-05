@@ -1,0 +1,20 @@
+{
+  "task_id": "VERTICAL-001",
+  "title": "Earliest synthetic source-to-field-outcome vertical slice",
+  "status": "completed",
+  "objective": "Connect the frozen observation/candidate contract and MATH exact-ten decision to the smallest deterministic synthetic route-day manifest, field-visit event, F9 outcome fixture, and full replay receipt.",
+  "business_reason": "A thin connected shadow path exposes cross-subsystem failures earlier than expanding source, identity, model, route, outcome, or product layers independently.",
+  "dependencies": ["MATH-001", "CONTRACT-001"],
+  "gates": [],
+  "inputs": ["CONTRACT-001 synthetic observation-to-decision spine", "MATH-001 exact-ten-or-abstain oracle", "mission invariants and proof ceilings"],
+  "assumptions": [],
+  "non_goals": ["use real source rows", "claim real identity or protection clearance", "calibrate travel or service times", "estimate incremental F9 lift", "authorize outreach or live issuance", "claim representative usability"],
+  "writable_roots": ["contracts", "src/cre_foundry/vertical", "evals/public", "evals/known_bad/frontier", "artifacts/vertical", "artifacts/vertical-slice", "artifacts/evaluations", "docs/vertical", "scripts", "tasks", "control"],
+  "required_expertise": ["product_architecture", "identity_temporal", "routing_operations", "outcome_measurement", "testing_verification"],
+  "evaluator": ["strict route-day/event/outcome schemas and semantic validator", "deterministic source-to-outcome replay", "registered cross-layer mutations"],
+  "known_bad_cases": ["Stage-2 correction rewrites Stage-1 data", "protected stop enters route", "duplicate location enters route", "route manifest diverges from selected ten", "field event precedes issuance or targets an unselected stop", "immature outcome is relabeled as negative", "replay receipt digest mismatch"],
+  "acceptance": ["a ten-observation synthetic batch deterministically yields one exact-ten route-day manifest", "a one-observation batch deterministically yields ABSTAIN_NO_VALID_TEN and no route", "route and field events bind candidate snapshot, decision, policy, representative, and route day", "synthetic F9 maturity and event chronology are explicit", "full replay is byte-identical after source-order permutation", "every registered mutation is rejected"],
+  "artifacts": ["contracts/synthetic_route_day.schema.json", "contracts/synthetic_field_event.schema.json", "contracts/synthetic_f9_outcome.schema.json", "artifacts/vertical-slice/run_manifest.json", "scripts/validate_vertical_slice.py", "artifacts/evaluations/vertical_slice.json"],
+  "rollback": "Remove the route/event/outcome layer and retain the validated CONTRACT-001 and MATH-001 interfaces; no live effect exists.",
+  "stop_budget": "Remain synthetic and non-influencing; all real source, identity, protection, route, outcome, economics, and live-action evidence stays behind existing named gates."
+}

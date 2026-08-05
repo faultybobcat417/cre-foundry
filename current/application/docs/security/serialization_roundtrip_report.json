@@ -1,0 +1,18 @@
+{
+  "all_properties_passed": true,
+  "case_count": 4096,
+  "maximum_depth": 5,
+  "model_version": "cre-foundry-serialization-roundtrip-v1",
+  "negative_case_count": 5,
+  "rejected_negative_case_count": 5,
+  "rejected_negative_cases": [
+    "duplicate_key",
+    "invalid_utf8",
+    "nan",
+    "negative_infinity",
+    "positive_infinity"
+  ],
+  "seed": 20260728,
+  "stable_digest_count": 4096,
+  "successful_round_trip_count": 4096
+}

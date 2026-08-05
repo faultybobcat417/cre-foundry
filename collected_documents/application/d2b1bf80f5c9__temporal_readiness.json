@@ -1,0 +1,20 @@
+{
+  "approved_feature_definition_count": 0,
+  "approved_temporal_relation_count": 0,
+  "dataset_blocker_count": 15,
+  "dataset_build_execution_permitted": false,
+  "dataset_build_ready": false,
+  "feature_definition_count": 767,
+  "model_training_permitted": false,
+  "model_version": "cre-foundry-temporal-relation-review-v1",
+  "outreach_permitted": false,
+  "primitive_count": 1148,
+  "production_ranking_permitted": false,
+  "relation_count": 53,
+  "status_counts": {
+    "blocked_no_temporal_semantics": 15,
+    "review_multiple_temporal_candidates": 20,
+    "review_temporal_semantics": 18
+  }
+}
+TEMPORAL READINESS AUDIT PASSED

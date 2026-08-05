@@ -1,0 +1,16 @@
+{
+  "dry_run": true,
+  "enabled_stage_count": 10,
+  "manifest_path": "logs/data_plane/20260726T161411604918Z/manifest.json",
+  "policy": {
+    "automatic_conclusions": false,
+    "operating_mode": "shadow",
+    "opportunity_ranked": false,
+    "outreach_eligible": false,
+    "partial_success_allowed": false
+  },
+  "run_id": "20260726T161411604918Z",
+  "skipped_stage_count": 3,
+  "status": "dry_run_complete"
+}
+DATA-PLANE RUN PASSED

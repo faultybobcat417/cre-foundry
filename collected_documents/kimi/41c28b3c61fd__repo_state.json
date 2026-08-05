@@ -1,0 +1,550 @@
+{
+  "active_tasks": [],
+  "backup_files": {
+    "repository.bundle": {
+      "bytes": 1549959,
+      "sha256": "f9261f935ba486e07e7a91911c38ccc8f85c54afd1e1a015a4009281bc6e69d1"
+    },
+    "working-tree.tar.gz": {
+      "bytes": 1102893,
+      "sha256": "9bbe79e51a1f429af70fd750b08c038e004109dd8339d6c92217d824bf4ba4c9"
+    }
+  },
+  "branch": "main",
+  "completed_tasks": [],
+  "created_at": "2026-08-02T09:48:15.212390+00:00",
+  "current_state": {
+    "active_artifacts": [
+      "artifacts/research/research_completion_report.json",
+      "artifacts/research/bundle_manifest.json",
+      "artifacts/research/source_feasibility_registry.json",
+      "artifacts/research/source_reproduction_report.json",
+      "artifacts/context/current_task_packet.json",
+      "artifacts/math/MATH-001-start.json",
+      "artifacts/math/public_evaluator_contract.json",
+      "artifacts/math/formal_decisions.json",
+      "artifacts/math/estimand_registry.json",
+      "artifacts/math/human_authority_input_template.json",
+      "artifacts/evaluations/math_contracts.json",
+      "artifacts/task-results/MATH-001.json",
+      "artifacts/contracts/CONTRACT-001-start.json",
+      "artifacts/contracts/public_evaluator_contract.json",
+      "artifacts/contracts/contract_spine.json",
+      "artifacts/evaluations/contract_spine.json",
+      "artifacts/task-results/CONTRACT-001.json",
+      "artifacts/vertical/VERTICAL-001-start.json",
+      "artifacts/vertical/public_evaluator_contract.json",
+      "artifacts/vertical-slice/run_manifest.json",
+      "artifacts/evaluations/vertical_slice.json",
+      "artifacts/task-results/VERTICAL-001.json",
+      "control/AUTONOMOUS_FRONTIER_CONTRACT.json",
+      "artifacts/evaluations/autonomous_frontier_meta.json",
+      "artifacts/evaluations/autonomous_frontier_report.json",
+      "artifacts/outcomes/OUTCOMES-001-start.json",
+      "artifacts/outcomes/public_evaluator_contract.json",
+      "artifacts/outcomes/synthetic_window_policy.json",
+      "artifacts/outcomes/scenario_matrix.json",
+      "artifacts/outcomes/synthetic_input_ledger.json",
+      "artifacts/outcomes/canonical_run.json",
+      "artifacts/outcomes/itt_inclusion_cases.json",
+      "artifacts/outcomes/capability_classification_reconciliation.json",
+      "artifacts/evaluations/outcomes_synthetic.json",
+      "artifacts/task-results/OUTCOMES-001.json",
+      "artifacts/baselines/BASELINE-001-start.json",
+      "artifacts/baselines/public_evaluator_contract.json",
+      "artifacts/baselines/frozen_benchmark.json",
+      "artifacts/baselines/policy_registry.json",
+      "artifacts/baselines/canonical_run.json",
+      "artifacts/baselines/capability_classification_reconciliation.json",
+      "artifacts/models/model_registry.json",
+      "artifacts/evaluations/baseline_framework.json",
+      "artifacts/evaluations/baseline_model_synthetic.json",
+      "artifacts/task-results/BASELINE-001.json",
+      "artifacts/calibration/CALIBRATION-001-start.json",
+      "artifacts/calibration/public_evaluator_contract.json",
+      "artifacts/calibration/frozen_input.json",
+      "artifacts/calibration/canonical_run.json",
+      "artifacts/evaluations/calibration_framework.json",
+      "artifacts/evaluations/calibration_synthetic.json",
+      "artifacts/task-results/CALIBRATION-001.json",
+      "artifacts/architecture/ARCHITECTURE-001-start.json",
+      "artifacts/architecture/public_evaluator_contract.json"
+    ],
+    "autonomous_frontier": {
+      "blocked_external_gates": 0,
+      "failed_gates": 23,
+      "interpretation": "CALIBRATION-001 has a BLOCKED_EXTERNAL base after every autonomous PL5 prerequisite, 13 bounded properties, and 53 mutations pass. Its resolved result remains FAIL because AF-BASELINE-MODEL-001 is unresolved and historical calibration is external. ARCHITECTURE-001 and IDENTITY-001 remain executable, so positive-value autonomous work remains.",
+      "passing_gates": 0,
+      "result": "FAIL"
+    },
+    "blocked_tasks": [
+      "EVAL-001",
+      "ECONOMICS-001",
+      "SECURITY-001",
+      "OBSERVABILITY-001",
+      "REPLAY-001",
+      "ADVERSARIAL-001",
+      "EXTERNAL-READINESS-001",
+      "CONVERGENCE-001",
+      "SOURCE-PILOT-001",
+      "IDENTITY-CAL-001",
+      "ROUTE-CAL-001",
+      "POLICY-001",
+      "SHADOW-001"
+    ],
+    "checkpoint_commit": "55cc918db780bb52450388c69f28e26529ecf429",
+    "completed_tasks": [
+      "BOOTSTRAP-001",
+      "FRONTIER-001",
+      "RESEARCH-001",
+      "MATH-001",
+      "CONTRACT-001",
+      "VERTICAL-001",
+      "OUTCOMES-001",
+      "BASELINE-001",
+      "CALIBRATION-001"
+    ],
+    "current_milestone": "M02",
+    "current_task_id": "ARCHITECTURE-001",
+    "executable_tasks": [
+      "ARCHITECTURE-001",
+      "IDENTITY-001"
+    ],
+    "last_checkpoint": "CALIBRATION-001",
+    "live_permissions": false,
+    "open_gates": [
+      "GATE-SEALED-EVALUATOR-CUSTODY-001",
+      "GATE-HIDDEN-HOLDOUT-OWNER-001",
+      "approved_source_envelope",
+      "firm_economics_services_territories",
+      "GATE-EXPERIMENT-PROTOCOL-001",
+      "representative_origins_capacity_specialties",
+      "protected_account_bundle",
+      "approved_route_matrix",
+      "GATE-PUBLICATION-HISTORY-001",
+      "GATE-ENTITY-TRUTH-001",
+      "GATE-OUTCOME-LABELS-MATURITY-001",
+      "GATE-F9-OUTCOME-POLICY-AUTHORITY-001",
+      "GATE-OUTCOME-ADJUDICATION-CUSTODY-001",
+      "GATE-OUTCOME-MATURITY-EVIDENCE-001",
+      "GATE-BASELINE-REPLACEMENT-AUTHORITY-001",
+      "GATE-CALIBRATION-POLICY-AUTHORITY-001",
+      "GATE-FULL-EXTERNAL-EVIDENCE-001",
+      "GATE-MANUAL-REVIEW-AUTHORITY-001",
+      "GATE-LIVE-WORKFLOW-AUTHORITY-001",
+      "GATE-ACCESSIBILITY-EMPIRICAL-VALIDATION-001",
+      "GATE-REPRESENTATIVE-USABILITY-001",
+      "GATE-PRODUCTION-DEPLOYMENT-001"
+    ],
+    "phase": "application_architecture_hardening",
+    "project": "CRE Tip Sheet / CRE Foundry",
+    "repository": "/Users/alimehdi/Documents/cre",
+    "session": {
+      "codex_version": "0.145.0-alpha.18",
+      "last_turn_id": null,
+      "mode": "interactive",
+      "thread_id": null
+    },
+    "state_version": "1.0",
+    "unverified_claims": [
+      "sealed evaluator independence",
+      "external hidden holdout",
+      "application conformance",
+      "authorized representative source feasibility",
+      "candidate universe coverage",
+      "entity precision and conflict recall",
+      "historical signal value",
+      "route and service calibration",
+      "incremental F9 lift",
+      "commercial value",
+      "production readiness"
+    ],
+    "updated_at": "2026-08-02T09:11:30Z",
+    "verified_claims": [
+      "Project OS archive integrity",
+      "Project OS structural validation",
+      "greenfield repository access",
+      "repository public evaluator rejects the registered known-bad mutant",
+      "repository task graph is acyclic",
+      "autonomous-frontier evaluator executes registered negative controls and rejects false completion, builder-forged external trust, command bypass, dependency overcredit, open-gate completion, and task relabeling",
+      "RQ-001..RQ-012 and CLM-001..CLM-007 retain repository-authoritative meanings and bounded dispositions",
+      "official Ontario/Toronto metadata, schemas, OGL terms, and narrow counterexamples are exact-byte independently reproduced at public proof level 2",
+      "research and source-definition evaluators reject nine real artifact-copy mutations",
+      "bounded synthetic exact-ten decision semantics pass public formal, differential, property, and mutation evaluation at proof level 4",
+      "the strict synthetic observation-to-candidate-to-MATH contract spine and replay receipt pass public schema, semantic, mutation, rebound, and independent review at proof level 4",
+      "the deterministic synthetic source-to-route-to-field-to-outcome slice passes public schema, bounded replay, canonical reconstruction, maturity, chronology, seven registered mutations, and independent adversarial review at proof level 5",
+      "live permissions disabled",
+      "the strict synthetic F9 policy/input/assessment contracts, common-as-of maturity projection, ITT inclusion registry, active-evidence dedupe, correction/evidence lineage, 36 mutations, and three independent sweeps pass public proof level 5",
+      "five named baseline policies share one frozen point-in-time cohort, exact MATH projection, common label/metric/replacement semantics, 16-seed random schedule, 47 detected mutations, 91 public tests, and three independent clean sweeps at public proof level 5",
+      "the separately registered exact-rational synthetic probability head, whole-route validation fit, fixed bins, micro/macro metrics, missing/sparse/subgroup/temporal states, MATH abstention propagation, 13-part semantic property grid, 53 detected mutations, coordinated rehash resistance, 120 public tests, and three independent clean sweeps pass at public proof level 5"
+    ]
+  },
+  "current_task": {
+    "proof_target": 4,
+    "selected_reason": "CALIBRATION-001 reached public proof level 5; the thin vertical slice already exists, so ARCHITECTURE-001 is the earliest executable hardening task and unlocks SECURITY-001 and downstream observability/replay work.",
+    "started_at": "2026-08-02T09:11:30Z",
+    "status": "in_progress",
+    "task_id": "ARCHITECTURE-001",
+    "task_path": "tasks/ARCHITECTURE-001.json"
+  },
+  "dirty": true,
+  "gates": {
+    "gates": [
+      {
+        "blocks": [
+          "EVAL-001"
+        ],
+        "gate_id": "GATE-SEALED-EVALUATOR-CUSTODY-001",
+        "owner": "UNASSIGNED independent evaluator custodian",
+        "required_evidence": [
+          "exact private evaluator repository or service identifier outside this worktree",
+          "builder denied read/write/admin/bypass access",
+          "custodian-owned runner, signing key, and status publisher",
+          "signed attestation binding application SHA and evaluator version",
+          "independent verification of custody and restore procedure"
+        ],
+        "status": "OPEN_BLOCKING"
+      },
+      {
+        "blocks": [
+          "SHADOW-001",
+          "hidden-holdout claims",
+          "generalization promotion",
+          "M12",
+          "M13"
+        ],
+        "gate_id": "GATE-HIDDEN-HOLDOUT-OWNER-001",
+        "location": "UNASSIGNED external resource outside repository and Codex-readable context",
+        "owner": "UNASSIGNED independent holdout custodian",
+        "required_evidence": [
+          "named accountable custodian and role",
+          "exact external resource identifier",
+          "builder denied list/read/write/admin access",
+          "separate evaluator principal with audited read-only access",
+          "frozen holdout version retained externally",
+          "signed aggregate-result interface",
+          "contamination, rotation, retention, and breach policy"
+        ],
+        "status": "OPEN_BLOCKING"
+      },
+      {
+        "blocks": [
+          "SOURCE-PILOT-001"
+        ],
+        "gate_id": "approved_source_envelope",
+        "owner": "authorized source and firm custodian",
+        "required_evidence": [
+          "named pilot geography and representative route-day boundary approved by the firm",
+          "dataset-by-dataset terms, licence, automated-access, retention, and redistribution review",
+          "approved source identifiers and permitted fields for the pilot",
+          "approved handling policy for personal, confidential, paid, and access-controlled records",
+          "reproducible acquisition method and immutable raw-byte retention authority"
+        ],
+        "status": "OPEN_BLOCKING"
+      },
+      {
+        "blocks": [
+          "POLICY-001",
+          "commercial value claims"
+        ],
+        "gate_id": "firm_economics_services_territories",
+        "owner": "authorized firm decision-maker",
+        "status": "OPEN_BLOCKING"
+      },
+      {
+        "blocks": [
+          "confirmatory trial design",
+          "numeric power computation",
+          "randomized F9 promotion"
+        ],
+        "gate_id": "GATE-EXPERIMENT-PROTOCOL-001",
+        "owner": "authorized experimental protocol owner",
+        "required_evidence": [
+          "signed analysis family, sidedness, multiplicity, randomization-unit, estimator, and variance-model decisions",
+          "registered practical lift, alpha, target power, allocation, blocking, clustering, interference, adherence, substitution, attrition, and maturity policy",
+          "independent protocol review before numeric power computation or field assignment"
+        ],
+        "status": "OPEN_BLOCKING"
+      },
+      {
+        "blocks": [
+          "ROUTE-CAL-001"
+        ],
+        "gate_id": "representative_origins_capacity_specialties",
+        "owner": "authorized field-operations decision-maker",
+        "status": "OPEN_BLOCKING"
+      },
+      {
+        "blocks": [
+          "IDENTITY-CAL-001",
+          "live route issuance"
+        ],
+        "gate_id": "protected_account_bundle",
+        "owner": "authorized relationship/protected-account custodian",
+        "status": "OPEN_BLOCKING"
+      },
+      {
+        "blocks": [
+          "ROUTE-CAL-001"
+        ],
+        "gate_id": "approved_route_matrix",
+        "owner": "authorized route-provider and firm custodian",
+        "status": "OPEN_BLOCKING"
+      },
+      {
+        "blocks": [
+          "historical point-in-time source and feature claims"
+        ],
+        "gate_id": "GATE-PUBLICATION-HISTORY-001",
+        "owner": "authorized source-history custodian",
+        "required_evidence": [
+          "immutable historical source snapshots or independently measured public-availability logs",
+          "event/effective, publication, observation, retrieval, correction, and tombstone clocks",
+          "point-in-time reconstruction and future-leakage audit",
+          "schema-drift and historical-depth manifest"
+        ],
+        "status": "OPEN_BLOCKING"
+      },
+      {
+        "blocks": [
+          "IDENTITY-CAL-001",
+          "entity/location join accuracy claims"
+        ],
+        "gate_id": "GATE-ENTITY-TRUTH-001",
+        "owner": "authorized entity-resolution truth and adjudication custodian",
+        "required_evidence": [
+          "authorized immutable source observations with resource and snapshot lineage",
+          "blind temporal operating-business, unit, property, occupier, parent, and location adjudication sample",
+          "false-merge, false-split, conflict-recall, protected-account, and unresolved-case audit",
+          "predeclared ambiguity policy that fails closed for eligibility"
+        ],
+        "status": "OPEN_BLOCKING"
+      },
+      {
+        "blocks": [
+          "historical model and calibration claims",
+          "randomized F9 claims"
+        ],
+        "gate_id": "GATE-OUTCOME-LABELS-MATURITY-001",
+        "owner": "authorized firm outcome-data and adjudication custodian",
+        "required_evidence": [
+          "privacy-approved route, field, booking, attendance, requirement, mandate, transaction, and commission linkage",
+          "versioned F9 adjudication and deduplication policy",
+          "observation windows, maturity, censoring, competing-event, and attrition definitions",
+          "point-in-time label lineage and independent adjudication sample"
+        ],
+        "status": "OPEN_BLOCKING"
+      },
+      {
+        "blocks": [
+          "real F9 definition",
+          "real outcome window",
+          "real negative-maturity policy"
+        ],
+        "gate_id": "GATE-F9-OUTCOME-POLICY-AUTHORITY-001",
+        "owner": "authorized outcome-policy owner",
+        "required_evidence": [
+          "signed versioned F9 predicate preserving decision-maker/authorized-representative and current/credible-future requirement alternatives",
+          "route-day ITT anchor, outcome horizon, endpoint convention, reporting grace, and late-evidence rules",
+          "count unit, cross-route attribution, cancellation/reschedule/no-show, deduplication, correction, censoring, and competing-event policies",
+          "effective dates, rollback, and independent policy approval"
+        ],
+        "status": "OPEN_BLOCKING"
+      },
+      {
+        "blocks": [
+          "real outcome adjudication claims",
+          "historical label-quality promotion"
+        ],
+        "gate_id": "GATE-OUTCOME-ADJUDICATION-CUSTODY-001",
+        "owner": "authorized independent outcome-adjudication custodian",
+        "required_evidence": [
+          "named adjudication custodian and versioned rubric",
+          "blind adjudication sample, disagreement, escalation, and conflict-resolution protocol",
+          "signed aggregate audit binding source, policy, label, and application versions",
+          "builder cannot promote public synthetic adjudication as independent real adjudication"
+        ],
+        "status": "OPEN_BLOCKING"
+      },
+      {
+        "blocks": [
+          "real maturity claims",
+          "real censoring assumptions",
+          "baseline F9 rate and variance"
+        ],
+        "gate_id": "GATE-OUTCOME-MATURITY-EVIDENCE-001",
+        "owner": "authorized outcome-maturity measurement custodian",
+        "required_evidence": [
+          "cohort state counts and complete-through source watermarks",
+          "capture/reporting latency, censoring, competing-event, duplicate, conflict, and attrition distributions",
+          "maturity analysis under the authorized policy and point-in-time cutoffs",
+          "evidence that unavailable or late outcomes were not converted into negatives"
+        ],
+        "status": "OPEN_BLOCKING"
+      },
+      {
+        "blocks": [
+          "real minimum meaningful replacement margin",
+          "production model or policy replacement",
+          "live ranking promotion"
+        ],
+        "gate_id": "GATE-BASELINE-REPLACEMENT-AUTHORITY-001",
+        "owner": "authorized firm model-risk and commercial decision owner",
+        "required_evidence": [
+          "signed real minimum meaningful F9 and risk-adjusted value margin",
+          "authorized complexity, latency, cost, and operational-risk tradeoff policy",
+          "mature point-in-time historical and out-of-time evidence under the authorized outcome policy",
+          "independent review of subgroup, calibration, safety, abstention, and protected-account behavior",
+          "signed production replacement and rollback authority"
+        ],
+        "status": "OPEN_BLOCKING"
+      },
+      {
+        "blocks": [
+          "real calibration-bin and minimum-cell policy",
+          "real tolerance and subgroup comparison policy",
+          "empirical uncertainty and interval claims",
+          "production calibration or threshold promotion"
+        ],
+        "gate_id": "GATE-CALIBRATION-POLICY-AUTHORITY-001",
+        "owner": "authorized firm model-risk and calibration policy owner",
+        "required_evidence": [
+          "signed probability-target, binning, minimum-cell, fallback, tolerance, subgroup, and temporal-sensitivity policy",
+          "mature point-in-time historical validation and out-of-time evidence under the authorized outcome policy",
+          "registered uncertainty method with assumptions, coverage target, and multiplicity treatment",
+          "independent approval of calibration diagnostics, sparse-cell handling, abstention propagation, thresholds, and rollback",
+          "signed production calibration and promotion authority"
+        ],
+        "status": "OPEN_BLOCKING"
+      },
+      {
+        "blocks": [
+          "real manual-review overrides",
+          "production reviewer roles",
+          "authoritative workflow corrections"
+        ],
+        "gate_id": "GATE-MANUAL-REVIEW-AUTHORITY-001",
+        "owner": "authorized firm workflow-policy and compliance owner",
+        "required_evidence": [
+          "signed manual-review action allowlist and prohibited override policy",
+          "named reviewer roles, segregation of duties, escalation, expiry, and revocation rules",
+          "versioned evidence-acceptance and new-generation policy preserving frozen Stage 1",
+          "independent audit proving no review path bypasses protection, eligibility, MATH, lineage, or exact-ten-or-abstain"
+        ],
+        "status": "OPEN_BLOCKING"
+      },
+      {
+        "blocks": [
+          "live representative workflow",
+          "external route delivery",
+          "CRM or outreach writes"
+        ],
+        "gate_id": "GATE-LIVE-WORKFLOW-AUTHORITY-001",
+        "owner": "authorized firm operations, compliance, privacy, security, and representative-workflow owners",
+        "required_evidence": [
+          "signed live workflow scope, roles, capabilities, territories, and expiry",
+          "approved source, identity, protection, route, CRM, privacy, and outreach authority bindings",
+          "production authorization service and independent denial-by-default review",
+          "signed rollback, recall, incident, monitoring, and kill-switch procedures"
+        ],
+        "status": "OPEN_BLOCKING"
+      },
+      {
+        "blocks": [
+          "WCAG conformance claims",
+          "assistive-technology performance claims",
+          "accessibility effectiveness claims"
+        ],
+        "gate_id": "GATE-ACCESSIBILITY-EMPIRICAL-VALIDATION-001",
+        "owner": "qualified independent accessibility evaluation owner",
+        "required_evidence": [
+          "versioned rendered product and supported platform/browser/assistive-technology matrix",
+          "independent automated and manual accessibility audit against the authorized target standard",
+          "documented defects, severity, remediation, retest, and residual-risk acceptance",
+          "signed report binding product build, content, workflow, and evaluation versions"
+        ],
+        "status": "OPEN_BLOCKING"
+      },
+      {
+        "blocks": [
+          "representative usability claims",
+          "workflow adoption claims",
+          "field productivity claims"
+        ],
+        "gate_id": "GATE-REPRESENTATIVE-USABILITY-001",
+        "owner": "authorized field-operations research and representative-experience owner",
+        "required_evidence": [
+          "approved representative research protocol, consent, sampling, and success criteria",
+          "task-completion, error-recovery, comprehension, workload, and accessibility observations",
+          "documented abstention/error comprehension and safe-action behavior",
+          "signed findings binding workflow version and representative population"
+        ],
+        "status": "OPEN_BLOCKING"
+      },
+      {
+        "blocks": [
+          "production deployment",
+          "production atomicity or reliability claims",
+          "production credentials and infrastructure changes"
+        ],
+        "gate_id": "GATE-PRODUCTION-DEPLOYMENT-001",
+        "owner": "authorized firm engineering, security, privacy, risk, and operations release owners",
+        "required_evidence": [
+          "approved deployment topology, data classification, threat model, access controls, and credential custody",
+          "production-like transactional, concurrency, durability, restore, observability, load, and failure testing",
+          "signed change, rollback, recall, incident, backup, retention, and disaster-recovery procedures",
+          "independent release approval binding application, configuration, infrastructure, policy, and evaluator versions"
+        ],
+        "status": "OPEN_BLOCKING"
+      },
+      {
+        "blocks": [
+          "AUTONOMOUS_FRONTIER_PASS",
+          "causal F9 claims",
+          "realized net commercial value claims"
+        ],
+        "gate_id": "GATE-FULL-EXTERNAL-EVIDENCE-001",
+        "owner": "authorized firm, independent evaluator, holdout, field-operations, outcome, and finance custodians",
+        "required_evidence": [
+          "independently bound authorized source, protected-account, representative, route, and economics inputs",
+          "historical point-in-time evidence and out-of-time evaluation",
+          "prospective non-influencing shadow observations",
+          "preregistered randomized route-day ITT evidence for incremental F9",
+          "external hidden-holdout signed aggregate results and contamination controls",
+          "mature mandate, transaction, commission, incremental-cost, and realized net-value reconciliation"
+        ],
+        "status": "OPEN_BLOCKING"
+      }
+    ],
+    "version": "1.0"
+  },
+  "git_status_lines": [
+    "M artifacts/context/current_task_packet.json",
+    " M artifacts/context/current_task_packet.md",
+    " M control/CURRENT_STATE.json",
+    " M control/GATES.json",
+    " M scripts/compile_repository_task_context.py",
+    " M tasks/ARCHITECTURE-001.json",
+    "?? artifacts/architecture/public_evaluator_contract.json"
+  ],
+  "head": "aecb0fd68f2a0c722a781edd1a08cff9f59709e4",
+  "key_files_copied": [
+    "AGENTS.md",
+    "README.md",
+    "pyproject.toml",
+    "control/CURRENT_STATE.json",
+    "control/CURRENT_TASK.json",
+    "control/TASK_GRAPH.json",
+    "control/GATES.json",
+    "control/DECISIONS.md",
+    "control/AUTONOMOUS_FRONTIER_CONTRACT.json",
+    "artifacts/context/current_task_packet.json",
+    "artifacts/context/current_task_packet.md",
+    "artifacts/architecture/ARCHITECTURE-001-start.json",
+    "artifacts/architecture/public_evaluator_contract.json",
+    "artifacts/task-results/CALIBRATION-001.json"
+  ],
+  "key_files_missing": [],
+  "repository": "/Users/alimehdi/Documents/cre",
+  "task_status_counts": {}
+}

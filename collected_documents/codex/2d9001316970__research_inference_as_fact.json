@@ -1,0 +1,8 @@
+{
+  "case_id": "inference-as-fact",
+  "target": {"artifact": "claim_evidence_graph.json", "collection": "claims", "selector": {"field": "claim_id", "equals": "CLM-004"}, "field": "/classification"},
+  "operation": "replace",
+  "expected_before": "hypothesis",
+  "value": "fact",
+  "expected_diagnostic": "R001_INFERENCE_AS_FACT: CLM-004 lacks point-in-time fact-grade predictive evidence"
+}

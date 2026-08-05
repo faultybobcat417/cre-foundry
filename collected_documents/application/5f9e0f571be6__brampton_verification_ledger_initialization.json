@@ -1,0 +1,6 @@
+{
+  "append_only": true,
+  "event_count": 0,
+  "ledger_path": "data/control/operations.sqlite3"
+}
+BRAMPTON VERIFICATION LEDGER INITIALIZATION PASSED

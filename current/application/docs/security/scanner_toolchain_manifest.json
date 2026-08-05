@@ -1,0 +1,39 @@
+{
+  "model_version": "cre-foundry-scanner-toolchain-manifest-v1",
+  "tool_count": 4,
+  "tools": [
+    {
+      "expected_version": "1.9.4",
+      "installed_match": true,
+      "installed_version": "1.9.4",
+      "package": "bandit",
+      "reported_match": true,
+      "reported_version": "1.9.4"
+    },
+    {
+      "expected_version": "1.5.0",
+      "installed_match": true,
+      "installed_version": "1.5.0",
+      "package": "detect-secrets",
+      "reported_match": true,
+      "reported_version": "1.5.0"
+    },
+    {
+      "expected_version": "2.10.1",
+      "installed_match": true,
+      "installed_version": "2.10.1",
+      "package": "pip-audit",
+      "reported_match": true,
+      "reported_version": "2.10.1"
+    },
+    {
+      "expected_version": "5.5.5",
+      "installed_match": true,
+      "installed_version": "5.5.5",
+      "package": "pip-licenses",
+      "reported_match": true,
+      "reported_version": "5.5.5"
+    }
+  ],
+  "version_mismatch_count": 0
+}

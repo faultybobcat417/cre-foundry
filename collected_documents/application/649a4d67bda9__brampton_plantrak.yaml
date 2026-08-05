@@ -1,0 +1,23 @@
+source_id: brampton_plantrak
+name: City of Brampton Plantrak Summary
+base_url: https://mapsdev.brampton.ca/arcgis/rest/services/Plantrak/PlantrakSummary/MapServer
+access_state: review
+enabled: true
+request_timeout_seconds: 45
+batch_size: 100
+output_spatial_reference: 4326
+layers:
+- 0
+- 1
+- 2
+- 3
+- 4
+- 5
+- 6
+- 7
+- 8
+- 9
+base_cadence_minutes: 360
+minimum_cadence_minutes: 60
+maximum_cadence_minutes: 1440
+critical_source: false

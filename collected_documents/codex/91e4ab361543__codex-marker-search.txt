@@ -1,0 +1,99 @@
+AGENTS.md:14:- `control/AUTONOMOUS_FRONTIER_CONTRACT.json`: machine-verifiable completion and external-frontier gates. Narrative completion claims have no authority over its evaluator.
+artifacts/architecture/ARCHITECTURE-001-start.json:2:  "artifact_id": "ARCHITECTURE-001-START",
+artifacts/architecture/ARCHITECTURE-001-start.json:4:  "task_id": "ARCHITECTURE-001",
+artifacts/architecture/public_evaluator_contract.json:2:  "artifact_id": "ARCHITECTURE-001-PUBLIC-EVALUATOR-CONTRACT",
+artifacts/architecture/public_evaluator_contract.json:4:  "subject_task": "ARCHITECTURE-001",
+artifacts/architecture/public_evaluator_contract.json:407:  "implementation_gate": "Do not credit or begin material workflow implementation until this contract and its recursively closed schemas are independently swept and frozen. Do not credit ARCHITECTURE-001 until the black-box evaluator independently reconstructs every semantic output, executes the complete bounded grid, rejects every semantic negative control including executable bypass and coordinated-rehash cases, proves no live effect, and independent post-repair sweeps are clean."
+artifacts/context/current_task_packet.json:2:  "task_id": "ARCHITECTURE-001",
+artifacts/context/current_task_packet.json:53:      "path": "control/AUTONOMOUS_FRONTIER_CONTRACT.json",
+artifacts/context/current_task_packet.json:61:      "path": "tasks/ARCHITECTURE-001.json",
+artifacts/context/current_task_packet.json:65:      "path": "artifacts/architecture/ARCHITECTURE-001-start.json",
+artifacts/context/current_task_packet.md:799:  "current_task_id": "ARCHITECTURE-001",
+artifacts/context/current_task_packet.md:802:    "FRONTIER-001",
+artifacts/context/current_task_packet.md:812:    "ARCHITECTURE-001",
+artifacts/context/current_task_packet.md:911:    "control/AUTONOMOUS_FRONTIER_CONTRACT.json",
+artifacts/context/current_task_packet.md:941:    "artifacts/architecture/ARCHITECTURE-001-start.json",
+artifacts/context/current_task_packet.md:949:    "interpretation": "CALIBRATION-001 has a BLOCKED_EXTERNAL base after every autonomous PL5 prerequisite, 13 bounded properties, and 53 mutations pass. Its resolved result remains FAIL because AF-BASELINE-MODEL-001 is unresolved and historical calibration is external. ARCHITECTURE-001 and IDENTITY-001 remain executable, so positive-value autonomous work remains."
+artifacts/context/current_task_packet.md:961:  "task_id": "ARCHITECTURE-001",
+artifacts/context/current_task_packet.md:962:  "task_path": "tasks/ARCHITECTURE-001.json",
+artifacts/context/current_task_packet.md:964:  "selected_reason": "CALIBRATION-001 reached public proof level 5; the thin vertical slice already exists, so ARCHITECTURE-001 is the earliest executable hardening task and unlocks SECURITY-001 and downstream observability/replay work.",
+artifacts/context/current_task_packet.md:985:      "task_id": "FRONTIER-001",
+artifacts/context/current_task_packet.md:994:      "rollback": "Revert FRONTIER-001 artifacts and restore the preceding RESEARCH-001 checkpoint without changing mission or evidence claims."
+artifacts/context/current_task_packet.md:1000:        "FRONTIER-001"
+artifacts/context/current_task_packet.md:1113:      "task_id": "ARCHITECTURE-001",
+artifacts/context/current_task_packet.md:1128:        "ARCHITECTURE-001",
+artifacts/context/current_task_packet.md:1141:        "ARCHITECTURE-001",
+artifacts/context/current_task_packet.md:1544:      "blocks": ["AUTONOMOUS_FRONTIER_PASS", "causal F9 claims", "realized net commercial value claims"],
+artifacts/context/current_task_packet.md:1558:===== control/AUTONOMOUS_FRONTIER_CONTRACT.json =====
+artifacts/context/current_task_packet.md:3939:          "path": "control/AUTONOMOUS_FRONTIER_CONTRACT.json",
+artifacts/context/current_task_packet.md:4350:DEFAULT_CONTRACT = ROOT / "control/AUTONOMOUS_FRONTIER_CONTRACT.json"
+artifacts/context/current_task_packet.md:5438:===== tasks/ARCHITECTURE-001.json =====
+artifacts/context/current_task_packet.md:5440:  "task_id": "ARCHITECTURE-001",
+artifacts/context/current_task_packet.md:5455:  "artifacts": ["artifacts/architecture/ARCHITECTURE-001-start.json", "artifacts/architecture/public_evaluator_contract.json", "docs/architecture/BOUNDARIES.md", "scripts/validate_architecture.py", "artifacts/evaluations/architecture.json", "artifacts/task-results/ARCHITECTURE-001.json"],
+artifacts/context/current_task_packet.md:5460:===== artifacts/architecture/ARCHITECTURE-001-start.json =====
+artifacts/context/current_task_packet.md:5462:  "artifact_id": "ARCHITECTURE-001-START",
+artifacts/context/current_task_packet.md:5464:  "task_id": "ARCHITECTURE-001",
+artifacts/context/current_task_packet.md:5518:  "artifact_id": "ARCHITECTURE-001-PUBLIC-EVALUATOR-CONTRACT",
+artifacts/context/current_task_packet.md:5520:  "subject_task": "ARCHITECTURE-001",
+artifacts/context/current_task_packet.md:5923:  "implementation_gate": "Do not credit or begin material workflow implementation until this contract and its recursively closed schemas are independently swept and frozen. Do not credit ARCHITECTURE-001 until the black-box evaluator independently reconstructs every semantic output, executes the complete bounded grid, rejects every semantic negative control including executable bypass and coordinated-rehash cases, proves no live effect, and independent post-repair sweeps are clean."
+artifacts/context/current_task_packet.md:5933:    "to": "VERTICAL-001 completed at public proof level 5; OUTCOMES-001 selected in_progress; ARCHITECTURE-001 and IDENTITY-001 pending and executable",
+artifacts/context/current_task_packet.md:5949:    "control/AUTONOMOUS_FRONTIER_CONTRACT.json",
+artifacts/context/current_task_packet.md:5966:    "tasks/ARCHITECTURE-001.json",
+artifacts/evaluations/autonomous_frontier_meta.json:7:    {"path": "control/AUTONOMOUS_FRONTIER_CONTRACT.json", "sha256": "e00a0dc3358a06a1b559a849546f697fe04c2bb35c3a6914dee93852ac160900"},
+artifacts/task-results/BASELINE-001.json:7:    "to": "BASELINE-001 completed at public proof level 5; CALIBRATION-001 selected in_progress; ARCHITECTURE-001 and IDENTITY-001 remain executable",
+artifacts/task-results/BASELINE-001.json:26:    "control/AUTONOMOUS_FRONTIER_CONTRACT.json",
+artifacts/task-results/BASELINE-001.json:106:    {"evaluator_id": "autonomous-frontier", "result": "FAIL", "failed_gates": 23, "interpretation": "Positive-value autonomous work remains in CALIBRATION-001, ARCHITECTURE-001, and IDENTITY-001; the global frontier is not terminal."}
+artifacts/task-results/CALIBRATION-001.json:7:    "to": "CALIBRATION-001 completed at public proof level 5; ARCHITECTURE-001 selected in_progress; IDENTITY-001 remains executable",
+artifacts/task-results/CALIBRATION-001.json:21:    "control/AUTONOMOUS_FRONTIER_CONTRACT.json",
+artifacts/task-results/CALIBRATION-001.json:89:    "tasks/ARCHITECTURE-001.json",
+artifacts/task-results/CALIBRATION-001.json:93:    "artifacts/architecture/ARCHITECTURE-001-start.json"
+artifacts/task-results/CALIBRATION-001.json:110:    {"evaluator_id": "autonomous-frontier", "result": "FAIL", "failed_gates": 23, "interpretation": "Positive-value autonomous work remains in ARCHITECTURE-001 and IDENTITY-001; the frontier is not terminal."}
+artifacts/task-results/CALIBRATION-001.json:142:    "Select ARCHITECTURE-001 next because the thin vertical slice exists and architecture hardening is the earliest executable task that unlocks security and observability work."
+artifacts/task-results/CALIBRATION-001.json:162:  "next_action": "Begin ARCHITECTURE-001 by compiling repository-owned context, classifying boundary/workflow expertise, and freezing an independent public architecture evaluator before material implementation."
+artifacts/task-results/FRONTIER-001.json:2:  "task_id": "FRONTIER-001",
+artifacts/task-results/FRONTIER-001.json:7:    "to": "FRONTIER-001_completed_RESEARCH-001_in_progress",
+artifacts/task-results/FRONTIER-001.json:13:    "control/AUTONOMOUS_FRONTIER_CONTRACT.json",
+artifacts/task-results/FRONTIER-001.json:24:    "artifacts/task-results/FRONTIER-001.json",
+artifacts/task-results/FRONTIER-001.json:29:    "tasks/FRONTIER-001.json",
+artifacts/task-results/FRONTIER-001.json:163:    {"name": "autonomous frontier contract", "path": "control/AUTONOMOUS_FRONTIER_CONTRACT.json"},
+artifacts/task-results/FRONTIER-001.json:168:    {"name": "frontier task packet", "path": "tasks/FRONTIER-001.json"},
+artifacts/task-results/FRONTIER-001.json:172:  "rollback": "The rollback baseline is commit 04e2581928eb701b8a4b4ab558cebfe19b9b4b1a. Revert the coherent FRONTIER-001 checkpoint to restore the accepted RESEARCH-001 state; do not weaken mission, proof, authority, evaluator-independence, or claim-ceiling rules.",
+artifacts/task-results/MATH-001.json:20:    "control/AUTONOMOUS_FRONTIER_CONTRACT.json",
+artifacts/task-results/OUTCOMES-001.json:7:    "to": "OUTCOMES-001 completed at public proof level 5; BASELINE-001 selected in_progress; ARCHITECTURE-001 and IDENTITY-001 remain pending and executable",
+artifacts/task-results/OUTCOMES-001.json:27:    "control/AUTONOMOUS_FRONTIER_CONTRACT.json",
+artifacts/task-results/RESEARCH-001.json:42:    "control/AUTONOMOUS_FRONTIER_CONTRACT.json",
+artifacts/task-results/VERTICAL-001.json:7:    "to": "VERTICAL-001 completed at public proof level 5; OUTCOMES-001 selected in_progress; ARCHITECTURE-001 and IDENTITY-001 pending and executable",
+artifacts/task-results/VERTICAL-001.json:23:    "control/AUTONOMOUS_FRONTIER_CONTRACT.json",
+artifacts/task-results/VERTICAL-001.json:40:    "tasks/ARCHITECTURE-001.json",
+control/AUTONOMOUS_FRONTIER_CONTRACT.json:2381:          "path": "control/AUTONOMOUS_FRONTIER_CONTRACT.json",
+control/CURRENT_STATE.json:8:  "current_task_id": "ARCHITECTURE-001",
+control/CURRENT_STATE.json:11:    "FRONTIER-001",
+control/CURRENT_STATE.json:21:    "ARCHITECTURE-001",
+control/CURRENT_STATE.json:120:    "control/AUTONOMOUS_FRONTIER_CONTRACT.json",
+control/CURRENT_STATE.json:150:    "artifacts/architecture/ARCHITECTURE-001-start.json",
+control/CURRENT_STATE.json:158:    "interpretation": "CALIBRATION-001 has a BLOCKED_EXTERNAL base after every autonomous PL5 prerequisite, 13 bounded properties, and 53 mutations pass. Its resolved result remains FAIL because AF-BASELINE-MODEL-001 is unresolved and historical calibration is external. ARCHITECTURE-001 and IDENTITY-001 remain executable, so positive-value autonomous work remains."
+control/CURRENT_TASK.json:2:  "task_id": "ARCHITECTURE-001",
+control/CURRENT_TASK.json:3:  "task_path": "tasks/ARCHITECTURE-001.json",
+control/CURRENT_TASK.json:5:  "selected_reason": "CALIBRATION-001 reached public proof level 5; the thin vertical slice already exists, so ARCHITECTURE-001 is the earliest executable hardening task and unlocks SECURITY-001 and downstream observability/replay work.",
+control/GATES.json:250:      "blocks": ["AUTONOMOUS_FRONTIER_PASS", "causal F9 claims", "realized net commercial value claims"],
+control/TASK_GRAPH.json:16:      "task_id": "FRONTIER-001",
+control/TASK_GRAPH.json:25:      "rollback": "Revert FRONTIER-001 artifacts and restore the preceding RESEARCH-001 checkpoint without changing mission or evidence claims."
+control/TASK_GRAPH.json:31:        "FRONTIER-001"
+control/TASK_GRAPH.json:144:      "task_id": "ARCHITECTURE-001",
+control/TASK_GRAPH.json:159:        "ARCHITECTURE-001",
+control/TASK_GRAPH.json:172:        "ARCHITECTURE-001",
+scripts/compile_repository_task_context.py:25:    ROOT / "control/AUTONOMOUS_FRONTIER_CONTRACT.json",
+scripts/compile_repository_task_context.py:143:    "ARCHITECTURE-001": [
+scripts/compile_repository_task_context.py:144:        ROOT / "tasks/ARCHITECTURE-001.json",
+scripts/compile_repository_task_context.py:145:        ROOT / "artifacts/architecture/ARCHITECTURE-001-start.json",
+scripts/evaluate_autonomous_frontier.py:26:DEFAULT_CONTRACT = ROOT / "control/AUTONOMOUS_FRONTIER_CONTRACT.json"
+scripts/validate_control_plane.py:36:    required = {"BOOTSTRAP-001", "FRONTIER-001", "RESEARCH-001", "EVAL-001", "MATH-001", "VERTICAL-001"}
+scripts/validate_control_plane.py:120:        "control/AUTONOMOUS_FRONTIER_CONTRACT.json",
+scripts/validate_control_plane.py:124:        "tasks/FRONTIER-001.json",
+scripts/validate_control_plane.py:208:            load("control/AUTONOMOUS_FRONTIER_CONTRACT.json")
+tasks/ARCHITECTURE-001.json:2:  "task_id": "ARCHITECTURE-001",
+tasks/ARCHITECTURE-001.json:17:  "artifacts": ["artifacts/architecture/ARCHITECTURE-001-start.json", "artifacts/architecture/public_evaluator_contract.json", "docs/architecture/BOUNDARIES.md", "scripts/validate_architecture.py", "artifacts/evaluations/architecture.json", "artifacts/task-results/ARCHITECTURE-001.json"],
+tasks/FRONTIER-001.json:2:  "task_id": "FRONTIER-001",
+tasks/FRONTIER-001.json:17:  "artifacts": ["control/AUTONOMOUS_FRONTIER_CONTRACT.json", "contracts/autonomous_frontier_contract.schema.json", "scripts/evaluate_autonomous_frontier.py", "artifacts/evaluations/autonomous_frontier_meta.json", "artifacts/evaluations/autonomous_frontier_report.json"],
+tasks/FRONTIER-001.json:18:  "rollback": "Revert the FRONTIER-001 checkpoint to the prior RESEARCH-001 commit; do not remove or weaken mission/proof/external-authority constraints.",
+tasks/RESEARCH-001.json:7:  "dependencies": ["FRONTIER-001"],

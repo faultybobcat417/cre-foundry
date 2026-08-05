@@ -1,0 +1,5 @@
+{
+  "case_id": "forged-stopper-evidence",
+  "mutation_id": "forged_stopper_evidence",
+  "expected_diagnostic": "OUTCOMES-STOPPER-EVIDENCE-DIGEST"
+}

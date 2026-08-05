@@ -1,0 +1,112 @@
+{
+  "automatic_registration_performed": false,
+  "configured_source_count": 4,
+  "contract_path": "docs/data_contracts/source_snapshot_bootstrap.json",
+  "exact_candidate_count": 3,
+  "exact_candidates": [
+    {
+      "path": "/Users/alimehdi/Projects/comfiance/cre-foundry/data/bronze/statscan_odbus_2023/2026/07/26/RUN-20260726T024102Z-16fb53d196/manifest.json",
+      "path_column": "manifest_path",
+      "provenance": "source_runs_explicit_path",
+      "size_bytes": 3811,
+      "source_id": "statscan_odbus_2023"
+    },
+    {
+      "path": "/Users/alimehdi/Projects/comfiance/cre-foundry/data/bronze/brampton_building_permits/2026/07/26/RUN-20260726T033516Z-e1388f64b1/manifest.json",
+      "path_column": "manifest_path",
+      "provenance": "source_runs_explicit_path",
+      "size_bytes": 1086,
+      "source_id": "brampton_building_permits"
+    },
+    {
+      "path": "/Users/alimehdi/Projects/comfiance/cre-foundry/data/bronze/brampton_business_directory/2026/07/26/RUN-20260726T040418Z-b394f90ee8/manifest.json",
+      "path_column": "manifest_path",
+      "provenance": "source_runs_explicit_path",
+      "size_bytes": 1101,
+      "source_id": "brampton_business_directory"
+    }
+  ],
+  "generated_at": "2026-07-26T17:06:43.921904Z",
+  "model_version": "cre-foundry-source-bootstrap-v1",
+  "path_columns": [
+    "manifest_path"
+  ],
+  "policy": {
+    "ambiguous_files_not_registered": true,
+    "exact_source_attribution_required": true,
+    "explicit_file_path_required": true,
+    "operating_mode": "shadow"
+  },
+  "rejected_candidate_count": 0,
+  "rejected_candidates": [],
+  "review_required_before_registration": true,
+  "source_id_column": "source_id",
+  "source_run_count": 6,
+  "source_runs_columns": [
+    "run_id",
+    "source_id",
+    "run_type",
+    "status",
+    "started_at",
+    "completed_at",
+    "as_of_timestamp",
+    "records_observed",
+    "bytes_written",
+    "schema_changed",
+    "manifest_path",
+    "metadata_json",
+    "error_type",
+    "error_message",
+    "host_name",
+    "process_id"
+  ],
+  "storage_inventory": [
+    {
+      "file_count": 0,
+      "files": [],
+      "root": "data/raw"
+    },
+    {
+      "file_count": 6,
+      "files": [
+        {
+          "path": "data/bronze/brampton_building_permits/2026/07/26/RUN-20260726T033516Z-e1388f64b1/layer_0_bae5f22db1bef14b.geojson.gz",
+          "size_bytes": 336333,
+          "suffix": ".gz"
+        },
+        {
+          "path": "data/bronze/brampton_building_permits/2026/07/26/RUN-20260726T033516Z-e1388f64b1/manifest.json",
+          "size_bytes": 1086,
+          "suffix": ".json"
+        },
+        {
+          "path": "data/bronze/brampton_business_directory/2026/07/26/RUN-20260726T040418Z-b394f90ee8/layer_0_0c90be8f6d4c89fe.geojson.gz",
+          "size_bytes": 1063904,
+          "suffix": ".gz"
+        },
+        {
+          "path": "data/bronze/brampton_business_directory/2026/07/26/RUN-20260726T040418Z-b394f90ee8/manifest.json",
+          "size_bytes": 1101,
+          "suffix": ".json"
+        },
+        {
+          "path": "data/bronze/statscan_odbus_2023/2026/07/26/RUN-20260726T024102Z-16fb53d196/ODBus_2023_0ec6388eb16584d0.zip",
+          "size_bytes": 21860048,
+          "suffix": ".zip"
+        },
+        {
+          "path": "data/bronze/statscan_odbus_2023/2026/07/26/RUN-20260726T024102Z-16fb53d196/manifest.json",
+          "size_bytes": 3811,
+          "suffix": ".json"
+        }
+      ],
+      "root": "data/bronze"
+    },
+    {
+      "file_count": 0,
+      "files": [],
+      "root": "data/landing"
+    }
+  ]
+}
+SOURCE SNAPSHOT BOOTSTRAP PLAN PASSED

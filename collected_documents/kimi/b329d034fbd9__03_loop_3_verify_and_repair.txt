@@ -1,0 +1,25 @@
+Perform an independent final verification of the SECURITY-001 checkpoint in
+this isolated worktree.
+
+Use read-only explore/reviewer sub-agents for separate checks of:
+
+1. evaluator independence and frozen-contract integrity;
+2. mutation completeness and diagnostic registration;
+3. material security behavior and fail-closed defaults;
+4. temporal/provenance/claim-ceiling correctness;
+5. regression, control-state truth and protected-file safety.
+
+Do not use a broad swarm for implementation. Aggregate the reviews, reproduce
+every supported finding locally, repair only confirmed defects, and rerun:
+
+- Security validator twice with byte-stability comparison;
+- direct Security public tests;
+- full public test suite;
+- control-plane validator;
+- Python compile checks;
+- git diff --check;
+- protected readiness hash and untracked-state check.
+
+Require a clean tracked worktree, no staged protected readiness file, truthful
+task result, coherent commits and a continuation packet. Never push. Stop after
+SECURITY-001; do not begin another task.

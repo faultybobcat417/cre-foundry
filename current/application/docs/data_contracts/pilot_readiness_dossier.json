@@ -1,0 +1,124 @@
+{
+  "bootstrap_state": {
+    "blocked_review_count": 0,
+    "candidate_count": 3,
+    "human_approval_required": true,
+    "registration_execution_count": 0,
+    "review_ready_count": 3
+  },
+  "browser_state": {
+    "design_pending_count": 1,
+    "executable_count": 0,
+    "recipe_count": 1
+  },
+  "capabilities": {
+    "browser_acquisition": "design_pending",
+    "manual_verification_workflow": "complete",
+    "outreach": "disabled",
+    "pilot_execution": "blocked_by_client_inputs",
+    "predictive_validation": "not_started",
+    "production_ranking": "disabled",
+    "research_foundation": "complete",
+    "scheduled_acquisition": "disabled_pending_cadence",
+    "snapshot_registration": "human_review_required"
+  },
+  "client_inputs": [
+    {
+      "description": "Exact event defining a successful pilot result.",
+      "input_id": "pilot_success_event",
+      "provided": false
+    },
+    {
+      "description": "Commission, transaction-size, service-mix and cycle-time ranges.",
+      "input_id": "transaction_economics",
+      "provided": false
+    },
+    {
+      "description": "Representative territories, capacity, specializations and existing relationships.",
+      "input_id": "pilot_representatives",
+      "provided": false
+    },
+    {
+      "description": "Clients, protected relationships, conflicts, active assignments and do-not-contact accounts.",
+      "input_id": "protected_accounts_and_exclusions",
+      "provided": false
+    },
+    {
+      "description": "Approved spreadsheet, CRM, browser, mobile or local-application workflow.",
+      "input_id": "operating_environment",
+      "provided": false
+    }
+  ],
+  "contract_paths": {
+    "json": "docs/data_contracts/pilot_readiness_dossier.json",
+    "markdown": "docs/data_contracts/pilot_readiness_dossier.md"
+  },
+  "data_state": {
+    "primitive_count": 1148,
+    "profiled_primitive_count": 1148,
+    "profiled_relation_count": 53,
+    "quality_issue_count": 131,
+    "quality_safety_violation_count": 0,
+    "relation_count": 53
+  },
+  "manual_verification_workflow_ready": true,
+  "missing_client_input_count": 5,
+  "missing_client_input_ids": [
+    "pilot_success_event",
+    "transaction_economics",
+    "pilot_representatives",
+    "protected_accounts_and_exclusions",
+    "operating_environment"
+  ],
+  "model_version": "cre-foundry-pilot-readiness-v1",
+  "next_actions": [
+    "Resolve the five authoritative client inputs.",
+    "Review the exact bootstrap packets.",
+    "Approve source-specific freshness and cadence.",
+    "Complete one deterministic PlanTrak browser recipe.",
+    "Begin shadow-mode outcome collection.",
+    "Validate predictive usefulness before ranking."
+  ],
+  "outreach_ready": false,
+  "overall_status": "foundation_ready_for_controlled_next_steps",
+  "pilot_execution_ready": false,
+  "policy": {
+    "automatic_acquisition": false,
+    "automatic_conclusions": false,
+    "browser_execution": false,
+    "computer_vision_execution": false,
+    "operating_mode": "shadow",
+    "opportunity_ranked": false,
+    "outreach_eligible": false,
+    "read_only": true
+  },
+  "production_ranking_ready": false,
+  "research_foundation_ready": true,
+  "safety_counts_zero": true,
+  "source_state": {
+    "automatic_execution_count": 0,
+    "browser_execution_count": 0,
+    "computer_vision_execution_count": 0,
+    "configured_source_count": 4,
+    "enabled_schedule_count": 0,
+    "freshness_configured_count": 0
+  },
+  "verification_state": {
+    "task_metrics": {
+      "exists": true,
+      "opportunity_ranked_true": 0,
+      "outreach_eligible_true": 0,
+      "relation": "brampton_verification_task_state",
+      "row_count": 319,
+      "schema": "control"
+    },
+    "workflow_metrics": {
+      "exists": true,
+      "opportunity_ranked_true": 0,
+      "outreach_eligible_true": 0,
+      "relation": "brampton_verification_workflow_state",
+      "row_count": 30,
+      "schema": "control"
+    }
+  }
+}

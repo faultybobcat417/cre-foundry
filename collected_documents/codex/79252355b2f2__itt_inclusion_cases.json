@@ -1,0 +1,29 @@
+{
+  "artifact_id": "OUTCOMES-001-ITT-INCLUSION-CASES",
+  "cases": [
+    {
+      "adherence_state": "ADHERENT_SYNTHETIC",
+      "assignment_result": "ISSUE",
+      "case_id": "ISSUE_ADHERENT",
+      "include_in_itt": true
+    },
+    {
+      "adherence_state": "NONADHERENT_SYNTHETIC",
+      "assignment_result": "ISSUE",
+      "case_id": "ISSUE_NONADHERENT",
+      "include_in_itt": true
+    },
+    {
+      "adherence_state": "NO_ROUTE_ISSUED",
+      "assignment_result": "ABSTAIN_NO_VALID_TEN",
+      "case_id": "ABSTAIN_ROUTE_DAY",
+      "include_in_itt": true
+    }
+  ],
+  "claim": "Assignment inclusion only; outcome maturity and counts require separately adjudicated evidence.",
+  "execution_scope": "SYNTHETIC_NON_INFLUENCING",
+  "outcome_count_claimed": false,
+  "policy_sha256": "9dc662f6afdd9bf2b1eeed4224eb782e96437263051eb421d0625025f5005e31",
+  "primary_estimand_unit": "REPRESENTATIVE_ROUTE_DAY_ITT",
+  "schema_version": "1.0.0"
+}

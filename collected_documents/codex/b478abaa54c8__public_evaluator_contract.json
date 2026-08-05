@@ -1,0 +1,40 @@
+{
+  "schema_version": "1.0.0",
+  "task_id": "VERTICAL-001",
+  "execution_scope": "SYNTHETIC_NON_INFLUENCING",
+  "evaluator_id": "vertical-slice-public-v1",
+  "proof_target": 5,
+  "subject_set": [
+    "contracts/synthetic_route_day.schema.json",
+    "contracts/synthetic_field_event.schema.json",
+    "contracts/synthetic_f9_outcome.schema.json",
+    "src/cre_foundry/vertical/shadow_slice.py",
+    "evals/public/vertical_slice_evaluator.py",
+    "evals/public/test_vertical_slice.py",
+    "scripts/validate_vertical_slice.py",
+    "artifacts/vertical-slice/run_manifest.json"
+  ],
+  "required_assertions": [
+    "an upstream ISSUE maps to exactly ten distinct issued stops and an upstream abstention maps to no route or field events",
+    "route stops exactly equal the upstream selected candidate and physical-location pairs",
+    "route ordering is deterministic and explicitly not a calibrated travel route",
+    "every field event targets one issued stop and occurs after issuance on the bound route day",
+    "every outcome assessment binds an immutable field-event digest and cannot alter Stage-1 artifacts",
+    "F9_CONFIRMED_SYNTHETIC requires synthetic requirement evidence, a relevant decision-maker, a scheduled senior-realtor conversation, supporting evidence, and synthetic adjudication",
+    "IMMATURE_UNKNOWN, CENSORED_UNKNOWN, CONFLICTED_UNKNOWN, and UNKNOWN are never counted as negative or positive outcomes",
+    "all documents bind schema, source snapshot, candidate snapshot, decision, policy, representative, route day, owner, clocks, quality, and replay identity",
+    "replay from the supplied observation batch is canonical-byte identical after source-order permutation",
+    "real feasibility, empirical outcome, live outreach, and commercial claims remain false"
+  ],
+  "registered_mutations": [
+    {"mutation_id": "stage2_rewrite", "expected_diagnostic": "VERTICAL-STAGE1-REWRITE"},
+    {"mutation_id": "protected_stop_issued", "expected_diagnostic": "VERTICAL-ROUTE-PROTECTED-STOP"},
+    {"mutation_id": "duplicate_stop_issued", "expected_diagnostic": "VERTICAL-ROUTE-DUPLICATE-LOCATION"},
+    {"mutation_id": "route_selection_mismatch", "expected_diagnostic": "VERTICAL-ROUTE-SELECTION-MISMATCH"},
+    {"mutation_id": "field_event_before_issuance", "expected_diagnostic": "VERTICAL-FIELD-BEFORE-ISSUANCE"},
+    {"mutation_id": "immature_outcome_counted", "expected_diagnostic": "VERTICAL-F9-IMMATURE-RELABELED"},
+    {"mutation_id": "replay_receipt_mismatch", "expected_diagnostic": "VERTICAL-REPLAY-RECEIPT-MISMATCH"}
+  ],
+  "pass_rule": "All assertions pass, every registered mutation yields its exact diagnostic, the ISSUE and ABSTAIN paths both replay, and the proof claim remains synthetic and non-influencing.",
+  "claim_ceiling": "Synthetic integration proof only; no real route, outreach, appointment, lift, value, usability, or production claim."
+}

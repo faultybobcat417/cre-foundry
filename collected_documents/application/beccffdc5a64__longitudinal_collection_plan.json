@@ -1,0 +1,154 @@
+{
+  "automatic_acquisition_execution_count": 0,
+  "collection_ready_source_count": 0,
+  "historical_backfill_execution_count": 0,
+  "model_training_execution_count": 0,
+  "model_version": "cre-foundry-longitudinal-collection-plan-v1",
+  "outreach_execution_count": 0,
+  "parser_evidence_source_count": 3,
+  "point_in_time_dataset_execution_count": 0,
+  "production_ranking_execution_count": 0,
+  "schedule_activation_count": 0,
+  "snapshot_registration_execution_count": 0,
+  "source_count": 4,
+  "source_plans": [
+    {
+      "automatic_acquisition_approved": false,
+      "candidate_history_months": 24,
+      "candidate_minimum_snapshots": 24,
+      "candidate_record_keys": [
+        "PERMITNUMBER",
+        "OBJECTID",
+        "GIS_ID"
+      ],
+      "candidate_temporal_fields": [
+        "INDATE",
+        "ISSUEDATE",
+        "PROCESSDATE",
+        "EXPIRYDATE"
+      ],
+      "capture_policy": "publication_aligned_change_detection",
+      "capture_policy_approved": false,
+      "change_types": [
+        "record_added",
+        "record_removed",
+        "status_changed",
+        "issue_date_changed",
+        "expiry_date_changed",
+        "work_description_changed",
+        "address_changed",
+        "geometry_presence_changed"
+      ],
+      "collection_execution_count": 0,
+      "collection_ready": false,
+      "historical_backfill_approved": false,
+      "parser_contract_approved": false,
+      "parser_evidence_available": true,
+      "record_key_approved": false,
+      "schedule_activation_approved": false,
+      "schema_contract_approved": false,
+      "snapshot_registration_count": 0,
+      "source_id": "brampton_building_permits",
+      "temporal_fields_approved": false
+    },
+    {
+      "automatic_acquisition_approved": false,
+      "candidate_history_months": 24,
+      "candidate_minimum_snapshots": 24,
+      "candidate_record_keys": [
+        "GLOBALID",
+        "OBJECTID"
+      ],
+      "candidate_temporal_fields": [
+        "DATE_EST_IN_CITY",
+        "STARTED_IN_CITY"
+      ],
+      "capture_policy": "publication_aligned_change_detection",
+      "capture_policy_approved": false,
+      "change_types": [
+        "record_added",
+        "record_removed",
+        "operational_status_changed",
+        "employee_group_changed",
+        "address_changed",
+        "business_name_changed",
+        "naics_changed",
+        "floor_area_changed",
+        "contact_channel_changed",
+        "geometry_presence_changed"
+      ],
+      "collection_execution_count": 0,
+      "collection_ready": false,
+      "historical_backfill_approved": false,
+      "parser_contract_approved": false,
+      "parser_evidence_available": true,
+      "record_key_approved": false,
+      "schedule_activation_approved": false,
+      "schema_contract_approved": false,
+      "snapshot_registration_count": 0,
+      "source_id": "brampton_business_directory",
+      "temporal_fields_approved": false
+    },
+    {
+      "automatic_acquisition_approved": false,
+      "candidate_history_months": 24,
+      "candidate_minimum_snapshots": 24,
+      "candidate_record_keys": [],
+      "candidate_temporal_fields": [],
+      "capture_policy": "authorization_and_schema_required",
+      "capture_policy_approved": false,
+      "change_types": [
+        "application_added",
+        "application_removed",
+        "application_status_changed",
+        "decision_changed",
+        "property_scope_changed"
+      ],
+      "collection_execution_count": 0,
+      "collection_ready": false,
+      "historical_backfill_approved": false,
+      "parser_contract_approved": false,
+      "parser_evidence_available": false,
+      "record_key_approved": false,
+      "schedule_activation_approved": false,
+      "schema_contract_approved": false,
+      "snapshot_registration_count": 0,
+      "source_id": "brampton_plantrak",
+      "temporal_fields_approved": false
+    },
+    {
+      "automatic_acquisition_approved": false,
+      "candidate_history_months": 36,
+      "candidate_minimum_snapshots": 3,
+      "candidate_record_keys": [
+        "idx",
+        "business_id_no",
+        "licence_number"
+      ],
+      "candidate_temporal_fields": [],
+      "capture_policy": "official_release_aligned",
+      "capture_policy_approved": false,
+      "change_types": [
+        "record_added",
+        "record_removed",
+        "business_status_changed",
+        "employee_count_changed",
+        "address_changed",
+        "naics_changed",
+        "provider_changed",
+        "geocode_changed"
+      ],
+      "collection_execution_count": 0,
+      "collection_ready": false,
+      "historical_backfill_approved": false,
+      "parser_contract_approved": false,
+      "parser_evidence_available": true,
+      "record_key_approved": false,
+      "schedule_activation_approved": false,
+      "schema_contract_approved": false,
+      "snapshot_registration_count": 0,
+      "source_id": "statscan_odbus_2023",
+      "temporal_fields_approved": false
+    }
+  ]
+}

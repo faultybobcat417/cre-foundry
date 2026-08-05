@@ -1,0 +1,2101 @@
+{
+  "employee_distribution": [
+    {
+      "candidate_family": "construction",
+      "employee_band": "zero",
+      "entities": 2
+    },
+    {
+      "candidate_family": "construction",
+      "employee_band": "1-4",
+      "entities": 440
+    },
+    {
+      "candidate_family": "construction",
+      "employee_band": "5-9",
+      "entities": 244
+    },
+    {
+      "candidate_family": "construction",
+      "employee_band": "10-19",
+      "entities": 159
+    },
+    {
+      "candidate_family": "construction",
+      "employee_band": "20-49",
+      "entities": 122
+    },
+    {
+      "candidate_family": "construction",
+      "employee_band": "50-99",
+      "entities": 45
+    },
+    {
+      "candidate_family": "construction",
+      "employee_band": "100-199",
+      "entities": 16
+    },
+    {
+      "candidate_family": "construction",
+      "employee_band": "200-499",
+      "entities": 4
+    },
+    {
+      "candidate_family": "construction",
+      "employee_band": "500+",
+      "entities": 2
+    },
+    {
+      "candidate_family": "construction",
+      "employee_band": "unknown",
+      "entities": 1013
+    },
+    {
+      "candidate_family": "industrial_support",
+      "employee_band": "1-4",
+      "entities": 430
+    },
+    {
+      "candidate_family": "industrial_support",
+      "employee_band": "5-9",
+      "entities": 181
+    },
+    {
+      "candidate_family": "industrial_support",
+      "employee_band": "10-19",
+      "entities": 120
+    },
+    {
+      "candidate_family": "industrial_support",
+      "employee_band": "20-49",
+      "entities": 94
+    },
+    {
+      "candidate_family": "industrial_support",
+      "employee_band": "50-99",
+      "entities": 39
+    },
+    {
+      "candidate_family": "industrial_support",
+      "employee_band": "100-199",
+      "entities": 33
+    },
+    {
+      "candidate_family": "industrial_support",
+      "employee_band": "200-499",
+      "entities": 8
+    },
+    {
+      "candidate_family": "industrial_support",
+      "employee_band": "unknown",
+      "entities": 32
+    },
+    {
+      "candidate_family": "manufacturing",
+      "employee_band": "1-4",
+      "entities": 992
+    },
+    {
+      "candidate_family": "manufacturing",
+      "employee_band": "5-9",
+      "entities": 508
+    },
+    {
+      "candidate_family": "manufacturing",
+      "employee_band": "10-19",
+      "entities": 482
+    },
+    {
+      "candidate_family": "manufacturing",
+      "employee_band": "20-49",
+      "entities": 397
+    },
+    {
+      "candidate_family": "manufacturing",
+      "employee_band": "50-99",
+      "entities": 199
+    },
+    {
+      "candidate_family": "manufacturing",
+      "employee_band": "100-199",
+      "entities": 158
+    },
+    {
+      "candidate_family": "manufacturing",
+      "employee_band": "200-499",
+      "entities": 44
+    },
+    {
+      "candidate_family": "manufacturing",
+      "employee_band": "500+",
+      "entities": 15
+    },
+    {
+      "candidate_family": "manufacturing",
+      "employee_band": "unknown",
+      "entities": 87
+    },
+    {
+      "candidate_family": "mining_extraction",
+      "employee_band": "1-4",
+      "entities": 2
+    },
+    {
+      "candidate_family": "mining_extraction",
+      "employee_band": "20-49",
+      "entities": 2
+    },
+    {
+      "candidate_family": "mining_extraction",
+      "employee_band": "50-99",
+      "entities": 1
+    },
+    {
+      "candidate_family": "transport_warehousing",
+      "employee_band": "1-4",
+      "entities": 360
+    },
+    {
+      "candidate_family": "transport_warehousing",
+      "employee_band": "5-9",
+      "entities": 197
+    },
+    {
+      "candidate_family": "transport_warehousing",
+      "employee_band": "10-19",
+      "entities": 185
+    },
+    {
+      "candidate_family": "transport_warehousing",
+      "employee_band": "20-49",
+      "entities": 192
+    },
+    {
+      "candidate_family": "transport_warehousing",
+      "employee_band": "50-99",
+      "entities": 102
+    },
+    {
+      "candidate_family": "transport_warehousing",
+      "employee_band": "100-199",
+      "entities": 76
+    },
+    {
+      "candidate_family": "transport_warehousing",
+      "employee_band": "200-499",
+      "entities": 22
+    },
+    {
+      "candidate_family": "transport_warehousing",
+      "employee_band": "500+",
+      "entities": 7
+    },
+    {
+      "candidate_family": "transport_warehousing",
+      "employee_band": "unknown",
+      "entities": 53
+    },
+    {
+      "candidate_family": "utilities",
+      "employee_band": "1-4",
+      "entities": 13
+    },
+    {
+      "candidate_family": "utilities",
+      "employee_band": "5-9",
+      "entities": 5
+    },
+    {
+      "candidate_family": "utilities",
+      "employee_band": "10-19",
+      "entities": 1
+    },
+    {
+      "candidate_family": "utilities",
+      "employee_band": "20-49",
+      "entities": 7
+    },
+    {
+      "candidate_family": "utilities",
+      "employee_band": "50-99",
+      "entities": 3
+    },
+    {
+      "candidate_family": "utilities",
+      "employee_band": "100-199",
+      "entities": 1
+    },
+    {
+      "candidate_family": "utilities",
+      "employee_band": "200-499",
+      "entities": 2
+    },
+    {
+      "candidate_family": "utilities",
+      "employee_band": "unknown",
+      "entities": 3
+    },
+    {
+      "candidate_family": "wholesale",
+      "employee_band": "1-4",
+      "entities": 802
+    },
+    {
+      "candidate_family": "wholesale",
+      "employee_band": "5-9",
+      "entities": 489
+    },
+    {
+      "candidate_family": "wholesale",
+      "employee_band": "10-19",
+      "entities": 382
+    },
+    {
+      "candidate_family": "wholesale",
+      "employee_band": "20-49",
+      "entities": 300
+    },
+    {
+      "candidate_family": "wholesale",
+      "employee_band": "50-99",
+      "entities": 109
+    },
+    {
+      "candidate_family": "wholesale",
+      "employee_band": "100-199",
+      "entities": 75
+    },
+    {
+      "candidate_family": "wholesale",
+      "employee_band": "200-499",
+      "entities": 14
+    },
+    {
+      "candidate_family": "wholesale",
+      "employee_band": "500+",
+      "entities": 9
+    },
+    {
+      "candidate_family": "wholesale",
+      "employee_band": "unknown",
+      "entities": 46
+    }
+  ],
+  "exploratory_families": {
+    "construction": [
+      "23"
+    ],
+    "industrial_support": [
+      "56"
+    ],
+    "manufacturing": [
+      "31",
+      "32",
+      "33"
+    ],
+    "mining_extraction": [
+      "21"
+    ],
+    "transport_warehousing": [
+      "48",
+      "49"
+    ],
+    "utilities": [
+      "22"
+    ],
+    "wholesale": [
+      "41"
+    ]
+  },
+  "family_distribution": [
+    {
+      "average_employee_floor": 25.94,
+      "brampton": 812,
+      "candidate_family": "manufacturing",
+      "entities": 2882,
+      "mississauga": 2070,
+      "with_coordinates": 2865,
+      "with_employee_data": 2795
+    },
+    {
+      "average_employee_floor": 17.39,
+      "brampton": 406,
+      "candidate_family": "wholesale",
+      "entities": 2226,
+      "mississauga": 1820,
+      "with_coordinates": 2215,
+      "with_employee_data": 2180
+    },
+    {
+      "average_employee_floor": 12.48,
+      "brampton": 725,
+      "candidate_family": "construction",
+      "entities": 2047,
+      "mississauga": 1322,
+      "with_coordinates": 1940,
+      "with_employee_data": 1034
+    },
+    {
+      "average_employee_floor": 30.21,
+      "brampton": 357,
+      "candidate_family": "transport_warehousing",
+      "entities": 1194,
+      "mississauga": 837,
+      "with_coordinates": 1170,
+      "with_employee_data": 1141
+    },
+    {
+      "average_employee_floor": 14.45,
+      "brampton": 375,
+      "candidate_family": "industrial_support",
+      "entities": 937,
+      "mississauga": 562,
+      "with_coordinates": 932,
+      "with_employee_data": 905
+    },
+    {
+      "average_employee_floor": 32.59,
+      "brampton": 21,
+      "candidate_family": "utilities",
+      "entities": 35,
+      "mississauga": 14,
+      "with_coordinates": 35,
+      "with_employee_data": 32
+    },
+    {
+      "average_employee_floor": 18.8,
+      "brampton": 3,
+      "candidate_family": "mining_extraction",
+      "entities": 5,
+      "mississauga": 2,
+      "with_coordinates": 5,
+      "with_employee_data": 5
+    }
+  ],
+  "largest_examples": [
+    {
+      "business_sector": "Builder, Developer Of Golf Course",
+      "candidate_family": "construction",
+      "canonical_address": "200-8501 Mississauga Rd",
+      "canonical_business_name": "KANEFF GROUP OF COMPANIES",
+      "employee_count_max": 500,
+      "employee_count_min": 500,
+      "municipality": "brampton",
+      "naics_primary": "237990",
+      "provider": "City of Brampton"
+    },
+    {
+      "business_sector": "Construction",
+      "candidate_family": "construction",
+      "canonical_address": "2085 Hurontario St",
+      "canonical_business_name": "P C L Constructors Canada Inc.",
+      "employee_count_max": 999,
+      "employee_count_min": 500,
+      "municipality": "mississauga",
+      "naics_primary": "236220",
+      "provider": "City of Mississauga"
+    },
+    {
+      "business_sector": "Engineering, Design, Manufacturing And Installation Of Curtain Wall Systems",
+      "candidate_family": "construction",
+      "canonical_address": "80 Van Kirk Dr",
+      "canonical_business_name": "SOTAWALL INC.",
+      "employee_count_max": 360,
+      "employee_count_min": 360,
+      "municipality": "brampton",
+      "naics_primary": "238150",
+      "provider": "City of Brampton"
+    },
+    {
+      "business_sector": "Road Building, Structures, Sewers, Water Mains, Paving, Aggregates, Asphalt",
+      "candidate_family": "construction",
+      "canonical_address": "297 Rutherford Rd S",
+      "canonical_business_name": "GRAHAM BROS CONSTRUCTION LIMITED",
+      "employee_count_max": 350,
+      "employee_count_min": 350,
+      "municipality": "brampton",
+      "naics_primary": "237310",
+      "provider": "City of Brampton"
+    },
+    {
+      "business_sector": "Construction",
+      "candidate_family": "construction",
+      "canonical_address": "6435 Northwest Dr",
+      "canonical_business_name": "Flynn Canada Ltd.",
+      "employee_count_max": 499,
+      "employee_count_min": 300,
+      "municipality": "mississauga",
+      "naics_primary": "236220",
+      "provider": "City of Mississauga"
+    },
+    {
+      "business_sector": "Construction",
+      "candidate_family": "construction",
+      "canonical_address": "6535 Millcreek Dr",
+      "canonical_business_name": "Modern Niagara Group",
+      "employee_count_max": 499,
+      "employee_count_min": 300,
+      "municipality": "mississauga",
+      "naics_primary": "238220",
+      "provider": "City of Mississauga"
+    },
+    {
+      "business_sector": "Curtain Wall Manufacturing",
+      "candidate_family": "construction",
+      "canonical_address": "443 Railside Dr",
+      "canonical_business_name": "SOTA WALL",
+      "employee_count_max": 120,
+      "employee_count_min": 120,
+      "municipality": "brampton",
+      "naics_primary": "238150",
+      "provider": "City of Brampton"
+    },
+    {
+      "business_sector": "Electrical Contractors",
+      "candidate_family": "construction",
+      "canonical_address": "2-21 Kenview Blvd",
+      "canonical_business_name": "JAY ELECTRIC LTD.",
+      "employee_count_max": 110,
+      "employee_count_min": 110,
+      "municipality": "brampton",
+      "naics_primary": "238210",
+      "provider": "City of Brampton"
+    },
+    {
+      "business_sector": "Road Building, Construction",
+      "candidate_family": "construction",
+      "canonical_address": "34 Bramtree Crt",
+      "canonical_business_name": "METRIC CONTRACTING SERVICES CORPORATION",
+      "employee_count_max": 110,
+      "employee_count_min": 110,
+      "municipality": "brampton",
+      "naics_primary": "238390",
+      "provider": "City of Brampton"
+    },
+    {
+      "business_sector": "Construction",
+      "candidate_family": "construction",
+      "canonical_address": "7634 Kimbel St",
+      "canonical_business_name": "Culliton Inc",
+      "employee_count_max": 299,
+      "employee_count_min": 100,
+      "municipality": "mississauga",
+      "naics_primary": "238220",
+      "provider": "City of Mississauga"
+    },
+    {
+      "business_sector": "Construction",
+      "candidate_family": "construction",
+      "canonical_address": "7200 Tranmere Dr",
+      "canonical_business_name": "Delso Restoration Limited",
+      "employee_count_max": 299,
+      "employee_count_min": 100,
+      "municipality": "mississauga",
+      "naics_primary": "238910",
+      "provider": "City of Mississauga"
+    },
+    {
+      "business_sector": "Construction",
+      "candidate_family": "construction",
+      "canonical_address": "1706 Mattawa Ave",
+      "canonical_business_name": "Deltro Electric Ltd.",
+      "employee_count_max": 299,
+      "employee_count_min": 100,
+      "municipality": "mississauga",
+      "naics_primary": "238210",
+      "provider": "City of Mississauga"
+    },
+    {
+      "business_sector": "Construction",
+      "candidate_family": "construction",
+      "canonical_address": "7080 Derrycrest Dr",
+      "canonical_business_name": "Kenaidan Group Ltd.",
+      "employee_count_max": 299,
+      "employee_count_min": 100,
+      "municipality": "mississauga",
+      "naics_primary": "236220",
+      "provider": "City of Mississauga"
+    },
+    {
+      "business_sector": "Construction",
+      "candidate_family": "construction",
+      "canonical_address": "3513 Mavis Rd",
+      "canonical_business_name": "Lakeside Contracting Co. Ltd.",
+      "employee_count_max": 299,
+      "employee_count_min": 100,
+      "municipality": "mississauga",
+      "naics_primary": "238110",
+      "provider": "City of Mississauga"
+    },
+    {
+      "business_sector": "Mechanical Insulating & Service Including Plumbing / Hvac / Fire Protection / Process Cooling",
+      "candidate_family": "construction",
+      "canonical_address": "2100 Steeles Ave E",
+      "canonical_business_name": "MDF MECHANICAL LTD.",
+      "employee_count_max": 100,
+      "employee_count_min": 100,
+      "municipality": "brampton",
+      "naics_primary": "238390",
+      "provider": "City of Brampton"
+    },
+    {
+      "business_sector": "Transfer Station For Waste, Waste Pickup, Recycling",
+      "candidate_family": "industrial_support",
+      "canonical_address": "117 Wentworth Crt",
+      "canonical_business_name": "WASTE MANAGEMENT OF CANADA CORPORATION",
+      "employee_count_max": 455,
+      "employee_count_min": 455,
+      "municipality": "brampton",
+      "naics_primary": "562910",
+      "provider": "City of Brampton"
+    },
+    {
+      "business_sector": "Administrative",
+      "candidate_family": "industrial_support",
+      "canonical_address": "6900 Maritz Dr",
+      "canonical_business_name": "Bond Brand Loyalty",
+      "employee_count_max": 499,
+      "employee_count_min": 300,
+      "municipality": "mississauga",
+      "naics_primary": "561410",
+      "provider": "City of Mississauga"
+    },
+    {
+      "business_sector": "Administration Building",
+      "candidate_family": "industrial_support",
+      "canonical_address": "55 Devon Rd",
+      "canonical_business_name": "CN INTERMODAL",
+      "employee_count_max": 300,
+      "employee_count_min": 300,
+      "municipality": "brampton",
+      "naics_primary": "561110",
+      "provider": "City of Brampton"
+    },
+    {
+      "business_sector": "Administrative",
+      "candidate_family": "industrial_support",
+      "canonical_address": "440 Britannia Rd E",
+      "canonical_business_name": "Securitas Canada Ltd.",
+      "employee_count_max": 499,
+      "employee_count_min": 300,
+      "municipality": "mississauga",
+      "naics_primary": "561621",
+      "provider": "City of Mississauga"
+    },
+    {
+      "business_sector": "Administrative",
+      "candidate_family": "industrial_support",
+      "canonical_address": "1625 Tech Ave",
+      "canonical_business_name": "Symcor Inc.",
+      "employee_count_max": 499,
+      "employee_count_min": 300,
+      "municipality": "mississauga",
+      "naics_primary": "561490",
+      "provider": "City of Mississauga"
+    },
+    {
+      "business_sector": "Co-Packing, Re-Packaging, Food",
+      "candidate_family": "industrial_support",
+      "canonical_address": "6-2110 Williams Pky E",
+      "canonical_business_name": "WG PRO-MANUFACTURING INC.",
+      "employee_count_max": 300,
+      "employee_count_min": 300,
+      "municipality": "brampton",
+      "naics_primary": "561910",
+      "provider": "City of Brampton"
+    },
+    {
+      "business_sector": "Employment Agency",
+      "candidate_family": "industrial_support",
+      "canonical_address": "121-284 Queen St E",
+      "canonical_business_name": "PRODUCTIVE STAFFING TEAM",
+      "employee_count_max": 205,
+      "employee_count_min": 205,
+      "municipality": "brampton",
+      "naics_primary": "561310",
+      "provider": "City of Brampton"
+    },
+    {
+      "business_sector": "Rebooting Ecommerce, Retail Product Repackaging, Print And Design, Smart Displays & Signage",
+      "candidate_family": "industrial_support",
+      "canonical_address": "C-D-9150 Airport Rd",
+      "canonical_business_name": "MENASHA PACKAGING",
+      "employee_count_max": 200,
+      "employee_count_min": 200,
+      "municipality": "brampton",
+      "naics_primary": "561910",
+      "provider": "City of Brampton"
+    },
+    {
+      "business_sector": "Pharmaceutical Packaging And Cosmetics",
+      "candidate_family": "industrial_support",
+      "canonical_address": "55 Walker Dr",
+      "canonical_business_name": "JONES CONTRACT PACKAGING SERVICE",
+      "employee_count_max": 152,
+      "employee_count_min": 152,
+      "municipality": "brampton",
+      "naics_primary": "561910",
+      "provider": "City of Brampton"
+    },
+    {
+      "business_sector": "Distribution Of Corrugated Packaging",
+      "candidate_family": "industrial_support",
+      "canonical_address": "195 Walker Dr",
+      "canonical_business_name": "ATLANTIC PACKAGING PRODUCTS LTD.",
+      "employee_count_max": 150,
+      "employee_count_min": 150,
+      "municipality": "brampton",
+      "naics_primary": "561910",
+      "provider": "City of Brampton"
+    },
+    {
+      "business_sector": "Employment Agency",
+      "candidate_family": "industrial_support",
+      "canonical_address": "123-284 Queen St E",
+      "canonical_business_name": "TALENTCOR",
+      "employee_count_max": 124,
+      "employee_count_min": 124,
+      "municipality": "brampton",
+      "naics_primary": "561310",
+      "provider": "City of Brampton"
+    },
+    {
+      "business_sector": "Placement Services, Employment Agency",
+      "candidate_family": "industrial_support",
+      "canonical_address": "71 Rosedale Ave W",
+      "canonical_business_name": "SIMPLICITY STAFFING SOLUTIONS",
+      "employee_count_max": 115,
+      "employee_count_min": 115,
+      "municipality": "brampton",
+      "naics_primary": "561310",
+      "provider": "City of Brampton"
+    },
+    {
+      "business_sector": "Employment Agency",
+      "candidate_family": "industrial_support",
+      "canonical_address": "8-75 Rosedale Ave W",
+      "canonical_business_name": "UNIVERSAL STAFFING INC.",
+      "employee_count_max": 115,
+      "employee_count_min": 115,
+      "municipality": "brampton",
+      "naics_primary": "561310",
+      "provider": "City of Brampton"
+    },
+    {
+      "business_sector": "Integrated Security - Commercial And Retail",
+      "candidate_family": "industrial_support",
+      "canonical_address": "7 Paget Rd",
+      "canonical_business_name": "TYCO INTEGRATED SECURITY",
+      "employee_count_max": 107,
+      "employee_count_min": 107,
+      "municipality": "brampton",
+      "naics_primary": "561621",
+      "provider": "City of Brampton"
+    },
+    {
+      "business_sector": "Employment Placement Agencies",
+      "candidate_family": "industrial_support",
+      "canonical_address": "3-197 Wilkinson Rd",
+      "canonical_business_name": "ATLAS PLACEMENT SERVICES INC.",
+      "employee_count_max": 105,
+      "employee_count_min": 105,
+      "municipality": "brampton",
+      "naics_primary": "561310",
+      "provider": "City of Brampton"
+    },
+    {
+      "business_sector": "Automobile Assembly Plant",
+      "candidate_family": "manufacturing",
+      "canonical_address": "2000 Williams Pky E",
+      "canonical_business_name": "FCA CANADA INC.",
+      "employee_count_max": 3068,
+      "employee_count_min": 3068,
+      "municipality": "brampton",
+      "naics_primary": "336110",
+      "provider": "City of Brampton"
+    },
+    {
+      "business_sector": "Poultry Processing",
+      "candidate_family": "manufacturing",
+      "canonical_address": "8301 Winston Churchill Blvd",
+      "canonical_business_name": "MAPLE LODGE FARMS",
+      "employee_count_max": 1500,
+      "employee_count_min": 1500,
+      "municipality": "brampton",
+      "naics_primary": "311614",
+      "provider": "City of Brampton"
+    },
+    {
+      "business_sector": "Beverage Production, Warehouse, Distribution And Sales Centre",
+      "candidate_family": "manufacturing",
+      "canonical_address": "15 Westcreek Blvd",
+      "canonical_business_name": "COCA-COLA REFRESHMENTS CANADA LTD.",
+      "employee_count_max": 1200,
+      "employee_count_min": 1200,
+      "municipality": "brampton",
+      "naics_primary": "312110",
+      "provider": "City of Brampton"
+    },
+    {
+      "business_sector": "Specialized In Blending, Baking, And Packaging",
+      "candidate_family": "manufacturing",
+      "canonical_address": "735 Intermodal Dr",
+      "canonical_business_name": "GIVE & GO PREPARED FOODS",
+      "employee_count_max": 700,
+      "employee_count_min": 700,
+      "municipality": "brampton",
+      "naics_primary": "311340",
+      "provider": "City of Brampton"
+    },
+    {
+      "business_sector": "Pharmeceuticals",
+      "candidate_family": "manufacturing",
+      "canonical_address": "126 East Dr",
+      "canonical_business_name": "TARO PHARMACEUTICALS INC.",
+      "employee_count_max": 565,
+      "employee_count_min": 565,
+      "municipality": "brampton",
+      "naics_primary": "325410",
+      "provider": "City of Brampton"
+    },
+    {
+      "business_sector": "Manufacture Pharmaceutical Products",
+      "candidate_family": "manufacturing",
+      "canonical_address": "130 East Dr",
+      "canonical_business_name": "TARO PHARMACEUTICALS INC.",
+      "employee_count_max": 552,
+      "employee_count_min": 552,
+      "municipality": "brampton",
+      "naics_primary": "325410",
+      "provider": "City of Brampton"
+    },
+    {
+      "business_sector": "Specialized In Blending, Baking, And Packaging",
+      "candidate_family": "manufacturing",
+      "canonical_address": "725 Intermodal Dr",
+      "canonical_business_name": "GIVE & GO PREPARED FOODS",
+      "employee_count_max": 550,
+      "employee_count_min": 550,
+      "municipality": "brampton",
+      "naics_primary": "311340",
+      "provider": "City of Brampton"
+    },
+    {
+      "business_sector": "Manufacturing",
+      "candidate_family": "manufacturing",
+      "canonical_address": "7070 Mississauga Rd",
+      "canonical_business_name": "Hoffman-Roche Canada Ltd.",
+      "employee_count_max": 999,
+      "employee_count_min": 500,
+      "municipality": "mississauga",
+      "naics_primary": "325410",
+      "provider": "City of Mississauga"
+    },
+    {
+      "business_sector": "Manufacturing",
+      "candidate_family": "manufacturing",
+      "canonical_address": "3333 Unity Dr",
+      "canonical_business_name": "Honeywell",
+      "employee_count_max": 999,
+      "employee_count_min": 500,
+      "municipality": "mississauga",
+      "naics_primary": "336410",
+      "provider": "City of Mississauga"
+    },
+    {
+      "business_sector": "Automotive Metal Fabrication",
+      "candidate_family": "manufacturing",
+      "canonical_address": "1620 Steeles Ave E",
+      "canonical_business_name": "MATCOR AUTOMOTIVE INC.",
+      "employee_count_max": 500,
+      "employee_count_min": 500,
+      "municipality": "brampton",
+      "naics_primary": "336370",
+      "provider": "City of Brampton"
+    },
+    {
+      "business_sector": "Manufacturing",
+      "candidate_family": "manufacturing",
+      "canonical_address": "6390 Northwest Dr",
+      "canonical_business_name": "MHI Canada Aerospace Inc.",
+      "employee_count_max": 999,
+      "employee_count_min": 500,
+      "municipality": "mississauga",
+      "naics_primary": "336410",
+      "provider": "City of Mississauga"
+    },
+    {
+      "business_sector": "Manufacturing",
+      "candidate_family": "manufacturing",
+      "canonical_address": "1755 Argentia Rd",
+      "canonical_business_name": "Magna Precision Technologies",
+      "employee_count_max": 999,
+      "employee_count_min": 500,
+      "municipality": "mississauga",
+      "naics_primary": "336390",
+      "provider": "City of Mississauga"
+    },
+    {
+      "business_sector": "Manufacturing",
+      "candidate_family": "manufacturing",
+      "canonical_address": "2531 Stanfield Rd",
+      "canonical_business_name": "Mother Parker's Tea & Coffee Inc.",
+      "employee_count_max": 999,
+      "employee_count_min": 500,
+      "municipality": "mississauga",
+      "naics_primary": "311920",
+      "provider": "City of Mississauga"
+    },
+    {
+      "business_sector": "Manufacturing",
+      "candidate_family": "manufacturing",
+      "canonical_address": "2400 Royal Windsor Dr",
+      "canonical_business_name": "Stackpole International",
+      "employee_count_max": 999,
+      "employee_count_min": 500,
+      "municipality": "mississauga",
+      "naics_primary": "336350",
+      "provider": "City of Mississauga"
+    },
+    {
+      "business_sector": "Manufacturing",
+      "candidate_family": "manufacturing",
+      "canonical_address": "2489 North Sheridan Way",
+      "canonical_business_name": "Suncor",
+      "employee_count_max": 999,
+      "employee_count_min": 500,
+      "municipality": "mississauga",
+      "naics_primary": "324190",
+      "provider": "City of Mississauga"
+    },
+    {
+      "business_sector": "Primary Industry",
+      "candidate_family": "mining_extraction",
+      "canonical_address": "2060 Flavelle Blvd",
+      "canonical_business_name": "Vale",
+      "employee_count_max": 99,
+      "employee_count_min": 50,
+      "municipality": "mississauga",
+      "naics_primary": "212299",
+      "provider": "City of Mississauga"
+    },
+    {
+      "business_sector": "Mineral Industry Consulting",
+      "candidate_family": "mining_extraction",
+      "canonical_address": "202-2 County Court Blvd",
+      "canonical_business_name": "PANDE MINING CONSULTANTS INC.",
+      "employee_count_max": 22,
+      "employee_count_min": 22,
+      "municipality": "brampton",
+      "naics_primary": "213119",
+      "provider": "City of Brampton"
+    },
+    {
+      "business_sector": "Primary Industry",
+      "candidate_family": "mining_extraction",
+      "canonical_address": "5060 Spectrum Way",
+      "canonical_business_name": "Lycopodium Minerals Canada Ltd.",
+      "employee_count_max": 49,
+      "employee_count_min": 20,
+      "municipality": "mississauga",
+      "naics_primary": "213119",
+      "provider": "City of Mississauga"
+    },
+    {
+      "business_sector": "Oil Extraction",
+      "candidate_family": "mining_extraction",
+      "canonical_address": "324-2 County Court Blvd",
+      "canonical_business_name": "CIRCA LIFE SCIENCE INC.",
+      "employee_count_max": 1,
+      "employee_count_min": 1,
+      "municipality": "brampton",
+      "naics_primary": "212396",
+      "provider": "City of Brampton"
+    },
+    {
+      "business_sector": null,
+      "candidate_family": "mining_extraction",
+      "canonical_address": "22-10 Wilkinson Rd",
+      "canonical_business_name": "ORGANIC POTASH CORP",
+      "employee_count_max": 1,
+      "employee_count_min": 1,
+      "municipality": "brampton",
+      "naics_primary": "212396",
+      "provider": "City of Brampton"
+    },
+    {
+      "business_sector": "Fulfillment Distribution Centre",
+      "candidate_family": "transport_warehousing",
+      "canonical_address": "7995 Winston Churchill Blvd",
+      "canonical_business_name": "AMAZON",
+      "employee_count_max": 1400,
+      "employee_count_min": 1400,
+      "municipality": "brampton",
+      "naics_primary": "493190",
+      "provider": "City of Brampton"
+    },
+    {
+      "business_sector": "Fulfillment Distribution Centre",
+      "candidate_family": "transport_warehousing",
+      "canonical_address": "8050 Heritage Rd",
+      "canonical_business_name": "AMAZON",
+      "employee_count_max": 1250,
+      "employee_count_min": 1250,
+      "municipality": "brampton",
+      "naics_primary": "493190",
+      "provider": "City of Brampton"
+    },
+    {
+      "business_sector": "Retail Clothing, Home Products, Accessories Distribution",
+      "candidate_family": "transport_warehousing",
+      "canonical_address": "55 West Dr",
+      "canonical_business_name": "TJX CANADA",
+      "employee_count_max": 720,
+      "employee_count_min": 720,
+      "municipality": "brampton",
+      "naics_primary": "493110",
+      "provider": "City of Brampton"
+    },
+    {
+      "business_sector": "Trucking Company",
+      "candidate_family": "transport_warehousing",
+      "canonical_address": "1 Maritime Ontario Blvd",
+      "canonical_business_name": "M-O FREIGHT WORKS",
+      "employee_count_max": 560,
+      "employee_count_min": 560,
+      "municipality": "brampton",
+      "naics_primary": "484110",
+      "provider": "City of Brampton"
+    },
+    {
+      "business_sector": "Transportation",
+      "candidate_family": "transport_warehousing",
+      "canonical_address": "6725 Airport Rd",
+      "canonical_business_name": "Livingston International Inc.",
+      "employee_count_max": 999,
+      "employee_count_min": 500,
+      "municipality": "mississauga",
+      "naics_primary": "488519",
+      "provider": "City of Mississauga"
+    },
+    {
+      "business_sector": "Transportation",
+      "candidate_family": "transport_warehousing",
+      "canonical_address": "6120 Midfield Rd",
+      "canonical_business_name": "SkyService F B O Inc.",
+      "employee_count_max": 999,
+      "employee_count_min": 500,
+      "municipality": "mississauga",
+      "naics_primary": "488190",
+      "provider": "City of Mississauga"
+    },
+    {
+      "business_sector": "Transportation",
+      "candidate_family": "transport_warehousing",
+      "canonical_address": "5200 Maingate Dr",
+      "canonical_business_name": "T S T Overland Express",
+      "employee_count_max": 999,
+      "employee_count_min": 500,
+      "municipality": "mississauga",
+      "naics_primary": "484110",
+      "provider": "City of Mississauga"
+    },
+    {
+      "business_sector": "Automotive / Transportation",
+      "candidate_family": "transport_warehousing",
+      "canonical_address": "2600 North Park Dr",
+      "canonical_business_name": "CEVA LOGISTICS",
+      "employee_count_max": 436,
+      "employee_count_min": 436,
+      "municipality": "brampton",
+      "naics_primary": "484121",
+      "provider": "City of Brampton"
+    },
+    {
+      "business_sector": "Book Distribution Centre For Indigo",
+      "candidate_family": "transport_warehousing",
+      "canonical_address": "55-100 Alfred Kuehne Blvd",
+      "canonical_business_name": "INDIGO DISTRIBUTION AND SUPPORT CENTRE",
+      "employee_count_max": 410,
+      "employee_count_min": 410,
+      "municipality": "brampton",
+      "naics_primary": "493110",
+      "provider": "City of Brampton"
+    },
+    {
+      "business_sector": "Head Office Of Dhl, Courier Service",
+      "candidate_family": "transport_warehousing",
+      "canonical_address": "18 Parkshore Dr",
+      "canonical_business_name": "DHL EXPRESS CANADA HEAD OFFICE",
+      "employee_count_max": 400,
+      "employee_count_min": 400,
+      "municipality": "brampton",
+      "naics_primary": "492110",
+      "provider": "City of Brampton"
+    },
+    {
+      "business_sector": "Food Warehousing",
+      "candidate_family": "transport_warehousing",
+      "canonical_address": "3A-255 Chrysler Dr",
+      "canonical_business_name": "HOPEWELL LOGISTICS INC.",
+      "employee_count_max": 345,
+      "employee_count_min": 345,
+      "municipality": "brampton",
+      "naics_primary": "493130",
+      "provider": "City of Brampton"
+    },
+    {
+      "business_sector": "Transportation",
+      "candidate_family": "transport_warehousing",
+      "canonical_address": "2450 Derry Rd E",
+      "canonical_business_name": "Air Georgian Ltd.",
+      "employee_count_max": 499,
+      "employee_count_min": 300,
+      "municipality": "mississauga",
+      "naics_primary": "481110",
+      "provider": "City of Mississauga"
+    },
+    {
+      "business_sector": "Transportation",
+      "candidate_family": "transport_warehousing",
+      "canonical_address": "6767 Davand Dr",
+      "canonical_business_name": "Canada Cartage System",
+      "employee_count_max": 499,
+      "employee_count_min": 300,
+      "municipality": "mississauga",
+      "naics_primary": "484121",
+      "provider": "City of Mississauga"
+    },
+    {
+      "business_sector": "Transportation",
+      "candidate_family": "transport_warehousing",
+      "canonical_address": "1115 Cardiff Blvd",
+      "canonical_business_name": "Canada Cartage System Limited Partnership",
+      "employee_count_max": 499,
+      "employee_count_min": 300,
+      "municipality": "mississauga",
+      "naics_primary": "488519",
+      "provider": "City of Mississauga"
+    },
+    {
+      "business_sector": "Transportation",
+      "candidate_family": "transport_warehousing",
+      "canonical_address": "6085 Midfield Rd",
+      "canonical_business_name": "GTA World Cargo",
+      "employee_count_max": 499,
+      "employee_count_min": 300,
+      "municipality": "mississauga",
+      "naics_primary": "488190",
+      "provider": "City of Mississauga"
+    },
+    {
+      "business_sector": "Utilities",
+      "candidate_family": "utilities",
+      "canonical_address": "6115 Danville Rd",
+      "canonical_business_name": "Lakeside Performance Gas Services Ltd.",
+      "employee_count_max": 499,
+      "employee_count_min": 300,
+      "municipality": "mississauga",
+      "naics_primary": "221210",
+      "provider": "City of Mississauga"
+    },
+    {
+      "business_sector": "Electrical Distribution",
+      "candidate_family": "utilities",
+      "canonical_address": "175 Sandalwood Pky W",
+      "canonical_business_name": "ALECTRA UTILITIES",
+      "employee_count_max": 220,
+      "employee_count_min": 220,
+      "municipality": "brampton",
+      "naics_primary": "221111",
+      "provider": "City of Brampton"
+    },
+    {
+      "business_sector": "Utilities",
+      "candidate_family": "utilities",
+      "canonical_address": "255 Matheson Blvd W",
+      "canonical_business_name": "Hydro One",
+      "employee_count_max": 299,
+      "employee_count_min": 100,
+      "municipality": "mississauga",
+      "naics_primary": "221122",
+      "provider": "City of Mississauga"
+    },
+    {
+      "business_sector": "Natural Gas, Utility",
+      "candidate_family": "utilities",
+      "canonical_address": "6 Colony Crt",
+      "canonical_business_name": "ENBRIDGE GAS DISTRIBUTION INC.",
+      "employee_count_max": 80,
+      "employee_count_min": 80,
+      "municipality": "brampton",
+      "naics_primary": "221210",
+      "provider": "City of Brampton"
+    },
+    {
+      "business_sector": "Delivery Of Energy & Related Services - Commercial & Residential",
+      "candidate_family": "utilities",
+      "canonical_address": "278 Rutherford Rd S",
+      "canonical_business_name": "DIRECT ENERGY ESSENTIAL HOME SYSTEMS",
+      "employee_count_max": 75,
+      "employee_count_min": 75,
+      "municipality": "brampton",
+      "naics_primary": "221122",
+      "provider": "City of Brampton"
+    },
+    {
+      "business_sector": "Utilities",
+      "candidate_family": "utilities",
+      "canonical_address": "2045 Drew Rd",
+      "canonical_business_name": "Evoqua Water Technologies Ltd",
+      "employee_count_max": 99,
+      "employee_count_min": 50,
+      "municipality": "mississauga",
+      "naics_primary": "221310",
+      "provider": "City of Mississauga"
+    },
+    {
+      "business_sector": "Electrical Power Generation",
+      "candidate_family": "utilities",
+      "canonical_address": "8600 Goreway Dr",
+      "canonical_business_name": "GOREWAY STATION PARTNERSHIP",
+      "employee_count_max": 40,
+      "employee_count_min": 40,
+      "municipality": "brampton",
+      "naics_primary": "221112",
+      "provider": "City of Brampton"
+    },
+    {
+      "business_sector": "Utilities",
+      "candidate_family": "utilities",
+      "canonical_address": "55 Port St E",
+      "canonical_business_name": "Amp Solar Group Inc.",
+      "employee_count_max": 49,
+      "employee_count_min": 20,
+      "municipality": "mississauga",
+      "naics_primary": "221119",
+      "provider": "City of Mississauga"
+    },
+    {
+      "business_sector": "Utilities",
+      "candidate_family": "utilities",
+      "canonical_address": "3500 Laird Rd",
+      "canonical_business_name": "MK Group",
+      "employee_count_max": 49,
+      "employee_count_min": 20,
+      "municipality": "mississauga",
+      "naics_primary": "221122",
+      "provider": "City of Mississauga"
+    },
+    {
+      "business_sector": "Motel, 122 Rooms",
+      "candidate_family": "utilities",
+      "canonical_address": "160 Steelwell Rd",
+      "canonical_business_name": "MOTEL 6 CANADA",
+      "employee_count_max": 20,
+      "employee_count_min": 20,
+      "municipality": "brampton",
+      "naics_primary": "721114",
+      "provider": "City of Brampton"
+    },
+    {
+      "business_sector": "Utilities",
+      "candidate_family": "utilities",
+      "canonical_address": "2225 Erin Mills Pky",
+      "canonical_business_name": "Ontario Clean Water Agency",
+      "employee_count_max": 49,
+      "employee_count_min": 20,
+      "municipality": "mississauga",
+      "naics_primary": "221310",
+      "provider": "City of Mississauga"
+    },
+    {
+      "business_sector": "Utilities",
+      "candidate_family": "utilities",
+      "canonical_address": "2307 Lakeshore Rd W",
+      "canonical_business_name": "Region of Peel Clarkson WasteWater Treatment Facility",
+      "employee_count_max": 49,
+      "employee_count_min": 20,
+      "municipality": "mississauga",
+      "naics_primary": "221310",
+      "provider": "City of Mississauga"
+    },
+    {
+      "business_sector": "Utilities",
+      "candidate_family": "utilities",
+      "canonical_address": "100 Milverton Dr",
+      "canonical_business_name": "Summitt Energy",
+      "employee_count_max": 49,
+      "employee_count_min": 20,
+      "municipality": "mississauga",
+      "naics_primary": "221122",
+      "provider": "City of Mississauga"
+    },
+    {
+      "business_sector": "Water Filtration Systems",
+      "candidate_family": "utilities",
+      "canonical_address": "2-90 Walker Dr",
+      "canonical_business_name": "DANAMARK WATERCARE",
+      "employee_count_max": 13,
+      "employee_count_min": 13,
+      "municipality": "brampton",
+      "naics_primary": "221310",
+      "provider": "City of Brampton"
+    },
+    {
+      "business_sector": "Lawn And Low-Volume Plant Irrigation",
+      "candidate_family": "utilities",
+      "canonical_address": "24 Attview Cres",
+      "canonical_business_name": "NATURES PATH",
+      "employee_count_max": 6,
+      "employee_count_min": 6,
+      "municipality": "brampton",
+      "naics_primary": "221310",
+      "provider": "City of Brampton"
+    },
+    {
+      "business_sector": "Retail Merchandise Distribution Centre For Canadian Tire",
+      "candidate_family": "wholesale",
+      "canonical_address": "8550 Goreway Dr",
+      "canonical_business_name": "CANADIAN TIRE CORP (AJ BILLES DISTRIBUTION CENTRE)",
+      "employee_count_max": 1240,
+      "employee_count_min": 1240,
+      "municipality": "brampton",
+      "naics_primary": "418990",
+      "provider": "City of Brampton"
+    },
+    {
+      "business_sector": "Retail Merchandise Distribution Centre For Canadian Tire",
+      "candidate_family": "wholesale",
+      "canonical_address": "2111 Steeles Ave E",
+      "canonical_business_name": "CANADIAN TIRE CORP (DISTRIBUTION CENTRE)",
+      "employee_count_max": 900,
+      "employee_count_min": 900,
+      "municipality": "brampton",
+      "naics_primary": "418990",
+      "provider": "City of Brampton"
+    },
+    {
+      "business_sector": "Roofing Products",
+      "candidate_family": "wholesale",
+      "canonical_address": "305 Rutherford Rd S",
+      "canonical_business_name": "ROOFMART ONTARIO INC.",
+      "employee_count_max": 750,
+      "employee_count_min": 750,
+      "municipality": "brampton",
+      "naics_primary": "416390",
+      "provider": "City of Brampton"
+    },
+    {
+      "business_sector": "Metal Recycling",
+      "candidate_family": "wholesale",
+      "canonical_address": "471 Intermodal Dr",
+      "canonical_business_name": "TRIPLE M METAL LP",
+      "employee_count_max": 600,
+      "employee_count_min": 600,
+      "municipality": "brampton",
+      "naics_primary": "419190",
+      "provider": "City of Brampton"
+    },
+    {
+      "business_sector": "Sale Of Cars To Licensed Dealers Via Auction",
+      "candidate_family": "wholesale",
+      "canonical_address": "55 Auction Lane",
+      "canonical_business_name": "ADESA TORONTO (A DIV. OF ADESA AUCTION CANADA CORPORATION)",
+      "employee_count_max": 500,
+      "employee_count_min": 500,
+      "municipality": "brampton",
+      "naics_primary": "415110",
+      "provider": "City of Brampton"
+    },
+    {
+      "business_sector": "Wholesale",
+      "candidate_family": "wholesale",
+      "canonical_address": "55 Standish Crt",
+      "canonical_business_name": "Ingram Micro Inc.",
+      "employee_count_max": 999,
+      "employee_count_min": 500,
+      "municipality": "mississauga",
+      "naics_primary": "417310",
+      "provider": "City of Mississauga"
+    },
+    {
+      "business_sector": "Wholesale",
+      "candidate_family": "wholesale",
+      "canonical_address": "6941 Kennedy Rd",
+      "canonical_business_name": "Matrix Logistics Services Ltd.",
+      "employee_count_max": 999,
+      "employee_count_min": 500,
+      "municipality": "mississauga",
+      "naics_primary": "414520",
+      "provider": "City of Mississauga"
+    },
+    {
+      "business_sector": "Wholesale",
+      "candidate_family": "wholesale",
+      "canonical_address": "550 Pendant Dr",
+      "canonical_business_name": "Staples Business Advantage",
+      "employee_count_max": 999,
+      "employee_count_min": 500,
+      "municipality": "mississauga",
+      "naics_primary": "418990",
+      "provider": "City of Mississauga"
+    },
+    {
+      "business_sector": "Wholesale",
+      "candidate_family": "wholesale",
+      "canonical_address": "7055 Kennedy Rd",
+      "canonical_business_name": "Sysco Food Services of Toronto Inc.",
+      "employee_count_max": 999,
+      "employee_count_min": 500,
+      "municipality": "mississauga",
+      "naics_primary": "413110",
+      "provider": "City of Mississauga"
+    },
+    {
+      "business_sector": "Warehousing & Distribution Of Automotive Parts",
+      "candidate_family": "wholesale",
+      "canonical_address": "8000 Dixie Rd",
+      "canonical_business_name": "FORD MOTOR COMPANY OF CANADA LTD.",
+      "employee_count_max": 350,
+      "employee_count_min": 350,
+      "municipality": "brampton",
+      "naics_primary": "415290",
+      "provider": "City of Brampton"
+    },
+    {
+      "business_sector": "Wholesale",
+      "candidate_family": "wholesale",
+      "canonical_address": "2665 Meadowpine Blvd",
+      "canonical_business_name": "Alcon Canada Inc.",
+      "employee_count_max": 499,
+      "employee_count_min": 300,
+      "municipality": "mississauga",
+      "naics_primary": "414510",
+      "provider": "City of Mississauga"
+    },
+    {
+      "business_sector": "Wholesale",
+      "candidate_family": "wholesale",
+      "canonical_address": "636 Marcove Rd",
+      "canonical_business_name": "F G L Sports Ltd.",
+      "employee_count_max": 499,
+      "employee_count_min": 300,
+      "municipality": "mississauga",
+      "naics_primary": "414110",
+      "provider": "City of Mississauga"
+    },
+    {
+      "business_sector": "Wholesale",
+      "candidate_family": "wholesale",
+      "canonical_address": "5825 Explorer Dr",
+      "canonical_business_name": "General Mills Corp.",
+      "employee_count_max": 499,
+      "employee_count_min": 300,
+      "municipality": "mississauga",
+      "naics_primary": "413190",
+      "provider": "City of Mississauga"
+    },
+    {
+      "business_sector": "Wholesale",
+      "candidate_family": "wholesale",
+      "canonical_address": "6345 Dixie Rd",
+      "canonical_business_name": "Just Energy",
+      "employee_count_max": 499,
+      "employee_count_min": 300,
+      "municipality": "mississauga",
+      "naics_primary": "412110",
+      "provider": "City of Mississauga"
+    },
+    {
+      "business_sector": "Wholesale",
+      "candidate_family": "wholesale",
+      "canonical_address": "6355 Viscount Rd",
+      "canonical_business_name": "McKesson Canada",
+      "employee_count_max": 499,
+      "employee_count_min": 300,
+      "municipality": "mississauga",
+      "naics_primary": "414510",
+      "provider": "City of Mississauga"
+    }
+  ],
+  "summary": {
+    "brampton_candidates": 2699,
+    "candidate_entities": 9326,
+    "candidates_missing_primary_naics": 998,
+    "candidates_with_coordinates": 9162,
+    "candidates_with_employee_data": 8092,
+    "mississauga_candidates": 6627,
+    "unresolved_candidates": 30
+  },
+  "top_primary_naics": [
+    {
+      "candidate_family": "construction",
+      "entities": 991,
+      "example_sector": "Air Pollution Prevention And Control;Energy Efficiency And Renewable Energy;Contracting And Engineering;Consulting;Education, Training And Information;Environmental Management Systems;Environmental Design And Architecture;Research And Development;Remediation;Waste Management;Water And Wastewater Management",
+      "naics_primary": "<NULL>"
+    },
+    {
+      "candidate_family": "construction",
+      "entities": 178,
+      "example_sector": "Air Con./Heating/Refrigeration Repair, 24 Hr Emergency Service",
+      "naics_primary": "238220"
+    },
+    {
+      "candidate_family": "construction",
+      "entities": 142,
+      "example_sector": "24 Hr Emergency Flood/Water Removal, Home Renovations, Installations And Repairs",
+      "naics_primary": "236110"
+    },
+    {
+      "candidate_family": "construction",
+      "entities": 113,
+      "example_sector": "24/7 Electrical Contractors",
+      "naics_primary": "238210"
+    },
+    {
+      "candidate_family": "construction",
+      "entities": 83,
+      "example_sector": "Commercial Building Construction",
+      "naics_primary": "236220"
+    },
+    {
+      "candidate_family": "construction",
+      "entities": 75,
+      "example_sector": "Asphalt And Aggregates Contractors",
+      "naics_primary": "238390"
+    },
+    {
+      "candidate_family": "construction",
+      "entities": 58,
+      "example_sector": "Basement Waterproofing",
+      "naics_primary": "238990"
+    },
+    {
+      "candidate_family": "construction",
+      "entities": 40,
+      "example_sector": "Asphalt Contracting",
+      "naics_primary": "238160"
+    },
+    {
+      "candidate_family": "construction",
+      "entities": 37,
+      "example_sector": "Bank Equipment And Supplies (Atm)",
+      "naics_primary": "238299"
+    },
+    {
+      "candidate_family": "construction",
+      "entities": 37,
+      "example_sector": "Carpentry Work, Cabinet Manufacturers",
+      "naics_primary": "238350"
+    },
+    {
+      "candidate_family": "construction",
+      "entities": 36,
+      "example_sector": "Acoustics, Noise, And Vibration Control",
+      "naics_primary": "238310"
+    },
+    {
+      "candidate_family": "construction",
+      "entities": 31,
+      "example_sector": "Alternative Energy Development, Manufacturing, And Installation",
+      "naics_primary": "236210"
+    },
+    {
+      "candidate_family": "construction",
+      "entities": 25,
+      "example_sector": "Concrete Construction And Demolition",
+      "naics_primary": "238910"
+    },
+    {
+      "candidate_family": "construction",
+      "entities": 24,
+      "example_sector": "Bobcat Service",
+      "naics_primary": "238190"
+    },
+    {
+      "candidate_family": "construction",
+      "entities": 24,
+      "example_sector": "Construction",
+      "naics_primary": "238330"
+    },
+    {
+      "candidate_family": "construction",
+      "entities": 23,
+      "example_sector": "Commercial And Residential Glazing",
+      "naics_primary": "238150"
+    },
+    {
+      "candidate_family": "construction",
+      "entities": 17,
+      "example_sector": "Asphalt Paving And Snow Removal",
+      "naics_primary": "237310"
+    },
+    {
+      "candidate_family": "construction",
+      "entities": 17,
+      "example_sector": "Concrete Contractor",
+      "naics_primary": "238110"
+    },
+    {
+      "candidate_family": "construction",
+      "entities": 16,
+      "example_sector": "Construction",
+      "naics_primary": "238320"
+    },
+    {
+      "candidate_family": "construction",
+      "entities": 15,
+      "example_sector": "Caulking Contractor",
+      "naics_primary": "238140"
+    },
+    {
+      "candidate_family": "industrial_support",
+      "entities": 222,
+      "example_sector": "Administrative",
+      "naics_primary": "561310"
+    },
+    {
+      "candidate_family": "industrial_support",
+      "entities": 146,
+      "example_sector": "Administrative",
+      "naics_primary": "561510"
+    },
+    {
+      "candidate_family": "industrial_support",
+      "entities": 68,
+      "example_sector": "Administrative",
+      "naics_primary": "561722"
+    },
+    {
+      "candidate_family": "industrial_support",
+      "entities": 63,
+      "example_sector": "4 Seasons Grounds Maintenance",
+      "naics_primary": "561730"
+    },
+    {
+      "candidate_family": "industrial_support",
+      "entities": 52,
+      "example_sector": "Administrative",
+      "naics_primary": "561430"
+    },
+    {
+      "candidate_family": "industrial_support",
+      "entities": 46,
+      "example_sector": "Administrative",
+      "naics_primary": "561621"
+    },
+    {
+      "candidate_family": "industrial_support",
+      "entities": 41,
+      "example_sector": "Administrative",
+      "naics_primary": "561910"
+    },
+    {
+      "candidate_family": "industrial_support",
+      "entities": 25,
+      "example_sector": "Administrative",
+      "naics_primary": "561799"
+    },
+    {
+      "candidate_family": "industrial_support",
+      "entities": 25,
+      "example_sector": "Administrative",
+      "naics_primary": "561990"
+    },
+    {
+      "candidate_family": "industrial_support",
+      "entities": 23,
+      "example_sector": "Administrative",
+      "naics_primary": "561320"
+    },
+    {
+      "candidate_family": "industrial_support",
+      "entities": 23,
+      "example_sector": "Administrative",
+      "naics_primary": "561612"
+    },
+    {
+      "candidate_family": "industrial_support",
+      "entities": 22,
+      "example_sector": "Accessibility Legislation Integration, Accessible Document Remediation, Web Accessibility, Digital Accessibility, Accessibility-Compliant Curriculum Development, Accessibility-Compliant Virtual Training/Workshops, Learning Support Services & Keynote",
+      "naics_primary": "561490"
+    },
+    {
+      "candidate_family": "industrial_support",
+      "entities": 17,
+      "example_sector": "Administrative",
+      "naics_primary": "561920"
+    },
+    {
+      "candidate_family": "industrial_support",
+      "entities": 17,
+      "example_sector": "Administrative",
+      "naics_primary": "562920"
+    },
+    {
+      "candidate_family": "industrial_support",
+      "entities": 16,
+      "example_sector": "Administrative",
+      "naics_primary": "561622"
+    },
+    {
+      "candidate_family": "industrial_support",
+      "entities": 13,
+      "example_sector": "Administration Building",
+      "naics_primary": "561110"
+    },
+    {
+      "candidate_family": "industrial_support",
+      "entities": 12,
+      "example_sector": "Administrative",
+      "naics_primary": "562210"
+    },
+    {
+      "candidate_family": "industrial_support",
+      "entities": 11,
+      "example_sector": "Administrative",
+      "naics_primary": "561740"
+    },
+    {
+      "candidate_family": "industrial_support",
+      "entities": 10,
+      "example_sector": "Administrative",
+      "naics_primary": "561410"
+    },
+    {
+      "candidate_family": "industrial_support",
+      "entities": 10,
+      "example_sector": "Administrative",
+      "naics_primary": "561710"
+    },
+    {
+      "candidate_family": "manufacturing",
+      "entities": 179,
+      "example_sector": "C.N.C. Turning And Milling, Lathe, Milling, Grinding, Fabricating, Custom Machining",
+      "naics_primary": "332710"
+    },
+    {
+      "candidate_family": "manufacturing",
+      "entities": 141,
+      "example_sector": "Custom Signs And Displays Printing",
+      "naics_primary": "323119"
+    },
+    {
+      "candidate_family": "manufacturing",
+      "entities": 124,
+      "example_sector": "Build & Install Kitchens, Furniture Refinishing",
+      "naics_primary": "337110"
+    },
+    {
+      "candidate_family": "manufacturing",
+      "entities": 107,
+      "example_sector": "Aerospace, Military And General Industrial Plating",
+      "naics_primary": "332999"
+    },
+    {
+      "candidate_family": "manufacturing",
+      "entities": 78,
+      "example_sector": "Engineerirng",
+      "naics_primary": "339990"
+    },
+    {
+      "candidate_family": "manufacturing",
+      "entities": 72,
+      "example_sector": "Construction And Filling Cylinders, Medical Installations, Gases, Oxygen",
+      "naics_primary": "339110"
+    },
+    {
+      "candidate_family": "manufacturing",
+      "entities": 70,
+      "example_sector": "Custom Signs",
+      "naics_primary": "339950"
+    },
+    {
+      "candidate_family": "manufacturing",
+      "entities": 67,
+      "example_sector": "Acrylics Manufacturing",
+      "naics_primary": "326198"
+    },
+    {
+      "candidate_family": "manufacturing",
+      "entities": 62,
+      "example_sector": "Cold-Forming Technology And Producers Of Cold-Formed Parts",
+      "naics_primary": "333519"
+    },
+    {
+      "candidate_family": "manufacturing",
+      "entities": 54,
+      "example_sector": "Automotive Products, Precision Machinery And Parts, Mechatronic Products",
+      "naics_primary": "333990"
+    },
+    {
+      "candidate_family": "manufacturing",
+      "entities": 53,
+      "example_sector": "Bakery",
+      "naics_primary": "311811"
+    },
+    {
+      "candidate_family": "manufacturing",
+      "entities": 50,
+      "example_sector": "Build Truck Bodies",
+      "naics_primary": "332329"
+    },
+    {
+      "candidate_family": "manufacturing",
+      "entities": 42,
+      "example_sector": "Manufacturing",
+      "naics_primary": "321999"
+    },
+    {
+      "candidate_family": "manufacturing",
+      "entities": 41,
+      "example_sector": "Auto Parts Supplier For Gm Supply Chain",
+      "naics_primary": "336390"
+    },
+    {
+      "candidate_family": "manufacturing",
+      "entities": 40,
+      "example_sector": "Aerospace Metal Processing",
+      "naics_primary": "332810"
+    },
+    {
+      "candidate_family": "manufacturing",
+      "entities": 38,
+      "example_sector": "Custom Prints",
+      "naics_primary": "323115"
+    },
+    {
+      "candidate_family": "manufacturing",
+      "entities": 36,
+      "example_sector": "Custom Commercial & Residential Millwork",
+      "naics_primary": "321919"
+    },
+    {
+      "candidate_family": "manufacturing",
+      "entities": 36,
+      "example_sector": "Distribution Of Industrial Chemicals, Food Chemicals",
+      "naics_primary": "325410"
+    },
+    {
+      "candidate_family": "manufacturing",
+      "entities": 35,
+      "example_sector": "Buffing Compounds And Buffs And Belts, Tools",
+      "naics_primary": "332210"
+    },
+    {
+      "candidate_family": "manufacturing",
+      "entities": 34,
+      "example_sector": "Manufacturing",
+      "naics_primary": "333248"
+    },
+    {
+      "candidate_family": "mining_extraction",
+      "entities": 2,
+      "example_sector": "Oil Extraction",
+      "naics_primary": "212396"
+    },
+    {
+      "candidate_family": "mining_extraction",
+      "entities": 2,
+      "example_sector": "Mineral Industry Consulting",
+      "naics_primary": "213119"
+    },
+    {
+      "candidate_family": "mining_extraction",
+      "entities": 1,
+      "example_sector": "Primary Industry",
+      "naics_primary": "212299"
+    },
+    {
+      "candidate_family": "transport_warehousing",
+      "entities": 294,
+      "example_sector": "Air, Road And Sea Transposrtation",
+      "naics_primary": "488519"
+    },
+    {
+      "candidate_family": "transport_warehousing",
+      "entities": 186,
+      "example_sector": "Auto Transport",
+      "naics_primary": "484110"
+    },
+    {
+      "candidate_family": "transport_warehousing",
+      "entities": 159,
+      "example_sector": "3Pl - Reverse Logistics Solutions",
+      "naics_primary": "493110"
+    },
+    {
+      "candidate_family": "transport_warehousing",
+      "entities": 133,
+      "example_sector": "3Rd Party Logistics And Warehousing And Distribution",
+      "naics_primary": "484121"
+    },
+    {
+      "candidate_family": "transport_warehousing",
+      "entities": 55,
+      "example_sector": "Courier And Local Shipping Service",
+      "naics_primary": "492110"
+    },
+    {
+      "candidate_family": "transport_warehousing",
+      "entities": 43,
+      "example_sector": "Co-Packing And Re-Packaging Of Food, Cpg, Clothes",
+      "naics_primary": "488990"
+    },
+    {
+      "candidate_family": "transport_warehousing",
+      "entities": 38,
+      "example_sector": "Transportation",
+      "naics_primary": "481110"
+    },
+    {
+      "candidate_family": "transport_warehousing",
+      "entities": 31,
+      "example_sector": "Canada Customs Sufferance Warehouse",
+      "naics_primary": "493190"
+    },
+    {
+      "candidate_family": "transport_warehousing",
+      "entities": 25,
+      "example_sector": "Household And Commercial Moves",
+      "naics_primary": "484210"
+    },
+    {
+      "candidate_family": "transport_warehousing",
+      "entities": 24,
+      "example_sector": "Limo Service",
+      "naics_primary": "485320"
+    },
+    {
+      "candidate_family": "transport_warehousing",
+      "entities": 23,
+      "example_sector": "Cold Storage",
+      "naics_primary": "493120"
+    },
+    {
+      "candidate_family": "transport_warehousing",
+      "entities": 20,
+      "example_sector": "Transportation",
+      "naics_primary": "488190"
+    },
+    {
+      "candidate_family": "transport_warehousing",
+      "entities": 16,
+      "example_sector": "Automobile Transporting",
+      "naics_primary": "488410"
+    },
+    {
+      "candidate_family": "transport_warehousing",
+      "entities": 16,
+      "example_sector": "Transportation",
+      "naics_primary": "491110"
+    },
+    {
+      "candidate_family": "transport_warehousing",
+      "entities": 14,
+      "example_sector": "Taxi Dispatch",
+      "naics_primary": "485310"
+    },
+    {
+      "candidate_family": "transport_warehousing",
+      "entities": 13,
+      "example_sector": "Full-Service Transportation Operation",
+      "naics_primary": "484239"
+    },
+    {
+      "candidate_family": "transport_warehousing",
+      "entities": 12,
+      "example_sector": "Transportation",
+      "naics_primary": "481214"
+    },
+    {
+      "candidate_family": "transport_warehousing",
+      "entities": 11,
+      "example_sector": "Home Delivery Of Liquor, Beer & Wine",
+      "naics_primary": "492210"
+    },
+    {
+      "candidate_family": "transport_warehousing",
+      "entities": 10,
+      "example_sector": "Transportation",
+      "naics_primary": "485110"
+    },
+    {
+      "candidate_family": "transport_warehousing",
+      "entities": 9,
+      "example_sector": "City Of Brampton Works Yard",
+      "naics_primary": "488490"
+    },
+    {
+      "candidate_family": "utilities",
+      "entities": 13,
+      "example_sector": "Custom Water Treatment Solutions",
+      "naics_primary": "221310"
+    },
+    {
+      "candidate_family": "utilities",
+      "entities": 7,
+      "example_sector": "Delivery Of Energy & Related Services - Commercial & Residential",
+      "naics_primary": "221122"
+    },
+    {
+      "candidate_family": "utilities",
+      "entities": 6,
+      "example_sector": "Gas Tools And Equipment",
+      "naics_primary": "221210"
+    },
+    {
+      "candidate_family": "utilities",
+      "entities": 3,
+      "example_sector": "Environmental Improvements",
+      "naics_primary": "221119"
+    },
+    {
+      "candidate_family": "utilities",
+      "entities": 2,
+      "example_sector": "Electrical Distribution",
+      "naics_primary": "221111"
+    },
+    {
+      "candidate_family": "utilities",
+      "entities": 2,
+      "example_sector": "22K Gold Jewellery Store",
+      "naics_primary": "448310"
+    },
+    {
+      "candidate_family": "utilities",
+      "entities": 1,
+      "example_sector": "Electrical Power Generation",
+      "naics_primary": "221112"
+    },
+    {
+      "candidate_family": "utilities",
+      "entities": 1,
+      "example_sector": "Motel, 122 Rooms",
+      "naics_primary": "721114"
+    },
+    {
+      "candidate_family": "wholesale",
+      "entities": 232,
+      "example_sector": "Abrasive Supplies For Wood, Stone, Metal",
+      "naics_primary": "417230"
+    },
+    {
+      "candidate_family": "wholesale",
+      "entities": 151,
+      "example_sector": "Canadian Tire Distribution Centre",
+      "naics_primary": "418990"
+    },
+    {
+      "candidate_family": "wholesale",
+      "entities": 113,
+      "example_sector": "Bakery",
+      "naics_primary": "413190"
+    },
+    {
+      "candidate_family": "wholesale",
+      "entities": 102,
+      "example_sector": "Cell Phone Accessories And Repairs",
+      "naics_primary": "417320"
+    },
+    {
+      "candidate_family": "wholesale",
+      "entities": 96,
+      "example_sector": "Aftermarket Automotive",
+      "naics_primary": "415290"
+    },
+    {
+      "candidate_family": "wholesale",
+      "entities": 90,
+      "example_sector": "Distribute Hydrolics Products",
+      "naics_primary": "417990"
+    },
+    {
+      "candidate_family": "wholesale",
+      "entities": 88,
+      "example_sector": "Blinds & Window Coverings",
+      "naics_primary": "414390"
+    },
+    {
+      "candidate_family": "wholesale",
+      "entities": 73,
+      "example_sector": "Cabling For Offices, Computer Cables",
+      "naics_primary": "416110"
+    },
+    {
+      "candidate_family": "wholesale",
+      "entities": 73,
+      "example_sector": "Building Supplies",
+      "naics_primary": "416390"
+    },
+    {
+      "candidate_family": "wholesale",
+      "entities": 73,
+      "example_sector": "Dental Equipment",
+      "naics_primary": "417930"
+    },
+    {
+      "candidate_family": "wholesale",
+      "entities": 68,
+      "example_sector": "Building Materials",
+      "naics_primary": "418410"
+    },
+    {
+      "candidate_family": "wholesale",
+      "entities": 67,
+      "example_sector": "Building Products",
+      "naics_primary": "416120"
+    },
+    {
+      "candidate_family": "wholesale",
+      "entities": 57,
+      "example_sector": "Clothing Warehouse",
+      "naics_primary": "414110"
+    },
+    {
+      "candidate_family": "wholesale",
+      "entities": 50,
+      "example_sector": "Chemical & Pharmaceutical",
+      "naics_primary": "414510"
+    },
+    {
+      "candidate_family": "wholesale",
+      "entities": 47,
+      "example_sector": "Anodizing",
+      "naics_primary": "416210"
+    },
+    {
+      "candidate_family": "wholesale",
+      "entities": 47,
+      "example_sector": "Computer And Cell Phone Repair",
+      "naics_primary": "417310"
+    },
+    {
+      "candidate_family": "wholesale",
+      "entities": 46,
+      "example_sector": "Agent The Products And Services Of Selected High Profile, High Technology Companies.",
+      "naics_primary": "419120"
+    },
+    {
+      "candidate_family": "wholesale",
+      "entities": 45,
+      "example_sector": "Distribution",
+      "naics_primary": "416330"
+    },
+    {
+      "candidate_family": "wholesale",
+      "entities": 45,
+      "example_sector": "Cooking Equipment Distributor",
+      "naics_primary": "417920"
+    },
+    {
+      "candidate_family": "wholesale",
+      "entities": 43,
+      "example_sector": "Ink And Toner Wholesale",
+      "naics_primary": "417910"
+    }
+  ],
+  "warehouse": "data/warehouse/cre.duckdb",
+  "warning": "Exploratory grouping only. No entity has been classified as an industrial prospect."
+}

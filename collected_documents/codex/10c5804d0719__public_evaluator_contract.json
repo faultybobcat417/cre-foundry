@@ -1,0 +1,408 @@
+{
+  "artifact_id": "ARCHITECTURE-001-PUBLIC-EVALUATOR-CONTRACT",
+  "schema_version": "1.0.0",
+  "subject_task": "ARCHITECTURE-001",
+  "defined_before_material_implementation": true,
+  "execution_scope": "SYNTHETIC_NON_INFLUENCING",
+  "evaluator_id": "architecture-workflow-public-v1",
+  "proof_target": 4,
+  "design_review": {
+    "packet_sha256": "208b8dce3c53b3271c794221d1ec8f906f1ef99a387c968736b3f822d70a94bb",
+    "independent_read_only_roles": [
+      "/root/outcomes_evaluator_design",
+      "/root/outcomes_state_model",
+      "/root/outcomes_proof_review"
+    ],
+    "alternatives": [
+      {
+        "alternative_id": "GOLDEN-SCHEMA-RECEIPT",
+        "decision": "REJECTED_AS_PRIMARY",
+        "reason": "A self-consistent golden trace or rehashed receipt does not prove transition, bypass, retry, concurrency, or partial-failure semantics."
+      },
+      {
+        "alternative_id": "SHARED-IN-PROCESS-BUILDER-REPLAY",
+        "decision": "REJECTED_AS_PRIMARY",
+        "reason": "Importing workflow builder modules into the evaluator shares implementation defects and violates independent reconstruction."
+      },
+      {
+        "alternative_id": "BROWSER-ONLY-END-TO-END",
+        "decision": "SUPPLEMENT_ONLY",
+        "reason": "Rendered interaction checks cannot independently prove service boundaries, atomicity, or usability and accessibility performance."
+      },
+      {
+        "alternative_id": "DISTRIBUTED-EVENT-SOURCED-WORKFLOW",
+        "decision": "DEFERRED",
+        "reason": "It provides strong auditability but introduces unmeasured operational and versioning complexity before a stable workflow surface exists."
+      },
+      {
+        "alternative_id": "BLACK-BOX-PROTOCOL-INDEPENDENT-REDUCER",
+        "decision": "SELECTED",
+        "reason": "A transactional modular-monolith subject behind versioned JSON commands can be judged by an evaluator-owned reducer, fault injector, MATH oracle, journal reconstruction, and canonical response comparison without importing the implementation."
+      }
+    ]
+  },
+  "selected_architecture": {
+    "style": "TRANSACTIONAL_MODULAR_MONOLITH_WITH_REPLACEABLE_PORTS",
+    "persistence_model": "IMMUTABLE_ARTIFACTS_APPEND_ONLY_JOURNAL_OPTIMISTIC_VERSION_UNIQUE_ISSUANCE_TRANSACTIONAL_OUTBOX",
+    "external_delivery": "HELD_UNAUTHORIZED",
+    "aggregate_key": ["execution_scope", "representative_id", "route_date", "generation"],
+    "issuance_slot": ["execution_scope", "representative_id", "route_date"],
+    "generation_rule": "New accepted Stage-1 evidence creates generation+1; a frozen generation is never edited.",
+    "module_roles": [
+      "observation_port",
+      "candidate_port",
+      "decision_port",
+      "issuance_port",
+      "field_event_port",
+      "outcome_port",
+      "workflow_query_port"
+    ],
+    "module_contract": {
+      "required_fields": [
+        "module_id",
+        "role",
+        "interface_version",
+        "input_schema_sha256",
+        "output_schema_sha256",
+        "implementation_id",
+        "implementation_sha256",
+        "replacement_family",
+        "deterministic",
+        "idempotency_mode",
+        "effect_class",
+        "live_enabled"
+      ],
+      "exactly_one_module_per_role": true,
+      "live_enabled": false,
+      "replaceability_proof": "Reference and independently structured conforming adapters must produce canonical-equivalent protocol outputs; a known-bad adapter per effectful role must fail."
+    }
+  },
+  "state_machine": {
+    "states": [
+      "COLLECTING_STAGE1",
+      "STAGE1_FROZEN",
+      "ISSUE_READY",
+      "ISSUANCE_PREPARED",
+      "ISSUED_INTERNAL",
+      "ABSTAINED",
+      "QUARANTINED",
+      "SUPERSEDED",
+      "VOIDED"
+    ],
+    "reserved_live_states_unreachable": ["DELIVERY_PENDING", "DELIVERED", "RECALL_REQUIRED"],
+    "terminal_for_generation": ["ABSTAINED", "QUARANTINED", "SUPERSEDED", "VOIDED"],
+    "allowed_transitions": [
+      {"command": "APPEND_STAGE1", "from": "COLLECTING_STAGE1", "to": "COLLECTING_STAGE1"},
+      {"command": "FREEZE_STAGE1", "from": "COLLECTING_STAGE1", "to": "STAGE1_FROZEN"},
+      {"command": "DECIDE_ISSUE", "from": "STAGE1_FROZEN", "to": "ISSUE_READY"},
+      {"command": "DECIDE_ABSTAIN", "from": "STAGE1_FROZEN", "to": "ABSTAINED"},
+      {"command": "QUARANTINE_INVALID", "from": "STAGE1_FROZEN", "to": "QUARANTINED"},
+      {"command": "PREPARE_SYNTHETIC_ISSUANCE", "from": "ISSUE_READY", "to": "ISSUANCE_PREPARED"},
+      {"command": "COMMIT_SYNTHETIC_ISSUANCE", "from": "ISSUANCE_PREPARED", "to": "ISSUED_INTERNAL"},
+      {"command": "APPEND_STAGE2", "from": "ISSUED_INTERNAL", "to": "ISSUED_INTERNAL"},
+      {"command": "APPEND_STAGE3", "from": "ISSUED_INTERNAL", "to": "ISSUED_INTERNAL"},
+      {"command": "VOID_UNDELIVERED", "from": "ISSUED_INTERNAL", "to": "VOIDED"},
+      {"command": "SUPERSEDE_WITH_NEW_GENERATION", "from": "COLLECTING_STAGE1", "to": "SUPERSEDED"},
+      {"command": "SUPERSEDE_WITH_NEW_GENERATION", "from": "STAGE1_FROZEN", "to": "SUPERSEDED"},
+      {"command": "SUPERSEDE_WITH_NEW_GENERATION", "from": "ISSUE_READY", "to": "SUPERSEDED"}
+    ],
+    "sidecar_commands_no_aggregate_state_change": ["RECORD_REVIEW_ANNOTATION", "REQUEST_AUTHORITATIVE_EVIDENCE"],
+    "reduction_rule": "The evaluator reconstructs every pre-state, post-state, aggregate version, event ID, predecessor digest, idempotency record, response, issuance ledger, and final state from the canonical command stream."
+  },
+  "command_envelope": {
+    "required_fields": [
+      "command_id",
+      "command_type",
+      "aggregate_key",
+      "expected_aggregate_version",
+      "idempotency_key",
+      "payload",
+      "payload_sha256",
+      "schema_version",
+      "contract_sha256",
+      "actor_class",
+      "principal_reference",
+      "requested_capability",
+      "authorization_decision_sha256",
+      "correlation_id",
+      "causation_id",
+      "submitted_at"
+    ],
+    "caller_authorization_boolean_has_authority": false,
+    "unknown_command_behavior": "REJECTED_WITHOUT_STATE_CHANGE",
+    "result_statuses": ["APPLIED", "IDEMPOTENT_REPLAY", "REJECTED", "CONFLICT", "HELD_UNAUTHORIZED"]
+  },
+  "result_union": {
+    "ISSUE": {
+      "selected_min": 10,
+      "selected_max": 10,
+      "distinct_candidate_ids": true,
+      "distinct_physical_location_ids": true,
+      "route_required": true,
+      "reason": null,
+      "external_effect_occurred": false
+    },
+    "ABSTAIN_NO_VALID_TEN": {
+      "selected_max": 0,
+      "route": null,
+      "reason_required": true,
+      "downstream_effects_max": 0,
+      "external_effect_occurred": false
+    },
+    "ERROR": {
+      "selected_max": 0,
+      "route": null,
+      "diagnostic_required": true,
+      "safe_recovery_required": true,
+      "downstream_effects_max": 0,
+      "external_effect_occurred": false
+    }
+  },
+  "idempotency_and_atomicity": {
+    "idempotency_scope": ["aggregate_key", "command_type", "idempotency_key"],
+    "key_binding": ["contract_version", "representative_id", "route_date", "generation", "operation", "stage1_snapshot_sha256", "math_decision_sha256"],
+    "retry_number_participates_in_key": false,
+    "same_key_same_payload": "RETURN_CANONICAL_BYTE_IDENTICAL_ORIGINAL_RESPONSE_WITHOUT_NEW_EVENT_OR_EFFECT",
+    "same_key_different_payload": "IDEMPOTENCY_KEY_REUSE_MISMATCH_WITHOUT_STATE_CHANGE",
+    "different_key_same_issuance_slot": "ISSUANCE_SLOT_CONFLICT_WITHOUT_SECOND_ROUTE",
+    "atomic_commit_set": [
+      "transition_event",
+      "aggregate_projection",
+      "immutable_route_artifact_if_issue",
+      "issuance_ledger_entry_if_issue",
+      "idempotency_response",
+      "held_unauthorized_outbox_entry"
+    ],
+    "fault_points": [
+      "BEFORE_EVENT_APPEND",
+      "AFTER_EVENT_BEFORE_PROJECTION",
+      "AFTER_PROJECTION_BEFORE_IDEMPOTENCY",
+      "AFTER_IDEMPOTENCY_BEFORE_OUTBOX",
+      "AFTER_OUTBOX_BEFORE_COMMIT",
+      "AFTER_COMMIT_BEFORE_RESPONSE"
+    ],
+    "precommit_fault_rule": "No state, issuance, idempotency, outbox, or external effect survives.",
+    "postcommit_fault_rule": "Retry returns the already committed canonical response with exactly one issuance.",
+    "ambiguous_partial_state_allowed": false
+  },
+  "manual_review_contract": {
+    "storage": "APPEND_ONLY_SIDECAR_SUBAGGREGATE",
+    "allowed_actions": ["ANNOTATE", "REQUEST_AUTHORITATIVE_EVIDENCE", "ABANDON_PREISSUANCE_GENERATION", "START_NEW_GENERATION"],
+    "forbidden_actions": [
+      "EDIT_FROZEN_STAGE1",
+      "CHANGE_GATE_OR_PROTECTION_STATE",
+      "INSERT_OR_DELETE_CANDIDATE",
+      "CHANGE_VALUE_OR_RANK",
+      "SWAP_SELECTED_STOP",
+      "CLEAR_UNKNOWN",
+      "HIDE_ABSTENTION_OR_ERROR",
+      "DIRECT_ISSUE"
+    ],
+    "accepted_evidence_rule": "Store a new immutable observation and start a new generation with fresh snapshot, projection, MATH decision, and workflow; preserve the prior generation unchanged.",
+    "synthetic_reviewer_role_grants_real_authority": false
+  },
+  "stage_isolation": {
+    "stage1_frozen_digest_immutable": true,
+    "stage2_requires_issued_bound_stop": true,
+    "stage3_requires_bound_stage2_event": true,
+    "stage2_or_stage3_can_rewrite_stage1": false,
+    "identical_child_duplicate": "IDEMPOTENT_REPLAY",
+    "conflicting_child_duplicate": "QUARANTINE_WITHOUT_PARENT_REWRITE"
+  },
+  "programmatic_accessibility_contract": {
+    "claim_kind": "SYNTHETIC_PROGRAMMATIC_SEMANTICS_ONLY",
+    "required_status_fields": [
+      "primary_status_code",
+      "primary_status_text",
+      "reason_code",
+      "reason_text",
+      "evidence_reference_ids",
+      "safe_next_actions",
+      "retry_allowed",
+      "focus_target",
+      "announcement_intent"
+    ],
+    "required_properties": [
+      "every action has a unique programmatic identifier, nonempty name, role, and state",
+      "reading and focus order are deterministic and acyclic",
+      "errors are associated with the affected field or action",
+      "ISSUE, ABSTAIN, ERROR, and CONFLICT have a deterministic focus target and status or alert announcement intent",
+      "abstention and error reason, evidence references, and safe next actions remain visible",
+      "status is not communicated only by color, icon, or position",
+      "location rows have structured labels and deterministic order"
+    ],
+    "claims_not_established": [
+      "WCAG_CONFORMANCE",
+      "SCREEN_READER_PERFORMANCE",
+      "REPRESENTATIVE_USABILITY",
+      "ACCESSIBILITY_EFFECTIVENESS",
+      "SATISFACTION",
+      "ADOPTION"
+    ]
+  },
+  "evaluator_architecture": {
+    "subject_interface": "VERSIONED_BLACK_BOX_JSON_COMMAND_RESPONSE_PROTOCOL",
+    "subject_process_isolation": true,
+    "evaluator_imports_architecture_builder": false,
+    "evaluator_owned_components": [
+      "strict_duplicate_key_parser",
+      "transition_reducer",
+      "fault_scheduler",
+      "deterministic_clock",
+      "MATH_oracle",
+      "journal_and_lineage_reconstructor",
+      "idempotency_and_issuance_projection",
+      "accessibility_semantics_validator",
+      "receipt_reconstructor",
+      "static_import_boundary_scanner"
+    ],
+    "evaluation_order": [
+      "strict_parse_and_closed_schema",
+      "registered_contract_and_interface_versions",
+      "evaluator_independence_and_import_boundaries",
+      "execution_scope_authority_live_and_effect_denials",
+      "module_registry_and_adapter_compatibility",
+      "Stage1_clocks_protection_eligibility_and_immutability",
+      "independent_MATH_exact_ten_or_abstain",
+      "workflow_transition_reduction",
+      "idempotency_uniqueness_and_fault_atomicity",
+      "journal_lineage_and_stage_isolation",
+      "programmatic_accessibility_semantics",
+      "replay_receipt_and_claim_ceiling"
+    ]
+  },
+  "pinned_upstream_artifacts": [
+    {"path": "artifacts/vertical-slice/run_manifest.json", "sha256": "f1da72d571494c040048822d84285f9fe21ef6edf241a3bfbbb0f608f895d591"},
+    {"path": "artifacts/vertical/public_evaluator_contract.json", "sha256": "b478abaa54c860d91d713ad1cdd0119353eb0e3ed7e17e2e97e211b3900f8655"},
+    {"path": "artifacts/contracts/contract_spine.json", "sha256": "d10d27041d7cee071514c5995af0879d354c5f34177004603ac1379b3dae4dc9"},
+    {"path": "artifacts/evaluations/vertical_slice.json", "sha256": "e863956b849a7d38d8d3b07e9fdf3f6a5f140cb04884d45f2eecd65827987a93"},
+    {"path": "contracts/math_decision_policy.schema.json", "sha256": "3942db4a53405c57c8cf7edfcbcda26262b6457de80f55ca4620278ec0ae04fd"},
+    {"path": "contracts/math_route_decision.schema.json", "sha256": "b3929312d94633c5fdebb68f2df705c51bdb2868fa4941b97993e0fd6a1c0cb1"},
+    {"path": "evals/public/math_oracle_evaluator.py", "sha256": "5521bb4e224df013b5232bb8be7d41bf8f472b762087bd6b734829cea73f870e"}
+  ],
+  "required_schemas": [
+    "contracts/architecture_command.schema.json",
+    "contracts/architecture_workflow_run.schema.json",
+    "contracts/architecture_review_record.schema.json",
+    "contracts/architecture_accessibility_projection.schema.json"
+  ],
+  "required_subjects": [
+    "artifacts/architecture/state_machine_registry.json",
+    "artifacts/architecture/module_registry.json",
+    "artifacts/architecture/scenario_registry.json",
+    "artifacts/architecture/canonical_run.json",
+    "src/cre_foundry/architecture/workflow.py",
+    "src/cre_foundry/architecture/protocol.py",
+    "scripts/run_architecture_protocol.py"
+  ],
+  "required_evaluator_subjects": [
+    "evals/public/architecture_workflow_evaluator.py",
+    "evals/public/test_architecture_workflow.py",
+    "scripts/validate_architecture.py",
+    "evals/known_bad/frontier/architecture_*.json",
+    "artifacts/evaluations/architecture.json"
+  ],
+  "bounded_property_grid": [
+    "every registered state by every command with all legal edges and all invalid jumps, backward edges, and terminal reopens",
+    "candidate counts 0, 1, 9, 10, 11, and 20 with distinct-location counts 0, 9, 10, and candidate-count-minus-one",
+    "ISSUE, every registered MATH abstention reason, invalid-problem ERROR, retryable ERROR, terminal ERROR, and idempotency CONFLICT",
+    "idempotency key same or different by payload same or different by repetitions 1, 2, and 5",
+    "expected aggregate version stale, current, and future under both two-command orderings",
+    "authorization absent, wrong scope, expired, revoked, and current for every write-like command",
+    "protection complete-clear, incomplete, intersection, and digest-drift between decision and issuance",
+    "snapshot identical, input-reordered, field-mutated, candidate-inserted, and candidate-deleted",
+    "each allowed and forbidden manual action against every pre-issuance and terminal state",
+    "all six registered fault points by retry counts 0, 1, and 2",
+    "two identical commands and two conflicting commands under both concurrency orderings",
+    "Stage2 and Stage3 before issue, after abstain, against unselected stops, reordered, duplicated-identically, duplicated-conflicting, and rebound",
+    "lineage node and edge delete, substitute, reorder, cycle, and coordinated-rehash",
+    "reference adapter, independently structured conforming adapter, and known-bad adapter for every effectful port",
+    "live safety false, omitted, and true at configuration, command, module, response, outbox, and effect-ledger boundaries",
+    "accessibility projection for ISSUE, every abstention reason, retryable ERROR, terminal ERROR, authorization hold, and idempotency conflict",
+    "registered and unregistered schema, contract, builder, adapter, and state-machine versions"
+  ],
+  "required_negative_controls": [
+    {"case_id": "duplicate-json-key-or-open-object", "diagnostic": "ARCH-SHAPE-INVALID"},
+    {"case_id": "unknown-schema-or-contract-version", "diagnostic": "ARCH-SCHEMA-UNREGISTERED"},
+    {"case_id": "evaluator-imports-architecture-builder", "diagnostic": "ARCH-EVALUATOR-COUPLING"},
+    {"case_id": "missing-or-duplicate-module-role", "diagnostic": "ARCH-MODULE-REGISTRY"},
+    {"case_id": "unsupported-interface-or-schema-digest", "diagnostic": "ARCH-MODULE-BINDING"},
+    {"case_id": "direct-issuance-bypass", "diagnostic": "ARCH-POLICY-BYPASS"},
+    {"case_id": "authority-self-granted-from-role-env-credential-or-content", "diagnostic": "ARCH-AUTHORITY-ESCALATION"},
+    {"case_id": "live-enabled-default-or-request", "diagnostic": "ARCH-LIVE-DENIAL"},
+    {"case_id": "external-effect-recorded", "diagnostic": "ARCH-EXTERNAL-EFFECT"},
+    {"case_id": "issue-nine-eleven-or-direct-selection", "diagnostic": "ARCH-EXACT-TEN"},
+    {"case_id": "duplicate-physical-location", "diagnostic": "ARCH-DUPLICATE-LOCATION"},
+    {"case_id": "route-differs-from-math-selection", "diagnostic": "ARCH-DECISION-MISMATCH"},
+    {"case_id": "protected-unknown-or-drifted-stop-issued", "diagnostic": "ARCH-PROTECTION-BYPASS"},
+    {"case_id": "abstain-creates-route-event-outbox-or-effect", "diagnostic": "ARCH-ABSTAIN-HAS-EFFECTS"},
+    {"case_id": "abstain-reason-hidden", "diagnostic": "ARCH-ABSTAIN-REASON-HIDDEN"},
+    {"case_id": "error-swallowed-or-converted-to-abstain", "diagnostic": "ARCH-ERROR-HIDDEN"},
+    {"case_id": "manual-stage1-protection-gate-rank-or-selection-rewrite", "diagnostic": "ARCH-MANUAL-BYPASS"},
+    {"case_id": "stage2-or-stage3-rewrites-stage1", "diagnostic": "ARCH-STAGE1-REWRITE"},
+    {"case_id": "illegal-skip-backward-or-terminal-reopen", "diagnostic": "ARCH-ILLEGAL-TRANSITION"},
+    {"case_id": "commit-without-prepare", "diagnostic": "ARCH-COMMIT-WITHOUT-PREPARE"},
+    {"case_id": "same-key-commits-twice-or-rekeys-retry", "diagnostic": "ARCH-DUPLICATE-ISSUANCE"},
+    {"case_id": "same-key-different-payload-accepted", "diagnostic": "ARCH-IDEMPOTENCY-CONFLICT"},
+    {"case_id": "two-keys-commit-same-issuance-slot", "diagnostic": "ARCH-ISSUANCE-SLOT-CONFLICT"},
+    {"case_id": "fault-leaves-ambiguous-partial-state", "diagnostic": "ARCH-PARTIAL-FAILURE-AMBIGUOUS"},
+    {"case_id": "journal-reordered-forked-cycled-or-rehashed", "diagnostic": "ARCH-JOURNAL-CHAIN"},
+    {"case_id": "lineage-node-or-edge-dropped-substituted-or-rehashed", "diagnostic": "ARCH-LINEAGE-BINDING"},
+    {"case_id": "stage2-or-stage3-unbound-rebound-or-conflicting-duplicate", "diagnostic": "ARCH-DOWNSTREAM-BINDING"},
+    {"case_id": "programmatic-name-role-state-missing", "diagnostic": "ARCH-ACCESSIBLE-ACTION"},
+    {"case_id": "focus-reading-association-or-announcement-invalid", "diagnostic": "ARCH-ACCESSIBLE-STATUS"},
+    {"case_id": "status-color-icon-or-position-only", "diagnostic": "ARCH-ACCESSIBLE-NONVISUAL"},
+    {"case_id": "reason-evidence-or-safe-next-action-hidden", "diagnostic": "ARCH-STATUS-DISCLOSURE"},
+    {"case_id": "unknown-command-fails-open", "diagnostic": "ARCH-UNKNOWN-COMMAND"},
+    {"case_id": "coordinated-rehash-around-semantic-defect", "diagnostic": "ARCH-RECONSTRUCTION-MISMATCH"},
+    {"case_id": "synthetic-as-usability-accessibility-production-or-live", "diagnostic": "ARCH-CLAIM-CEILING"}
+  ],
+  "diagnostic_precedence": [
+    "strict parse, duplicate keys, and closed shape",
+    "registered schema and contract versions",
+    "evaluator independence",
+    "authority, execution scope, live denial, and external effects",
+    "module registry, interface, and schema bindings",
+    "Stage1 clocks, protection, eligibility, and immutability",
+    "MATH decision and exact-ten-or-abstain",
+    "workflow transition legality",
+    "idempotency, issuance uniqueness, and fault atomicity",
+    "journal, lineage, and downstream stage bindings",
+    "programmatic accessibility and status disclosure",
+    "replay receipt and claim ceiling"
+  ],
+  "required_replay_bindings": [
+    "architecture evaluator contract and every public schema",
+    "pinned upstream vertical, contract-spine, and MATH artifacts",
+    "state-machine, command, diagnostic, accessibility, module, and scenario registries",
+    "subject protocol, builder, and adapter versions and hashes",
+    "aggregate key, initial state, command stream, and predecessor-linked event stream",
+    "Stage1 snapshot, MATH problem and decision, issuance slot, route, and child Stage2 and Stage3 artifacts",
+    "idempotency map, issuance ledger, held outbox, effect ledger, terminal response, accessibility projection, and final state",
+    "per-section digests and final receipt digest"
+  ],
+  "claim_ceiling": "Public proof level 4 establishes mutation- and fault-resistant deterministic conformance of synthetic module and API boundaries, workflow transitions, idempotency, issuance uniqueness, manual-edit protections, structured ERROR and ABSTAIN visibility, programmatic accessibility metadata, Stage isolation, live-disabled defaults, and replay bindings only. It establishes no representative usability, WCAG or assistive-technology performance or certification, production durability or atomicity, operational reliability or error rate, security certification, route feasibility, deployment readiness, live authority, adoption, incremental F9 lift, or commercial value.",
+  "proof": {
+    "level": 4,
+    "real_usability_proven": false,
+    "accessibility_performance_or_conformance_proven": false,
+    "production_atomicity_or_reliability_proven": false,
+    "security_proven": false,
+    "real_route_feasibility_proven": false,
+    "deployment_authorized": false,
+    "live_workflow_authorized": false,
+    "incremental_lift_proven": false,
+    "commercial_value_proven": false
+  },
+  "gates": [
+    "GATE-MANUAL-REVIEW-AUTHORITY-001",
+    "GATE-LIVE-WORKFLOW-AUTHORITY-001",
+    "GATE-ACCESSIBILITY-EMPIRICAL-VALIDATION-001",
+    "GATE-REPRESENTATIVE-USABILITY-001",
+    "GATE-PRODUCTION-DEPLOYMENT-001",
+    "GATE-SEALED-EVALUATOR-CUSTODY-001",
+    "GATE-HIDDEN-HOLDOUT-OWNER-001",
+    "GATE-FULL-EXTERNAL-EVIDENCE-001"
+  ],
+  "implementation_gate": "Do not credit or begin material workflow implementation until this contract and its recursively closed schemas are independently swept and frozen. Do not credit ARCHITECTURE-001 until the black-box evaluator independently reconstructs every semantic output, executes the complete bounded grid, rejects every semantic negative control including executable bypass and coordinated-rehash cases, proves no live effect, and independent post-repair sweeps are clean."
+}

@@ -1,0 +1,152 @@
+{
+  "codex_contract_handoff_ready": false,
+  "codex_final_product_handoff_ready": false,
+  "controlled_pilot_complete": false,
+  "incremental_roi_proven": false,
+  "model_version": "cre-foundry-codex-handoff-gate-graph-v1",
+  "node_count": 18,
+  "nodes": [
+    {
+      "gate_id": "recommended_source_approval",
+      "prerequisites": [],
+      "ready": false
+    },
+    {
+      "gate_id": "historical_registration_dry_run",
+      "prerequisites": [
+        "recommended_source_approval"
+      ],
+      "ready": false
+    },
+    {
+      "gate_id": "first_authoritative_snapshot",
+      "prerequisites": [
+        "historical_registration_dry_run",
+        "separate_execution_authorization"
+      ],
+      "ready": false
+    },
+    {
+      "gate_id": "repeated_snapshot_collection",
+      "prerequisites": [
+        "first_authoritative_snapshot",
+        "schedule_approval",
+        "acquisition_approval"
+      ],
+      "ready": false
+    },
+    {
+      "gate_id": "change_detection_execution",
+      "prerequisites": [
+        "repeated_snapshot_collection",
+        "approved_change_contract"
+      ],
+      "ready": false
+    },
+    {
+      "gate_id": "all_client_inputs",
+      "prerequisites": [],
+      "ready": false
+    },
+    {
+      "gate_id": "outcome_ledger_ephemeral_bootstrap",
+      "prerequisites": [
+        "all_client_inputs"
+      ],
+      "ready": false
+    },
+    {
+      "gate_id": "persistent_outcome_ledger",
+      "prerequisites": [
+        "outcome_ledger_ephemeral_bootstrap",
+        "separate_activation_authorization"
+      ],
+      "ready": false
+    },
+    {
+      "gate_id": "real_outcome_labels",
+      "prerequisites": [
+        "persistent_outcome_ledger",
+        "pilot_actions",
+        "completed_observation_windows"
+      ],
+      "ready": false
+    },
+    {
+      "gate_id": "point_in_time_dataset",
+      "prerequisites": [
+        "repeated_snapshot_collection",
+        "change_detection_execution",
+        "real_outcome_labels"
+      ],
+      "ready": false
+    },
+    {
+      "gate_id": "baseline_model_training",
+      "prerequisites": [
+        "point_in_time_dataset"
+      ],
+      "ready": false
+    },
+    {
+      "gate_id": "temporal_backtesting",
+      "prerequisites": [
+        "baseline_model_training",
+        "sufficient_historical_folds"
+      ],
+      "ready": false
+    },
+    {
+      "gate_id": "probability_calibration",
+      "prerequisites": [
+        "temporal_backtesting",
+        "held_out_calibration_window"
+      ],
+      "ready": false
+    },
+    {
+      "gate_id": "shadow_pilot",
+      "prerequisites": [
+        "probability_calibration",
+        "all_client_inputs"
+      ],
+      "ready": false
+    },
+    {
+      "gate_id": "controlled_pilot",
+      "prerequisites": [
+        "shadow_pilot",
+        "client_pilot_authorization"
+      ],
+      "ready": false
+    },
+    {
+      "gate_id": "incremental_roi_proof",
+      "prerequisites": [
+        "controlled_pilot",
+        "transaction_economics"
+      ],
+      "ready": false
+    },
+    {
+      "gate_id": "codex_contract_handoff",
+      "meaning": "Codex may build the application shell, interfaces and stable contract adapters.",
+      "prerequisites": [
+        "all_client_inputs",
+        "operating_environment"
+      ],
+      "ready": false
+    },
+    {
+      "gate_id": "codex_final_product_handoff",
+      "meaning": "Codex may complete the production product only after the quant system has evidence.",
+      "prerequisites": [
+        "codex_contract_handoff",
+        "incremental_roi_proof",
+        "production_governance"
+      ],
+      "ready": false
+    }
+  ],
+  "production_governance_ready": false
+}

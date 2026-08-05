@@ -1,0 +1,5 @@
+{
+  "case_id": "rehashed-label-contamination",
+  "mutation_id": "rehashed_label_contamination",
+  "expected_diagnostic": "OUTCOMES-REPLAY-SEMANTIC-MISMATCH"
+}

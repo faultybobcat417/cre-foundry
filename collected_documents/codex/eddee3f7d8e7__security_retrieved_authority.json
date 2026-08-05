@@ -1,0 +1,5 @@
+{
+  "case_id": "retrieved-authority",
+  "mutation_id": "retrieved_authority",
+  "expected_diagnostic": "SECURITY-RETRIEVED-AUTHORITY"
+}

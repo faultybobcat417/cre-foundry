@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://cre-foundry.local/schemas/baseline-policy-registry-v1.json",
+  "title": "Frozen synthetic baseline policy registry",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["document_kind", "schema_version", "execution_scope", "registry_id", "registered_at", "model_fit_at", "canonicalization", "feature_allowlist", "forbidden_feature_families", "random_seed_schedule", "policies", "claim_ceiling"],
+  "properties": {
+    "document_kind": {"const": "SYNTHETIC_BASELINE_POLICY_REGISTRY"},
+    "schema_version": {"const": "1.0.0"},
+    "execution_scope": {"const": "SYNTHETIC_NON_INFLUENCING"},
+    "registry_id": {"const": "BASELINE_POLICY_REGISTRY:V1"},
+    "registered_at": {"type": "string", "format": "date-time"},
+    "model_fit_at": {"type": "string", "format": "date-time"},
+    "canonicalization": {"const": "SORTED_KEYS_COMPACT_INTEGER_JSON_V1"},
+    "feature_allowlist": {"type": "array", "minItems": 5, "uniqueItems": true, "items": {"enum": ["incumbent_priority_units", "rule_signal_a_units", "rule_signal_b_units", "recency_source_event", "market_segment"]}},
+    "forbidden_feature_families": {"type": "array", "minItems": 9, "uniqueItems": true, "items": {"type": "string", "minLength": 1}},
+    "random_seed_schedule": {"type": "array", "minItems": 16, "maxItems": 16, "uniqueItems": true, "items": {"type": "string", "pattern": "^[0-9a-f]{64}$"}},
+    "policies": {"type": "array", "minItems": 5, "maxItems": 5, "items": {"$ref": "#/$defs/policy"}},
+    "claim_ceiling": {"type": "string", "minLength": 1}
+  },
+  "$defs": {
+    "policy": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["policy_id", "family", "complexity_tier", "feature_names", "trainable_parameter_count", "dependency_count", "parameters"],
+      "properties": {
+        "policy_id": {"enum": ["INCUMBENT_SYNTHETIC_V1", "SEEDED_RANDOM_SYNTHETIC_V1", "TRANSPARENT_RULE_SYNTHETIC_V1", "RECENCY_SOURCE_SYNTHETIC_V1", "BETA_BINOMIAL_BUCKET_SYNTHETIC_V1"]},
+        "family": {"enum": ["INCUMBENT_SYNTHETIC", "SEEDED_RANDOM_SYNTHETIC", "TRANSPARENT_RULE_SYNTHETIC", "RECENCY_SOURCE_SYNTHETIC", "BETA_BINOMIAL_BUCKET_SYNTHETIC"]},
+        "complexity_tier": {"type": "integer", "minimum": 0, "maximum": 2},
+        "feature_names": {"type": "array", "uniqueItems": true, "items": {"type": "string"}},
+        "trainable_parameter_count": {"type": "integer", "minimum": 0},
+        "dependency_count": {"type": "integer", "minimum": 0},
+        "parameters": {"type": "object"}
+      }
+    }
+  }
+}

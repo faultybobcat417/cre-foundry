@@ -1,0 +1,66 @@
+{
+  "version": "2.0",
+  "domains": [
+    {
+      "id": "cre_strategy",
+      "scope": "CRE brokerage, occupier, landlord, property, transaction, development, finance, valuation, market mechanism"
+    },
+    {
+      "id": "source_intelligence",
+      "scope": "source authorization, acquisition, snapshots, latency, schema, coverage, data quality"
+    },
+    {
+      "id": "identity_temporal",
+      "scope": "entity resolution, address/unit, locations, properties, ownership, occupancy, bitemporal lineage, protection"
+    },
+    {
+      "id": "statistics_probability",
+      "scope": "measurement, probability, uncertainty, calibration, missingness, censoring, survival, competing risk"
+    },
+    {
+      "id": "causal_experiment",
+      "scope": "counterfactuals, randomization, route-day treatment, interference, adherence, power"
+    },
+    {
+      "id": "machine_learning",
+      "scope": "features, labels, baselines, models, calibration, drift, ablations, registry"
+    },
+    {
+      "id": "optimization_physics",
+      "scope": "geometry, routing, time windows, service time, capacity, robust optimization, spatial coherence"
+    },
+    {
+      "id": "economics",
+      "scope": "incremental probability, conditional value, commissions, cost, opportunity cost, reconciliation"
+    },
+    {
+      "id": "field_operations",
+      "scope": "representative workflow, visitability, safety, access, substitution, human factors"
+    },
+    {
+      "id": "software_architecture",
+      "scope": "modules, APIs, events, data products, state machines, migrations, scaling"
+    },
+    {
+      "id": "security_governance",
+      "scope": "threat models, sandbox, approvals, secrets, privacy, source terms, audit, rollback, emergency stop"
+    },
+    {
+      "id": "reliability_observability",
+      "scope": "SLOs, telemetry, lineage, replay, incidents, error budgets, recovery"
+    },
+    {
+      "id": "product_ux",
+      "scope": "Tip Sheet usability, explanation, forms, mobile workflow, accessibility, adoption"
+    },
+    {
+      "id": "testing_verification",
+      "scope": "unit, integration, property, differential, mutation, fault, hidden holdout, claim linting"
+    },
+    {
+      "id": "research_methods",
+      "scope": "primary evidence, systematic search, counterevidence, synthesis, provenance"
+    }
+  ],
+  "task_rule": "Classify every domain ACTIVE, CONSULT, or NOT_APPLICABLE with reason; load details only for ACTIVE domains."
+}

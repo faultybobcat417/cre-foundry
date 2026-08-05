@@ -1,0 +1,296 @@
+{
+  "layers": {
+    "0": {
+      "fields": [
+        {
+          "alias": "OBJECTID",
+          "name": "OBJECTID",
+          "type": "esriFieldTypeOID"
+        },
+        {
+          "alias": "GIS_ID",
+          "name": "GIS_ID",
+          "type": "esriFieldTypeDouble"
+        },
+        {
+          "alias": "Address",
+          "name": "ADDRESS",
+          "type": "esriFieldTypeString"
+        },
+        {
+          "alias": "FOLDERRSN",
+          "name": "FOLDERRSN",
+          "type": "esriFieldTypeDouble"
+        },
+        {
+          "alias": "Permit Number",
+          "name": "PERMITNUMBER",
+          "type": "esriFieldTypeString"
+        },
+        {
+          "alias": "Description",
+          "name": "SUBDESC",
+          "type": "esriFieldTypeString"
+        },
+        {
+          "alias": "Work Description",
+          "name": "WORKDESC",
+          "type": "esriFieldTypeString"
+        },
+        {
+          "alias": "Issue Date",
+          "name": "ISSUEDATE",
+          "type": "esriFieldTypeDate"
+        },
+        {
+          "alias": "Input Date",
+          "name": "INDATE",
+          "type": "esriFieldTypeDate"
+        },
+        {
+          "alias": "Status",
+          "name": "STATUSDESC",
+          "type": "esriFieldTypeString"
+        },
+        {
+          "alias": "Date Processed",
+          "name": "PROCESSDATE",
+          "type": "esriFieldTypeDate"
+        },
+        {
+          "alias": "Builder",
+          "name": "BUILDER",
+          "type": "esriFieldTypeString"
+        },
+        {
+          "alias": "Contractor",
+          "name": "CONTRACTOR",
+          "type": "esriFieldTypeString"
+        },
+        {
+          "alias": "Expiry Date",
+          "name": "EXPIRYDATE",
+          "type": "esriFieldTypeDate"
+        },
+        {
+          "alias": "Gross Floor Area (Sq.M)",
+          "name": "GFA",
+          "type": "esriFieldTypeString"
+        },
+        {
+          "alias": "Second Unit Created",
+          "name": "SECOND_UNIT",
+          "type": "esriFieldTypeString"
+        },
+        {
+          "alias": "# of Bedrooms",
+          "name": "BEDROOMS",
+          "type": "esriFieldTypeString"
+        },
+        {
+          "alias": "# of Storeys",
+          "name": "STOREYS",
+          "type": "esriFieldTypeString"
+        },
+        {
+          "alias": "# of Dwellings",
+          "name": "DWELLINGS",
+          "type": "esriFieldTypeString"
+        }
+      ],
+      "max_record_count": 1000,
+      "name": "Building Permits",
+      "object_id_field": "OBJECTID",
+      "record_count": 221195,
+      "sample_record": {
+        "ADDRESS": "5 Jade Cres, Brampton, ON, L6S 3G9",
+        "BEDROOMS": null,
+        "BUILDER": null,
+        "CONTRACTOR": null,
+        "DWELLINGS": null,
+        "EXPIRYDATE": null,
+        "FOLDERRSN": 2284589.0,
+        "GFA": null,
+        "GIS_ID": 51535.0,
+        "INDATE": 1784952000000,
+        "ISSUEDATE": null,
+        "OBJECTID": 288147,
+        "PERMITNUMBER": "26-125183-000-00",
+        "PROCESSDATE": null,
+        "SECOND_UNIT": null,
+        "STATUSDESC": "Applied",
+        "STOREYS": null,
+        "SUBDESC": "Two Unit Dwelling",
+        "WORKDESC": "Change of Use - Two Unit Dwelling"
+      },
+      "supports_pagination": true,
+      "type": "Feature Layer"
+    },
+    "1": {
+      "fields": [
+        {
+          "alias": "OBJECTID",
+          "name": "OBJECTID",
+          "type": "esriFieldTypeOID"
+        },
+        {
+          "alias": "FOLDERRSN",
+          "name": "FOLDERRSN",
+          "type": "esriFieldTypeDouble"
+        },
+        {
+          "alias": "DISPLAYORDER",
+          "name": "DISPLAYORDER",
+          "type": "esriFieldTypeInteger"
+        },
+        {
+          "alias": "PROCESSRSN",
+          "name": "PROCESSRSN",
+          "type": "esriFieldTypeInteger"
+        },
+        {
+          "alias": "PROCESSDESC",
+          "name": "PROCESSDESC",
+          "type": "esriFieldTypeString"
+        },
+        {
+          "alias": "STATUSDESC",
+          "name": "STATUSDESC",
+          "type": "esriFieldTypeString"
+        },
+        {
+          "alias": "ACTIVITYDATE",
+          "name": "ACTIVITYDATE",
+          "type": "esriFieldTypeDate"
+        }
+      ],
+      "max_record_count": 1000,
+      "name": "Building Permits Activity",
+      "object_id_field": "OBJECTID",
+      "record_count": 2480498,
+      "sample_record": {
+        "ACTIVITYDATE": null,
+        "DISPLAYORDER": 520,
+        "FOLDERRSN": 2150297.0,
+        "OBJECTID": 2481203,
+        "PROCESSDESC": "Final Inspection - Building",
+        "PROCESSRSN": 25439234,
+        "STATUSDESC": "Re-book Inspection"
+      },
+      "supports_pagination": true,
+      "type": "Table"
+    },
+    "2": {
+      "fields": [
+        {
+          "alias": "OBJECTID",
+          "name": "OBJECTID",
+          "type": "esriFieldTypeOID"
+        },
+        {
+          "alias": "Property RSN",
+          "name": "PROPERTYRSN",
+          "type": "esriFieldTypeInteger"
+        },
+        {
+          "alias": "FOLDERRSN",
+          "name": "FOLDERRSN",
+          "type": "esriFieldTypeInteger"
+        },
+        {
+          "alias": "Permit Number",
+          "name": "PERMITNUMBER",
+          "type": "esriFieldTypeString"
+        },
+        {
+          "alias": "Folder Type",
+          "name": "FOLDERTYPE",
+          "type": "esriFieldTypeString"
+        },
+        {
+          "alias": "Process RSN",
+          "name": "PROCESSRSN",
+          "type": "esriFieldTypeInteger"
+        },
+        {
+          "alias": "Process Group Description",
+          "name": "PROCESSGROUPDESC",
+          "type": "esriFieldTypeString"
+        },
+        {
+          "alias": "Process Description",
+          "name": "PROCESSDESC",
+          "type": "esriFieldTypeString"
+        },
+        {
+          "alias": "Result",
+          "name": "RESULTDESC",
+          "type": "esriFieldTypeString"
+        },
+        {
+          "alias": "Inspector",
+          "name": "INSPECTORDETAIL",
+          "type": "esriFieldTypeString"
+        },
+        {
+          "alias": "Scheduled Date",
+          "name": "SCHEDULEDATE",
+          "type": "esriFieldTypeDate"
+        },
+        {
+          "alias": "Display Order",
+          "name": "DISPLAYORDER",
+          "type": "esriFieldTypeInteger"
+        }
+      ],
+      "max_record_count": 1000,
+      "name": "Upcoming Inspections",
+      "object_id_field": "OBJECTID",
+      "record_count": 754,
+      "sample_record": {
+        "DISPLAYORDER": 70,
+        "FOLDERRSN": 2274608,
+        "FOLDERTYPE": "SN",
+        "INSPECTORDETAIL": "ICAP_S_N\n\r",
+        "OBJECTID": 754,
+        "PERMITNUMBER": "26-115488-000-00",
+        "PROCESSDESC": "Wall Sign Installation",
+        "PROCESSGROUPDESC": "Building Inspections",
+        "PROCESSRSN": 26648423,
+        "PROPERTYRSN": 217199,
+        "RESULTDESC": "Scheduled",
+        "SCHEDULEDATE": 1785124800000
+      },
+      "supports_pagination": true,
+      "type": "Table"
+    }
+  },
+  "service": {
+    "capabilities": "Query",
+    "layers": [
+      {
+        "defaultVisibility": true,
+        "geometryType": "esriGeometryPoint",
+        "id": 0,
+        "maxScale": 0,
+        "minScale": 0,
+        "name": "Building Permits",
+        "parentLayerId": -1,
+        "subLayerIds": null,
+        "type": "Feature Layer"
+      }
+    ],
+    "max_record_count": 1000,
+    "tables": [
+      {
+        "id": 1,
+        "name": "Building Permits Activity"
+      },
+      {
+        "id": 2,
+        "name": "Upcoming Inspections"
+      }
+    ]
+  },
+  "service_url": "https://maps1.brampton.ca/arcgis/rest/services/BuildingPermit/Building_Permits/FeatureServer"
+}

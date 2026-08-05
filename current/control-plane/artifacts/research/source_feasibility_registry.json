@@ -1,0 +1,223 @@
+{
+  "artifact_id": "RESEARCH-001-SOURCE-REGISTRY",
+  "schema_version": "2.0.0",
+  "as_of": "2026-08-01",
+  "status": "public_contract_complete_external_pilot_gated",
+  "scope": "Official Ontario Select Licence and Toronto Committee of Adjustment metadata, schema, and licence terms.",
+  "claim_ceiling": "Current publisher metadata and schema only; row acquisition, historical replay, coverage, identity, prediction, and live use remain unproven or gated.",
+  "bounded_conclusion": "The sources are complementary observations, not a complete establishment universe and not authority to operate a live pilot.",
+  "external_gates": [
+    "GATE-ENTITY-TRUTH-001",
+    "GATE-FULL-EXTERNAL-EVIDENCE-001",
+    "GATE-OUTCOME-LABELS-MATURITY-001",
+    "GATE-PUBLICATION-HISTORY-001",
+    "approved_source_envelope",
+    "firm_economics_services_territories",
+    "representative_origins_capacity_specialties"
+  ],
+  "sources": [
+    {
+      "source_id": "ON-SELECT",
+      "publisher": "Government of Ontario",
+      "dataset_id": "5f0c3532-6e42-4ed7-a92c-ecde22bfea06",
+      "resource_ids": [
+        "5a4f44a7-c656-4977-b4d0-91bedaa0ea06"
+      ],
+      "official_urls": [
+        "https://data.ontario.ca/api/3/action/package_show?id=5f0c3532-6e42-4ed7-a92c-ecde22bfea06",
+        "https://data.ontario.ca/api/3/action/datastore_search?resource_id=5a4f44a7-c656-4977-b4d0-91bedaa0ea06&limit=0",
+        "https://www.ontario.ca/page/open-government-licence-ontario"
+      ],
+      "native_grains": [
+        "licence_observation",
+        "address_observation",
+        "location_candidate"
+      ],
+      "access": {
+        "metadata": "observed",
+        "schema": "observed",
+        "rows": "not_acquired",
+        "automation": "unknown",
+        "retention": "unknown",
+        "redistribution": "unknown",
+        "commercial_use": "unknown",
+        "row_evidence_scope": "narrow_aggregate_only"
+      },
+      "terms": {
+        "status": "verified",
+        "license_id": "OGL-ON-1.0",
+        "terms_url": "https://www.ontario.ca/page/open-government-licence-ontario",
+        "observed_at": "2026-08-02T01:55:00Z",
+        "evidence_ref": "ON-OGL-TERMS",
+        "permissions": [
+          "worldwide royalty-free perpetual non-exclusive lawful use including commercial use"
+        ],
+        "conditions": [
+          "attribution",
+          "no endorsement",
+          "termination on breach",
+          "version in force at access governs"
+        ],
+        "exclusions": [
+          "personal information",
+          "FIPPA-inaccessible material",
+          "third-party rights",
+          "official symbols",
+          "other intellectual property"
+        ],
+        "repository_authority_granted": false
+      },
+      "clocks": [
+        {
+          "clock_id": "source_effective",
+          "source_field": "current_as_of",
+          "semantics": "publisher-declared current effective month",
+          "stage1_use": "provenance only"
+        },
+        {
+          "clock_id": "retrieval",
+          "source_field": "retrieved_at",
+          "semantics": "local observation time",
+          "stage1_use": "snapshot provenance"
+        }
+      ],
+      "stage1_risks": [
+        {
+          "risk_id": "ON-GRAIN",
+          "category": "grain",
+          "description": "Source observation identity is not a physical establishment identity.",
+          "disposition": "retain_separately",
+          "gate_id": null
+        },
+        {
+          "risk_id": "ON-HISTORY",
+          "category": "temporal",
+          "description": "Current resources do not prove replayable historical publication.",
+          "disposition": "gate",
+          "gate_id": "GATE-PUBLICATION-HISTORY-001"
+        },
+        {
+          "risk_id": "ON-AUTHORITY",
+          "category": "authority",
+          "description": "Public retrieval and OGL terms do not grant repository operational authority.",
+          "disposition": "gate",
+          "gate_id": "approved_source_envelope"
+        }
+      ],
+      "reproduction_probe_ids": [
+        "PROBE-ON-PACKAGE",
+        "PROBE-ON-SCHEMA"
+      ],
+      "claim_ceiling": "Current official metadata and declared schema; no row-level or historical claim.",
+      "history_status": "current_only_not_replayable"
+    },
+    {
+      "source_id": "TOR-COA",
+      "publisher": "City of Toronto",
+      "dataset_id": "260e1356-dce6-48e2-afa0-e71d70cd6406",
+      "resource_ids": [
+        "51fd09cd-99d6-430a-9d42-c24a937b0cb0",
+        "9c97254e-5460-4799-896f-c7823413c81c",
+        "b3876c3c-c706-442f-80f6-4ad3e12839c1",
+        "f4e0790c-74bb-4ea9-b3c4-9a7dd6173a8d"
+      ],
+      "official_urls": [
+        "https://ckan0.cf.opendata.inter.prod-toronto.ca/api/3/action/package_show?id=committee-of-adjustment-applications",
+        "https://ckan0.cf.opendata.inter.prod-toronto.ca/api/3/action/datastore_search?resource_id=51fd09cd-99d6-430a-9d42-c24a937b0cb0&limit=0",
+        "https://open.toronto.ca/open-data-licence/"
+      ],
+      "native_grains": [
+        "resource_scoped_application_observation",
+        "cross_partition_application_candidate",
+        "property_candidate"
+      ],
+      "access": {
+        "metadata": "observed",
+        "schema": "observed",
+        "rows": "not_acquired",
+        "automation": "unknown",
+        "retention": "unknown",
+        "redistribution": "unknown",
+        "commercial_use": "unknown",
+        "row_evidence_scope": "narrow_counterexample_only"
+      },
+      "terms": {
+        "status": "verified",
+        "license_id": "open-government-licence-toronto",
+        "terms_url": "https://open.toronto.ca/open-data-licence/",
+        "observed_at": "2026-08-02T01:55:00Z",
+        "evidence_ref": "TOR-OGL-TERMS",
+        "permissions": [
+          "worldwide royalty-free perpetual non-exclusive lawful use including commercial use"
+        ],
+        "conditions": [
+          "attribution",
+          "no endorsement",
+          "termination on breach",
+          "version 1.0 conditions apply"
+        ],
+        "exclusions": [
+          "personal information",
+          "MFIPPA- or PHIPA-inaccessible material",
+          "third-party rights",
+          "official symbols",
+          "other intellectual property"
+        ],
+        "repository_authority_granted": false
+      },
+      "clocks": [
+        {
+          "clock_id": "event",
+          "source_field": "IN_DATE/HEARING_DATE/FINALDATE",
+          "semantics": "source event fields with family-specific types",
+          "stage1_use": "retain raw and parsed separately"
+        },
+        {
+          "clock_id": "retrieval",
+          "source_field": "retrieved_at",
+          "semantics": "local observation time",
+          "stage1_use": "snapshot provenance"
+        }
+      ],
+      "stage1_risks": [
+        {
+          "risk_id": "TOR-GRAIN",
+          "category": "grain",
+          "description": "Source observation identity is not a physical establishment identity.",
+          "disposition": "retain_separately",
+          "gate_id": null
+        },
+        {
+          "risk_id": "TOR-HISTORY",
+          "category": "temporal",
+          "description": "Current resources do not prove replayable historical publication.",
+          "disposition": "gate",
+          "gate_id": "GATE-PUBLICATION-HISTORY-001"
+        },
+        {
+          "risk_id": "TOR-AUTHORITY",
+          "category": "authority",
+          "description": "Public retrieval and OGL terms do not grant repository operational authority.",
+          "disposition": "gate",
+          "gate_id": "approved_source_envelope"
+        },
+        {
+          "risk_id": "TOR-PRIVACY",
+          "category": "privacy",
+          "description": "Modern closed schema exposes contact fields requiring governance review.",
+          "disposition": "gate",
+          "gate_id": "approved_source_envelope"
+        }
+      ],
+      "reproduction_probe_ids": [
+        "PROBE-TOR-PACKAGE",
+        "PROBE-TOR-ACTIVE",
+        "PROBE-TOR-CLOSED",
+        "PROBE-TOR-2016",
+        "PROBE-TOR-2001"
+      ],
+      "claim_ceiling": "Current official resource topology and declared schemas; no contemporaneous-publication claim.",
+      "history_status": "annual_labels_not_publication_history"
+    }
+  ]
+}

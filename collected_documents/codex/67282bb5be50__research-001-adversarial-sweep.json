@@ -1,0 +1,12 @@
+{
+  "artifact_id": "RESEARCH-001-ADVERSARIAL-SWEEP-001",
+  "result": "REPAIR_REQUIRED",
+  "as_of": "2026-08-01",
+  "findings": [
+    {"severity": "critical", "id": "R-AUDIT-001", "finding": "The completion evaluator validates superficial label sets rather than strict claim, evidence, terms, grain, clock, mapping, hash, and proof contracts.", "repair": "Add strict schemas for all four artifacts and validate full semantics and immutable evidence bindings."},
+    {"severity": "critical", "id": "R-AUDIT-002", "finding": "Known-bad mode recognizes fixtures instead of applying mutations to artifact copies through the normal evaluator.", "repair": "Run each mutation through the normal validation path and require exact diagnostics; include Ontario multi-address and Toronto conflicting-SYS_ID cases."},
+    {"severity": "high", "id": "R-AUDIT-003", "finding": "The claim graph lacks resolved evidence objects and exact RQ-001..RQ-012 coverage.", "repair": "Crosswalk all twelve research questions and seven claims to exact dated primary evidence, probe method, retrieval timestamp, and digest."},
+    {"severity": "high", "id": "R-AUDIT-004", "finding": "Licence terms provenance and source-to-canonical field coverage are incomplete.", "repair": "Record exact terms URLs/obligations/exclusions and complete Ontario/Toronto schema-family mappings, grains, clocks, sentinels, and ceilings."}
+  ],
+  "claim_ceiling": "Draft research artifacts only; RESEARCH-001 completion is not proven."
+}

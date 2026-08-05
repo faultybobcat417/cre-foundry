@@ -1,0 +1,8 @@
+{
+  "task_id": "ARCHITECTURE-001",
+  "task_path": "tasks/ARCHITECTURE-001.json",
+  "status": "in_progress",
+  "selected_reason": "CALIBRATION-001 reached public proof level 5; the thin vertical slice already exists, so ARCHITECTURE-001 is the earliest executable hardening task and unlocks SECURITY-001 and downstream observability/replay work.",
+  "started_at": "2026-08-02T09:11:30Z",
+  "proof_target": 4
+}

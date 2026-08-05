@@ -1,0 +1,68 @@
+{
+  "artifact_id": "IDENTITY-001-MATERIAL-CONTRACT-VALIDATION",
+  "schema_version": "1.0.0",
+  "execution_scope": "SYNTHETIC_NON_INFLUENCING",
+  "proof_level": 4,
+  "evaluator_id": "identity-temporal-public-v1",
+  "generated_at": "2026-08-03T18:03:28Z",
+  "subject_task": "IDENTITY-001",
+  "passed": true,
+  "results": {
+    "determinism_byte_identical": true,
+    "frozen_schema_errors": [],
+    "frozen_evaluator": {
+      "passed": true,
+      "diagnostics": []
+    },
+    "material_diagnostics": [],
+    "protection_verdict_reconstruction": "CLEAR",
+    "clean_object": true
+  },
+  "subject_bindings": {
+    "subject_sha256": "068691d4885a1b0837cac31e03188090efc97f09c998145ff551bbb439048383",
+    "material_document_digest": "068691d4885a1b0837cac31e03188090efc97f09c998145ff551bbb439048383",
+    "evaluator_reconstruction_digest": "068691d4885a1b0837cac31e03188090efc97f09c998145ff551bbb439048383",
+    "schema_sha256": "0c3b42f906063169b46cc760f9e7cf516b3c73c7c84f6293eb4cfcf826cc55ba",
+    "contract_sha256": "583e7715e2af53e82309e934d6136d1b161bcda45771cebc948e9a9137525282"
+  },
+  "graph_schema": {
+    "path": "contracts/synthetic_identity_graph.schema.json",
+    "draft2020_12_valid": true,
+    "error": ""
+  },
+  "known_bad_fixtures": [
+    {
+      "fixture": "evals/known_bad/frontier/identity_suite_collapse.json",
+      "case_id": "suite-collapse",
+      "expected_diagnostic": "registered mutation detected: suite-collapse",
+      "frozen_detected": true,
+      "material_detected": true,
+      "frozen_extra": [],
+      "material_extra": [],
+      "result": "DETECTED_BOTH"
+    },
+    {
+      "fixture": "evals/known_bad/frontier/identity_protected_alias.json",
+      "case_id": "protected-alias-clear",
+      "expected_diagnostic": "registered mutation detected: protected-alias-clear",
+      "frozen_detected": true,
+      "material_detected": true,
+      "frozen_extra": [],
+      "material_extra": [],
+      "result": "DETECTED_BOTH"
+    }
+  ],
+  "claims_not_established": [
+    "real-entity-resolution-accuracy",
+    "real-precision-recall",
+    "real-protected-account-completeness",
+    "measured-zero-false-clears-on-production",
+    "representative-usability",
+    "production-readiness",
+    "deployment-readiness",
+    "field-effectiveness",
+    "commercial-lift",
+    "sealed-evaluator-independence",
+    "hidden-holdout-performance"
+  ]
+}

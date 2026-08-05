@@ -1,0 +1,5 @@
+{
+  "case_id": "straight-line-fallback",
+  "mutation_id": "straight_line_substitution",
+  "expected_diagnostic": "ROUTING-STRAIGHT-LINE"
+}

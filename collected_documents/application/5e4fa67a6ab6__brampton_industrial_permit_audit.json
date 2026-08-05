@@ -1,0 +1,5497 @@
+{
+  "activity_process_distribution": {
+    "Review - Building": 19,
+    "Review - HVAC": 19,
+    "Review - Plumbing": 19,
+    "Review - Zoning": 19
+  },
+  "activity_status_distribution": {
+    "Closed": 11,
+    "Information Required": 3,
+    "Not Applicable": 11,
+    "Open": 51
+  },
+  "category_distribution": {
+    "F1: Industrial": 3,
+    "F2: Industrial": 191,
+    "F3: Industrial": 6
+  },
+  "event_pattern_distribution": {
+    "alteration": 115,
+    "building_addition": 12,
+    "change_of_use": 2,
+    "other": 71
+  },
+  "industrial_categories": [
+    "F1: Industrial",
+    "F2: Industrial",
+    "F3: Industrial"
+  ],
+  "query": "SUBDESC LIKE '%Industrial%'",
+  "recent_sample_count": 200,
+  "records": [
+    {
+      "address": "142 Kennedy Rd S, Brampton, ON, L6W 3G4",
+      "application_date": null,
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "alteration",
+      "expiry_date": null,
+      "folder_rsn": 219936,
+      "gfa": null,
+      "issue_date": null,
+      "latitude": 43.68412305872524,
+      "longitude": -79.73259634929616,
+      "object_id": 134611,
+      "permit_number": "07-113461-000-00",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Cancelled",
+      "subdescription": "F2: Industrial",
+      "work_description": "Alteration (Renovation)"
+    },
+    {
+      "address": "95 Inspire Blvd, Unit 11, Brampton, ",
+      "application_date": {
+        "toronto": "2026-07-23T00:00:00-04:00",
+        "utc": "2026-07-23T04:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "other",
+      "expiry_date": null,
+      "folder_rsn": 2283394,
+      "gfa": null,
+      "issue_date": null,
+      "latitude": 43.75618660469615,
+      "longitude": -79.7871847972803,
+      "object_id": 158448,
+      "permit_number": "26-124048-000-00",
+      "process_date": null,
+      "sampled_activities": [
+        {
+          "activity_date": null,
+          "display_order": 25,
+          "process": "Review - HVAC",
+          "status": "Open"
+        },
+        {
+          "activity_date": null,
+          "display_order": 20,
+          "process": "Review - Plumbing",
+          "status": "Open"
+        },
+        {
+          "activity_date": null,
+          "display_order": 15,
+          "process": "Review - Building",
+          "status": "Open"
+        },
+        {
+          "activity_date": null,
+          "display_order": 10,
+          "process": "Review - Zoning",
+          "status": "Open"
+        }
+      ],
+      "status": "Applied",
+      "subdescription": "F2: Industrial",
+      "work_description": "Interior/Unit Finish"
+    },
+    {
+      "address": "155 Sun Pac Blvd, Brampton, ON, L6S 5Z6",
+      "application_date": {
+        "toronto": "2026-07-23T00:00:00-04:00",
+        "utc": "2026-07-23T04:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "building_addition",
+      "expiry_date": null,
+      "folder_rsn": 2278194,
+      "gfa": null,
+      "issue_date": null,
+      "latitude": 43.75552428349331,
+      "longitude": -79.6921610219922,
+      "object_id": 119417,
+      "permit_number": "26-119005-000-00",
+      "process_date": null,
+      "sampled_activities": [
+        {
+          "activity_date": null,
+          "display_order": 25,
+          "process": "Review - HVAC",
+          "status": "Open"
+        },
+        {
+          "activity_date": null,
+          "display_order": 20,
+          "process": "Review - Plumbing",
+          "status": "Open"
+        },
+        {
+          "activity_date": null,
+          "display_order": 15,
+          "process": "Review - Building",
+          "status": "Open"
+        },
+        {
+          "activity_date": null,
+          "display_order": 10,
+          "process": "Review - Zoning",
+          "status": "Open"
+        }
+      ],
+      "status": "Applied",
+      "subdescription": "F2: Industrial",
+      "work_description": "Addition - Complete"
+    },
+    {
+      "address": "301 Orenda Rd, Brampton, ",
+      "application_date": {
+        "toronto": "2026-07-22T00:00:00-04:00",
+        "utc": "2026-07-22T04:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "other",
+      "expiry_date": null,
+      "folder_rsn": 2283322,
+      "gfa": "11279.63",
+      "issue_date": null,
+      "latitude": 43.69927730030011,
+      "longitude": -79.71326964538827,
+      "object_id": 155343,
+      "permit_number": "26-040037-P01-01",
+      "process_date": null,
+      "sampled_activities": [
+        {
+          "activity_date": null,
+          "display_order": 25,
+          "process": "Review - HVAC",
+          "status": "Open"
+        },
+        {
+          "activity_date": null,
+          "display_order": 20,
+          "process": "Review - Plumbing",
+          "status": "Open"
+        },
+        {
+          "activity_date": null,
+          "display_order": 15,
+          "process": "Review - Building",
+          "status": "Open"
+        },
+        {
+          "activity_date": null,
+          "display_order": 10,
+          "process": "Review - Zoning",
+          "status": "Open"
+        }
+      ],
+      "status": "Applied",
+      "subdescription": "F2: Industrial",
+      "work_description": "Revision"
+    },
+    {
+      "address": "95 Inspire Blvd, Unit 7, Brampton, ",
+      "application_date": {
+        "toronto": "2026-07-22T00:00:00-04:00",
+        "utc": "2026-07-22T04:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "other",
+      "expiry_date": null,
+      "folder_rsn": 2279175,
+      "gfa": null,
+      "issue_date": null,
+      "latitude": 43.755960127466466,
+      "longitude": -79.78751377073672,
+      "object_id": 95494,
+      "permit_number": "26-119966-000-00",
+      "process_date": null,
+      "sampled_activities": [
+        {
+          "activity_date": null,
+          "display_order": 25,
+          "process": "Review - HVAC",
+          "status": "Open"
+        },
+        {
+          "activity_date": null,
+          "display_order": 20,
+          "process": "Review - Plumbing",
+          "status": "Open"
+        },
+        {
+          "activity_date": null,
+          "display_order": 15,
+          "process": "Review - Building",
+          "status": "Open"
+        },
+        {
+          "activity_date": null,
+          "display_order": 10,
+          "process": "Review - Zoning",
+          "status": "Open"
+        }
+      ],
+      "status": "Applied",
+      "subdescription": "F2: Industrial",
+      "work_description": "Interior/Unit Finish"
+    },
+    {
+      "address": "8495 Goreway Dr, Brampton, ON, L6T 5N8",
+      "application_date": {
+        "toronto": "2026-07-17T00:00:00-04:00",
+        "utc": "2026-07-17T04:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "alteration",
+      "expiry_date": null,
+      "folder_rsn": 2280307,
+      "gfa": null,
+      "issue_date": null,
+      "latitude": 43.743499368792286,
+      "longitude": -79.66950080018152,
+      "object_id": 108542,
+      "permit_number": "26-121053-000-00",
+      "process_date": null,
+      "sampled_activities": [
+        {
+          "activity_date": null,
+          "display_order": 25,
+          "process": "Review - HVAC",
+          "status": "Not Applicable"
+        },
+        {
+          "activity_date": null,
+          "display_order": 20,
+          "process": "Review - Plumbing",
+          "status": "Open"
+        },
+        {
+          "activity_date": null,
+          "display_order": 15,
+          "process": "Review - Building",
+          "status": "Open"
+        },
+        {
+          "activity_date": null,
+          "display_order": 10,
+          "process": "Review - Zoning",
+          "status": "Open"
+        }
+      ],
+      "status": "Applied",
+      "subdescription": "F2: Industrial",
+      "work_description": "Alteration (Renovation)"
+    },
+    {
+      "address": "111 Van Kirk Dr, Brampton, ON, L7A 1A4",
+      "application_date": {
+        "toronto": "2026-07-14T00:00:00-04:00",
+        "utc": "2026-07-14T04:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "other",
+      "expiry_date": null,
+      "folder_rsn": 2260557,
+      "gfa": "200",
+      "issue_date": null,
+      "latitude": 43.7080499555341,
+      "longitude": -79.80306042101839,
+      "object_id": 169667,
+      "permit_number": "26-010879-P01-01",
+      "process_date": null,
+      "sampled_activities": [
+        {
+          "activity_date": null,
+          "display_order": 25,
+          "process": "Review - HVAC",
+          "status": "Open"
+        },
+        {
+          "activity_date": null,
+          "display_order": 20,
+          "process": "Review - Plumbing",
+          "status": "Not Applicable"
+        },
+        {
+          "activity_date": null,
+          "display_order": 15,
+          "process": "Review - Building",
+          "status": "Open"
+        },
+        {
+          "activity_date": null,
+          "display_order": 10,
+          "process": "Review - Zoning",
+          "status": "Open"
+        }
+      ],
+      "status": "Applied",
+      "subdescription": "F2: Industrial",
+      "work_description": "Revision"
+    },
+    {
+      "address": "1600 Bovaird Dr E, Brampton, ON, L6R 3S8",
+      "application_date": {
+        "toronto": "2026-07-14T00:00:00-04:00",
+        "utc": "2026-07-14T04:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "alteration",
+      "expiry_date": null,
+      "folder_rsn": 2277748,
+      "gfa": null,
+      "issue_date": null,
+      "latitude": 43.73795204001154,
+      "longitude": -79.75267256756422,
+      "object_id": 104640,
+      "permit_number": "26-118564-000-00",
+      "process_date": null,
+      "sampled_activities": [
+        {
+          "activity_date": null,
+          "display_order": 25,
+          "process": "Review - HVAC",
+          "status": "Open"
+        },
+        {
+          "activity_date": null,
+          "display_order": 20,
+          "process": "Review - Plumbing",
+          "status": "Open"
+        },
+        {
+          "activity_date": null,
+          "display_order": 15,
+          "process": "Review - Building",
+          "status": "Open"
+        },
+        {
+          "activity_date": null,
+          "display_order": 10,
+          "process": "Review - Zoning",
+          "status": "Open"
+        }
+      ],
+      "status": "Applied",
+      "subdescription": "F2: Industrial",
+      "work_description": "Alteration (Renovation)"
+    },
+    {
+      "address": "8 Abacus Rd, Brampton, ON, L6T 5B7",
+      "application_date": {
+        "toronto": "2026-07-09T00:00:00-04:00",
+        "utc": "2026-07-09T04:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "alteration",
+      "expiry_date": null,
+      "folder_rsn": 2275199,
+      "gfa": null,
+      "issue_date": null,
+      "latitude": 43.76271919130951,
+      "longitude": -79.66265771113186,
+      "object_id": 152783,
+      "permit_number": "26-116071-000-00",
+      "process_date": null,
+      "sampled_activities": [
+        {
+          "activity_date": null,
+          "display_order": 25,
+          "process": "Review - HVAC",
+          "status": "Open"
+        },
+        {
+          "activity_date": null,
+          "display_order": 20,
+          "process": "Review - Plumbing",
+          "status": "Open"
+        },
+        {
+          "activity_date": null,
+          "display_order": 15,
+          "process": "Review - Building",
+          "status": "Open"
+        },
+        {
+          "activity_date": null,
+          "display_order": 10,
+          "process": "Review - Zoning",
+          "status": "Open"
+        }
+      ],
+      "status": "Applied",
+      "subdescription": "F2: Industrial",
+      "work_description": "Alteration (Renovation)"
+    },
+    {
+      "address": "3900 Ebenezer Rd, Brampton, ON, ",
+      "application_date": {
+        "toronto": "2026-07-09T00:00:00-04:00",
+        "utc": "2026-07-09T04:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "other",
+      "expiry_date": null,
+      "folder_rsn": 2274249,
+      "gfa": "4302",
+      "issue_date": null,
+      "latitude": 43.760673841664165,
+      "longitude": -79.67677917521291,
+      "object_id": 112121,
+      "permit_number": "25-173292-P01-01",
+      "process_date": null,
+      "sampled_activities": [
+        {
+          "activity_date": null,
+          "display_order": 25,
+          "process": "Review - HVAC",
+          "status": "Open"
+        },
+        {
+          "activity_date": null,
+          "display_order": 20,
+          "process": "Review - Plumbing",
+          "status": "Open"
+        },
+        {
+          "activity_date": null,
+          "display_order": 15,
+          "process": "Review - Building",
+          "status": "Open"
+        },
+        {
+          "activity_date": null,
+          "display_order": 10,
+          "process": "Review - Zoning",
+          "status": "Open"
+        }
+      ],
+      "status": "Applied",
+      "subdescription": "F3: Industrial",
+      "work_description": "Revision"
+    },
+    {
+      "address": "815 Intermodal Dr, Brampton, ON, L6T 5W2",
+      "application_date": {
+        "toronto": "2026-07-06T00:00:00-04:00",
+        "utc": "2026-07-06T04:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "alteration",
+      "expiry_date": null,
+      "folder_rsn": 2273107,
+      "gfa": null,
+      "issue_date": null,
+      "latitude": 43.74208436894709,
+      "longitude": -79.65638252435629,
+      "object_id": 191930,
+      "permit_number": "26-114117-000-00",
+      "process_date": null,
+      "sampled_activities": [
+        {
+          "activity_date": null,
+          "display_order": 25,
+          "process": "Review - HVAC",
+          "status": "Open"
+        },
+        {
+          "activity_date": null,
+          "display_order": 20,
+          "process": "Review - Plumbing",
+          "status": "Not Applicable"
+        },
+        {
+          "activity_date": null,
+          "display_order": 15,
+          "process": "Review - Building",
+          "status": "Open"
+        },
+        {
+          "activity_date": null,
+          "display_order": 10,
+          "process": "Review - Zoning",
+          "status": "Open"
+        }
+      ],
+      "status": "Applied",
+      "subdescription": "F2: Industrial",
+      "work_description": "Alteration (Renovation)"
+    },
+    {
+      "address": "10910 Dixie Rd, Unit 10, Brampton, ",
+      "application_date": {
+        "toronto": "2026-07-06T00:00:00-04:00",
+        "utc": "2026-07-06T04:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "other",
+      "expiry_date": null,
+      "folder_rsn": 2273458,
+      "gfa": null,
+      "issue_date": null,
+      "latitude": 43.75750040403805,
+      "longitude": -79.7867708575013,
+      "object_id": 150654,
+      "permit_number": "26-114433-000-00",
+      "process_date": null,
+      "sampled_activities": [
+        {
+          "activity_date": null,
+          "display_order": 25,
+          "process": "Review - HVAC",
+          "status": "Open"
+        },
+        {
+          "activity_date": null,
+          "display_order": 20,
+          "process": "Review - Plumbing",
+          "status": "Closed"
+        },
+        {
+          "activity_date": null,
+          "display_order": 15,
+          "process": "Review - Building",
+          "status": "Open"
+        },
+        {
+          "activity_date": null,
+          "display_order": 10,
+          "process": "Review - Zoning",
+          "status": "Open"
+        }
+      ],
+      "status": "Applied",
+      "subdescription": "F2: Industrial",
+      "work_description": "Interior/Unit Finish"
+    },
+    {
+      "address": "44 Westwyn Crt, Brampton, ON, L6T 4T5",
+      "application_date": {
+        "toronto": "2026-06-30T00:00:00-04:00",
+        "utc": "2026-06-30T04:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "alteration",
+      "expiry_date": null,
+      "folder_rsn": 2269631,
+      "gfa": null,
+      "issue_date": null,
+      "latitude": 43.68601041905169,
+      "longitude": -79.6956216828298,
+      "object_id": 175657,
+      "permit_number": "26-110688-000-00",
+      "process_date": null,
+      "sampled_activities": [
+        {
+          "activity_date": null,
+          "display_order": 25,
+          "process": "Review - HVAC",
+          "status": "Not Applicable"
+        },
+        {
+          "activity_date": null,
+          "display_order": 20,
+          "process": "Review - Plumbing",
+          "status": "Not Applicable"
+        },
+        {
+          "activity_date": null,
+          "display_order": 15,
+          "process": "Review - Building",
+          "status": "Open"
+        },
+        {
+          "activity_date": null,
+          "display_order": 10,
+          "process": "Review - Zoning",
+          "status": "Open"
+        }
+      ],
+      "status": "Applied",
+      "subdescription": "F2: Industrial",
+      "work_description": "Alteration (Renovation)"
+    },
+    {
+      "address": "85 Inspire Blvd, Unit 4, Brampton, ",
+      "application_date": {
+        "toronto": "2026-06-29T00:00:00-04:00",
+        "utc": "2026-06-29T04:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "other",
+      "expiry_date": null,
+      "folder_rsn": 2269349,
+      "gfa": "465.16",
+      "issue_date": null,
+      "latitude": 43.756955557518445,
+      "longitude": -79.78769996754431,
+      "object_id": 123458,
+      "permit_number": "26-053424-P01-01",
+      "process_date": null,
+      "sampled_activities": [
+        {
+          "activity_date": null,
+          "display_order": 25,
+          "process": "Review - HVAC",
+          "status": "Closed"
+        },
+        {
+          "activity_date": null,
+          "display_order": 20,
+          "process": "Review - Plumbing",
+          "status": "Closed"
+        },
+        {
+          "activity_date": null,
+          "display_order": 15,
+          "process": "Review - Building",
+          "status": "Information Required"
+        },
+        {
+          "activity_date": null,
+          "display_order": 10,
+          "process": "Review - Zoning",
+          "status": "Closed"
+        }
+      ],
+      "status": "Applied",
+      "subdescription": "F2: Industrial",
+      "work_description": "Revision"
+    },
+    {
+      "address": "20 Tasker Rd, Unit 8, Brampton, ",
+      "application_date": {
+        "toronto": "2026-06-26T00:00:00-04:00",
+        "utc": "2026-06-26T04:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "other",
+      "expiry_date": null,
+      "folder_rsn": 2267546,
+      "gfa": "1502.5",
+      "issue_date": null,
+      "latitude": 43.75568791664353,
+      "longitude": -79.78689377811956,
+      "object_id": 192926,
+      "permit_number": "25-179869-P01-01",
+      "process_date": null,
+      "sampled_activities": [
+        {
+          "activity_date": null,
+          "display_order": 25,
+          "process": "Review - HVAC",
+          "status": "Closed"
+        },
+        {
+          "activity_date": null,
+          "display_order": 20,
+          "process": "Review - Plumbing",
+          "status": "Closed"
+        },
+        {
+          "activity_date": null,
+          "display_order": 15,
+          "process": "Review - Building",
+          "status": "Open"
+        },
+        {
+          "activity_date": null,
+          "display_order": 10,
+          "process": "Review - Zoning",
+          "status": "Closed"
+        }
+      ],
+      "status": "Applied",
+      "subdescription": "F2: Industrial",
+      "work_description": "Revision"
+    },
+    {
+      "address": "5 Parkshore Dr, Brampton, ON, L6T 5M1",
+      "application_date": {
+        "toronto": "2026-06-24T00:00:00-04:00",
+        "utc": "2026-06-24T04:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "alteration",
+      "expiry_date": null,
+      "folder_rsn": 2265658,
+      "gfa": "367",
+      "issue_date": null,
+      "latitude": 43.7377004558714,
+      "longitude": -79.64495993033304,
+      "object_id": 184864,
+      "permit_number": "26-106787-000-00",
+      "process_date": null,
+      "sampled_activities": [
+        {
+          "activity_date": null,
+          "display_order": 25,
+          "process": "Review - HVAC",
+          "status": "Not Applicable"
+        },
+        {
+          "activity_date": null,
+          "display_order": 20,
+          "process": "Review - Plumbing",
+          "status": "Not Applicable"
+        },
+        {
+          "activity_date": null,
+          "display_order": 15,
+          "process": "Review - Building",
+          "status": "Closed"
+        },
+        {
+          "activity_date": null,
+          "display_order": 10,
+          "process": "Review - Zoning",
+          "status": "Open"
+        }
+      ],
+      "status": "Applied",
+      "subdescription": "F2: Industrial",
+      "work_description": "Alteration (Renovation)"
+    },
+    {
+      "address": "8050 Heritage Rd, Brampton, ON, L6Y 0C9",
+      "application_date": {
+        "toronto": "2026-06-23T00:00:00-04:00",
+        "utc": "2026-06-23T04:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "alteration",
+      "expiry_date": null,
+      "folder_rsn": 2245195,
+      "gfa": null,
+      "issue_date": null,
+      "latitude": 43.61807636814188,
+      "longitude": -79.79019308623532,
+      "object_id": 198488,
+      "permit_number": "26-086657-000-00",
+      "process_date": null,
+      "sampled_activities": [
+        {
+          "activity_date": null,
+          "display_order": 25,
+          "process": "Review - HVAC",
+          "status": "Information Required"
+        },
+        {
+          "activity_date": null,
+          "display_order": 20,
+          "process": "Review - Plumbing",
+          "status": "Closed"
+        },
+        {
+          "activity_date": null,
+          "display_order": 15,
+          "process": "Review - Building",
+          "status": "Open"
+        },
+        {
+          "activity_date": null,
+          "display_order": 10,
+          "process": "Review - Zoning",
+          "status": "Open"
+        }
+      ],
+      "status": "Applied",
+      "subdescription": "F2: Industrial",
+      "work_description": "Alteration (Renovation)"
+    },
+    {
+      "address": "7425 Mississauga Rd, Brampton, ON, ",
+      "application_date": {
+        "toronto": "2026-06-19T00:00:00-04:00",
+        "utc": "2026-06-19T04:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "other",
+      "expiry_date": null,
+      "folder_rsn": 2262040,
+      "gfa": "2588.91",
+      "issue_date": null,
+      "latitude": 43.625118720077595,
+      "longitude": -79.77065266188987,
+      "object_id": 220008,
+      "permit_number": "24-434205-P01-02",
+      "process_date": null,
+      "sampled_activities": [
+        {
+          "activity_date": null,
+          "display_order": 25,
+          "process": "Review - HVAC",
+          "status": "Not Applicable"
+        },
+        {
+          "activity_date": null,
+          "display_order": 20,
+          "process": "Review - Plumbing",
+          "status": "Not Applicable"
+        },
+        {
+          "activity_date": null,
+          "display_order": 15,
+          "process": "Review - Building",
+          "status": "Closed"
+        },
+        {
+          "activity_date": null,
+          "display_order": 10,
+          "process": "Review - Zoning",
+          "status": "Open"
+        }
+      ],
+      "status": "Applied",
+      "subdescription": "F2: Industrial",
+      "work_description": "Revision"
+    },
+    {
+      "address": "8050 Heritage Rd, Brampton, ON, L6Y 0C9",
+      "application_date": {
+        "toronto": "2026-06-19T00:00:00-04:00",
+        "utc": "2026-06-19T04:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "alteration",
+      "expiry_date": null,
+      "folder_rsn": 2240800,
+      "gfa": null,
+      "issue_date": null,
+      "latitude": 43.61807636814188,
+      "longitude": -79.79019308623532,
+      "object_id": 150934,
+      "permit_number": "26-082303-000-00",
+      "process_date": null,
+      "sampled_activities": [
+        {
+          "activity_date": null,
+          "display_order": 25,
+          "process": "Review - HVAC",
+          "status": "Not Applicable"
+        },
+        {
+          "activity_date": null,
+          "display_order": 20,
+          "process": "Review - Plumbing",
+          "status": "Closed"
+        },
+        {
+          "activity_date": null,
+          "display_order": 15,
+          "process": "Review - Building",
+          "status": "Open"
+        },
+        {
+          "activity_date": null,
+          "display_order": 10,
+          "process": "Review - Zoning",
+          "status": "Open"
+        }
+      ],
+      "status": "Applied",
+      "subdescription": "F2: Industrial",
+      "work_description": "Alteration (Renovation)"
+    },
+    {
+      "address": "220 Walker Dr, Brampton, ON, L6T 3W1",
+      "application_date": {
+        "toronto": "2026-06-17T00:00:00-04:00",
+        "utc": "2026-06-17T04:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "alteration",
+      "expiry_date": null,
+      "folder_rsn": 2259907,
+      "gfa": null,
+      "issue_date": null,
+      "latitude": 43.73439434601868,
+      "longitude": -79.69222753759847,
+      "object_id": 180370,
+      "permit_number": "26-101155-000-00",
+      "process_date": null,
+      "sampled_activities": [
+        {
+          "activity_date": null,
+          "display_order": 25,
+          "process": "Review - HVAC",
+          "status": "Information Required"
+        },
+        {
+          "activity_date": null,
+          "display_order": 20,
+          "process": "Review - Plumbing",
+          "status": "Not Applicable"
+        },
+        {
+          "activity_date": null,
+          "display_order": 15,
+          "process": "Review - Building",
+          "status": "Open"
+        },
+        {
+          "activity_date": null,
+          "display_order": 10,
+          "process": "Review - Zoning",
+          "status": "Open"
+        }
+      ],
+      "status": "Applied",
+      "subdescription": "F2: Industrial",
+      "work_description": "Alteration (Renovation)"
+    },
+    {
+      "address": "10 Pedigree Crt, Brampton, ON, L6T 5T8",
+      "application_date": {
+        "toronto": "2026-06-12T00:00:00-04:00",
+        "utc": "2026-06-12T04:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "alteration",
+      "expiry_date": null,
+      "folder_rsn": 2258137,
+      "gfa": null,
+      "issue_date": null,
+      "latitude": 43.722402386968795,
+      "longitude": -79.65951490695038,
+      "object_id": 216296,
+      "permit_number": "26-099420-000-00",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Applied",
+      "subdescription": "F2: Industrial",
+      "work_description": "Alteration (Renovation)"
+    },
+    {
+      "address": "2110 Williams Pky, Unit 9, Brampton, ON, ",
+      "application_date": {
+        "toronto": "2026-06-11T00:00:00-04:00",
+        "utc": "2026-06-11T04:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "alteration",
+      "expiry_date": null,
+      "folder_rsn": 2255256,
+      "gfa": "104",
+      "issue_date": {
+        "toronto": "2026-07-21T00:00:00-04:00",
+        "utc": "2026-07-21T04:00:00+00:00"
+      },
+      "latitude": 43.756655559954176,
+      "longitude": -79.70696669086672,
+      "object_id": 89066,
+      "permit_number": "26-096560-P01-00",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Issued",
+      "subdescription": "F2: Industrial",
+      "work_description": "Alteration (Renovation)"
+    },
+    {
+      "address": "8875 Torbram Rd, Brampton, ON, L6T 3V9",
+      "application_date": {
+        "toronto": "2026-06-10T00:00:00-04:00",
+        "utc": "2026-06-10T04:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "alteration",
+      "expiry_date": null,
+      "folder_rsn": 2256504,
+      "gfa": "140",
+      "issue_date": null,
+      "latitude": 43.73342809855023,
+      "longitude": -79.70179761781657,
+      "object_id": 217760,
+      "permit_number": "26-097789-000-00",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Applied",
+      "subdescription": "F2: Industrial",
+      "work_description": "Alteration (Renovation)"
+    },
+    {
+      "address": "7965 Heritage Rd, Brampton, ON, L6Y 5X5",
+      "application_date": {
+        "toronto": "2026-06-09T00:00:00-04:00",
+        "utc": "2026-06-09T04:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "alteration",
+      "expiry_date": null,
+      "folder_rsn": 2255205,
+      "gfa": "738.12",
+      "issue_date": {
+        "toronto": "2026-07-22T00:00:00-04:00",
+        "utc": "2026-07-22T04:00:00+00:00"
+      },
+      "latitude": 43.61646281689335,
+      "longitude": -79.78369212757883,
+      "object_id": 152132,
+      "permit_number": "26-096511-P01-00",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Issued",
+      "subdescription": "F2: Industrial",
+      "work_description": "Alteration (Renovation)"
+    },
+    {
+      "address": "2021 Williams Pky, Brampton, ON, ",
+      "application_date": {
+        "toronto": "2026-06-08T00:00:00-04:00",
+        "utc": "2026-06-08T04:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "alteration",
+      "expiry_date": null,
+      "folder_rsn": 2255416,
+      "gfa": null,
+      "issue_date": null,
+      "latitude": 43.756826955136454,
+      "longitude": -79.7034042968381,
+      "object_id": 148450,
+      "permit_number": "26-096716-000-00",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Applied",
+      "subdescription": "F2: Industrial",
+      "work_description": "Alteration (Renovation)"
+    },
+    {
+      "address": "5 Docksteader Rd, Brampton, ON, L6R 3Y2",
+      "application_date": {
+        "toronto": "2026-05-28T00:00:00-04:00",
+        "utc": "2026-05-28T04:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "alteration",
+      "expiry_date": null,
+      "folder_rsn": 2247714,
+      "gfa": "80",
+      "issue_date": null,
+      "latitude": 43.75936955486404,
+      "longitude": -79.78958121412134,
+      "object_id": 201686,
+      "permit_number": "26-089126-000-00",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Applied",
+      "subdescription": "F2: Industrial",
+      "work_description": "Alteration (Renovation)"
+    },
+    {
+      "address": "55 Walker Dr, Brampton, ON, L6T 5K5",
+      "application_date": {
+        "toronto": "2026-05-27T00:00:00-04:00",
+        "utc": "2026-05-27T04:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "other",
+      "expiry_date": null,
+      "folder_rsn": 2245228,
+      "gfa": "200",
+      "issue_date": {
+        "toronto": "2026-07-13T00:00:00-04:00",
+        "utc": "2026-07-13T04:00:00+00:00"
+      },
+      "latitude": 43.72126391330972,
+      "longitude": -79.67799056397193,
+      "object_id": 206145,
+      "permit_number": "26-002943-P01-01",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Issued",
+      "subdescription": "F2: Industrial",
+      "work_description": "Revision"
+    },
+    {
+      "address": "31 Bramsteele Rd, Brampton, ON, L6W 3K6",
+      "application_date": {
+        "toronto": "2026-05-27T00:00:00-04:00",
+        "utc": "2026-05-27T04:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "alteration",
+      "expiry_date": null,
+      "folder_rsn": 2246427,
+      "gfa": null,
+      "issue_date": null,
+      "latitude": 43.683030842554416,
+      "longitude": -79.71686032538322,
+      "object_id": 160503,
+      "permit_number": "26-087848-000-00",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Applied",
+      "subdescription": "F2: Industrial",
+      "work_description": "Alteration (Renovation)"
+    },
+    {
+      "address": "7965 Goreway Dr, Unit 1, Brampton, ON, L6T 5T5",
+      "application_date": {
+        "toronto": "2026-05-26T00:00:00-04:00",
+        "utc": "2026-05-26T04:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "alteration",
+      "expiry_date": null,
+      "folder_rsn": 2246028,
+      "gfa": "775",
+      "issue_date": {
+        "toronto": "2026-06-30T00:00:00-04:00",
+        "utc": "2026-06-30T04:00:00+00:00"
+      },
+      "latitude": 43.73311356179045,
+      "longitude": -79.65702342206683,
+      "object_id": 218354,
+      "permit_number": "26-087466-P01-00",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Issued",
+      "subdescription": "F2: Industrial",
+      "work_description": "Alteration (Renovation)"
+    },
+    {
+      "address": "255 Orenda Rd, Brampton, ON, L6T 1E6",
+      "application_date": {
+        "toronto": "2026-05-25T00:00:00-04:00",
+        "utc": "2026-05-25T04:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "other",
+      "expiry_date": null,
+      "folder_rsn": 2245443,
+      "gfa": "23",
+      "issue_date": {
+        "toronto": "2026-07-13T00:00:00-04:00",
+        "utc": "2026-07-13T04:00:00+00:00"
+      },
+      "latitude": 43.697317721537395,
+      "longitude": -79.71973202510418,
+      "object_id": 187648,
+      "permit_number": "23-287031-P01-01",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Issued",
+      "subdescription": "F2: Industrial",
+      "work_description": "Revision"
+    },
+    {
+      "address": "85 Parkshore Dr, Brampton, ON, L6T 5M1",
+      "application_date": {
+        "toronto": "2026-05-25T00:00:00-04:00",
+        "utc": "2026-05-25T04:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "alteration",
+      "expiry_date": null,
+      "folder_rsn": 2245369,
+      "gfa": null,
+      "issue_date": null,
+      "latitude": 43.736622490214195,
+      "longitude": -79.64479656280207,
+      "object_id": 115265,
+      "permit_number": "26-086820-000-00",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Applied",
+      "subdescription": "F2: Industrial",
+      "work_description": "Alteration (Renovation)"
+    },
+    {
+      "address": "7415 Mississauga Rd, Brampton, ON, ",
+      "application_date": {
+        "toronto": "2026-05-21T00:00:00-04:00",
+        "utc": "2026-05-21T04:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "other",
+      "expiry_date": null,
+      "folder_rsn": 2242062,
+      "gfa": "7912.24",
+      "issue_date": {
+        "toronto": "2026-06-11T00:00:00-04:00",
+        "utc": "2026-06-11T04:00:00+00:00"
+      },
+      "latitude": 43.624800655145194,
+      "longitude": -79.77144610728553,
+      "object_id": 210832,
+      "permit_number": "24-433838-P02-01",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Issued",
+      "subdescription": "F2: Industrial",
+      "work_description": "Revision"
+    },
+    {
+      "address": "7435 Mississauga Rd, Brampton, ON, ",
+      "application_date": {
+        "toronto": "2026-05-21T00:00:00-04:00",
+        "utc": "2026-05-21T04:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "other",
+      "expiry_date": null,
+      "folder_rsn": 2242030,
+      "gfa": "8732.5",
+      "issue_date": {
+        "toronto": "2026-06-11T00:00:00-04:00",
+        "utc": "2026-06-11T04:00:00+00:00"
+      },
+      "latitude": 43.62515790529954,
+      "longitude": -79.76923060306947,
+      "object_id": 94315,
+      "permit_number": "24-434206-P02-02",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Issued",
+      "subdescription": "F2: Industrial",
+      "work_description": "Revision"
+    },
+    {
+      "address": "3495 Steeles Ave E, Brampton, ON, L6T 5W8",
+      "application_date": {
+        "toronto": "2026-05-20T00:00:00-04:00",
+        "utc": "2026-05-20T04:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "alteration",
+      "expiry_date": null,
+      "folder_rsn": 2241585,
+      "gfa": "1283",
+      "issue_date": {
+        "toronto": "2026-07-23T00:00:00-04:00",
+        "utc": "2026-07-23T04:00:00+00:00"
+      },
+      "latitude": 43.73075407066225,
+      "longitude": -79.65724256686697,
+      "object_id": 170046,
+      "permit_number": "26-083078-P01-00",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Issued",
+      "subdescription": "F1: Industrial",
+      "work_description": "Alteration (Renovation)"
+    },
+    {
+      "address": "8550 Goreway Dr, Brampton, ON, L6T 5J8",
+      "application_date": {
+        "toronto": "2026-05-20T00:00:00-04:00",
+        "utc": "2026-05-20T04:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "alteration",
+      "expiry_date": null,
+      "folder_rsn": 2241689,
+      "gfa": "55",
+      "issue_date": {
+        "toronto": "2026-07-16T00:00:00-04:00",
+        "utc": "2026-07-16T04:00:00+00:00"
+      },
+      "latitude": 43.7414887415223,
+      "longitude": -79.6740280532087,
+      "object_id": 122553,
+      "permit_number": "26-083178-P01-00",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Issued",
+      "subdescription": "F2: Industrial",
+      "work_description": "Alteration (Renovation)"
+    },
+    {
+      "address": "20 Tasker Rd, Unit 6, Brampton, ON, ",
+      "application_date": {
+        "toronto": "2026-05-19T00:00:00-04:00",
+        "utc": "2026-05-19T04:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "alteration",
+      "expiry_date": null,
+      "folder_rsn": 2240847,
+      "gfa": "375.21",
+      "issue_date": {
+        "toronto": "2026-07-24T00:00:00-04:00",
+        "utc": "2026-07-24T04:00:00+00:00"
+      },
+      "latitude": 43.755871189314085,
+      "longitude": -79.78664165065032,
+      "object_id": 208335,
+      "permit_number": "26-082348-P01-00",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Issued",
+      "subdescription": "F2: Industrial",
+      "work_description": "Alteration (Renovation)"
+    },
+    {
+      "address": "175 Sandalwood Pky W, Brampton, ON, L7A 1E8",
+      "application_date": {
+        "toronto": "2026-05-19T00:00:00-04:00",
+        "utc": "2026-05-19T04:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "alteration",
+      "expiry_date": null,
+      "folder_rsn": 2235084,
+      "gfa": "2140",
+      "issue_date": null,
+      "latitude": 43.71273556174956,
+      "longitude": -79.80633304940348,
+      "object_id": 200496,
+      "permit_number": "26-076620-000-00",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Ready to Issue",
+      "subdescription": "F2: Industrial",
+      "work_description": "Alteration (Renovation)"
+    },
+    {
+      "address": "2150 Williams Pky, Brampton, ON, ",
+      "application_date": {
+        "toronto": "2026-05-14T00:00:00-04:00",
+        "utc": "2026-05-14T04:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "change_of_use",
+      "expiry_date": null,
+      "folder_rsn": 2238235,
+      "gfa": null,
+      "issue_date": null,
+      "latitude": 43.75696821242127,
+      "longitude": -79.70610114285812,
+      "object_id": 94875,
+      "permit_number": "26-079761-000-00",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Applied",
+      "subdescription": "F2: Industrial",
+      "work_description": "Change of Use"
+    },
+    {
+      "address": "10900 Dixie Rd, Unit 10, Brampton, ",
+      "application_date": {
+        "toronto": "2026-05-13T00:00:00-04:00",
+        "utc": "2026-05-13T04:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "alteration",
+      "expiry_date": null,
+      "folder_rsn": 2237599,
+      "gfa": "12",
+      "issue_date": null,
+      "latitude": 43.75666900577069,
+      "longitude": -79.78566028874636,
+      "object_id": 111219,
+      "permit_number": "26-079121-000-00",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Applied",
+      "subdescription": "F2: Industrial",
+      "work_description": "Alteration (Renovation)"
+    },
+    {
+      "address": "35 Van Kirk Dr, Unit 13, Brampton, ON, L7A 1A5",
+      "application_date": {
+        "toronto": "2026-05-07T00:00:00-04:00",
+        "utc": "2026-05-07T04:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "other",
+      "expiry_date": null,
+      "folder_rsn": 2229084,
+      "gfa": "159.11",
+      "issue_date": null,
+      "latitude": 43.70154161300779,
+      "longitude": -79.79737655170936,
+      "object_id": 201887,
+      "permit_number": "25-168401-P01-01",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Applied",
+      "subdescription": "F2: Industrial",
+      "work_description": "Revision"
+    },
+    {
+      "address": "8550 Goreway Dr, Brampton, ON, L6T 5J8",
+      "application_date": {
+        "toronto": "2026-05-07T00:00:00-04:00",
+        "utc": "2026-05-07T04:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "other",
+      "expiry_date": null,
+      "folder_rsn": 2234323,
+      "gfa": null,
+      "issue_date": {
+        "toronto": "2026-06-30T00:00:00-04:00",
+        "utc": "2026-06-30T04:00:00+00:00"
+      },
+      "latitude": 43.7414887415223,
+      "longitude": -79.6740280532087,
+      "object_id": 157681,
+      "permit_number": "22-318974-P01-01",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Closed",
+      "subdescription": "F2: Industrial",
+      "work_description": "Revision"
+    },
+    {
+      "address": "5 Intermodal Dr, Brampton, ON, L6T 5V9",
+      "application_date": {
+        "toronto": "2026-05-04T00:00:00-04:00",
+        "utc": "2026-05-04T04:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "alteration",
+      "expiry_date": null,
+      "folder_rsn": 2232486,
+      "gfa": null,
+      "issue_date": null,
+      "latitude": 43.730909220716086,
+      "longitude": -79.67673932851609,
+      "object_id": 210688,
+      "permit_number": "26-074058-000-00",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Applied",
+      "subdescription": "F2: Industrial",
+      "work_description": "Alteration (Renovation)"
+    },
+    {
+      "address": "75 Advance Blvd, Brampton, ON, L6T 4N1",
+      "application_date": {
+        "toronto": "2026-05-04T00:00:00-04:00",
+        "utc": "2026-05-04T04:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "alteration",
+      "expiry_date": null,
+      "folder_rsn": 2232393,
+      "gfa": null,
+      "issue_date": null,
+      "latitude": 43.69760852050268,
+      "longitude": -79.69369164510456,
+      "object_id": 149528,
+      "permit_number": "26-073967-000-00",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Applied",
+      "subdescription": "F2: Industrial",
+      "work_description": "Alteration (Renovation)"
+    },
+    {
+      "address": "8550 Goreway Dr, Brampton, ON, L6T 5J8",
+      "application_date": {
+        "toronto": "2026-05-04T00:00:00-04:00",
+        "utc": "2026-05-04T04:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "other",
+      "expiry_date": null,
+      "folder_rsn": 2232139,
+      "gfa": "3500",
+      "issue_date": {
+        "toronto": "2026-06-29T00:00:00-04:00",
+        "utc": "2026-06-29T04:00:00+00:00"
+      },
+      "latitude": 43.7414887415223,
+      "longitude": -79.6740280532087,
+      "object_id": 107561,
+      "permit_number": "22-300299-P01-01",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Issued",
+      "subdescription": "F2: Industrial",
+      "work_description": "Revision"
+    },
+    {
+      "address": "195 Advance Blvd, Brampton, ON, L6T 4N2",
+      "application_date": {
+        "toronto": "2026-05-01T00:00:00-04:00",
+        "utc": "2026-05-01T04:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "other",
+      "expiry_date": null,
+      "folder_rsn": 2230284,
+      "gfa": "7155.17",
+      "issue_date": {
+        "toronto": "2026-06-29T00:00:00-04:00",
+        "utc": "2026-06-29T04:00:00+00:00"
+      },
+      "latitude": 43.69133639444254,
+      "longitude": -79.693684343309,
+      "object_id": 134557,
+      "permit_number": "26-071905-P01-00",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Issued",
+      "subdescription": "F2: Industrial",
+      "work_description": "New Complete Building"
+    },
+    {
+      "address": "15 Westcreek Blvd, Brampton, ON, L6T 5T4",
+      "application_date": {
+        "toronto": "2026-04-29T00:00:00-04:00",
+        "utc": "2026-04-29T04:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "building_addition",
+      "expiry_date": null,
+      "folder_rsn": 2223800,
+      "gfa": "5753",
+      "issue_date": null,
+      "latitude": 43.68210447886194,
+      "longitude": -79.69945996052084,
+      "object_id": 115578,
+      "permit_number": "26-065607-000-00",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Applied",
+      "subdescription": "F2: Industrial",
+      "work_description": "Addition - Complete"
+    },
+    {
+      "address": "20 Ironside Dr, Brampton, ON, ",
+      "application_date": {
+        "toronto": "2026-04-29T00:00:00-04:00",
+        "utc": "2026-04-29T04:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "other",
+      "expiry_date": null,
+      "folder_rsn": 2229396,
+      "gfa": "25942.61",
+      "issue_date": null,
+      "latitude": 43.70353359471485,
+      "longitude": -79.79089145520255,
+      "object_id": 106979,
+      "permit_number": "26-071047-000-00",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Applied",
+      "subdescription": "F2: Industrial",
+      "work_description": "Interior/Unit Finish"
+    },
+    {
+      "address": "25 Newkirk Crt, Unit 7, Brampton, ON, ",
+      "application_date": {
+        "toronto": "2026-04-28T00:00:00-04:00",
+        "utc": "2026-04-28T04:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "other",
+      "expiry_date": null,
+      "folder_rsn": 2228221,
+      "gfa": null,
+      "issue_date": null,
+      "latitude": 43.74615961937523,
+      "longitude": -79.79236589860436,
+      "object_id": 154036,
+      "permit_number": "26-069921-000-00",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Applied",
+      "subdescription": "F2: Industrial",
+      "work_description": "Interior/Unit Finish"
+    },
+    {
+      "address": "1 Van Der Graaf Crt, Brampton, ON, L6T 5E5",
+      "application_date": {
+        "toronto": "2026-04-27T00:00:00-04:00",
+        "utc": "2026-04-27T04:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "alteration",
+      "expiry_date": null,
+      "folder_rsn": 2227397,
+      "gfa": null,
+      "issue_date": null,
+      "latitude": 43.72007626665502,
+      "longitude": -79.67829506839102,
+      "object_id": 187008,
+      "permit_number": "26-069122-000-00",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Applied",
+      "subdescription": "F2: Industrial",
+      "work_description": "Alteration (Renovation)"
+    },
+    {
+      "address": "425 Railside Dr, Brampton, ON, L7A 0N8",
+      "application_date": {
+        "toronto": "2026-04-27T00:00:00-04:00",
+        "utc": "2026-04-27T04:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "alteration",
+      "expiry_date": null,
+      "folder_rsn": 2226772,
+      "gfa": "603",
+      "issue_date": null,
+      "latitude": 43.7104049283324,
+      "longitude": -79.80013936887416,
+      "object_id": 117083,
+      "permit_number": "26-068510-000-00",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Applied",
+      "subdescription": "F2: Industrial",
+      "work_description": "Alteration (Renovation)"
+    },
+    {
+      "address": "425 Railside Dr, Brampton, ON, L7A 0N8",
+      "application_date": {
+        "toronto": "2026-04-27T00:00:00-04:00",
+        "utc": "2026-04-27T04:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "alteration",
+      "expiry_date": null,
+      "folder_rsn": 2226768,
+      "gfa": null,
+      "issue_date": null,
+      "latitude": 43.7104049283324,
+      "longitude": -79.80013936887416,
+      "object_id": 113307,
+      "permit_number": "26-068506-000-00",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Applied",
+      "subdescription": "F2: Industrial",
+      "work_description": "Alteration (Renovation)"
+    },
+    {
+      "address": "27 Strathearn Ave, Unit 9, Brampton, ON, L6T 4V5",
+      "application_date": {
+        "toronto": "2026-04-26T00:00:00-04:00",
+        "utc": "2026-04-26T04:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "other",
+      "expiry_date": null,
+      "folder_rsn": 2215672,
+      "gfa": "2417.8",
+      "issue_date": null,
+      "latitude": 43.6956492568949,
+      "longitude": -79.69617080010153,
+      "object_id": 207135,
+      "permit_number": "26-057574-000-00",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Applied",
+      "subdescription": "F2: Industrial",
+      "work_description": "Interior/Unit Finish"
+    },
+    {
+      "address": "2550 Steeles Ave E, Brampton, ON, L6T 5R3",
+      "application_date": {
+        "toronto": "2026-04-26T00:00:00-04:00",
+        "utc": "2026-04-26T04:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "alteration",
+      "expiry_date": null,
+      "folder_rsn": 2226782,
+      "gfa": "6",
+      "issue_date": {
+        "toronto": "2026-07-10T00:00:00-04:00",
+        "utc": "2026-07-10T04:00:00+00:00"
+      },
+      "latitude": 43.71638866578502,
+      "longitude": -79.67954059929913,
+      "object_id": 181860,
+      "permit_number": "26-068520-P01-00",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Issued",
+      "subdescription": "F2: Industrial",
+      "work_description": "Alteration (Renovation)"
+    },
+    {
+      "address": "255 Orenda Rd, Brampton, ON, L6T 1E6",
+      "application_date": {
+        "toronto": "2026-04-21T00:00:00-04:00",
+        "utc": "2026-04-21T04:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "other",
+      "expiry_date": null,
+      "folder_rsn": 2222861,
+      "gfa": "959",
+      "issue_date": null,
+      "latitude": 43.697317721537395,
+      "longitude": -79.71973202510418,
+      "object_id": 146030,
+      "permit_number": "24-432973-P01-01",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Applied",
+      "subdescription": "F2: Industrial",
+      "work_description": "Revision"
+    },
+    {
+      "address": "400 Parkhurst Sq, Unit 3, Brampton, ",
+      "application_date": {
+        "toronto": "2026-04-21T00:00:00-04:00",
+        "utc": "2026-04-21T04:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "other",
+      "expiry_date": null,
+      "folder_rsn": 2222792,
+      "gfa": "7824",
+      "issue_date": {
+        "toronto": "2026-06-15T00:00:00-04:00",
+        "utc": "2026-06-15T04:00:00+00:00"
+      },
+      "latitude": 43.72897925690724,
+      "longitude": -79.66681345768065,
+      "object_id": 108729,
+      "permit_number": "26-064632-P01-00",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Issued",
+      "subdescription": "F2: Industrial",
+      "work_description": "Interior/Unit Finish"
+    },
+    {
+      "address": "114 East Dr, Brampton, ON, L6T 1C1",
+      "application_date": {
+        "toronto": "2026-04-21T00:00:00-04:00",
+        "utc": "2026-04-21T04:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "alteration",
+      "expiry_date": null,
+      "folder_rsn": 2222877,
+      "gfa": "302.9",
+      "issue_date": {
+        "toronto": "2026-05-26T00:00:00-04:00",
+        "utc": "2026-05-26T04:00:00+00:00"
+      },
+      "latitude": 43.71101826567585,
+      "longitude": -79.69221391698416,
+      "object_id": 97166,
+      "permit_number": "26-064707-P01-00",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Issued",
+      "subdescription": "F2: Industrial",
+      "work_description": "Alteration (Renovation)"
+    },
+    {
+      "address": "45 Cottrelle Blvd, Brampton, ON, L6S 0C3",
+      "application_date": {
+        "toronto": "2026-04-20T00:00:00-04:00",
+        "utc": "2026-04-20T04:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "alteration",
+      "expiry_date": null,
+      "folder_rsn": 2218993,
+      "gfa": "590",
+      "issue_date": {
+        "toronto": "2026-06-19T00:00:00-04:00",
+        "utc": "2026-06-19T04:00:00+00:00"
+      },
+      "latitude": 43.76166947153659,
+      "longitude": -79.71135245397097,
+      "object_id": 146321,
+      "permit_number": "26-060891-P01-00",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Issued",
+      "subdescription": "F3: Industrial",
+      "work_description": "Alteration (Renovation)"
+    },
+    {
+      "address": "9500 McLaughlin Rd N, Brampton, ON, ",
+      "application_date": {
+        "toronto": "2026-04-20T00:00:00-04:00",
+        "utc": "2026-04-20T04:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "alteration",
+      "expiry_date": null,
+      "folder_rsn": 2222427,
+      "gfa": "48.67",
+      "issue_date": {
+        "toronto": "2026-06-23T00:00:00-04:00",
+        "utc": "2026-06-23T04:00:00+00:00"
+      },
+      "latitude": 43.68445034070896,
+      "longitude": -79.78720192157827,
+      "object_id": 123066,
+      "permit_number": "26-064257-P01-00",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Issued",
+      "subdescription": "F2: Industrial",
+      "work_description": "Alteration (Renovation)"
+    },
+    {
+      "address": "9501 Torbram Rd, Brampton, ",
+      "application_date": {
+        "toronto": "2026-04-17T00:00:00-04:00",
+        "utc": "2026-04-17T04:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "other",
+      "expiry_date": null,
+      "folder_rsn": 2216136,
+      "gfa": "30702.69",
+      "issue_date": null,
+      "latitude": 43.74674291301856,
+      "longitude": -79.72131329674532,
+      "object_id": 188155,
+      "permit_number": "26-058035-000-00",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Applied",
+      "subdescription": "F2: Industrial",
+      "work_description": "New Shell Building"
+    },
+    {
+      "address": "9511 Torbram Rd, Brampton, ",
+      "application_date": {
+        "toronto": "2026-04-17T00:00:00-04:00",
+        "utc": "2026-04-17T04:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "other",
+      "expiry_date": null,
+      "folder_rsn": 2218258,
+      "gfa": null,
+      "issue_date": null,
+      "latitude": 43.74845575958746,
+      "longitude": -79.72396331988409,
+      "object_id": 153609,
+      "permit_number": "26-060159-000-00",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Applied",
+      "subdescription": "F2: Industrial",
+      "work_description": "New Shell Building"
+    },
+    {
+      "address": "7425 Mississauga Rd, Brampton, ON, ",
+      "application_date": {
+        "toronto": "2026-04-14T00:00:00-04:00",
+        "utc": "2026-04-14T04:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "other",
+      "expiry_date": null,
+      "folder_rsn": 2215348,
+      "gfa": "2588.91",
+      "issue_date": {
+        "toronto": "2026-05-26T00:00:00-04:00",
+        "utc": "2026-05-26T04:00:00+00:00"
+      },
+      "latitude": 43.625118720077595,
+      "longitude": -79.77065266188987,
+      "object_id": 159165,
+      "permit_number": "24-434205-P01-01",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Issued",
+      "subdescription": "F2: Industrial",
+      "work_description": "Revision"
+    },
+    {
+      "address": "10 Newkirk Crt, Brampton, ON, ",
+      "application_date": {
+        "toronto": "2026-04-10T00:00:00-04:00",
+        "utc": "2026-04-10T04:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "alteration",
+      "expiry_date": null,
+      "folder_rsn": 2216317,
+      "gfa": "250",
+      "issue_date": {
+        "toronto": "2026-05-21T00:00:00-04:00",
+        "utc": "2026-05-21T04:00:00+00:00"
+      },
+      "latitude": 43.74889487373879,
+      "longitude": -79.7927313284741,
+      "object_id": 212104,
+      "permit_number": "26-058218-P01-00",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Issued",
+      "subdescription": "F2: Industrial",
+      "work_description": "Alteration (Renovation)"
+    },
+    {
+      "address": "2074 Steeles Ave E, Unit 23, Brampton, ON, L6T 4Z9",
+      "application_date": {
+        "toronto": "2026-04-10T00:00:00-04:00",
+        "utc": "2026-04-10T04:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "alteration",
+      "expiry_date": null,
+      "folder_rsn": 2205323,
+      "gfa": null,
+      "issue_date": null,
+      "latitude": 43.71009852599127,
+      "longitude": -79.68556845346643,
+      "object_id": 107146,
+      "permit_number": "26-047308-000-00",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Applied",
+      "subdescription": "F2: Industrial",
+      "work_description": "Alteration (Renovation)"
+    },
+    {
+      "address": "35 Armthorpe Rd, Brampton, ON, L6T 5M4",
+      "application_date": {
+        "toronto": "2026-04-10T00:00:00-04:00",
+        "utc": "2026-04-10T04:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "alteration",
+      "expiry_date": null,
+      "folder_rsn": 2216554,
+      "gfa": null,
+      "issue_date": {
+        "toronto": "2026-05-12T00:00:00-04:00",
+        "utc": "2026-05-12T04:00:00+00:00"
+      },
+      "latitude": 43.74556651814465,
+      "longitude": -79.6712685432974,
+      "object_id": 102086,
+      "permit_number": "26-058467-P01-00",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Issued",
+      "subdescription": "F2: Industrial",
+      "work_description": "Alteration (Renovation)"
+    },
+    {
+      "address": "35 Bramtree Crt, Brampton, ON, L6S 6G2",
+      "application_date": {
+        "toronto": "2026-04-08T00:00:00-04:00",
+        "utc": "2026-04-08T04:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "other",
+      "expiry_date": null,
+      "folder_rsn": 2215619,
+      "gfa": "6837.22",
+      "issue_date": {
+        "toronto": "2026-04-29T00:00:00-04:00",
+        "utc": "2026-04-29T04:00:00+00:00"
+      },
+      "latitude": 43.745214353724535,
+      "longitude": -79.71373236797132,
+      "object_id": 133042,
+      "permit_number": "25-181367-P02-01",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Issued",
+      "subdescription": "F2: Industrial",
+      "work_description": "Revision"
+    },
+    {
+      "address": "5 Intermodal Dr, Brampton, ON, L6T 5V9",
+      "application_date": {
+        "toronto": "2026-04-07T00:00:00-04:00",
+        "utc": "2026-04-07T04:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "alteration",
+      "expiry_date": null,
+      "folder_rsn": 2214720,
+      "gfa": "240",
+      "issue_date": {
+        "toronto": "2026-06-16T00:00:00-04:00",
+        "utc": "2026-06-16T04:00:00+00:00"
+      },
+      "latitude": 43.730909220716086,
+      "longitude": -79.67673932851609,
+      "object_id": 172079,
+      "permit_number": "26-056626-P01-00",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Issued",
+      "subdescription": "F2: Industrial",
+      "work_description": "Alteration (Renovation)"
+    },
+    {
+      "address": "30 Cadetta Rd, Brampton, ON, ",
+      "application_date": {
+        "toronto": "2026-04-01T00:00:00-04:00",
+        "utc": "2026-04-01T04:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "other",
+      "expiry_date": null,
+      "folder_rsn": 2211711,
+      "gfa": "41484",
+      "issue_date": {
+        "toronto": "2026-06-11T00:00:00-04:00",
+        "utc": "2026-06-11T04:00:00+00:00"
+      },
+      "latitude": 43.81338489231543,
+      "longitude": -79.67742330306757,
+      "object_id": 173362,
+      "permit_number": "25-036310-P01-01",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Issued",
+      "subdescription": "F2: Industrial",
+      "work_description": "Revision"
+    },
+    {
+      "address": "130 East Dr, Brampton, ON, L6T 1C1",
+      "application_date": {
+        "toronto": "2026-04-01T00:00:00-04:00",
+        "utc": "2026-04-01T04:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "alteration",
+      "expiry_date": null,
+      "folder_rsn": 2212068,
+      "gfa": null,
+      "issue_date": null,
+      "latitude": 43.71275592968216,
+      "longitude": -79.69022400702707,
+      "object_id": 115269,
+      "permit_number": "26-054006-000-00",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Applied",
+      "subdescription": "F2: Industrial",
+      "work_description": "Alteration (Renovation)"
+    },
+    {
+      "address": "85 Inspire Blvd, Unit 4, Brampton, ",
+      "application_date": {
+        "toronto": "2026-03-31T00:00:00-04:00",
+        "utc": "2026-03-31T04:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "other",
+      "expiry_date": null,
+      "folder_rsn": 2211466,
+      "gfa": "465.16",
+      "issue_date": {
+        "toronto": "2026-06-16T00:00:00-04:00",
+        "utc": "2026-06-16T04:00:00+00:00"
+      },
+      "latitude": 43.756955557518445,
+      "longitude": -79.78769996754431,
+      "object_id": 178056,
+      "permit_number": "26-053424-P01-00",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Issued",
+      "subdescription": "F2: Industrial",
+      "work_description": "Interior/Unit Finish"
+    },
+    {
+      "address": "8550 Goreway Dr, Brampton, ON, L6T 5J8",
+      "application_date": {
+        "toronto": "2026-03-26T00:00:00-04:00",
+        "utc": "2026-03-26T04:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "alteration",
+      "expiry_date": null,
+      "folder_rsn": 2205567,
+      "gfa": "20",
+      "issue_date": {
+        "toronto": "2026-05-04T00:00:00-04:00",
+        "utc": "2026-05-04T04:00:00+00:00"
+      },
+      "latitude": 43.7414887415223,
+      "longitude": -79.6740280532087,
+      "object_id": 155966,
+      "permit_number": "26-047544-P01-00",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Issued",
+      "subdescription": "F2: Industrial",
+      "work_description": "Alteration (Renovation)"
+    },
+    {
+      "address": "110 East Dr, Brampton, ON, L6T 1C1",
+      "application_date": {
+        "toronto": "2026-03-20T00:00:00-04:00",
+        "utc": "2026-03-20T04:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "alteration",
+      "expiry_date": null,
+      "folder_rsn": 2206031,
+      "gfa": "25",
+      "issue_date": {
+        "toronto": "2026-04-28T00:00:00-04:00",
+        "utc": "2026-04-28T04:00:00+00:00"
+      },
+      "latitude": 43.709697291773146,
+      "longitude": -79.69309888998487,
+      "object_id": 214260,
+      "permit_number": "26-048011-P01-00",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Issued",
+      "subdescription": "F2: Industrial",
+      "work_description": "Alteration (Renovation)"
+    },
+    {
+      "address": "8380 Highway 50, Brampton, ON, ",
+      "application_date": {
+        "toronto": "2026-03-20T00:00:00-04:00",
+        "utc": "2026-03-20T04:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "other",
+      "expiry_date": null,
+      "folder_rsn": 2204441,
+      "gfa": "1026.1",
+      "issue_date": null,
+      "latitude": 43.76146297622533,
+      "longitude": -79.64651840232011,
+      "object_id": 200115,
+      "permit_number": "25-118622-P01-01",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Ready to Issue",
+      "subdescription": "F2: Industrial",
+      "work_description": "Revision"
+    },
+    {
+      "address": "14 Cadetta Rd, Brampton, ON, L6P 0X4",
+      "application_date": {
+        "toronto": "2026-03-18T00:00:00-04:00",
+        "utc": "2026-03-18T04:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "other",
+      "expiry_date": null,
+      "folder_rsn": 2201886,
+      "gfa": "0",
+      "issue_date": {
+        "toronto": "2026-06-29T00:00:00-04:00",
+        "utc": "2026-06-29T04:00:00+00:00"
+      },
+      "latitude": 43.81502891104469,
+      "longitude": -79.68222737766457,
+      "object_id": 93538,
+      "permit_number": "19-493268-P01-01",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Issued",
+      "subdescription": "F2: Industrial",
+      "work_description": "Revision"
+    },
+    {
+      "address": "400 Parkhurst Sq, Brampton, ON, ",
+      "application_date": {
+        "toronto": "2026-03-17T00:00:00-04:00",
+        "utc": "2026-03-17T04:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "alteration",
+      "expiry_date": null,
+      "folder_rsn": 2204573,
+      "gfa": "444",
+      "issue_date": {
+        "toronto": "2026-04-08T00:00:00-04:00",
+        "utc": "2026-04-08T04:00:00+00:00"
+      },
+      "latitude": 43.72871486637316,
+      "longitude": -79.66728686742704,
+      "object_id": 201924,
+      "permit_number": "26-046565-P01-00",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Issued",
+      "subdescription": "F2: Industrial",
+      "work_description": "Alteration (Renovation)"
+    },
+    {
+      "address": "201 Westcreek Blvd, Unit 2, Brampton, ON, L6T 5S6",
+      "application_date": {
+        "toronto": "2026-03-17T00:00:00-04:00",
+        "utc": "2026-03-17T04:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "alteration",
+      "expiry_date": null,
+      "folder_rsn": 2204422,
+      "gfa": "200",
+      "issue_date": {
+        "toronto": "2026-05-27T00:00:00-04:00",
+        "utc": "2026-05-27T04:00:00+00:00"
+      },
+      "latitude": 43.679089341324314,
+      "longitude": -79.69923070964755,
+      "object_id": 158449,
+      "permit_number": "26-046420-P01-00",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Issued",
+      "subdescription": "F2: Industrial",
+      "work_description": "Alteration (Renovation)"
+    },
+    {
+      "address": "35 Van Kirk Dr, Unit 15, Brampton, ON, L7A 1A5",
+      "application_date": {
+        "toronto": "2026-03-14T00:00:00-04:00",
+        "utc": "2026-03-14T04:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "alteration",
+      "expiry_date": null,
+      "folder_rsn": 2198662,
+      "gfa": "3746.30",
+      "issue_date": null,
+      "latitude": 43.701421084858,
+      "longitude": -79.7972985762001,
+      "object_id": 209937,
+      "permit_number": "26-040844-000-00",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Applied",
+      "subdescription": "F2: Industrial",
+      "work_description": "Alteration (Renovation)"
+    },
+    {
+      "address": "15 Bramalea Rd, Brampton, ON, ",
+      "application_date": {
+        "toronto": "2026-03-13T00:00:00-04:00",
+        "utc": "2026-03-13T04:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "alteration",
+      "expiry_date": null,
+      "folder_rsn": 2201209,
+      "gfa": "1380.56",
+      "issue_date": {
+        "toronto": "2026-06-09T00:00:00-04:00",
+        "utc": "2026-06-09T04:00:00+00:00"
+      },
+      "latitude": 43.70668233353727,
+      "longitude": -79.69055954951473,
+      "object_id": 198435,
+      "permit_number": "26-043336-P01-00",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Issued",
+      "subdescription": "F2: Industrial",
+      "work_description": "Alteration (Renovation)"
+    },
+    {
+      "address": "7956 Torbram Rd, Unit 3, Brampton, ON, L6T 5A2",
+      "application_date": {
+        "toronto": "2026-03-13T00:00:00-04:00",
+        "utc": "2026-03-13T04:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "alteration",
+      "expiry_date": null,
+      "folder_rsn": 2200516,
+      "gfa": "210.51",
+      "issue_date": {
+        "toronto": "2026-05-06T00:00:00-04:00",
+        "utc": "2026-05-06T04:00:00+00:00"
+      },
+      "latitude": 43.71301634398781,
+      "longitude": -79.67879866820657,
+      "object_id": 179701,
+      "permit_number": "26-042660-P01-00",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Issued",
+      "subdescription": "F2: Industrial",
+      "work_description": "Alteration (Renovation)"
+    },
+    {
+      "address": "250 Chrysler Dr, Unit 2, Brampton, ON, L6S 6B6",
+      "application_date": {
+        "toronto": "2026-03-13T00:00:00-04:00",
+        "utc": "2026-03-13T04:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "alteration",
+      "expiry_date": null,
+      "folder_rsn": 2202238,
+      "gfa": "85.47",
+      "issue_date": {
+        "toronto": "2026-06-03T00:00:00-04:00",
+        "utc": "2026-06-03T04:00:00+00:00"
+      },
+      "latitude": 43.74444528355238,
+      "longitude": -79.70984264226927,
+      "object_id": 91713,
+      "permit_number": "26-044338-P01-00",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Issued",
+      "subdescription": "F2: Industrial",
+      "work_description": "Alteration (Renovation)"
+    },
+    {
+      "address": "250 Chrysler Dr, Unit 2, Brampton, ON, L6S 6B6",
+      "application_date": {
+        "toronto": "2026-03-12T00:00:00-04:00",
+        "utc": "2026-03-12T04:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "alteration",
+      "expiry_date": null,
+      "folder_rsn": 2201222,
+      "gfa": "738",
+      "issue_date": null,
+      "latitude": 43.74444528355238,
+      "longitude": -79.70984264226927,
+      "object_id": 204370,
+      "permit_number": "26-043348-000-00",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Applied",
+      "subdescription": "F2: Industrial",
+      "work_description": "Alteration (Renovation)"
+    },
+    {
+      "address": "815 Intermodal Dr, Brampton, ON, L6T 5W2",
+      "application_date": {
+        "toronto": "2026-03-11T00:00:00-04:00",
+        "utc": "2026-03-11T04:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "other",
+      "expiry_date": null,
+      "folder_rsn": 2201215,
+      "gfa": "736.97",
+      "issue_date": {
+        "toronto": "2026-04-28T00:00:00-04:00",
+        "utc": "2026-04-28T04:00:00+00:00"
+      },
+      "latitude": 43.74208436894709,
+      "longitude": -79.65638252435629,
+      "object_id": 123994,
+      "permit_number": "25-175183-P01-01",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Issued",
+      "subdescription": "F2: Industrial",
+      "work_description": "Revision"
+    },
+    {
+      "address": "95 Inspire Blvd, Unit 10, Brampton, ",
+      "application_date": {
+        "toronto": "2026-03-10T00:00:00-04:00",
+        "utc": "2026-03-10T04:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "other",
+      "expiry_date": null,
+      "folder_rsn": 2198560,
+      "gfa": "321.6",
+      "issue_date": {
+        "toronto": "2026-06-24T00:00:00-04:00",
+        "utc": "2026-06-24T04:00:00+00:00"
+      },
+      "latitude": 43.75612754342532,
+      "longitude": -79.78726846220869,
+      "object_id": 177012,
+      "permit_number": "26-040749-P01-00",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Issued",
+      "subdescription": "F2: Industrial",
+      "work_description": "Interior/Unit Finish"
+    },
+    {
+      "address": "30 Cadetta Rd, Brampton, ON, ",
+      "application_date": {
+        "toronto": "2026-03-10T00:00:00-04:00",
+        "utc": "2026-03-10T04:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "other",
+      "expiry_date": null,
+      "folder_rsn": 2200576,
+      "gfa": "41484",
+      "issue_date": {
+        "toronto": "2026-04-10T00:00:00-04:00",
+        "utc": "2026-04-10T04:00:00+00:00"
+      },
+      "latitude": 43.81338489231543,
+      "longitude": -79.67742330306757,
+      "object_id": 159462,
+      "permit_number": "25-061038-P01-01",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Issued",
+      "subdescription": "F2: Industrial",
+      "work_description": "Revision"
+    },
+    {
+      "address": "725 Intermodal Dr, Brampton, ON, L6T 5W2",
+      "application_date": {
+        "toronto": "2026-03-10T00:00:00-04:00",
+        "utc": "2026-03-10T04:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "alteration",
+      "expiry_date": null,
+      "folder_rsn": 2199423,
+      "gfa": "74",
+      "issue_date": {
+        "toronto": "2026-05-29T00:00:00-04:00",
+        "utc": "2026-05-29T04:00:00+00:00"
+      },
+      "latitude": 43.73961987893005,
+      "longitude": -79.66171254619655,
+      "object_id": 111500,
+      "permit_number": "26-041604-P01-00",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Issued",
+      "subdescription": "F2: Industrial",
+      "work_description": "Alteration (Renovation)"
+    },
+    {
+      "address": "15 Hale Rd, Brampton, ON, L6W 3J9",
+      "application_date": {
+        "toronto": "2026-03-06T00:00:00-05:00",
+        "utc": "2026-03-06T05:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "alteration",
+      "expiry_date": null,
+      "folder_rsn": 2198022,
+      "gfa": "340.48",
+      "issue_date": {
+        "toronto": "2026-06-19T00:00:00-04:00",
+        "utc": "2026-06-19T04:00:00+00:00"
+      },
+      "latitude": 43.68424392466231,
+      "longitude": -79.71905062250646,
+      "object_id": 204919,
+      "permit_number": "26-040234-P01-00",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Issued",
+      "subdescription": "F2: Industrial",
+      "work_description": "Alteration (Renovation)"
+    },
+    {
+      "address": "301 Orenda Rd, Brampton, ",
+      "application_date": {
+        "toronto": "2026-03-06T00:00:00-05:00",
+        "utc": "2026-03-06T05:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "other",
+      "expiry_date": null,
+      "folder_rsn": 2197820,
+      "gfa": "11279.63",
+      "issue_date": {
+        "toronto": "2026-06-16T00:00:00-04:00",
+        "utc": "2026-06-16T04:00:00+00:00"
+      },
+      "latitude": 43.69927730030011,
+      "longitude": -79.71326964538827,
+      "object_id": 173219,
+      "permit_number": "26-040037-P01-00",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Issued",
+      "subdescription": "F2: Industrial",
+      "work_description": "Interior/Unit Finish"
+    },
+    {
+      "address": "2080 Steeles Ave E, Unit 17, Brampton, ON, L6T 5A5",
+      "application_date": {
+        "toronto": "2026-03-06T00:00:00-05:00",
+        "utc": "2026-03-06T05:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "other",
+      "expiry_date": null,
+      "folder_rsn": 2196110,
+      "gfa": "146.1",
+      "issue_date": {
+        "toronto": "2026-04-10T00:00:00-04:00",
+        "utc": "2026-04-10T04:00:00+00:00"
+      },
+      "latitude": 43.710733142014156,
+      "longitude": -79.68564147364238,
+      "object_id": 119438,
+      "permit_number": "25-149050-P01-01",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Closed",
+      "subdescription": "F2: Industrial",
+      "work_description": "Revision"
+    },
+    {
+      "address": "275 Clarence St, Brampton, ON, L6W 3R3",
+      "application_date": {
+        "toronto": "2026-03-06T00:00:00-05:00",
+        "utc": "2026-03-06T05:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "alteration",
+      "expiry_date": null,
+      "folder_rsn": 2198011,
+      "gfa": "172",
+      "issue_date": {
+        "toronto": "2026-05-05T00:00:00-04:00",
+        "utc": "2026-05-05T04:00:00+00:00"
+      },
+      "latitude": 43.69032792298266,
+      "longitude": -79.73512280798563,
+      "object_id": 98060,
+      "permit_number": "26-040223-P01-00",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Issued",
+      "subdescription": "F2: Industrial",
+      "work_description": "Alteration (Renovation)"
+    },
+    {
+      "address": "9200 Airport Rd, Brampton, ON, L6S 6G6",
+      "application_date": {
+        "toronto": "2026-03-05T00:00:00-05:00",
+        "utc": "2026-03-05T05:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "alteration",
+      "expiry_date": null,
+      "folder_rsn": 2197954,
+      "gfa": "250",
+      "issue_date": {
+        "toronto": "2026-05-14T00:00:00-04:00",
+        "utc": "2026-05-14T04:00:00+00:00"
+      },
+      "latitude": 43.74718677154416,
+      "longitude": -79.70575683874493,
+      "object_id": 212321,
+      "permit_number": "26-040171-P01-00",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Closed",
+      "subdescription": "F2: Industrial",
+      "work_description": "Alteration (Renovation)"
+    },
+    {
+      "address": "35 Bramtree Crt, Brampton, ON, L6S 6G2",
+      "application_date": {
+        "toronto": "2026-03-04T00:00:00-05:00",
+        "utc": "2026-03-04T05:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "building_addition",
+      "expiry_date": null,
+      "folder_rsn": 2196858,
+      "gfa": "6837.22",
+      "issue_date": {
+        "toronto": "2026-03-20T00:00:00-04:00",
+        "utc": "2026-03-20T04:00:00+00:00"
+      },
+      "latitude": 43.745214353724535,
+      "longitude": -79.71373236797132,
+      "object_id": 215723,
+      "permit_number": "25-181367-P02-00",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Issued",
+      "subdescription": "F2: Industrial",
+      "work_description": "Addition - Complete"
+    },
+    {
+      "address": "10200 Hurontario St, Brampton, ON, L6Y 0C7",
+      "application_date": {
+        "toronto": "2026-03-04T00:00:00-05:00",
+        "utc": "2026-03-04T05:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "other",
+      "expiry_date": null,
+      "folder_rsn": 2197362,
+      "gfa": "1206",
+      "issue_date": {
+        "toronto": "2026-06-05T00:00:00-04:00",
+        "utc": "2026-06-05T04:00:00+00:00"
+      },
+      "latitude": 43.7084409495472,
+      "longitude": -79.79626023972806,
+      "object_id": 183859,
+      "permit_number": "25-117275-P01-01",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Closed",
+      "subdescription": "F2: Industrial",
+      "work_description": "Revision"
+    },
+    {
+      "address": "400 Parkhurst Sq, Brampton, ON, ",
+      "application_date": {
+        "toronto": "2026-03-04T00:00:00-05:00",
+        "utc": "2026-03-04T05:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "other",
+      "expiry_date": null,
+      "folder_rsn": 2197413,
+      "gfa": "2606.16",
+      "issue_date": null,
+      "latitude": 43.72871486637316,
+      "longitude": -79.66728686742704,
+      "object_id": 182621,
+      "permit_number": "23-333003-P01-02",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Cancelled",
+      "subdescription": "F2: Industrial",
+      "work_description": "Revision"
+    },
+    {
+      "address": "1925 Williams Pky, Unit 3, Brampton, ON, L6S 2M3",
+      "application_date": {
+        "toronto": "2026-03-04T00:00:00-05:00",
+        "utc": "2026-03-04T05:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "alteration",
+      "expiry_date": null,
+      "folder_rsn": 2184242,
+      "gfa": "13310",
+      "issue_date": {
+        "toronto": "2026-04-10T00:00:00-04:00",
+        "utc": "2026-04-10T04:00:00+00:00"
+      },
+      "latitude": 43.74651575508005,
+      "longitude": -79.71619551827344,
+      "object_id": 150620,
+      "permit_number": "26-026502-P01-00",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Issued",
+      "subdescription": "F2: Industrial",
+      "work_description": "Alteration (Renovation)"
+    },
+    {
+      "address": "8550 Goreway Dr, Brampton, ON, L6T 5J8",
+      "application_date": {
+        "toronto": "2026-03-03T00:00:00-05:00",
+        "utc": "2026-03-03T05:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "alteration",
+      "expiry_date": null,
+      "folder_rsn": 2196423,
+      "gfa": "1580",
+      "issue_date": {
+        "toronto": "2026-04-13T00:00:00-04:00",
+        "utc": "2026-04-13T04:00:00+00:00"
+      },
+      "latitude": 43.7414887415223,
+      "longitude": -79.6740280532087,
+      "object_id": 202372,
+      "permit_number": "26-038646-P01-00",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Issued",
+      "subdescription": "F2: Industrial",
+      "work_description": "Alteration (Renovation)"
+    },
+    {
+      "address": "25 Van Kirk Dr, Unit 2, Brampton, ON, L7A 1A6",
+      "application_date": {
+        "toronto": "2026-03-03T00:00:00-05:00",
+        "utc": "2026-03-03T05:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "change_of_use",
+      "expiry_date": null,
+      "folder_rsn": 2195848,
+      "gfa": "1337",
+      "issue_date": null,
+      "latitude": 43.70123358218909,
+      "longitude": -79.79844040611682,
+      "object_id": 133387,
+      "permit_number": "26-038072-000-00",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Applied",
+      "subdescription": "F2: Industrial",
+      "work_description": "Change of Use"
+    },
+    {
+      "address": "20 Wilkinson Rd, Unit 13, Brampton, ON, L6T 5B2",
+      "application_date": {
+        "toronto": "2026-03-02T00:00:00-05:00",
+        "utc": "2026-03-02T05:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "alteration",
+      "expiry_date": null,
+      "folder_rsn": 2194139,
+      "gfa": "597.73",
+      "issue_date": null,
+      "latitude": 43.692086246174256,
+      "longitude": -79.70320091431608,
+      "object_id": 170833,
+      "permit_number": "26-036357-000-00",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Applied",
+      "subdescription": "F2: Industrial",
+      "work_description": "Alteration (Renovation)"
+    },
+    {
+      "address": "46 Hedgedale Rd, Brampton, ON, L6T 5L2",
+      "application_date": {
+        "toronto": "2026-02-27T00:00:00-05:00",
+        "utc": "2026-02-27T05:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "alteration",
+      "expiry_date": null,
+      "folder_rsn": 2194406,
+      "gfa": null,
+      "issue_date": null,
+      "latitude": 43.68530035186736,
+      "longitude": -79.70375464654934,
+      "object_id": 164716,
+      "permit_number": "26-036636-000-00",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Applied",
+      "subdescription": "F3: Industrial",
+      "work_description": "Alteration (Renovation)"
+    },
+    {
+      "address": "815 Intermodal Dr, Brampton, ON, L6T 5W2",
+      "application_date": {
+        "toronto": "2026-02-27T00:00:00-05:00",
+        "utc": "2026-02-27T05:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "alteration",
+      "expiry_date": null,
+      "folder_rsn": 2194241,
+      "gfa": "148",
+      "issue_date": {
+        "toronto": "2026-04-10T00:00:00-04:00",
+        "utc": "2026-04-10T04:00:00+00:00"
+      },
+      "latitude": 43.74208436894709,
+      "longitude": -79.65638252435629,
+      "object_id": 119912,
+      "permit_number": "26-036462-P01-00",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Closed",
+      "subdescription": "F2: Industrial",
+      "work_description": "Alteration (Renovation)"
+    },
+    {
+      "address": "3495 Steeles Ave E, Brampton, ON, L6T 5W8",
+      "application_date": {
+        "toronto": "2026-02-23T00:00:00-05:00",
+        "utc": "2026-02-23T05:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "alteration",
+      "expiry_date": null,
+      "folder_rsn": 2191339,
+      "gfa": "245.11",
+      "issue_date": {
+        "toronto": "2026-07-10T00:00:00-04:00",
+        "utc": "2026-07-10T04:00:00+00:00"
+      },
+      "latitude": 43.73075407066225,
+      "longitude": -79.65724256686697,
+      "object_id": 178161,
+      "permit_number": "26-033547-P01-00",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Issued",
+      "subdescription": "F1: Industrial",
+      "work_description": "Alteration (Renovation)"
+    },
+    {
+      "address": "5405 Countryside Dr, Unit 1, Brampton, ",
+      "application_date": {
+        "toronto": "2026-02-19T00:00:00-05:00",
+        "utc": "2026-02-19T05:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "alteration",
+      "expiry_date": null,
+      "folder_rsn": 2188997,
+      "gfa": null,
+      "issue_date": {
+        "toronto": "2026-03-13T00:00:00-04:00",
+        "utc": "2026-03-13T04:00:00+00:00"
+      },
+      "latitude": 43.826179007229264,
+      "longitude": -79.6988782847707,
+      "object_id": 195340,
+      "permit_number": "26-031212-P01-00",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Issued",
+      "subdescription": "F2: Industrial",
+      "work_description": "Alteration (Renovation)"
+    },
+    {
+      "address": "90 Whybank Dr, Brampton, ON, L7A 0N7",
+      "application_date": {
+        "toronto": "2026-02-19T00:00:00-05:00",
+        "utc": "2026-02-19T05:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "alteration",
+      "expiry_date": null,
+      "folder_rsn": 2189025,
+      "gfa": "1152",
+      "issue_date": {
+        "toronto": "2026-03-25T00:00:00-04:00",
+        "utc": "2026-03-25T04:00:00+00:00"
+      },
+      "latitude": 43.711417363995494,
+      "longitude": -79.79898145520916,
+      "object_id": 193486,
+      "permit_number": "26-031238-P01-00",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Closed",
+      "subdescription": "F2: Industrial",
+      "work_description": "Alteration (Renovation)"
+    },
+    {
+      "address": "2 Finley Rd, Brampton, ON, L6T 1A9",
+      "application_date": {
+        "toronto": "2026-02-18T00:00:00-05:00",
+        "utc": "2026-02-18T05:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "alteration",
+      "expiry_date": null,
+      "folder_rsn": 2187541,
+      "gfa": null,
+      "issue_date": null,
+      "latitude": 43.69253400186828,
+      "longitude": -79.71012829182011,
+      "object_id": 172772,
+      "permit_number": "26-029784-000-00",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Applied",
+      "subdescription": "F2: Industrial",
+      "work_description": "Alteration (Renovation)"
+    },
+    {
+      "address": "15 Westcreek Blvd, Brampton, ON, L6T 5T4",
+      "application_date": {
+        "toronto": "2026-02-12T00:00:00-05:00",
+        "utc": "2026-02-12T05:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "alteration",
+      "expiry_date": null,
+      "folder_rsn": 2183777,
+      "gfa": "80",
+      "issue_date": {
+        "toronto": "2026-03-05T00:00:00-05:00",
+        "utc": "2026-03-05T05:00:00+00:00"
+      },
+      "latitude": 43.68210447886194,
+      "longitude": -79.69945996052084,
+      "object_id": 148148,
+      "permit_number": "26-026032-P01-00",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Issued",
+      "subdescription": "F2: Industrial",
+      "work_description": "Alteration (Renovation)"
+    },
+    {
+      "address": "8550 Goreway Dr, Brampton, ON, L6T 5J8",
+      "application_date": {
+        "toronto": "2026-02-11T00:00:00-05:00",
+        "utc": "2026-02-11T05:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "alteration",
+      "expiry_date": null,
+      "folder_rsn": 2184308,
+      "gfa": null,
+      "issue_date": {
+        "toronto": "2026-03-31T00:00:00-04:00",
+        "utc": "2026-03-31T04:00:00+00:00"
+      },
+      "latitude": 43.7414887415223,
+      "longitude": -79.6740280532087,
+      "object_id": 165817,
+      "permit_number": "26-026569-P01-00",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Closed",
+      "subdescription": "F2: Industrial",
+      "work_description": "Alteration (Renovation)"
+    },
+    {
+      "address": "30 Bramtree Crt, Brampton, ON, L6S 5Z7",
+      "application_date": {
+        "toronto": "2026-01-28T00:00:00-05:00",
+        "utc": "2026-01-28T05:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "other",
+      "expiry_date": null,
+      "folder_rsn": 2174460,
+      "gfa": "272",
+      "issue_date": {
+        "toronto": "2026-03-24T00:00:00-04:00",
+        "utc": "2026-03-24T04:00:00+00:00"
+      },
+      "latitude": 43.743758602004235,
+      "longitude": -79.71659981527307,
+      "object_id": 184231,
+      "permit_number": "22-301310-P01-06",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Issued",
+      "subdescription": "F2: Industrial",
+      "work_description": "Revision"
+    },
+    {
+      "address": "95 Walker Dr, Brampton, ON, L6T 5K5",
+      "application_date": {
+        "toronto": "2026-01-28T00:00:00-05:00",
+        "utc": "2026-01-28T05:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "alteration",
+      "expiry_date": null,
+      "folder_rsn": 2174819,
+      "gfa": null,
+      "issue_date": {
+        "toronto": "2026-03-25T00:00:00-04:00",
+        "utc": "2026-03-25T04:00:00+00:00"
+      },
+      "latitude": 43.72548924107663,
+      "longitude": -79.67690345591048,
+      "object_id": 93092,
+      "permit_number": "26-017128-P01-00",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Closed",
+      "subdescription": "F2: Industrial",
+      "work_description": "Alteration (Renovation)"
+    },
+    {
+      "address": "111 Van Kirk Dr, Brampton, ON, L7A 1A4",
+      "application_date": {
+        "toronto": "2026-01-26T00:00:00-05:00",
+        "utc": "2026-01-26T05:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "alteration",
+      "expiry_date": null,
+      "folder_rsn": 2168430,
+      "gfa": "200",
+      "issue_date": {
+        "toronto": "2026-03-25T00:00:00-04:00",
+        "utc": "2026-03-25T04:00:00+00:00"
+      },
+      "latitude": 43.7080499555341,
+      "longitude": -79.80306042101839,
+      "object_id": 151930,
+      "permit_number": "26-010879-P01-00",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Issued",
+      "subdescription": "F2: Industrial",
+      "work_description": "Alteration (Renovation)"
+    },
+    {
+      "address": "400 Parkhurst Sq, Unit 2, Brampton, ",
+      "application_date": {
+        "toronto": "2026-01-26T00:00:00-05:00",
+        "utc": "2026-01-26T05:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "other",
+      "expiry_date": null,
+      "folder_rsn": 2173468,
+      "gfa": "30340.19",
+      "issue_date": {
+        "toronto": "2026-03-19T00:00:00-04:00",
+        "utc": "2026-03-19T04:00:00+00:00"
+      },
+      "latitude": 43.72921492554821,
+      "longitude": -79.66726541018586,
+      "object_id": 133680,
+      "permit_number": "26-015785-P01-00",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Issued",
+      "subdescription": "F2: Industrial",
+      "work_description": "Interior/Unit Finish"
+    },
+    {
+      "address": "7500 Financial Dr, Brampton, ON, ",
+      "application_date": {
+        "toronto": "2026-01-19T00:00:00-05:00",
+        "utc": "2026-01-19T05:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "alteration",
+      "expiry_date": null,
+      "folder_rsn": 2168401,
+      "gfa": "10",
+      "issue_date": {
+        "toronto": "2026-03-23T00:00:00-04:00",
+        "utc": "2026-03-23T04:00:00+00:00"
+      },
+      "latitude": 43.62260153711036,
+      "longitude": -79.7587449267323,
+      "object_id": 188224,
+      "permit_number": "26-010850-P01-00",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Issued",
+      "subdescription": "F2: Industrial",
+      "work_description": "Alteration (Renovation)"
+    },
+    {
+      "address": "201 Westcreek Blvd, Unit 2, Brampton, ON, L6T 5S6",
+      "application_date": {
+        "toronto": "2026-01-16T00:00:00-05:00",
+        "utc": "2026-01-16T05:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "alteration",
+      "expiry_date": null,
+      "folder_rsn": 2166812,
+      "gfa": null,
+      "issue_date": null,
+      "latitude": 43.679089341324314,
+      "longitude": -79.69923070964755,
+      "object_id": 180256,
+      "permit_number": "26-009265-000-00",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Applied",
+      "subdescription": "F2: Industrial",
+      "work_description": "Alteration (Renovation)"
+    },
+    {
+      "address": "12 Bram Crt, Unit 2, Brampton, ON, L6W 3V1",
+      "application_date": {
+        "toronto": "2026-01-14T00:00:00-05:00",
+        "utc": "2026-01-14T05:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "other",
+      "expiry_date": null,
+      "folder_rsn": 2159253,
+      "gfa": "65",
+      "issue_date": {
+        "toronto": "2026-03-10T00:00:00-04:00",
+        "utc": "2026-03-10T04:00:00+00:00"
+      },
+      "latitude": 43.684049727565665,
+      "longitude": -79.7150633316324,
+      "object_id": 137021,
+      "permit_number": "25-092823-P01-01",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Issued",
+      "subdescription": "F2: Industrial",
+      "work_description": "Revision"
+    },
+    {
+      "address": "20 Tasker Rd, Unit 5, Brampton, ",
+      "application_date": {
+        "toronto": "2026-01-12T00:00:00-05:00",
+        "utc": "2026-01-12T05:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "other",
+      "expiry_date": null,
+      "folder_rsn": 2149490,
+      "gfa": "373.25",
+      "issue_date": null,
+      "latitude": 43.755926370300585,
+      "longitude": -79.78655526398941,
+      "object_id": 152644,
+      "permit_number": "25-185785-000-00",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Applied",
+      "subdescription": "F2: Industrial",
+      "work_description": "Interior/Unit Finish"
+    },
+    {
+      "address": "7965 Heritage Rd, Brampton, ON, L6Y 5X5",
+      "application_date": {
+        "toronto": "2026-01-09T00:00:00-05:00",
+        "utc": "2026-01-09T05:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "alteration",
+      "expiry_date": null,
+      "folder_rsn": 2161829,
+      "gfa": "33.4",
+      "issue_date": {
+        "toronto": "2026-05-08T00:00:00-04:00",
+        "utc": "2026-05-08T04:00:00+00:00"
+      },
+      "latitude": 43.61646281689335,
+      "longitude": -79.78369212757883,
+      "object_id": 151516,
+      "permit_number": "26-004392-P01-00",
+      "process_date": {
+        "toronto": "2026-07-16T06:23:19-04:00",
+        "utc": "2026-07-16T10:23:19+00:00"
+      },
+      "sampled_activities": [],
+      "status": "Occupancy Granted",
+      "subdescription": "F2: Industrial",
+      "work_description": "Alteration (Renovation)"
+    },
+    {
+      "address": "70 Driver Rd, Unit 4, Brampton, ON, L6T 5V2",
+      "application_date": {
+        "toronto": "2026-01-08T00:00:00-05:00",
+        "utc": "2026-01-08T05:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "alteration",
+      "expiry_date": null,
+      "folder_rsn": 2161426,
+      "gfa": "1139",
+      "issue_date": {
+        "toronto": "2026-03-18T00:00:00-04:00",
+        "utc": "2026-03-18T04:00:00+00:00"
+      },
+      "latitude": 43.72191228644187,
+      "longitude": -79.66261390611032,
+      "object_id": 114949,
+      "permit_number": "26-004048-P01-00",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Issued",
+      "subdescription": "F2: Industrial",
+      "work_description": "Alteration (Renovation)"
+    },
+    {
+      "address": "55 Walker Dr, Brampton, ON, L6T 5K5",
+      "application_date": {
+        "toronto": "2026-01-07T00:00:00-05:00",
+        "utc": "2026-01-07T05:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "alteration",
+      "expiry_date": null,
+      "folder_rsn": 2160268,
+      "gfa": "200",
+      "issue_date": {
+        "toronto": "2026-04-13T00:00:00-04:00",
+        "utc": "2026-04-13T04:00:00+00:00"
+      },
+      "latitude": 43.72126391330972,
+      "longitude": -79.67799056397193,
+      "object_id": 195371,
+      "permit_number": "26-002943-P01-00",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Issued",
+      "subdescription": "F2: Industrial",
+      "work_description": "Alteration (Renovation)"
+    },
+    {
+      "address": "12 Bram Crt, Unit 10, Brampton, ON, L6W 3V1",
+      "application_date": {
+        "toronto": "2026-01-07T00:00:00-05:00",
+        "utc": "2026-01-07T05:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "alteration",
+      "expiry_date": null,
+      "folder_rsn": 2160899,
+      "gfa": "99",
+      "issue_date": {
+        "toronto": "2026-03-04T00:00:00-05:00",
+        "utc": "2026-03-04T05:00:00+00:00"
+      },
+      "latitude": 43.68437223592722,
+      "longitude": -79.71476082353148,
+      "object_id": 135338,
+      "permit_number": "26-003566-P01-00",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Issued",
+      "subdescription": "F2: Industrial",
+      "work_description": "Alteration (Renovation)"
+    },
+    {
+      "address": "1055 Clark Blvd, Unit 3, Brampton, ",
+      "application_date": {
+        "toronto": "2026-01-07T00:00:00-05:00",
+        "utc": "2026-01-07T05:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "alteration",
+      "expiry_date": null,
+      "folder_rsn": 2160777,
+      "gfa": "7.5",
+      "issue_date": {
+        "toronto": "2026-06-03T00:00:00-04:00",
+        "utc": "2026-06-03T04:00:00+00:00"
+      },
+      "latitude": 43.72731115721355,
+      "longitude": -79.69512036433579,
+      "object_id": 114725,
+      "permit_number": "26-003449-P01-00",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Issued",
+      "subdescription": "F2: Industrial",
+      "work_description": "Alteration (Renovation)"
+    },
+    {
+      "address": "95 Inspire Blvd, Unit 13, Brampton, ",
+      "application_date": {
+        "toronto": "2026-01-07T00:00:00-05:00",
+        "utc": "2026-01-07T05:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "other",
+      "expiry_date": null,
+      "folder_rsn": 2160288,
+      "gfa": null,
+      "issue_date": null,
+      "latitude": 43.756297405371846,
+      "longitude": -79.7870225774366,
+      "object_id": 106038,
+      "permit_number": "26-002964-000-00",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Applied",
+      "subdescription": "F2: Industrial",
+      "work_description": "Interior/Unit Finish"
+    },
+    {
+      "address": "95 Inspire Blvd, Unit 14, Brampton, ",
+      "application_date": {
+        "toronto": "2026-01-06T00:00:00-05:00",
+        "utc": "2026-01-06T05:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "other",
+      "expiry_date": null,
+      "folder_rsn": 2160247,
+      "gfa": "394.2",
+      "issue_date": null,
+      "latitude": 43.75636410528791,
+      "longitude": -79.78693518015426,
+      "object_id": 189425,
+      "permit_number": "26-002923-000-00",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Applied",
+      "subdescription": "F2: Industrial",
+      "work_description": "Interior/Unit Finish"
+    },
+    {
+      "address": "117 Wentworth Crt, Brampton, ON, L6T 5L4",
+      "application_date": {
+        "toronto": "2026-01-06T00:00:00-05:00",
+        "utc": "2026-01-06T05:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "alteration",
+      "expiry_date": null,
+      "folder_rsn": 2157878,
+      "gfa": "398",
+      "issue_date": {
+        "toronto": "2026-03-04T00:00:00-05:00",
+        "utc": "2026-03-04T05:00:00+00:00"
+      },
+      "latitude": 43.744492484720126,
+      "longitude": -79.66431395125522,
+      "object_id": 124839,
+      "permit_number": "26-000600-P01-00",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Issued",
+      "subdescription": "F2: Industrial",
+      "work_description": "Alteration (Renovation)"
+    },
+    {
+      "address": "10910 Dixie Rd, Unit 11, Brampton, ",
+      "application_date": {
+        "toronto": "2026-01-05T00:00:00-05:00",
+        "utc": "2026-01-05T05:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "other",
+      "expiry_date": null,
+      "folder_rsn": 2159551,
+      "gfa": null,
+      "issue_date": null,
+      "latitude": 43.757560246017064,
+      "longitude": -79.78684727492349,
+      "object_id": 133088,
+      "permit_number": "26-002242-000-00",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Applied",
+      "subdescription": "F2: Industrial",
+      "work_description": "Interior/Unit Finish"
+    },
+    {
+      "address": "20 Tasker Rd, Unit 4, Brampton, ",
+      "application_date": {
+        "toronto": "2025-12-31T00:00:00-05:00",
+        "utc": "2025-12-31T05:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "other",
+      "expiry_date": null,
+      "folder_rsn": 2156942,
+      "gfa": "362",
+      "issue_date": {
+        "toronto": "2026-02-19T00:00:00-05:00",
+        "utc": "2026-02-19T05:00:00+00:00"
+      },
+      "latitude": 43.75601145250781,
+      "longitude": -79.78642975610762,
+      "object_id": 119339,
+      "permit_number": "25-193102-P01-00",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Issued",
+      "subdescription": "F2: Industrial",
+      "work_description": "Interior/Unit Finish"
+    },
+    {
+      "address": "8550 Goreway Dr, Brampton, ON, L6T 5J8",
+      "application_date": {
+        "toronto": "2025-12-23T00:00:00-05:00",
+        "utc": "2025-12-23T05:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "other",
+      "expiry_date": null,
+      "folder_rsn": 2153211,
+      "gfa": null,
+      "issue_date": {
+        "toronto": "2026-04-01T00:00:00-04:00",
+        "utc": "2026-04-01T04:00:00+00:00"
+      },
+      "latitude": 43.7414887415223,
+      "longitude": -79.6740280532087,
+      "object_id": 167314,
+      "permit_number": "24-235499-P01-01",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Issued",
+      "subdescription": "F2: Industrial",
+      "work_description": "Revision"
+    },
+    {
+      "address": "151 East Dr, Brampton, ON, L6T 1B5",
+      "application_date": {
+        "toronto": "2025-12-22T00:00:00-05:00",
+        "utc": "2025-12-22T05:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "alteration",
+      "expiry_date": null,
+      "folder_rsn": 2151684,
+      "gfa": null,
+      "issue_date": null,
+      "latitude": 43.71518203018931,
+      "longitude": -79.68424034804936,
+      "object_id": 179981,
+      "permit_number": "25-187911-000-00",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Applied",
+      "subdescription": "F2: Industrial",
+      "work_description": "Alteration (Renovation)"
+    },
+    {
+      "address": "8550 Goreway Dr, Brampton, ON, L6T 5J8",
+      "application_date": {
+        "toronto": "2025-12-19T00:00:00-05:00",
+        "utc": "2025-12-19T05:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "other",
+      "expiry_date": null,
+      "folder_rsn": 2151032,
+      "gfa": "452",
+      "issue_date": {
+        "toronto": "2026-02-02T00:00:00-05:00",
+        "utc": "2026-02-02T05:00:00+00:00"
+      },
+      "latitude": 43.7414887415223,
+      "longitude": -79.6740280532087,
+      "object_id": 197797,
+      "permit_number": "25-056939-P01-01",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Issued",
+      "subdescription": "F2: Industrial",
+      "work_description": "Revision"
+    },
+    {
+      "address": "8550 Goreway Dr, Brampton, ON, L6T 5J8",
+      "application_date": {
+        "toronto": "2025-12-19T00:00:00-05:00",
+        "utc": "2025-12-19T05:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "other",
+      "expiry_date": null,
+      "folder_rsn": 2150966,
+      "gfa": "99",
+      "issue_date": {
+        "toronto": "2026-02-02T00:00:00-05:00",
+        "utc": "2026-02-02T05:00:00+00:00"
+      },
+      "latitude": 43.7414887415223,
+      "longitude": -79.6740280532087,
+      "object_id": 120031,
+      "permit_number": "24-222618-P01-03",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Closed",
+      "subdescription": "F2: Industrial",
+      "work_description": "Revision"
+    },
+    {
+      "address": "35 Bramtree Crt, Unit 1, Brampton, ON, L6S 6G2",
+      "application_date": {
+        "toronto": "2025-12-18T00:00:00-05:00",
+        "utc": "2025-12-18T05:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "alteration",
+      "expiry_date": null,
+      "folder_rsn": 2151132,
+      "gfa": "100",
+      "issue_date": {
+        "toronto": "2026-01-08T00:00:00-05:00",
+        "utc": "2026-01-08T05:00:00+00:00"
+      },
+      "latitude": 43.74504778785101,
+      "longitude": -79.71372430031509,
+      "object_id": 175319,
+      "permit_number": "25-242359-P01-00",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Issued",
+      "subdescription": "F2: Industrial",
+      "work_description": "Alteration (Renovation)"
+    },
+    {
+      "address": "85 Inspire Blvd, Unit 9, Brampton, ",
+      "application_date": {
+        "toronto": "2025-12-16T00:00:00-05:00",
+        "utc": "2025-12-16T05:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "other",
+      "expiry_date": null,
+      "folder_rsn": 2150211,
+      "gfa": "509",
+      "issue_date": {
+        "toronto": "2026-05-25T00:00:00-04:00",
+        "utc": "2026-05-25T04:00:00+00:00"
+      },
+      "latitude": 43.75657063699031,
+      "longitude": -79.78822948343486,
+      "object_id": 218409,
+      "permit_number": "25-186481-P01-00",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Issued",
+      "subdescription": "F2: Industrial",
+      "work_description": "Interior/Unit Finish"
+    },
+    {
+      "address": "35 Bramtree Crt, Unit 1, Brampton, ON, L6S 6G2",
+      "application_date": {
+        "toronto": "2025-12-16T00:00:00-05:00",
+        "utc": "2025-12-16T05:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "other",
+      "expiry_date": null,
+      "folder_rsn": 2150238,
+      "gfa": null,
+      "issue_date": null,
+      "latitude": 43.74504778785101,
+      "longitude": -79.71372430031509,
+      "object_id": 120294,
+      "permit_number": "25-186506-000-00",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Cancelled",
+      "subdescription": "F2: Industrial",
+      "work_description": "Revision"
+    },
+    {
+      "address": "10900 Dixie Rd, Unit 1, Brampton, ",
+      "application_date": {
+        "toronto": "2025-12-15T00:00:00-05:00",
+        "utc": "2025-12-15T05:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "other",
+      "expiry_date": null,
+      "folder_rsn": 2149412,
+      "gfa": "551.24",
+      "issue_date": {
+        "toronto": "2026-03-04T00:00:00-05:00",
+        "utc": "2026-03-04T05:00:00+00:00"
+      },
+      "latitude": 43.756091026042505,
+      "longitude": -79.78490932897195,
+      "object_id": 192803,
+      "permit_number": "25-185708-P01-00",
+      "process_date": {
+        "toronto": "2026-06-29T08:12:41-04:00",
+        "utc": "2026-06-29T12:12:41+00:00"
+      },
+      "sampled_activities": [],
+      "status": "Closed",
+      "subdescription": "F2: Industrial",
+      "work_description": "Interior/Unit Finish"
+    },
+    {
+      "address": "8380 Highway 50, Brampton, ON, ",
+      "application_date": {
+        "toronto": "2025-12-12T00:00:00-05:00",
+        "utc": "2025-12-12T05:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "other",
+      "expiry_date": null,
+      "folder_rsn": 2145985,
+      "gfa": "24347.14",
+      "issue_date": null,
+      "latitude": 43.76146297622533,
+      "longitude": -79.64651840232011,
+      "object_id": 134693,
+      "permit_number": "25-182356-000-00",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Applied",
+      "subdescription": "F2: Industrial",
+      "work_description": "Interior/Unit Finish"
+    },
+    {
+      "address": "2080 Steeles Ave E, Unit 18, Brampton, ON, L6T 5A5",
+      "application_date": {
+        "toronto": "2025-12-12T00:00:00-05:00",
+        "utc": "2025-12-12T05:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "alteration",
+      "expiry_date": null,
+      "folder_rsn": 2148128,
+      "gfa": "147.32",
+      "issue_date": {
+        "toronto": "2026-02-27T00:00:00-05:00",
+        "utc": "2026-02-27T05:00:00+00:00"
+      },
+      "latitude": 43.710697068369754,
+      "longitude": -79.68557378206809,
+      "object_id": 104356,
+      "permit_number": "25-184431-P01-00",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Closed",
+      "subdescription": "F2: Industrial",
+      "work_description": "Alteration (Renovation)"
+    },
+    {
+      "address": "10900 Dixie Rd, Unit 9, Brampton, ON, ",
+      "application_date": {
+        "toronto": "2025-12-10T00:00:00-05:00",
+        "utc": "2025-12-10T05:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "other",
+      "expiry_date": null,
+      "folder_rsn": 2146136,
+      "gfa": "414.89",
+      "issue_date": null,
+      "latitude": 43.75656477822168,
+      "longitude": -79.78551544889821,
+      "object_id": 206409,
+      "permit_number": "25-182493-000-00",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Applied",
+      "subdescription": "F2: Industrial",
+      "work_description": "Interior/Unit Finish"
+    },
+    {
+      "address": "8550 Airport Rd, Brampton, ON, L6T 5A3",
+      "application_date": {
+        "toronto": "2025-12-10T00:00:00-05:00",
+        "utc": "2025-12-10T05:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "alteration",
+      "expiry_date": null,
+      "folder_rsn": 2146541,
+      "gfa": null,
+      "issue_date": {
+        "toronto": "2026-02-02T00:00:00-05:00",
+        "utc": "2026-02-02T05:00:00+00:00"
+      },
+      "latitude": 43.73101850247937,
+      "longitude": -79.68077093525844,
+      "object_id": 200380,
+      "permit_number": "25-182890-P01-00",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Closed",
+      "subdescription": "F2: Industrial",
+      "work_description": "Alteration (Renovation)"
+    },
+    {
+      "address": "10 Tasker Rd, Unit 8, Brampton, ON, ",
+      "application_date": {
+        "toronto": "2025-12-09T00:00:00-05:00",
+        "utc": "2025-12-09T05:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "other",
+      "expiry_date": null,
+      "folder_rsn": 2185611,
+      "gfa": "244.05",
+      "issue_date": {
+        "toronto": "2026-06-29T00:00:00-04:00",
+        "utc": "2026-06-29T04:00:00+00:00"
+      },
+      "latitude": 43.755267183334794,
+      "longitude": -79.78640168203546,
+      "object_id": 166396,
+      "permit_number": "26-027862-P01-00",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Issued",
+      "subdescription": "F2: Industrial",
+      "work_description": "Interior/Unit Finish"
+    },
+    {
+      "address": "15 Westcreek Blvd, Brampton, ON, L6T 5T4",
+      "application_date": {
+        "toronto": "2025-12-08T00:00:00-05:00",
+        "utc": "2025-12-08T05:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "alteration",
+      "expiry_date": null,
+      "folder_rsn": 2145201,
+      "gfa": null,
+      "issue_date": {
+        "toronto": "2026-02-10T00:00:00-05:00",
+        "utc": "2026-02-10T05:00:00+00:00"
+      },
+      "latitude": 43.68210447886194,
+      "longitude": -79.69945996052084,
+      "object_id": 159392,
+      "permit_number": "25-181585-P01-00",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Closed",
+      "subdescription": "F2: Industrial",
+      "work_description": "Alteration (Renovation)"
+    },
+    {
+      "address": "85 Inspire Blvd, Unit 7, Brampton, ",
+      "application_date": {
+        "toronto": "2025-12-08T00:00:00-05:00",
+        "utc": "2025-12-08T05:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "building_addition",
+      "expiry_date": null,
+      "folder_rsn": 2146102,
+      "gfa": null,
+      "issue_date": null,
+      "latitude": 43.756722865268344,
+      "longitude": -79.78801323063722,
+      "object_id": 150917,
+      "permit_number": "25-182464-000-00",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Cancelled",
+      "subdescription": "F2: Industrial",
+      "work_description": "Addition Shell"
+    },
+    {
+      "address": "35 Bramtree Crt, Brampton, ON, L6S 6G2",
+      "application_date": {
+        "toronto": "2025-12-05T00:00:00-05:00",
+        "utc": "2025-12-05T05:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "building_addition",
+      "expiry_date": null,
+      "folder_rsn": 2144982,
+      "gfa": "6837.22",
+      "issue_date": {
+        "toronto": "2026-06-24T00:00:00-04:00",
+        "utc": "2026-06-24T04:00:00+00:00"
+      },
+      "latitude": 43.745214353724535,
+      "longitude": -79.71373236797132,
+      "object_id": 108095,
+      "permit_number": "25-181367-P01-00",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Issued",
+      "subdescription": "F2: Industrial",
+      "work_description": "Addition - Complete"
+    },
+    {
+      "address": "30 Westwyn Crt, Brampton, ON, L6T 4T5",
+      "application_date": {
+        "toronto": "2025-12-04T00:00:00-05:00",
+        "utc": "2025-12-04T05:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "building_addition",
+      "expiry_date": null,
+      "folder_rsn": 2144049,
+      "gfa": "196",
+      "issue_date": {
+        "toronto": "2026-04-20T00:00:00-04:00",
+        "utc": "2026-04-20T04:00:00+00:00"
+      },
+      "latitude": 43.68472531364394,
+      "longitude": -79.69563503752343,
+      "object_id": 124679,
+      "permit_number": "25-180462-P01-00",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Issued",
+      "subdescription": "F2: Industrial",
+      "work_description": "Addition - Complete"
+    },
+    {
+      "address": "10 Tasker Rd, Unit 18, Brampton, ON, ",
+      "application_date": {
+        "toronto": "2025-12-04T00:00:00-05:00",
+        "utc": "2025-12-04T05:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "building_addition",
+      "expiry_date": null,
+      "folder_rsn": 2144343,
+      "gfa": null,
+      "issue_date": null,
+      "latitude": 43.75584215889843,
+      "longitude": -79.78557306421253,
+      "object_id": 117601,
+      "permit_number": "25-180753-000-00",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Applied",
+      "subdescription": "F2: Industrial",
+      "work_description": "Addition Shell"
+    },
+    {
+      "address": "20 Tasker Rd, Unit 8, Brampton, ",
+      "application_date": {
+        "toronto": "2025-12-03T00:00:00-05:00",
+        "utc": "2025-12-03T05:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "other",
+      "expiry_date": null,
+      "folder_rsn": 2143452,
+      "gfa": "1502.5",
+      "issue_date": {
+        "toronto": "2026-02-05T00:00:00-05:00",
+        "utc": "2026-02-05T05:00:00+00:00"
+      },
+      "latitude": 43.75568791664353,
+      "longitude": -79.78689377811956,
+      "object_id": 207104,
+      "permit_number": "25-179869-P01-00",
+      "process_date": {
+        "toronto": "2026-06-23T14:00:23-04:00",
+        "utc": "2026-06-23T18:00:23+00:00"
+      },
+      "sampled_activities": [],
+      "status": "Occupancy Granted",
+      "subdescription": "F2: Industrial",
+      "work_description": "Interior/Unit Finish"
+    },
+    {
+      "address": "10 Tasker Rd, Unit 17, Brampton, ON, ",
+      "application_date": {
+        "toronto": "2025-12-02T00:00:00-05:00",
+        "utc": "2025-12-02T05:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "building_addition",
+      "expiry_date": null,
+      "folder_rsn": 2143399,
+      "gfa": null,
+      "issue_date": null,
+      "latitude": 43.7557842170677,
+      "longitude": -79.78566088010939,
+      "object_id": 220002,
+      "permit_number": "25-179815-000-00",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Applied",
+      "subdescription": "F2: Industrial",
+      "work_description": "Addition Shell"
+    },
+    {
+      "address": "311 Clarence St, Brampton, ON, L6W 1T6",
+      "application_date": {
+        "toronto": "2025-12-01T00:00:00-05:00",
+        "utc": "2025-12-01T05:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "alteration",
+      "expiry_date": null,
+      "folder_rsn": 2142635,
+      "gfa": null,
+      "issue_date": {
+        "toronto": "2026-03-11T00:00:00-04:00",
+        "utc": "2026-03-11T04:00:00+00:00"
+      },
+      "latitude": 43.691331398413375,
+      "longitude": -79.73077611662215,
+      "object_id": 98762,
+      "permit_number": "25-179064-P01-00",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Issued",
+      "subdescription": "F2: Industrial",
+      "work_description": "Alteration (Renovation)"
+    },
+    {
+      "address": "10200 Hurontario St, Brampton, ON, L6Y 0C7",
+      "application_date": {
+        "toronto": "2025-11-27T00:00:00-05:00",
+        "utc": "2025-11-27T05:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "alteration",
+      "expiry_date": null,
+      "folder_rsn": 2140406,
+      "gfa": "12915",
+      "issue_date": {
+        "toronto": "2026-01-26T00:00:00-05:00",
+        "utc": "2026-01-26T05:00:00+00:00"
+      },
+      "latitude": 43.7084409495472,
+      "longitude": -79.79626023972806,
+      "object_id": 120674,
+      "permit_number": "25-176867-P01-00",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Closed",
+      "subdescription": "F2: Industrial",
+      "work_description": "Alteration (Renovation)"
+    },
+    {
+      "address": "10900 Dixie Rd, Unit 7, Brampton, ",
+      "application_date": {
+        "toronto": "2025-11-26T00:00:00-05:00",
+        "utc": "2025-11-26T05:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "other",
+      "expiry_date": null,
+      "folder_rsn": 2140142,
+      "gfa": "755.35",
+      "issue_date": {
+        "toronto": "2026-06-23T00:00:00-04:00",
+        "utc": "2026-06-23T04:00:00+00:00"
+      },
+      "latitude": 43.75644605173205,
+      "longitude": -79.78536417758217,
+      "object_id": 172912,
+      "permit_number": "25-176623-P01-00",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Issued",
+      "subdescription": "F2: Industrial",
+      "work_description": "Interior/Unit Finish"
+    },
+    {
+      "address": "95 Inspire Blvd, Unit 4, Brampton, ",
+      "application_date": {
+        "toronto": "2025-11-25T00:00:00-05:00",
+        "utc": "2025-11-25T05:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "other",
+      "expiry_date": null,
+      "folder_rsn": 2137512,
+      "gfa": "868.42",
+      "issue_date": null,
+      "latitude": 43.755789224317475,
+      "longitude": -79.78775921288748,
+      "object_id": 178411,
+      "permit_number": "25-174060-000-00",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Applied",
+      "subdescription": "F2: Industrial",
+      "work_description": "Interior/Unit Finish"
+    },
+    {
+      "address": "85 Inspire Blvd, Unit 8, Brampton, ON, ",
+      "application_date": {
+        "toronto": "2025-11-25T00:00:00-05:00",
+        "utc": "2025-11-25T05:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "other",
+      "expiry_date": null,
+      "folder_rsn": 2138678,
+      "gfa": "549.74",
+      "issue_date": null,
+      "latitude": 43.75664781795453,
+      "longitude": -79.78811777423297,
+      "object_id": 143898,
+      "permit_number": "25-175182-000-00",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Ready to Issue",
+      "subdescription": "F2: Industrial",
+      "work_description": "Interior/Unit Finish"
+    },
+    {
+      "address": "390 Orenda Rd, Brampton, ON, L6T 1G8",
+      "application_date": {
+        "toronto": "2025-11-25T00:00:00-05:00",
+        "utc": "2025-11-25T05:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "alteration",
+      "expiry_date": null,
+      "folder_rsn": 2140352,
+      "gfa": null,
+      "issue_date": {
+        "toronto": "2026-02-12T00:00:00-05:00",
+        "utc": "2026-02-12T05:00:00+00:00"
+      },
+      "latitude": 43.70449680864153,
+      "longitude": -79.69567826232455,
+      "object_id": 138555,
+      "permit_number": "25-176825-P01-00",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Issued",
+      "subdescription": "F2: Industrial",
+      "work_description": "Alteration (Renovation)"
+    },
+    {
+      "address": "266 Rutherford Rd S, Unit 5, Brampton, ON, L6W 3X3",
+      "application_date": {
+        "toronto": "2025-11-24T00:00:00-05:00",
+        "utc": "2025-11-24T05:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "alteration",
+      "expiry_date": null,
+      "folder_rsn": 2137186,
+      "gfa": "231.62",
+      "issue_date": {
+        "toronto": "2026-02-03T00:00:00-05:00",
+        "utc": "2026-02-03T05:00:00+00:00"
+      },
+      "latitude": 43.687596940821024,
+      "longitude": -79.72592565545673,
+      "object_id": 155213,
+      "permit_number": "25-173746-P01-00",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Issued",
+      "subdescription": "F2: Industrial",
+      "work_description": "Alteration (Renovation)"
+    },
+    {
+      "address": "815 Intermodal Dr, Brampton, ON, L6T 5W2",
+      "application_date": {
+        "toronto": "2025-11-21T00:00:00-05:00",
+        "utc": "2025-11-21T05:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "alteration",
+      "expiry_date": null,
+      "folder_rsn": 2138679,
+      "gfa": "736.97",
+      "issue_date": {
+        "toronto": "2026-01-29T00:00:00-05:00",
+        "utc": "2026-01-29T05:00:00+00:00"
+      },
+      "latitude": 43.74208436894709,
+      "longitude": -79.65638252435629,
+      "object_id": 151339,
+      "permit_number": "25-175183-P01-00",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Issued",
+      "subdescription": "F2: Industrial",
+      "work_description": "Alteration (Renovation)"
+    },
+    {
+      "address": "10900 Dixie Rd, Unit 14, Brampton, ",
+      "application_date": {
+        "toronto": "2025-11-20T00:00:00-05:00",
+        "utc": "2025-11-20T05:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "building_addition",
+      "expiry_date": null,
+      "folder_rsn": 2138052,
+      "gfa": null,
+      "issue_date": null,
+      "latitude": 43.75686011661274,
+      "longitude": -79.78591338598714,
+      "object_id": 220179,
+      "permit_number": "25-174580-000-00",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Applied",
+      "subdescription": "F2: Industrial",
+      "work_description": "Addition Shell"
+    },
+    {
+      "address": "10910 Dixie Rd, Unit 1, Brampton, ",
+      "application_date": {
+        "toronto": "2025-11-20T00:00:00-05:00",
+        "utc": "2025-11-20T05:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "building_addition",
+      "expiry_date": null,
+      "folder_rsn": 2138041,
+      "gfa": null,
+      "issue_date": null,
+      "latitude": 43.75698592479722,
+      "longitude": -79.78607033972953,
+      "object_id": 179874,
+      "permit_number": "25-174569-000-00",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Applied",
+      "subdescription": "F2: Industrial",
+      "work_description": "Addition Shell"
+    },
+    {
+      "address": "10910 Dixie Rd, Unit 5, Brampton, ",
+      "application_date": {
+        "toronto": "2025-11-20T00:00:00-05:00",
+        "utc": "2025-11-20T05:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "building_addition",
+      "expiry_date": null,
+      "folder_rsn": 2138038,
+      "gfa": null,
+      "issue_date": null,
+      "latitude": 43.757206777008534,
+      "longitude": -79.78640025218976,
+      "object_id": 127332,
+      "permit_number": "25-174566-000-00",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Cancelled",
+      "subdescription": "F2: Industrial",
+      "work_description": "Addition Shell"
+    },
+    {
+      "address": "3900 Ebenezer Rd, Brampton, ON, ",
+      "application_date": {
+        "toronto": "2025-11-19T00:00:00-05:00",
+        "utc": "2025-11-19T05:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "other",
+      "expiry_date": null,
+      "folder_rsn": 2136709,
+      "gfa": "4302",
+      "issue_date": {
+        "toronto": "2026-05-27T00:00:00-04:00",
+        "utc": "2026-05-27T04:00:00+00:00"
+      },
+      "latitude": 43.760673841664165,
+      "longitude": -79.67677917521291,
+      "object_id": 187451,
+      "permit_number": "25-173292-P01-00",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Issued",
+      "subdescription": "F3: Industrial",
+      "work_description": "New Complete Building"
+    },
+    {
+      "address": "10910 Dixie Rd, Unit 2, Brampton, ",
+      "application_date": {
+        "toronto": "2025-11-19T00:00:00-05:00",
+        "utc": "2025-11-19T05:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "building_addition",
+      "expiry_date": null,
+      "folder_rsn": 2137741,
+      "gfa": null,
+      "issue_date": null,
+      "latitude": 43.75704404390097,
+      "longitude": -79.78616421767899,
+      "object_id": 179817,
+      "permit_number": "25-174275-000-00",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Applied",
+      "subdescription": "F2: Industrial",
+      "work_description": "Addition Shell"
+    },
+    {
+      "address": "20 Newkirk Crt, Unit 1, Brampton, ON, ",
+      "application_date": {
+        "toronto": "2025-11-17T00:00:00-05:00",
+        "utc": "2025-11-17T05:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "other",
+      "expiry_date": null,
+      "folder_rsn": 2161696,
+      "gfa": "420.81",
+      "issue_date": null,
+      "latitude": 43.74685323248729,
+      "longitude": -79.7915118504101,
+      "object_id": 121475,
+      "permit_number": "26-004301-000-00",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Applied",
+      "subdescription": "F2: Industrial",
+      "work_description": "Interior/Unit Finish"
+    },
+    {
+      "address": "20 Newkirk Crt, Unit 1, Brampton, ON, ",
+      "application_date": {
+        "toronto": "2025-11-17T00:00:00-05:00",
+        "utc": "2025-11-17T05:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "alteration",
+      "expiry_date": null,
+      "folder_rsn": 2134622,
+      "gfa": "420.81",
+      "issue_date": null,
+      "latitude": 43.74685323248729,
+      "longitude": -79.7915118504101,
+      "object_id": 111057,
+      "permit_number": "25-171258-000-00",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Cancelled",
+      "subdescription": "F2: Industrial",
+      "work_description": "Alteration (Renovation)"
+    },
+    {
+      "address": "815 Intermodal Dr, Brampton, ON, L6T 5W2",
+      "application_date": {
+        "toronto": "2025-11-13T00:00:00-05:00",
+        "utc": "2025-11-13T05:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "alteration",
+      "expiry_date": null,
+      "folder_rsn": 2135158,
+      "gfa": "25.26",
+      "issue_date": {
+        "toronto": "2026-01-08T00:00:00-05:00",
+        "utc": "2026-01-08T05:00:00+00:00"
+      },
+      "latitude": 43.74208436894709,
+      "longitude": -79.65638252435629,
+      "object_id": 111297,
+      "permit_number": "25-171784-P01-00",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Issued",
+      "subdescription": "F2: Industrial",
+      "work_description": "Alteration (Renovation)"
+    },
+    {
+      "address": "50 Edgeware Rd, Brampton, ON, L6Y 5L9",
+      "application_date": {
+        "toronto": "2025-11-12T00:00:00-05:00",
+        "utc": "2025-11-12T05:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "alteration",
+      "expiry_date": null,
+      "folder_rsn": 2134637,
+      "gfa": "393.77",
+      "issue_date": {
+        "toronto": "2025-12-18T00:00:00-05:00",
+        "utc": "2025-12-18T05:00:00+00:00"
+      },
+      "latitude": 43.62374728854449,
+      "longitude": -79.77313770197934,
+      "object_id": 166678,
+      "permit_number": "25-171271-P01-00",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Closed",
+      "subdescription": "F2: Industrial",
+      "work_description": "Alteration (Renovation)"
+    },
+    {
+      "address": "1555 Clark Blvd, Brampton, ON, L6T 4G2",
+      "application_date": {
+        "toronto": "2025-11-12T00:00:00-05:00",
+        "utc": "2025-11-12T05:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "alteration",
+      "expiry_date": null,
+      "folder_rsn": 2134597,
+      "gfa": "37",
+      "issue_date": {
+        "toronto": "2026-01-08T00:00:00-05:00",
+        "utc": "2026-01-08T05:00:00+00:00"
+      },
+      "latitude": 43.73187590754734,
+      "longitude": -79.68993567034144,
+      "object_id": 103726,
+      "permit_number": "25-171235-P01-00",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Closed",
+      "subdescription": "F2: Industrial",
+      "work_description": "Alteration (Renovation)"
+    },
+    {
+      "address": "201 Westcreek Blvd, Brampton, ON, L6T 5S6",
+      "application_date": {
+        "toronto": "2025-11-11T00:00:00-05:00",
+        "utc": "2025-11-11T05:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "alteration",
+      "expiry_date": null,
+      "folder_rsn": 2128667,
+      "gfa": null,
+      "issue_date": null,
+      "latitude": 43.678709437749916,
+      "longitude": -79.69970144426183,
+      "object_id": 183161,
+      "permit_number": "25-165456-000-00",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Applied",
+      "subdescription": "F3: Industrial",
+      "work_description": "Alteration (Renovation)"
+    },
+    {
+      "address": "6 Abacus Rd, Brampton, ON, L6T 5B7",
+      "application_date": {
+        "toronto": "2025-11-11T00:00:00-05:00",
+        "utc": "2025-11-11T05:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "alteration",
+      "expiry_date": null,
+      "folder_rsn": 2132607,
+      "gfa": "361.7",
+      "issue_date": {
+        "toronto": "2026-01-21T00:00:00-05:00",
+        "utc": "2026-01-21T05:00:00+00:00"
+      },
+      "latitude": 43.76336828113145,
+      "longitude": -79.66233987769824,
+      "object_id": 150716,
+      "permit_number": "25-169273-P01-00",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Issued",
+      "subdescription": "F2: Industrial",
+      "work_description": "Alteration (Renovation)"
+    },
+    {
+      "address": "10 Whybank Dr, Unit 1, Brampton, ",
+      "application_date": {
+        "toronto": "2025-11-07T00:00:00-05:00",
+        "utc": "2025-11-07T05:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "other",
+      "expiry_date": null,
+      "folder_rsn": 2132194,
+      "gfa": "243",
+      "issue_date": {
+        "toronto": "2026-03-31T00:00:00-04:00",
+        "utc": "2026-03-31T04:00:00+00:00"
+      },
+      "latitude": 43.71589340127466,
+      "longitude": -79.80188368115338,
+      "object_id": 92150,
+      "permit_number": "24-367597-P01-02",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Issued",
+      "subdescription": "F2: Industrial",
+      "work_description": "Revision"
+    },
+    {
+      "address": "35 Van Kirk Dr, Unit 13, Brampton, ON, L7A 1A5",
+      "application_date": {
+        "toronto": "2025-11-05T00:00:00-05:00",
+        "utc": "2025-11-05T05:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "alteration",
+      "expiry_date": null,
+      "folder_rsn": 2131709,
+      "gfa": "159.11",
+      "issue_date": {
+        "toronto": "2026-01-14T00:00:00-05:00",
+        "utc": "2026-01-14T05:00:00+00:00"
+      },
+      "latitude": 43.70154161300779,
+      "longitude": -79.79737655170936,
+      "object_id": 160283,
+      "permit_number": "25-168401-P01-00",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Issued",
+      "subdescription": "F2: Industrial",
+      "work_description": "Alteration (Renovation)"
+    },
+    {
+      "address": "5405 Countryside Dr, Unit 1, Brampton, ",
+      "application_date": {
+        "toronto": "2025-11-04T00:00:00-05:00",
+        "utc": "2025-11-04T05:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "other",
+      "expiry_date": null,
+      "folder_rsn": 2131233,
+      "gfa": "22961.62",
+      "issue_date": {
+        "toronto": "2025-12-23T00:00:00-05:00",
+        "utc": "2025-12-23T05:00:00+00:00"
+      },
+      "latitude": 43.826179007229264,
+      "longitude": -79.6988782847707,
+      "object_id": 207021,
+      "permit_number": "25-167944-P01-00",
+      "process_date": {
+        "toronto": "2026-06-09T15:14:55-04:00",
+        "utc": "2026-06-09T19:14:55+00:00"
+      },
+      "sampled_activities": [],
+      "status": "Closed",
+      "subdescription": "F2: Industrial",
+      "work_description": "Interior/Unit Finish"
+    },
+    {
+      "address": "130 East Dr, Brampton, ON, L6T 1C1",
+      "application_date": {
+        "toronto": "2025-11-04T00:00:00-05:00",
+        "utc": "2025-11-04T05:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "alteration",
+      "expiry_date": null,
+      "folder_rsn": 2129288,
+      "gfa": null,
+      "issue_date": null,
+      "latitude": 43.71275592968216,
+      "longitude": -79.69022400702707,
+      "object_id": 166636,
+      "permit_number": "25-166047-000-00",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Cancelled",
+      "subdescription": "F2: Industrial",
+      "work_description": "Alteration (Renovation)"
+    },
+    {
+      "address": "55 Exchange Dr, Unit 2, Brampton, ",
+      "application_date": {
+        "toronto": "2025-11-03T00:00:00-05:00",
+        "utc": "2025-11-03T05:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "alteration",
+      "expiry_date": null,
+      "folder_rsn": 2130594,
+      "gfa": null,
+      "issue_date": {
+        "toronto": "2026-02-10T00:00:00-05:00",
+        "utc": "2026-02-10T05:00:00+00:00"
+      },
+      "latitude": 43.75309776443987,
+      "longitude": -79.68968344661022,
+      "object_id": 163812,
+      "permit_number": "25-167335-P01-00",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Issued",
+      "subdescription": "F2: Industrial",
+      "work_description": "Alteration (Renovation)"
+    },
+    {
+      "address": "30 Ironside Dr, Unit 2, Brampton, ",
+      "application_date": {
+        "toronto": "2025-11-03T00:00:00-05:00",
+        "utc": "2025-11-03T05:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "other",
+      "expiry_date": null,
+      "folder_rsn": 2130605,
+      "gfa": "4750.37",
+      "issue_date": {
+        "toronto": "2026-01-07T00:00:00-05:00",
+        "utc": "2026-01-07T05:00:00+00:00"
+      },
+      "latitude": 43.704221092154306,
+      "longitude": -79.79254908269108,
+      "object_id": 160391,
+      "permit_number": "25-167346-P01-00",
+      "process_date": {
+        "toronto": "2026-02-24T12:00:13-05:00",
+        "utc": "2026-02-24T17:00:13+00:00"
+      },
+      "sampled_activities": [],
+      "status": "Closed",
+      "subdescription": "F2: Industrial",
+      "work_description": "Interior/Unit Finish"
+    },
+    {
+      "address": "7655 Bramalea Rd, Brampton, ON, L6T 4Y5",
+      "application_date": {
+        "toronto": "2025-10-31T00:00:00-04:00",
+        "utc": "2025-10-31T04:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "alteration",
+      "expiry_date": null,
+      "folder_rsn": 2129085,
+      "gfa": "110",
+      "issue_date": {
+        "toronto": "2025-12-04T00:00:00-05:00",
+        "utc": "2025-12-04T05:00:00+00:00"
+      },
+      "latitude": 43.702536134711785,
+      "longitude": -79.67825617089834,
+      "object_id": 141963,
+      "permit_number": "25-165862-P01-00",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Closed",
+      "subdescription": "F2: Industrial",
+      "work_description": "Alteration (Renovation)"
+    },
+    {
+      "address": "4 Abacus Rd, 11, Brampton, ON, L6T 5J6",
+      "application_date": {
+        "toronto": "2025-10-31T00:00:00-04:00",
+        "utc": "2025-10-31T04:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "alteration",
+      "expiry_date": null,
+      "folder_rsn": 2129504,
+      "gfa": "243",
+      "issue_date": null,
+      "latitude": 43.76400115844349,
+      "longitude": -79.66226343566768,
+      "object_id": 130951,
+      "permit_number": "25-166252-000-00",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Ready to Issue",
+      "subdescription": "F2: Industrial",
+      "work_description": "Alteration (Renovation)"
+    },
+    {
+      "address": "8480 Highway 50, Unit 2, Brampton, ON, ",
+      "application_date": {
+        "toronto": "2025-10-30T00:00:00-04:00",
+        "utc": "2025-10-30T04:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "alteration",
+      "expiry_date": null,
+      "folder_rsn": 2129127,
+      "gfa": "241",
+      "issue_date": null,
+      "latitude": 43.76574627972803,
+      "longitude": -79.6492610629453,
+      "object_id": 139447,
+      "permit_number": "25-165899-000-00",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Cancelled",
+      "subdescription": "F2: Industrial",
+      "work_description": "Alteration (Renovation)"
+    },
+    {
+      "address": "114 East Dr, Brampton, ON, L6T 1C1",
+      "application_date": {
+        "toronto": "2025-10-30T00:00:00-04:00",
+        "utc": "2025-10-30T04:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "alteration",
+      "expiry_date": null,
+      "folder_rsn": 2129090,
+      "gfa": "4385",
+      "issue_date": {
+        "toronto": "2025-12-17T00:00:00-05:00",
+        "utc": "2025-12-17T05:00:00+00:00"
+      },
+      "latitude": 43.71101826567585,
+      "longitude": -79.69221391698416,
+      "object_id": 110356,
+      "permit_number": "25-165866-P01-00",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Issued",
+      "subdescription": "F2: Industrial",
+      "work_description": "Alteration (Renovation)"
+    },
+    {
+      "address": "5405 Countryside Dr, Unit 1, Brampton, ",
+      "application_date": {
+        "toronto": "2025-10-29T00:00:00-04:00",
+        "utc": "2025-10-29T04:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "alteration",
+      "expiry_date": null,
+      "folder_rsn": 2128612,
+      "gfa": "18580",
+      "issue_date": {
+        "toronto": "2026-01-15T00:00:00-05:00",
+        "utc": "2026-01-15T05:00:00+00:00"
+      },
+      "latitude": 43.826179007229264,
+      "longitude": -79.6988782847707,
+      "object_id": 174156,
+      "permit_number": "25-165411-P01-00",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Closed",
+      "subdescription": "F2: Industrial",
+      "work_description": "Alteration (Renovation)"
+    },
+    {
+      "address": "10200 Hurontario St, Brampton, ON, L6Y 0C7",
+      "application_date": {
+        "toronto": "2025-10-29T00:00:00-04:00",
+        "utc": "2025-10-29T04:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "alteration",
+      "expiry_date": null,
+      "folder_rsn": 2128314,
+      "gfa": "58",
+      "issue_date": {
+        "toronto": "2025-12-16T00:00:00-05:00",
+        "utc": "2025-12-16T05:00:00+00:00"
+      },
+      "latitude": 43.7084409495472,
+      "longitude": -79.79626023972806,
+      "object_id": 126182,
+      "permit_number": "25-165124-P01-00",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Closed",
+      "subdescription": "F2: Industrial",
+      "work_description": "Alteration (Renovation)"
+    },
+    {
+      "address": "10 Tilbury Crt, Brampton, ON, L6T 3T4",
+      "application_date": {
+        "toronto": "2025-10-28T00:00:00-04:00",
+        "utc": "2025-10-28T04:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "alteration",
+      "expiry_date": null,
+      "folder_rsn": 2128268,
+      "gfa": null,
+      "issue_date": {
+        "toronto": "2025-12-16T00:00:00-05:00",
+        "utc": "2025-12-16T05:00:00+00:00"
+      },
+      "latitude": 43.70170674006614,
+      "longitude": -79.72875297559462,
+      "object_id": 188631,
+      "permit_number": "25-165088-P01-00",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Issued",
+      "subdescription": "F2: Industrial",
+      "work_description": "Alteration (Renovation)"
+    },
+    {
+      "address": "10 Whybank Dr, Unit 1, Brampton, ",
+      "application_date": {
+        "toronto": "2025-10-28T00:00:00-04:00",
+        "utc": "2025-10-28T04:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "alteration",
+      "expiry_date": null,
+      "folder_rsn": 2126645,
+      "gfa": "15598",
+      "issue_date": {
+        "toronto": "2026-03-20T00:00:00-04:00",
+        "utc": "2026-03-20T04:00:00+00:00"
+      },
+      "latitude": 43.71589340127466,
+      "longitude": -79.80188368115338,
+      "object_id": 144160,
+      "permit_number": "25-163538-P01-00",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Issued",
+      "subdescription": "F2: Industrial",
+      "work_description": "Alteration (Renovation)"
+    },
+    {
+      "address": "1055 Clark Blvd, Unit 4, Brampton, ON, ",
+      "application_date": {
+        "toronto": "2025-10-27T00:00:00-04:00",
+        "utc": "2025-10-27T04:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "alteration",
+      "expiry_date": null,
+      "folder_rsn": 2126665,
+      "gfa": "0",
+      "issue_date": null,
+      "latitude": 43.72690799633967,
+      "longitude": -79.69576677712962,
+      "object_id": 183140,
+      "permit_number": "25-163555-000-00",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Applied",
+      "subdescription": "F2: Industrial",
+      "work_description": "Alteration (Renovation)"
+    },
+    {
+      "address": "9250 Airport Rd, Brampton, ON, L6S 6K5",
+      "application_date": {
+        "toronto": "2025-10-27T00:00:00-04:00",
+        "utc": "2025-10-27T04:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "alteration",
+      "expiry_date": null,
+      "folder_rsn": 2127913,
+      "gfa": "550",
+      "issue_date": {
+        "toronto": "2025-12-03T00:00:00-05:00",
+        "utc": "2025-12-03T05:00:00+00:00"
+      },
+      "latitude": 43.74913137300773,
+      "longitude": -79.70493815290476,
+      "object_id": 170985,
+      "permit_number": "25-164781-P01-00",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Closed",
+      "subdescription": "F2: Industrial",
+      "work_description": "Alteration (Renovation)"
+    },
+    {
+      "address": "107 Alfred Kuehne Blvd, Brampton, ON, L6T 4K3",
+      "application_date": {
+        "toronto": "2025-10-27T00:00:00-04:00",
+        "utc": "2025-10-27T04:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "alteration",
+      "expiry_date": null,
+      "folder_rsn": 2126596,
+      "gfa": "50",
+      "issue_date": {
+        "toronto": "2025-12-04T00:00:00-05:00",
+        "utc": "2025-12-04T05:00:00+00:00"
+      },
+      "latitude": 43.696984441284776,
+      "longitude": -79.68761437485738,
+      "object_id": 169761,
+      "permit_number": "25-163491-P01-00",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Closed",
+      "subdescription": "F2: Industrial",
+      "work_description": "Alteration (Renovation)"
+    },
+    {
+      "address": "8550 Airport Rd, Brampton, ON, L6T 5A3",
+      "application_date": {
+        "toronto": "2025-10-27T00:00:00-04:00",
+        "utc": "2025-10-27T04:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "alteration",
+      "expiry_date": null,
+      "folder_rsn": 2127975,
+      "gfa": "340",
+      "issue_date": {
+        "toronto": "2026-01-21T00:00:00-05:00",
+        "utc": "2026-01-21T05:00:00+00:00"
+      },
+      "latitude": 43.73101850247937,
+      "longitude": -79.68077093525844,
+      "object_id": 109352,
+      "permit_number": "25-164820-P01-00",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Issued",
+      "subdescription": "F2: Industrial",
+      "work_description": "Alteration (Renovation)"
+    },
+    {
+      "address": "20 Whybank Dr, Unit 2, Brampton, ",
+      "application_date": {
+        "toronto": "2025-10-24T00:00:00-04:00",
+        "utc": "2025-10-24T04:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "alteration",
+      "expiry_date": null,
+      "folder_rsn": 2126678,
+      "gfa": "4100",
+      "issue_date": {
+        "toronto": "2025-12-24T00:00:00-05:00",
+        "utc": "2025-12-24T05:00:00+00:00"
+      },
+      "latitude": 43.71454199533817,
+      "longitude": -79.80461908746386,
+      "object_id": 146832,
+      "permit_number": "25-163567-P01-00",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Closed",
+      "subdescription": "F2: Industrial",
+      "work_description": "Alteration (Renovation)"
+    },
+    {
+      "address": "114 East Dr, Brampton, ON, L6T 1C1",
+      "application_date": {
+        "toronto": "2025-10-24T00:00:00-04:00",
+        "utc": "2025-10-24T04:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "alteration",
+      "expiry_date": null,
+      "folder_rsn": 2126620,
+      "gfa": "1333",
+      "issue_date": {
+        "toronto": "2026-01-20T00:00:00-05:00",
+        "utc": "2026-01-20T05:00:00+00:00"
+      },
+      "latitude": 43.71101826567585,
+      "longitude": -79.69221391698416,
+      "object_id": 146505,
+      "permit_number": "25-163514-P01-00",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Issued",
+      "subdescription": "F2: Industrial",
+      "work_description": "Alteration (Renovation)"
+    },
+    {
+      "address": "301 Orenda Rd, Brampton, ",
+      "application_date": {
+        "toronto": "2025-10-22T00:00:00-04:00",
+        "utc": "2025-10-22T04:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "other",
+      "expiry_date": null,
+      "folder_rsn": 2125716,
+      "gfa": "11279.63",
+      "issue_date": {
+        "toronto": "2025-11-24T00:00:00-05:00",
+        "utc": "2025-11-24T05:00:00+00:00"
+      },
+      "latitude": 43.69927730030011,
+      "longitude": -79.71326964538827,
+      "object_id": 151806,
+      "permit_number": "25-139480-P01-00",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Issued",
+      "subdescription": "F2: Industrial",
+      "work_description": "Foundation Only"
+    },
+    {
+      "address": "8050 Heritage Rd, Brampton, ON, L6Y 0C9",
+      "application_date": {
+        "toronto": "2025-10-20T00:00:00-04:00",
+        "utc": "2025-10-20T04:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "alteration",
+      "expiry_date": null,
+      "folder_rsn": 2123544,
+      "gfa": "83",
+      "issue_date": {
+        "toronto": "2025-11-27T00:00:00-05:00",
+        "utc": "2025-11-27T05:00:00+00:00"
+      },
+      "latitude": 43.61807636814188,
+      "longitude": -79.79019308623532,
+      "object_id": 128214,
+      "permit_number": "25-160473-P01-00",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Closed",
+      "subdescription": "F2: Industrial",
+      "work_description": "Alteration (Renovation)"
+    },
+    {
+      "address": "3495 Steeles Ave E, Brampton, ON, L6T 5W8",
+      "application_date": {
+        "toronto": "2025-10-10T00:00:00-04:00",
+        "utc": "2025-10-10T04:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "other",
+      "expiry_date": null,
+      "folder_rsn": 2118334,
+      "gfa": "14873",
+      "issue_date": {
+        "toronto": "2026-03-23T00:00:00-04:00",
+        "utc": "2026-03-23T04:00:00+00:00"
+      },
+      "latitude": 43.73075407066225,
+      "longitude": -79.65724256686697,
+      "object_id": 140170,
+      "permit_number": "24-421233-P01-01",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Issued",
+      "subdescription": "F1: Industrial",
+      "work_description": "Revision"
+    },
+    {
+      "address": "180 Walker Dr, Brampton, ON, L6T 4V8",
+      "application_date": {
+        "toronto": "2025-10-09T00:00:00-04:00",
+        "utc": "2025-10-09T04:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "alteration",
+      "expiry_date": null,
+      "folder_rsn": 2118263,
+      "gfa": "107.02",
+      "issue_date": {
+        "toronto": "2025-11-18T00:00:00-05:00",
+        "utc": "2025-11-18T05:00:00+00:00"
+      },
+      "latitude": 43.73148329941452,
+      "longitude": -79.68822690073898,
+      "object_id": 181703,
+      "permit_number": "25-155300-P01-00",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Closed",
+      "subdescription": "F2: Industrial",
+      "work_description": "Alteration (Renovation)"
+    },
+    {
+      "address": "201 Westcreek Blvd, Brampton, ON, L6T 5S6",
+      "application_date": {
+        "toronto": "2025-10-07T00:00:00-04:00",
+        "utc": "2025-10-07T04:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "alteration",
+      "expiry_date": null,
+      "folder_rsn": 2117370,
+      "gfa": "100",
+      "issue_date": {
+        "toronto": "2026-04-10T00:00:00-04:00",
+        "utc": "2026-04-10T04:00:00+00:00"
+      },
+      "latitude": 43.678709437749916,
+      "longitude": -79.69970144426183,
+      "object_id": 151221,
+      "permit_number": "25-154414-P01-00",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Issued",
+      "subdescription": "F3: Industrial",
+      "work_description": "Alteration (Renovation)"
+    },
+    {
+      "address": "9263 Airport Rd, Brampton, ON, L6S 0B6",
+      "application_date": {
+        "toronto": "2025-10-07T00:00:00-04:00",
+        "utc": "2025-10-07T04:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "alteration",
+      "expiry_date": null,
+      "folder_rsn": 2117263,
+      "gfa": "10",
+      "issue_date": {
+        "toronto": "2025-12-04T00:00:00-05:00",
+        "utc": "2025-12-04T05:00:00+00:00"
+      },
+      "latitude": 43.75029229341534,
+      "longitude": -79.70058593337863,
+      "object_id": 133052,
+      "permit_number": "25-154318-P01-00",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Closed",
+      "subdescription": "F2: Industrial",
+      "work_description": "Alteration (Renovation)"
+    },
+    {
+      "address": "8550 Goreway Dr, Brampton, ON, L6T 5J8",
+      "application_date": {
+        "toronto": "2025-10-06T00:00:00-04:00",
+        "utc": "2025-10-06T04:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "other",
+      "expiry_date": null,
+      "folder_rsn": 2111903,
+      "gfa": "99",
+      "issue_date": {
+        "toronto": "2026-01-13T00:00:00-05:00",
+        "utc": "2026-01-13T05:00:00+00:00"
+      },
+      "latitude": 43.7414887415223,
+      "longitude": -79.6740280532087,
+      "object_id": 178397,
+      "permit_number": "24-222618-P01-02",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Closed",
+      "subdescription": "F2: Industrial",
+      "work_description": "Revision"
+    },
+    {
+      "address": "114 East Dr, Brampton, ON, L6T 1C1",
+      "application_date": {
+        "toronto": "2025-10-06T00:00:00-04:00",
+        "utc": "2025-10-06T04:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "alteration",
+      "expiry_date": null,
+      "folder_rsn": 2115497,
+      "gfa": "2663",
+      "issue_date": {
+        "toronto": "2025-11-25T00:00:00-05:00",
+        "utc": "2025-11-25T05:00:00+00:00"
+      },
+      "latitude": 43.71101826567585,
+      "longitude": -79.69221391698416,
+      "object_id": 117358,
+      "permit_number": "25-152583-P01-00",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Issued",
+      "subdescription": "F2: Industrial",
+      "work_description": "Alteration (Renovation)"
+    },
+    {
+      "address": "30 Resolution Dr, Brampton, ON, L6W 0A3",
+      "application_date": {
+        "toronto": "2025-10-03T00:00:00-04:00",
+        "utc": "2025-10-03T04:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "alteration",
+      "expiry_date": null,
+      "folder_rsn": 2115042,
+      "gfa": null,
+      "issue_date": {
+        "toronto": "2025-11-26T00:00:00-05:00",
+        "utc": "2025-11-26T05:00:00+00:00"
+      },
+      "latitude": 43.680870326307165,
+      "longitude": -79.72315472159747,
+      "object_id": 202276,
+      "permit_number": "25-152140-P01-00",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Closed",
+      "subdescription": "F2: Industrial",
+      "work_description": "Alteration (Renovation)"
+    },
+    {
+      "address": "7435 Mississauga Rd, Brampton, ON, ",
+      "application_date": {
+        "toronto": "2025-10-03T00:00:00-04:00",
+        "utc": "2025-10-03T04:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "other",
+      "expiry_date": null,
+      "folder_rsn": 2114987,
+      "gfa": "8483.99",
+      "issue_date": {
+        "toronto": "2025-12-16T00:00:00-05:00",
+        "utc": "2025-12-16T05:00:00+00:00"
+      },
+      "latitude": 43.62515790529954,
+      "longitude": -79.76923060306947,
+      "object_id": 112012,
+      "permit_number": "24-434206-P02-01",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Issued",
+      "subdescription": "F2: Industrial",
+      "work_description": "Revision"
+    },
+    {
+      "address": "35 Automatic Rd, Brampton, ON, L6S 6C9",
+      "application_date": {
+        "toronto": "2025-09-29T00:00:00-04:00",
+        "utc": "2025-09-29T04:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "other",
+      "expiry_date": null,
+      "folder_rsn": 2111929,
+      "gfa": null,
+      "issue_date": {
+        "toronto": "2025-11-12T00:00:00-05:00",
+        "utc": "2025-11-12T05:00:00+00:00"
+      },
+      "latitude": 43.76082319392707,
+      "longitude": -79.70620922285174,
+      "object_id": 92870,
+      "permit_number": "24-408168-P01-01",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Closed",
+      "subdescription": "F2: Industrial",
+      "work_description": "Revision"
+    },
+    {
+      "address": "2080 Steeles Ave E, Unit 17, Brampton, ON, L6T 5A5",
+      "application_date": {
+        "toronto": "2025-09-26T00:00:00-04:00",
+        "utc": "2025-09-26T04:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "alteration",
+      "expiry_date": null,
+      "folder_rsn": 2111883,
+      "gfa": "146.1",
+      "issue_date": {
+        "toronto": "2025-12-04T00:00:00-05:00",
+        "utc": "2025-12-04T05:00:00+00:00"
+      },
+      "latitude": 43.710733142014156,
+      "longitude": -79.68564147364238,
+      "object_id": 175664,
+      "permit_number": "25-149050-P01-00",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Closed",
+      "subdescription": "F2: Industrial",
+      "work_description": "Alteration (Renovation)"
+    },
+    {
+      "address": "114 East Dr, Brampton, ON, L6T 1C1",
+      "application_date": {
+        "toronto": "2025-09-24T00:00:00-04:00",
+        "utc": "2025-09-24T04:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "alteration",
+      "expiry_date": null,
+      "folder_rsn": 2116942,
+      "gfa": "4385",
+      "issue_date": {
+        "toronto": "2025-12-05T00:00:00-05:00",
+        "utc": "2025-12-05T05:00:00+00:00"
+      },
+      "latitude": 43.71101826567585,
+      "longitude": -79.69221391698416,
+      "object_id": 164155,
+      "permit_number": "25-154007-P01-00",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Issued",
+      "subdescription": "F2: Industrial",
+      "work_description": "Alteration (Renovation)"
+    },
+    {
+      "address": "321 Heart Lake Rd S, Brampton, ON, ",
+      "application_date": {
+        "toronto": "2025-09-17T00:00:00-04:00",
+        "utc": "2025-09-17T04:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "other",
+      "expiry_date": null,
+      "folder_rsn": 2106982,
+      "gfa": "544.709",
+      "issue_date": null,
+      "latitude": 43.68851460491934,
+      "longitude": -79.71796066953436,
+      "object_id": 98592,
+      "permit_number": "21-233301-P01-01",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Applied",
+      "subdescription": "F2: Industrial",
+      "work_description": "Revision"
+    },
+    {
+      "address": "80 Exchange Dr, Brampton, ON, ",
+      "application_date": {
+        "toronto": "2025-09-15T00:00:00-04:00",
+        "utc": "2025-09-15T04:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "other",
+      "expiry_date": null,
+      "folder_rsn": 2104330,
+      "gfa": "3786.9",
+      "issue_date": {
+        "toronto": "2025-12-10T00:00:00-05:00",
+        "utc": "2025-12-10T05:00:00+00:00"
+      },
+      "latitude": 43.75378026226372,
+      "longitude": -79.69034906727302,
+      "object_id": 146970,
+      "permit_number": "25-141644-P01-00",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Issued",
+      "subdescription": "F2: Industrial",
+      "work_description": "New Shell Building"
+    },
+    {
+      "address": "5405 Countryside Dr, Unit 1, Brampton, ",
+      "application_date": {
+        "toronto": "2025-09-11T00:00:00-04:00",
+        "utc": "2025-09-11T04:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "alteration",
+      "expiry_date": null,
+      "folder_rsn": 2100105,
+      "gfa": null,
+      "issue_date": null,
+      "latitude": 43.826179007229264,
+      "longitude": -79.6988782847707,
+      "object_id": 121829,
+      "permit_number": "25-137602-000-00",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Cancelled",
+      "subdescription": "F2: Industrial",
+      "work_description": "Alteration (Renovation)"
+    },
+    {
+      "address": "25 Newkirk Crt, Unit 1, Brampton, ON, ",
+      "application_date": {
+        "toronto": "2025-09-10T00:00:00-04:00",
+        "utc": "2025-09-10T04:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "alteration",
+      "expiry_date": null,
+      "folder_rsn": 2102624,
+      "gfa": "84.82",
+      "issue_date": {
+        "toronto": "2025-11-14T00:00:00-05:00",
+        "utc": "2025-11-14T05:00:00+00:00"
+      },
+      "latitude": 43.74582918490055,
+      "longitude": -79.7928207680172,
+      "object_id": 149976,
+      "permit_number": "25-140054-P01-00",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Issued",
+      "subdescription": "F2: Industrial",
+      "work_description": "Alteration (Renovation)"
+    },
+    {
+      "address": "301 Orenda Rd, Brampton, ",
+      "application_date": {
+        "toronto": "2025-09-08T00:00:00-04:00",
+        "utc": "2025-09-08T04:00:00+00:00"
+      },
+      "builder": null,
+      "contractor": null,
+      "event_pattern": "other",
+      "expiry_date": null,
+      "folder_rsn": 2102030,
+      "gfa": "11279.63",
+      "issue_date": {
+        "toronto": "2026-01-20T00:00:00-05:00",
+        "utc": "2026-01-20T05:00:00+00:00"
+      },
+      "latitude": 43.69927730030011,
+      "longitude": -79.71326964538827,
+      "object_id": 165610,
+      "permit_number": "25-139480-P02-00",
+      "process_date": null,
+      "sampled_activities": [],
+      "status": "Issued",
+      "subdescription": "F2: Industrial",
+      "work_description": "New Shell Building"
+    }
+  ],
+  "records_with_gfa": 143,
+  "service_url": "https://maps1.brampton.ca/arcgis/rest/services/BuildingPermit/Building_Permits/FeatureServer",
+  "status_distribution": {
+    "Applied": 66,
+    "Cancelled": 9,
+    "Closed": 31,
+    "Issued": 88,
+    "Occupancy Granted": 2,
+    "Ready to Issue": 4
+  },
+  "total_industrial_permit_count": 4652,
+  "transfer_limit_exceeded": true,
+  "warning": "All classifications are exploratory. No record is outreach-eligible."
+}

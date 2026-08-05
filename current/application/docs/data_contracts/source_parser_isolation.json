@@ -1,0 +1,68 @@
+{
+  "artifact_boundary_scan": {
+    "artifact_boundary_passed": true,
+    "boundary_violations": [],
+    "contract_count": 3,
+    "contracts": [
+      {
+        "artifact_path": "data/bronze/brampton_building_permits/2026/07/26/RUN-20260726T033516Z-e1388f64b1/layer_0_bae5f22db1bef14b.geojson.gz",
+        "authoritative_database_path": false,
+        "database_suffix_forbidden": false,
+        "inside_bronze": true,
+        "source_id": "brampton_building_permits",
+        "violations": []
+      },
+      {
+        "artifact_path": "data/bronze/brampton_business_directory/2026/07/26/RUN-20260726T040418Z-b394f90ee8/layer_0_0c90be8f6d4c89fe.geojson.gz",
+        "authoritative_database_path": false,
+        "database_suffix_forbidden": false,
+        "inside_bronze": true,
+        "source_id": "brampton_business_directory",
+        "violations": []
+      },
+      {
+        "artifact_path": "data/bronze/statscan_odbus_2023/2026/07/26/RUN-20260726T024102Z-16fb53d196/ODBus_2023_0ec6388eb16584d0.zip",
+        "authoritative_database_path": false,
+        "database_suffix_forbidden": false,
+        "inside_bronze": true,
+        "source_id": "statscan_odbus_2023",
+        "violations": []
+      }
+    ]
+  },
+  "authoritative_database_connection_count": 0,
+  "authoritative_database_write_count": 0,
+  "duckdb_connection_api_blocked": true,
+  "guarded_parser_execution_count": 6,
+  "model_training_execution_count": 0,
+  "model_version": "cre-foundry-source-parser-isolation-v1",
+  "outreach_execution_count": 0,
+  "parser_contract_approval_count": 0,
+  "production_ranking_execution_count": 0,
+  "reproducibility_match_count": 3,
+  "runtime_guard_passed": true,
+  "schema_contract_approval_count": 0,
+  "snapshot_registration_count": 0,
+  "sqlite_connection_api_blocked": true,
+  "static_scan": {
+    "forbidden_database_literals": [],
+    "forbidden_imports": [],
+    "imported_roots": [
+      "__future__",
+      "collections",
+      "csv",
+      "gzip",
+      "hashlib",
+      "io",
+      "json",
+      "os",
+      "pathlib",
+      "tempfile",
+      "typing",
+      "zipfile"
+    ],
+    "source_path": "/Users/alimehdi/Projects/comfiance/cre-foundry/src/cre_foundry/source_parser_contracts.py",
+    "static_isolation_passed": true
+  },
+  "validated_contract_count": 3
+}

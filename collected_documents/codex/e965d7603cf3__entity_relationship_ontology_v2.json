@@ -1,0 +1,341 @@
+{
+  "ontology_version": "cre-entity-relationship-ontology-v2",
+  "nodes": [
+    {
+      "node_type": "legal_entity",
+      "definition": "Registered corporation, partnership or other legal person."
+    },
+    {
+      "node_type": "operating_business",
+      "definition": "Commercial operation that may span legal entities or brands."
+    },
+    {
+      "node_type": "brand",
+      "definition": "Public-facing commercial identity."
+    },
+    {
+      "node_type": "establishment",
+      "definition": "Operating unit performing activity at a physical location."
+    },
+    {
+      "node_type": "business_location",
+      "definition": "Standardized visitable physical place."
+    },
+    {
+      "node_type": "address",
+      "definition": "Postal/civic address representation with temporal validity."
+    },
+    {
+      "node_type": "building",
+      "definition": "Physical structure at an address or parcel."
+    },
+    {
+      "node_type": "property",
+      "definition": "Commercial real-estate asset or assessment unit."
+    },
+    {
+      "node_type": "parcel",
+      "definition": "Cadastral land unit."
+    },
+    {
+      "node_type": "property_owner",
+      "definition": "Legal or beneficial owner where lawfully observable."
+    },
+    {
+      "node_type": "occupier",
+      "definition": "Business or entity occupying all or part of a property."
+    },
+    {
+      "node_type": "parent_organization",
+      "definition": "Controlling or affiliated organization."
+    },
+    {
+      "node_type": "permit",
+      "definition": "Building or operating permission record."
+    },
+    {
+      "node_type": "planning_application",
+      "definition": "Planning, site-plan, variance or development application."
+    },
+    {
+      "node_type": "licence",
+      "definition": "Business, regulatory or facility licence."
+    },
+    {
+      "node_type": "environmental_permission",
+      "definition": "ECA/EASR or related permission."
+    },
+    {
+      "node_type": "contract_award",
+      "definition": "Public procurement award or contract."
+    },
+    {
+      "node_type": "grant_contribution",
+      "definition": "Public funding or contribution."
+    },
+    {
+      "node_type": "job_posting",
+      "definition": "Observed hiring demand record."
+    },
+    {
+      "node_type": "importer_record",
+      "definition": "Product-specific importer evidence."
+    },
+    {
+      "node_type": "inspection_enforcement",
+      "definition": "Inspection, suspension, cancellation or enforcement record."
+    },
+    {
+      "node_type": "source_record",
+      "definition": "Immutable raw or normalized record with provenance."
+    },
+    {
+      "node_type": "evidence_bundle",
+      "definition": "Point-in-time set of records supporting a feature or event."
+    },
+    {
+      "node_type": "event",
+      "definition": "Adjudicated real-world business or CRE event."
+    },
+    {
+      "node_type": "opportunity",
+      "definition": "Brokerage-capturable service need at a decision time."
+    },
+    {
+      "node_type": "recommendation",
+      "definition": "Tip Sheet selection and visit objective."
+    },
+    {
+      "node_type": "field_contact",
+      "definition": "Observed visit/contact attempt."
+    },
+    {
+      "node_type": "outcome",
+      "definition": "Mature or censored field and commercial result."
+    }
+  ],
+  "edges": [
+    {
+      "from": "legal_entity",
+      "relation": "operates",
+      "to": "operating_business",
+      "cardinality": "many_to_many",
+      "requires_valid_from_to": false
+    },
+    {
+      "from": "operating_business",
+      "relation": "uses_brand",
+      "to": "brand",
+      "cardinality": "many_to_many",
+      "requires_valid_from_to": false
+    },
+    {
+      "from": "operating_business",
+      "relation": "has_establishment",
+      "to": "establishment",
+      "cardinality": "one_to_many",
+      "requires_valid_from_to": false
+    },
+    {
+      "from": "establishment",
+      "relation": "located_at",
+      "to": "business_location",
+      "cardinality": "many_to_one_temporal",
+      "requires_valid_from_to": true
+    },
+    {
+      "from": "business_location",
+      "relation": "represented_by",
+      "to": "address",
+      "cardinality": "many_to_many_temporal",
+      "requires_valid_from_to": true
+    },
+    {
+      "from": "business_location",
+      "relation": "inside",
+      "to": "building",
+      "cardinality": "many_to_one_temporal",
+      "requires_valid_from_to": true
+    },
+    {
+      "from": "building",
+      "relation": "part_of",
+      "to": "property",
+      "cardinality": "many_to_one",
+      "requires_valid_from_to": false
+    },
+    {
+      "from": "property",
+      "relation": "comprises",
+      "to": "parcel",
+      "cardinality": "many_to_many_temporal",
+      "requires_valid_from_to": true
+    },
+    {
+      "from": "property_owner",
+      "relation": "owns",
+      "to": "property",
+      "cardinality": "many_to_many_temporal",
+      "requires_valid_from_to": true
+    },
+    {
+      "from": "occupier",
+      "relation": "occupies",
+      "to": "property",
+      "cardinality": "many_to_many_temporal",
+      "requires_valid_from_to": true
+    },
+    {
+      "from": "legal_entity",
+      "relation": "controls",
+      "to": "legal_entity",
+      "cardinality": "many_to_many_temporal",
+      "requires_valid_from_to": true
+    },
+    {
+      "from": "parent_organization",
+      "relation": "controls",
+      "to": "operating_business",
+      "cardinality": "many_to_many_temporal",
+      "requires_valid_from_to": true
+    },
+    {
+      "from": "permit",
+      "relation": "applies_to",
+      "to": "address",
+      "cardinality": "many_to_one",
+      "requires_valid_from_to": false
+    },
+    {
+      "from": "planning_application",
+      "relation": "applies_to",
+      "to": "property",
+      "cardinality": "many_to_many",
+      "requires_valid_from_to": false
+    },
+    {
+      "from": "licence",
+      "relation": "authorizes",
+      "to": "legal_entity",
+      "cardinality": "many_to_one",
+      "requires_valid_from_to": false
+    },
+    {
+      "from": "licence",
+      "relation": "applies_at",
+      "to": "business_location",
+      "cardinality": "many_to_one_temporal",
+      "requires_valid_from_to": true
+    },
+    {
+      "from": "environmental_permission",
+      "relation": "applies_at",
+      "to": "business_location",
+      "cardinality": "many_to_one",
+      "requires_valid_from_to": false
+    },
+    {
+      "from": "contract_award",
+      "relation": "awarded_to",
+      "to": "legal_entity",
+      "cardinality": "many_to_one",
+      "requires_valid_from_to": false
+    },
+    {
+      "from": "grant_contribution",
+      "relation": "awarded_to",
+      "to": "legal_entity",
+      "cardinality": "many_to_one",
+      "requires_valid_from_to": false
+    },
+    {
+      "from": "job_posting",
+      "relation": "posted_by",
+      "to": "operating_business",
+      "cardinality": "many_to_one_probabilistic",
+      "requires_valid_from_to": false
+    },
+    {
+      "from": "importer_record",
+      "relation": "names",
+      "to": "legal_entity",
+      "cardinality": "many_to_one",
+      "requires_valid_from_to": false
+    },
+    {
+      "from": "inspection_enforcement",
+      "relation": "applies_to",
+      "to": "licence",
+      "cardinality": "many_to_one",
+      "requires_valid_from_to": false
+    },
+    {
+      "from": "source_record",
+      "relation": "supports",
+      "to": "evidence_bundle",
+      "cardinality": "many_to_many",
+      "requires_valid_from_to": false
+    },
+    {
+      "from": "evidence_bundle",
+      "relation": "supports_or_refutes",
+      "to": "event",
+      "cardinality": "many_to_many",
+      "requires_valid_from_to": false
+    },
+    {
+      "from": "event",
+      "relation": "creates_or_updates",
+      "to": "opportunity",
+      "cardinality": "many_to_many",
+      "requires_valid_from_to": false
+    },
+    {
+      "from": "recommendation",
+      "relation": "targets",
+      "to": "business_location",
+      "cardinality": "many_to_one",
+      "requires_valid_from_to": false
+    },
+    {
+      "from": "recommendation",
+      "relation": "uses",
+      "to": "evidence_bundle",
+      "cardinality": "many_to_many",
+      "requires_valid_from_to": false
+    },
+    {
+      "from": "field_contact",
+      "relation": "executes",
+      "to": "recommendation",
+      "cardinality": "many_to_one",
+      "requires_valid_from_to": false
+    },
+    {
+      "from": "field_contact",
+      "relation": "produces",
+      "to": "outcome",
+      "cardinality": "one_to_many",
+      "requires_valid_from_to": false
+    }
+  ],
+  "identity_rules": [
+    "Address equality alone never proves business identity, occupier identity or ownership.",
+    "Every match stores method, score, evidence, conflict state and valid-time interval.",
+    "Legal entity, operating business, brand, establishment and location remain separate identifiers.",
+    "Move, rename, amalgamation, dissolution and identifier-reissue events preserve predecessor/successor lineage.",
+    "Entity conflicts block live ranking when they could target the wrong protected account or physical place."
+  ],
+  "minimum_live_audit_requirements": {
+    "precision_lower_bound": 0.95,
+    "conflict_recall_target": 0.95,
+    "stratification": [
+      "municipality",
+      "sector",
+      "match_method",
+      "multi_tenant",
+      "address_change"
+    ],
+    "status": "not_yet_measured"
+  }
+}

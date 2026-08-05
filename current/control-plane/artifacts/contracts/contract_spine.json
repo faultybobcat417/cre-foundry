@@ -1,0 +1,67 @@
+{
+  "adapter_sha256": "ebd0e08ddcf099e1c8b92ac9b495784e191101fdeb7f057b0e47223c2d2608fa",
+  "adapter_version": "thin-spine-adapter-v1",
+  "candidate_snapshot_sha256": "236ded7ed4b4ef10e38bc2e33f037d5d65cc1b4158205f92f2bd3547e961a647",
+  "canonicalization": "SORTED_KEYS_INTEGER_JSON_V1",
+  "contract_id": "CONTRACT-001-SPINE-V1",
+  "decision_scope": "SYNTHETIC_FORMAL_ONLY",
+  "document_kind": "THIN_SLICE_SPINE",
+  "normalizer_version": "lower-ascii-hyphen-v1",
+  "proof": {
+    "claim": "synthetic contract conformance only",
+    "focal_observation_id": "OBS:SYN_0001",
+    "level": 4,
+    "live_issuance_authorized": false,
+    "real_world_identity_proven": false
+  },
+  "replay_receipt": {
+    "candidate_snapshot_sha256": "236ded7ed4b4ef10e38bc2e33f037d5d65cc1b4158205f92f2bd3547e961a647",
+    "math_decision_sha256": "09d0e986cb410f44cf89348e7b43a098adb277287ad83567db595d0643b6b9b7",
+    "math_problem_sha256": "63a2b2ad5529621f987b1060f179452e497d1e32eaef465a4d1b0cd7747da290",
+    "policy_sha256": "562a0c295ca5bc452d88376b0b1ce784007d5bbc3c2b5e023fc9652caa236018",
+    "result": "ISSUE",
+    "selected_candidate_ids": [
+      "CAND:SYN_0008",
+      "CAND:SYN_0002",
+      "CAND:SYN_0005",
+      "CAND:SYN_0003",
+      "CAND:SYN_0004",
+      "CAND:SYN_0006",
+      "CAND:SYN_0007",
+      "CAND:SYN_0001",
+      "CAND:SYN_0010",
+      "CAND:SYN_0009"
+    ],
+    "source_snapshot_sha256": "65607401ad27a1306336a1d7024a9bc67f1bfce6af164374f6e3fb5e833c91d6"
+  },
+  "schema_bindings": {
+    "candidate": {
+      "path": "contracts/thin_slice_candidate.schema.json",
+      "schema_version": "1.0.0",
+      "sha256": "2321437dbee53e2a04bfd1121682447cdfb947828d7ba4fa4e6e12f761aa2e15"
+    },
+    "math_decision": {
+      "path": "contracts/math_route_decision.schema.json",
+      "schema_version": "1.0.0",
+      "sha256": "b3929312d94633c5fdebb68f2df705c51bdb2868fa4941b97993e0fd6a1c0cb1"
+    },
+    "math_problem": {
+      "path": "contracts/math_decision_policy.schema.json",
+      "schema_version": "1.0.0",
+      "sha256": "3942db4a53405c57c8cf7edfcbcda26262b6457de80f55ca4620278ec0ae04fd"
+    },
+    "observation": {
+      "path": "contracts/thin_slice_observation.schema.json",
+      "schema_version": "1.0.0",
+      "sha256": "16b26b4ab05f138af9e886ce09709acfce434b5f5cd2942952d5cfe1e00d368f"
+    }
+  },
+  "schema_version": "1.0.0",
+  "source_snapshot_sha256": "65607401ad27a1306336a1d7024a9bc67f1bfce6af164374f6e3fb5e833c91d6",
+  "supported_version_transition": {
+    "candidate": "1.0.0",
+    "math_decision": "1.0.0",
+    "math_problem": "1.0.0",
+    "observation": "1.0.0"
+  }
+}

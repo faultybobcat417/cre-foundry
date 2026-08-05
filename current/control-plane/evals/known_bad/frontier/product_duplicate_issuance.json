@@ -1,0 +1,156 @@
+{
+  "attack_scope": "SYNTHETIC_EVALUATOR_SELF_TEST_ONLY",
+  "base_run_sha256": "1a44025fbbd4547b9c322d83d432239d3943b0839ab398cbf1034125397c075e",
+  "case_id": "duplicate-issuance",
+  "description": "Retrying issuance creates a duplicate external effect (registered mutation duplicate-issuance).",
+  "document_kind": "REGISTERED_ARCHITECTURE_PRODUCT_MUTATION",
+  "expected_diagnostic": "registered mutation detected: duplicate-issuance",
+  "recipe": {
+    "ops": [
+      [
+        "set",
+        [
+          "issuance",
+          "external_effect_occurred"
+        ],
+        true
+      ],
+      [
+        "set",
+        [
+          "issuance",
+          "unique_slot_single_issuance"
+        ],
+        false
+      ]
+    ]
+  },
+  "schema_version": "1.0.0",
+  "subject": {
+    "accessibility": {
+      "claim_kind": "SYNTHETIC_PROGRAMMATIC_SEMANTICS_ONLY",
+      "claims_not_established": [
+        "WCAG_CONFORMANCE",
+        "SCREEN_READER_PERFORMANCE",
+        "REPRESENTATIVE_USABILITY",
+        "ACCESSIBILITY_EFFECTIVENESS",
+        "SATISFACTION",
+        "ADOPTION"
+      ],
+      "errors": [],
+      "status": {
+        "announcement_intent": "POLITE",
+        "primary_status_code": "S_ISSUE",
+        "reason_code": null,
+        "safe_next_actions": [
+          "retry",
+          "details"
+        ]
+      }
+    },
+    "aggregate_key": {
+      "execution_scope": "SYNTHETIC_NON_INFLUENCING",
+      "generation": 1,
+      "representative_id": "R-1",
+      "route_date": "2026-08-02"
+    },
+    "canonicalization": "SORTED_KEYS_INTEGER_JSON_V1",
+    "claim_ceiling": "No representative usability, WCAG or assistive-technology performance or certification, production durability or atomicity, operational reliability or error rate, security certification, route feasibility, deployment readiness, live authority, adoption, incremental F9 lift, or commercial value is established.",
+    "decision": {
+      "reason": null,
+      "result": "ISSUE",
+      "selected_physical_location_ids": [
+        "L00",
+        "L01",
+        "L02",
+        "L03",
+        "L04",
+        "L05",
+        "L06",
+        "L07",
+        "L08",
+        "L09"
+      ]
+    },
+    "document_kind": "PRODUCT_WORKFLOW_SUBJECT",
+    "execution_scope": "SYNTHETIC_NON_INFLUENCING",
+    "external_gates": [
+      {
+        "gate_id": "GATE-MANUAL-REVIEW-AUTHORITY-001",
+        "status": "OPEN_BLOCKING"
+      },
+      {
+        "gate_id": "GATE-LIVE-WORKFLOW-AUTHORITY-001",
+        "status": "OPEN_BLOCKING"
+      },
+      {
+        "gate_id": "GATE-ACCESSIBILITY-EMPIRICAL-VALIDATION-001",
+        "status": "OPEN_BLOCKING"
+      },
+      {
+        "gate_id": "GATE-REPRESENTATIVE-USABILITY-001",
+        "status": "OPEN_BLOCKING"
+      },
+      {
+        "gate_id": "GATE-PRODUCTION-DEPLOYMENT-001",
+        "status": "OPEN_BLOCKING"
+      }
+    ],
+    "issuance": {
+      "committed_at": "2026-08-01T12:00:00Z",
+      "external_effect_occurred": true,
+      "idempotency_sha256": "3ee7ab85ea0630a68dc8eeaf02c73fdd0bae0c9e891baa3ff91e03dcedec85cc",
+      "issuance_slot": {
+        "execution_scope": "SYNTHETIC_NON_INFLUENCING",
+        "representative_id": "R-1",
+        "route_date": "2026-08-02"
+      },
+      "route_manifest_sha256": "1111111111111111111111111111111111111111111111111111111111111111",
+      "unique_slot_single_issuance": false
+    },
+    "lineage": {
+      "canonical_run_sha256": "1a44025fbbd4547b9c322d83d432239d3943b0839ab398cbf1034125397c075e",
+      "command_stream_sha256": "2c49d011df0950a9e6e81b7230657401cd06c4c53a7e5a68e2c08f3d5fc91945",
+      "complete": true,
+      "event_stream_sha256": "e57c496498082d9333efc9d9b587252b659cb7ada9fce154084d2dc0bf9702d5",
+      "final_receipt_sha256": "963e3868b876351d587dcedea1563d626c96fc44e850e52864eb365a0928afef"
+    },
+    "live": {
+      "live_enabled": false,
+      "live_issuance_authorized": false
+    },
+    "manual_edits": [],
+    "proof": {
+      "accessibility_performance_or_conformance_proven": false,
+      "commercial_value_proven": false,
+      "deployment_authorized": false,
+      "external_effect_occurred": false,
+      "incremental_lift_proven": false,
+      "level": 4,
+      "live_issuance_authorized": false,
+      "live_workflow_authorized": false,
+      "production_atomicity_or_reliability_proven": false,
+      "real_route_feasibility_proven": false,
+      "real_usability_proven": false,
+      "security_proven": false
+    },
+    "protection": {
+      "protected_stops_issued": 0,
+      "protected_tokens": [],
+      "zero_false_clear": true
+    },
+    "route_day": {
+      "representative_id": "R-1",
+      "route_date": "2026-08-02"
+    },
+    "run_id": "RUN-ARCH-001",
+    "schema_version": "1.0.0",
+    "stage_isolation": {
+      "stage1_immutable": true,
+      "stage1_rewrite_attempts": 0,
+      "stage2_append_only": true,
+      "stage3_append_only": true
+    },
+    "subject_kind": "PRODUCT_WORKFLOW_SUBJECT"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "policy_version": "cre-spatial-interference-policy-v1",
+  "problem": "Nearby businesses may share owners, landlords, industrial parks, referral networks or exposure to representative activity. Treating them as independent can bias route-day experiments.",
+  "interference_graph_edges": [
+    "same_legal_or_parent_group",
+    "same_property_or_building",
+    "same_landlord_or_property_manager_when_known",
+    "same_industrial_complex",
+    "adjacent_h3_cells",
+    "shared_referral_or_relationship_network",
+    "same_representative_recent_exposure"
+  ],
+  "design": {
+    "primary_randomization_unit": "representative_route_day",
+    "blocking_variables": [
+      "representative",
+      "weekday",
+      "spatial_pod",
+      "municipality"
+    ],
+    "cluster_consistency_period": "registered_before_trial",
+    "same_entity_property_or_parent_cross_arm": false,
+    "buffer_or_exposure_mapping_required": true
+  },
+  "analysis": [
+    "intention_to_treat_at_route_day",
+    "cluster_robust_or_randomization_based_uncertainty",
+    "report_direct_and_spillover_exposure",
+    "sensitivity_to_h3_resolution_and_buffer_radius",
+    "exclude_or_flag boundary units with mixed exposure"
+  ],
+  "failure_conditions": [
+    "same_business_or_parent_appears_in_multiple_arms",
+    "same_property_receives conflicting treatments without design approval",
+    "pod_boundaries_are_changed_after_outcomes",
+    "spatial_exposure_is_unrecorded",
+    "effective_sample_size_is_materially_overstated"
+  ],
+  "status": "planning_ready_real_interference_graph_missing"
+}

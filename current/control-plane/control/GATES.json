@@ -1,0 +1,262 @@
+{
+  "version": "1.0",
+  "gates": [
+    {
+      "gate_id": "GATE-SEALED-EVALUATOR-CUSTODY-001",
+      "status": "OPEN_BLOCKING",
+      "blocks": ["EVAL-001"],
+      "owner": "UNASSIGNED independent evaluator custodian",
+      "required_evidence": [
+        "exact private evaluator repository or service identifier outside this worktree",
+        "builder denied read/write/admin/bypass access",
+        "custodian-owned runner, signing key, and status publisher",
+        "signed attestation binding application SHA and evaluator version",
+        "independent verification of custody and restore procedure"
+      ]
+    },
+    {
+      "gate_id": "GATE-HIDDEN-HOLDOUT-OWNER-001",
+      "status": "OPEN_BLOCKING",
+      "blocks": ["SHADOW-001", "hidden-holdout claims", "generalization promotion", "M12", "M13"],
+      "owner": "UNASSIGNED independent holdout custodian",
+      "location": "UNASSIGNED external resource outside repository and Codex-readable context",
+      "required_evidence": [
+        "named accountable custodian and role",
+        "exact external resource identifier",
+        "builder denied list/read/write/admin access",
+        "separate evaluator principal with audited read-only access",
+        "frozen holdout version retained externally",
+        "signed aggregate-result interface",
+        "contamination, rotation, retention, and breach policy"
+      ]
+    },
+    {
+      "gate_id": "approved_source_envelope",
+      "status": "OPEN_BLOCKING",
+      "blocks": ["SOURCE-PILOT-001"],
+      "owner": "authorized source and firm custodian",
+      "required_evidence": [
+        "named pilot geography and representative route-day boundary approved by the firm",
+        "dataset-by-dataset terms, licence, automated-access, retention, and redistribution review",
+        "approved source identifiers and permitted fields for the pilot",
+        "approved handling policy for personal, confidential, paid, and access-controlled records",
+        "reproducible acquisition method and immutable raw-byte retention authority"
+      ]
+    },
+    {
+      "gate_id": "firm_economics_services_territories",
+      "status": "OPEN_BLOCKING",
+      "blocks": ["POLICY-001", "commercial value claims"],
+      "owner": "authorized firm decision-maker"
+    },
+    {
+      "gate_id": "GATE-EXPERIMENT-PROTOCOL-001",
+      "status": "OPEN_BLOCKING",
+      "blocks": ["confirmatory trial design", "numeric power computation", "randomized F9 promotion"],
+      "owner": "authorized experimental protocol owner",
+      "required_evidence": [
+        "signed analysis family, sidedness, multiplicity, randomization-unit, estimator, and variance-model decisions",
+        "registered practical lift, alpha, target power, allocation, blocking, clustering, interference, adherence, substitution, attrition, and maturity policy",
+        "independent protocol review before numeric power computation or field assignment"
+      ]
+    },
+    {
+      "gate_id": "representative_origins_capacity_specialties",
+      "status": "OPEN_BLOCKING",
+      "blocks": ["ROUTE-CAL-001"],
+      "owner": "authorized field-operations decision-maker"
+    },
+    {
+      "gate_id": "protected_account_bundle",
+      "status": "OPEN_BLOCKING",
+      "blocks": ["IDENTITY-CAL-001", "live route issuance"],
+      "owner": "authorized relationship/protected-account custodian"
+    },
+    {
+      "gate_id": "approved_route_matrix",
+      "status": "OPEN_BLOCKING",
+      "blocks": ["ROUTE-CAL-001"],
+      "owner": "authorized route-provider and firm custodian"
+    },
+    {
+      "gate_id": "GATE-PUBLICATION-HISTORY-001",
+      "status": "OPEN_BLOCKING",
+      "blocks": ["historical point-in-time source and feature claims"],
+      "owner": "authorized source-history custodian",
+      "required_evidence": [
+        "immutable historical source snapshots or independently measured public-availability logs",
+        "event/effective, publication, observation, retrieval, correction, and tombstone clocks",
+        "point-in-time reconstruction and future-leakage audit",
+        "schema-drift and historical-depth manifest"
+      ]
+    },
+    {
+      "gate_id": "GATE-ENTITY-TRUTH-001",
+      "status": "OPEN_BLOCKING",
+      "blocks": [
+        "IDENTITY-CAL-001",
+        "entity/location join accuracy claims"
+      ],
+      "owner": "authorized entity-resolution truth and adjudication custodian",
+      "required_evidence": [
+        "authorized immutable source observations with resource and snapshot lineage",
+        "blind temporal operating-business, unit, property, occupier, parent, and location adjudication sample",
+        "false-merge, false-split, conflict-recall, protected-account, and unresolved-case audit",
+        "predeclared ambiguity policy that fails closed for eligibility"
+      ]
+    },
+    {
+      "gate_id": "GATE-OUTCOME-LABELS-MATURITY-001",
+      "status": "OPEN_BLOCKING",
+      "blocks": ["historical model and calibration claims", "randomized F9 claims"],
+      "owner": "authorized firm outcome-data and adjudication custodian",
+      "required_evidence": [
+        "privacy-approved route, field, booking, attendance, requirement, mandate, transaction, and commission linkage",
+        "versioned F9 adjudication and deduplication policy",
+        "observation windows, maturity, censoring, competing-event, and attrition definitions",
+        "point-in-time label lineage and independent adjudication sample"
+      ]
+    },
+    {
+      "gate_id": "GATE-F9-OUTCOME-POLICY-AUTHORITY-001",
+      "status": "OPEN_BLOCKING",
+      "blocks": ["real F9 definition", "real outcome window", "real negative-maturity policy"],
+      "owner": "authorized outcome-policy owner",
+      "required_evidence": [
+        "signed versioned F9 predicate preserving decision-maker/authorized-representative and current/credible-future requirement alternatives",
+        "route-day ITT anchor, outcome horizon, endpoint convention, reporting grace, and late-evidence rules",
+        "count unit, cross-route attribution, cancellation/reschedule/no-show, deduplication, correction, censoring, and competing-event policies",
+        "effective dates, rollback, and independent policy approval"
+      ]
+    },
+    {
+      "gate_id": "GATE-OUTCOME-ADJUDICATION-CUSTODY-001",
+      "status": "OPEN_BLOCKING",
+      "blocks": ["real outcome adjudication claims", "historical label-quality promotion"],
+      "owner": "authorized independent outcome-adjudication custodian",
+      "required_evidence": [
+        "named adjudication custodian and versioned rubric",
+        "blind adjudication sample, disagreement, escalation, and conflict-resolution protocol",
+        "signed aggregate audit binding source, policy, label, and application versions",
+        "builder cannot promote public synthetic adjudication as independent real adjudication"
+      ]
+    },
+    {
+      "gate_id": "GATE-OUTCOME-MATURITY-EVIDENCE-001",
+      "status": "OPEN_BLOCKING",
+      "blocks": ["real maturity claims", "real censoring assumptions", "baseline F9 rate and variance"],
+      "owner": "authorized outcome-maturity measurement custodian",
+      "required_evidence": [
+        "cohort state counts and complete-through source watermarks",
+        "capture/reporting latency, censoring, competing-event, duplicate, conflict, and attrition distributions",
+        "maturity analysis under the authorized policy and point-in-time cutoffs",
+        "evidence that unavailable or late outcomes were not converted into negatives"
+      ]
+    },
+    {
+      "gate_id": "GATE-BASELINE-REPLACEMENT-AUTHORITY-001",
+      "status": "OPEN_BLOCKING",
+      "blocks": ["real minimum meaningful replacement margin", "production model or policy replacement", "live ranking promotion"],
+      "owner": "authorized firm model-risk and commercial decision owner",
+      "required_evidence": [
+        "signed real minimum meaningful F9 and risk-adjusted value margin",
+        "authorized complexity, latency, cost, and operational-risk tradeoff policy",
+        "mature point-in-time historical and out-of-time evidence under the authorized outcome policy",
+        "independent review of subgroup, calibration, safety, abstention, and protected-account behavior",
+        "signed production replacement and rollback authority"
+      ]
+    },
+    {
+      "gate_id": "GATE-CALIBRATION-POLICY-AUTHORITY-001",
+      "status": "OPEN_BLOCKING",
+      "blocks": [
+        "real calibration-bin and minimum-cell policy",
+        "real tolerance and subgroup comparison policy",
+        "empirical uncertainty and interval claims",
+        "production calibration or threshold promotion"
+      ],
+      "owner": "authorized firm model-risk and calibration policy owner",
+      "required_evidence": [
+        "signed probability-target, binning, minimum-cell, fallback, tolerance, subgroup, and temporal-sensitivity policy",
+        "mature point-in-time historical validation and out-of-time evidence under the authorized outcome policy",
+        "registered uncertainty method with assumptions, coverage target, and multiplicity treatment",
+        "independent approval of calibration diagnostics, sparse-cell handling, abstention propagation, thresholds, and rollback",
+        "signed production calibration and promotion authority"
+      ]
+    },
+    {
+      "gate_id": "GATE-MANUAL-REVIEW-AUTHORITY-001",
+      "status": "OPEN_BLOCKING",
+      "blocks": ["real manual-review overrides", "production reviewer roles", "authoritative workflow corrections"],
+      "owner": "authorized firm workflow-policy and compliance owner",
+      "required_evidence": [
+        "signed manual-review action allowlist and prohibited override policy",
+        "named reviewer roles, segregation of duties, escalation, expiry, and revocation rules",
+        "versioned evidence-acceptance and new-generation policy preserving frozen Stage 1",
+        "independent audit proving no review path bypasses protection, eligibility, MATH, lineage, or exact-ten-or-abstain"
+      ]
+    },
+    {
+      "gate_id": "GATE-LIVE-WORKFLOW-AUTHORITY-001",
+      "status": "OPEN_BLOCKING",
+      "blocks": ["live representative workflow", "external route delivery", "CRM or outreach writes"],
+      "owner": "authorized firm operations, compliance, privacy, security, and representative-workflow owners",
+      "required_evidence": [
+        "signed live workflow scope, roles, capabilities, territories, and expiry",
+        "approved source, identity, protection, route, CRM, privacy, and outreach authority bindings",
+        "production authorization service and independent denial-by-default review",
+        "signed rollback, recall, incident, monitoring, and kill-switch procedures"
+      ]
+    },
+    {
+      "gate_id": "GATE-ACCESSIBILITY-EMPIRICAL-VALIDATION-001",
+      "status": "OPEN_BLOCKING",
+      "blocks": ["WCAG conformance claims", "assistive-technology performance claims", "accessibility effectiveness claims"],
+      "owner": "qualified independent accessibility evaluation owner",
+      "required_evidence": [
+        "versioned rendered product and supported platform/browser/assistive-technology matrix",
+        "independent automated and manual accessibility audit against the authorized target standard",
+        "documented defects, severity, remediation, retest, and residual-risk acceptance",
+        "signed report binding product build, content, workflow, and evaluation versions"
+      ]
+    },
+    {
+      "gate_id": "GATE-REPRESENTATIVE-USABILITY-001",
+      "status": "OPEN_BLOCKING",
+      "blocks": ["representative usability claims", "workflow adoption claims", "field productivity claims"],
+      "owner": "authorized field-operations research and representative-experience owner",
+      "required_evidence": [
+        "approved representative research protocol, consent, sampling, and success criteria",
+        "task-completion, error-recovery, comprehension, workload, and accessibility observations",
+        "documented abstention/error comprehension and safe-action behavior",
+        "signed findings binding workflow version and representative population"
+      ]
+    },
+    {
+      "gate_id": "GATE-PRODUCTION-DEPLOYMENT-001",
+      "status": "OPEN_BLOCKING",
+      "blocks": ["production deployment", "production atomicity or reliability claims", "production credentials and infrastructure changes"],
+      "owner": "authorized firm engineering, security, privacy, risk, and operations release owners",
+      "required_evidence": [
+        "approved deployment topology, data classification, threat model, access controls, and credential custody",
+        "production-like transactional, concurrency, durability, restore, observability, load, and failure testing",
+        "signed change, rollback, recall, incident, backup, retention, and disaster-recovery procedures",
+        "independent release approval binding application, configuration, infrastructure, policy, and evaluator versions"
+      ]
+    },
+    {
+      "gate_id": "GATE-FULL-EXTERNAL-EVIDENCE-001",
+      "status": "OPEN_BLOCKING",
+      "blocks": ["AUTONOMOUS_FRONTIER_PASS", "causal F9 claims", "realized net commercial value claims"],
+      "owner": "authorized firm, independent evaluator, holdout, field-operations, outcome, and finance custodians",
+      "required_evidence": [
+        "independently bound authorized source, protected-account, representative, route, and economics inputs",
+        "historical point-in-time evidence and out-of-time evaluation",
+        "prospective non-influencing shadow observations",
+        "preregistered randomized route-day ITT evidence for incremental F9",
+        "external hidden-holdout signed aggregate results and contamination controls",
+        "mature mandate, transaction, commission, incremental-cost, and realized net-value reconciliation"
+      ]
+    }
+  ]
+}

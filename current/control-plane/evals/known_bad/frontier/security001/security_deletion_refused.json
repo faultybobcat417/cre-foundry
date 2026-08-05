@@ -1,0 +1,5 @@
+{
+  "case_id": "deletion-refused",
+  "expected_diagnostic": "SECURITY-DELETION",
+  "mutation_id": "deletion_refused"
+}

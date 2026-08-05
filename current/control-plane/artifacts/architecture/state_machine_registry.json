@@ -1,0 +1,298 @@
+{
+  "registry_id": "STATE_MACHINE_REGISTRY:ARCHITECTURE-001",
+  "schema_version": "1.0.0",
+  "execution_scope": "SYNTHETIC_NON_INFLUENCING",
+  "canonicalization": "SORTED_KEYS_INTEGER_JSON_V1",
+  "contract_binding": {
+    "path": "artifacts/architecture/public_evaluator_contract.json",
+    "sha256": "10c5804d07194d66927cbd4acd2798c1044493b09ef3dab671e76efdee5aeefe"
+  },
+  "initial_state": "COLLECTING_STAGE1",
+  "states": [
+    {
+      "state": "COLLECTING_STAGE1",
+      "kind": "REACHABLE",
+      "terminal_for_generation": false,
+      "description": "Stage-1 evidence may be appended; generation not yet frozen."
+    },
+    {
+      "state": "STAGE1_FROZEN",
+      "kind": "REACHABLE",
+      "terminal_for_generation": false,
+      "description": "Stage-1 snapshot digest is immutable; decision or quarantine follows."
+    },
+    {
+      "state": "ISSUE_READY",
+      "kind": "REACHABLE",
+      "terminal_for_generation": false,
+      "description": "MATH decided ISSUE; issuance may be prepared."
+    },
+    {
+      "state": "ISSUANCE_PREPARED",
+      "kind": "REACHABLE",
+      "terminal_for_generation": false,
+      "description": "Synthetic issuance staged; commit is the only effectful transition."
+    },
+    {
+      "state": "ISSUED_INTERNAL",
+      "kind": "REACHABLE",
+      "terminal_for_generation": false,
+      "description": "Synthetic issuance committed internally; Stage-2/Stage-3 may append."
+    },
+    {
+      "state": "ABSTAINED",
+      "kind": "REACHABLE",
+      "terminal_for_generation": true,
+      "description": "ABSTAIN_NO_VALID_TEN; reason is visible and no route or effects exist."
+    },
+    {
+      "state": "QUARANTINED",
+      "kind": "REACHABLE",
+      "terminal_for_generation": true,
+      "description": "Generation quarantined without rewriting frozen Stage 1."
+    },
+    {
+      "state": "SUPERSEDED",
+      "kind": "REACHABLE",
+      "terminal_for_generation": true,
+      "description": "Frozen generation replaced by generation+1; prior generation preserved."
+    },
+    {
+      "state": "VOIDED",
+      "kind": "REACHABLE",
+      "terminal_for_generation": true,
+      "description": "Undelivered issuance voided; only reachable for synthetic issuance."
+    },
+    {
+      "state": "DELIVERY_PENDING",
+      "kind": "RESERVED_LIVE",
+      "terminal_for_generation": false,
+      "description": "Reserved live state; unreachable without GATE-LIVE-WORKFLOW-AUTHORITY-001."
+    },
+    {
+      "state": "DELIVERED",
+      "kind": "RESERVED_LIVE",
+      "terminal_for_generation": false,
+      "description": "Reserved live state; unreachable without GATE-LIVE-WORKFLOW-AUTHORITY-001."
+    },
+    {
+      "state": "RECALL_REQUIRED",
+      "kind": "RESERVED_LIVE",
+      "terminal_for_generation": false,
+      "description": "Reserved live state; unreachable without GATE-LIVE-WORKFLOW-AUTHORITY-001."
+    }
+  ],
+  "reserved_live_states": [
+    "DELIVERY_PENDING",
+    "DELIVERED",
+    "RECALL_REQUIRED"
+  ],
+  "terminal_for_generation": [
+    "ABSTAINED",
+    "QUARANTINED",
+    "SUPERSEDED",
+    "VOIDED"
+  ],
+  "commands": [
+    {
+      "command_type": "APPEND_STAGE1",
+      "sidecar": false,
+      "state_changing": true,
+      "description": "Append accepted Stage-1 evidence within the open generation."
+    },
+    {
+      "command_type": "FREEZE_STAGE1",
+      "sidecar": false,
+      "state_changing": true,
+      "description": "Freeze the Stage-1 snapshot digest immutably."
+    },
+    {
+      "command_type": "DECIDE_ISSUE",
+      "sidecar": false,
+      "state_changing": true,
+      "description": "Accept the independent MATH ISSUE decision."
+    },
+    {
+      "command_type": "DECIDE_ABSTAIN",
+      "sidecar": false,
+      "state_changing": true,
+      "description": "Accept the independent MATH ABSTAIN_NO_VALID_TEN decision with visible reason."
+    },
+    {
+      "command_type": "QUARANTINE_INVALID",
+      "sidecar": false,
+      "state_changing": true,
+      "description": "Quarantine an invalid generation without rewriting frozen Stage 1."
+    },
+    {
+      "command_type": "PREPARE_SYNTHETIC_ISSUANCE",
+      "sidecar": false,
+      "state_changing": true,
+      "description": "Stage the synthetic issuance route artifact."
+    },
+    {
+      "command_type": "COMMIT_SYNTHETIC_ISSUANCE",
+      "sidecar": false,
+      "state_changing": true,
+      "description": "Atomically commit exactly one synthetic issuance and ledger entry."
+    },
+    {
+      "command_type": "APPEND_STAGE2",
+      "sidecar": false,
+      "state_changing": true,
+      "description": "Append a bound Stage-2 field event; never rewrites Stage 1."
+    },
+    {
+      "command_type": "APPEND_STAGE3",
+      "sidecar": false,
+      "state_changing": true,
+      "description": "Append a bound Stage-3 outcome; never rewrites Stage 1 or Stage 2."
+    },
+    {
+      "command_type": "VOID_UNDELIVERED",
+      "sidecar": false,
+      "state_changing": true,
+      "description": "Void an undelivered synthetic issuance."
+    },
+    {
+      "command_type": "SUPERSEDE_WITH_NEW_GENERATION",
+      "sidecar": false,
+      "state_changing": true,
+      "description": "Start generation+1 from new accepted Stage-1 evidence; prior generation preserved."
+    },
+    {
+      "command_type": "RECORD_REVIEW_ANNOTATION",
+      "sidecar": true,
+      "state_changing": false,
+      "description": "Append-only manual review annotation; no aggregate state change."
+    },
+    {
+      "command_type": "REQUEST_AUTHORITATIVE_EVIDENCE",
+      "sidecar": true,
+      "state_changing": false,
+      "description": "Request authoritative evidence; no aggregate state change."
+    }
+  ],
+  "allowed_transitions": [
+    {
+      "command_type": "APPEND_STAGE1",
+      "from": "COLLECTING_STAGE1",
+      "to": "COLLECTING_STAGE1"
+    },
+    {
+      "command_type": "FREEZE_STAGE1",
+      "from": "COLLECTING_STAGE1",
+      "to": "STAGE1_FROZEN"
+    },
+    {
+      "command_type": "DECIDE_ISSUE",
+      "from": "STAGE1_FROZEN",
+      "to": "ISSUE_READY"
+    },
+    {
+      "command_type": "DECIDE_ABSTAIN",
+      "from": "STAGE1_FROZEN",
+      "to": "ABSTAINED"
+    },
+    {
+      "command_type": "QUARANTINE_INVALID",
+      "from": "STAGE1_FROZEN",
+      "to": "QUARANTINED"
+    },
+    {
+      "command_type": "PREPARE_SYNTHETIC_ISSUANCE",
+      "from": "ISSUE_READY",
+      "to": "ISSUANCE_PREPARED"
+    },
+    {
+      "command_type": "COMMIT_SYNTHETIC_ISSUANCE",
+      "from": "ISSUANCE_PREPARED",
+      "to": "ISSUED_INTERNAL"
+    },
+    {
+      "command_type": "APPEND_STAGE2",
+      "from": "ISSUED_INTERNAL",
+      "to": "ISSUED_INTERNAL"
+    },
+    {
+      "command_type": "APPEND_STAGE3",
+      "from": "ISSUED_INTERNAL",
+      "to": "ISSUED_INTERNAL"
+    },
+    {
+      "command_type": "VOID_UNDELIVERED",
+      "from": "ISSUED_INTERNAL",
+      "to": "VOIDED"
+    },
+    {
+      "command_type": "SUPERSEDE_WITH_NEW_GENERATION",
+      "from": "COLLECTING_STAGE1",
+      "to": "SUPERSEDED"
+    },
+    {
+      "command_type": "SUPERSEDE_WITH_NEW_GENERATION",
+      "from": "STAGE1_FROZEN",
+      "to": "SUPERSEDED"
+    },
+    {
+      "command_type": "SUPERSEDE_WITH_NEW_GENERATION",
+      "from": "ISSUE_READY",
+      "to": "SUPERSEDED"
+    }
+  ],
+  "sidecar_commands": [
+    "RECORD_REVIEW_ANNOTATION",
+    "REQUEST_AUTHORITATIVE_EVIDENCE"
+  ],
+  "result_statuses": [
+    "APPLIED",
+    "IDEMPOTENT_REPLAY",
+    "REJECTED",
+    "CONFLICT",
+    "HELD_UNAUTHORIZED"
+  ],
+  "unknown_command_behavior": "REJECTED_WITHOUT_STATE_CHANGE",
+  "manual_review": {
+    "storage": "APPEND_ONLY_SIDECAR_SUBAGGREGATE",
+    "allowed_actions": [
+      "ANNOTATE",
+      "REQUEST_AUTHORITATIVE_EVIDENCE",
+      "ABANDON_PREISSUANCE_GENERATION",
+      "START_NEW_GENERATION"
+    ],
+    "forbidden_actions": [
+      "EDIT_FROZEN_STAGE1",
+      "CHANGE_GATE_OR_PROTECTION_STATE",
+      "INSERT_OR_DELETE_CANDIDATE",
+      "CHANGE_VALUE_OR_RANK",
+      "SWAP_SELECTED_STOP",
+      "CLEAR_UNKNOWN",
+      "HIDE_ABSTENTION_OR_ERROR",
+      "DIRECT_ISSUE"
+    ],
+    "synthetic_reviewer_role_grants_real_authority": false
+  },
+  "idempotency": {
+    "retry_number_participates_in_key": false,
+    "same_key_same_payload": "RETURN_CANONICAL_BYTE_IDENTICAL_ORIGINAL_RESPONSE_WITHOUT_NEW_EVENT_OR_EFFECT",
+    "same_key_different_payload": "IDEMPOTENCY_KEY_REUSE_MISMATCH_WITHOUT_STATE_CHANGE",
+    "different_key_same_issuance_slot": "ISSUANCE_SLOT_CONFLICT_WITHOUT_SECOND_ROUTE",
+    "fault_points": [
+      "BEFORE_EVENT_APPEND",
+      "AFTER_EVENT_BEFORE_PROJECTION",
+      "AFTER_PROJECTION_BEFORE_IDEMPOTENCY",
+      "AFTER_IDEMPOTENCY_BEFORE_OUTBOX",
+      "AFTER_OUTBOX_BEFORE_COMMIT",
+      "AFTER_COMMIT_BEFORE_RESPONSE"
+    ],
+    "ambiguous_partial_state_allowed": false
+  },
+  "stage_isolation": {
+    "stage1_frozen_digest_immutable": true,
+    "stage2_requires_issued_bound_stop": true,
+    "stage3_requires_bound_stage2_event": true,
+    "stage2_or_stage3_can_rewrite_stage1": false,
+    "identical_child_duplicate": "IDEMPOTENT_REPLAY",
+    "conflicting_child_duplicate": "QUARANTINE_WITHOUT_PARENT_REWRITE"
+  }
+}

@@ -1,0 +1,114 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://cre-foundry.local/schemas/thin-slice-observation-v1.json",
+  "title": "Synthetic source-native observation",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["document_kind", "schema_version", "decision_scope", "observation_id", "origin", "native_identity", "raw_record", "clocks", "normalized_alias_tokens", "evidence_stage", "lineage", "quality", "owner", "live_authority_granted"],
+  "properties": {
+    "document_kind": {"const": "THIN_SLICE_OBSERVATION"},
+    "schema_version": {"const": "1.0.0"},
+    "decision_scope": {"const": "SYNTHETIC_FORMAL_ONLY"},
+    "observation_id": {"type": "string", "pattern": "^OBS:[A-Z0-9_-]+$"},
+    "origin": {"$ref": "#/$defs/origin"},
+    "native_identity": {"$ref": "#/$defs/native_identity"},
+    "raw_record": {"$ref": "#/$defs/raw_record"},
+    "clocks": {"$ref": "#/$defs/clocks"},
+    "normalized_alias_tokens": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"}},
+    "evidence_stage": {"const": 1},
+    "lineage": {"$ref": "#/$defs/lineage"},
+    "quality": {"$ref": "#/$defs/quality"},
+    "owner": {"$ref": "#/$defs/owner"},
+    "live_authority_granted": {"const": false}
+  },
+  "$defs": {
+    "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "origin": {
+      "type": "object", "additionalProperties": false,
+      "required": ["mode", "source_definition_id", "dataset_id", "resource_id", "source_snapshot_id", "source_snapshot_sha256", "source_registry_version", "source_registry_sha256", "canonical_field_map_version", "canonical_field_map_sha256"],
+      "properties": {
+        "mode": {"const": "SYNTHETIC_FIXTURE"},
+        "source_definition_id": {"enum": ["ON-SELECT", "TOR-COA"]},
+        "dataset_id": {"type": "string", "minLength": 1},
+        "resource_id": {"type": "string", "minLength": 1},
+        "source_snapshot_id": {"type": "string", "minLength": 1},
+        "source_snapshot_sha256": {"$ref": "#/$defs/sha256"},
+        "source_registry_version": {"const": "2.0.0"},
+        "source_registry_sha256": {"$ref": "#/$defs/sha256"},
+        "canonical_field_map_version": {"const": "2.0.0"},
+        "canonical_field_map_sha256": {"$ref": "#/$defs/sha256"}
+      }
+    },
+    "native_identity": {
+      "type": "object", "additionalProperties": false,
+      "required": ["native_grain", "native_key", "native_key_sha256"],
+      "properties": {
+        "native_grain": {"const": "source_record"},
+        "native_key": {"type": "string", "minLength": 1},
+        "native_key_sha256": {"$ref": "#/$defs/sha256"}
+      }
+    },
+    "raw_record": {
+      "type": "object", "additionalProperties": false,
+      "required": ["media_type", "bytes_base64", "bytes_sha256", "address_raw", "unit_raw", "operating_name_raw", "legal_name_raw", "licence_number_raw"],
+      "properties": {
+        "media_type": {"const": "application/json"},
+        "bytes_base64": {"type": "string", "pattern": "^[A-Za-z0-9+/]+={0,2}$"},
+        "bytes_sha256": {"$ref": "#/$defs/sha256"},
+        "address_raw": {"type": "string", "minLength": 1},
+        "unit_raw": {"type": ["string", "null"]},
+        "operating_name_raw": {"type": "string", "minLength": 1},
+        "legal_name_raw": {"type": ["string", "null"]},
+        "licence_number_raw": {"type": "string", "minLength": 1}
+      }
+    },
+    "clock_value": {
+      "type": "object", "additionalProperties": false,
+      "required": ["state", "at", "raw"],
+      "properties": {
+        "state": {"enum": ["KNOWN", "UNKNOWN", "NOT_APPLICABLE"]},
+        "at": {"type": ["string", "null"], "format": "date-time"},
+        "raw": {"type": ["string", "null"]}
+      }
+    },
+    "clocks": {
+      "type": "object", "additionalProperties": false,
+      "required": ["event", "publisher_effective", "published", "retrieved_at", "observed_at", "ingested_at", "validation_completed_at", "available_at", "stage1_cutoff"],
+      "properties": {
+        "event": {"$ref": "#/$defs/clock_value"},
+        "publisher_effective": {"$ref": "#/$defs/clock_value"},
+        "published": {"$ref": "#/$defs/clock_value"},
+        "retrieved_at": {"type": "string", "format": "date-time"},
+        "observed_at": {"type": "string", "format": "date-time"},
+        "ingested_at": {"type": "string", "format": "date-time"},
+        "validation_completed_at": {"type": "string", "format": "date-time"},
+        "available_at": {"type": "string", "format": "date-time"},
+        "stage1_cutoff": {"type": "string", "format": "date-time"}
+      }
+    },
+    "lineage": {
+      "type": "object", "additionalProperties": false,
+      "required": ["input_classification", "fixture_builder_version"],
+      "properties": {
+        "input_classification": {"const": "CODEX_DERIVABLE"},
+        "fixture_builder_version": {"const": "contract-fixture-builder-v1"}
+      }
+    },
+    "quality": {
+      "type": "object", "additionalProperties": false,
+      "required": ["synthetic_fixture", "identity_claim"],
+      "properties": {
+        "synthetic_fixture": {"const": true},
+        "identity_claim": {"const": "SOURCE_RECORD_ONLY"}
+      }
+    },
+    "owner": {
+      "type": "object", "additionalProperties": false,
+      "required": ["system", "real_world_authority"],
+      "properties": {
+        "system": {"const": "CRE_FOUNDRY"},
+        "real_world_authority": {"const": "UNASSIGNED_EXTERNAL_AUTHORITY"}
+      }
+    }
+  }
+}

@@ -1,0 +1,5 @@
+{
+  "case_id": "missing-replay-identity",
+  "expected_diagnostic": "LINEAGE-REPLAY-IDENTITY",
+  "mutation_id": "missing_replay_identity"
+}

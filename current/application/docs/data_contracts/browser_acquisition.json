@@ -1,0 +1,128 @@
+{
+  "acquisition_precedence": [
+    "authorized_official_api",
+    "authorized_network_response_capture",
+    "authorized_bulk_or_file_download",
+    "browser_dom_or_accessibility_tree",
+    "computer_vision_fallback",
+    "human_exception_review"
+  ],
+  "applications": {
+    "Chromium.app": {
+      "installed": false,
+      "path": "/Applications/Chromium.app"
+    },
+    "Firefox.app": {
+      "installed": true,
+      "path": "/Applications/Firefox.app"
+    },
+    "Google Chrome.app": {
+      "installed": true,
+      "path": "/Applications/Google Chrome.app"
+    },
+    "Microsoft Edge.app": {
+      "installed": false,
+      "path": "/Applications/Microsoft Edge.app"
+    },
+    "Safari.app": {
+      "installed": true,
+      "path": "/Applications/Safari.app"
+    }
+  },
+  "contract_path": "docs/data_contracts/browser_acquisition.json",
+  "controls": {
+    "access_control_bypass_allowed": false,
+    "automatic_outreach_allowed": false,
+    "captcha_bypass_allowed": false,
+    "concurrency_limit_required": true,
+    "content_checksum_required": true,
+    "credential_reference_required_for_authenticated_sources": true,
+    "destructive_actions_allowed": false,
+    "dom_capture_required": true,
+    "domain_allowlist_required": true,
+    "human_review_on_ambiguity_required": true,
+    "isolated_browser_profile_required": true,
+    "layout_change_quarantine_required": true,
+    "navigation_recipe_version_required": true,
+    "network_archive_when_available": true,
+    "request_rate_limit_required": true,
+    "screenshot_after_visual_action_required": true,
+    "screenshot_before_visual_action_required": true,
+    "source_authorization_required": true
+  },
+  "enabled": false,
+  "executables": {
+    "chromium": null,
+    "ffmpeg": "/opt/homebrew/bin/ffmpeg",
+    "google-chrome": null,
+    "osascript": "/usr/bin/osascript",
+    "playwright": "/opt/anaconda3/bin/playwright",
+    "screencapture": "/usr/sbin/screencapture",
+    "tesseract": null
+  },
+  "execution_ready": false,
+  "governance_ready": true,
+  "installed_browser_count": 3,
+  "machine": "arm64",
+  "model_version": "cre-foundry-browser-acquisition-v1",
+  "operating_mode": "shadow",
+  "packages": {
+    "easyocr": {
+      "installed": false,
+      "version": null
+    },
+    "mss": {
+      "installed": false,
+      "version": null
+    },
+    "opencv-python": {
+      "installed": false,
+      "version": null
+    },
+    "opencv-python-headless": {
+      "installed": false,
+      "version": null
+    },
+    "pillow": {
+      "installed": false,
+      "version": null
+    },
+    "playwright": {
+      "installed": false,
+      "version": null
+    },
+    "pyautogui": {
+      "installed": false,
+      "version": null
+    },
+    "pytesseract": {
+      "installed": false,
+      "version": null
+    },
+    "selenium": {
+      "installed": false,
+      "version": null
+    },
+    "torch": {
+      "installed": false,
+      "version": null
+    },
+    "torchvision": {
+      "installed": false,
+      "version": null
+    },
+    "transformers": {
+      "installed": false,
+      "version": null
+    }
+  },
+  "platform": "macOS-26.3.1-arm64-arm-64bit",
+  "runtime_policy": {
+    "browser_execution_enabled": false,
+    "computer_vision_execution_enabled": false,
+    "macos_accessibility_permission": "manual_confirmation_required",
+    "macos_automation_permission": "manual_confirmation_required",
+    "macos_screen_recording_permission": "manual_confirmation_required"
+  },
+  "status": "governance_ready_runtime_disabled"
+}

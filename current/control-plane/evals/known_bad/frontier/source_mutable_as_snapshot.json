@@ -1,0 +1,8 @@
+{
+  "case_id": "mutable-api-snapshot",
+  "target": {"artifact": "source_feasibility_registry.json", "collection": "sources", "selector": {"field": "source_id", "equals": "TOR-COA"}, "field": "/history_status"},
+  "operation": "replace",
+  "expected_before": "annual_labels_not_publication_history",
+  "value": "replayable_point_in_time",
+  "expected_diagnostic": "R001_CURRENT_AS_HISTORICAL: current annual partitions do not prove contemporaneous historical availability"
+}

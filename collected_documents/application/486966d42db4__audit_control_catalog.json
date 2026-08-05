@@ -1,0 +1,408 @@
+{
+  "certification_claimed": false,
+  "compliance_claimed": false,
+  "control_count": 28,
+  "controls": [
+    {
+      "control_id": "GOV-01",
+      "description": "Human approvals are attributable and evidence-referenced.",
+      "evidence": [
+        "docs/data_contracts/manual_decision_validation.json"
+      ],
+      "evidence_missing": [],
+      "evidence_present": [
+        "docs/data_contracts/manual_decision_validation.json"
+      ],
+      "independent_verification_complete": false,
+      "pillar": "authenticity",
+      "status": "implemented_evidence_present"
+    },
+    {
+      "control_id": "GOV-02",
+      "description": "Approval evidence is bound to cryptographic digests.",
+      "evidence": [
+        "docs/data_contracts/assurance_drift_report.json"
+      ],
+      "evidence_missing": [],
+      "evidence_present": [
+        "docs/data_contracts/assurance_drift_report.json"
+      ],
+      "independent_verification_complete": false,
+      "pillar": "authenticity",
+      "status": "implemented_evidence_present"
+    },
+    {
+      "control_id": "GOV-03",
+      "description": "Client values cannot be invented or auto-confirmed.",
+      "evidence": [
+        "docs/data_contracts/manual_activation_envelope_summary.json"
+      ],
+      "evidence_missing": [],
+      "evidence_present": [
+        "docs/data_contracts/manual_activation_envelope_summary.json"
+      ],
+      "independent_verification_complete": false,
+      "pillar": "authenticity",
+      "status": "implemented_evidence_present"
+    },
+    {
+      "control_id": "GOV-04",
+      "description": "Protected execution gates default closed.",
+      "evidence": [
+        "docs/data_contracts/activation_state_model_summary.json"
+      ],
+      "evidence_missing": [],
+      "evidence_present": [
+        "docs/data_contracts/activation_state_model_summary.json"
+      ],
+      "independent_verification_complete": false,
+      "pillar": "authenticity",
+      "status": "implemented_evidence_present"
+    },
+    {
+      "control_id": "REL-01",
+      "description": "Static analysis, typing and tests run through a single verification entrypoint.",
+      "evidence": [
+        "scripts/verify.sh"
+      ],
+      "evidence_missing": [],
+      "evidence_present": [
+        "scripts/verify.sh"
+      ],
+      "independent_verification_complete": false,
+      "pillar": "reliability",
+      "status": "implemented_evidence_present"
+    },
+    {
+      "control_id": "REL-02",
+      "description": "Parser results are deterministic across repeated executions.",
+      "evidence": [
+        "docs/data_contracts/source_parser_contract_validation.json"
+      ],
+      "evidence_missing": [],
+      "evidence_present": [
+        "docs/data_contracts/source_parser_contract_validation.json"
+      ],
+      "independent_verification_complete": false,
+      "pillar": "reliability",
+      "status": "implemented_evidence_present"
+    },
+    {
+      "control_id": "REL-03",
+      "description": "Assurance outputs reproduce over identical inputs.",
+      "evidence": [
+        "docs/data_contracts/assurance_reproducibility_report.json"
+      ],
+      "evidence_missing": [],
+      "evidence_present": [
+        "docs/data_contracts/assurance_reproducibility_report.json"
+      ],
+      "independent_verification_complete": false,
+      "pillar": "reliability",
+      "status": "implemented_evidence_present"
+    },
+    {
+      "control_id": "REL-04",
+      "description": "Activation rules are exhaustively model-checked.",
+      "evidence": [
+        "docs/data_contracts/activation_model_check_report.json"
+      ],
+      "evidence_missing": [],
+      "evidence_present": [
+        "docs/data_contracts/activation_model_check_report.json"
+      ],
+      "independent_verification_complete": false,
+      "pillar": "reliability",
+      "status": "implemented_evidence_present"
+    },
+    {
+      "control_id": "ROB-01",
+      "description": "Malformed governance documents fail closed.",
+      "evidence": [
+        "docs/security/contract_fuzz_report.json"
+      ],
+      "evidence_missing": [],
+      "evidence_present": [
+        "docs/security/contract_fuzz_report.json"
+      ],
+      "independent_verification_complete": false,
+      "pillar": "robustness",
+      "status": "implemented_evidence_present"
+    },
+    {
+      "control_id": "ROB-02",
+      "description": "Serialization is canonical and rejects ambiguous JSON.",
+      "evidence": [
+        "docs/security/serialization_roundtrip_report.json"
+      ],
+      "evidence_missing": [],
+      "evidence_present": [
+        "docs/security/serialization_roundtrip_report.json"
+      ],
+      "independent_verification_complete": false,
+      "pillar": "robustness",
+      "status": "implemented_evidence_present"
+    },
+    {
+      "control_id": "ROB-03",
+      "description": "Atomic-write failure modes are rehearsed.",
+      "evidence": [
+        "docs/security/atomic_write_recovery_report.json"
+      ],
+      "evidence_missing": [],
+      "evidence_present": [
+        "docs/security/atomic_write_recovery_report.json"
+      ],
+      "independent_verification_complete": false,
+      "pillar": "robustness",
+      "status": "implemented_evidence_present"
+    },
+    {
+      "control_id": "ROB-04",
+      "description": "Critical gate mutations produce counterexamples.",
+      "evidence": [
+        "docs/data_contracts/activation_mutation_report.json"
+      ],
+      "evidence_missing": [],
+      "evidence_present": [
+        "docs/data_contracts/activation_mutation_report.json"
+      ],
+      "independent_verification_complete": false,
+      "pillar": "robustness",
+      "status": "implemented_evidence_present"
+    },
+    {
+      "control_id": "LON-01",
+      "description": "Configuration files carry explicit versions.",
+      "evidence": [
+        "docs/security/configuration_compatibility_matrix.json"
+      ],
+      "evidence_missing": [],
+      "evidence_present": [
+        "docs/security/configuration_compatibility_matrix.json"
+      ],
+      "independent_verification_complete": false,
+      "pillar": "longevity",
+      "status": "implemented_evidence_present"
+    },
+    {
+      "control_id": "LON-02",
+      "description": "Unknown future versions fail closed.",
+      "evidence": [
+        "docs/security/configuration_compatibility_matrix.json"
+      ],
+      "evidence_missing": [],
+      "evidence_present": [
+        "docs/security/configuration_compatibility_matrix.json"
+      ],
+      "independent_verification_complete": false,
+      "pillar": "longevity",
+      "status": "implemented_evidence_present"
+    },
+    {
+      "control_id": "LON-03",
+      "description": "Migration behavior is deterministic.",
+      "evidence": [
+        "docs/security/configuration_compatibility_matrix.json"
+      ],
+      "evidence_missing": [],
+      "evidence_present": [
+        "docs/security/configuration_compatibility_matrix.json"
+      ],
+      "independent_verification_complete": false,
+      "pillar": "longevity",
+      "status": "implemented_evidence_present"
+    },
+    {
+      "control_id": "LON-04",
+      "description": "Backup restoration, retention and schema deprecation drills are required.",
+      "evidence": [],
+      "evidence_missing": [],
+      "evidence_present": [],
+      "independent_verification_complete": false,
+      "pillar": "longevity",
+      "status": "planned_gap"
+    },
+    {
+      "control_id": "SEC-01",
+      "description": "Dependency inventory is generated from the locked environment.",
+      "evidence": [
+        "docs/security/software_bill_of_materials.cdx.json"
+      ],
+      "evidence_missing": [],
+      "evidence_present": [
+        "docs/security/software_bill_of_materials.cdx.json"
+      ],
+      "independent_verification_complete": false,
+      "pillar": "security",
+      "status": "implemented_evidence_present"
+    },
+    {
+      "control_id": "SEC-02",
+      "description": "Dependency vulnerability scanning must block unresolved critical findings.",
+      "evidence": [],
+      "evidence_missing": [],
+      "evidence_present": [],
+      "independent_verification_complete": false,
+      "pillar": "security",
+      "status": "planned_gap"
+    },
+    {
+      "control_id": "SEC-03",
+      "description": "Secret scanning must cover history and incoming changes.",
+      "evidence": [],
+      "evidence_missing": [],
+      "evidence_present": [],
+      "independent_verification_complete": false,
+      "pillar": "security",
+      "status": "planned_gap"
+    },
+    {
+      "control_id": "SEC-04",
+      "description": "Static security analysis must cover application-specific dangerous sinks.",
+      "evidence": [],
+      "evidence_missing": [],
+      "evidence_present": [],
+      "independent_verification_complete": false,
+      "pillar": "security",
+      "status": "planned_gap"
+    },
+    {
+      "control_id": "SUP-01",
+      "description": "Build dependencies are locked.",
+      "evidence": [
+        "uv.lock"
+      ],
+      "evidence_missing": [],
+      "evidence_present": [
+        "uv.lock"
+      ],
+      "independent_verification_complete": false,
+      "pillar": "supply_chain",
+      "status": "implemented_evidence_present"
+    },
+    {
+      "control_id": "SUP-02",
+      "description": "Release provenance must be generated and independently verifiable.",
+      "evidence": [],
+      "evidence_missing": [],
+      "evidence_present": [],
+      "independent_verification_complete": false,
+      "pillar": "supply_chain",
+      "status": "planned_gap"
+    },
+    {
+      "control_id": "SUP-03",
+      "description": "Release artifacts must be signed and checksum-pinned.",
+      "evidence": [],
+      "evidence_missing": [],
+      "evidence_present": [],
+      "independent_verification_complete": false,
+      "pillar": "supply_chain",
+      "status": "planned_gap"
+    },
+    {
+      "control_id": "SUP-04",
+      "description": "Repository security posture must be evaluated with an independent scanner.",
+      "evidence": [],
+      "evidence_missing": [],
+      "evidence_present": [],
+      "independent_verification_complete": false,
+      "pillar": "supply_chain",
+      "status": "planned_gap"
+    },
+    {
+      "control_id": "OPS-01",
+      "description": "Monitoring and rollback evidence must precede production governance.",
+      "evidence": [
+        "docs/data_contracts/activation_state_machine.json"
+      ],
+      "evidence_missing": [],
+      "evidence_present": [
+        "docs/data_contracts/activation_state_machine.json"
+      ],
+      "independent_verification_complete": false,
+      "pillar": "operations",
+      "status": "implemented_evidence_present"
+    },
+    {
+      "control_id": "OPS-02",
+      "description": "Incident response roles, severity and escalation must be documented.",
+      "evidence": [],
+      "evidence_missing": [],
+      "evidence_present": [],
+      "independent_verification_complete": false,
+      "pillar": "operations",
+      "status": "planned_gap"
+    },
+    {
+      "control_id": "OPS-03",
+      "description": "Recovery objectives and restoration tests must be measured.",
+      "evidence": [],
+      "evidence_missing": [],
+      "evidence_present": [],
+      "independent_verification_complete": false,
+      "pillar": "operations",
+      "status": "planned_gap"
+    },
+    {
+      "control_id": "OPS-04",
+      "description": "Production changes require independent review and auditable authorization.",
+      "evidence": [
+        "docs/data_contracts/governance_decision_schema.json"
+      ],
+      "evidence_missing": [],
+      "evidence_present": [
+        "docs/data_contracts/governance_decision_schema.json"
+      ],
+      "independent_verification_complete": false,
+      "pillar": "operations",
+      "status": "implemented_evidence_present"
+    }
+  ],
+  "independent_audit_complete": false,
+  "model_version": "cre-foundry-audit-control-catalog-v1",
+  "scope_note": "This catalogue records engineering evidence and gaps. It does not establish formal compliance or certification.",
+  "standards": [
+    {
+      "standard_id": "nist-ssdf-1.1",
+      "status": "final_normative_baseline",
+      "title": "NIST Secure Software Development Framework",
+      "version": "1.1"
+    },
+    {
+      "standard_id": "nist-ssdf-1.2-draft",
+      "status": "draft_informative_tracking",
+      "title": "NIST Secure Software Development Framework",
+      "version": "1.2"
+    },
+    {
+      "standard_id": "owasp-asvs-5.0.0",
+      "status": "future_application_security_baseline",
+      "title": "OWASP Application Security Verification Standard",
+      "version": "5.0.0"
+    },
+    {
+      "standard_id": "slsa-1.2",
+      "status": "future_provenance_baseline",
+      "title": "Supply-chain Levels for Software Artifacts",
+      "version": "1.2"
+    },
+    {
+      "standard_id": "cyclonedx-1.7",
+      "status": "software_inventory_format",
+      "title": "CycloneDX Bill of Materials",
+      "version": "1.7"
+    },
+    {
+      "standard_id": "openssf-scorecard",
+      "status": "future_repository_posture_scan",
+      "title": "OpenSSF Scorecard",
+      "version": "current"
+    }
+  ],
+  "status_counts": {
+    "implemented_evidence_present": 19,
+    "planned_gap": 9
+  }
+}

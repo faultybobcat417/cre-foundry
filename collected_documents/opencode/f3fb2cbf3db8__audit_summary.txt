@@ -1,0 +1,282 @@
+CRE PRE-HANDOFF AUDIT
+Created: 2026-08-03T20:18:48Z
+Audit folder: /Users/alimehdi/Desktop/CRE-Pre-Handoff-Audit-20260803-161845
+
+================ REPOSITORY ================
+BRANCH
+handoff/kimi-architecture-001
+
+HEAD
+dd44e5ee7f9195d140dfbd747b5a4812b199a81e
+
+STATUS
+## handoff/kimi-architecture-001
+ M artifacts/context/current_task_packet.json
+ M artifacts/context/current_task_packet.md
+ M artifacts/evaluations/economics_contracts.json
+ M artifacts/evaluations/identity_contracts.json
+ M control/CURRENT_STATE.json
+ M control/CURRENT_TASK.json
+ M control/TASK_GRAPH.json
+?? control/ONE_SHOT_READINESS.json
+?? tasks/SECURITY-001.json
+
+RECENT COMMITS
+dd44e5e (HEAD -> handoff/kimi-architecture-001) economics: add symbolic ECV material layer
+bb44ea0 identity: add material synthetic identity layer
+65982d0 chore: checkpoint frontier evaluation - 6 gates pass, 16 blocked externally, full-system gate deferred
+724968c chore: rebind frontier meta after Phase-1 fixes
+702ea78 frontier: fix Phase-1 validator fixture paths and known-bad diagnostics
+a47bdc4 chore: rebind frontier meta to Phase-1 evidence
+e959533 frontier: add Phase-1 synthetic evidence domains
+a66a442 chore: checkpoint frontier evaluation - 6 gates pass, source-feasibility blocked externally
+4fd045b chore: rebind frontier meta to reconciled gate evidence
+2182b21 frontier: break trace/contract reference cycle and bind remaining gate evidence
+1536119 chore: rebind frontier meta to Phase-0 proof checkpoint
+0aa5333 frontier: reconcile mission, math, identity, architecture, and documentation gates
+fb06933 identity: freeze independent temporal identity evaluator
+9941cfd identity: freeze temporal identity contract and schema
+0d52a94 chore: pin IDENTITY-001 context and start state
+fa695be chore: complete architecture and select identity
+4792568 architecture: validate product workflow layer at proof level 4
+cabc739 architecture: implement protocol, workflow, and canonical run
+4228149 architecture: freeze independent workflow evaluator and property grid
+c81d2cf architecture: freeze command/run/review/accessibility schemas and registries
+9a5462d wip: preserve interrupted ARCHITECTURE-001 handoff
+aecb0fd (main) control: checkpoint calibration and start architecture
+55cc918 calibration: implement exact synthetic uncertainty framework
+8513578 calibration: freeze synthetic evaluator contract
+b6471df chore: complete baseline and select calibration
+05137e8 baseline: implement point-in-time synthetic comparisons
+8fd5cf8 baseline: freeze synthetic evaluator contract
+b802776 chore: complete outcomes and select baseline
+5c19588 chore: rebind frontier meta to outcomes proof
+746702d outcomes: harden synthetic maturity and lineage contracts
+
+TRACKED MODIFICATIONS
+M	artifacts/context/current_task_packet.json
+M	artifacts/context/current_task_packet.md
+M	artifacts/evaluations/economics_contracts.json
+M	artifacts/evaluations/identity_contracts.json
+M	control/CURRENT_STATE.json
+M	control/CURRENT_TASK.json
+M	control/TASK_GRAPH.json
+
+STAGED FILES
+
+UNTRACKED FILES
+control/ONE_SHOT_READINESS.json
+tasks/SECURITY-001.json
+
+================ PROTECTED HASHES ================
+e0fa1f1d03904d74fb948a8b7d22d028dd193a1090a6f41bcba235f11d46cbc0  /Users/alimehdi/Documents/cre/control/ONE_SHOT_READINESS.json
+583e7715e2af53e82309e934d6136d1b161bcda45771cebc948e9a9137525282  /Users/alimehdi/Documents/cre/artifacts/identity/public_evaluator_contract.json
+0c3b42f906063169b46cc760f9e7cf516b3c73c7c84f6293eb4cfcf826cc55ba  /Users/alimehdi/Documents/cre/contracts/temporal_identity.schema.json
+
+================ DESKTOP REFERENCES ================
+/Users/alimehdi/Desktop/CRE-OpenCode-Config-Backup
+/Users/alimehdi/Desktop/CRE-OpenCode-Config-Backup/opencode.json
+/Users/alimehdi/Desktop/CRE-OpenCode-Config-Backup/opencode.json.before-direct-kimi-20260802-172550
+/Users/alimehdi/Desktop/CRE-Recovery-20260803-134330
+/Users/alimehdi/Desktop/CRE-Recovery-20260803-134330/opencode-export.stderr
+/Users/alimehdi/Desktop/CRE-Recovery-20260803-134330/opencode-session.json
+/Users/alimehdi/Desktop/CRE-Recovery-20260803-134330/opencode-sessions.json
+/Users/alimehdi/Desktop/CRE-Salvage-Audit-20260803-134736
+/Users/alimehdi/Desktop/CRE-Salvage-Audit-Fixed-20260803-134925
+/Users/alimehdi/Desktop/Kimi-Rescue-20260802-161833
+/Users/alimehdi/Desktop/Kimi-Rescue-20260802-161833/kimi-code-home
+/Users/alimehdi/Desktop/Kimi-Rescue-20260802-161833/recent-kimi-sessions.txt
+
+================ TOOL REFERENCES ================
+/Users/alimehdi/.cache/opencode
+/Users/alimehdi/.config/opencode
+/Users/alimehdi/.config/opencode/node_modules/@opencode-ai
+/Users/alimehdi/.config/opencode/opencode.jsonc
+/Users/alimehdi/.config/opencode/secrets/moonshot-openplatform.key
+/Users/alimehdi/.kimi-code
+/Users/alimehdi/.kimi-code-k3-openai
+/Users/alimehdi/.kimi-code-k3-openai/logs/kimi-code.log
+/Users/alimehdi/.kimi-code/bin/kimi
+/Users/alimehdi/.kimi-code/bin/kimi.bak
+/Users/alimehdi/.kimi-code/logs/kimi-code.log
+/Users/alimehdi/.kimi-code/oauth/kimi-code
+/Users/alimehdi/.kimi-code/plugins/managed/kimi-datasource
+/Users/alimehdi/.local/share/opencode
+/Users/alimehdi/.local/share/opencode/log/opencode.log
+/Users/alimehdi/.local/share/opencode/opencode.db
+/Users/alimehdi/.local/share/opencode/opencode.db-shm
+/Users/alimehdi/.local/share/opencode/opencode.db-wal
+/Users/alimehdi/.local/state/opencode
+/Users/alimehdi/Desktop/CRE-Codex-Forensics-20260802-171901/untracked/opencode.json
+/Users/alimehdi/Desktop/CRE-OpenCode-Config-Backup
+/Users/alimehdi/Desktop/CRE-OpenCode-Config-Backup/opencode.json
+/Users/alimehdi/Desktop/CRE-OpenCode-Config-Backup/opencode.json.before-direct-kimi-20260802-172550
+/Users/alimehdi/Desktop/CRE-Recovery-20260803-134330/opencode-export.stderr
+/Users/alimehdi/Desktop/CRE-Recovery-20260803-134330/opencode-session.json
+/Users/alimehdi/Desktop/CRE-Recovery-20260803-134330/opencode-sessions.json
+/Users/alimehdi/Desktop/Kimi-Rescue-20260802-161833
+/Users/alimehdi/Desktop/Kimi-Rescue-20260802-161833/kimi-code-home
+/Users/alimehdi/Desktop/Kimi-Rescue-20260802-161833/recent-kimi-sessions.txt
+/Users/alimehdi/Documents/cre-kimi-handoff-20260802-054814
+/Users/alimehdi/Documents/cre-kimi-handoff-20260802-054814/KIMI_HANDOFF.md
+/Users/alimehdi/Documents/cre-kimi-handoff-20260802-055026
+/Users/alimehdi/Documents/cre-kimi-handoff-20260802-055026/KIMI_HANDOFF.md
+/Users/alimehdi/Documents/cre/.git/opencode
+/Users/alimehdi/Documents/plate-party/opencode
+/Users/alimehdi/Documents/plate-party/opencode/.opencode.json
+/Users/alimehdi/Documents/plate-party/opencode/opencode-schema.json
+/Users/alimehdi/Downloads/Kimi_Agent_Meat Page Algorithm.zip
+/Users/alimehdi/Downloads/kimi_one_shot_prompt.md
+/Users/alimehdi/Library/Caches/kimi-code
+/Users/alimehdi/odysseus/licenses/opencode-MIT-LICENSE.txt
+
+================ PROMPT / AGENT / SESSION REFERENCES ================
+/Users/alimehdi/Desktop/CRE-Codex-Forensics-20260802-171901/untracked/opencode.json
+/Users/alimehdi/Desktop/CRE-OpenCode-Config-Backup/opencode.json
+/Users/alimehdi/Desktop/CRE-Pre-Handoff-Audit-20260803-161836/prompt-agent-session-paths.txt
+/Users/alimehdi/Desktop/CRE-Pre-Handoff-Audit-20260803-161845/prompt-agent-session-paths.txt
+/Users/alimehdi/Desktop/CRE-Recovery-20260803-134330/opencode-session.json
+/Users/alimehdi/Desktop/CRE-Recovery-20260803-134330/opencode-sessions.json
+/Users/alimehdi/Desktop/CRE-Salvage-Audit-20260803-134736/repo/AGENTS.md
+/Users/alimehdi/Desktop/CRE-Salvage-Audit-Fixed-20260803-134925/repo/AGENTS.md
+/Users/alimehdi/Desktop/Kimi-Rescue-20260802-161833/kimi-code-home/plugins/managed/kimi-datasource/kimi.plugin.json
+/Users/alimehdi/Desktop/Kimi-Rescue-20260802-161833/recent-kimi-sessions.txt
+/Users/alimehdi/Documents/cre-kimi-handoff-20260802-054814/key-files/AGENTS.md
+/Users/alimehdi/Documents/cre-kimi-handoff-20260802-054814/KIMI_HANDOFF.md
+/Users/alimehdi/Documents/cre-kimi-handoff-20260802-055026/key-files/AGENTS.md
+/Users/alimehdi/Documents/cre-kimi-handoff-20260802-055026/KIMI_HANDOFF.md
+/Users/alimehdi/Documents/cre/AGENTS.md
+/Users/alimehdi/Documents/cre/bootstrap/project_os_v2.2/CRE_Codex_Project_OS_v2.2/launch_kernel/AGENTS.md
+/Users/alimehdi/Documents/cre/bootstrap/project_os_v2.2/CRE_Codex_Project_OS_v2.2/launch_kernel/FINAL_CODEX_LAUNCH_PROMPT_v2.2.md
+/Users/alimehdi/Documents/plate-party/AGENTS.md
+/Users/alimehdi/Documents/plate-party/node_modules/@supabase/auth-js/AGENTS.md
+/Users/alimehdi/Documents/plate-party/node_modules/@supabase/functions-js/AGENTS.md
+/Users/alimehdi/Documents/plate-party/node_modules/@supabase/postgrest-js/AGENTS.md
+/Users/alimehdi/Documents/plate-party/node_modules/@supabase/realtime-js/AGENTS.md
+/Users/alimehdi/Documents/plate-party/node_modules/@supabase/storage-js/AGENTS.md
+/Users/alimehdi/Documents/plate-party/node_modules/@supabase/supabase-js/AGENTS.md
+/Users/alimehdi/Documents/plate-party/opencode/.opencode.json
+/Users/alimehdi/Documents/plate-party/opencode/opencode-schema.json
+
+================ DUPLICATES ================
+SHA-256 257b177f0d335b6ae54b995241a8f6f827cd9dc805891df6c5f96b3821896504
+  /Users/alimehdi/Desktop/CRE-Salvage-Audit-20260803-134736/repo/AGENTS.md
+  /Users/alimehdi/Desktop/CRE-Salvage-Audit-Fixed-20260803-134925/repo/AGENTS.md
+  /Users/alimehdi/Documents/cre-kimi-handoff-20260802-054814/key-files/AGENTS.md
+  /Users/alimehdi/Documents/cre-kimi-handoff-20260802-055026/key-files/AGENTS.md
+  /Users/alimehdi/Documents/cre/AGENTS.md
+
+SHA-256 2de8a88761e42ddff6ee2ecbf16894f0414a6d37f2f9ede8f53b078563b11050
+  /Users/alimehdi/Documents/cre-kimi-handoff-20260802-054814/KIMI_HANDOFF.md
+  /Users/alimehdi/Documents/cre-kimi-handoff-20260802-055026/KIMI_HANDOFF.md
+
+SHA-256 69059f7cbc927f8063139c94f2a4edaf566b3e5edc22f8f9c00c0d6927382abe
+  /Users/alimehdi/Desktop/CRE-Codex-Forensics-20260802-171901/untracked/opencode.json
+  /Users/alimehdi/Desktop/CRE-OpenCode-Config-Backup/opencode.json.before-direct-kimi-20260802-172550
+
+SHA-256 e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+  /Users/alimehdi/.kimi-code/oauth/kimi-code
+  /Users/alimehdi/Desktop/CRE-Pre-Handoff-Audit-20260803-161836/prompt-agent-session-paths.txt
+
+
+================ PRIORITY REFERENCES — TOP 100 LINES ================
+score=5 modified=2026-08-03T16:18:47.515785 size=2088
+/Users/alimehdi/Desktop/CRE-Pre-Handoff-Audit-20260803-161845/prompt-agent-session-paths.txt
+sha256=59a72ddc4aa727b10b9254d86de6fbd0d284ca0196157e79788141d1364d33bd
+
+score=5 modified=2026-08-03T16:18:40.921704 size=0
+/Users/alimehdi/Desktop/CRE-Pre-Handoff-Audit-20260803-161836/prompt-agent-session-paths.txt
+sha256=e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+
+score=4 modified=2026-08-03T13:45:22.626613 size=30174062
+/Users/alimehdi/Desktop/CRE-Recovery-20260803-134330/opencode-session.json
+sha256=88cbf613847ba2e7ad54c5354952b08281b44a065201e5c4740f770dc60c6fbc
+
+score=4 modified=2026-08-03T13:44:16.155672 size=1083
+/Users/alimehdi/Desktop/CRE-Recovery-20260803-134330/opencode-sessions.json
+sha256=21d949808b793c33531817776bf8c203fa42a397e19f88258501724f20e1601b
+
+score=4 modified=2026-08-01T20:29:56.538883 size=2007
+/Users/alimehdi/Documents/cre-kimi-handoff-20260802-055026/key-files/AGENTS.md
+sha256=257b177f0d335b6ae54b995241a8f6f827cd9dc805891df6c5f96b3821896504
+
+score=4 modified=2026-08-01T20:29:56.538883 size=2007
+/Users/alimehdi/Documents/cre-kimi-handoff-20260802-054814/key-files/AGENTS.md
+sha256=257b177f0d335b6ae54b995241a8f6f827cd9dc805891df6c5f96b3821896504
+
+score=3 modified=2026-08-03T13:49:25.905895 size=2007
+/Users/alimehdi/Desktop/CRE-Salvage-Audit-Fixed-20260803-134925/repo/AGENTS.md
+sha256=257b177f0d335b6ae54b995241a8f6f827cd9dc805891df6c5f96b3821896504
+
+score=3 modified=2026-08-03T13:47:36.729247 size=2007
+/Users/alimehdi/Desktop/CRE-Salvage-Audit-20260803-134736/repo/AGENTS.md
+sha256=257b177f0d335b6ae54b995241a8f6f827cd9dc805891df6c5f96b3821896504
+
+score=3 modified=2026-08-03T13:45:22.197552 size=50
+/Users/alimehdi/Desktop/CRE-Recovery-20260803-134330/opencode-export.stderr
+sha256=a7974ed7a340b2dbb9b1661bbda1bbe96eb718eabde3a4a64063437291dcd066
+
+score=3 modified=2026-08-02T17:09:48.010429 size=1339
+/Users/alimehdi/Desktop/CRE-OpenCode-Config-Backup/opencode.json.before-direct-kimi-20260802-172550
+sha256=69059f7cbc927f8063139c94f2a4edaf566b3e5edc22f8f9c00c0d6927382abe
+
+score=3 modified=2026-08-02T05:50:27.821569 size=1218
+/Users/alimehdi/Documents/cre-kimi-handoff-20260802-055026/KIMI_HANDOFF.md
+sha256=2de8a88761e42ddff6ee2ecbf16894f0414a6d37f2f9ede8f53b078563b11050
+
+score=3 modified=2026-08-02T05:50:27.821508 size=256
+/Users/alimehdi/Documents/cre-kimi-handoff-20260802-055026
+sha256=None
+
+score=3 modified=2026-08-02T05:48:15.223149 size=1218
+/Users/alimehdi/Documents/cre-kimi-handoff-20260802-054814/KIMI_HANDOFF.md
+sha256=2de8a88761e42ddff6ee2ecbf16894f0414a6d37f2f9ede8f53b078563b11050
+
+score=3 modified=2026-08-02T05:48:15.223092 size=256
+/Users/alimehdi/Documents/cre-kimi-handoff-20260802-054814
+sha256=None
+
+score=2 modified=2026-08-03T14:02:24.059320 size=40
+/Users/alimehdi/Documents/cre/.git/opencode
+sha256=dc7c62cbe9cca1cf4468f08aa3cc11b1311bf2b001f415e5b2189d6d5b349ce5
+
+score=2 modified=2026-08-03T13:51:24.569945 size=576
+/Users/alimehdi/Desktop/CRE-Salvage-Audit-Fixed-20260803-134925
+sha256=None
+
+score=2 modified=2026-08-03T13:47:36.560014 size=224
+/Users/alimehdi/Desktop/CRE-Salvage-Audit-20260803-134736
+sha256=None
+
+score=2 modified=2026-08-03T13:45:22.644908 size=704
+/Users/alimehdi/Desktop/CRE-Recovery-20260803-134330
+sha256=None
+
+score=2 modified=2026-08-02T17:28:38.778653 size=128
+/Users/alimehdi/Desktop/CRE-OpenCode-Config-Backup
+sha256=None
+
+score=2 modified=2026-08-02T17:25:50.820657 size=969
+/Users/alimehdi/Desktop/CRE-OpenCode-Config-Backup/opencode.json
+sha256=0d9cc2561dbe271954ea91f50861c08e062c18bde0ea61f14f66c9ce500ae4fa
+
+score=2 modified=2026-08-02T17:25:50.804294 size=52
+/Users/alimehdi/.config/opencode/secrets/moonshot-openplatform.key
+sha256=51007fefec65fd92428116af5db75718f0722121fe583413db5150a1f57597fb
+
+score=2 modified=2026-08-02T17:09:48.010429 size=1339
+/Users/alimehdi/Desktop/CRE-Codex-Forensics-20260802-171901/untracked/opencode.json
+sha256=69059f7cbc927f8063139c94f2a4edaf566b3e5edc22f8f9c00c0d6927382abe
+
+score=2 modified=2026-08-02T16:18:34.951133 size=8683
+/Users/alimehdi/Desktop/Kimi-Rescue-20260802-161833/recent-kimi-sessions.txt
+sha256=bdd46bf00ac647615a4d3ba00379a81e86bef81803d7c1a3eae421e9145e4c6f
+
+score=2 modified=2026-08-01T21:47:38 size=5107
+/Users/alimehdi/Documents/cre/bootstrap/project_os_v2.2/CRE_Codex_Project_OS_v2.2/launch_kernel/FINAL_CODEX_LAUNCH_PROMPT_v2.2.md
+sha256=c0b6aa4e01da6b82e98ad39af379fa59a4349aa5fc0d0a4cbf4a2f6cdb552bed
+
+score=2 modified=2026-08-01T21:47:38 size=2224
+/Users/alimehdi/Documents/cre/bootstrap/project_os_v2.2/CRE_Codex_Project_OS_v2.2/launch_kernel/AGENTS.md
+sha256=976923421bac28712f89e4ae7d6b531a2c6dfcf5cd59ddb068275757987f5bd0
+

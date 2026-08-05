@@ -1,0 +1,37 @@
+{
+  "artifact_id": "EXTERNAL-READINESS-001-PUBLIC-EVIDENCE",
+  "checks": {
+    "registered_fixtures_detected": true,
+    "registered_mutation_count": 2
+  },
+  "claim": "Synthetic authority, expiry, revocation, aggregate-only, contamination, preregistration, and rollback mutation report only.",
+  "claim_ceiling": "External evidence preparation readiness; no real external evidence, attestation, trial, or commercial claim.",
+  "evaluator_id": "external-readiness-public-v1",
+  "execution_scope": "SYNTHETIC_NON_INFLUENCING",
+  "mutation_results": [
+    {
+      "case_id": "placeholder-owner",
+      "diagnostic": "EXTERNAL-READINESS-PLACEHOLDER-OWNER",
+      "fixture": "evals/known_bad/frontier/external_placeholder_owner.json",
+      "fixture_sha256": "47f5075f871fa6e0612cf6c5eaa7595eb12751b84b4fe61133bd0fcc9d3e7f66",
+      "result": "DETECTED"
+    },
+    {
+      "case_id": "posthoc-trial",
+      "diagnostic": "EXTERNAL-READINESS-POSTHOC-TRIAL",
+      "fixture": "evals/known_bad/frontier/external_posthoc_trial.json",
+      "fixture_sha256": "e0bbf7ee2b109b5b938d6e19650af26dec2b72ae3d7831aba092d95a712f8787",
+      "result": "DETECTED"
+    }
+  ],
+  "proof_level": 4,
+  "result": "PASS",
+  "schema_version": "1.0.0",
+  "subject_hashes": {
+    "artifacts/external-readiness/readiness_manifest.json": "2488765522cbd5839d6e565d19949aeecb8b9b478b765775fa38c074564a2565",
+    "evals/known_bad/frontier/external_placeholder_owner.json": "47f5075f871fa6e0612cf6c5eaa7595eb12751b84b4fe61133bd0fcc9d3e7f66",
+    "evals/known_bad/frontier/external_posthoc_trial.json": "e0bbf7ee2b109b5b938d6e19650af26dec2b72ae3d7831aba092d95a712f8787",
+    "scripts/validate_external_readiness.py": "6ba6957b5f699b30646f51344c69d68ad38a28a735a75f4a80a54695f224b5f4"
+  },
+  "task_id": "EXTERNAL-READINESS-001"
+}

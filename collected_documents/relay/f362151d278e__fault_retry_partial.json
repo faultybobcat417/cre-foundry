@@ -1,0 +1,5 @@
+{
+  "case_id": "fault-retry-partial-effect",
+  "expected_diagnostic": "ADVERSARIAL-FAULT-RETRY",
+  "mutation_id": "fault_retry_partial"
+}

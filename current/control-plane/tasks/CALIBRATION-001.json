@@ -1,0 +1,60 @@
+{
+  "task_id": "CALIBRATION-001",
+  "title": "Synthetic calibration, uncertainty, missingness, subgroup, temporal-sensitivity, and abstention propagation contracts",
+  "status": "completed",
+  "objective": "Implement a replaceable public synthetic framework that evaluates calibration mechanics where probability outputs exist, preserves exact uncertainty and missingness states, reports subgroup and temporal sensitivity without sparse-cell overclaim, and propagates abstention through the exact-ten decision boundary.",
+  "business_reason": "Commercial-value and policy decisions require explicit uncertainty and abstention semantics; point estimates from the baseline framework cannot be consumed safely until these contracts fail closed.",
+  "dependencies": ["BASELINE-001", "OUTCOMES-001", "MATH-001"],
+  "gates": ["GATE-CALIBRATION-POLICY-AUTHORITY-001", "GATE-OUTCOME-LABELS-MATURITY-001", "GATE-F9-OUTCOME-POLICY-AUTHORITY-001", "GATE-SEALED-EVALUATOR-CUSTODY-001", "GATE-HIDDEN-HOLDOUT-OWNER-001", "GATE-FULL-EXTERNAL-EVIDENCE-001"],
+  "inputs": [
+    "BASELINE-001 frozen cohort, policy registry, metrics, and replacement disposition",
+    "OUTCOMES-001 nullable label-state and common-as-of contracts",
+    "MATH-001 exact-ten-or-abstain and proof-propagation contracts",
+    "synthetic calibration and sensitivity fixtures only"
+  ],
+  "assumptions": [],
+  "non_goals": [
+    "claim real calibration or predictive validity",
+    "estimate causal lift or commercial value",
+    "invent uncertainty intervals from one synthetic fixture",
+    "collapse sparse or missing subgroups into confident estimates",
+    "authorize production scoring, live ranking, or outreach"
+  ],
+  "writable_roots": ["contracts", "src/cre_foundry/calibration", "evals/public", "evals/known_bad/frontier", "artifacts/calibration", "artifacts/evaluations", "docs/calibration", "scripts", "tasks", "control"],
+  "required_expertise": ["calibration", "statistical_inference", "missing_data", "fairness_subgroup_analysis", "temporal_validation", "testing_verification"],
+  "evaluator": [
+    "freeze a public evaluator contract before material implementation",
+    "separate ranking scores from probability-valued outputs",
+    "exact calibration-bin, coverage, missingness, subgroup, temporal, and abstention semantics",
+    "registered sparse-cell, future-label, pooled-subgroup, point-estimate-only, interval-overclaim, and abstention-loss mutations"
+  ],
+  "known_bad_cases": [
+    "uncalibrated rank score treated as probability",
+    "future or null label admitted to calibration",
+    "empty or sparse bin reported as precise",
+    "micro aggregation represented as route-day macro behavior",
+    "subgroup disparity hidden by pooled aggregation",
+    "synthetic interval represented as empirical confidence",
+    "abstention dropped or coerced to a negative outcome",
+    "test labels reused for calibrator selection"
+  ],
+  "acceptance": [
+    "probability eligibility and calibration mechanics use one strict point-in-time interface",
+    "null labels, missing features, sparse cells, and abstentions retain explicit non-computable states",
+    "route-day macro and micro metrics are separately named and exact",
+    "subgroup and temporal outputs expose denominators and never imply empirical fairness or stability",
+    "all registered mutations are rejected by an evaluator independent from the builder",
+    "real calibration, predictive, causal, commercial, and production claims remain behind named gates"
+  ],
+  "artifacts": [
+    "artifacts/calibration/CALIBRATION-001-start.json",
+    "artifacts/calibration/public_evaluator_contract.json",
+    "contracts/calibration_evaluation.schema.json",
+    "src/cre_foundry/calibration",
+    "scripts/validate_calibration_framework.py",
+    "artifacts/evaluations/calibration_framework.json",
+    "artifacts/task-results/CALIBRATION-001.json"
+  ],
+  "rollback": "Remove the calibration framework and retain the validated BASELINE-001 nullable metrics and no-replacement disposition; invalidate dependent economics fixtures and keep live permissions disabled.",
+  "stop_budget": "Remain synthetic and non-influencing; do not infer empirical reliability, subgroup fairness, stability, predictive value, lift, economics, or production fitness."
+}

@@ -1,0 +1,125 @@
+{
+  "task_id": "VERTICAL-001",
+  "status": "completed",
+  "objective": "Connect the frozen observation/candidate contract and exact-ten decision to a deterministic synthetic route manifest, append-only field events, explicit F9 outcome states, and a complete replay receipt.",
+  "state_transition": {
+    "from": "VERTICAL-001 in_progress; CONTRACT-001 proof level 4 checkpoint active",
+    "to": "VERTICAL-001 completed at public proof level 5; OUTCOMES-001 selected in_progress; ARCHITECTURE-001 and IDENTITY-001 pending and executable",
+    "reason": "The independent evaluator accepts ISSUE and ABSTAIN paths, bounded counts 1..20, canonical byte-stable replay, every outcome-state contract, and rejects all registered and sweep-discovered cross-layer mutations."
+  },
+  "files_changed": [
+    "artifacts/context/current_task_packet.json",
+    "artifacts/context/current_task_packet.md",
+    "artifacts/evaluations/autonomous_frontier_meta.json",
+    "artifacts/evaluations/autonomous_frontier_report.json",
+    "artifacts/evaluations/vertical_slice.json",
+    "artifacts/task-results/VERTICAL-001.json",
+    "artifacts/vertical/VERTICAL-001-start.json",
+    "artifacts/vertical/public_evaluator_contract.json",
+    "artifacts/vertical-slice/run_manifest.json",
+    "contracts/synthetic_f9_outcome.schema.json",
+    "contracts/synthetic_field_event.schema.json",
+    "contracts/synthetic_route_day.schema.json",
+    "control/AUTONOMOUS_FRONTIER_CONTRACT.json",
+    "control/CURRENT_STATE.json",
+    "control/CURRENT_TASK.json",
+    "control/TASK_GRAPH.json",
+    "evals/known_bad/frontier/vertical_duplicate_stop.json",
+    "evals/known_bad/frontier/vertical_field_before_issuance.json",
+    "evals/known_bad/frontier/vertical_immature_outcome_counted.json",
+    "evals/known_bad/frontier/vertical_protected_stop.json",
+    "evals/known_bad/frontier/vertical_replay_receipt_mismatch.json",
+    "evals/known_bad/frontier/vertical_route_selection_mismatch.json",
+    "evals/known_bad/frontier/vertical_stage2_rewrite.json",
+    "evals/public/test_vertical_slice.py",
+    "evals/public/vertical_slice_evaluator.py",
+    "scripts/compile_repository_task_context.py",
+    "scripts/validate_vertical_slice.py",
+    "src/cre_foundry/vertical/__init__.py",
+    "src/cre_foundry/vertical/shadow_slice.py",
+    "tasks/ARCHITECTURE-001.json",
+    "tasks/IDENTITY-001.json",
+    "tasks/OUTCOMES-001.json",
+    "tasks/VERTICAL-001.json"
+  ],
+  "commands": [
+    {"command": "PYTHONPATH=src:. .venv/bin/python -m unittest evals.public.test_vertical_slice -v", "exit_code": 0, "artifact": "artifacts/evaluations/vertical_slice.json"},
+    {"command": "PYTHONPATH=src:. .venv/bin/python scripts/validate_vertical_slice.py", "exit_code": 0, "artifact": "artifacts/evaluations/vertical_slice.json"},
+    {"command": "for f in evals/known_bad/frontier/vertical_*.json; do PYTHONPATH=src:. .venv/bin/python scripts/validate_vertical_slice.py --known-bad $f; done", "exit_code": 0, "artifact": "artifacts/evaluations/vertical_slice.json"},
+    {"command": "PYTHONPATH=src:. .venv/bin/python -m unittest discover -s evals/public -p 'test_*.py'", "exit_code": 0, "artifact": "artifacts/evaluations/vertical_slice.json"},
+    {"command": "PYTHONPATH=src:. .venv/bin/python scripts/validate_frontier_meta.py", "exit_code": 0, "artifact": "artifacts/evaluations/autonomous_frontier_meta.json"},
+    {"command": "uv run --python 3.12 python scripts/evaluate_autonomous_frontier.py --report artifacts/evaluations/autonomous_frontier_report.json", "exit_code": 1, "artifact": "artifacts/evaluations/autonomous_frontier_report.json"}
+  ],
+  "evaluations": [
+    {"evaluator_id": "vertical-slice-public-v1", "result": "PASS", "public_test_cases": 7, "bounded_input_sizes": 20, "registered_mutations_detected": 7, "registered_mutations_total": 7, "full_public_suite_tests": 56},
+    {"evaluator_id": "independent-adversarial-sweep", "result": "PASS_AFTER_REPAIR", "repairs_verified": ["bijective stop-event-outcome coverage", "assessment after Stage-2 availability", "canonical downstream reconstruction after receipt recomputation", "fail-closed malformed subjects"]},
+    {"evaluator_id": "independent-proof-sweep", "result": "PASS_AFTER_REPAIR", "repairs_verified": ["proof-level-5 synthetic ceiling", "capability/math authorities included in context", "synthetic vertical frontier dependency separated from later calibration gates"]},
+    {"evaluator_id": "autonomous-frontier", "result": "FAIL", "vertical_base_result": "PASS", "interpretation": "Global FAIL is required while autonomous tasks and unrelated upstream/downstream frontier failures remain."}
+  ],
+  "expertise_coverage": [
+    {"domain": "product_architecture", "state": "ACTIVE", "reason": "Connected the frozen contract spine through a deterministic route/event/outcome boundary."},
+    {"domain": "identity_temporal", "state": "ACTIVE", "reason": "Preserved physical-location grain, Stage-1 immutability, distinct clocks, and fail-closed protection."},
+    {"domain": "routing_operations", "state": "CONSULT", "reason": "Specified an explicitly non-travel-optimized synthetic manifest without claiming calibrated feasibility."},
+    {"domain": "outcome_measurement", "state": "ACTIVE", "reason": "Defined positive conjuncts, maturity, censoring, conflict, unknown, assessment, and downstream claim boundaries."},
+    {"domain": "testing_verification", "state": "ACTIVE", "reason": "Built an implementation-independent evaluator, bounded replay tests, mutations, full-suite checks, and independent sweeps."},
+    {"domain": "causal_commercial_inference", "state": "CONSULT", "reason": "Kept lift and commercial value explicitly empirical-only and unclaimed."}
+  ],
+  "agents_used": [
+    "/root/repo_truth_review",
+    "/root/evaluator_review",
+    "/root/research_public_sources",
+    "/root/vertical_adversarial_sweep",
+    "/root/vertical_proof_sweep",
+    "/root/vertical_control_sweep"
+  ],
+  "alternatives": [
+    {"alternative": "Expand identity, routing, model, and product subsystems horizontally first", "decision": "rejected", "reason": "Contradicts the repository depth-first rule and delays discovery of cross-layer lineage defects."},
+    {"alternative": "Use only schemas and digest receipts for the slice", "decision": "rejected", "reason": "Independent sweeps demonstrated that recomputed receipts can hide semantic coverage and chronology defects without canonical reconstruction."},
+    {"alternative": "Build the smallest deterministic non-influencing source-to-outcome shadow slice with independent semantics", "decision": "selected", "reason": "Provides the earliest issue/abstain integration proof while preserving every real-evidence boundary."}
+  ],
+  "findings": [
+    {"finding": "Ten synthetic observations issue exactly ten distinct selected physical locations; fewer than ten abstain with no route, field events, or outcomes.", "classification": "CODEX_DERIVABLE", "evidence": "artifacts/vertical-slice/run_manifest.json"},
+    {"finding": "The initial evaluator allowed duplicate stop/event coverage and pre-availability outcome assessment after receipts were recomputed.", "classification": "CODEX_DERIVABLE", "disposition": "repaired and independently re-swept clean"},
+    {"finding": "A builder receipt is insufficient replay proof unless downstream canonical construction is reconstructed independently.", "classification": "CODEX_DERIVABLE", "disposition": "evaluator now enforces canonical IDs, order, clocks, results, state placement, and bijective coverage"},
+    {"finding": "The pre-horizontal vertical frontier gate must not depend on later identity, economics, or routing-calibration gates.", "classification": "CODEX_DERIVABLE", "disposition": "dependency reduced to the frozen AF-MATH-STATS-001 formal contract after independent review"},
+    {"finding": "Real outcome maturity, lift, route feasibility, identity accuracy, representative usability, and commercial value remain unavailable.", "classification": "EMPIRICAL_ONLY", "disposition": "retained behind existing named gates and claim ceiling"}
+  ],
+  "assumptions": [],
+  "decisions": [
+    "Retain SORTED_KEYS_INTEGER_JSON_V1 and exact file/schema hashes in the replay receipt.",
+    "Treat Stage-2 and Stage-3 as append-only consumers that cannot rewrite Stage 1.",
+    "Require one-to-one ordered stop-to-event-to-outcome coverage for the canonical synthetic builder.",
+    "Count a synthetic F9 positive only when all mission conjuncts and adjudicable evidence are present.",
+    "Keep immature, censored, conflicted, competing, and unknown states nullable rather than negative.",
+    "Select OUTCOMES-001 next because it hardens the load-bearing label boundary before baselines."
+  ],
+  "risks": [
+    "Public proof level 5 is synthetic and builder-visible; it is not sealed or hidden evaluation.",
+    "The synthetic route order and travel/service constants are fixture mechanics, not calibrated operational feasibility.",
+    "The 30-day window is a synthetic policy placeholder and has no human-authoritative or empirical standing.",
+    "The global autonomous frontier remains FAIL because positive-value autonomous tasks remain and other gates have not passed.",
+    "No live source, CRM, outreach, issuance, deployment, publication, or empirical permission has been granted."
+  ],
+  "gates": [
+    "GATE-SEALED-EVALUATOR-CUSTODY-001",
+    "GATE-HIDDEN-HOLDOUT-OWNER-001",
+    "approved_source_envelope",
+    "protected_account_bundle",
+    "representative_origins_capacity_specialties",
+    "approved_route_matrix",
+    "GATE-OUTCOME-LABELS-MATURITY-001",
+    "GATE-EXPERIMENT-PROTOCOL-001",
+    "firm_economics_services_territories",
+    "GATE-FULL-EXTERNAL-EVIDENCE-001"
+  ],
+  "proof_level": 5,
+  "artifacts": [
+    {"path": "artifacts/vertical-slice/run_manifest.json", "sha256": "f1da72d571494c040048822d84285f9fe21ef6edf241a3bfbbb0f608f895d591", "role": "deterministic canonical run and replay receipt"},
+    {"path": "artifacts/evaluations/vertical_slice.json", "sha256": "e863956b849a7d38d8d3b07e9fdf3f6a5f140cb04884d45f2eecd65827987a93", "role": "public evaluation evidence"},
+    {"path": "artifacts/vertical/public_evaluator_contract.json", "sha256": "b478abaa54c860d91d713ad1cdd0119353eb0e3ed7e17e2e97e211b3900f8655", "role": "pre-implementation evaluator contract"},
+    {"path": "scripts/validate_vertical_slice.py", "sha256": "5c08a699086802fda0c9a6afd905e5300bf5a19c9a2133819e5a30da2bdf18c9", "role": "read-only public validator and mutation runner"},
+    {"path": "evals/public/vertical_slice_evaluator.py", "sha256": "6023f3019b9a6089b7b986719749ae4da326a757d038813e70ebe450bc2b648a", "role": "implementation-independent semantic evaluator"}
+  ],
+  "rollback": "Revert the VERTICAL proof and meta commits 9d28360c217475fd2eacd6fa5039dd1a40946be0 and c263aa7, restore control state from 63b5be5, remove successor state changes, and retain the frozen CONTRACT-001/MATH-001 interfaces; no live effect requires compensation.",
+  "next_action": "Execute OUTCOMES-001: compile its bounded context, freeze its public evaluator contract before material implementation, then harden maturity/censoring/competing-event/adjudication/deduplication semantics."
+}

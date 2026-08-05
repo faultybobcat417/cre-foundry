@@ -1,0 +1,5 @@
+{
+  "case_id": "correction-cycle-or-fork",
+  "mutation_id": "correction_cycle_or_fork",
+  "expected_diagnostic": "OUTCOMES-CORRECTION-LINEAGE"
+}

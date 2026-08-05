@@ -1,0 +1,150 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://cre-foundry.local/schemas/f9-outcome-assessment-v1.json",
+  "title": "Append-only synthetic F9 outcome assessment revision",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["document_kind", "schema_version", "execution_scope", "assessment_id", "outcome_unit_id", "revision", "predecessor", "binding", "window", "ledger_snapshot_sha256", "dedupe_snapshot_sha256", "eligible_assertions", "assessed_at", "observed_through_at", "assessment_state", "counted_f9", "event_ascertainment_state", "booking_episode", "components", "stopping_event", "transition_reason", "downstream_states", "quality", "owner", "empirical_claim_authorized"],
+  "properties": {
+    "document_kind": {"const": "SYNTHETIC_F9_ASSESSMENT_REVISION"},
+    "schema_version": {"const": "1.0.0"},
+    "execution_scope": {"const": "SYNTHETIC_NON_INFLUENCING"},
+    "assessment_id": {"type": "string", "pattern": "^ASSESSMENT:[A-Z0-9_:-]+$"},
+    "outcome_unit_id": {"type": "string", "pattern": "^OUTCOME_UNIT:[A-Z0-9_:-]+$"},
+    "revision": {"type": "integer", "minimum": 1},
+    "predecessor": {
+      "oneOf": [
+        {"type": "null"},
+        {"type": "object", "additionalProperties": false, "required": ["assessment_id", "sha256"], "properties": {"assessment_id": {"type": "string", "minLength": 1}, "sha256": {"$ref": "#/$defs/sha256"}}}
+      ]
+    },
+    "binding": {"$ref": "#/$defs/binding"},
+    "window": {"$ref": "#/$defs/window"},
+    "ledger_snapshot_sha256": {"$ref": "#/$defs/sha256"},
+    "dedupe_snapshot_sha256": {"$ref": "#/$defs/sha256"},
+    "eligible_assertions": {"type": "array", "items": {"$ref": "#/$defs/assertion_ref"}, "uniqueItems": true},
+    "assessed_at": {"type": "string", "format": "date-time"},
+    "observed_through_at": {"type": "string", "format": "date-time"},
+    "assessment_state": {"enum": ["F9_CONFIRMED_SYNTHETIC", "MATURE_NO_F9_SYNTHETIC", "IMMATURE_UNKNOWN", "CENSORED_UNKNOWN", "COMPETING_EVENT_UNKNOWN", "CONFLICTED_UNKNOWN", "UNKNOWN"]},
+    "counted_f9": {"type": ["boolean", "null"]},
+    "event_ascertainment_state": {"enum": ["EVENT_CONFIRMED", "WINDOW_COMPLETE", "WINDOW_OPEN", "CENSORED", "COMPETING", "CONFLICTED", "UNKNOWN"]},
+    "booking_episode": {"oneOf": [{"type": "null"}, {"$ref": "#/$defs/booking"}]},
+    "components": {"$ref": "#/$defs/components"},
+    "stopping_event": {"oneOf": [{"type": "null"}, {"$ref": "#/$defs/stopping_event"}]},
+    "transition_reason": {"enum": ["INITIAL_PROJECTION", "APPEND_ONLY_CORRECTION", "LATE_AVAILABLE_EVIDENCE", "SCHEDULED_REASSESSMENT"]},
+    "downstream_states": {"$ref": "#/$defs/downstream"},
+    "quality": {"type": "object", "additionalProperties": false, "required": ["synthetic_fixture", "real_outcome_proven", "window_policy_authorized"], "properties": {"synthetic_fixture": {"const": true}, "real_outcome_proven": {"const": false}, "window_policy_authorized": {"const": false}}},
+    "owner": {"type": "object", "additionalProperties": false, "required": ["system", "real_world_authority"], "properties": {"system": {"const": "CRE_FOUNDRY"}, "real_world_authority": {"const": "UNASSIGNED_EXTERNAL_AUTHORITY"}}},
+    "empirical_claim_authorized": {"const": false}
+  },
+  "allOf": [
+    {
+      "if": {"properties": {"assessment_state": {"const": "F9_CONFIRMED_SYNTHETIC"}}},
+      "then": {
+        "properties": {
+          "counted_f9": {"const": true},
+          "event_ascertainment_state": {"const": "EVENT_CONFIRMED"},
+          "booking_episode": {"$ref": "#/$defs/booking"},
+          "stopping_event": {"type": "null"},
+          "components": {
+            "type": "object", "additionalProperties": false,
+            "required": ["actor_role", "requirement_type", "appointment", "supporting_evidence", "adjudication", "deduplication"],
+            "properties": {
+              "actor_role": {"enum": ["RELEVANT_DECISION_MAKER", "AUTHORIZED_REPRESENTATIVE"]},
+              "requirement_type": {"enum": ["CURRENT_CRE_REQUIREMENT", "CREDIBLE_FUTURE_CRE_REQUIREMENT"]},
+              "appointment": {"const": "SCHEDULED_WITH_IDENTIFIED_SENIOR_COMMERCIAL_REALTOR"},
+              "supporting_evidence": {"const": "INDEPENDENTLY_ADJUDICABLE_SYNTHETIC"},
+              "adjudication": {"const": "PASS_SYNTHETIC"},
+              "deduplication": {"const": "CANONICAL_BOOKING_EPISODE"}
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {"properties": {"assessment_state": {"const": "MATURE_NO_F9_SYNTHETIC"}}},
+      "then": {"properties": {"counted_f9": {"const": false}, "event_ascertainment_state": {"const": "WINDOW_COMPLETE"}, "booking_episode": {"type": "null"}, "stopping_event": {"type": "null"}, "components": {"$ref": "#/$defs/negative_components"}}}
+    },
+    {
+      "if": {"properties": {"assessment_state": {"const": "IMMATURE_UNKNOWN"}}},
+      "then": {"properties": {"counted_f9": {"type": "null"}, "event_ascertainment_state": {"const": "WINDOW_OPEN"}, "booking_episode": {"type": "null"}, "stopping_event": {"type": "null"}, "components": {"$ref": "#/$defs/unknown_components"}}}
+    },
+    {
+      "if": {"properties": {"assessment_state": {"const": "CENSORED_UNKNOWN"}}},
+      "then": {"properties": {"counted_f9": {"type": "null"}, "event_ascertainment_state": {"const": "CENSORED"}, "booking_episode": {"type": "null"}, "stopping_event": {"allOf": [{"$ref": "#/$defs/stopping_event"}, {"properties": {"type": {"const": "CENSORING"}}}]}, "components": {"$ref": "#/$defs/unknown_components"}}}
+    },
+    {
+      "if": {"properties": {"assessment_state": {"const": "COMPETING_EVENT_UNKNOWN"}}},
+      "then": {"properties": {"counted_f9": {"type": "null"}, "event_ascertainment_state": {"const": "COMPETING"}, "booking_episode": {"type": "null"}, "stopping_event": {"allOf": [{"$ref": "#/$defs/stopping_event"}, {"properties": {"type": {"const": "COMPETING_EVENT"}}}]}, "components": {"$ref": "#/$defs/unknown_components"}}}
+    },
+    {
+      "if": {"properties": {"assessment_state": {"const": "CONFLICTED_UNKNOWN"}}},
+      "then": {"properties": {"counted_f9": {"type": "null"}, "event_ascertainment_state": {"const": "CONFLICTED"}, "booking_episode": {"type": "null"}, "stopping_event": {"type": "null"}, "components": {"$ref": "#/$defs/conflicted_components"}}}
+    },
+    {
+      "if": {"properties": {"assessment_state": {"const": "UNKNOWN"}}},
+      "then": {"properties": {"counted_f9": {"type": "null"}, "event_ascertainment_state": {"const": "UNKNOWN"}, "booking_episode": {"type": "null"}, "stopping_event": {"type": "null"}, "components": {"$ref": "#/$defs/unknown_components"}}}
+    }
+  ],
+  "$defs": {
+    "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "binding": {
+      "type": "object", "additionalProperties": false,
+      "required": ["source_snapshot_sha256", "candidate_snapshot_sha256", "math_decision_sha256", "route_manifest_sha256", "field_event_id", "field_event_sha256", "candidate_id", "physical_location_id", "representative_id", "route_date"],
+      "properties": {
+        "source_snapshot_sha256": {"$ref": "#/$defs/sha256"}, "candidate_snapshot_sha256": {"$ref": "#/$defs/sha256"},
+        "math_decision_sha256": {"$ref": "#/$defs/sha256"}, "route_manifest_sha256": {"$ref": "#/$defs/sha256"},
+        "field_event_id": {"type": "string", "minLength": 1}, "field_event_sha256": {"$ref": "#/$defs/sha256"},
+        "candidate_id": {"type": "string", "minLength": 1}, "physical_location_id": {"type": "string", "minLength": 1},
+        "representative_id": {"type": "string", "minLength": 1}, "route_date": {"type": "string", "format": "date"}
+      }
+    },
+    "window": {
+      "type": "object", "additionalProperties": false,
+      "required": ["policy_id", "policy_version", "policy_sha256", "assignment_id", "anchor_type", "anchor_at", "starts_at", "ends_at", "horizon_days", "interval_convention", "reporting_grace_seconds", "real_policy_authorized"],
+      "properties": {
+        "policy_id": {"const": "F9-POLICY:SYNTHETIC_ROUTE_DAY_V1"}, "policy_version": {"const": "1.0.0"}, "policy_sha256": {"$ref": "#/$defs/sha256"},
+        "assignment_id": {"const": "ROUTE_DAY_ASSIGNMENT:SYNTHETIC_001"},
+        "anchor_type": {"const": "ROUTE_DAY_ASSIGNMENT"}, "anchor_at": {"type": "string", "format": "date-time"},
+        "starts_at": {"type": "string", "format": "date-time"}, "ends_at": {"type": "string", "format": "date-time"},
+        "horizon_days": {"const": 30}, "interval_convention": {"const": "CLOSED_START_CLOSED_END_SYNTHETIC"},
+        "reporting_grace_seconds": {"const": 0}, "real_policy_authorized": {"const": false}
+      }
+    },
+    "assertion_ref": {"type": "object", "additionalProperties": false, "required": ["assertion_id", "sha256", "available_at"], "properties": {"assertion_id": {"type": "string", "minLength": 1}, "sha256": {"$ref": "#/$defs/sha256"}, "available_at": {"type": "string", "format": "date-time"}}},
+    "booking": {"type": "object", "additionalProperties": false, "required": ["booking_episode_id", "booking_dedup_key", "booking_confirmed_at", "appointment_scheduled_at", "senior_commercial_realtor_id", "supporting_evidence_sha256", "canonical_outcome_unit_id"], "properties": {"booking_episode_id": {"type": "string", "minLength": 1}, "booking_dedup_key": {"$ref": "#/$defs/sha256"}, "booking_confirmed_at": {"type": "string", "format": "date-time"}, "appointment_scheduled_at": {"type": "string", "format": "date-time"}, "senior_commercial_realtor_id": {"type": "string", "minLength": 1}, "supporting_evidence_sha256": {"$ref": "#/$defs/sha256"}, "canonical_outcome_unit_id": {"type": "string", "minLength": 1}}},
+    "components": {
+      "type": "object", "additionalProperties": false,
+      "required": ["actor_role", "requirement_type", "appointment", "supporting_evidence", "adjudication", "deduplication"],
+      "properties": {
+        "actor_role": {"enum": ["RELEVANT_DECISION_MAKER", "AUTHORIZED_REPRESENTATIVE", "UNKNOWN"]},
+        "requirement_type": {"enum": ["CURRENT_CRE_REQUIREMENT", "CREDIBLE_FUTURE_CRE_REQUIREMENT", "UNKNOWN"]},
+        "appointment": {"enum": ["SCHEDULED_WITH_IDENTIFIED_SENIOR_COMMERCIAL_REALTOR", "NOT_OBSERVED_SYNTHETIC", "UNKNOWN"]},
+        "supporting_evidence": {"enum": ["INDEPENDENTLY_ADJUDICABLE_SYNTHETIC", "ABSENT_SYNTHETIC", "UNKNOWN"]},
+        "adjudication": {"enum": ["PASS_SYNTHETIC", "FAIL_SYNTHETIC", "UNRESOLVED", "UNKNOWN"]},
+        "deduplication": {"enum": ["CANONICAL_BOOKING_EPISODE", "COLLISION_UNRESOLVED", "NO_BOOKING", "UNKNOWN"]}
+      }
+    },
+    "unknown_components": {
+      "type": "object", "additionalProperties": false,
+      "required": ["actor_role", "requirement_type", "appointment", "supporting_evidence", "adjudication", "deduplication"],
+      "properties": {"actor_role": {"const": "UNKNOWN"}, "requirement_type": {"const": "UNKNOWN"}, "appointment": {"const": "UNKNOWN"}, "supporting_evidence": {"const": "UNKNOWN"}, "adjudication": {"const": "UNKNOWN"}, "deduplication": {"const": "UNKNOWN"}}
+    },
+    "negative_components": {
+      "type": "object", "additionalProperties": false,
+      "required": ["actor_role", "requirement_type", "appointment", "supporting_evidence", "adjudication", "deduplication"],
+      "properties": {"actor_role": {"const": "UNKNOWN"}, "requirement_type": {"const": "UNKNOWN"}, "appointment": {"const": "NOT_OBSERVED_SYNTHETIC"}, "supporting_evidence": {"const": "ABSENT_SYNTHETIC"}, "adjudication": {"const": "FAIL_SYNTHETIC"}, "deduplication": {"const": "NO_BOOKING"}}
+    },
+    "conflicted_components": {
+      "type": "object", "additionalProperties": false,
+      "required": ["actor_role", "requirement_type", "appointment", "supporting_evidence", "adjudication", "deduplication"],
+      "properties": {"actor_role": {"const": "UNKNOWN"}, "requirement_type": {"const": "UNKNOWN"}, "appointment": {"const": "UNKNOWN"}, "supporting_evidence": {"const": "UNKNOWN"}, "adjudication": {"const": "UNKNOWN"}, "deduplication": {"enum": ["UNKNOWN", "COLLISION_UNRESOLVED"]}}
+    },
+    "stopping_event": {"type": "object", "additionalProperties": false, "required": ["type", "cause", "occurred_at", "evidence_sha256"], "properties": {"type": {"enum": ["CENSORING", "COMPETING_EVENT"]}, "cause": {"type": "string", "minLength": 1}, "occurred_at": {"type": "string", "format": "date-time"}, "evidence_sha256": {"$ref": "#/$defs/sha256"}}},
+    "downstream": {
+      "type": "object", "additionalProperties": false,
+      "required": ["attendance", "mandate", "transaction", "commission", "referral", "repeat_value", "predictive_validity", "incremental_lift", "net_commercial_value"],
+      "properties": {"attendance": {"const": "UNKNOWN"}, "mandate": {"const": "UNKNOWN"}, "transaction": {"const": "UNKNOWN"}, "commission": {"const": "UNKNOWN"}, "referral": {"const": "UNKNOWN"}, "repeat_value": {"const": "UNKNOWN"}, "predictive_validity": {"const": "UNKNOWN"}, "incremental_lift": {"const": "UNKNOWN"}, "net_commercial_value": {"const": "UNKNOWN"}}
+    }
+  }
+}

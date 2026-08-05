@@ -1,0 +1,5 @@
+{
+  "case_id": "post-window-stopper",
+  "mutation_id": "post_window_stopper",
+  "expected_diagnostic": "OUTCOMES-STOPPER-OUTSIDE-WINDOW"
+}

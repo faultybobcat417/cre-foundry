@@ -1,0 +1,10 @@
+{
+  "codex_found": false,
+  "version": null,
+  "commands": {},
+  "features": {},
+  "recommended_mode": "interactive_or_install_codex_then_reprobe",
+  "gates": [
+    "codex_executable_not_found_in_current_runtime"
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "artifact_id": "ECONOMICS-001-PUBLIC-EVALUATOR-CONTRACT",
+  "schema_version": "1.0.0",
+  "subject_task": "ECONOMICS-001",
+  "task_id": "ECONOMICS-001",
+  "evaluator_id": "economics-ecv-public-v1",
+  "defined_before_material_implementation": true,
+  "execution_scope": "SYNTHETIC_NON_INFLUENCING",
+  "proof_target": 5,
+  "live_permissions": false,
+  "external_effect_occurred": false,
+  "subject_schema_path": "contracts/commercial_economics.schema.json",
+  "policy_schema_path": "contracts/economic_engine.schema.json",
+  "future_evaluator_path": "scripts/validate_economics_ecv.py",
+  "future_validator_path": "scripts/validate_economics_contracts.py",
+  "required_fixtures": [
+    "evals/known_bad/frontier/economics_omitted_costs.json",
+    "evals/known_bad/frontier/economics_modeled_as_realized.json"
+  ],
+  "evaluator_independence": {
+    "rule": "The evaluator must not import src.cre_foundry.economics or any economics material-implementation module. It independently renders the canonical COMMERCIAL_ECONOMICS_MODEL subject and its two registered diagnostics from the pinned schema and fixtures.",
+    "rejected": [
+      {"architecture": "GOLDEN_RECEIPT_ONLY", "reason": "A rehashed receipt can bless a coordinated semantic rehash."},
+      {"architecture": "SHARED_BUILDER_LIBRARY", "reason": "Shared economics or cost errors can pass both paths."},
+      {"architecture": "SCHEMA_ONLY_VALIDATION", "reason": "Shape checks cannot prove omitted-cost or modeled-as-realized separation."}
+    ],
+    "reconstruction_scope": [
+      "strict_parse_and_closed_shape",
+      "registered_schema_and_contract_versions",
+      "cost_completeness",
+      "modeled_versus_realized_claim_separation",
+      "dominance_of_risk_and_downside"
+    ]
+  },
+  "authoritative_inputs": [
+    "contracts/commercial_economics.schema.json",
+    "contracts/economic_engine.schema.json",
+    "artifacts/economics/ECONOMICS-001-start.json",
+    "artifacts/economics/public_evaluator_contract.json",
+    "artifacts/task-results/MATH-001.json",
+    "artifacts/task-results/CALIBRATION-001.json"
+  ],
+  "canonical_serialization": {
+    "rule": "UTF-8 canonical JSON uses sorted keys, integer numbers only, and separators comma/colon; stale set-semantics arrays are sorted before hashing.",
+    "duplicate_key_parsing": "STRICT_REJECTED"
+  },
+  "registered_mutations": [
+    {"mutation_id": "omitted_costs", "expected_diagnostic": "ECONOMICS-OMITTED-COSTS"},
+    {"mutation_id": "modeled_as_realized", "expected_diagnostic": "ECONOMICS-MODELED-AS-REALIZED"}
+  ],
+  "stable_diagnostics": [
+    {"case_id": "malformed-or-duplicate-key-json", "diagnostic": "ECONOMICS-SHAPE-INVALID"},
+    {"case_id": "schema-failure", "diagnostic": "ECONOMICS-SCHEMA-FAILURE"},
+    {"case_id": "unknown-schema-or-contract-version", "diagnostic": "ECONOMICS-SCHEMA-UNREGISTERED"},
+    {"case_id": "live-action-enabled", "diagnostic": "ECONOMICS-LIVE-DENIAL"},
+    {"case_id": "external-effect-recorded", "diagnostic": "ECONOMICS-EXTERNAL-EFFECT"},
+    {"case_id": "proof-or-claim-ceiling-violation", "diagnostic": "ECONOMICS-CLAIM-CEILING"}
+  ],
+  "pass_rule": "The canonical clean subject passes with zero diagnostics, both registered mutations fail with their exact diagnostic, and no real firm economics or realized-value claim is made.",
+  "claim_ceiling": "Public proof level 5 establishes deterministic, replayable conformance of the synthetic risk-adjusted expected net commercial value engine, its cost, downside, uncertainty, and fallback machinery, and its registered mutations only. It establishes no firm-authoritative economics, no realized commercial value, no calibrated real uncertainty, no commercial lift, no production readiness, no deployment readiness, no field effectiveness, no scaled-evaluator independence, and no hidden-holdout performance.",
+  "external_gates": [
+    "firm_economics_services_territories"
+  ],
+  "implementation_gate": "Do not credit or begin material economics implementation until this contract, contracts/commercial_economics.schema.json, and contracts/economic_engine.schema.json are independently swept and frozen, the evaluator independently emits the two registered diagnostics on their mutations and zero diagnostics on the clean subject, and independent post-repair sweeps are clean."
+}

@@ -1,0 +1,67 @@
+{
+  "access": "public",
+  "accessInformation": null,
+  "advancedSettings": null,
+  "apiToken1ExpirationDate": -1,
+  "apiToken2ExpirationDate": -1,
+  "appCategories": [],
+  "avgRating": 0,
+  "banner": null,
+  "categories": [],
+  "classification": null,
+  "commentsEnabled": true,
+  "created": 1516809685000,
+  "culture": "en-us",
+  "description": null,
+  "documentation": null,
+  "extent": [
+    [
+      -80.3928,
+      43.3387
+    ],
+    [
+      -79.0469,
+      44.1049
+    ]
+  ],
+  "groupDesignations": null,
+  "guid": null,
+  "id": "2b98de2e89e84364ba31c67172b56aed",
+  "industries": [],
+  "languages": [],
+  "largeThumbnail": null,
+  "lastViewed": 1785031200000,
+  "licenseInfo": null,
+  "listed": false,
+  "modified": 1762531169000,
+  "name": null,
+  "numComments": 0,
+  "numRatings": 0,
+  "numViews": 25919,
+  "orgId": "rl7ACuZkiFsmDA2g",
+  "owner": "BramptonMaps",
+  "ownerId": "fcfa4d9609ee9742e0316e35c17ad8d6",
+  "properties": null,
+  "proxyFilter": null,
+  "scoreCompleteness": 50,
+  "screenshots": [],
+  "size": 16243,
+  "snippet": "Webmap for EDO: Business Directory",
+  "spatialReference": null,
+  "subInfo": 0,
+  "tags": [
+    "Brampton",
+    "Economic Development"
+  ],
+  "thumbnail": "thumbnail/thumbnail.jpeg",
+  "title": "Business Directory Web Map",
+  "type": "Web Map",
+  "typeKeywords": [
+    "ArcGIS Online",
+    "Explorer Web Map",
+    "Map",
+    "Online Map",
+    "Web Map"
+  ],
+  "url": null
+}

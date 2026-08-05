@@ -1,0 +1,1406 @@
+{
+  "registry_version": "cre-source-intelligence-v1",
+  "as_of": "2026-07-31",
+  "original_phase_zero_seed_count": 25,
+  "expanded_source_class_count": 59,
+  "sources": [
+    {
+      "source_id": "toronto_active_permits",
+      "name": "Toronto Active Building Permits",
+      "owner": "City of Toronto",
+      "jurisdiction": "Toronto",
+      "access_mode": "open_data_api",
+      "entity_grain": "permit_address",
+      "history_or_vintage": "current active records; repeated snapshots required",
+      "refresh_cadence": "frequent",
+      "licence_or_terms": "Open Government Licence - Toronto",
+      "mechanisms": [
+        "expansion",
+        "relocation",
+        "use_change"
+      ],
+      "admissibility": "prospective_predictor",
+      "information_value_score": 5,
+      "limitations": "Permit may be speculative, landlord-led or post-commitment; occupier join required.",
+      "evidence_ids": [
+        "R-002"
+      ],
+      "inspection_status": "inspected",
+      "required_next_proof": "Create immutable sample snapshot and measure source latency, coverage and entity-match precision."
+    },
+    {
+      "source_id": "toronto_cleared_permits",
+      "name": "Toronto Cleared Building Permits",
+      "owner": "City of Toronto",
+      "jurisdiction": "Toronto",
+      "access_mode": "open_data_download",
+      "entity_grain": "permit_address",
+      "history_or_vintage": "annual files from 2000 onward",
+      "refresh_cadence": "periodic",
+      "licence_or_terms": "Open Government Licence - Toronto",
+      "mechanisms": [
+        "event_label",
+        "use_change",
+        "completion"
+      ],
+      "admissibility": "label_and_history",
+      "information_value_score": 5,
+      "limitations": "Closed permits are usually too late for prospecting but strong for event clocks and labels.",
+      "evidence_ids": [
+        "R-002"
+      ],
+      "inspection_status": "inspected",
+      "required_next_proof": "Create immutable sample snapshot and measure source latency, coverage and entity-match precision."
+    },
+    {
+      "source_id": "toronto_development_applications",
+      "name": "Toronto Application Information Centre",
+      "owner": "City of Toronto",
+      "jurisdiction": "Toronto",
+      "access_mode": "public_search_and_documents",
+      "entity_grain": "planning_application_property",
+      "history_or_vintage": "historical depth varies by application",
+      "refresh_cadence": "ongoing",
+      "licence_or_terms": "City public-access terms",
+      "mechanisms": [
+        "redevelopment",
+        "displacement",
+        "new_supply"
+      ],
+      "admissibility": "context_and_event",
+      "information_value_score": 4,
+      "limitations": "Applicant, owner, tenant and future occupier are different roles; documents are PDF-heavy.",
+      "evidence_ids": [
+        "R-001"
+      ],
+      "inspection_status": "inspected",
+      "required_next_proof": "Create immutable sample snapshot and measure source latency, coverage and entity-match precision."
+    },
+    {
+      "source_id": "toronto_development_pipeline",
+      "name": "Toronto Development Pipeline",
+      "owner": "City of Toronto",
+      "jurisdiction": "Toronto",
+      "access_mode": "open_data_download",
+      "entity_grain": "development_project",
+      "history_or_vintage": "rolling five-year project panel",
+      "refresh_cadence": "quarterly",
+      "licence_or_terms": "Open Government Licence - Toronto",
+      "mechanisms": [
+        "redevelopment",
+        "new_supply",
+        "displacement"
+      ],
+      "admissibility": "context_only",
+      "information_value_score": 3,
+      "limitations": "Large-development analytical dataset; coordinates incomplete and projects counted at project rather than establishment grain.",
+      "evidence_ids": [
+        "R-001"
+      ],
+      "inspection_status": "inspected",
+      "required_next_proof": "Create immutable sample snapshot and measure source latency, coverage and entity-match precision."
+    },
+    {
+      "source_id": "toronto_business_licences",
+      "name": "Toronto Business Licences and Permits",
+      "owner": "City of Toronto",
+      "jurisdiction": "Toronto",
+      "access_mode": "open_data_or_lookup",
+      "entity_grain": "licensed_business_location",
+      "history_or_vintage": "dataset-specific history",
+      "refresh_cadence": "periodic",
+      "licence_or_terms": "Open Government Licence - Toronto",
+      "mechanisms": [
+        "formation",
+        "relocation",
+        "closure"
+      ],
+      "admissibility": "entity_and_event",
+      "information_value_score": 4,
+      "limitations": "Only regulated categories; licence status is not proof of occupancy or CRE requirement.",
+      "evidence_ids": [
+        "R-002"
+      ],
+      "inspection_status": "inspected",
+      "required_next_proof": "Create immutable sample snapshot and measure source latency, coverage and entity-match precision."
+    },
+    {
+      "source_id": "toronto_employment_survey",
+      "name": "Toronto Employment Survey",
+      "owner": "City of Toronto",
+      "jurisdiction": "Toronto",
+      "access_mode": "public_aggregate_reports",
+      "entity_grain": "aggregate_geography_sector",
+      "history_or_vintage": "annual survey series",
+      "refresh_cadence": "annual",
+      "licence_or_terms": "City terms",
+      "mechanisms": [
+        "expansion",
+        "contraction",
+        "candidate_universe"
+      ],
+      "admissibility": "aggregate_context_only",
+      "information_value_score": 3,
+      "limitations": "Establishment-level responses are confidential; public data cannot form an open candidate universe.",
+      "evidence_ids": [
+        "R-027"
+      ],
+      "inspection_status": "inspected",
+      "required_next_proof": "Acquire lawful aggregate tables and test denominator/sector-context value only."
+    },
+    {
+      "source_id": "toronto_capital_pipeline",
+      "name": "Toronto Capital Projects Pipeline",
+      "owner": "City of Toronto",
+      "jurisdiction": "Toronto",
+      "access_mode": "open_data_download",
+      "entity_grain": "municipal_project",
+      "history_or_vintage": "current forward pipeline",
+      "refresh_cadence": "as_available",
+      "licence_or_terms": "Open Government Licence - Toronto",
+      "mechanisms": [
+        "supplier_pressure",
+        "network_effect"
+      ],
+      "admissibility": "experimental_context",
+      "information_value_score": 2,
+      "limitations": "Requires project-to-award-to-supplier-to-local-facility chain; plans can change.",
+      "evidence_ids": [
+        "R-001"
+      ],
+      "inspection_status": "inspected",
+      "required_next_proof": "Create immutable sample snapshot and measure source latency, coverage and entity-match precision."
+    },
+    {
+      "source_id": "toronto_address_points",
+      "name": "Toronto Address Points",
+      "owner": "City of Toronto",
+      "jurisdiction": "Toronto",
+      "access_mode": "open_data_api",
+      "entity_grain": "address",
+      "history_or_vintage": "current",
+      "refresh_cadence": "periodic",
+      "licence_or_terms": "Open Government Licence - Toronto",
+      "mechanisms": [
+        "entity_resolution",
+        "routing"
+      ],
+      "admissibility": "entity_only",
+      "information_value_score": 5,
+      "limitations": "Address point does not identify current operating occupant.",
+      "evidence_ids": [
+        "R-002"
+      ],
+      "inspection_status": "inspected",
+      "required_next_proof": "Create immutable sample snapshot and measure source latency, coverage and entity-match precision."
+    },
+    {
+      "source_id": "toronto_zoning_property",
+      "name": "Toronto Zoning and Property Layers",
+      "owner": "City of Toronto",
+      "jurisdiction": "Toronto",
+      "access_mode": "open_data_or_public_map",
+      "entity_grain": "parcel_property",
+      "history_or_vintage": "current; historical effective dates vary",
+      "refresh_cadence": "periodic",
+      "licence_or_terms": "City terms",
+      "mechanisms": [
+        "eligibility",
+        "use_friction"
+      ],
+      "admissibility": "constraint",
+      "information_value_score": 4,
+      "limitations": "Historical zoning must be separately archived to avoid hindsight.",
+      "evidence_ids": [
+        "R-001"
+      ],
+      "inspection_status": "inspected",
+      "required_next_proof": "Create immutable sample snapshot and measure source latency, coverage and entity-match precision."
+    },
+    {
+      "source_id": "toronto_dinesafe",
+      "name": "Toronto Food Premises Inspections",
+      "owner": "City of Toronto",
+      "jurisdiction": "Toronto",
+      "access_mode": "open_data_api",
+      "entity_grain": "food_business_location",
+      "history_or_vintage": "multi-year",
+      "refresh_cadence": "daily_or_frequent",
+      "licence_or_terms": "Open Government Licence - Toronto",
+      "mechanisms": [
+        "formation",
+        "closure",
+        "operational_friction"
+      ],
+      "admissibility": "entity_and_event",
+      "information_value_score": 3,
+      "limitations": "Inspection outcomes can be consequences rather than early precursors.",
+      "evidence_ids": [
+        "R-002"
+      ],
+      "inspection_status": "inspected",
+      "required_next_proof": "Create immutable sample snapshot and measure source latency, coverage and entity-match precision."
+    },
+    {
+      "source_id": "mississauga_business_directory",
+      "name": "Mississauga Employment Survey Business Directory",
+      "owner": "City of Mississauga",
+      "jurisdiction": "Mississauga",
+      "access_mode": "download",
+      "entity_grain": "consenting_business_location",
+      "history_or_vintage": "annual survey since 2001; public directory by vintage",
+      "refresh_cadence": "annual",
+      "licence_or_terms": "City terms and business consent",
+      "mechanisms": [
+        "candidate_universe",
+        "employment_growth",
+        "address_change"
+      ],
+      "admissibility": "candidate_and_history",
+      "information_value_score": 5,
+      "limitations": "Voluntary and point-in-time; non-consenting businesses omitted and current truth may differ.",
+      "evidence_ids": [
+        "R-004"
+      ],
+      "inspection_status": "inspected",
+      "required_next_proof": "Create immutable sample snapshot and measure source latency, coverage and entity-match precision."
+    },
+    {
+      "source_id": "mississauga_employment_reports",
+      "name": "Mississauga Employment Survey Reports",
+      "owner": "City of Mississauga",
+      "jurisdiction": "Mississauga",
+      "access_mode": "public_reports",
+      "entity_grain": "sector_geography",
+      "history_or_vintage": "annual since 2001",
+      "refresh_cadence": "annual",
+      "licence_or_terms": "City terms",
+      "mechanisms": [
+        "market_context",
+        "sector_growth"
+      ],
+      "admissibility": "context_only",
+      "information_value_score": 3,
+      "limitations": "Aggregated results cannot label establishment events.",
+      "evidence_ids": [
+        "R-004"
+      ],
+      "inspection_status": "inspected",
+      "required_next_proof": "Create immutable sample snapshot and measure source latency, coverage and entity-match precision."
+    },
+    {
+      "source_id": "mississauga_building_permits",
+      "name": "Mississauga Building Permits",
+      "owner": "City of Mississauga",
+      "jurisdiction": "Mississauga",
+      "access_mode": "catalog_or_public_map",
+      "entity_grain": "permit_property",
+      "history_or_vintage": "history requires catalog inspection",
+      "refresh_cadence": "periodic",
+      "licence_or_terms": "City open-data terms",
+      "mechanisms": [
+        "expansion",
+        "fit_out",
+        "use_change"
+      ],
+      "admissibility": "prospective_predictor",
+      "information_value_score": 4,
+      "limitations": "Public fields, archive behavior and bulk export need acquisition proof.",
+      "evidence_ids": [
+        "R-005"
+      ],
+      "inspection_status": "requires_inspection",
+      "required_next_proof": "Create immutable sample snapshot, field dictionary, licence record, latency test and entity-match sample."
+    },
+    {
+      "source_id": "mississauga_development_apps",
+      "name": "Mississauga Development Applications",
+      "owner": "City of Mississauga",
+      "jurisdiction": "Mississauga",
+      "access_mode": "public_map_and_records",
+      "entity_grain": "planning_application_property",
+      "history_or_vintage": "historical records with quality variation",
+      "refresh_cadence": "ongoing",
+      "licence_or_terms": "City terms",
+      "mechanisms": [
+        "redevelopment",
+        "displacement",
+        "new_supply"
+      ],
+      "admissibility": "context_and_event",
+      "information_value_score": 4,
+      "limitations": "Property applicant is not necessarily the operating occupier.",
+      "evidence_ids": [
+        "R-005"
+      ],
+      "inspection_status": "inspected",
+      "required_next_proof": "Create immutable sample snapshot and measure source latency, coverage and entity-match precision."
+    },
+    {
+      "source_id": "mississauga_site_plans",
+      "name": "Mississauga Site Plan Applications",
+      "owner": "City of Mississauga",
+      "jurisdiction": "Mississauga",
+      "access_mode": "public_gis_service",
+      "entity_grain": "site_plan_property",
+      "history_or_vintage": "older records may be missing or inconsistent",
+      "refresh_cadence": "ongoing",
+      "licence_or_terms": "City terms",
+      "mechanisms": [
+        "expansion",
+        "redevelopment",
+        "site_change"
+      ],
+      "admissibility": "prospective_and_context",
+      "information_value_score": 4,
+      "limitations": "Older record quality is explicitly limited.",
+      "evidence_ids": [
+        "R-005"
+      ],
+      "inspection_status": "inspected",
+      "required_next_proof": "Create immutable sample snapshot and measure source latency, coverage and entity-match precision."
+    },
+    {
+      "source_id": "mississauga_committee_adjustment",
+      "name": "Mississauga Committee of Adjustment Applications",
+      "owner": "City of Mississauga",
+      "jurisdiction": "Mississauga",
+      "access_mode": "public_gis_service",
+      "entity_grain": "application_property",
+      "history_or_vintage": "history through property links",
+      "refresh_cadence": "ongoing",
+      "licence_or_terms": "City terms",
+      "mechanisms": [
+        "parking",
+        "minor_variance",
+        "use_friction"
+      ],
+      "admissibility": "experimental_predictor",
+      "information_value_score": 3,
+      "limitations": "Large share unrelated to operating business space.",
+      "evidence_ids": [
+        "R-005"
+      ],
+      "inspection_status": "inspected",
+      "required_next_proof": "Create immutable sample snapshot and measure source latency, coverage and entity-match precision."
+    },
+    {
+      "source_id": "mississauga_parcel_zoning",
+      "name": "Mississauga Parcel and Zoning Maps",
+      "owner": "City of Mississauga",
+      "jurisdiction": "Mississauga",
+      "access_mode": "public_map_api",
+      "entity_grain": "parcel_property",
+      "history_or_vintage": "current; historical uncertain",
+      "refresh_cadence": "ongoing",
+      "licence_or_terms": "City terms",
+      "mechanisms": [
+        "eligibility",
+        "entity_resolution",
+        "use_friction"
+      ],
+      "admissibility": "entity_and_constraint",
+      "information_value_score": 4,
+      "limitations": "Parcel identifiers and point-in-time zoning need verification.",
+      "evidence_ids": [
+        "R-005"
+      ],
+      "inspection_status": "inspected",
+      "required_next_proof": "Create immutable sample snapshot and measure source latency, coverage and entity-match precision."
+    },
+    {
+      "source_id": "mississauga_road_events",
+      "name": "Mississauga Road Construction and Closures",
+      "owner": "City of Mississauga",
+      "jurisdiction": "Mississauga",
+      "access_mode": "open_data_catalog",
+      "entity_grain": "road_event",
+      "history_or_vintage": "current and planned",
+      "refresh_cadence": "frequent",
+      "licence_or_terms": "City open-data terms",
+      "mechanisms": [
+        "routing",
+        "access_feasibility"
+      ],
+      "admissibility": "operational_only",
+      "information_value_score": 3,
+      "limitations": "Improves execution rather than requirement probability.",
+      "evidence_ids": [
+        "R-004"
+      ],
+      "inspection_status": "requires_inspection",
+      "required_next_proof": "Create immutable sample snapshot, field dictionary, licence record, latency test and entity-match sample."
+    },
+    {
+      "source_id": "brampton_building_permits",
+      "name": "Brampton Building Permits FeatureServer",
+      "owner": "City of Brampton",
+      "jurisdiction": "Brampton",
+      "access_mode": "public_arcgis_feature_service",
+      "entity_grain": "permit_address",
+      "history_or_vintage": "live current service; archive must be created",
+      "refresh_cadence": "live",
+      "licence_or_terms": "City open-data terms",
+      "mechanisms": [
+        "expansion",
+        "fit_out",
+        "use_change"
+      ],
+      "admissibility": "prospective_predictor",
+      "information_value_score": 5,
+      "limitations": "Live service may overwrite state; immutable snapshots are mandatory.",
+      "evidence_ids": [
+        "R-003"
+      ],
+      "inspection_status": "inspected",
+      "required_next_proof": "Create immutable sample snapshot and measure source latency, coverage and entity-match precision."
+    },
+    {
+      "source_id": "brampton_permit_activity",
+      "name": "Brampton Permit Activity Table",
+      "owner": "City of Brampton",
+      "jurisdiction": "Brampton",
+      "access_mode": "public_arcgis_table",
+      "entity_grain": "permit_activity",
+      "history_or_vintage": "live sequence; archive must be created",
+      "refresh_cadence": "live",
+      "licence_or_terms": "City terms",
+      "mechanisms": [
+        "expansion_timing",
+        "process_velocity"
+      ],
+      "admissibility": "prospective_predictor",
+      "information_value_score": 5,
+      "limitations": "Administrative activity can be noisy and must be retimed against public availability.",
+      "evidence_ids": [
+        "R-003"
+      ],
+      "inspection_status": "inspected",
+      "required_next_proof": "Create immutable sample snapshot and measure source latency, coverage and entity-match precision."
+    },
+    {
+      "source_id": "brampton_upcoming_inspections",
+      "name": "Brampton Upcoming Inspections",
+      "owner": "City of Brampton",
+      "jurisdiction": "Brampton",
+      "access_mode": "public_arcgis_table",
+      "entity_grain": "inspection_permit",
+      "history_or_vintage": "near-term only",
+      "refresh_cadence": "live",
+      "licence_or_terms": "City terms",
+      "mechanisms": [
+        "completion"
+      ],
+      "admissibility": "label_only",
+      "information_value_score": 2,
+      "limitations": "Usually too late for brokerage capture; inspector details excluded.",
+      "evidence_ids": [
+        "R-003"
+      ],
+      "inspection_status": "inspected",
+      "required_next_proof": "Create immutable sample snapshot and measure source latency, coverage and entity-match precision."
+    },
+    {
+      "source_id": "brampton_development_apps",
+      "name": "Brampton Development Applications Map",
+      "owner": "City of Brampton",
+      "jurisdiction": "Brampton",
+      "access_mode": "public_map",
+      "entity_grain": "planning_application_property",
+      "history_or_vintage": "current and historical map",
+      "refresh_cadence": "ongoing",
+      "licence_or_terms": "City terms",
+      "mechanisms": [
+        "redevelopment",
+        "displacement",
+        "new_supply"
+      ],
+      "admissibility": "context_and_event",
+      "information_value_score": 4,
+      "limitations": "Owner/applicant/occupier relationship required.",
+      "evidence_ids": [
+        "R-003"
+      ],
+      "inspection_status": "inspected",
+      "required_next_proof": "Create immutable sample snapshot and measure source latency, coverage and entity-match precision."
+    },
+    {
+      "source_id": "brampton_business_licences",
+      "name": "Brampton Stationary Business Licences",
+      "owner": "City of Brampton",
+      "jurisdiction": "Brampton",
+      "access_mode": "public_lookup_or_request",
+      "entity_grain": "licensed_business_location",
+      "history_or_vintage": "history uncertain",
+      "refresh_cadence": "ongoing",
+      "licence_or_terms": "City terms",
+      "mechanisms": [
+        "formation",
+        "relocation",
+        "closure"
+      ],
+      "admissibility": "entity_and_event",
+      "information_value_score": 3,
+      "limitations": "Only selected regulated categories and bulk access unverified.",
+      "evidence_ids": [
+        "R-003"
+      ],
+      "inspection_status": "requires_inspection",
+      "required_next_proof": "Create immutable sample snapshot, field dictionary, licence record, latency test and entity-match sample."
+    },
+    {
+      "source_id": "brampton_geohub_property",
+      "name": "Brampton GeoHub Property and Basic Permit Data",
+      "owner": "City of Brampton",
+      "jurisdiction": "Brampton",
+      "access_mode": "public_map",
+      "entity_grain": "property_address",
+      "history_or_vintage": "current",
+      "refresh_cadence": "ongoing",
+      "licence_or_terms": "City terms",
+      "mechanisms": [
+        "entity_resolution",
+        "permit_context"
+      ],
+      "admissibility": "entity_and_context",
+      "information_value_score": 4,
+      "limitations": "Basic record is not full building or compliance history.",
+      "evidence_ids": [
+        "R-003"
+      ],
+      "inspection_status": "inspected",
+      "required_next_proof": "Create immutable sample snapshot and measure source latency, coverage and entity-match precision."
+    },
+    {
+      "source_id": "brampton_zoning",
+      "name": "Brampton Zoning and Parcel Layers",
+      "owner": "City of Brampton",
+      "jurisdiction": "Brampton",
+      "access_mode": "public_map_api",
+      "entity_grain": "parcel_property",
+      "history_or_vintage": "current; historical uncertain",
+      "refresh_cadence": "ongoing",
+      "licence_or_terms": "City terms",
+      "mechanisms": [
+        "eligibility",
+        "use_friction"
+      ],
+      "admissibility": "constraint",
+      "information_value_score": 4,
+      "limitations": "Historical zoning and parcel lineage require capture.",
+      "evidence_ids": [
+        "R-003"
+      ],
+      "inspection_status": "inspected",
+      "required_next_proof": "Create immutable sample snapshot and measure source latency, coverage and entity-match precision."
+    },
+    {
+      "source_id": "brampton_road_events",
+      "name": "Brampton Road Closures and Construction",
+      "owner": "City of Brampton",
+      "jurisdiction": "Brampton",
+      "access_mode": "open_data_or_map",
+      "entity_grain": "road_event",
+      "history_or_vintage": "current and planned",
+      "refresh_cadence": "frequent",
+      "licence_or_terms": "City terms",
+      "mechanisms": [
+        "routing",
+        "access_feasibility"
+      ],
+      "admissibility": "operational_only",
+      "information_value_score": 3,
+      "limitations": "Not direct requirement alpha.",
+      "evidence_ids": [
+        "R-003"
+      ],
+      "inspection_status": "requires_inspection",
+      "required_next_proof": "Create immutable sample snapshot, field dictionary, licence record, latency test and entity-match sample."
+    },
+    {
+      "source_id": "hamilton_building_permits",
+      "name": "Hamilton Building Permits and Inspections",
+      "owner": "City of Hamilton",
+      "jurisdiction": "Hamilton",
+      "access_mode": "public_portal",
+      "entity_grain": "permit_property",
+      "history_or_vintage": "bulk history unclear",
+      "refresh_cadence": "ongoing",
+      "licence_or_terms": "City terms",
+      "mechanisms": [
+        "expansion",
+        "fit_out",
+        "use_change"
+      ],
+      "admissibility": "requires_acquisition_proof",
+      "information_value_score": 3,
+      "limitations": "New portal may require an account and public export is unverified.",
+      "evidence_ids": [
+        "R-001"
+      ],
+      "inspection_status": "requires_inspection",
+      "required_next_proof": "Create immutable sample snapshot, field dictionary, licence record, latency test and entity-match sample."
+    },
+    {
+      "source_id": "hamilton_development_apps",
+      "name": "Hamilton Planning and Development Applications",
+      "owner": "City of Hamilton",
+      "jurisdiction": "Hamilton",
+      "access_mode": "public_portal_or_map",
+      "entity_grain": "planning_application_property",
+      "history_or_vintage": "bulk history unclear",
+      "refresh_cadence": "ongoing",
+      "licence_or_terms": "City terms",
+      "mechanisms": [
+        "redevelopment",
+        "displacement",
+        "new_supply"
+      ],
+      "admissibility": "requires_acquisition_proof",
+      "information_value_score": 3,
+      "limitations": "Export fields and archive semantics need proof.",
+      "evidence_ids": [
+        "R-001"
+      ],
+      "inspection_status": "requires_inspection",
+      "required_next_proof": "Create immutable sample snapshot, field dictionary, licence record, latency test and entity-match sample."
+    },
+    {
+      "source_id": "hamilton_business_licences",
+      "name": "Hamilton Business Licences",
+      "owner": "City of Hamilton",
+      "jurisdiction": "Hamilton",
+      "access_mode": "public_portal_or_lookup",
+      "entity_grain": "licensed_business_location",
+      "history_or_vintage": "history unclear",
+      "refresh_cadence": "ongoing",
+      "licence_or_terms": "City terms",
+      "mechanisms": [
+        "formation",
+        "relocation",
+        "closure"
+      ],
+      "admissibility": "requires_acquisition_proof",
+      "information_value_score": 2,
+      "limitations": "Bulk access and category coverage unverified.",
+      "evidence_ids": [
+        "R-001"
+      ],
+      "inspection_status": "requires_inspection",
+      "required_next_proof": "Create immutable sample snapshot, field dictionary, licence record, latency test and entity-match sample."
+    },
+    {
+      "source_id": "hamilton_open_data_catalog",
+      "name": "Hamilton Open Data Catalogue",
+      "owner": "City of Hamilton",
+      "jurisdiction": "Hamilton",
+      "access_mode": "open_data_catalog",
+      "entity_grain": "mixed",
+      "history_or_vintage": "dataset-specific",
+      "refresh_cadence": "dataset-specific",
+      "licence_or_terms": "Municipal open-data terms",
+      "mechanisms": [
+        "candidate_universe",
+        "routing",
+        "context"
+      ],
+      "admissibility": "discovery_only",
+      "information_value_score": 2,
+      "limitations": "No candidate-level assumption until individual datasets are inspected.",
+      "evidence_ids": [
+        "R-001"
+      ],
+      "inspection_status": "requires_inspection",
+      "required_next_proof": "Create immutable sample snapshot, field dictionary, licence record, latency test and entity-match sample."
+    },
+    {
+      "source_id": "federal_corporations",
+      "name": "Federal Corporations Active and Inactive",
+      "owner": "Corporations Canada",
+      "jurisdiction": "Canada",
+      "access_mode": "csv_and_api",
+      "entity_grain": "legal_entity",
+      "history_or_vintage": "current resources; repeated snapshots possible",
+      "refresh_cadence": "periodic",
+      "licence_or_terms": "Open Government Licence - Canada",
+      "mechanisms": [
+        "formation",
+        "dissolution",
+        "alias_resolution"
+      ],
+      "admissibility": "entity_and_event",
+      "information_value_score": 4,
+      "limitations": "Registered office is not necessarily operating establishment.",
+      "evidence_ids": [
+        "R-011"
+      ],
+      "inspection_status": "inspected",
+      "required_next_proof": "Create immutable sample snapshot and measure source latency, coverage and entity-match precision."
+    },
+    {
+      "source_id": "ontario_business_registry",
+      "name": "Ontario Business Registry",
+      "owner": "Government of Ontario",
+      "jurisdiction": "Ontario",
+      "access_mode": "free_basic_search_and_paid_record_products",
+      "entity_grain": "legal_entity",
+      "history_or_vintage": "current filings by search",
+      "refresh_cadence": "event_driven",
+      "licence_or_terms": "Service terms",
+      "mechanisms": [
+        "formation",
+        "status",
+        "alias_resolution"
+      ],
+      "admissibility": "targeted_entity_verification",
+      "information_value_score": 3,
+      "limitations": "No open bulk feed verified; registered office is not proof of physical occupancy.",
+      "evidence_ids": [
+        "R-031"
+      ],
+      "inspection_status": "inspected",
+      "required_next_proof": "Test a small targeted entity-verification sample and document per-record cost and permitted retention."
+    },
+    {
+      "source_id": "statcan_business_counts",
+      "name": "Canadian Business Counts",
+      "owner": "Statistics Canada",
+      "jurisdiction": "Canada",
+      "access_mode": "download",
+      "entity_grain": "aggregate_establishment_counts",
+      "history_or_vintage": "semiannual aggregate releases; not a clean population-change time series",
+      "refresh_cadence": "semiannual",
+      "licence_or_terms": "Statistics Canada Open Licence",
+      "mechanisms": [
+        "universe_coverage",
+        "sector_baseline"
+      ],
+      "admissibility": "aggregate_baseline",
+      "information_value_score": 4,
+      "limitations": "Aggregate only; methodological changes can affect period-to-period counts and employment-size ranges cannot be summed as employee totals.",
+      "evidence_ids": [
+        "R-030"
+      ],
+      "inspection_status": "inspected",
+      "required_next_proof": "Use as denominator/context with release-methodology flags, never as establishment-level labels."
+    },
+    {
+      "source_id": "statcan_odbus",
+      "name": "Open Database of Businesses",
+      "owner": "Statistics Canada",
+      "jurisdiction": "Canada",
+      "access_mode": "download",
+      "entity_grain": "business_location",
+      "history_or_vintage": "version 1.0 primarily collected May-December 2022",
+      "refresh_cadence": "periodic",
+      "licence_or_terms": "Statistics Canada Open Licence",
+      "mechanisms": [
+        "candidate_universe",
+        "entity_resolution"
+      ],
+      "admissibility": "entity_seed_and_coverage_audit",
+      "information_value_score": 3,
+      "limitations": "Incomplete selection of open-source businesses; stale for current universe use and separate from the Business Register.",
+      "evidence_ids": [
+        "R-028"
+      ],
+      "inspection_status": "inspected",
+      "required_next_proof": "Measure municipal/sector coverage, staleness and address accuracy against approved current sources."
+    },
+    {
+      "source_id": "positive_lmia",
+      "name": "Positive LMIA Employers",
+      "owner": "ESDC",
+      "jurisdiction": "Canada",
+      "access_mode": "download_csv_xlsx",
+      "entity_grain": "employer_business_location",
+      "history_or_vintage": "2014-present",
+      "refresh_cadence": "quarterly",
+      "licence_or_terms": "Open Government Licence - Canada",
+      "mechanisms": [
+        "labour_pressure",
+        "expansion",
+        "specialized_staffing"
+      ],
+      "admissibility": "prospective_predictor",
+      "information_value_score": 4,
+      "limitations": "Incomplete; approved positions may be cancelled and do not prove workers arrived.",
+      "evidence_ids": [
+        "R-006"
+      ],
+      "inspection_status": "inspected",
+      "required_next_proof": "Create immutable sample snapshot and measure source latency, coverage and entity-match precision."
+    },
+    {
+      "source_id": "job_bank_postings",
+      "name": "Job Bank Job Postings and Feed",
+      "owner": "ESDC",
+      "jurisdiction": "Canada",
+      "access_mode": "monthly_open_data_csv",
+      "entity_grain": "posting_employer_location",
+      "history_or_vintage": "monthly files with first-posting date and location fields",
+      "refresh_cadence": "monthly",
+      "licence_or_terms": "Government of Canada terms",
+      "mechanisms": [
+        "labour_pressure",
+        "expansion",
+        "relocation"
+      ],
+      "admissibility": "prospective_predictor",
+      "information_value_score": 4,
+      "limitations": "Employer suppression, staffing agencies, duplicates and remote roles need controls.",
+      "evidence_ids": [
+        "R-029"
+      ],
+      "inspection_status": "inspected",
+      "required_next_proof": "Download two immutable monthly files and measure employer match, duplicate, agency, remote and multi-location error."
+    },
+    {
+      "source_id": "canadian_importers",
+      "name": "Canadian Importers Database",
+      "owner": "ISED",
+      "jurisdiction": "Canada",
+      "access_mode": "interactive_database",
+      "entity_grain": "importer_city_postal",
+      "history_or_vintage": "annual snapshot based on 2023 customs data",
+      "refresh_cadence": "annual_or_irregular",
+      "licence_or_terms": "Government of Canada terms",
+      "mechanisms": [
+        "trade_growth",
+        "warehouse_need",
+        "supply_chain"
+      ],
+      "admissibility": "context_and_candidate",
+      "information_value_score": 3,
+      "limitations": "Major importers only; brokers mixed with clients; no volume time series.",
+      "evidence_ids": [
+        "R-007"
+      ],
+      "inspection_status": "inspected",
+      "required_next_proof": "Create immutable sample snapshot and measure source latency, coverage and entity-match precision."
+    },
+    {
+      "source_id": "canadabuys_contracts",
+      "name": "CanadaBuys Federal Contract History",
+      "owner": "PSPC",
+      "jurisdiction": "Canada",
+      "access_mode": "download_csv_ocds",
+      "entity_grain": "supplier_contract",
+      "history_or_vintage": "2009-present",
+      "refresh_cadence": "periodic",
+      "licence_or_terms": "Open Government Licence - Canada",
+      "mechanisms": [
+        "procurement_growth",
+        "supplier_pressure"
+      ],
+      "admissibility": "prospective_or_context",
+      "information_value_score": 4,
+      "limitations": "Award may not require local facility growth and supplier address may be head office.",
+      "evidence_ids": [
+        "R-008"
+      ],
+      "inspection_status": "inspected",
+      "required_next_proof": "Create immutable sample snapshot and measure source latency, coverage and entity-match precision."
+    },
+    {
+      "source_id": "federal_grants",
+      "name": "Federal Grants and Contributions",
+      "owner": "Government of Canada",
+      "jurisdiction": "Canada",
+      "access_mode": "search_and_download",
+      "entity_grain": "recipient_agreement",
+      "history_or_vintage": "multi-year proactive disclosure",
+      "refresh_cadence": "quarterly_or_frequent",
+      "licence_or_terms": "Open Government Licence - Canada",
+      "mechanisms": [
+        "capital_investment",
+        "expansion",
+        "equipment"
+      ],
+      "admissibility": "prospective_predictor",
+      "information_value_score": 4,
+      "limitations": "Descriptions vary and recipient location may be head office.",
+      "evidence_ids": [
+        "R-009"
+      ],
+      "inspection_status": "inspected",
+      "required_next_proof": "Create immutable sample snapshot and measure source latency, coverage and entity-match precision."
+    },
+    {
+      "source_id": "osb_insolvency",
+      "name": "OSB Insolvency Records and Statistics",
+      "owner": "Office of the Superintendent of Bankruptcy",
+      "jurisdiction": "Canada",
+      "access_mode": "search_or_paid_records",
+      "entity_grain": "legal_entity_case",
+      "history_or_vintage": "historical",
+      "refresh_cadence": "ongoing",
+      "licence_or_terms": "Service terms",
+      "mechanisms": [
+        "distress",
+        "closure",
+        "restructuring"
+      ],
+      "admissibility": "competing_risk",
+      "information_value_score": 4,
+      "limitations": "Not a generic positive lead; timing and establishment links matter.",
+      "evidence_ids": [
+        "R-016"
+      ],
+      "inspection_status": "requires_inspection",
+      "required_next_proof": "Create immutable sample snapshot, field dictionary, licence record, latency test and entity-match sample."
+    },
+    {
+      "source_id": "ccaa_records",
+      "name": "CCAA Records",
+      "owner": "Office of the Superintendent of Bankruptcy",
+      "jurisdiction": "Canada",
+      "access_mode": "public_case_records",
+      "entity_grain": "legal_entity_case",
+      "history_or_vintage": "historical",
+      "refresh_cadence": "ongoing",
+      "licence_or_terms": "Public-access terms",
+      "mechanisms": [
+        "restructuring",
+        "disposition",
+        "consolidation"
+      ],
+      "admissibility": "specialized_competing_risk",
+      "information_value_score": 3,
+      "limitations": "Mostly larger firms and late-stage distress.",
+      "evidence_ids": [
+        "R-016"
+      ],
+      "inspection_status": "requires_inspection",
+      "required_next_proof": "Create immutable sample snapshot, field dictionary, licence record, latency test and entity-match sample."
+    },
+    {
+      "source_id": "ontario_eca_easr",
+      "name": "Ontario ECA and EASR Permissions",
+      "owner": "Government of Ontario",
+      "jurisdiction": "Ontario",
+      "access_mode": "open_data_and_map",
+      "entity_grain": "regulated_facility",
+      "history_or_vintage": "current approvals and registrations; activity history",
+      "refresh_cadence": "ongoing",
+      "licence_or_terms": "Open Government Licence - Ontario",
+      "mechanisms": [
+        "capacity_change",
+        "new_site",
+        "operational_friction"
+      ],
+      "admissibility": "prospective_predictor",
+      "information_value_score": 5,
+      "limitations": "Approval may precede or follow commitment; amendment types need classification.",
+      "evidence_ids": [
+        "R-010"
+      ],
+      "inspection_status": "inspected",
+      "required_next_proof": "Create immutable sample snapshot and measure source latency, coverage and entity-match precision."
+    },
+    {
+      "source_id": "environmental_registry",
+      "name": "Environmental Registry of Ontario Notices",
+      "owner": "Government of Ontario",
+      "jurisdiction": "Ontario",
+      "access_mode": "public_search_feed",
+      "entity_grain": "proposal_decision_site",
+      "history_or_vintage": "historical notices",
+      "refresh_cadence": "ongoing",
+      "licence_or_terms": "Public-access terms",
+      "mechanisms": [
+        "regulated_capacity",
+        "land_use",
+        "infrastructure"
+      ],
+      "admissibility": "context_and_event",
+      "information_value_score": 3,
+      "limitations": "Many notices are policy-level or not business-specific.",
+      "evidence_ids": [
+        "R-010"
+      ],
+      "inspection_status": "inspected",
+      "required_next_proof": "Create immutable sample snapshot and measure source latency, coverage and entity-match precision."
+    },
+    {
+      "source_id": "natural_health_site_licences",
+      "name": "Natural Health Product Site Licence Holders",
+      "owner": "Health Canada",
+      "jurisdiction": "Canada",
+      "access_mode": "daily_search_csv",
+      "entity_grain": "regulated_site",
+      "history_or_vintage": "current; repeated snapshots possible",
+      "refresh_cadence": "daily",
+      "licence_or_terms": "Government of Canada terms",
+      "mechanisms": [
+        "new_site",
+        "capacity_change",
+        "closure"
+      ],
+      "admissibility": "entity_and_event",
+      "information_value_score": 5,
+      "limitations": "Regulatory status is not by itself a CRE event.",
+      "evidence_ids": [
+        "R-013"
+      ],
+      "inspection_status": "inspected",
+      "required_next_proof": "Create immutable sample snapshot and measure source latency, coverage and entity-match precision."
+    },
+    {
+      "source_id": "medical_device_establishments",
+      "name": "Medical Device Establishment Licence Listing",
+      "owner": "Health Canada",
+      "jurisdiction": "Canada",
+      "access_mode": "public_search",
+      "entity_grain": "licensed_establishment",
+      "history_or_vintage": "current; snapshots required",
+      "refresh_cadence": "ongoing",
+      "licence_or_terms": "Government of Canada terms",
+      "mechanisms": [
+        "new_site",
+        "relocation",
+        "capacity_change"
+      ],
+      "admissibility": "entity_and_event",
+      "information_value_score": 5,
+      "limitations": "Main address and operating site semantics require record-level checks.",
+      "evidence_ids": [
+        "R-012"
+      ],
+      "inspection_status": "inspected",
+      "required_next_proof": "Create immutable sample snapshot and measure source latency, coverage and entity-match precision."
+    },
+    {
+      "source_id": "drug_establishment_licences",
+      "name": "Drug Establishment Licences",
+      "owner": "Health Canada",
+      "jurisdiction": "Canada",
+      "access_mode": "public_database_or_documents",
+      "entity_grain": "licensed_building",
+      "history_or_vintage": "current plus inspection history",
+      "refresh_cadence": "ongoing",
+      "licence_or_terms": "Government of Canada terms",
+      "mechanisms": [
+        "new_site",
+        "capacity_change",
+        "relocation"
+      ],
+      "admissibility": "entity_and_event",
+      "information_value_score": 5,
+      "limitations": "Building-level data exist but bulk acquisition needs proof.",
+      "evidence_ids": [
+        "R-012"
+      ],
+      "inspection_status": "requires_inspection",
+      "required_next_proof": "Create immutable sample snapshot, field dictionary, licence record, latency test and entity-match sample."
+    },
+    {
+      "source_id": "cfia_food_registry",
+      "name": "CFIA Food Licence and Export Establishment Lists",
+      "owner": "CFIA",
+      "jurisdiction": "Canada",
+      "access_mode": "public_registry_and_lists",
+      "entity_grain": "food_establishment",
+      "history_or_vintage": "current and list changes",
+      "refresh_cadence": "ongoing",
+      "licence_or_terms": "Government of Canada terms",
+      "mechanisms": [
+        "new_site",
+        "export_growth",
+        "capacity_change",
+        "closure"
+      ],
+      "admissibility": "entity_and_event",
+      "information_value_score": 5,
+      "limitations": "One licence may cover multiple sites and lists have different semantics.",
+      "evidence_ids": [
+        "R-014"
+      ],
+      "inspection_status": "inspected",
+      "required_next_proof": "Create immutable sample snapshot and measure source latency, coverage and entity-match precision."
+    },
+    {
+      "source_id": "cannabis_licence_holders",
+      "name": "Cannabis Licence Holders",
+      "owner": "Health Canada",
+      "jurisdiction": "Canada",
+      "access_mode": "public_registry",
+      "entity_grain": "licensed_site_or_holder",
+      "history_or_vintage": "current plus initial licence date",
+      "refresh_cadence": "ongoing",
+      "licence_or_terms": "Government of Canada terms",
+      "mechanisms": [
+        "new_site",
+        "capacity_change",
+        "closure"
+      ],
+      "admissibility": "specialized_event",
+      "information_value_score": 4,
+      "limitations": "Holder table may not expose all site-level amendments.",
+      "evidence_ids": [
+        "R-015"
+      ],
+      "inspection_status": "inspected",
+      "required_next_proof": "Create immutable sample snapshot and measure source latency, coverage and entity-match precision."
+    },
+    {
+      "source_id": "cipo_trademarks",
+      "name": "CIPO Trademark Bulk Data",
+      "owner": "ISED / CIPO",
+      "jurisdiction": "Canada",
+      "access_mode": "bulk_zip",
+      "entity_grain": "legal_entity_ip_application",
+      "history_or_vintage": "historical applications",
+      "refresh_cadence": "periodic",
+      "licence_or_terms": "Government of Canada terms",
+      "mechanisms": [
+        "brand_launch",
+        "market_entry"
+      ],
+      "admissibility": "experimental_context",
+      "information_value_score": 2,
+      "limitations": "Weak connection to physical space and often filed by counsel.",
+      "evidence_ids": [
+        "R-011"
+      ],
+      "inspection_status": "inspected",
+      "required_next_proof": "Create immutable sample snapshot and measure source latency, coverage and entity-match precision."
+    },
+    {
+      "source_id": "ontario_tenders",
+      "name": "Ontario Tenders Portal Awards",
+      "owner": "Government of Ontario",
+      "jurisdiction": "Ontario",
+      "access_mode": "public_search",
+      "entity_grain": "supplier_award",
+      "history_or_vintage": "portal history",
+      "refresh_cadence": "ongoing",
+      "licence_or_terms": "Portal terms",
+      "mechanisms": [
+        "procurement_growth",
+        "supplier_pressure"
+      ],
+      "admissibility": "requires_acquisition_proof",
+      "information_value_score": 3,
+      "limitations": "Bulk export and facility-location fields unverified.",
+      "evidence_ids": [
+        "R-008"
+      ],
+      "inspection_status": "requires_inspection",
+      "required_next_proof": "Create immutable sample snapshot, field dictionary, licence record, latency test and entity-match sample."
+    },
+    {
+      "source_id": "municipal_procurement_awards",
+      "name": "Municipal Procurement Awards",
+      "owner": "Municipalities",
+      "jurisdiction": "GTA",
+      "access_mode": "public_portals",
+      "entity_grain": "supplier_award",
+      "history_or_vintage": "municipality-specific",
+      "refresh_cadence": "ongoing",
+      "licence_or_terms": "Municipal terms",
+      "mechanisms": [
+        "procurement_growth",
+        "supplier_pressure"
+      ],
+      "admissibility": "experimental_context",
+      "information_value_score": 2,
+      "limitations": "Fragmented and often missing local delivery or supplier-facility links.",
+      "evidence_ids": [
+        "R-008"
+      ],
+      "inspection_status": "requires_inspection",
+      "required_next_proof": "Create immutable sample snapshot, field dictionary, licence record, latency test and entity-match sample."
+    },
+    {
+      "source_id": "agco_licences",
+      "name": "AGCO Licence Notices and Lookups",
+      "owner": "AGCO",
+      "jurisdiction": "Ontario",
+      "access_mode": "public_search_and_notices",
+      "entity_grain": "licensed_business_location",
+      "history_or_vintage": "current and notices",
+      "refresh_cadence": "ongoing",
+      "licence_or_terms": "Public-access terms",
+      "mechanisms": [
+        "formation",
+        "relocation",
+        "closure"
+      ],
+      "admissibility": "specialized_event",
+      "information_value_score": 3,
+      "limitations": "Only licensed sectors and bulk history unverified.",
+      "evidence_ids": [
+        "R-004"
+      ],
+      "inspection_status": "requires_inspection",
+      "required_next_proof": "Create immutable sample snapshot, field dictionary, licence record, latency test and entity-match sample."
+    },
+    {
+      "source_id": "peel_food_inspections",
+      "name": "Peel Food Premises Inspections",
+      "owner": "Region of Peel",
+      "jurisdiction": "Peel",
+      "access_mode": "public_search_or_open_data",
+      "entity_grain": "food_business_location",
+      "history_or_vintage": "history varies",
+      "refresh_cadence": "frequent",
+      "licence_or_terms": "Regional terms",
+      "mechanisms": [
+        "formation",
+        "closure",
+        "operational_friction"
+      ],
+      "admissibility": "entity_and_event",
+      "information_value_score": 3,
+      "limitations": "Inspection state may be too late for requirement prediction.",
+      "evidence_ids": [
+        "R-004"
+      ],
+      "inspection_status": "requires_inspection",
+      "required_next_proof": "Create immutable sample snapshot, field dictionary, licence record, latency test and entity-match sample."
+    },
+    {
+      "source_id": "health_canada_inspections",
+      "name": "Health Canada Drug and Device Inspection Records",
+      "owner": "Health Canada",
+      "jurisdiction": "Canada",
+      "access_mode": "public_search",
+      "entity_grain": "regulated_site_inspection",
+      "history_or_vintage": "historical",
+      "refresh_cadence": "ongoing",
+      "licence_or_terms": "Government of Canada terms",
+      "mechanisms": [
+        "operational_friction",
+        "capacity_change"
+      ],
+      "admissibility": "context_and_competing_risk",
+      "information_value_score": 3,
+      "limitations": "Inspection outcome may be late and sensitive.",
+      "evidence_ids": [
+        "R-012"
+      ],
+      "inspection_status": "inspected",
+      "required_next_proof": "Create immutable sample snapshot and measure source latency, coverage and entity-match precision."
+    },
+    {
+      "source_id": "cfia_enforcement",
+      "name": "CFIA Suspensions and Cancellations",
+      "owner": "CFIA",
+      "jurisdiction": "Canada",
+      "access_mode": "public_notices",
+      "entity_grain": "licensed_business",
+      "history_or_vintage": "historical notices",
+      "refresh_cadence": "ongoing",
+      "licence_or_terms": "Government of Canada terms",
+      "mechanisms": [
+        "closure",
+        "distress",
+        "relocation"
+      ],
+      "admissibility": "competing_risk",
+      "information_value_score": 3,
+      "limitations": "Enforcement is late-stage and not a generic opportunity.",
+      "evidence_ids": [
+        "R-014"
+      ],
+      "inspection_status": "inspected",
+      "required_next_proof": "Create immutable sample snapshot and measure source latency, coverage and entity-match precision."
+    },
+    {
+      "source_id": "commercial_market_reports",
+      "name": "Brokerage Industrial Market Reports",
+      "owner": "CBRE/Colliers/JLL and peers",
+      "jurisdiction": "GTA",
+      "access_mode": "public_reports",
+      "entity_grain": "submarket_quarter",
+      "history_or_vintage": "quarterly",
+      "refresh_cadence": "quarterly",
+      "licence_or_terms": "Publisher terms",
+      "mechanisms": [
+        "market_regime",
+        "rent_pressure"
+      ],
+      "admissibility": "context_only",
+      "information_value_score": 3,
+      "limitations": "Definitions differ; availability and vacancy are not interchangeable.",
+      "evidence_ids": [
+        "R-025",
+        "R-026"
+      ],
+      "inspection_status": "inspected",
+      "required_next_proof": "Create immutable sample snapshot and measure source latency, coverage and entity-match precision."
+    },
+    {
+      "source_id": "onland",
+      "name": "OnLand Land Registry",
+      "owner": "Teranet / Ontario",
+      "jurisdiction": "Ontario",
+      "access_mode": "record_by_record_paid_search",
+      "entity_grain": "parcel_instrument",
+      "history_or_vintage": "historical instruments",
+      "refresh_cadence": "event_driven",
+      "licence_or_terms": "Paid terms",
+      "mechanisms": [
+        "ownership_change",
+        "mortgage",
+        "disposition"
+      ],
+      "admissibility": "manual_specialized_due_diligence",
+      "information_value_score": 2,
+      "limitations": "Standard terms restrict merging content with another system; automated feature-store integration is not authorized without a separate licence.",
+      "evidence_ids": [
+        "R-032"
+      ],
+      "inspection_status": "inspected_restricted",
+      "required_next_proof": "Obtain written licence terms permitting the intended integration or keep outside automated acquisition and ranking."
+    },
+    {
+      "source_id": "mpac",
+      "name": "MPAC Property Data",
+      "owner": "MPAC",
+      "jurisdiction": "Ontario",
+      "access_mode": "licensed_paid",
+      "entity_grain": "property_assessment",
+      "history_or_vintage": "assessment cycle and licensed extracts",
+      "refresh_cadence": "periodic",
+      "licence_or_terms": "Licensed terms",
+      "mechanisms": [
+        "property_characteristics",
+        "ownership_context"
+      ],
+      "admissibility": "paid_specialized",
+      "information_value_score": 5,
+      "limitations": "Not open; permitted uses and redistribution require contract.",
+      "evidence_ids": [
+        "R-016"
+      ],
+      "inspection_status": "requires_inspection",
+      "required_next_proof": "Create immutable sample snapshot, field dictionary, licence record, latency test and entity-match sample."
+    },
+    {
+      "source_id": "commercial_listings",
+      "name": "Commercial Listings and Availability Feeds",
+      "owner": "Listing and brokerage providers",
+      "jurisdiction": "GTA",
+      "access_mode": "licensed_or_public_search",
+      "entity_grain": "property_listing",
+      "history_or_vintage": "current; history often licensed",
+      "refresh_cadence": "frequent",
+      "licence_or_terms": "Provider-specific terms",
+      "mechanisms": [
+        "supply",
+        "relocation",
+        "renewal"
+      ],
+      "admissibility": "context_and_outcome",
+      "information_value_score": 4,
+      "limitations": "Listings may be stale, duplicated or strategically incomplete.",
+      "evidence_ids": [
+        "R-025"
+      ],
+      "inspection_status": "requires_inspection",
+      "required_next_proof": "Create immutable sample snapshot, field dictionary, licence record, latency test and entity-match sample."
+    }
+  ]
+}

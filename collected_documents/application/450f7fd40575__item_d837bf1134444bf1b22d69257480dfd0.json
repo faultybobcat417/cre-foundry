@@ -1,0 +1,73 @@
+{
+  "access": "public",
+  "accessInformation": "City of Brampton",
+  "advancedSettings": null,
+  "apiToken1ExpirationDate": -1,
+  "apiToken2ExpirationDate": -1,
+  "appCategories": [],
+  "avgRating": 0,
+  "banner": null,
+  "categories": [],
+  "classification": null,
+  "commentsEnabled": true,
+  "created": 1477078715000,
+  "culture": "en-us",
+  "description": "City of Brampton municipal boundary",
+  "documentation": null,
+  "extent": [
+    [
+      -79.87,
+      43.61
+    ],
+    [
+      -79.63,
+      43.84
+    ]
+  ],
+  "groupDesignations": null,
+  "guid": null,
+  "id": "d837bf1134444bf1b22d69257480dfd0",
+  "industries": [],
+  "languages": [],
+  "largeThumbnail": null,
+  "lastViewed": 1785034800000,
+  "licenseInfo": "CC BY",
+  "listed": false,
+  "modified": 1590616112000,
+  "name": null,
+  "numComments": 0,
+  "numRatings": 0,
+  "numViews": 3625122,
+  "orgId": "rl7ACuZkiFsmDA2g",
+  "owner": "BramptonMaps",
+  "ownerId": "fcfa4d9609ee9742e0316e35c17ad8d6",
+  "properties": null,
+  "proxyFilter": null,
+  "scoreCompleteness": 80,
+  "screenshots": [],
+  "size": 68,
+  "snippet": "City of Brampton municipal boundary",
+  "spatialReference": null,
+  "subInfo": 0,
+  "tags": [
+    "city",
+    "limit",
+    "municipal",
+    "boundary",
+    "Local Government",
+    "Brampton",
+    "Topography and Borders",
+    "city limit"
+  ],
+  "thumbnail": "thumbnail/data-city-limit-thumb.jpg",
+  "title": "City Limit",
+  "type": "Feature Service",
+  "typeKeywords": [
+    "ArcGIS Server",
+    "Data",
+    "Feature Access",
+    "Feature Service",
+    "Service"
+  ],
+  "url": "https://maps1.brampton.ca/arcgis/rest/services/COB/Common/MapServer/2"
+}

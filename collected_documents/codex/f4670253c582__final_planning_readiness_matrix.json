@@ -1,0 +1,127 @@
+{
+  "matrix_version": "cre-final-planning-readiness-v1",
+  "as_of": "2026-08-01",
+  "domains": [
+    {
+      "domain": "mission_and_success_definition",
+      "status": "planning_verified",
+      "authority": "contracts/mission_capsule.json",
+      "remaining_proof": "firm confirmation of final commercial priority"
+    },
+    {
+      "domain": "firm_economics_and_protected_accounts",
+      "status": "blocked_user_input",
+      "authority": "contracts/phase_zero_acceptance.json",
+      "remaining_proof": "signed economics, services, territories and exclusion bundle"
+    },
+    {
+      "domain": "pilot_market_and_segment",
+      "status": "provisional",
+      "authority": "contracts/pilot_segment_decision.json",
+      "remaining_proof": "raw universe and event-rate feasibility"
+    },
+    {
+      "domain": "candidate_universe",
+      "status": "designed_not_measured",
+      "authority": "contracts/source_intelligence_registry.json",
+      "remaining_proof": "immutable sample, coverage and visitability audit"
+    },
+    {
+      "domain": "source_access_and_snapshots",
+      "status": "metadata_and_contracts_verified",
+      "authority": "contracts/source_access_proof_registry.json",
+      "remaining_proof": "PZ-025 raw acquisition and reconciliation"
+    },
+    {
+      "domain": "entity_resolution",
+      "status": "planning_verified_not_measured",
+      "authority": "contracts/pilot_cross_source_join_contract.json",
+      "remaining_proof": "precision, recall, conflict recall and protected-account audit"
+    },
+    {
+      "domain": "cre_mechanisms",
+      "status": "planning_verified",
+      "authority": "contracts/mechanism_signal_chain_registry.json",
+      "remaining_proof": "conditional incremental value from real history"
+    },
+    {
+      "domain": "historical_labels",
+      "status": "protocol_ready_not_executed",
+      "authority": "contracts/pilot_historical_sample_protocol.json",
+      "remaining_proof": "500-record dual review and matured outcome history"
+    },
+    {
+      "domain": "prediction_and_baselines",
+      "status": "architecture_ready_no_real_fit",
+      "authority": "docs/phase-zero/BASELINE_AND_EXPERIMENT_PLAN.md",
+      "remaining_proof": "historical point-in-time baseline comparison"
+    },
+    {
+      "domain": "daily_list_composition",
+      "status": "planning_ready",
+      "authority": "contracts/daily_list_composition_policy.json",
+      "remaining_proof": "composition ablation and field comparison"
+    },
+    {
+      "domain": "proximity_and_routing",
+      "status": "planning_ready_not_calibrated",
+      "authority": "contracts/spatial_proximity_policy.json",
+      "remaining_proof": "real route/service times and matrix-provider evaluation"
+    },
+    {
+      "domain": "representative_assignment",
+      "status": "planning_ready_inputs_missing",
+      "authority": "contracts/representative_spatial_assignment_policy.json",
+      "remaining_proof": "representative locations, capacity, specialty and relationship data"
+    },
+    {
+      "domain": "field_execution_and_substitution",
+      "status": "planning_ready_not_observed",
+      "authority": "contracts/backup_substitution_policy.json",
+      "remaining_proof": "access failure, adherence and substitution rates"
+    },
+    {
+      "domain": "causal_experiment",
+      "status": "planning_ready_not_powered",
+      "authority": "contracts/spatial_experiment_interference_policy.json",
+      "remaining_proof": "base rate, variance, interference graph and confirmatory sample"
+    },
+    {
+      "domain": "commercial_value",
+      "status": "objective_ready_outcomes_missing",
+      "authority": "contracts/economic_objective.json",
+      "remaining_proof": "mandate, transaction and commission cohorts"
+    },
+    {
+      "domain": "monitoring_and_decay",
+      "status": "planning_ready_no_live_history",
+      "authority": "contracts/promotion_policy.json",
+      "remaining_proof": "shadow drift, calibration and error-budget history"
+    },
+    {
+      "domain": "production_autonomy",
+      "status": "control_plane_verified_live_disabled",
+      "authority": "contracts/production_autonomy_policy.json",
+      "remaining_proof": "delegation, adapters, credentials and security gates"
+    },
+    {
+      "domain": "security_and_compliance",
+      "status": "architecture_ready_repository_blocked",
+      "authority": "docs/codex/PRODUCTION_LEGAL_EVIDENCE.md",
+      "remaining_proof": "real repository audit and current legal/source approvals"
+    },
+    {
+      "domain": "codex_execution_system",
+      "status": "planning_verified_prompt_provisional",
+      "authority": "contracts/codex_backlog.json",
+      "remaining_proof": "final consolidated blueprint and prompt after empirical planning gates"
+    },
+    {
+      "domain": "evaluator_and_claim_integrity",
+      "status": "package_verified",
+      "authority": "proof/manifest.json",
+      "remaining_proof": "repository-specific hidden evaluator"
+    }
+  ],
+  "final_prompt_freeze_rule": "The final Codex prompt may be drafted only after every domain is either planning_verified, explicitly delegated to Codex with a sealed evaluator, or blocked by a named empirical/user gate."
+}

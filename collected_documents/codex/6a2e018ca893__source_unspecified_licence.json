@@ -1,0 +1,8 @@
+{
+  "case_id": "unspecified-licence-approved",
+  "target": {"artifact": "source_feasibility_registry.json", "collection": "sources", "selector": {"field": "source_id", "equals": "ON-SELECT"}, "field": "/terms/status"},
+  "operation": "replace",
+  "expected_before": "verified",
+  "value": "unspecified",
+  "expected_diagnostic": "R001_UNSPECIFIED_LICENCE: a source with unspecified terms cannot be marked Stage-1 ready"
+}

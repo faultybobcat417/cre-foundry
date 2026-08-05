@@ -1,0 +1,558 @@
+{
+  "ambiguous_exact_matches": 1,
+  "brampton_entity_count": 10490,
+  "entity_address_field": "canonical_address",
+  "match_distribution": {
+    "exact_full_ambiguous": 1,
+    "exact_full_unique": 16,
+    "no_exact_match": 13
+  },
+  "permit_signal_count": 30,
+  "results": [
+    {
+      "address_raw": "95 Inspire Blvd, Unit 11, Brampton,",
+      "event_type": "tenant_fitout",
+      "match_count": 0,
+      "match_type": "no_exact_match",
+      "matched_entities": [],
+      "normalized_base": "95 inspire blvd",
+      "normalized_full": "95 inspire blvd unit 11",
+      "outreach_eligible": false,
+      "permit_number": "26-124048-000-00",
+      "signal_strength": "high"
+    },
+    {
+      "address_raw": "155 Sun Pac Blvd, Brampton, ON, L6S 5Z6",
+      "event_type": "building_addition",
+      "match_count": 0,
+      "match_type": "no_exact_match",
+      "matched_entities": [],
+      "normalized_base": "155 sun pac blvd",
+      "normalized_full": "155 sun pac blvd",
+      "outreach_eligible": false,
+      "permit_number": "26-119005-000-00",
+      "signal_strength": "high"
+    },
+    {
+      "address_raw": "95 Inspire Blvd, Unit 7, Brampton,",
+      "event_type": "tenant_fitout",
+      "match_count": 0,
+      "match_type": "no_exact_match",
+      "matched_entities": [],
+      "normalized_base": "95 inspire blvd",
+      "normalized_full": "95 inspire blvd unit 7",
+      "outreach_eligible": false,
+      "permit_number": "26-119966-000-00",
+      "signal_strength": "high"
+    },
+    {
+      "address_raw": "8495 Goreway Dr, Brampton, ON, L6T 5N8",
+      "event_type": "alteration",
+      "match_count": 0,
+      "match_type": "no_exact_match",
+      "matched_entities": [],
+      "normalized_base": "8495 goreway dr",
+      "normalized_full": "8495 goreway dr",
+      "outreach_eligible": false,
+      "permit_number": "26-121053-000-00",
+      "signal_strength": "medium"
+    },
+    {
+      "address_raw": "1600 Bovaird Dr E, Brampton, ON, L6R 3S8",
+      "event_type": "alteration",
+      "match_count": 0,
+      "match_type": "no_exact_match",
+      "matched_entities": [],
+      "normalized_base": "1600 bovaird dr e",
+      "normalized_full": "1600 bovaird dr e",
+      "outreach_eligible": false,
+      "permit_number": "26-118564-000-00",
+      "signal_strength": "medium"
+    },
+    {
+      "address_raw": "8 Abacus Rd, Brampton, ON, L6T 5B7",
+      "event_type": "alteration",
+      "match_count": 0,
+      "match_type": "no_exact_match",
+      "matched_entities": [],
+      "normalized_base": "8 abacus rd",
+      "normalized_full": "8 abacus rd",
+      "outreach_eligible": false,
+      "permit_number": "26-116071-000-00",
+      "signal_strength": "medium"
+    },
+    {
+      "address_raw": "815 Intermodal Dr, Brampton, ON, L6T 5W2",
+      "event_type": "alteration",
+      "match_count": 1,
+      "match_type": "exact_full_unique",
+      "matched_entities": [
+        {
+          "business_name": "KAL TIRE",
+          "business_sector": "Wholesale Tires",
+          "canonical_address": "815 Intermodal Dr",
+          "current_status_verified": false,
+          "entity_id": "ENT-8c007f17a69423e276cbf7422736a279",
+          "naics_primary": "415210",
+          "resolution_status": "singleton"
+        }
+      ],
+      "normalized_base": "815 intermodal dr",
+      "normalized_full": "815 intermodal dr",
+      "outreach_eligible": false,
+      "permit_number": "26-114117-000-00",
+      "signal_strength": "medium"
+    },
+    {
+      "address_raw": "10910 Dixie Rd, Unit 10, Brampton,",
+      "event_type": "tenant_fitout",
+      "match_count": 0,
+      "match_type": "no_exact_match",
+      "matched_entities": [],
+      "normalized_base": "10910 dixie rd",
+      "normalized_full": "10910 dixie rd unit 10",
+      "outreach_eligible": false,
+      "permit_number": "26-114433-000-00",
+      "signal_strength": "high"
+    },
+    {
+      "address_raw": "44 Westwyn Crt, Brampton, ON, L6T 4T5",
+      "event_type": "alteration",
+      "match_count": 1,
+      "match_type": "exact_full_unique",
+      "matched_entities": [
+        {
+          "business_name": "SUNTECH HEAT TREATING LTD.",
+          "business_sector": "Metal Heat Treating",
+          "canonical_address": "44 Westwyn Crt",
+          "current_status_verified": false,
+          "entity_id": "ENT-4babc3de2b5b4fd94a6e10ed33d43886",
+          "naics_primary": "332810",
+          "resolution_status": "singleton"
+        }
+      ],
+      "normalized_base": "44 westwyn crt",
+      "normalized_full": "44 westwyn crt",
+      "outreach_eligible": false,
+      "permit_number": "26-110688-000-00",
+      "signal_strength": "medium"
+    },
+    {
+      "address_raw": "5 Parkshore Dr, Brampton, ON, L6T 5M1",
+      "event_type": "alteration",
+      "match_count": 1,
+      "match_type": "exact_full_unique",
+      "matched_entities": [
+        {
+          "business_name": "STELFAST",
+          "business_sector": null,
+          "canonical_address": "5 Parkshore Dr",
+          "current_status_verified": false,
+          "entity_id": "ENT-68eeefe324307869103a695e21b66a31",
+          "naics_primary": "332720",
+          "resolution_status": "singleton"
+        }
+      ],
+      "normalized_base": "5 parkshore dr",
+      "normalized_full": "5 parkshore dr",
+      "outreach_eligible": false,
+      "permit_number": "26-106787-000-00",
+      "signal_strength": "medium"
+    },
+    {
+      "address_raw": "8050 Heritage Rd, Brampton, ON, L6Y 0C9",
+      "event_type": "alteration",
+      "match_count": 1,
+      "match_type": "exact_full_unique",
+      "matched_entities": [
+        {
+          "business_name": "AMAZON",
+          "business_sector": "Fulfillment Distribution Centre",
+          "canonical_address": "8050 Heritage Rd",
+          "current_status_verified": false,
+          "entity_id": "ENT-8a887c850dba852f968ed0960cabdd5a",
+          "naics_primary": "493190",
+          "resolution_status": "singleton"
+        }
+      ],
+      "normalized_base": "8050 heritage rd",
+      "normalized_full": "8050 heritage rd",
+      "outreach_eligible": false,
+      "permit_number": "26-086657-000-00",
+      "signal_strength": "medium"
+    },
+    {
+      "address_raw": "8050 Heritage Rd, Brampton, ON, L6Y 0C9",
+      "event_type": "alteration",
+      "match_count": 1,
+      "match_type": "exact_full_unique",
+      "matched_entities": [
+        {
+          "business_name": "AMAZON",
+          "business_sector": "Fulfillment Distribution Centre",
+          "canonical_address": "8050 Heritage Rd",
+          "current_status_verified": false,
+          "entity_id": "ENT-8a887c850dba852f968ed0960cabdd5a",
+          "naics_primary": "493190",
+          "resolution_status": "singleton"
+        }
+      ],
+      "normalized_base": "8050 heritage rd",
+      "normalized_full": "8050 heritage rd",
+      "outreach_eligible": false,
+      "permit_number": "26-082303-000-00",
+      "signal_strength": "medium"
+    },
+    {
+      "address_raw": "220 Walker Dr, Brampton, ON, L6T 3W1",
+      "event_type": "alteration",
+      "match_count": 1,
+      "match_type": "exact_full_unique",
+      "matched_entities": [
+        {
+          "business_name": "PARMALAT CANADA",
+          "business_sector": "Dairy Distributors",
+          "canonical_address": "220 Walker Dr",
+          "current_status_verified": false,
+          "entity_id": "ENT-cd0578123a08ffd51212de3032aba30c",
+          "naics_primary": "413120",
+          "resolution_status": "singleton"
+        }
+      ],
+      "normalized_base": "220 walker dr",
+      "normalized_full": "220 walker dr",
+      "outreach_eligible": false,
+      "permit_number": "26-101155-000-00",
+      "signal_strength": "medium"
+    },
+    {
+      "address_raw": "10 Pedigree Crt, Brampton, ON, L6T 5T8",
+      "event_type": "alteration",
+      "match_count": 1,
+      "match_type": "exact_full_unique",
+      "matched_entities": [
+        {
+          "business_name": "KRUGER INC.",
+          "business_sector": "Newsprint/Coated/Supercalendered/Directory/ Corrugated Containers Manufacturer",
+          "canonical_address": "10 Pedigree Crt",
+          "current_status_verified": false,
+          "entity_id": "ENT-409c9a087be882656fdddf9c80ac3234",
+          "naics_primary": "322130",
+          "resolution_status": "singleton"
+        }
+      ],
+      "normalized_base": "10 pedigree crt",
+      "normalized_full": "10 pedigree crt",
+      "outreach_eligible": false,
+      "permit_number": "26-099420-000-00",
+      "signal_strength": "medium"
+    },
+    {
+      "address_raw": "8875 Torbram Rd, Brampton, ON, L6T 3V9",
+      "event_type": "alteration",
+      "match_count": 1,
+      "match_type": "exact_full_unique",
+      "matched_entities": [
+        {
+          "business_name": "ACCURISTIX",
+          "business_sector": "Third Party Service Provider 3Pl",
+          "canonical_address": "8875 Torbram Rd",
+          "current_status_verified": false,
+          "entity_id": "ENT-68cfbe843c3bebd6afac2035214e8bb2",
+          "naics_primary": "493110",
+          "resolution_status": "singleton"
+        }
+      ],
+      "normalized_base": "8875 torbram rd",
+      "normalized_full": "8875 torbram rd",
+      "outreach_eligible": false,
+      "permit_number": "26-097789-000-00",
+      "signal_strength": "medium"
+    },
+    {
+      "address_raw": "2021 Williams Pky, Brampton, ON,",
+      "event_type": "alteration",
+      "match_count": 0,
+      "match_type": "no_exact_match",
+      "matched_entities": [],
+      "normalized_base": "2021 williams pky",
+      "normalized_full": "2021 williams pky",
+      "outreach_eligible": false,
+      "permit_number": "26-096716-000-00",
+      "signal_strength": "medium"
+    },
+    {
+      "address_raw": "5 Docksteader Rd, Brampton, ON, L6R 3Y2",
+      "event_type": "alteration",
+      "match_count": 0,
+      "match_type": "no_exact_match",
+      "matched_entities": [],
+      "normalized_base": "5 docksteader rd",
+      "normalized_full": "5 docksteader rd",
+      "outreach_eligible": false,
+      "permit_number": "26-089126-000-00",
+      "signal_strength": "medium"
+    },
+    {
+      "address_raw": "31 Bramsteele Rd, Brampton, ON, L6W 3K6",
+      "event_type": "alteration",
+      "match_count": 1,
+      "match_type": "exact_full_unique",
+      "matched_entities": [
+        {
+          "business_name": "QBD COOLING SYSTEMS INC.",
+          "business_sector": "Refrigerated Coolers Display Cases",
+          "canonical_address": "31 Bramsteele Rd",
+          "current_status_verified": false,
+          "entity_id": "ENT-e5c97d65e695a94403f97ad1f185fa89",
+          "naics_primary": "333416",
+          "resolution_status": "singleton"
+        }
+      ],
+      "normalized_base": "31 bramsteele rd",
+      "normalized_full": "31 bramsteele rd",
+      "outreach_eligible": false,
+      "permit_number": "26-087848-000-00",
+      "signal_strength": "medium"
+    },
+    {
+      "address_raw": "85 Parkshore Dr, Brampton, ON, L6T 5M1",
+      "event_type": "alteration",
+      "match_count": 1,
+      "match_type": "exact_full_unique",
+      "matched_entities": [
+        {
+          "business_name": "CAN-ART ALUMINUM EXTRUSIONS INC.",
+          "business_sector": "Aluminium Extrusions (Manufacturing)",
+          "canonical_address": "85 Parkshore Dr",
+          "current_status_verified": false,
+          "entity_id": "ENT-dce0aa4518c8d42d6abebfc804bc982f",
+          "naics_primary": "332431",
+          "resolution_status": "singleton"
+        }
+      ],
+      "normalized_base": "85 parkshore dr",
+      "normalized_full": "85 parkshore dr",
+      "outreach_eligible": false,
+      "permit_number": "26-086820-000-00",
+      "signal_strength": "medium"
+    },
+    {
+      "address_raw": "175 Sandalwood Pky W, Brampton, ON, L7A 1E8",
+      "event_type": "alteration",
+      "match_count": 1,
+      "match_type": "exact_full_unique",
+      "matched_entities": [
+        {
+          "business_name": "ALECTRA UTILITIES",
+          "business_sector": "Electrical Distribution",
+          "canonical_address": "175 Sandalwood Pky W",
+          "current_status_verified": false,
+          "entity_id": "ENT-bb32548c866e2a913aa962c91b5dbe11",
+          "naics_primary": "221111",
+          "resolution_status": "singleton"
+        }
+      ],
+      "normalized_base": "175 sandalwood pky w",
+      "normalized_full": "175 sandalwood pky w",
+      "outreach_eligible": false,
+      "permit_number": "26-076620-000-00",
+      "signal_strength": "medium"
+    },
+    {
+      "address_raw": "2150 Williams Pky, Brampton, ON,",
+      "event_type": "change_of_use",
+      "match_count": 2,
+      "match_type": "exact_full_ambiguous",
+      "matched_entities": [
+        {
+          "business_name": "SURE CONTROL SYSTEMS INC.",
+          "business_sector": "Controls, Control Systems & Machine Vision",
+          "canonical_address": "2150 Williams Pky",
+          "current_status_verified": false,
+          "entity_id": "ENT-03b5643ccbd54e005610615688654d7c",
+          "naics_primary": "541330",
+          "resolution_status": "singleton"
+        },
+        {
+          "business_name": "REVERE PLASTICS SYSTEMS INC.",
+          "business_sector": "Injection Moulding Plastic - Consumer Goods",
+          "canonical_address": "2150 Williams Pky",
+          "current_status_verified": false,
+          "entity_id": "ENT-8db4464c505cbfafd4048e6961144224",
+          "naics_primary": "326198",
+          "resolution_status": "singleton"
+        }
+      ],
+      "normalized_base": "2150 williams pky",
+      "normalized_full": "2150 williams pky",
+      "outreach_eligible": false,
+      "permit_number": "26-079761-000-00",
+      "signal_strength": "high"
+    },
+    {
+      "address_raw": "10900 Dixie Rd, Unit 10, Brampton,",
+      "event_type": "alteration",
+      "match_count": 0,
+      "match_type": "no_exact_match",
+      "matched_entities": [],
+      "normalized_base": "10900 dixie rd",
+      "normalized_full": "10900 dixie rd unit 10",
+      "outreach_eligible": false,
+      "permit_number": "26-079121-000-00",
+      "signal_strength": "medium"
+    },
+    {
+      "address_raw": "5 Intermodal Dr, Brampton, ON, L6T 5V9",
+      "event_type": "alteration",
+      "match_count": 0,
+      "match_type": "no_exact_match",
+      "matched_entities": [],
+      "normalized_base": "5 intermodal dr",
+      "normalized_full": "5 intermodal dr",
+      "outreach_eligible": false,
+      "permit_number": "26-074058-000-00",
+      "signal_strength": "medium"
+    },
+    {
+      "address_raw": "75 Advance Blvd, Brampton, ON, L6T 4N1",
+      "event_type": "alteration",
+      "match_count": 1,
+      "match_type": "exact_full_unique",
+      "matched_entities": [
+        {
+          "business_name": "KLEEN-FLO TUMBLER INDUSTRIES LTD.",
+          "business_sector": "Automotive & Industrial Chemicals",
+          "canonical_address": "75 Advance Blvd",
+          "current_status_verified": false,
+          "entity_id": "ENT-f6d278c1570669ae309e6921b8cadf40",
+          "naics_primary": "325189",
+          "resolution_status": "singleton"
+        }
+      ],
+      "normalized_base": "75 advance blvd",
+      "normalized_full": "75 advance blvd",
+      "outreach_eligible": false,
+      "permit_number": "26-073967-000-00",
+      "signal_strength": "medium"
+    },
+    {
+      "address_raw": "15 Westcreek Blvd, Brampton, ON, L6T 5T4",
+      "event_type": "building_addition",
+      "match_count": 1,
+      "match_type": "exact_full_unique",
+      "matched_entities": [
+        {
+          "business_name": "COCA-COLA REFRESHMENTS CANADA LTD.",
+          "business_sector": "Beverage Production, Warehouse, Distribution And Sales Centre",
+          "canonical_address": "15 Westcreek Blvd",
+          "current_status_verified": false,
+          "entity_id": "ENT-f6e4956ec25f56685e2c2d5b28db5c12",
+          "naics_primary": "312110",
+          "resolution_status": "singleton"
+        }
+      ],
+      "normalized_base": "15 westcreek blvd",
+      "normalized_full": "15 westcreek blvd",
+      "outreach_eligible": false,
+      "permit_number": "26-065607-000-00",
+      "signal_strength": "high"
+    },
+    {
+      "address_raw": "20 Ironside Dr, Brampton, ON,",
+      "event_type": "tenant_fitout",
+      "match_count": 0,
+      "match_type": "no_exact_match",
+      "matched_entities": [],
+      "normalized_base": "20 ironside dr",
+      "normalized_full": "20 ironside dr",
+      "outreach_eligible": false,
+      "permit_number": "26-071047-000-00",
+      "signal_strength": "high"
+    },
+    {
+      "address_raw": "25 Newkirk Crt, Unit 7, Brampton, ON,",
+      "event_type": "tenant_fitout",
+      "match_count": 0,
+      "match_type": "no_exact_match",
+      "matched_entities": [],
+      "normalized_base": "25 newkirk crt",
+      "normalized_full": "25 newkirk crt unit 7",
+      "outreach_eligible": false,
+      "permit_number": "26-069921-000-00",
+      "signal_strength": "high"
+    },
+    {
+      "address_raw": "1 Van Der Graaf Crt, Brampton, ON, L6T 5E5",
+      "event_type": "alteration",
+      "match_count": 1,
+      "match_type": "exact_full_unique",
+      "matched_entities": [
+        {
+          "business_name": "QUEST BRANDS INC.",
+          "business_sector": "Burlap, Safety Fence, Snow Fence, Landscape Fabric/Geotextiles",
+          "canonical_address": "1 Van Der Graaf Crt",
+          "current_status_verified": false,
+          "entity_id": "ENT-5b6711870a750b3d1a0610736c1414f0",
+          "naics_primary": "326198",
+          "resolution_status": "singleton"
+        }
+      ],
+      "normalized_base": "1 van der graaf crt",
+      "normalized_full": "1 van der graaf crt",
+      "outreach_eligible": false,
+      "permit_number": "26-069122-000-00",
+      "signal_strength": "medium"
+    },
+    {
+      "address_raw": "425 Railside Dr, Brampton, ON, L7A 0N8",
+      "event_type": "alteration",
+      "match_count": 1,
+      "match_type": "exact_full_unique",
+      "matched_entities": [
+        {
+          "business_name": "THE STEVENS COMPANY",
+          "business_sector": "Hospital & Physicians' Supplies, Personal Care Items",
+          "canonical_address": "425 Railside Dr",
+          "current_status_verified": false,
+          "entity_id": "ENT-0eefef80ee37b6d7cb22f0792a19ba11",
+          "naics_primary": "417930",
+          "resolution_status": "singleton"
+        }
+      ],
+      "normalized_base": "425 railside dr",
+      "normalized_full": "425 railside dr",
+      "outreach_eligible": false,
+      "permit_number": "26-068510-000-00",
+      "signal_strength": "medium"
+    },
+    {
+      "address_raw": "425 Railside Dr, Brampton, ON, L7A 0N8",
+      "event_type": "alteration",
+      "match_count": 1,
+      "match_type": "exact_full_unique",
+      "matched_entities": [
+        {
+          "business_name": "THE STEVENS COMPANY",
+          "business_sector": "Hospital & Physicians' Supplies, Personal Care Items",
+          "canonical_address": "425 Railside Dr",
+          "current_status_verified": false,
+          "entity_id": "ENT-0eefef80ee37b6d7cb22f0792a19ba11",
+          "naics_primary": "417930",
+          "resolution_status": "singleton"
+        }
+      ],
+      "normalized_base": "425 railside dr",
+      "normalized_full": "425 railside dr",
+      "outreach_eligible": false,
+      "permit_number": "26-068506-000-00",
+      "signal_strength": "medium"
+    }
+  ],
+  "safety": {
+    "current_status_verified_required": true,
+    "outreach_eligible_records": 0
+  },
+  "unique_exact_matches": 16,
+  "unmatched_signals": 13
+}

@@ -1,0 +1,87 @@
+{
+  "approved_schedule_count": 0,
+  "automatic_acquisition_execution_count": 0,
+  "candidates": [
+    {
+      "automatic_acquisition_permitted": false,
+      "cadence_status": "provisional_history",
+      "freshness_target_hours": null,
+      "manual_approval_required": true,
+      "maximum_staleness_hours": null,
+      "observation_count": 2,
+      "observed_median_interval_hours": 0.000914,
+      "proposed_schedule_interval_hours": null,
+      "schedule_activation_executed": false,
+      "schedule_activation_permitted": false,
+      "source_id": "brampton_building_permits"
+    },
+    {
+      "automatic_acquisition_permitted": false,
+      "cadence_status": "provisional_history",
+      "freshness_target_hours": null,
+      "manual_approval_required": true,
+      "maximum_staleness_hours": null,
+      "observation_count": 2,
+      "observed_median_interval_hours": 0.000734,
+      "proposed_schedule_interval_hours": null,
+      "schedule_activation_executed": false,
+      "schedule_activation_permitted": false,
+      "source_id": "brampton_business_directory"
+    },
+    {
+      "automatic_acquisition_permitted": false,
+      "cadence_status": "insufficient_history",
+      "freshness_target_hours": null,
+      "manual_approval_required": true,
+      "maximum_staleness_hours": null,
+      "observation_count": 0,
+      "observed_median_interval_hours": null,
+      "proposed_schedule_interval_hours": null,
+      "schedule_activation_executed": false,
+      "schedule_activation_permitted": false,
+      "source_id": "brampton_plantrak"
+    },
+    {
+      "automatic_acquisition_permitted": false,
+      "cadence_status": "insufficient_history",
+      "freshness_target_hours": null,
+      "manual_approval_required": true,
+      "maximum_staleness_hours": null,
+      "observation_count": 0,
+      "observed_median_interval_hours": null,
+      "proposed_schedule_interval_hours": null,
+      "schedule_activation_executed": false,
+      "schedule_activation_permitted": false,
+      "source_id": "statscan_odbus_2023"
+    }
+  ],
+  "contract_paths": {
+    "candidates": "docs/data_contracts/source_cadence_candidates.json",
+    "markdown": "docs/data_contracts/source_cadence.md",
+    "observations": "docs/data_contracts/source_cadence_observations.json"
+  },
+  "enabled_schedule_count": 0,
+  "insufficient_history_count": 2,
+  "manual_approval_required": true,
+  "model_version": "cre-foundry-source-cadence-candidates-v1",
+  "observed_baseline_count": 0,
+  "opportunity_ranked": false,
+  "outreach_eligible": false,
+  "policy": {
+    "automatic_acquisition": false,
+    "automatic_conclusions": false,
+    "automatic_schedule_activation": false,
+    "browser_execution": false,
+    "computer_vision_execution": false,
+    "filesystem_mtime_as_cadence_evidence": false,
+    "manifest_declared_timestamps_only": true,
+    "minimum_observations_for_baseline": 4,
+    "minimum_observations_for_interval": 2,
+    "operating_mode": "shadow",
+    "opportunity_ranked": false,
+    "outreach_eligible": false
+  },
+  "provisional_history_count": 2,
+  "schedule_activation_execution_count": 0,
+  "source_count": 4
+}

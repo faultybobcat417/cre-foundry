@@ -1,0 +1,30 @@
+{
+  "artifact_id": "OUTCOMES-001-SYNTHETIC-WINDOW-POLICY",
+  "schema_version": "1.0.0",
+  "execution_scope": "SYNTHETIC_NON_INFLUENCING",
+  "policy_id": "F9-POLICY:SYNTHETIC_ROUTE_DAY_V1",
+  "policy_version": "1.0.0",
+  "registered_at": "2026-07-31T23:40:00Z",
+  "primary_window_anchor": "ROUTE_DAY_ASSIGNMENT",
+  "horizon_days": 30,
+  "interval_convention": "CLOSED_START_CLOSED_END_SYNTHETIC",
+  "reporting_grace_seconds": 0,
+  "primary_estimand_unit": "REPRESENTATIVE_ROUTE_DAY_ITT",
+  "include_abstain_assignments": true,
+  "include_nonadherent_assignments": true,
+  "f9_predicate": {
+    "actor_roles": ["RELEVANT_DECISION_MAKER", "AUTHORIZED_REPRESENTATIVE"],
+    "requirement_types": ["CURRENT_CRE_REQUIREMENT", "CREDIBLE_FUTURE_CRE_REQUIREMENT"],
+    "appointment_requirement": "SCHEDULED_WITH_IDENTIFIED_SENIOR_COMMERCIAL_REALTOR",
+    "supporting_evidence": "INDEPENDENTLY_ADJUDICABLE_SYNTHETIC",
+    "adjudication": "PASS_SYNTHETIC",
+    "deduplication": "CANONICAL_BOOKING_EPISODE"
+  },
+  "censor_causes": ["SYNTHETIC_LOSS_TO_FOLLOW_UP", "SYNTHETIC_SOURCE_OUTAGE", "SYNTHETIC_ACCESS_REVOKED"],
+  "competing_event_causes": ["SYNTHETIC_TERMINAL_CLOSURE", "SYNTHETIC_IDENTITY_INVALIDATED"],
+  "dedupe_scope": ["source_namespace", "booking_episode_id", "route_day", "representative", "candidate", "channel"],
+  "correction_policy": "APPEND_ONLY_SINGLE_PARENT_SINGLE_HEAD",
+  "real_policy_authorized": false,
+  "owner": {"system": "CRE_FOUNDRY", "real_world_authority": "UNASSIGNED_EXTERNAL_AUTHORITY"},
+  "claim_ceiling": "Synthetic fixture policy only; the real F9 predicate, horizon, anchor, endpoints, grace, adjudication, censoring, competing-event, attribution, and correction rules are human-authoritative."
+}

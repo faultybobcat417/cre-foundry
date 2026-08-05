@@ -1,0 +1,21 @@
+source_id: statscan_odbus_2023
+name: Statistics Canada Open Database of Businesses 2023
+source_kind: bulk_zip
+access_state: approved
+enabled: true
+landing_page_url: https://www150.statcan.gc.ca/n1/pub/21-26-0003/212600032023001-eng.htm
+download_url: https://www150.statcan.gc.ca/n1/pub/21-26-0003/2023001/ODBus_2023.zip
+license_name: Statistics Canada Open Licence
+license_url: https://www.statcan.gc.ca/en/terms-conditions/open-licence
+required_attribution: Statistics Canada, Open Database of Businesses, 2023
+vintage_start: 2022-05-01
+vintage_end: 2022-12-31
+release_date: 2023-11-28
+request_timeout_seconds: 120
+max_download_bytes: 2147483648
+base_cadence_minutes: 525600
+minimum_cadence_minutes: 43200
+maximum_cadence_minutes: 525600
+critical_source: false
+max_uncompressed_bytes: 5368709120
+max_member_count: 1000

@@ -1,0 +1,21 @@
+{
+  "attack_scope": "SYNTHETIC_EVALUATOR_SELF_TEST_ONLY",
+  "base_run_sha256": "e467dec2bdaa913919bb848d3aa9c490244c908c5d136e348c80708bff43325a",
+  "case_id": "test-adaptive-bin-edges",
+  "document_kind": "REGISTERED_CALIBRATION_MUTATION",
+  "expected_diagnostic": "CALIBRATION-TEST-REUSE",
+  "patch": {
+    "operations": [
+      {
+        "document": "input",
+        "operation": "replace",
+        "path": [
+          "calibrator",
+          "test_reuse_allowed"
+        ],
+        "value": true
+      }
+    ]
+  },
+  "schema_version": "1.0.0"
+}

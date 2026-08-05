@@ -1,0 +1,433 @@
+<agent_swarm_result>
+<summary>completed: 4</summary>
+<subagent mode="resume" agent_id="agent-0" item="Deep-read the launch kernel at bootstrap/project_os_v2.2/CRE_Codex_Project_OS_v2.2/launch_kernel/. Cover: AGENTS.md, kernel/ (MISSION.md, AUTHORITY.md, INVARIANTS.json, PROOF_POLICY.md, CAPABILITY_BOUNDARY.json, and every other kernel file), control/ (WORKFLOW.md, ROLE_ACTIVATION_POLICY.json, MILESTONES.json, and all other control files), schemas/ (especially task_result.schema.json), scripts/ inside the kernel (validate_os.py, probe_codex_capabilities.py, validate_research_readiness.py, run_level10_campaign.py, compile_task_context.py, and all others — read for purpose, never execute), skills/, standards/, MANIFEST.json, CHECKSUMS.sha256, RUNBOOK.md, README_START_HERE.md, FINAL_AUDIT_REPORT.md, LEVEL10_SWEEPER_REPORT.md, RESEARCH_BASIS.md. Identify kernel primitives for: persistent loop control, task selection and context compilation, proof/evidence ceilings, role/skill activation (specialist agents), verification independence, convergence campaigns (level10), and checkpointing. Flag every Codex-specific assumption (file names, codex capability probes, session fields) that a Kimi-native system must replace." outcome="completed"># Launch Kernel Inventory Report — `bootstrap/project_os_v2.2/CRE_Codex_Project_OS_v2.2/launch_kernel/`
+
+The kernel is a self-contained "Project OS" (v2.2, 85 files per `MANIFEST.json`) designed to be dropped into a repo so a Codex agent can run a resumable, evaluator-gated, state-persisted autonomous build loop. All paths below are relative to `launch_kernel/`. Nothing was executed; all scripts were read statically (note: nearly every script **writes** into `artifacts/` — keep the execute-forbidden stance).
+
+## 1. Top-level files
+
+- `AGENTS.md` — run-start checklist: run `validate_os.py` → `probe_codex_capabilities.py` → `validate_research_readiness.py` → `run_level10_campaign.py`, read state files, follow `control/WORKFLOW.md`, compile task packet. Also encodes work-style rules (one writer/worktree, builder ≠ sole verifier, persist after every task) and security rules (no dangerous bypass modes, retrieved text is untrusted data).
+- `README_START_HERE.md` — authority ordering at startup; defines "one launch" as establishing a *resumable control plane* (resume from repo artifacts, not chat memory); level-10 gate semantics.
+- `RUNBOOK.md` — launch sequence, expected first artifacts, human gates that remain real (source authorization, firm economics, protected accounts, credentials, hidden-holdout ownership).
+- `MANIFEST.json` — version, generated_at, per-file `{path, bytes, sha256}` for all 85 files.
+- `CHECKSUMS.sha256` — sha256 lines consumed by `scripts/verify_checksums.py` (integrity/tamper evidence primitive — reusable as-is).
+- `FINAL_CODEX_LAUNCH_PROMPT_v2.2.md` — one-shot launch prompt; deliberately reduced to an "initialization contract" (durable rules live in repo files). Audited mechanically by `run_prompt_audit.py`.
+- `RESEARCH_BASIS.md` — design provenance: based on OpenAI Codex harness/Symphony/App-Server material (see §5 — this is the root of most Codex-specific assumptions).
+- `FINAL_AUDIT_REPORT.md` — steel-man audit; 10 repairs (one-launch semantics, prompt duplication, hidden-evaluator paradox, horizontal build risk, expert-role overload, context entropy, task-selection ambiguity, config drift, endless planning, state fragility). Good blueprint rationale.
+- `LEVEL10_SWEEPER_REPORT.md` — claims 24/24 domains at 10/10 *design/evaluator readiness* while empirical claims stay unproven.
+
+## 2. `kernel/` — constitution layer
+
+- `MISSION.md` — objective (exactly 10 locations or `ABSTAIN_NO_VALID_TEN`), F9 outcome definition, decision unit, Stage-1/2/3 evidence isolation.
+- `AUTHORITY.md` — 8-level precedence (law > mission/invariants > protected evaluators/schemas > task/state > repo truth > ADRs > vault evidence > history); broad internal autonomy; **non-inferable authority → create a named gate**; **stronger-replacement protocol** (7 steps: limitation, alternatives, baseline comparison, measurable advantage, invariant preservation, migration/rollback, evaluator+doc updates) — this is the kernel's champion–challenger primitive.
+- `INVARIANTS.json` — 10 hard invariants each with `id/name/rule/failure_effect` (machine-checkable veto list: INV-007 evaluator independence, INV-008 claim ≤ weakest evidence, INV-010 untrusted input) plus 5 *implementation preferences* explicitly replaceable via stronger-replacement.
+- `PROOF_POLICY.md` — **evidence ladder 0–9** (0 unsupported → 4 mutation/fault-resistant → 5 synthetic → 6 historical point-in-time → 7 prospective shadow → 8 randomized → 9 production); causal lift needs 8, commercial value 9. Defines 3-layer evaluator topology (public / sealed adversarial / external hidden holdout) and promotion requirements.
+- `STOP_POLICY.md` — continue/stop semantics: context-window end = checkpoint, not completion; project pauses only on named external gates, non-positive marginal value, fail-safe termination, or proven end state. Directly reusable as the autonomous-loop termination policy.
+- `CAPABILITY_BOUNDARY.json` + `.md` — 6-class input taxonomy (`CODEX_DERIVABLE, PUBLICLY_RESEARCHABLE, ACCESS_DEPENDENT, HUMAN_AUTHORITATIVE, EMPIRICAL_ONLY, EXTERNALLY_HIDDEN`) with per-class `required_action`; `non_capabilities` list (includes "cannot run continuously across platform/session boundaries without a persistent thread or orchestration control plane"). Class names are Codex-branded but conceptually tool-neutral.
+- `MATH_MODELING_CONSTITUTION.md` — estimand, value model, list optimization, baseline ladder (8 rungs — champion–challenger ordering), metrics, validation design, power discipline, promotion rule ("promote only when candidate beats meaningful baselines … with rollback and monitoring").
+
+## 3. `control/` — runtime control plane
+
+- `WORKFLOW.md` — the core loop: `ORIENT → VERIFY AUTHORITY/REPO TRUTH → RECONCILE STATE → SELECT TASK → COMPILE CONTEXT → RESEARCH → DEFINE/VERIFY EVALUATOR → PLAN → BUILD → EVALUATE → INDEPENDENT SWEEP → REPAIR/COMBINE/REVERT → INTEGRATE → CHECKPOINT → GENERATE FOLLOW-UPS → SELECT AGAIN`. Plus depth-first vertical-slice rule, task contract fields, improvement loop (measure baseline → weakest dimension → bounded experiment → rerun evaluators → retain/synthesize/revert), Best-of-N trigger (3–5 approaches for consequential decisions), agent rules (orchestrator owns state; parallel read-heavy reviewers; one writer/worktree; non-overlapping writable roots), checkpoint contents.
+- `CURRENT_STATE.json` — the resume anchor: `phase, current_milestone, current_task_id, completed_tasks, executable_tasks, blocked_tasks, open_gates, verified_claims, unverified_claims, live_permissions:false, last_checkpoint, checkpoint_commit`, and a **`session` block with Codex-specific fields** (`mode:"interactive", codex_version:"codex-cli 0.145.0-alpha.18", thread_id, last_turn_id`).
+- `CURRENT_TASK.json` — active task packet pointer: objective, `context_paths`, `required_roles`, `acceptance`, `writable_roots`, `proof_target`, `repository_task_path`, `selected_reason`.
+- `TASK_GRAPH.json` — 12-task DAG (BOOTSTRAP-001 → RESEARCH-001 → EVAL-001/MATH-001 → CONTRACT-001 → VERTICAL-001 → … → SHADOW-001) with per-task `priority` scoring dict, `gates`, `writable_roots`, `proof_target`; cross-references repo `control/TASK_GRAPH.json`.
+- `MILESTONES.json` — M00–M13 DAG with `closure_artifacts` (manifest, tests, independent_sweep, rollback, state_transition) and rule that M12/M13 (randomized pilot, commercial promotion) can't be simulated into success.
+- `TASK_SELECTION_POLICY.json` — 7 hard vetoes → 7 lexicographic priorities → numeric tie-breaker `(mission_impact·success_probability·dependency_unlock·information_gain·reusability)/(cost·risk·irreversibility·coordination_burden)`, 1–5 scale.
+- `ROLE_ACTIVATION_POLICY.json` — 15 expertise domains with keyword triggers; states `ACTIVE/CONSULT/NOT_APPLICABLE`; `default_limits` (**parallel_read_reviewers:3, write_agents_per_worktree:1, high_consequence_parallel_reviewers:5** — the swarm-governance knobs); `always:[orchestrator, verifier]`; closure rule requires every domain classified with reason.
+- `CONTEXT_POLICY.json` — deterministic packet assembly: fixed `packet_order` (mission → invariants → state → task → … → output contract last), `default_max_chars:48000`, token estimate = chars/4, overflow drop order ("split the task rather than truncate hard authority").
+- `CLAIM_PROOF_REGISTER.json` — CLM-001…007, each `claim → required_proof_level (4–9) → minimum_evidence → current_status`. The machine-readable proof-ceiling register.
+- `EVALUATOR_TOPOLOGY.md` — public/sealed/external-hidden layers; ownership rules (author ≠ builder, protected paths enforced mechanically, evaluator changes need own task + independent review, known-bad must fail before builder targets test).
+- `EXECUTION_MODES.md` — Mode A interactive/Goal, Mode B headless resumable CLI, Mode C tracker-backed orchestration; recommended progression A→B→C.
+- `SYMPHONY_WORKFLOW.md` — YAML-frontmatter orchestration contract: `poll_seconds:30, max_concurrency:4, retry_backoff:[60,300,900,3600], one_workspace_per_issue, preserve_workspaces_across_retries`, tracker states Ready/In Progress/Rework → Done/Cancelled/Rejected; 10-step per-issue loop incl. "preserve the session/thread ID". Contains a `codex:` config block (Codex-specific).
+- `AUTHORIZED_FALLBACK_LADDER.md` — degraded-method ladders (source acquisition 9 rungs, missing labels 7, route service, missing hidden evaluator) — adaptive-experimentation fallback policy.
+- `RESEARCH_COMPLETION_PROTOCOL.md` — R0–R7 evidence phases (claim graph → public closure → access feasibility → sample proof → historical → shadow → randomized → commercial).
+- `LEVEL10_DOMAIN_DEFINITIONS.json` (17KB, skimmed) — 24 domains, each `{domain, scope, pre_codex_level_10_definition, scoring_axes, empirical_proof_required}`; enforces dual-axis scoring.
+- `PRE_CODEX_LEVEL10_POLICY.md` — Axis A (design/evaluator readiness, provable pre-build) vs Axis B (evidence maturity, only via proof ladder).
+
+## 4. `schemas/` — machine contracts
+
+- `task_result.schema.json` — **the checkpoint/learning-memory record**. 19 required fields: `task_id, status(completed|partial|blocked|failed_safe|reverted), objective, state_transition{from,to,reason}, files_changed[], commands[]{command,exit_code,artifact}, evaluations[], expertise_coverage[]{domain,state,reason}, agents_used[], alternatives[], findings[], assumptions[], decisions[], risks[], gates[], proof_level(0–9), artifacts[], rollback, next_action`. Directly reusable; `status:"partial"` + `state_transition` + `next_action` is the interruption-safe resume mechanism.
+- `context_packet.schema.json` — `{task_id, included_files, excluded_files, estimated_tokens, packet_sha256}`.
+- `capability_manifest.schema.json` — **Codex-branded**: requires literal field `codex_found`; otherwise tool-neutral `{version, commands, recommended_mode, gates}`.
+
+## 5. `scripts/` (read-only inspection; all write to `artifacts/`)
+
+- `validate_os.py` — structural self-test: required-files present, exactly 10 invariants/14 milestones, milestone DAG acyclicity, task-graph dependency integrity, launch-prompt phrase audit, ≥7 agents/≥10 skills, AGENTS.md ≤32KB. Pattern for a Kimi `validate_os`.
+- `probe_codex_capabilities.py` — **fully Codex-specific**: `shutil.which("codex")`, captures `codex --version/--help`, `exec`, `exec resume`, `app-server` help; greps for `--json`, `--output-schema`, `--output-last-message`, `resume`, `app-server`, `dangerously-bypass`; writes `artifacts/codex_capabilities.json`. The *pattern* (probe installed CLI instead of assuming flags) is exactly what a `probe_kimi_capabilities.py` should replicate.
+- `select_next_task.py` — implements the selection policy: filter `status ∈ {ready, queued}` ∧ deps ⊆ completed ∧ gates ∩ open_gates = ∅, score by priority formula, tie-break by task_id; falls back to preserving current task; writes `artifacts/selected_task.json`.
+- `compile_task_context.py` — deterministic context compiler: mandatory 5 files + task `context_paths`, char budget from `CONTEXT_POLICY.json`, acceptance recap appended, emits packet `.md` + manifest `.json` with sha256 + token estimate.
+- `run_level10_campaign.py` — orchestrates 6 subprocess steps (os validation, research readiness, task selection, context compile, prompt audit, full-system simulation), fail-fast; embeds 3-cycle sweeper repair history; writes `artifacts/level10/campaign.json`. This is the **convergence-campaign runner** pattern.
+- `run_level10_simulation.py` (21KB, **not deep-read** — largest script; by consumer `validate_level10_release.py` it produces `full_system_simulation.json` with `summary{all_scenarios_passed, all_domains_pre_codex_design_score_10, empirical_claims_proven:false, scenario_count}` and 24 `domain_scores`).
+- `validate_research_readiness.py` — checks capability classes set, claim proof levels (CLM-006=8, CLM-007=9), ≥12 research questions, key tasks present.
+- `validate_level10_release.py` — release gate: simulation passed, 24 domains at design-score 10, `empirical_claims_proven is false` (anti-overclaim check), ≥15 standards.
+- `run_prompt_audit.py` — 12 phrase checks on the launch prompt (mission, evaluator topology, three modes, state resume, claim integrity, "context window ending is a checkpoint"), score must be 100.
+- `verify_checksums.py` — verifies `CHECKSUMS.sha256`.
+- `launch_headless_once.sh` — **Codex-specific**: pipes launch prompt + compiled packet into `codex exec --json -o … [--output-schema task_result.schema.json] -`, gated on probe results. The Mode-B reference launcher to re-implement for Kimi.
+
+## 6. `skills/`, `.codex/`, `evals/`, `standards/`, `context/`
+
+- `skills/*/SKILL.md` — 10 skills (`orient, context-compile, decompose, best-of-n, build, integrate-resume, verify-sweep, research-evidence, identity-provenance, quant-economics`). YAML frontmatter `name`/`description` + **one identical body** (execute narrowly, preserve invariants/evaluator independence/provenance/state/rollback, no scope expansion). They're role stubs, not procedures — a Kimi system should keep the frontmatter contract but flesh out bodies.
+- `.codex/agents/*.toml` — 7 subagent definitions: `builder` (workspace-write), `verifier`, `cre_reviewer`, `data_identity_reviewer`, `quant_ml_reviewer`, `systems_security_reviewer` (all read-only, `model_reasoning_effort:"high"`), `research_mapper` (read-only, medium). Each has `sandbox_mode` + `developer_instructions`. **Format is Codex CLI-specific**; role separation (1 writer + N read-only reviewers, verifier reproduces from clean state and detects weakened tests) is the reusable design.
+- `.codex/config.template.toml` — Codex config (`approval_policy, approvals_reviewer, sandbox_mode, project_doc_max_bytes:32768, [tools] web_search`).
+- `evals/ADVERSARIAL_CASES.json` — 7+ harness-level cases (missing repo, stale vault, prompt injection, bypass request, nine candidates → abstain, protected fuzzy match → fail closed).
+- `evals/LEVEL10_BENCHMARKS.json` — 22 numeric thresholds (hard_invariant_pass_rate 1.0, protected_false_clear 0, known_bad/mutation detection 1.0, context_packet ≤12000 est. tokens, prompt_audit 100, Brier/ECE/route thresholds, unpinned deps 0, checksum mismatch 0) + veto list. `evals/TRIAL_PROTOCOL.md` not read.
+- `standards/BENCHMARK_STANDARD_REGISTRY.json` — 17 external standards `{id, domain, name, version_or_date, url, use, required_artifacts}`; `BENCHMARK_CROSSWALK.md` not read.
+- `context/` (not deep-read): `AGENT_DATA_PRIMITIVES.json`, `CORE_RESEARCH_QUESTIONS.json`, `EXPERTISE_MAP.json`, `VAULT_ROUTER.json`, `PRODUCT_BRIEF.md`, `REFERENCE_ARCHITECTURE.md` — domain knowledge + vault routing.
+- `artifacts/` — frozen outputs of the above scripts (os_validation, codex_capabilities, selected_task, context packet, prompt_audit, research_readiness, level10 campaign/simulation/release).
+
+## 7. Capability-area mapping (for the blueprint)
+
+- **Persistent loop control**: `control/WORKFLOW.md` cycle + `kernel/STOP_POLICY.md` + `control/EXECUTION_MODES.md` + `control/SYMPHONY_WORKFLOW.md` (concurrency 4, backoff ladder, one workspace/issue).
+- **Task selection & context compilation**: `TASK_SELECTION_POLICY.json` + `scripts/select_next_task.py` + `CONTEXT_POLICY.json` + `scripts/compile_task_context.py` + `schemas/context_packet.schema.json`.
+- **Proof/evidence ceilings**: `kernel/PROOF_POLICY.md` ladder + `control/CLAIM_PROOF_REGISTER.json` + per-task `proof_target` + INV-008 + level10 anti-overclaim checks.
+- **Role/skill activation**: `ROLE_ACTIVATION_POLICY.json` + `.codex/agents/*.toml` + `skills/*` + `expertise_coverage` in task-result schema.
+- **Verification independence**: INV-007 + `EVALUATOR_TOPOLOGY.md` + `verifier.toml` ("reproduce from clean state… detect weakened tests") + `verify_checksums.py` + known-bad-must-fail rule.
+- **Convergence campaigns**: `run_level10_campaign.py` + `LEVEL10_DOMAIN_DEFINITIONS.json` + `LEVEL10_BENCHMARKS.json` + `validate_level10_release.py` + dual-axis policy. Champion–challenger: stronger-replacement protocol (`AUTHORITY.md`) + baseline ladder + promotion rule (`MATH_MODELING_CONSTITUTION.md` §6/§10) + improvement loop (`WORKFLOW.md`).
+- **Checkpointing / interruption-safe resume**: `CURRENT_STATE.json` (`last_checkpoint`, `checkpoint_commit`, session IDs) + `schemas/task_result.schema.json` (`status:"partial"`, `state_transition`, `next_action`) + `integrate-resume` skill + "checkpoint not completion" doctrine.
+- **Learning memory**: weakest area — only `CLAIM_PROOF_REGISTER`, task-result accumulation, DECISIONS via task results; no explicit episodic/learning store.
+
+## 8. Codex-specific assumptions a Kimi-native system must replace
+
+1. `scripts/probe_codex_capabilities.py` — `codex` binary, `exec`/`exec resume`/`app-server` subcommands, `--json/--output-schema/--output-last-message` flags → write `probe_kimi_capabilities.py` against the actual Kimi CLI surface.
+2. `scripts/launch_headless_once.sh` — pipes prompt into `codex exec`; needs Kimi headless invocation equivalent.
+3. `schemas/capability_manifest.schema.json` — literal required field `codex_found` → rename (e.g. `agent_found`).
+4. `.codex/agents/*.toml` + `.codex/config.template.toml` — Codex CLI subagent/config formats (`model_reasoning_effort`, `sandbox_mode`, `approval_policy`, `approvals_reviewer`) → Kimi subagent/config mechanism; keep the 1-writer + read-only-reviewer role semantics.
+5. `control/CURRENT_STATE.json` `session` block — `codex_version`, `thread_id`, `last_turn_id` → Kimi session/conversation identifiers.
+6. `control/SYMPHONY_WORKFLOW.md` `codex:` frontmatter block and Mode-B/C references to `codex exec resume`, App Server, Symphony → Kimi orchestration equivalents.
+7. Naming/branding threaded through machine-checked files: `CAPABILITY_BOUNDARY` class `CODEX_DERIVABLE`, `PRE_CODEX_LEVEL10_POLICY.md`, `FINAL_CODEX_LAUNCH_PROMPT_v2.2.md` (filename and prompt-audit phrases are hardcoded in `validate_os.py`/`run_prompt_audit.py`), `artifacts/codex_capabilities.json` (path hardcoded in launcher), "Codex" throughout AGENTS.md/AUTHORITY.md. Renames must update the validators in lockstep.
+8. `RESEARCH_BASIS.md` — entire design rationale cites OpenAI/Codex harness sources; Kimi capability assumptions (durable threads, goal mode, app server) need re-verification against Kimi's actual feature set.
+
+## 9. Gaps noticed (within kernel scope)
+
+- **No real learning-memory primitive**: nothing distills cross-task outcomes into a queryable store beyond appending task results; `verified_claims/unverified_claims` in state are free-text strings.
+- **Selection policy partially implemented**: `select_next_task.py` implements only the numeric tie-breaker + dependency/gate filters; the 7 hard vetoes and lexicographic priorities exist only as prose in `TASK_SELECTION_POLICY.json`.
+- **Skills are hollow**: all 10 SKILL.md bodies are byte-identical boilerplate; the behavioral content lives only in workflow docs.
+- **Checkpointing is convention, not mechanism**: no lock/lease on `CURRENT_STATE.json`, no crash-recovery script, no atomic state-transition writer; `SYMPHONY_WORKFLOW.md` retries are config-only with no local orchestrator implementation (Mode C is explicitly "use a Symphony-compatible orchestrator or implement the local specification" — unimplemented).
+- **Sealed-evaluator enforcement is procedural**: `EVALUATOR_TOPOLOGY.md` says "protected paths enforced mechanically" but the kernel ships no mechanism (permissions, hooks) — only gates (`GATE-SEALED-EVALUATOR-CUSTODY-001`) and review policy.
+- `run_level10_simulation.py` (21KB), `evals/TRIAL_PROTOCOL.md`, `standards/BENCHMARK_CROSSWALK.md`, and `context/*` were not deep-read due to the time budget; their consumer-facing contracts (above) are known, but their internals are not inventoried.
+- The kernel's `TASK_GRAPH.json` is a snapshot that has since drifted from the live repo `control/TASK_GRAPH.json` (repo now has ARCHITECTURE-001 etc.); the blueprint should treat repo `control/` as the live control plane and the kernel as the design template.</subagent>
+<subagent mode="resume" agent_id="agent-1" item="Inventory every file in scripts/ at the repository root (about 27 Python files; ignore __pycache__). Read each one enough to report: exact path, purpose in one or two lines, CLI invocation, inputs (files read), outputs (files written), and whether it is a generator, an evaluator, a state mutator, or a context compiler. Map each to capability areas: current-state control, task context compilation, product-completion evaluation (evaluate_autonomous_frontier.py), experiment/baseline/calibration artifact generation, math/research/contract/vertical/outcomes pipelines. Specifically determine whether scripts/evaluate_autonomous_frontier.py writes any files when run and whether its outputs are deterministic (would re-running it on a clean tree leave the tree clean?). Also check whether scripts/validate_architecture.py exists (tasks/ARCHITECTURE-001.json lists it as a future artifact)." outcome="completed"># Scripts/ Inventory Report — CRE Foundry (branch `handoff/kimi-architecture-001` @ 9a5462d)
+
+Scope: 26 Python files in `scripts/` (excl. `__pycache__`). Tree confirmed clean at HEAD. No files were created, modified, or executed.
+
+## 1. Headline findings (the three direct questions)
+
+**Does `scripts/evaluate_autonomous_frontier.py` write files?**
+Only with `--report <repo-relative-path>` (`write_report`, lines 1067–1070: `mkdir -p` + `write_text`). Without `--report` it writes **nothing** to the repo. All gate verification commands and known-bad replays execute inside a `tempfile.TemporaryDirectory(prefix="cre-frontier-evaluation-")` **copy** of the repo (`shutil.copytree` ignoring `.venv`/`__pycache__`/`.pytest_cache`, lines 998–1004); replayed commands get env `PYTHONDONTWRITEBYTECODE=1`, so no bytecode is written even in the copy. The real tree is only read: file/tree SHA-256 digests, `git rev-parse HEAD`, `git status --porcelain`. Stdout is restricted to exactly `PASS`, `FAIL`, or `BLOCKED_EXTERNAL` (fail-closed: any exception → `FAIL` with only the exception type name in the optional report).
+
+**Is it deterministic / does re-running on a clean tree leave the tree clean?**
+Yes, when run without `--report`. Determinism is enforced structurally: every verification command must exit 0 with exact stdout `PASS\n` and empty stderr, and `tree_digest` before/after each command inside the copy must be identical (`run_command`, lines 244–279) — so non-deterministic or tree-mutating verifiers fail by construction. Re-running on a clean tree leaves `git status --porcelain` empty (verified by reading the code path; not executed, per constraints). Caveats: requires the `jsonschema` package, the `git` binary, and that contract commands spell the literal token `python` as argv[0] (replayed via `sys.executable`, line 251). Note the anti-gaming rule: a terminal result (PASS/BLOCKED_EXTERNAL) combined with `--report` is forced to `FAIL` (lines 1091–1096). Exit code: 0 for PASS/BLOCKED_EXTERNAL, 1 for FAIL.
+
+**Does `scripts/validate_architecture.py` exist?**
+**No.** `tasks/ARCHITECTURE-001.json:17` lists it as a future artifact alongside `docs/architecture/BOUNDARIES.md`, `artifacts/architecture/public_evaluator_contract.json`, `artifacts/evaluations/architecture.json`, and `artifacts/task-results/ARCHITECTURE-001.json` — none of the architecture outputs exist yet (task is the in-progress handoff).
+
+## 2. The frontier evaluator's mechanisms (the reusable completion judge)
+
+`scripts/evaluate_autonomous_frontier.py` (1112 lines) evaluates `control/AUTONOMOUS_FRONTIER_CONTRACT.json` against `contracts/autonomous_frontier_contract.schema.json`:
+
+- **23 fixed domains** with mandatory stable gate IDs `AF-*-001` (lines 29–103), each with mandatory *semantic obligations* — substring checks over decision_purpose/pass/failure/claim_ceiling text (e.g. `convergence_sweeps` requires "three independent" + "two successive"; `full_system_convergence` requires "randomized f9" + "level-9 realized").
+- **Proof ladder 0–9** with evidence-type ceilings: specification=1, deterministic_test=2, differential_reference=3, mutation_fault=4, synthetic/real_source_sample=5, historical_point_in_time=6, prospective_shadow=7, randomized_prospective=8, production_observed/external_attestation=9. Each gate carries `achieved_proof_level`, `autonomous_required_proof_level`, `required_proof_level`; achieved must be ≥ autonomous target and ≤ available evidence ceiling.
+- **Artifact binding**: required artifacts are `{artifact_id, path, availability, evidence_type, minimum_proof_level, sha256}`; autonomous non-specification artifacts must be sha256-pinned to existing files. Paths are jail-checked (`confined_path`: relative, no symlinks, no repo escape).
+- **Known-bad controls**: each known-bad fixture must be re-run (`<cmd> --known-bad <fixture>`) and return exact JSON `{result:"DETECTED", case_id, fixture_sha256, diagnostic}` with matching diagnostic.
+- **External attestation** (lines 397–517): `CRE_FRONTIER_EXTERNAL_AUTHORITY_CONFIG` env var must point to an absolute, non-symlink, non-builder-owned, non-builder-writable config outside the repo naming a `verifier_path` + `trust_root_path` (same foreign uid, digest-pinned); the verifier binary is executed and must print `PASS\n`; attestation JSON must match gate_id, `git rev-parse HEAD`, contract sha256, and be unexpired/unrevoked. This is the existing primitive for external-custody verification.
+- **Resolution**: gate DAG topologically resolved, precedence FAIL > BLOCKED_EXTERNAL > PASS; terminal results additionally require reconciled `CURRENT_STATE/TASK_GRAPH/GATES` (recomputed completed/executable/blocked sets), **no executable tasks remaining**, every incomplete task transitively covered by a registered external blocker, and a **clean git tree** (lines 1033–1055).
+- Recursion guard via `CRE_FRONTIER_EVALUATION_DEPTH`.
+
+## 3. Full per-file inventory
+
+| Path | Purpose / CLI | Reads → Writes | Class |
+|---|---|---|---|
+| `scripts/evaluate_autonomous_frontier.py` | Machine completion judge for the whole frontier contract. `python scripts/evaluate_autonomous_frontier.py [--contract p] [--report p]` | contract, schemas, all gate artifacts, evals/, git → stdout one word; optional report JSON | **Evaluator** (read-only by default) |
+| `scripts/compile_repository_task_context.py` | Context compiler: concatenates kernel docs + control plane + per-task file list into one packet. No args; task from `control/CURRENT_TASK.json`. `TASK_PATHS` covers MATH/CONTRACT/VERTICAL/OUTCOMES/BASELINE/CALIBRATION/ARCHITECTURE-001 only (FRONTIER/RESEARCH/IDENTITY fall back to task file alone). BASE includes the frontier evaluator source itself. | kernel, control/, tasks/, per-task artifacts → **writes** `artifacts/context/current_task_packet.md` + `.json` manifest (per-file sha256, packet sha256) | **Context compiler** (state writer) |
+| `scripts/validate_control_plane.py` | Control-plane reconciliation: CURRENT_STATE↔CURRENT_TASK↔TASK_GRAPH↔GATES exact set equality, gate↔task back-references, EVALUATOR_DECISION sealed/external layers `GATED_NOT_CLAIMED`, evaluator manifest sha256s, task-result schema conformance, `checkpoint_commit` ancestry of HEAD, rollback-commit ancestry, replays the 6 launch_kernel commands in a tempdir copy (asserting kernel tree unchanged), runs `unittest discover evals/public`. Prints JSON payload (not bare PASS). | control/, contracts/, artifacts/, kernel, git → stdout JSON only (tempdir replay) | **Evaluator** (read-only) |
+| `scripts/validate_frontier_meta.py` | Wrapper: runs `evals/public/test_autonomous_frontier.py` + `validate_control_plane.py`; `--known-bad f` delegates. Prints exact PASS/FAIL or DETECTED JSON. | subprocess → stdout | Evaluator wrapper (read-only) |
+| `scripts/validate_mission_integrity.py` | Wrapper: `validate_control_plane.py` + `prove_known_bad_fails.py --check-only`; `--known-bad` delegates. | subprocess → stdout | Evaluator wrapper (read-only) |
+| `scripts/validate_source_feasibility.py` | Wrapper delegating to `validate_research_completion.py` / `run_research_mutation.py --known-bad`. | subprocess → stdout | Evaluator wrapper (read-only) |
+| `scripts/prove_known_bad_fails.py` | Route-decision negative controls: runs `evals/public/route_decision_evaluator.py` vs 2 known-bad candidates. Default mode **writes** `artifacts/evaluations/known_bad_public_result.json`; `--check-only` prints PASS; `--known-bad` prints DETECTED/SURVIVED JSON. | evals/known_bad, evals/public/fixtures → report JSON (default mode) | Evaluator + report generator hybrid |
+| `scripts/generate_baseline_artifacts.py` | Generates frozen synthetic baseline subjects: calls `cre_foundry.baselines.framework.write_artifacts()`, regenerates `evals/known_bad/frontier/baseline_*.json` mutation fixtures (deletes stale), writes `artifacts/models/model_registry.json`. Deterministic digest-bound output. | src/, evals/public/baseline_framework_evaluator.py → artifacts/baselines/*, evals/known_bad/frontier/, artifacts/models/ | **Generator** (state mutator) |
+| `scripts/generate_calibration_artifacts.py` | Same pattern for CALIBRATION-001: calibration canonical run + `calibration_*.json` mutation fixtures with patch recipes. | src/, evals/public/calibration_framework_evaluator.py → artifacts/calibration/*, evals/known_bad/frontier/ | **Generator** (state mutator) |
+| `scripts/validate_baseline_framework.py` | Validates baseline registry/run vs schemas, replays every registered mutation expecting exact diagnostics, cross-checks evaluator contract mutation registry, then **writes** `artifacts/evaluations/baseline_framework.json` + `baseline_model_synthetic.json` (sorted-key JSON, subject-hash bound). Prints PASS. | artifacts/baselines, contracts/baseline_*, evals/known_bad/frontier → 2 evaluation reports | Evaluator + report generator hybrid |
+| `scripts/validate_baseline_models.py` | Frontier-compat entry: `--known-bad f` → DETECTED JSON (read-only); else delegates to `validate_baseline_framework.main()` (which writes the 2 reports). | — | Wrapper (write behavior = delegated) |
+| `scripts/validate_calibration_framework.py` | Same hybrid pattern: schema checks, `evaluate()`, bounded property grid, mutation registry replay → **writes** `artifacts/evaluations/calibration_framework.json`. Prints PASS. | artifacts/calibration, contracts/calibration_* → 1 report | Evaluator + report generator hybrid |
+| `scripts/validate_calibration_uncertainty.py` | Compat entry: `--known-bad` read-only; else delegates and additionally **writes** `artifacts/evaluations/calibration_synthetic.json`. | — | Wrapper (writes in default mode) |
+| `scripts/validate_contract_spine.py` | Read-only CONTRACT-001 validator: rebuilds spine via `cre_foundry.contracts.thin_slice.build_spine()`, exact-matches stored artifact/report (claims, subject digests, mutation rows), runs unittests, applies 5 in-memory mutations; `--known-bad`. | artifacts/contracts, evals/known_bad/frontier/contract_*.json → stdout only | **Evaluator** (read-only) |
+| `scripts/validate_vertical_slice.py` | Read-only VERTICAL-001 validator + declarative mutation runner; `--known-bad`. Prints PASS/FAIL or DETECTED JSON. | artifacts/vertical*, src/ → stdout | Evaluator (read-only) |
+| `scripts/validate_outcomes_labels.py` | Read-only OUTCOMES-001 validator (f9 outcomes/maturity/censoring) + mutation runner; `--known-bad`. | artifacts/outcomes, contracts/f9_* → stdout | Evaluator (read-only) |
+| `scripts/validate_math_contracts.py` | Read-only MATH-001 validator ("without trusting stored PASS labels"); `--known-bad` writes the mutated problem only into a temp path. | artifacts/math, contracts/math_* → stdout | Evaluator (read-only) |
+| `scripts/build_math_contracts.py` | Builds symbolic registry + human-authority template → **writes** `artifacts/math/estimand_registry.json` + `human_authority_input_template.json`. Prints PASS. | repo authorities → artifacts/math/ | **Generator** |
+| `scripts/finalize_math_contracts.py` | Runs/binds public MATH-001 evaluator evidence → **writes** `artifacts/math/public_evaluator_contract.json`. Prints result. | artifacts/math → report | Finalizer (state mutator) |
+| `scripts/build_research_contract.py` | Builds strict RESEARCH-001 bundle from repository authorities + captured schemas → **writes** multiple `artifacts/research/*.json`. Prints PASS. | contracts, captured schemas → artifacts/research/ | **Generator** |
+| `scripts/capture_public_research_evidence.py` | Captures public (non-row/aggregate-only) evidence with byte hashes. `--observed-at` required, `--evidence` (repeatable, fixed SOURCES choices) → **writes** capture dir + manifest. Prints PASS. | public sources → artifacts/research capture | Generator/capture (state mutator) |
+| `scripts/import_independent_research_capture.py` | Imports a reviewer-owned exact-byte capture after manifest verification. `import_independent_research_capture.py <source>` → **writes** DEST + `capture_manifest.json`. Prints PASS. | external source dir → artifacts/research | Importer (state mutator; independent-evidence intake) |
+| `scripts/import_independent_row_witness.py` | Same for a narrow reviewer-owned row-witness capture. | external source → artifacts/research | Importer (state mutator) |
+| `scripts/finalize_research_bundle.py` | Persists derived bundle hashes + completion status → **writes** `artifacts/research/bundle_manifest.json` + `research_completion_report.json`. Prints result. | artifacts/research → 2 files | Finalizer (state mutator) |
+| `scripts/validate_research_completion.py` | Strict RESEARCH-001 bundle validator; recomputes everything, stored PASS labels never trusted. `--bundle p --json`. | artifacts/research → stdout | Evaluator (read-only) |
+| `scripts/run_research_mutation.py` | Mutation runner: hashes the real research bundle before/after, applies declarative mutant to a **tempdir copy**, mutates + refreshes manifest/report in the copy, requires validator FAIL with exact diagnostic, then repairs and requires PASS again; real bundle must be byte-identical. `--known-bad recipe`. Prints DETECTED/SURVIVED JSON. | artifacts/research, evals/known_bad → stdout only | Mutation evaluator (read-only w.r.t. repo) |
+
+## 4. Capability-area mapping
+
+- **Current-state control**: `validate_control_plane.py` (the real consistency engine), wrappers `validate_frontier_meta.py`, `validate_mission_integrity.py`. State itself is mutated only by agents/git commits — **no script writes `control/`**; checkpoint/resume is git-committed control files + `checkpoint_commit` ancestry checks, not a snapshot mechanism.
+- **Task context compilation**: `compile_repository_task_context.py` (single packet + sha256 manifest).
+- **Product-completion evaluation**: `evaluate_autonomous_frontier.py` (one-word verdict, report opt-in, temp-copy sandboxed command replay, clean-git terminal condition).
+- **Experiment/baseline/calibration**: generators `generate_baseline_artifacts.py`, `generate_calibration_artifacts.py`; hybrid validator/reporters `validate_baseline_framework.py`, `validate_baseline_models.py`, `validate_calibration_framework.py`, `validate_calibration_uncertainty.py`. Champion–challenger exists only as baseline `replacement_analysis` metrics inside frozen synthetic runs — **no promotion loop automation**.
+- **Math pipeline**: `build_math_contracts.py` → `finalize_math_contracts.py` → `validate_math_contracts.py`.
+- **Research pipeline**: `build_research_contract.py` → `capture_public_research_evidence.py` / `import_independent_research_capture.py` / `import_independent_row_witness.py` → `finalize_research_bundle.py` → `validate_research_completion.py` (+ `run_research_mutation.py`, `validate_source_feasibility.py`).
+- **Contract/vertical/outcomes pipelines**: `validate_contract_spine.py`, `validate_vertical_slice.py`, `validate_outcomes_labels.py` (all read-only, all with `--known-bad` mutation modes).
+- **Negative controls**: `prove_known_bad_fails.py` plus the uniform `--known-bad` CLI convention and DETECTED/SURVIVED JSON contract across validators.
+
+## 5. Codex-/tooling-specific coupling a Kimi-native system must handle
+
+- `validate_control_plane.py:19-26` hard-codes the six launch_kernel commands including **`scripts/probe_codex_capabilities.py`** under `bootstrap/project_os_v2.2/CRE_Codex_Project_OS_v2.2/launch_kernel`, and requires BOOTSTRAP-001's task-result to have recorded running exactly those commands (lines 266–273). Replacing the probe with a Kimi capability probe implies updating `OS_COMMANDS` and the bootstrap task-result expectations.
+- `compile_repository_task_context.py:9` hard-codes the `CRE_Codex_Project_OS_v2.2/launch_kernel` path for kernel docs (MISSION/INVARIANTS/PROOF_POLICY/CAPABILITY_BOUNDARY/WORKFLOW) — the kernel, not scripts/, holds the agent-specific workflow (incl. `select_next_task.py`, `compile_task_context.py` kernel-side).
+- Everything else is agent-agnostic: plain Python 3.12 + `jsonschema` + git. The hard contracts are conventions, not Codex APIs: literal `python` argv[0] token in verification commands, exact `PASS\n` stdout, DETECTED/SURVIVED JSON shape, sha256-bound artifacts, clean-git terminal condition.
+- pyproject/uv: scripts insert `src/` and repo root into `sys.path` directly, so they run under any interpreter with `jsonschema` installed; `uv run --python 3.12` is only the documented entry.
+
+## 6. Gaps within scope
+
+- **No loop orchestrator in scripts/**: nothing selects next tasks, compiles context, runs evaluators, and checkpoints automatically — each step is a separate manually invoked script; task selection lives in the kernel (`select_next_task.py`), outside scripts/.
+- **No architecture tooling yet**: `validate_architecture.py`, `docs/architecture/BOUNDARIES.md`, `artifacts/evaluations/architecture.json` all absent (ARCHITECTURE-001 in flight); `compile_repository_task_context.py` already references `artifacts/architecture/ARCHITECTURE-001-start.json` + `public_evaluator_contract.json`, so context compilation for the current task fails until those exist.
+- **No scripts for several frontier domains**: economics/ECV, exactly-ten routing (evaluator lives in `evals/public/route_decision_evaluator.py`), security/privacy, observability/lineage, replay/migration, convergence sweeps, full-system convergence have no scripts/-level counterpart — their gate verification commands must point elsewhere or don't exist yet.
+- **No learning-memory, adaptive-experimentation, or swarm-governance primitives**: one-writer safety is social/git-based (AGENTS.md + checkpoint ancestry), not enforced by any script; no memory store beyond committed artifacts; no champion–challenger promotion beyond static `replacement_analysis` fields.
+- **Validator/write hybridity to note for the blueprint**: several "validators" regenerate their own evaluation reports on every run (`validate_baseline_framework.py`, `validate_calibration_framework.py`, `validate_calibration_uncertainty.py`, `prove_known_bad_fails.py` default mode). Frontier evaluation discards those writes (temp copy), so the committed reports in `artifacts/evaluations/` must be regenerated and re-committed by the builder loop — the blueprint should treat report regeneration as an explicit build step, not a side effect.
+- `compile_repository_task_context.py` task coverage is incomplete (3 of 10 task IDs get only the bare task file).</subagent>
+<subagent mode="resume" agent_id="agent-2" item="Inventory the verification layer: evals/public/ (baseline_framework_evaluator.py, calibration_framework_evaluator.py, contract_spine_evaluator.py, math_oracle_evaluator.py, outcomes_labels_evaluator.py, route_decision_evaluator.py, vertical_slice_evaluator.py, all test_*.py, fixtures/), evals/known_bad/ (always_abstain.py, exact_name_only_clearance.py, frontier/, math/), evals/reference/fail_closed_reference.py. Report: how each evaluator is invoked and what contract it judges (input/output files), how known-bad mutations are registered and counted, how the autonomous-frontier meta-evaluator's negative controls work (read evals/public/test_autonomous_frontier.py and the frontier known-bad cases), how tests are run (pytest or unittest, pyproject.toml config at repo root, exact test commands), and what file evidence exists for 'independent review / three independent sweeps' claims. This informs independent-verification and mutation-testing design." outcome="completed"># Verification-layer inventory — evals/ (CRE Foundry @ 9a5462d)
+
+## 1. evals/public/ evaluators — invocation and contract judged
+
+All seven are builder-visible ("public"), stdlib + `jsonschema` only, and deliberately never import the `src/cre_foundry` module they judge (independence-by-construction). Only one has a CLI; the rest are importable libraries exercised by `test_*.py` and wrapped by `scripts/validate_*.py` for CLI/known-bad use.
+
+| File | Invocation | Judges (inputs → output) |
+|---|---|---|
+| `evals/public/route_decision_evaluator.py` (86 ln) | CLI: `--candidate <script> --fixture <json> [--result <json>]`; exit 0/1, prints `{passed, errors}` | Runs candidate script as subprocess on `evals/public/fixtures/{ten_valid,protected_alias_exact_ten}.json`; validates stdout decision vs `contracts/route_decision.schema.json` + invariants INV-001 (exactly ten or `ABSTAIN_NO_VALID_TEN`), INV-003 (no duplicate location), INV-004 (no protected/ineligible cleared) |
+| `evals/public/math_oracle_evaluator.py` (143 ln) | Library only: `evaluate(problem)`, `validate_route_decision(problem, result)` | Bounded exhaustive oracle over `contracts/math_decision_policy.schema.json` problems; enforces exact-ten distinct candidate/location IDs (MATH-P01), protected-bundle completeness, unknown-value dominance abstention, canonical tie-break; emits decision with optimality certificate. Imported by baseline, calibration, and contract-spine evaluators — single shared decision authority |
+| `evals/public/contract_spine_evaluator.py` (361 ln) | Library: `validate_spine(spine, check_replay=False)` → sorted diagnostic codes | CONTRACT-001 spine doc: `contracts/thin_slice_{observation,candidate}.schema.json` + math schemas; ~40 stable `CONTRACT-*` diagnostics (clock order, stage1-cutoff binding, protected-alias omission, adapter/schema/research sha256 bindings, decision-digest, replay receipt). Replays the math decision via the oracle and (optionally) the builder adapter byte-for-byte |
+| `evals/public/baseline_framework_evaluator.py` (689 ln) | Library: `evaluate()`, `evaluate_registered_mutation(case_id)` | BASELINE-001: `artifacts/baselines/{frozen_benchmark,policy_registry,canonical_run}.json` vs `contracts/baseline_{policy,evaluation}.schema.json`; pinned sha256 of frozen benchmark/registry; reconstructs 5 policies (incl. 16-seed deterministic random, beta-binomial Fraction-exact fit), delegates every decision to the math oracle, recomputes metrics/replacement-analysis/replay-receipt; proof-ceiling object caps claims (no real predictive validity, no production promotion) |
+| `evals/public/calibration_framework_evaluator.py` (852 ln) | Library: `evaluate()`, `evaluate_bounded_property_grid()` (13-part `BOUNDED_PROPERTY_GRID`), `evaluate_registered_mutation(case_id)` | CALIBRATION-001: `artifacts/calibration/{frozen_input,canonical_run}.json` + `EXPECTED_FILE_HASHES` pinning 9 upstream files (baseline artifacts, schemas, builder, outcomes contract); exact-rational (`Fraction`) probability reconstruction, fixed bins, micro/macro, subgroup/temporal states; mutations loaded from `artifacts/calibration/public_evaluator_contract.json.required_negative_controls` via `MUTATION_RECIPES`/`_apply_recipe` |
+| `evals/public/outcomes_labels_evaluator.py` (664 ln) | Library: `evaluate()` | OUTCOMES-001: `artifacts/outcomes/{synthetic_window_policy,synthetic_input_ledger,canonical_run,scenario_matrix}.json` vs `contracts/f9_*.schema.json`; derives assessment/dedupe/correction/route-day-aggregate/receipt semantics independently; proof ceiling level 5. **No in-module mutation registry** — mutations live as JSON recipes (below) applied by `scripts/validate_outcomes_labels.py` |
+| `evals/public/vertical_slice_evaluator.py` (445 ln) | Library: `evaluate()` | VERTICAL-001 synthetic slice doc vs `contracts/synthetic_{route_day,field_event,f9_outcome}.schema.json`; checks stage2-rewrite, duplicate/protected stop, replay receipt, immature outcomes; proof ceiling level 5 with all real-world claims False |
+
+Supporting: `evals/public/fixtures/ten_valid.json`, `protected_alias_exact_ten.json` (route-decision conformance fixtures).
+
+## 2. evals/known_bad/ — mutation registration and counting
+
+Three registration mechanisms coexist:
+
+- **Frontier fixture JSONs** — `evals/known_bad/frontier/` holds 167 fixture files: `baseline_*` ×47, `calibration_*` ×53, `outcome_*` ×36, `research_*` ×7, `vertical_*` ×7, `contract_*` ×5, `frontier_*` ×3, `math_*` ×3, `exact_ten_*` ×2, `model_*` ×2, `source_*` ×2. Names encode the attack (e.g. `baseline_forged_label_view.json`, `outcome_rehashed_correction.json`, `calibration_purge_embargo_shortened.json`).
+- **Contract registry** — `control/AUTONOMOUS_FRONTIER_CONTRACT.json`: 23 gates, 91 `known_bad_cases` total, each `{case_id, description, fixture, verification_command_id, expected_diagnostic}`. Per-gate counts: AF-OUTCOMES-LABELS-001 = 36, AF-RESEARCH-CLOSURE-001 = 7, AF-VERTICAL-SLICE-001 = 7, AF-DOCUMENTATION-STATE-001 = 3, all others = 2. Per-domain bulk suites (baseline 47, calibration 53) are registered under 2 gate cases each that invoke runner commands iterating the whole registry.
+- **Per-domain machine registries** — `MUTATION_DIAGNOSTICS` in `baseline_framework_evaluator.py:533` (47 case_ids → expected diagnostic, with `evaluate_registered_mutation` applying real byte mutations to the frozen subject and refusing name-based acceptance); calibration derives its registry from its evaluator contract's `required_negative_controls`; outcomes enforces recipe↔registry bijection with `OUTCOMES-MUTATION-COVERAGE` / `OUTCOMES-MUTATION-SURVIVED` codes (`scripts/validate_outcomes_labels.py:218-227`).
+
+Python mutants: `evals/known_bad/always_abstain.py` and `exact_name_only_clearance.py` (candidate scripts the route-decision evaluator must reject); `evals/known_bad/math/*.py` — 7 oracle-attack mutants (`issue_nine`, `collapse_duplicate_physical_locations`, `fill_with_protected_alias`, `greedy_individual_value`, `permutation_sensitive`, `prefer_proximity_below_value_floor`, `use_stage2_field_observation`) plus `_support.py` loader. `evals/reference/fail_closed_reference.py` is the non-production reference that abstains whenever <10 valid — used only to self-test the public evaluator.
+
+## 3. Autonomous-frontier meta-evaluator negative controls
+
+`scripts/evaluate_autonomous_frontier.py::run_known_bad` (lines 282-334): for each gate case it appends `--known-bad <fixture>` to the gate's verification command argv, runs it confined to the repo root, and requires a JSON payload with `result == "DETECTED"`, matching `case_id`, exact `expected_diagnostic`, and `fixture_sha256`. Missing fixture, unregistered command, or survival → gate FAIL ("known-bad case survived or was not executed"). This is the mutation-testing execution fabric.
+
+`evals/public/test_autonomous_frontier.py` (541 ln, 19 tests) is the adversarial meta-suite. It builds a sandboxed 2-gate contract in a temp dir and proves the meta-evaluator itself fails closed:
+
+- `test_registered_known_bad_must_be_executed` — a verifier that never runs the known-bad case fails.
+- `test_hash_aware_echo_only_known_bad_verifier_fails` — a verifier that echoes DETECTED from the fixture hash **without exercising semantics** fails (kills hash-matching gaming).
+- `test_altered_frontier_fixture_semantics_are_not_detected` — altered fixture bytes must yield `SURVIVED`, exit 1 (fixture exact-match binding).
+- `run_known_bad()` maps the 3 `frontier_*` fixtures (self-attested pass, external-block abuse, dependency cycle) to specific meta-tests; any payload mismatch → SURVIVED.
+- Trust/external: legitimate external absence → `BLOCKED_EXTERNAL`; external block cannot mask autonomous failure; builder-local attestation file fails; **builder-owned out-of-repo trust anchor rejected** even with a "valid" attestation (owner field checked via `CRE_FRONTIER_EXTERNAL_AUTHORITY_CONFIG`).
+- Structural: self-attested pass with empty commands fails; dependency cycle fails; failed dependency strips child credit (base_result PASS, result FAIL); `reconcile_task_state` catches blocked-task-relabeled-as-executable and completed-task-with-open-gate.
+- Sandbox safety: path traversal (`../outside.json`) fails; a mutating verifier fails and its writes never land (`mutation.txt` absent — verifiers run against a copy); `python -m` module bypass fails; proof-level inflation fails; CLI emits only the computed tri-state token (PASS/BLOCKED_EXTERNAL exit 0, FAIL exit 1).
+- `test_repository_meta_evidence_hashes_are_current` verifies `artifacts/evaluations/autonomous_frontier_meta.json` covered-path sha256s against both the working tree and `git show <subject_commit>:<path>`.
+
+## 4. Test runner and exact commands
+
+- **Framework: `unittest` only.** Every `evals/public/test_*.py` uses `unittest.TestCase` + `unittest.main()`. `pyproject.toml` has **no pytest/tool config at all** — only `[project]` (name cre-foundry, `requires-python >=3.12,<3.13`, deps jsonschema/numpy/pandas/scikit-learn) and `[tool.uv] package = false`. No tox/nox/Makefile.
+- Invocation per AGENTS.md: `uv run --python 3.12 python scripts/evaluate_autonomous_frontier.py`; tests run as modules/files, e.g. `python -m unittest evals.public.test_baseline_framework` or `python evals/public/test_autonomous_frontier.py` (test files `sys.path.insert` `src/` and repo root as needed). Stale `__pycache__` shows both cpython-39 and cpython-312 history.
+- Test-method counts (`grep -c "def test"`): frontier 19, baseline 21, calibration 29, contract_spine 5, math 10, outcomes 14, research 10, route_decision 5, vertical 7 → **120 total**, matching `control/CURRENT_STATE.json`'s "120 public tests" claim.
+
+## 5. Evidence for "independent review / three independent sweeps"
+
+- `control/CURRENT_STATE.json:74-79` — recorded claims: contract spine passed "public schema, semantic, mutation, rebound, and independent review at proof level 4"; outcomes "36 mutations, and three independent sweeps … proof level 5"; baseline "47 detected mutations, 91 public tests, and three independent clean sweeps at public proof level 5"; calibration "53 detected mutations, coordinated rehash resistance, 120 public tests, and three independent clean sweeps".
+- `control/AUTONOMOUS_FRONTIER_CONTRACT.json` gate **AF-CONVERGENCE-SWEEPS-001** (lines 2564-2650): requires three independent domain sweeps per round (quantitative/causal/economic; systems/product/field/reliability/security; adversarial claim-integrity) and **two successive complete rounds** with no critical/high finding after the last material repair; known-bad cases include `stale-sweeps` → fixture `evals/known_bad/frontier/convergence_stale_sweeps.json`, expected diagnostic "registered mutation detected: stale-sweeps"; owner "independent sweep coordinator".
+- `control/TASK_GRAPH.json:228-231` — the sweep-round task (objective/evaluator/acceptance/rollback: sweep rounds predating a material repair are invalidated).
+- Codex-era machinery in `bootstrap/project_os_v2.2/CRE_Codex_Project_OS_v2.2/launch_kernel/`: `LEVEL10_SWEEPER_REPORT.md`, `skills/verify-sweep/SKILL.md` (`cre-verify-sweep`), `control/EVALUATOR_TOPOLOGY.md` ("evaluator changes require their own task and independent review"), `kernel/PROOF_POLICY.md` ("Promotion requires the public and sealed evaluators, independent review"), `control/SYMPHONY_WORKFLOW.md`. `bootstrap/BOOTSTRAP-001.partial.json` has an `independent_sweep` block referencing an external `/Users/alimehdi/Downloads/CRE_LEVEL10_SWEEPER_REPORT_v2.2.md` (out-of-tree, builder-machine-local — a migration risk).
+
+## 6. Codex-/tooling-specific items a Kimi-native system must replace or migrate
+
+- Bootstrap/kernel tree is explicitly Codex-branded (`CRE_Codex_Project_OS_v2.2`, `skills/verify-sweep` is a Codex-skill format) — the sweep skill and launch-kernel workflow need re-implementation as Kimi-native loop steps.
+- Everything is driven by `uv run --python 3.12 python scripts/...` with `sys.executable` subprocess chains; the frontier evaluator pins `argv[0]` conventions (`argv = [sys.executable, *command["argv"][1:], "--known-bad", ...]`), i.e. verification commands must be `python scripts/...` shaped — a harness assumption to preserve or adapt.
+- Strict-JSON canonicalization (`SORTED_KEYS_INTEGER_JSON_V1`, duplicate-key rejection, canonical `Z` timestamps) is reimplemented per-evaluator — reusable as-is, pure stdlib.
+
+## 7. Gaps noticed (within scope)
+
+- `evals/known_bad/frontier/convergence_stale_sweeps.json` (and the sweep-count-inflation counterpart referenced near line 2623) **do not exist yet** in `evals/known_bad/frontier/` — the convergence-sweep gate's negative controls are registered but their fixtures are unbuilt (consistent with AF-CONVERGENCE-SWEEPS-001 being open; ARCHITECTURE-001 handoff in progress).
+- Only `route_decision_evaluator.py` has a CLI; the other six evaluators depend on `scripts/validate_*.py` wrappers for `--known-bad` execution — the CLI surface is split across two directories, which the blueprint should note when designing a uniform Kimi-side runner.
+- No sealed/hidden evaluator exists in-repo (AGENTS.md mandates a separate custodian-owned repo); negative-control coverage is therefore entirely public-fixture based.
+- Evidence for past "three independent sweeps" lives only as narrative claims in `control/CURRENT_STATE.json` plus the out-of-tree sweeper report path; there is no in-repo sweep-artifact directory yet, so the blueprint must create the sweep-artifact convention the new gate expects (six sweep artifacts, severity ledger, repair hashes per the contract).</subagent>
+<subagent mode="resume" agent_id="agent-3" item="Inventory the control plane and evidence model: control/ (CURRENT_STATE.json, CURRENT_TASK.json, TASK_GRAPH.json, GATES.json, EVALUATOR_DECISION.json, DECISIONS.md, AUTONOMOUS_FRONTIER_CONTRACT.json), tasks/ (all 10 task packets — their structure, gates, writable_roots), artifacts/task-results/ (every task result file plus RESEARCH-001.partial.json), artifacts/evaluations/ (every evaluation report), artifacts/baselines/policy_registry.json and frozen_benchmark.json, artifacts/models/model_registry.json, artifacts/calibration/frozen_input.json, contracts/*.schema.json (list all schemas with one-line purpose each, including contracts/research/). Report: the exact structure of the frontier contract (gate ids, result precedence, capability classes, allowed_results), the gate ownership model in GATES.json, how baselines and replacement semantics represent champion–challenger today, how verified/unverified claim ceilings are recorded, how DECISIONS.md records Best-of-N alternatives and rejected approaches, and how task results persist state transitions. This informs experiment tracking, baselines, proof ceilings, external blockers, and convergence design." outcome="completed"># Inventory Report: CRE Foundry Control Plane & Evidence Model
+
+Repo: `/Users/alimehdi/Documents/cre`, branch `handoff/kimi-architecture-001` @ `9a5462d`, clean tree. All findings below are from read-only inspection; no scripts were executed.
+
+---
+
+## 1. `control/` — the run-time control plane
+
+| Path | Purpose |
+|---|---|
+| `control/CURRENT_STATE.json` | Whole-program snapshot: phase, milestone, completed/executable/blocked task lists, open gates, verified/unverified claim lists, checkpoint commit, active artifacts, cached frontier verdict, session block |
+| `control/CURRENT_TASK.json` | Active task pointer (`ARCHITECTURE-001`, status, `selected_reason`, `proof_target`) |
+| `control/TASK_GRAPH.json` | 25-node DAG: each node = `task_id, status, dependencies[], gates[], objective, evaluator, acceptance, rollback` |
+| `control/GATES.json` | External-authority gate registry (22 gates, all `OPEN_BLOCKING`) with owner + required evidence |
+| `control/EVALUATOR_DECISION.json` | `DEC-EVAL-001`: three-layer evaluator topology decision (public/sealed/external-hidden) with Best-of-N alternatives |
+| `control/DECISIONS.md` | Narrative decision log (4 entries) — see §7 |
+| `control/AUTONOMOUS_FRONTIER_CONTRACT.json` | The machine completion judge: 23-gate contract evaluated by `scripts/evaluate_autonomous_frontier.py` |
+
+### `CURRENT_STATE.json` key mechanisms
+- `completed_tasks` (9), `executable_tasks` (2), `blocked_tasks` (13), `open_gates` (22 ids).
+- **Claim ceilings**: `verified_claims[]` — 16 dated proof statements, each tagged with a *public proof level* (e.g. "…pass public proof level 5"); `unverified_claims[]` — 11 strings ("sealed evaluator independence", "commercial value", "production readiness"…). This is the repository's verified/unverified ledger; frontier gates reference it indirectly via per-gate `claim_ceiling` strings.
+- `live_permissions: false`, `last_checkpoint` + `checkpoint_commit` (git SHA binds the resume point), `active_artifacts[]` (~55 paths).
+- `autonomous_frontier` cache: `{result: FAIL, passing_gates: 0, failed_gates: 23, blocked_external_gates: 0, interpretation}`.
+- **Codex-specific residue to migrate**: `session: {mode: "interactive", codex_version: "0.145.0-alpha.18", thread_id, last_turn_id}` — the only explicitly Codex-branded field in the control plane; a Kimi-native loop needs its own session/identity block.
+
+---
+
+## 2. The frontier contract (`control/AUTONOMOUS_FRONTIER_CONTRACT.json`, v1.0.0, 2764 lines)
+
+### Top-level structure
+- `contract_id: "CRE-AUTONOMOUS-FRONTIER"`, `mission_ref` → `bootstrap/.../kernel/MISSION.md`.
+- **`allowed_results`: `["PASS", "FAIL", "BLOCKED_EXTERNAL"]`** — tri-state verdict.
+- **`result_precedence`: `["FAIL", "BLOCKED_EXTERNAL", "PASS"]`** — strict ordering; any FAIL dominates, BLOCKED_EXTERNAL only when autonomous prerequisites all pass, PASS last. (Verified in `artifacts/evaluations/autonomous_frontier_report.json`: `gate_counts {PASS:0, FAIL:23, BLOCKED_EXTERNAL:0}`; CALIBRATION's gate has `base_result: BLOCKED_EXTERNAL` resolving to `FAIL` because dependency `AF-BASELINE-MODEL-001` is unresolved — precedence is mechanical, not narrative.)
+- **`capability_classes`: `["repository_derivable", "publicly_researchable", "access_dependent", "human_authoritative", "empirically_measurable_only", "externally_hidden"]`** — used to classify each `external_blocker`.
+- `gates[]`: **23 gates**, each with: `gate_id, domain, decision_purpose, dependencies[] (gate ids), pass_conditions[], failure_conditions[], required_artifacts[] ({artifact_id, path, availability: autonomous|external, evidence_type, minimum_proof_level, sha256|null}), required_evidence[] (same shape), required_evaluator {evaluator_id, type: public|sealed|external_hidden, owner, independent_from_builder, artifact}, verification_commands[] ({command_id, phase: autonomous|external, argv[], cwd, timeout_seconds, expected_exit_code, expected_stdout:"PASS"}), known_bad_cases[] ({case_id, description, fixture, verification_command_id, expected_diagnostic}), achieved_proof_level, autonomous_required_proof_level, required_proof_level, claim_ceiling, unresolved_uncertainty[], external_blocker|null ({gate_id, classification, owner, unlock_condition, evidence_artifact})`.
+
+### Gate ids (dependency order)
+1. `AF-MISSION-INTEGRITY-001` (achieved PL4)
+2. `AF-RESEARCH-CLOSURE-001` (PL2)
+3. `AF-SOURCE-FEASIBILITY-001` (PL2, blocked by `approved_source_envelope`)
+4. `AF-DATA-HISTORY-001` (PL0, blocked by `GATE-PUBLICATION-HISTORY-001`)
+5. `AF-IDENTITY-TEMPORAL-001` (PL0, blocked by `protected_account_bundle`)
+6. `AF-OUTCOMES-LABELS-001` (PL5, blocked by `GATE-OUTCOME-LABELS-MATURITY-001`)
+7. `AF-MATH-STATS-001` (PL4)
+8. `AF-BASELINE-MODEL-001` (PL5, blocked by `GATE-OUTCOME-LABELS-MATURITY-001`)
+9. `AF-CALIBRATION-UNCERTAINTY-001` (PL5, blocked by same)
+10. `AF-ECONOMICS-ECV-001` (PL0, blocked by `firm_economics_services_territories`)
+11. `AF-EXACT-TEN-001` (PL4)
+12. `AF-ROUTING-FEASIBILITY-001` (PL0, blocked by `representative_origins_capacity_specialties`)
+13. `AF-EVALUATOR-INDEPENDENCE-001` (PL4, blocked by `GATE-SEALED-EVALUATOR-CUSTODY-001`)
+14. `AF-VERTICAL-SLICE-001` (PL5)
+15. `AF-ARCHITECTURE-PRODUCT-001` (PL0 — current task)
+16. `AF-SECURITY-PRIVACY-001` (PL0)
+17. `AF-OBSERVABILITY-LINEAGE-001` (PL0)
+18. `AF-REPLAY-RECOVERY-001` (PL0)
+19. `AF-ADVERSARIAL-RESISTANCE-001` (PL4)
+20. `AF-DOCUMENTATION-STATE-001` (PL4 — the checkpoint/resume gate: requires state/task/graph/gates/results to reconcile bidirectionally and checkpoint commits to resolve)
+21. `AF-EXTERNAL-READINESS-001` (PL0)
+22. `AF-CONVERGENCE-SWEEPS-001` (PL0 — **convergence design**: 3 independent domain sweeps/round, 2 successive clean rounds after last material repair; artifacts at `artifacts/convergence/convergence_ledger.json`)
+23. `AF-FULL-SYSTEM-CONVERGENCE-001` (PL0, terminal; PASS only at level-8 randomized F9 + level-9 realized commercial evidence; blocked by `GATE-FULL-EXTERNAL-EVIDENCE-001`)
+
+**Proof-level ladder** in use: PL1 spec → PL2 deterministic research reproduction → PL4 mutation-resistant public → PL5 synthetic end-to-end → PL6 historical point-in-time → PL7 shadow → PL8 randomized → PL9 realized commercial. Every artifact/evidence carries `minimum_proof_level` + optional `sha256` binding (research/outcomes/baseline artifacts are hash-pinned; others null).
+
+**Report artifact**: `artifacts/evaluations/autonomous_frontier_report.json` — `{contract_id, contract_sha256, result, structural_errors, terminal_errors, gate_counts, gates[]}`; per gate `{gate_id, result, errors[], commands[] (with stdout/stderr sha256), known_bad_cases[], external_verification}`. Companion `autonomous_frontier_meta.json` = meta-test report (false-pass, external-block-abuse, cycle, traversal, output-token, control-drift tests).
+
+---
+
+## 3. `GATES.json` — external gate ownership model
+
+22 gates, all `OPEN_BLOCKING`. Shape: `{gate_id, status, blocks[], owner, required_evidence[] (sometimes absent), location?}`. Two naming generations: `GATE-SCREAMING-CASE-001` (newer) and `snake_case` (older, e.g. `approved_source_envelope`, `firm_economics_services_territories`, `protected_account_bundle`).
+
+- **Ownership**: every gate names an accountable *external role*, never the builder — e.g. "UNASSIGNED independent evaluator custodian", "authorized firm decision-maker", "authorized outcome-policy owner", "independent holdout custodian" (`location: "UNASSIGNED external resource outside repository and Codex-readable context"` — another Codex-specific string to migrate).
+- `blocks[]` mixes task ids, claim classes ("commercial value claims"), milestones ("M12","M13"), and the terminal `AUTONOMOUS_FRONTIER_PASS`.
+- `required_evidence[]` is the machine-checkable unlock contract: signed attestations binding application SHA + evaluator digest, builder access-denial proof, blind adjudication samples, preregistration, rollback authority, etc.
+- `GATE-FULL-EXTERNAL-EVIDENCE-001` is the terminal blocker, owned jointly by "authorized firm, independent evaluator, holdout, field-operations, outcome, and finance custodians".
+- Two layers of indirection: frontier gates (`AF-*`) point via `external_blocker.gate_id` into `GATES.json` ids — the contract does not duplicate owner/evidence detail.
+
+---
+
+## 4. Champion–challenger: baselines & replacement semantics as they exist today
+
+- **`artifacts/baselines/policy_registry.json`** (`BASELINE_POLICY_REGISTRY:V1`): 5 frozen synthetic policies with `complexity_tier`, `dependency_count`, `trainable_parameter_count`, `feature_names`, `parameters`: `INCUMBENT_SYNTHETIC_V1` (tier 0), `SEEDED_RANDOM_SYNTHETIC_V1` (tier 0, SHA256-domain-separated, 16-seed `random_seed_schedule`), `TRANSPARENT_RULE_SYNTHETIC_V1` (tier 1), `RECENCY_SOURCE_SYNTHETIC_V1` (tier 1), `BETA_BINOMIAL_BUCKET_SYNTHETIC_V1` (tier 2, 3 trainable params, exact-rational). Also `feature_allowlist` + `forbidden_feature_families` (STAGE_2/3, OUTCOME, BOOKING… — leakage firewall), `model_fit_at`, canonicalization `SORTED_KEYS_COMPACT_INTEGER_JSON_V1`, and a `claim_ceiling`.
+- **`artifacts/baselines/frozen_benchmark.json`** (~620KB): one frozen point-in-time cohort — 8 routes × 12 candidates = 96 labels, `split_registry` (partition unit route-day, `model_fit_at`, per-split prediction freeze timestamps, outcome window, publication/correction latency, reporting grace), per-route `candidate_universe_sha256`, per-label `assessment_sha256` + `current_head` — i.e. replay-addressable, hash-bound benchmark.
+- **`artifacts/models/model_registry.json`**: thin — just embeds the policy registry verbatim + `proof_level: 5` + `execution_scope: SYNTHETIC_NON_INFLUENCING`. No champion pointer exists yet.
+- **Replacement = champion–challenger, currently synthetic-only** (`artifacts/baselines/public_evaluator_contract.json:128-137` `replacement_contract`):
+  - `dispositions`: `SYNTHETIC_MECHANICAL_PREFERENCE | NO_SYNTHETIC_REPLACEMENT | NOT_COMPARABLE_INCOMPLETE_LABELS`
+  - Primary quantity: total final F9@10 on identical held-out route-days (random = exact mean over 16 seeds)
+  - `tier_margins_total_hits: {0:0, 1:1, 2:2}` — a challenger must beat by a complexity-tier-scaled margin
+  - Guardrails: zero invariant regressions, zero leakage, identical cohort/as-of, **no additional abstentions**, noninferior on every temporal fold (tolerance 0), no policy-specific row exclusion
+  - Tie-break: lexicographic `complexity_preference` (tier → feature_count → params → deps → policy_id)
+  - `production_replacement_authorized: false`, real margin gated by `GATE-BASELINE-REPLACEMENT-AUTHORITY-001`
+  - Evaluation reports carry a `replacement_analysis` field; schema enforces `proof.production_replacement_authorized: const false` (`contracts/baseline_evaluation.schema.json`).
+- Independent-reconstruction discipline (BASELINE-P09): evaluator recomputes everything before receipt validation so rehashed attacker-controlled digests can't mask semantic changes — directly relevant to any promotion pipeline.
+
+---
+
+## 5. Calibration frozen input
+
+`artifacts/calibration/frozen_input.json` (`CALIBRATION_INPUT:FROZEN_V1`): exact-rational probability head (`BETA_BINOMIAL_BUCKET_RAW_POSTERIOR_SYNTHETIC_V1`, estimand explicitly `OBSERVATIONAL_CANDIDATE_RISK_NOT_CAUSAL_EFFECT_OR_ROUTE_DAY_ITT`), 5 fixed rational bins B0–B4, calibrator `FIXED_BIN_BETA_BINOMIAL_ALPHA_1_BETA_1:V1` (validation-only fit, `minimum_cell_count: 4`, `test_reuse_allowed: false`, sparse fallback `UNKNOWN_INPUT`), `uncertainty_status: NOT_EMPIRICALLY_ESTIMABLE`, 4 registered scenarios (canonical, unknown-probability, sparse-cell, missing-feature), and a `bindings` block pinning 10 upstream artifacts by sha256 (benchmark, registry, runs, MATH contracts, outcomes contracts, evaluator contract). This `bindings` hash-pinning pattern is the repo's general mechanism for freezing experiment inputs.
+
+---
+
+## 6. Task packets (`tasks/*.json`) — all 10 share one flat shape
+
+Fields (from `tasks/ARCHITECTURE-001.json`, confirmed `writable_roots` present in all 10): `task_id, title, status, objective, business_reason, dependencies[], gates[], inputs[], assumptions[], non_goals[], `**`writable_roots[]`**` (e.g. ARCHITECTURE-001: `src, contracts, evals/public, evals/known_bad/frontier, artifacts/architecture, artifacts/evaluations, docs/architecture, scripts, tasks, control` — the one-writer blast-radius fence)`, `required_expertise[], evaluator[], known_bad_cases[], acceptance[], artifacts[], rollback, stop_budget`. Only 10 of the 25 TASK_GRAPH nodes have packets instantiated so far.
+
+## 7. Task results & state transitions (`artifacts/task-results/`)
+
+10 files: `BOOTSTRAP-001, FRONTIER-001, RESEARCH-001, MATH-001, CONTRACT-001, VERTICAL-001, OUTCOMES-001, BASELINE-001, CALIBRATION-001` (all `"status":"completed"`) + **`RESEARCH-001.partial.json`** (`"status":"partial"` — the interruption-safe checkpoint pattern: a mid-task persist with its own state_transition, evaluations where one check is `passed:false`, and a `next_action` resume instruction).
+
+Schema: `bootstrap/project_os_v2.2/.../launch_kernel/schemas/task_result.schema.json` — required: `task_id, status, objective, state_transition, files_changed, commands, evaluations, expertise_coverage, agents_used, alternatives, findings, assumptions, decisions, risks, gates, proof_level, artifacts, rollback, next_action`.
+
+- **`state_transition`**: `{from, to, reason}` free-text triple recording the exact before/after control-state (e.g. CALIBRATION-001: from "in_progress; BASELINE-001 checkpoint active" → to "completed at PL5; ARCHITECTURE-001 selected in_progress").
+- `commands[]`: executed commands with `exit_code` + output artifact path — note all use `uv run --python 3.12` (tooling-specific; see §10).
+- `evaluations[]`: mixed machine verdicts incl. frontier re-checks (`{evaluator_id:"autonomous-frontier", result:"FAIL", failed_gates:23, interpretation}`) and independent sweeps with `PASS_AFTER_REPAIR` + `repairs_verified[]`.
+- **`alternatives[]`**: per-task Best-of-N (`{alternative, decision: selected|rejected, reason}`) — e.g. CALIBRATION-001 records 5 alternatives (4 rejected); RESEARCH-001.partial uses an `{decision, options[], selected, reason}` variant.
+- `artifacts[]` carry `sha256` + `role`; `gates[]` lists still-open external gates; `proof_level` recorded per task.
+
+## 8. `DECISIONS.md` — Best-of-N pattern
+
+Only 4 entries (`DEC-BOOT-001` retain Project OS; `DEC-RUNTIME-001` uv+Python 3.12 baseline; `DEC-EVAL-001` split evaluator topology; `DEC-TASK-001` task selection). Pattern: short narrative, explicit "Alternatives considered: X (rejected, reason), Y (rejected, reason)", rollback line. `DEC-EVAL-001` says "Best-of-N compared an encrypted in-repository capsule, a separate evaluator repository, and a black-box evaluator service" — the structured Best-of-N record lives in `control/EVALUATOR_DECISION.json` (`alternatives[]` with `advantages/limitations/selected`), and per-task in each task result's `alternatives[]`. DECISIONS.md is the thinnest layer; it has **not been appended to since DEC-TASK-001** (gap: later tasks record alternatives only in task results).
+
+## 9. `contracts/` — schema inventory (20 root + 5 research)
+
+| Schema | Purpose |
+|---|---|
+| `autonomous_frontier_contract.schema.json` | Validates the 23-gate frontier contract |
+| `baseline_evaluation.schema.json` | Synthetic point-in-time baseline evaluation run (incl. `replacement_analysis`, `production_replacement_authorized: const false`) |
+| `baseline_policy.schema.json` | Frozen synthetic baseline policy registry |
+| `calibration_evaluation.schema.json` | Synthetic calibration evaluation run (closed public run contract) |
+| `calibration_input.schema.json` | Frozen synthetic calibration input registry |
+| `calibration_uncertainty.schema.json` | Calibration/uncertainty mechanics contract (bins, missingness, subgroup, temporal states) |
+| `estimand_registry.schema.json` | Registered estimands (MATH-001; keeps observational ≠ causal distinct) |
+| `f9_outcome.schema.json` | Append-only synthetic F9 outcome assessment revision |
+| `f9_outcome_input_ledger.schema.json` | Strict synthetic F9 outcome input ledger |
+| `f9_window_policy.schema.json` | Strict synthetic F9 window policy (maturity/censoring/competing events) |
+| `math_authority_input.schema.json` | Human-authority input template for MATH (unknown params stay symbolic) |
+| `math_decision_policy.schema.json` | Bounded Stage-1 decision problem/policy contract |
+| `math_route_decision.schema.json` | Exact-ten-or-abstain route decision output |
+| `route_decision.schema.json` | Route decision (public evaluator subject) |
+| `synthetic_f9_outcome.schema.json` | Append-only Stage-3 F9 outcome assessment (vertical slice) |
+| `synthetic_field_event.schema.json` | Append-only Stage-2 field event (vertical slice) |
+| `synthetic_route_day.schema.json` | Synthetic non-influencing route-day manifest |
+| `thin_slice_candidate.schema.json` | Synthetic physical-location candidate assertion |
+| `thin_slice_observation.schema.json` | Synthetic source-native observation |
+| `research/canonical_field_map.schema.json` | Field-level canonical mapping across sources |
+| `research/claim_evidence_graph.schema.json` | Dated claim→evidence→disposition graph (RQ/CLM) |
+| `research/counterevidence_register.schema.json` | Register of counterevidence per claim |
+| `research/source_feasibility_registry.schema.json` | Source roles/grain/clocks/terms feasibility registry |
+| `research/source_reproduction_report.schema.json` | Independent metadata/schema reproduction report |
+
+Task-result schema lives in the kernel, not `contracts/`: `bootstrap/project_os_v2.2/CRE_Codex_Project_OS_v2.2/launch_kernel/schemas/task_result.schema.json`.
+
+## 10. Codex/tooling-specific items a Kimi-native system must replace or migrate
+
+- `control/CURRENT_STATE.json` → `session.codex_version` field; `control/GATES.json` → "Codex-readable context" string in `GATE-HIDDEN-HOLDOUT-OWNER-001.location`.
+- Kernel path branding: `bootstrap/project_os_v2.2/CRE_Codex_Project_OS_v2.2/` is referenced by `mission_ref` in the frontier contract and AGENTS.md.
+- `agents_used` values in task results reference Codex-style agent paths (e.g. `/root/outcomes_evaluator_design`).
+- All persisted commands use `uv run --python 3.12` (host runtime is unpinned Anaconda 3.9; DEC-RUNTIME-001).
+- Frontier contract `verification_commands[].argv` invoke `python scripts/validate_*.py` — portable, but the evaluator itself (`scripts/evaluate_autonomous_frontier.py`) replays commands in isolated copies; the launch kernel in `bootstrap/` contains its own AGENTS.md-driven start-of-run ritual that is prompt-harness-specific.
+
+## 11. Gaps noticed within scope
+
+- `AF-MISSION-INTEGRITY-001` currently fails: `artifacts/evaluations/invariant_trace.json` missing and `known_bad_public_result.json` lacks sha256 binding (frontier report errors) — a declared-but-absent evidence artifact.
+- `artifacts/models/model_registry.json` is a placeholder (registry copy + PL5 stamp); no champion pointer, no versioning of promoted models — champion–challenger exists only as *synthetic disposition*, real promotion authority is entirely gated.
+- No `artifacts/convergence/` directory yet — convergence ledger is specified (AF-CONVERGENCE-SWEEPS-001) but unimplemented.
+- `DECISIONS.md` stalled at DEC-TASK-001; decision history since lives only inside task results.
+- `EVALUATOR_DECISION.json` mirrors DEC-EVAL-001 — two stores for one decision (drift risk).
+- Mixed gate-id naming generations in `GATES.json` (snake_case vs GATE-*) — cosmetic but will annoy machine joins.
+- 15 of 25 TASK_GRAPH nodes have no task packet in `tasks/` yet.
+- `verified_claims`/`unverified_claims` are plain strings in CURRENT_STATE — no per-claim id, proof-level field, or evidence link (per-gate `claim_ceiling` strings carry the real semantics; a machine-checkable claim registry is a design opportunity, partially prefigured by `contracts/research/claim_evidence_graph.schema.json`).</subagent>
+</agent_swarm_result>

@@ -1,0 +1,20 @@
+{
+  "task_id": "CONTRACT-001",
+  "title": "Thin-slice source-to-decision contract spine",
+  "status": "completed",
+  "objective": "Define the smallest strict, versioned, point-in-time contract chain from an authorized source observation through canonical physical-location identity, eligibility/protection, synthetic scoring, exact-ten decision, and replayable output binding.",
+  "business_reason": "The earliest shadow vertical slice needs one mechanically connected contract spine before data, identity, modeling, routing, and product subsystems expand horizontally.",
+  "dependencies": ["RESEARCH-001", "MATH-001"],
+  "gates": [],
+  "inputs": ["research source and canonical-field contracts", "MATH-001 synthetic decision schemas and oracle", "mission invariants", "capability and proof boundaries"],
+  "assumptions": [],
+  "non_goals": ["acquire operational source rows", "resolve real entities", "calibrate scores or routes", "issue live outreach", "claim application conformance"],
+  "writable_roots": ["contracts", "src/cre_foundry/contracts", "evals/public", "evals/known_bad/frontier", "artifacts/contracts", "docs/contracts"],
+  "required_expertise": ["data_contracts", "identity_temporal", "security_privacy", "testing_verification", "product_architecture"],
+  "evaluator": ["strict JSON Schemas and cross-document semantic validator", "synthetic source-to-decision replay", "registered contract-breaking mutations"],
+  "known_bad_cases": ["future observation accepted", "brand collapsed into physical location", "protected alias omitted", "decision digest mismatch", "schema version silently upgraded"],
+  "acceptance": ["one synthetic source observation traverses the contract spine deterministically", "all identity grains and clocks remain distinct", "Stage-1 and protected fail-closed semantics survive translation", "decision output binds source snapshot and policy version", "every registered mutation is rejected"],
+  "artifacts": ["contracts/thin_slice_observation.schema.json", "contracts/thin_slice_candidate.schema.json", "artifacts/contracts/contract_spine.json", "scripts/validate_contract_spine.py", "artifacts/evaluations/contract_spine.json"],
+  "rollback": "Retain the MATH-001 standalone oracle and reject any cross-contract version mismatch until the spine is repaired.",
+  "stop_budget": "Remain synthetic and interface-only; convert unavailable source, identity, protected, representative, route, and firm inputs into existing named gates."
+}

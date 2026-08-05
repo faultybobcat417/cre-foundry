@@ -1,0 +1,22 @@
+{
+  "config_version": "cre-foundry-snapshot-registration-review-v1",
+  "policy": {
+    "operating_mode": "shadow",
+    "read_only": true,
+    "governed_source_required": true,
+    "admission_ready_required": true,
+    "container_recon_ready_required": true,
+    "manifest_source_identity_match_required": true,
+    "manifest_timestamp_required": true,
+    "manual_parser_approval_required": true,
+    "manual_temporal_approval_required": true,
+    "manual_registration_approval_required": true,
+    "registration_sql_generation_enabled": false,
+    "snapshot_registration_enabled": false,
+    "automatic_acquisition": false,
+    "browser_execution": false,
+    "computer_vision_execution": false,
+    "opportunity_ranked": false,
+    "outreach_eligible": false
+  }
+}

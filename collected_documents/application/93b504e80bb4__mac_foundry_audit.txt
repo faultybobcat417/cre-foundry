@@ -1,0 +1,40 @@
+===== DATE =====
+Sat 25 Jul 2026 21:37:57 EDT
+
+===== MACOS =====
+ProductName:		macOS
+ProductVersion:		26.3.1
+BuildVersion:		25D2128
+
+===== HARDWARE =====
+arm64
+Apple M1
+Memory bytes: 8589934592
+
+===== FREE DISK =====
+Filesystem      Size    Used   Avail Capacity iused ifree %iused  Mounted on
+/dev/disk3s5   228Gi   153Gi    37Gi    81%    1.8M  388M    0%   /System/Volumes/Data
+
+===== COMMAND LINE TOOLS =====
+/Applications/Xcode.app/Contents/Developer
+
+===== GIT =====
+git version 2.55.0
+
+===== HOMEBREW =====
+Homebrew 6.0.12-140-g15b4330
+
+===== PYTHON =====
+Python 3.9.12
+/opt/anaconda3/bin/python3
+
+===== UV =====
+uv 0.10.10 (8c730aaad 2026-03-13)
+
+===== POWER SCHEDULE =====
+Scheduled power events:
+ [0]  wake at 07/25/2026 23:12:49 by 'com.apple.alarm.user-invisible-com.apple.calaccessd.travelEngine.periodicRefreshTimer'
+ [1]  wake at 07/26/2026 15:01:42 by 'com.apple.alarm.user-invisible-com.apple.acmd.alarm'
+
+===== FILEVAULT =====
+FileVault is On.

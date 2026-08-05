@@ -1,0 +1,12 @@
+{
+  "applied_suppression_count": 0,
+  "declared_suppression_count": 0,
+  "governance_passed": true,
+  "inline_suppression_count": 0,
+  "inline_suppressions": [],
+  "model_version": "cre-foundry-suppression-governance-v1",
+  "ungoverned_inline_suppression_count": 0,
+  "valid_suppression_count": 0,
+  "violation_count": 0,
+  "violations": []
+}

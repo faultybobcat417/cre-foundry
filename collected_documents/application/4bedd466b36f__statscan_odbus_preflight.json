@@ -1,0 +1,26 @@
+{
+  "accept_ranges": "bytes",
+  "access_state": "approved",
+  "content_length_bytes": 21860048,
+  "content_length_mib": 20.85,
+  "content_type": "application/zip",
+  "disk_free_bytes": 38743146496,
+  "disk_free_gib": 36.08,
+  "disk_safe_for_download": true,
+  "download_url": "https://www150.statcan.gc.ca/n1/pub/21-26-0003/2023001/ODBus_2023.zip",
+  "etag": "\"14d8ed0-60b366b5e2dc0\"",
+  "intended_use": "Historical entity-resolution baseline; not current operating-status evidence.",
+  "landing_page_url": "https://www150.statcan.gc.ca/n1/pub/21-26-0003/212600032023001-eng.htm",
+  "last_modified": "Tue, 28 Nov 2023 13:30:17 GMT",
+  "license_name": "Statistics Canada Open Licence",
+  "license_url": "https://www.statcan.gc.ca/en/terms-conditions/open-licence",
+  "max_download_bytes": 2147483648,
+  "release_date": "2023-11-28",
+  "required_attribution": "Statistics Canada, Open Database of Businesses, 2023",
+  "resolved_download_url": "https://www150.statcan.gc.ca/n1/pub/21-26-0003/2023001/ODBus_2023.zip",
+  "source_id": "statscan_odbus_2023",
+  "status_code": 200,
+  "vintage_end": "2022-12-31",
+  "vintage_start": "2022-05-01"
+}
+ODBUS PREFLIGHT PASSED

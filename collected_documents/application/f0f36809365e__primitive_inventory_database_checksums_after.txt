@@ -1,0 +1,2 @@
+d91d2b7d7a6e64fe40f7e0fb0a9d5e682eee51eb2efbbe29008ce816451d0804  data/warehouse/cre.duckdb
+4090e2118715669c46bddb18c3b90a2de987a0e53a04766e500082879833cee6  data/control/operations.sqlite3

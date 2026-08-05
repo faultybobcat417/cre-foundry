@@ -1,0 +1,21 @@
+{
+  "attack_scope": "SYNTHETIC_EVALUATOR_SELF_TEST_ONLY",
+  "base_run_sha256": "e467dec2bdaa913919bb848d3aa9c490244c908c5d136e348c80708bff43325a",
+  "case_id": "probability-target-rebind",
+  "document_kind": "REGISTERED_CALIBRATION_MUTATION",
+  "expected_diagnostic": "CALIBRATION-PROBABILITY-TARGET-BINDING",
+  "patch": {
+    "operations": [
+      {
+        "document": "input",
+        "operation": "replace",
+        "path": [
+          "probability_head",
+          "target"
+        ],
+        "value": "F9_DIFFERENT_TARGET"
+      }
+    ]
+  },
+  "schema_version": "1.0.0"
+}

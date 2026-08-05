@@ -1,0 +1,134 @@
+{
+  "attack_scope": "SYNTHETIC_EVALUATOR_SELF_TEST_ONLY",
+  "base_run_sha256": "e467dec2bdaa913919bb848d3aa9c490244c908c5d136e348c80708bff43325a",
+  "case_id": "rehashed-math-problem-and-decision",
+  "document_kind": "REGISTERED_CALIBRATION_MUTATION",
+  "expected_diagnostic": "CALIBRATION-MATH-PROBABILITY-PROJECTION",
+  "patch": {
+    "operations": [
+      {
+        "document": "subject",
+        "operation": "replace",
+        "path": [
+          "math_runs",
+          0,
+          "math_problem",
+          "candidates",
+          0,
+          "business_value_units"
+        ],
+        "value": 9
+      },
+      {
+        "document": "subject",
+        "operation": "replace",
+        "path": [
+          "math_runs",
+          0,
+          "math_decision"
+        ],
+        "value": {
+          "certificate": {
+            "business_value_units": 29,
+            "canonical_order_not_route_order": true,
+            "feasible_sets_evaluated": 66,
+            "gross_business_value_units": 29,
+            "interference_penalty_units": 0,
+            "proximity_cost_units": 139,
+            "redundancy_penalty_units": 0,
+            "total_service_minutes": 100
+          },
+          "decision": "ISSUE",
+          "decision_id": "CALIBRATION_DECISION:ROUTE_DAY:SYN_BASE_07:KNOWN",
+          "decision_scope": "SYNTHETIC_FORMAL_ONLY",
+          "oracle_version": "bounded-exhaustive-v1",
+          "policy_sha256": "87fe8dd1681b7d2b2836290629096b95bfbc5424558ad36222ccdf12a4d3da86",
+          "policy_version": "math-policy-v1",
+          "schema_version": "1.0.0",
+          "selected": [
+            {
+              "candidate_id": "CAND:SYN_BASE_07_01",
+              "physical_location_id": "LOCATION:SYN_BASE_07_01"
+            },
+            {
+              "candidate_id": "CAND:SYN_BASE_07_02",
+              "physical_location_id": "LOCATION:SYN_BASE_07_02"
+            },
+            {
+              "candidate_id": "CAND:SYN_BASE_07_03",
+              "physical_location_id": "LOCATION:SYN_BASE_07_03"
+            },
+            {
+              "candidate_id": "CAND:SYN_BASE_07_04",
+              "physical_location_id": "LOCATION:SYN_BASE_07_04"
+            },
+            {
+              "candidate_id": "CAND:SYN_BASE_07_05",
+              "physical_location_id": "LOCATION:SYN_BASE_07_05"
+            },
+            {
+              "candidate_id": "CAND:SYN_BASE_07_06",
+              "physical_location_id": "LOCATION:SYN_BASE_07_06"
+            },
+            {
+              "candidate_id": "CAND:SYN_BASE_07_07",
+              "physical_location_id": "LOCATION:SYN_BASE_07_07"
+            },
+            {
+              "candidate_id": "CAND:SYN_BASE_07_08",
+              "physical_location_id": "LOCATION:SYN_BASE_07_08"
+            },
+            {
+              "candidate_id": "CAND:SYN_BASE_07_10",
+              "physical_location_id": "LOCATION:SYN_BASE_07_10"
+            },
+            {
+              "candidate_id": "CAND:SYN_BASE_07_11",
+              "physical_location_id": "LOCATION:SYN_BASE_07_11"
+            }
+          ],
+          "snapshot_sha256": "43a78af66190bbc0fd84676484d4f4b256fa1444a78868e1bdb944cbbcc272a6"
+        }
+      },
+      {
+        "document": "subject",
+        "operation": "replace",
+        "path": [
+          "math_runs",
+          0,
+          "math_problem_sha256"
+        ],
+        "value": "4df49ad6f0d2e67b561623a8444e3768cd207a883715e4258da46e761ba6cac5"
+      },
+      {
+        "document": "subject",
+        "operation": "replace",
+        "path": [
+          "math_runs",
+          0,
+          "math_decision_sha256"
+        ],
+        "value": "0f314663394e9c4b2c44a6141c4af5db57ee18d5296fc3be97e3c3d679683931"
+      },
+      {
+        "document": "subject",
+        "operation": "replace",
+        "path": [
+          "replay_receipt",
+          "math_runs_sha256"
+        ],
+        "value": "0344e951f1d2a52a7743e38d741343fc5b0f4b176f1e65c0136fa6fbd103131b"
+      },
+      {
+        "document": "subject",
+        "operation": "replace",
+        "path": [
+          "replay_receipt",
+          "receipt_sha256"
+        ],
+        "value": "35208d341b45bf6993edf900531adb8620bb0c5954ada9ad77047b3c215c0a4b"
+      }
+    ]
+  },
+  "schema_version": "1.0.0"
+}

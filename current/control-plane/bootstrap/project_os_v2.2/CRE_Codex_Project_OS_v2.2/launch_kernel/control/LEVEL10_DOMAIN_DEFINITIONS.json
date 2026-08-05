@@ -1,0 +1,462 @@
+{
+  "version": "2.2",
+  "domains": [
+    {
+      "domain": "mission_product",
+      "scope": "Mission, outcome, user, decision unit, exact-ten and value objective",
+      "pre_codex_level_10_definition": [
+        "authority and owner identified",
+        "inputs/outputs and data primitives defined",
+        "success metrics and thresholds registered",
+        "public evaluator exists",
+        "adversarial/negative cases exist",
+        "failure behavior and rollback defined",
+        "state, telemetry and evidence artifacts defined",
+        "claim/proof ceiling explicit"
+      ],
+      "empirical_proof_required": null,
+      "scoring_axes": [
+        "design_and_evaluator_readiness",
+        "available_evidence_maturity"
+      ]
+    },
+    {
+      "domain": "research_evidence",
+      "scope": "Claim graph, primary research, counterevidence, provenance and gap closure",
+      "pre_codex_level_10_definition": [
+        "authority and owner identified",
+        "inputs/outputs and data primitives defined",
+        "success metrics and thresholds registered",
+        "public evaluator exists",
+        "adversarial/negative cases exist",
+        "failure behavior and rollback defined",
+        "state, telemetry and evidence artifacts defined",
+        "claim/proof ceiling explicit"
+      ],
+      "empirical_proof_required": null,
+      "scoring_axes": [
+        "design_and_evaluator_readiness",
+        "available_evidence_maturity"
+      ]
+    },
+    {
+      "domain": "source_acquisition",
+      "scope": "Authorization, immutable snapshots, count/schema reconciliation and failure semantics",
+      "pre_codex_level_10_definition": [
+        "authority and owner identified",
+        "inputs/outputs and data primitives defined",
+        "success metrics and thresholds registered",
+        "public evaluator exists",
+        "adversarial/negative cases exist",
+        "failure behavior and rollback defined",
+        "state, telemetry and evidence artifacts defined",
+        "claim/proof ceiling explicit"
+      ],
+      "empirical_proof_required": 6,
+      "scoring_axes": [
+        "design_and_evaluator_readiness",
+        "available_evidence_maturity"
+      ]
+    },
+    {
+      "domain": "data_quality",
+      "scope": "Validity, completeness, freshness, valid-zero, quarantine and correction behavior",
+      "pre_codex_level_10_definition": [
+        "authority and owner identified",
+        "inputs/outputs and data primitives defined",
+        "success metrics and thresholds registered",
+        "public evaluator exists",
+        "adversarial/negative cases exist",
+        "failure behavior and rollback defined",
+        "state, telemetry and evidence artifacts defined",
+        "claim/proof ceiling explicit"
+      ],
+      "empirical_proof_required": 6,
+      "scoring_axes": [
+        "design_and_evaluator_readiness",
+        "available_evidence_maturity"
+      ]
+    },
+    {
+      "domain": "identity_resolution",
+      "scope": "Temporal entity/location/property/occupier resolution, conflicts and protection",
+      "pre_codex_level_10_definition": [
+        "authority and owner identified",
+        "inputs/outputs and data primitives defined",
+        "success metrics and thresholds registered",
+        "public evaluator exists",
+        "adversarial/negative cases exist",
+        "failure behavior and rollback defined",
+        "state, telemetry and evidence artifacts defined",
+        "claim/proof ceiling explicit"
+      ],
+      "empirical_proof_required": 6,
+      "scoring_axes": [
+        "design_and_evaluator_readiness",
+        "available_evidence_maturity"
+      ]
+    },
+    {
+      "domain": "temporal_integrity",
+      "scope": "Point-in-time availability, bitemporal history, leakage and backfill controls",
+      "pre_codex_level_10_definition": [
+        "authority and owner identified",
+        "inputs/outputs and data primitives defined",
+        "success metrics and thresholds registered",
+        "public evaluator exists",
+        "adversarial/negative cases exist",
+        "failure behavior and rollback defined",
+        "state, telemetry and evidence artifacts defined",
+        "claim/proof ceiling explicit"
+      ],
+      "empirical_proof_required": 6,
+      "scoring_axes": [
+        "design_and_evaluator_readiness",
+        "available_evidence_maturity"
+      ]
+    },
+    {
+      "domain": "labels_outcomes",
+      "scope": "F9 adjudication, maturity, censoring, competing risks and downstream outcomes",
+      "pre_codex_level_10_definition": [
+        "authority and owner identified",
+        "inputs/outputs and data primitives defined",
+        "success metrics and thresholds registered",
+        "public evaluator exists",
+        "adversarial/negative cases exist",
+        "failure behavior and rollback defined",
+        "state, telemetry and evidence artifacts defined",
+        "claim/proof ceiling explicit"
+      ],
+      "empirical_proof_required": 6,
+      "scoring_axes": [
+        "design_and_evaluator_readiness",
+        "available_evidence_maturity"
+      ]
+    },
+    {
+      "domain": "features",
+      "scope": "Versioned mechanism features, lineage, freshness, missingness and parity",
+      "pre_codex_level_10_definition": [
+        "authority and owner identified",
+        "inputs/outputs and data primitives defined",
+        "success metrics and thresholds registered",
+        "public evaluator exists",
+        "adversarial/negative cases exist",
+        "failure behavior and rollback defined",
+        "state, telemetry and evidence artifacts defined",
+        "claim/proof ceiling explicit"
+      ],
+      "empirical_proof_required": null,
+      "scoring_axes": [
+        "design_and_evaluator_readiness",
+        "available_evidence_maturity"
+      ]
+    },
+    {
+      "domain": "models",
+      "scope": "Baselines, training, temporal validation, registry, promotion and rollback",
+      "pre_codex_level_10_definition": [
+        "authority and owner identified",
+        "inputs/outputs and data primitives defined",
+        "success metrics and thresholds registered",
+        "public evaluator exists",
+        "adversarial/negative cases exist",
+        "failure behavior and rollback defined",
+        "state, telemetry and evidence artifacts defined",
+        "claim/proof ceiling explicit"
+      ],
+      "empirical_proof_required": 6,
+      "scoring_axes": [
+        "design_and_evaluator_readiness",
+        "available_evidence_maturity"
+      ]
+    },
+    {
+      "domain": "calibration_uncertainty",
+      "scope": "Calibration, intervals, uncertainty coverage, sensitivity and abstention",
+      "pre_codex_level_10_definition": [
+        "authority and owner identified",
+        "inputs/outputs and data primitives defined",
+        "success metrics and thresholds registered",
+        "public evaluator exists",
+        "adversarial/negative cases exist",
+        "failure behavior and rollback defined",
+        "state, telemetry and evidence artifacts defined",
+        "claim/proof ceiling explicit"
+      ],
+      "empirical_proof_required": 6,
+      "scoring_axes": [
+        "design_and_evaluator_readiness",
+        "available_evidence_maturity"
+      ]
+    },
+    {
+      "domain": "economics",
+      "scope": "Incremental value chain, distributions, cost, risk and realized reconciliation",
+      "pre_codex_level_10_definition": [
+        "authority and owner identified",
+        "inputs/outputs and data primitives defined",
+        "success metrics and thresholds registered",
+        "public evaluator exists",
+        "adversarial/negative cases exist",
+        "failure behavior and rollback defined",
+        "state, telemetry and evidence artifacts defined",
+        "claim/proof ceiling explicit"
+      ],
+      "empirical_proof_required": 9,
+      "scoring_axes": [
+        "design_and_evaluator_readiness",
+        "available_evidence_maturity"
+      ]
+    },
+    {
+      "domain": "ranking_list",
+      "scope": "Value-ranked exactly-ten composition, diversity, reserves and abstention",
+      "pre_codex_level_10_definition": [
+        "authority and owner identified",
+        "inputs/outputs and data primitives defined",
+        "success metrics and thresholds registered",
+        "public evaluator exists",
+        "adversarial/negative cases exist",
+        "failure behavior and rollback defined",
+        "state, telemetry and evidence artifacts defined",
+        "claim/proof ceiling explicit"
+      ],
+      "empirical_proof_required": 7,
+      "scoring_axes": [
+        "design_and_evaluator_readiness",
+        "available_evidence_maturity"
+      ]
+    },
+    {
+      "domain": "routing_operations",
+      "scope": "Time matrices, service uncertainty, feasibility, sequencing and substitution",
+      "pre_codex_level_10_definition": [
+        "authority and owner identified",
+        "inputs/outputs and data primitives defined",
+        "success metrics and thresholds registered",
+        "public evaluator exists",
+        "adversarial/negative cases exist",
+        "failure behavior and rollback defined",
+        "state, telemetry and evidence artifacts defined",
+        "claim/proof ceiling explicit"
+      ],
+      "empirical_proof_required": 7,
+      "scoring_axes": [
+        "design_and_evaluator_readiness",
+        "available_evidence_maturity"
+      ]
+    },
+    {
+      "domain": "field_product",
+      "scope": "Representative usability, visit state, questions, corrections and adherence",
+      "pre_codex_level_10_definition": [
+        "authority and owner identified",
+        "inputs/outputs and data primitives defined",
+        "success metrics and thresholds registered",
+        "public evaluator exists",
+        "adversarial/negative cases exist",
+        "failure behavior and rollback defined",
+        "state, telemetry and evidence artifacts defined",
+        "claim/proof ceiling explicit"
+      ],
+      "empirical_proof_required": 7,
+      "scoring_axes": [
+        "design_and_evaluator_readiness",
+        "available_evidence_maturity"
+      ]
+    },
+    {
+      "domain": "causal_experiment",
+      "scope": "Preregistration, route-day randomization, clusters, interference, ITT and power",
+      "pre_codex_level_10_definition": [
+        "authority and owner identified",
+        "inputs/outputs and data primitives defined",
+        "success metrics and thresholds registered",
+        "public evaluator exists",
+        "adversarial/negative cases exist",
+        "failure behavior and rollback defined",
+        "state, telemetry and evidence artifacts defined",
+        "claim/proof ceiling explicit"
+      ],
+      "empirical_proof_required": 8,
+      "scoring_axes": [
+        "design_and_evaluator_readiness",
+        "available_evidence_maturity"
+      ]
+    },
+    {
+      "domain": "architecture",
+      "scope": "Bounded contexts, ownership, APIs/events, migrations and evidence-triggered scaling",
+      "pre_codex_level_10_definition": [
+        "authority and owner identified",
+        "inputs/outputs and data primitives defined",
+        "success metrics and thresholds registered",
+        "public evaluator exists",
+        "adversarial/negative cases exist",
+        "failure behavior and rollback defined",
+        "state, telemetry and evidence artifacts defined",
+        "claim/proof ceiling explicit"
+      ],
+      "empirical_proof_required": null,
+      "scoring_axes": [
+        "design_and_evaluator_readiness",
+        "available_evidence_maturity"
+      ]
+    },
+    {
+      "domain": "security_privacy",
+      "scope": "Threat model, least privilege, approvals, secrets, privacy, terms and emergency stop",
+      "pre_codex_level_10_definition": [
+        "authority and owner identified",
+        "inputs/outputs and data primitives defined",
+        "success metrics and thresholds registered",
+        "public evaluator exists",
+        "adversarial/negative cases exist",
+        "failure behavior and rollback defined",
+        "state, telemetry and evidence artifacts defined",
+        "claim/proof ceiling explicit"
+      ],
+      "empirical_proof_required": null,
+      "scoring_axes": [
+        "design_and_evaluator_readiness",
+        "available_evidence_maturity"
+      ]
+    },
+    {
+      "domain": "supply_chain",
+      "scope": "Pinned dependencies, SBOM/provenance, artifact hashes and reproducible builds",
+      "pre_codex_level_10_definition": [
+        "authority and owner identified",
+        "inputs/outputs and data primitives defined",
+        "success metrics and thresholds registered",
+        "public evaluator exists",
+        "adversarial/negative cases exist",
+        "failure behavior and rollback defined",
+        "state, telemetry and evidence artifacts defined",
+        "claim/proof ceiling explicit"
+      ],
+      "empirical_proof_required": null,
+      "scoring_axes": [
+        "design_and_evaluator_readiness",
+        "available_evidence_maturity"
+      ]
+    },
+    {
+      "domain": "reliability_recovery",
+      "scope": "SLOs, idempotency, retries, incidents, rollback and disaster recovery",
+      "pre_codex_level_10_definition": [
+        "authority and owner identified",
+        "inputs/outputs and data primitives defined",
+        "success metrics and thresholds registered",
+        "public evaluator exists",
+        "adversarial/negative cases exist",
+        "failure behavior and rollback defined",
+        "state, telemetry and evidence artifacts defined",
+        "claim/proof ceiling explicit"
+      ],
+      "empirical_proof_required": null,
+      "scoring_axes": [
+        "design_and_evaluator_readiness",
+        "available_evidence_maturity"
+      ]
+    },
+    {
+      "domain": "observability_lineage",
+      "scope": "Traces, metrics, logs, lineage closure, replay and cardinality controls",
+      "pre_codex_level_10_definition": [
+        "authority and owner identified",
+        "inputs/outputs and data primitives defined",
+        "success metrics and thresholds registered",
+        "public evaluator exists",
+        "adversarial/negative cases exist",
+        "failure behavior and rollback defined",
+        "state, telemetry and evidence artifacts defined",
+        "claim/proof ceiling explicit"
+      ],
+      "empirical_proof_required": null,
+      "scoring_axes": [
+        "design_and_evaluator_readiness",
+        "available_evidence_maturity"
+      ]
+    },
+    {
+      "domain": "codex_orchestration",
+      "scope": "Progressive context, tasks, worktrees, threads, reviewers and continuous loop",
+      "pre_codex_level_10_definition": [
+        "authority and owner identified",
+        "inputs/outputs and data primitives defined",
+        "success metrics and thresholds registered",
+        "public evaluator exists",
+        "adversarial/negative cases exist",
+        "failure behavior and rollback defined",
+        "state, telemetry and evidence artifacts defined",
+        "claim/proof ceiling explicit"
+      ],
+      "empirical_proof_required": null,
+      "scoring_axes": [
+        "design_and_evaluator_readiness",
+        "available_evidence_maturity"
+      ]
+    },
+    {
+      "domain": "evaluator_integrity",
+      "scope": "Public, sealed and external holdout separation; mutation and known-bad cases",
+      "pre_codex_level_10_definition": [
+        "authority and owner identified",
+        "inputs/outputs and data primitives defined",
+        "success metrics and thresholds registered",
+        "public evaluator exists",
+        "adversarial/negative cases exist",
+        "failure behavior and rollback defined",
+        "state, telemetry and evidence artifacts defined",
+        "claim/proof ceiling explicit"
+      ],
+      "empirical_proof_required": null,
+      "scoring_axes": [
+        "design_and_evaluator_readiness",
+        "available_evidence_maturity"
+      ]
+    },
+    {
+      "domain": "documentation_state",
+      "scope": "Repository system of record, freshness, decisions, state and resume",
+      "pre_codex_level_10_definition": [
+        "authority and owner identified",
+        "inputs/outputs and data primitives defined",
+        "success metrics and thresholds registered",
+        "public evaluator exists",
+        "adversarial/negative cases exist",
+        "failure behavior and rollback defined",
+        "state, telemetry and evidence artifacts defined",
+        "claim/proof ceiling explicit"
+      ],
+      "empirical_proof_required": null,
+      "scoring_axes": [
+        "design_and_evaluator_readiness",
+        "available_evidence_maturity"
+      ]
+    },
+    {
+      "domain": "claim_integrity",
+      "scope": "Proof ladder, evidence ceilings, calibrated language and no simulated overclaim",
+      "pre_codex_level_10_definition": [
+        "authority and owner identified",
+        "inputs/outputs and data primitives defined",
+        "success metrics and thresholds registered",
+        "public evaluator exists",
+        "adversarial/negative cases exist",
+        "failure behavior and rollback defined",
+        "state, telemetry and evidence artifacts defined",
+        "claim/proof ceiling explicit"
+      ],
+      "empirical_proof_required": null,
+      "scoring_axes": [
+        "design_and_evaluator_readiness",
+        "available_evidence_maturity"
+      ]
+    }
+  ],
+  "rule": "A domain may score 10/10 for pre-Codex readiness while its evidence maturity remains below the proof required for a real-world claim."
+}

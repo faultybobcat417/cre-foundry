@@ -1,0 +1,84 @@
+RECOVERY DIRECTORY
+/Users/alimehdi/Desktop/CRE-Recovery-20260803-134330
+
+BRANCH / HEAD
+handoff/kimi-architecture-001
+65982d0032b841b167a64c764f7d3229f9f6ffef
+
+STATUS
+## handoff/kimi-architecture-001
+ M artifacts/context/current_task_packet.json
+ M artifacts/context/current_task_packet.md
+ M bootstrap/project_os_v2.2/CRE_Codex_Project_OS_v2.2/launch_kernel/artifacts/codex_capabilities.json
+ M control/CURRENT_STATE.json
+ M control/CURRENT_TASK.json
+ M control/TASK_GRAPH.json
+?? artifacts/economics/
+?? artifacts/evaluations/economics_contracts.json
+?? artifacts/evaluations/identity_contracts.json
+?? artifacts/task-results/ECONOMICS-001.json
+?? artifacts/task-results/IDENTITY-001.json
+?? contracts/economic_engine.schema.json
+?? contracts/synthetic_identity_graph.schema.json
+?? control/ONE_SHOT_READINESS.json
+?? docs/economics/
+?? docs/identity/
+?? evals/public/test_economics_contracts.py
+?? evals/public/test_identity_contracts.py
+?? scripts/validate_economics_contracts.py
+?? scripts/validate_identity_contracts.py
+?? src/cre_foundry/economics/
+?? src/cre_foundry/identity/
+?? tasks/ECONOMICS-001.json
+?? tasks/SECURITY-001.json
+
+UNSTAGED DIFF STAT
+ artifacts/context/current_task_packet.json         |  6 +-
+ artifacts/context/current_task_packet.md           | 92 +++++++++++-----------
+ .../artifacts/codex_capabilities.json              | 38 ++-------
+ control/CURRENT_STATE.json                         | 31 +++++---
+ control/CURRENT_TASK.json                          | 12 +--
+ control/TASK_GRAPH.json                            |  8 +-
+ 6 files changed, 88 insertions(+), 99 deletions(-)
+
+STAGED DIFF STAT
+
+UNTRACKED FILES
+artifacts/economics/ECONOMICS-001-start.json
+artifacts/economics/public_evaluator_contract.json
+artifacts/evaluations/economics_contracts.json
+artifacts/evaluations/identity_contracts.json
+artifacts/task-results/ECONOMICS-001.json
+artifacts/task-results/IDENTITY-001.json
+contracts/economic_engine.schema.json
+contracts/synthetic_identity_graph.schema.json
+control/ONE_SHOT_READINESS.json
+docs/economics/ECONOMICS_MATERIAL.md
+docs/identity/IDENTITY_MATERIAL.md
+evals/public/test_economics_contracts.py
+evals/public/test_identity_contracts.py
+scripts/validate_economics_contracts.py
+scripts/validate_identity_contracts.py
+src/cre_foundry/economics/__init__.py
+src/cre_foundry/economics/engine.py
+src/cre_foundry/identity/__init__.py
+src/cre_foundry/identity/graph.py
+tasks/ECONOMICS-001.json
+tasks/SECURITY-001.json
+
+RECENT COMMITS
+65982d0 (HEAD -> handoff/kimi-architecture-001) chore: checkpoint frontier evaluation - 6 gates pass, 16 blocked externally, full-system gate deferred
+724968c chore: rebind frontier meta after Phase-1 fixes
+702ea78 frontier: fix Phase-1 validator fixture paths and known-bad diagnostics
+a47bdc4 chore: rebind frontier meta to Phase-1 evidence
+e959533 frontier: add Phase-1 synthetic evidence domains
+a66a442 chore: checkpoint frontier evaluation - 6 gates pass, source-feasibility blocked externally
+4fd045b chore: rebind frontier meta to reconciled gate evidence
+2182b21 frontier: break trace/contract reference cycle and bind remaining gate evidence
+1536119 chore: rebind frontier meta to Phase-0 proof checkpoint
+0aa5333 frontier: reconcile mission, math, identity, architecture, and documentation gates
+
+IMPORTANT HASHES
+e0fa1f1d03904d74fb948a8b7d22d028dd193a1090a6f41bcba235f11d46cbc0  control/ONE_SHOT_READINESS.json
+583e7715e2af53e82309e934d6136d1b161bcda45771cebc948e9a9137525282  artifacts/identity/public_evaluator_contract.json
+0c3b42f906063169b46cc760f9e7cf516b3c73c7c84f6293eb4cfcf826cc55ba  contracts/temporal_identity.schema.json

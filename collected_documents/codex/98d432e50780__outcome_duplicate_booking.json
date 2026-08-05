@@ -1,0 +1,5 @@
+{
+  "case_id": "duplicate-booking-double-counted",
+  "mutation_id": "duplicate_booking_double_counted",
+  "expected_diagnostic": "OUTCOMES-DEDUPE-DOUBLE-COUNT"
+}

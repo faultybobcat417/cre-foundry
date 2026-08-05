@@ -1,0 +1,5 @@
+{
+  "case_id": "uncertainty-abstention-bypass",
+  "expected_diagnostic": "ADVERSARIAL-UNCERTAINTY-BYPASS",
+  "mutation_id": "uncertainty_bypass"
+}

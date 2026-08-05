@@ -1,0 +1,28 @@
+{
+  "attack_scope": "SYNTHETIC_EVALUATOR_SELF_TEST_ONLY",
+  "base_run_sha256": "e467dec2bdaa913919bb848d3aa9c490244c908c5d136e348c80708bff43325a",
+  "case_id": "sparse-bin-point-estimate",
+  "document_kind": "REGISTERED_CALIBRATION_MUTATION",
+  "expected_diagnostic": "CALIBRATION-SPARSE-CELL-OVERCLAIM",
+  "patch": {
+    "operations": [
+      {
+        "document": "subject",
+        "operation": "replace",
+        "path": [
+          "scenario_runs",
+          2,
+          "metrics",
+          "reliability_bins",
+          4,
+          "mean_probability"
+        ],
+        "value": {
+          "denominator": 10,
+          "numerator": 9
+        }
+      }
+    ]
+  },
+  "schema_version": "1.0.0"
+}

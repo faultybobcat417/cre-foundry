@@ -1,0 +1,32 @@
+{
+  "config_version": "cre-foundry-bounded-parser-probe-v1",
+  "policy": {
+    "operating_mode": "shadow",
+    "read_only": true,
+    "checksum_revalidation_required": true,
+    "project_boundary_required": true,
+    "symlink_allowed": false,
+    "bounded_stream_reads_enabled": true,
+    "bounded_in_memory_decompression_enabled": true,
+    "archive_extraction_enabled": false,
+    "full_decompression_enabled": false,
+    "full_parser_execution_enabled": false,
+    "schema_mutation_enabled": false,
+    "row_materialization_enabled": false,
+    "automatic_parser_approval": false,
+    "snapshot_registration_enabled": false,
+    "automatic_acquisition": false,
+    "browser_execution": false,
+    "computer_vision_execution": false,
+    "opportunity_ranked": false,
+    "outreach_eligible": false
+  },
+  "limits": {
+    "maximum_gzip_prefix_bytes": 524288,
+    "maximum_zip_member_prefix_bytes": 131072,
+    "maximum_zip_members_probed": 100,
+    "maximum_member_compression_ratio": 1000.0,
+    "maximum_detected_columns": 500,
+    "maximum_detected_json_keys": 500
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object", "additionalProperties": false,
+  "required": ["artifact_id", "schema_version", "as_of", "entries"],
+  "properties": {
+    "artifact_id": {"const": "RESEARCH-001-COUNTEREVIDENCE"}, "schema_version": {"const": "2.0.0"}, "as_of": {"type": "string", "format": "date"},
+    "entries": {"type": "array", "minItems": 6, "items": {"type": "object", "additionalProperties": false, "required": ["counterevidence_id", "shortcut", "classification", "statement", "evidence_refs", "affected_claim_ids", "disposition", "gate_id", "decision_effect", "as_of"], "properties": {
+      "counterevidence_id": {"pattern": "^CE-[0-9]{3}$"}, "shortcut": {"type": "string", "minLength": 1}, "classification": {"enum": ["fact", "inference", "unknown"]}, "statement": {"type": "string", "minLength": 1},
+      "evidence_refs": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string"}}, "affected_claim_ids": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"pattern": "^CLM-00[1-7]$"}},
+      "disposition": {"enum": ["reject", "retain_separately", "gate", "experiment"]}, "gate_id": {"type": ["string", "null"]}, "decision_effect": {"type": "string", "minLength": 1}, "as_of": {"type": "string", "format": "date"}
+    }}}
+  }
+}

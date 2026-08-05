@@ -1,0 +1,34 @@
+{
+  "artifact_id": "BASELINE-001-START",
+  "schema_version": "1.0.0",
+  "task_id": "BASELINE-001",
+  "started_at": "2026-08-02T06:09:37Z",
+  "base_commit": "b802776ecb8335b4cb18bd81fb5fa5794dc4afa2",
+  "compiled_context": {
+    "path": "artifacts/context/current_task_packet.md",
+    "manifest_path": "artifacts/context/current_task_packet.json",
+    "packet_sha256": "5976cf8b6e3802d8b0dc49fe398dac7da87d99760d385838104af858106ad58b",
+    "characters": 581498
+  },
+  "execution_scope": "SYNTHETIC_NON_INFLUENCING",
+  "proof_target": 5,
+  "active_expertise": ["statistical_learning", "causal_inference", "temporal_validation", "ranking_systems", "testing_verification"],
+  "one_writer": "/root",
+  "independent_read_only_agents": ["/root/outcomes_evaluator_design", "/root/outcomes_proof_review", "/root/outcomes_state_model"],
+  "material_input_classification": [
+    {"input": "synthetic features, clocks, splits, deterministic policies, metrics, replay, and mutations", "classification": "CODEX_DERIVABLE"},
+    {"input": "real incumbent workflow, replacement threshold, risk tolerance, complexity budget, and deployment policy", "classification": "HUMAN_AUTHORITATIVE"},
+    {"input": "real point-in-time source features and mature F9 labels", "classification": "ACCESS_DEPENDENT"},
+    {"input": "predictive validity, calibration, subgroup behavior, incremental lift, and commercial value", "classification": "EMPIRICAL_ONLY"},
+    {"input": "sealed baseline attacks and external hidden model holdout", "classification": "EXTERNALLY_HIDDEN"}
+  ],
+  "hard_boundaries": [
+    "Every policy must route through the frozen MATH exact-ten-or-abstain decision contract.",
+    "Only Stage-1 information available by the decision cutoff may influence ranking.",
+    "All policies use the identical candidate universe, splits, label eligibility, and metrics.",
+    "Immature, censored, competing, conflicted, and unknown labels are never negatives.",
+    "Synthetic comparison cannot establish real predictive validity, lift, value, or production superiority.",
+    "Live ranking, source access, and outreach remain disabled."
+  ],
+  "evaluator_status": "DESIGN_INDEPENDENTLY_REVIEWED_THEN_FROZEN_BEFORE_IMPLEMENTATION"
+}

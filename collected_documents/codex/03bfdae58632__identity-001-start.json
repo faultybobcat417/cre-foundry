@@ -1,0 +1,53 @@
+{
+  "artifact_id": "IDENTITY-001-START",
+  "schema_version": "1.0.0",
+  "task_id": "IDENTITY-001",
+  "started_at": "2026-08-03T02:39:14Z",
+  "base_commit": "fa695be4ecaf2f08b38bcb1b8f6fc82f78096708",
+  "compiled_context": {
+    "path": "artifacts/context/current_task_packet.md",
+    "manifest_path": "artifacts/context/current_task_packet.json",
+    "packet_sha256": "527d61ab08af5d5625d09b727431123edcc26ce2dc712bd976baaa326cf8e90a",
+    "characters": 412435
+  },
+  "execution_scope": "SYNTHETIC_NON_INFLUENCING",
+  "proof_target": 4,
+  "active_expertise": [
+    "temporal_identity",
+    "entity_resolution",
+    "protected_account_safety",
+    "verification_testing"
+  ],
+  "one_writer": "builder",
+  "material_input_classification": [
+    {
+      "input": "synthetic entity grains, locations, temporal alternatives, protected-intersection cases, and mutation mechanics",
+      "classification": "CODEX_DERIVABLE"
+    },
+    {
+      "input": "authorized relationship and protected-account custodian rules, blind adjudication interface, and rotation and revocation policy",
+      "classification": "HUMAN_AUTHORITATIVE"
+    },
+    {
+      "input": "real CRM identity, protected-account bundles, and production entity/location data sources",
+      "classification": "ACCESS_DEPENDENT"
+    },
+    {
+      "input": "real precision, conflict recall, and protected false-clear performance measured by authorized blind adjudication",
+      "classification": "EMPIRICAL_ONLY"
+    },
+    {
+      "input": "sealed identity attacks and external hidden entity/location evaluation",
+      "classification": "EXTERNALLY_HIDDEN"
+    }
+  ],
+  "hard_boundaries": [
+    "Distinct entity grains never collapse: shared name or address does not merge a legal entity, business, brand, establishment, suite, property, owner, occupier, or parent.",
+    "Any unresolved alias, ambiguity, or temporal conflict blocks eligibility rather than clearing it; protection uncertainty fails closed.",
+    "Later evidence can never rewrite earlier route-day truth; corrections are append-only and Stage-1 observations remain immutable.",
+    "Protected accounts fail closed with zero false clears under authorized blind adjudication.",
+    "Live actions, external writes, deployment, publication, credentials, and representative authority remain disabled.",
+    "Synthetic identity proof does not establish real-world accuracy, precision, conflict recall, or field adoption."
+  ],
+  "evaluator_status": "MUST_BE_INDEPENDENTLY_DESIGNED_AND_FROZEN_BEFORE_MATERIAL_IMPLEMENTATION"
+}

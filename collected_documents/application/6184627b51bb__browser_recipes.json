@@ -1,0 +1,36 @@
+{
+  "config_version": "cre-foundry-browser-recipes-v1",
+  "policies": {
+    "operating_mode": "shadow",
+    "browser_execution_enabled": false,
+    "computer_vision_execution_enabled": false,
+    "api_first": true,
+    "network_capture_before_dom": true,
+    "dom_before_computer_vision": true,
+    "human_review_on_ambiguity": true,
+    "captcha_bypass_allowed": false,
+    "access_control_bypass_allowed": false,
+    "destructive_actions_allowed": false,
+    "automatic_outreach_allowed": false
+  },
+  "recipes": {
+    "brampton-plantrak-template-v1": {
+      "source_id": "brampton_plantrak",
+      "version": "1",
+      "status": "design_pending",
+      "start_url": null,
+      "allowed_domains": [],
+      "navigation_mode": "dom_first_visual_fallback",
+      "steps": [],
+      "assertions": [],
+      "evidence": {
+        "capture_dom": true,
+        "capture_accessibility_tree": true,
+        "capture_network_archive_when_available": true,
+        "screenshot_before_visual_action": true,
+        "screenshot_after_visual_action": true,
+        "checksum_extracted_artifact": true
+      }
+    }
+  }
+}

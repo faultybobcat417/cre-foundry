@@ -1,0 +1,136 @@
+{
+  "$id": "cre-foundry-governance-decisions-v1",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "client_inputs": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "authoritative_value": {},
+          "confirmed": {
+            "type": "boolean"
+          },
+          "confirmed_at": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "confirmed_by": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "evidence_reference": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "input_id": {
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "input_id",
+          "authoritative_value",
+          "confirmed",
+          "confirmed_by",
+          "confirmed_at",
+          "evidence_reference"
+        ],
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "decision_bundle_version": {
+      "const": "cre-foundry-governance-decisions-v1"
+    },
+    "source_decisions": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "approved_record_key": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "approved_temporal_fields": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "capture_policy_approved": {
+            "type": "boolean"
+          },
+          "change_contract_approved": {
+            "type": "boolean"
+          },
+          "evidence_bundle_digest": {
+            "pattern": "^[0-9a-f]{64}$",
+            "type": "string"
+          },
+          "evidence_reference": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "parser_contract_approved": {
+            "type": "boolean"
+          },
+          "registration_approved": {
+            "type": "boolean"
+          },
+          "reviewed_at": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "reviewer_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "schema_contract_approved": {
+            "type": "boolean"
+          },
+          "source_id": {
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "source_id",
+          "evidence_bundle_digest",
+          "parser_contract_approved",
+          "schema_contract_approved",
+          "approved_record_key",
+          "approved_temporal_fields",
+          "capture_policy_approved",
+          "change_contract_approved",
+          "registration_approved",
+          "reviewer_id",
+          "reviewed_at",
+          "evidence_reference"
+        ],
+        "type": "object"
+      },
+      "type": "array"
+    }
+  },
+  "required": [
+    "decision_bundle_version",
+    "source_decisions",
+    "client_inputs"
+  ],
+  "title": "CRE Foundry Governance Decisions",
+  "type": "object"
+}
