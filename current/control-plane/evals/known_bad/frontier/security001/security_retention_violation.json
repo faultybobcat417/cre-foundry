@@ -1,5 +1,0 @@
-{
-  "case_id": "retention-violation",
-  "expected_diagnostic": "SECURITY-RETENTION",
-  "mutation_id": "retention_violation"
-}

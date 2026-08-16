@@ -1,5 +1,0 @@
-{
-  "case_id": "rehashed-dedupe-split-input",
-  "mutation_id": "rehashed_dedupe_split_input",
-  "expected_diagnostic": "OUTCOMES-INPUT-LEDGER-MISMATCH"
-}

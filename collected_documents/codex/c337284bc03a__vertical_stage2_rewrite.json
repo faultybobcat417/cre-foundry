@@ -1,5 +1,0 @@
-{
-  "case_id": "vertical-stage2-rewrite",
-  "mutation_id": "stage2_rewrite",
-  "expected_diagnostic": "VERTICAL-STAGE1-REWRITE"
-}

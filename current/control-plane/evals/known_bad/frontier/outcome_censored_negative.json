@@ -1,5 +1,0 @@
-{
-  "case_id": "censored-negative",
-  "mutation_id": "censored_as_negative",
-  "expected_diagnostic": "OUTCOMES-LABEL-CENSORED-AS-NEGATIVE"
-}

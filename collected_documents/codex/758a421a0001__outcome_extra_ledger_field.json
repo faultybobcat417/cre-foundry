@@ -1,5 +1,0 @@
-{
-  "case_id": "extra-ledger-field",
-  "mutation_id": "extra_ledger_field",
-  "expected_diagnostic": "OUTCOMES-INPUT-LEDGER-SCHEMA"
-}

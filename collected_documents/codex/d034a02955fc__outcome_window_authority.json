@@ -1,5 +1,0 @@
-{
-  "case_id": "unauthorized-window-promoted",
-  "mutation_id": "unauthorized_window_promoted",
-  "expected_diagnostic": "OUTCOMES-WINDOW-AUTHORITY"
-}

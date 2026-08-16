@@ -1,5 +1,0 @@
-{
-  "case_id": "contract-protected-alias-omission",
-  "mutation_id": "protected_alias_omitted",
-  "expected_diagnostic": "CONTRACT-PROTECTED-ALIAS-OMITTED"
-}

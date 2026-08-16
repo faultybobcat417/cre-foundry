@@ -1,5 +1,0 @@
-{
-  "case_id": "missing-realtor-identity",
-  "mutation_id": "missing_realtor_identity",
-  "expected_diagnostic": "OUTCOMES-INPUT-LEDGER-SCHEMA"
-}

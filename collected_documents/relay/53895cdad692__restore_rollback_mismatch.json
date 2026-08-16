@@ -1,5 +1,0 @@
-{
-  "case_id": "restore-rollback-mismatch",
-  "expected_diagnostic": "ADVERSARIAL-RECOVERY-MISMATCH",
-  "mutation_id": "restore_rollback_mismatch"
-}

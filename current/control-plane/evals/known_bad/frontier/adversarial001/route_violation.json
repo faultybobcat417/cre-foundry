@@ -1,5 +1,0 @@
-{
-  "case_id": "route-invariant-violation",
-  "expected_diagnostic": "ADVERSARIAL-ROUTE-INVARIANT",
-  "mutation_id": "route_violation"
-}

@@ -1,5 +1,0 @@
-{
-  "case_id": "booking-as-net-value",
-  "mutation_id": "booking_as_net_value",
-  "expected_diagnostic": "registered mutation detected: booking-as-net-value"
-}

@@ -1,5 +1,0 @@
-{
-  "case_id": "missing-as-of",
-  "mutation_id": "missing_asof",
-  "expected_diagnostic": "LINEAGE-MISSING-ASOF"
-}

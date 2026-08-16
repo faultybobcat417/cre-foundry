@@ -1,5 +1,0 @@
-{
-  "case_id": "pii-log",
-  "mutation_id": "pii_log",
-  "expected_diagnostic": "SECURITY-PII-LOG"
-}

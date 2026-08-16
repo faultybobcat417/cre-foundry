@@ -1,5 +1,0 @@
-{
-  "case_id": "booking-as-commission",
-  "mutation_id": "booking_implies_commission",
-  "expected_diagnostic": "OUTCOMES-DOWNSTREAM-INFERENCE"
-}

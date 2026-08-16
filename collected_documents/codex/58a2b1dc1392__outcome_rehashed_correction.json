@@ -1,5 +1,0 @@
-{
-  "case_id": "rehashed-correction-history",
-  "mutation_id": "rehashed_correction_history",
-  "expected_diagnostic": "OUTCOMES-REPLAY-LINEAGE-MISMATCH"
-}

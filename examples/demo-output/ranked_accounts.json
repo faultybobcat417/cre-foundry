@@ -1,0 +1,137 @@
+[
+  {
+    "business": {
+      "business_id": "biz:northstar",
+      "name": "Northstar Logistics Inc.",
+      "address": "8100 Dixie Road",
+      "city": "Brampton",
+      "industry": "Logistics",
+      "employee_band": "200-499"
+    },
+    "priority_score": 82.9,
+    "confidence": 0.95,
+    "component_scores": {
+      "recency": 0.968,
+      "magnitude": 0.85,
+      "corroboration": 0.55,
+      "entity_confidence": 1.0,
+      "signal_diversity": 0.667
+    },
+    "signals": [
+      {
+        "signal_id": "sig:evt:exp-001",
+        "business_id": "biz:northstar",
+        "event_id": "evt:exp-001",
+        "signal_type": "expansion",
+        "event_date": "2026-08-12",
+        "recency_days": 3,
+        "magnitude": 0.8,
+        "corroboration": 0.55,
+        "entity_confidence": 1.0,
+        "evidence_summary": "expansion on 2026-08-12: Additional distribution capacity announced"
+      },
+      {
+        "signal_id": "sig:evt:permit-001",
+        "business_id": "biz:northstar",
+        "event_id": "evt:permit-001",
+        "signal_type": "building_permit",
+        "event_date": "2026-08-08",
+        "recency_days": 7,
+        "magnitude": 0.85,
+        "corroboration": 0.55,
+        "entity_confidence": 1.0,
+        "evidence_summary": "building permit on 2026-08-08 ($3,200,000): Interior alteration and warehouse expansion"
+      }
+    ],
+    "rationale": [
+      "expansion on 2026-08-12: Additional distribution capacity announced",
+      "2 evidence event(s), 2 signal type(s)"
+    ]
+  },
+  {
+    "business": {
+      "business_id": "biz:apex",
+      "name": "Apex Food Processing Ltd.",
+      "address": "45 Advance Boulevard",
+      "city": "Brampton",
+      "industry": "Food Manufacturing",
+      "employee_band": "100-199"
+    },
+    "priority_score": 74.4,
+    "confidence": 0.95,
+    "component_scores": {
+      "recency": 0.849,
+      "magnitude": 0.65,
+      "corroboration": 0.55,
+      "entity_confidence": 1.0,
+      "signal_diversity": 0.667
+    },
+    "signals": [
+      {
+        "signal_id": "sig:evt:business-002",
+        "business_id": "biz:apex",
+        "event_id": "evt:business-002",
+        "signal_type": "business_record",
+        "event_date": "2026-07-30",
+        "recency_days": 16,
+        "magnitude": 0.35,
+        "corroboration": 0.55,
+        "entity_confidence": 1.0,
+        "evidence_summary": "business record on 2026-07-30: Current business directory record"
+      },
+      {
+        "signal_id": "sig:evt:permit-002",
+        "business_id": "biz:apex",
+        "event_id": "evt:permit-002",
+        "signal_type": "building_permit",
+        "event_date": "2026-07-25",
+        "recency_days": 21,
+        "magnitude": 0.65,
+        "corroboration": 0.55,
+        "entity_confidence": 1.0,
+        "evidence_summary": "building permit on 2026-07-25 ($850,000): Processing area alterations"
+      }
+    ],
+    "rationale": [
+      "business record on 2026-07-30: Current business directory record",
+      "2 evidence event(s), 2 signal type(s)"
+    ]
+  },
+  {
+    "business": {
+      "business_id": "biz:meridian",
+      "name": "Meridian Fabrication Corp.",
+      "address": "125 Orenda Road",
+      "city": "Brampton",
+      "industry": "Industrial Manufacturing",
+      "employee_band": "50-99"
+    },
+    "priority_score": 56.7,
+    "confidence": 0.9,
+    "component_scores": {
+      "recency": 0.503,
+      "magnitude": 0.65,
+      "corroboration": 0.35,
+      "entity_confidence": 1.0,
+      "signal_diversity": 0.333
+    },
+    "signals": [
+      {
+        "signal_id": "sig:evt:permit-003",
+        "business_id": "biz:meridian",
+        "event_id": "evt:permit-003",
+        "signal_type": "building_permit",
+        "event_date": "2026-05-18",
+        "recency_days": 89,
+        "magnitude": 0.65,
+        "corroboration": 0.35,
+        "entity_confidence": 1.0,
+        "evidence_summary": "building permit on 2026-05-18 ($275,000): Industrial equipment foundation work"
+      }
+    ],
+    "rationale": [
+      "building permit on 2026-05-18 ($275,000): Industrial equipment foundation work",
+      "1 evidence event(s), 1 signal type(s)"
+    ]
+  }
+]

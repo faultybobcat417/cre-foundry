@@ -1,5 +1,0 @@
-{
-  "case_id": "rehashed-policy-binding",
-  "mutation_id": "rehashed_policy_binding",
-  "expected_diagnostic": "OUTCOMES-INPUT-POLICY-BINDING"
-}

@@ -1,5 +1,0 @@
-{
-  "case_id": "incomplete-watermark-negative",
-  "mutation_id": "incomplete_watermark_negative",
-  "expected_diagnostic": "OUTCOMES-MATURITY-INCOMPLETE-WATERMARK"
-}

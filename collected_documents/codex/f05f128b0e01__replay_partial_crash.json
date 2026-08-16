@@ -1,5 +1,0 @@
-{
-  "case_id": "partial-crash",
-  "expected_diagnostic": "REPLAY-PARTIAL-CRASH",
-  "mutation_id": "partial_crash"
-}

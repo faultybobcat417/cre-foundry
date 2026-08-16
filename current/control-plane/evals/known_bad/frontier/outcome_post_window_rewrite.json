@@ -1,5 +1,0 @@
-{
-  "case_id": "post-window-rewrites-prior",
-  "mutation_id": "post_window_rewrites_prior",
-  "expected_diagnostic": "OUTCOMES-CORRECTION-PRIOR-REWRITE"
-}

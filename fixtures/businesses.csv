@@ -1,0 +1,7 @@
+business_id,name,address,city,industry,employee_band
+biz:northstar,Northstar Logistics Inc.,8100 Dixie Road,Brampton,Logistics,200-499
+biz:apex,Apex Food Processing Ltd.,45 Advance Boulevard,Brampton,Food Manufacturing,100-199
+biz:meridian,Meridian Fabrication Corp.,125 Orenda Road,Brampton,Industrial Manufacturing,50-99
+biz:harbour,Harbour Office Supply Ltd.,20 Wilkinson Road,Brampton,Wholesale,20-49
+biz:twin1,Twin Creek Distribution Inc.,5000 Steeles Avenue East,Brampton,Distribution,50-99
+biz:twin2,Twin Creek Storage Inc.,5000 Steeles Avenue East,Brampton,Storage,20-49

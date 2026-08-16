@@ -1,8 +1,0 @@
-{
-  "attack_scope": "SYNTHETIC_EVALUATOR_SELF_TEST_ONLY",
-  "base_run_sha256": "177ed507f75b360d2e6735cd3987bf9b0f78c2f2a15f2cb35ec0431a62e238e9",
-  "case_id": "future-recency-value",
-  "document_kind": "REGISTERED_BASELINE_MUTATION",
-  "expected_diagnostic": "BASELINE-FEATURE-AVAILABLE-LEAKAGE",
-  "schema_version": "1.0.0"
-}

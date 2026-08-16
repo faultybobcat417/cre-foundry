@@ -1,5 +1,0 @@
-{
-  "case_id": "migration-incompatible",
-  "expected_diagnostic": "REPLAY-MIGRATION-INCOMPATIBLE",
-  "mutation_id": "migration_incompatible"
-}

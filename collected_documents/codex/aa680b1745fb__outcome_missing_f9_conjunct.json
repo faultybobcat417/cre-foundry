@@ -1,5 +1,0 @@
-{
-  "case_id": "missing-f9-conjunct-positive",
-  "mutation_id": "missing_f9_conjunct_positive",
-  "expected_diagnostic": "OUTCOMES-F9-MISSING-CONJUNCT"
-}

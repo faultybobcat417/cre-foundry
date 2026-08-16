@@ -1,8 +1,0 @@
-{
-  "task_id": "IDENTITY-001",
-  "task_path": "tasks/IDENTITY-001.json",
-  "status": "in_progress",
-  "selected_reason": "ARCHITECTURE-001 reached public proof level 4 and hardened the representative product workflow; IDENTITY-001 is the next depth-first executable task that hardens the identity/protection grain before any authorized source pilot.",
-  "started_at": "2026-08-03T02:39:14Z",
-  "proof_target": 4
-}

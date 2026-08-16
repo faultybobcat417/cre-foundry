@@ -1,5 +1,0 @@
-{
-  "case_id": "contract-future-observation",
-  "mutation_id": "future_observation_accepted",
-  "expected_diagnostic": "CONTRACT-STAGE1-FUTURE-OBSERVATION"
-}

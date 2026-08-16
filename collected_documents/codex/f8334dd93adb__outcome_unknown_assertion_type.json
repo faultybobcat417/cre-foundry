@@ -1,5 +1,0 @@
-{
-  "case_id": "unknown-assertion-type",
-  "mutation_id": "unknown_assertion_type",
-  "expected_diagnostic": "OUTCOMES-INPUT-LEDGER-SCHEMA"
-}

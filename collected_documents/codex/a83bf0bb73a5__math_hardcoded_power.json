@@ -1,8 +1,0 @@
-{
-  "case_id": "hardcoded-power",
-  "target": "artifacts/math/estimand_registry.json",
-  "pointer": "/power_result/estimate",
-  "expected_before": null,
-  "value": 100,
-  "expected_diagnostic": "MATH-P07 power result uses unset inputs"
-}

@@ -1,5 +1,0 @@
-{
-  "case_id": "unauthorized-write",
-  "expected_diagnostic": "SECURITY-UNAUTHORIZED-WRITE",
-  "mutation_id": "unauthorized_write"
-}

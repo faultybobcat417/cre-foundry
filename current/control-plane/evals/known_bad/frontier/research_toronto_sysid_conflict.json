@@ -1,8 +1,0 @@
-{
-  "case_id": "toronto-sys-id-3209741-collapse",
-  "target": {"artifact": "canonical_field_map.json", "collection": "maps", "selector": {"field": "source_id", "equals": "TOR-COA"}, "field": "/conflict_policy"},
-  "operation": "replace",
-  "expected_before": "Retain resource-scoped observations and require explicit adjudication; SYS_ID conflicts including 3209741 cannot be silently deduplicated.",
-  "value": "Last-write-wins deduplication by normalized SYS_ID.",
-  "expected_diagnostic": "R001_TOR_SYS_ID_3209741_CONFLICT: TOR-COA SYS_ID 3209741 has materially non-equivalent cross-partition observations and requires resource-scoped retention plus adjudication"
-}

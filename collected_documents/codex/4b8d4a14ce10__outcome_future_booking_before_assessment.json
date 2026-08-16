@@ -1,5 +1,0 @@
-{
-  "case_id": "future-booking-before-assessment",
-  "mutation_id": "future_booking_before_assessment",
-  "expected_diagnostic": "OUTCOMES-F9-EVENT-TIME"
-}

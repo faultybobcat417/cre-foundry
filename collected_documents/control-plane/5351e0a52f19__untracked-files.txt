@@ -1,2 +1,0 @@
-control/ONE_SHOT_READINESS.json
-tasks/SECURITY-001.json

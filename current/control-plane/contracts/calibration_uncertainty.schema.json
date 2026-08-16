@@ -1,6 +1,0 @@
-{
-  "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://cre-foundry.local/schemas/calibration-uncertainty-frontier-v1.json",
-  "x-bound-calibration-evaluation-sha256": "a8dd511ddfc81aa7c0cb39a2b9063cb6bf382e6515ccc3a4bcf0a0d33d3bae5d",
-  "$ref": "calibration_evaluation.schema.json"
-}

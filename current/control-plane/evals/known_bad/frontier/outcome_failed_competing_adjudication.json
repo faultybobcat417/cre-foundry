@@ -1,5 +1,0 @@
-{
-  "case_id": "failed-competing-adjudication",
-  "mutation_id": "failed_competing_adjudication",
-  "expected_diagnostic": "OUTCOMES-INPUT-LEDGER-SCHEMA"
-}

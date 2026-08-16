@@ -1,0 +1,4 @@
+rank,business_id,account,priority_score,confidence,top_evidence
+1,biz:northstar,Northstar Logistics Inc.,82.9,0.95,expansion on 2026-08-12: Additional distribution capacity announced
+2,biz:apex,Apex Food Processing Ltd.,74.4,0.95,business record on 2026-07-30: Current business directory record
+3,biz:meridian,Meridian Fabrication Corp.,56.7,0.9,"building permit on 2026-05-18 ($275,000): Industrial equipment foundation work"

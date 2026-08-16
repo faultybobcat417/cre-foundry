@@ -1,5 +1,0 @@
-{
-  "case_id": "evaluator-unavailable-pass",
-  "mutation_id": "evaluator_unavailable_pass",
-  "expected_diagnostic": "registered mutation detected: evaluator-unavailable-pass"
-}

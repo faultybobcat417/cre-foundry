@@ -1,5 +1,0 @@
-{
-  "case_id": "missing-correlation",
-  "expected_diagnostic": "LINEAGE-CORRELATION",
-  "mutation_id": "missing_correlation"
-}

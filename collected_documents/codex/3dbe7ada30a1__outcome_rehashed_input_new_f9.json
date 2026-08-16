@@ -1,5 +1,0 @@
-{
-  "case_id": "rehashed-input-new-f9",
-  "mutation_id": "rehashed_input_new_f9",
-  "expected_diagnostic": "OUTCOMES-INPUT-LEDGER-MISMATCH"
-}

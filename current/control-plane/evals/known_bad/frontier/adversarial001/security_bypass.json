@@ -1,5 +1,0 @@
-{
-  "case_id": "security-boundary-bypass",
-  "expected_diagnostic": "ADVERSARIAL-SECURITY-BYPASS",
-  "mutation_id": "security_bypass"
-}
