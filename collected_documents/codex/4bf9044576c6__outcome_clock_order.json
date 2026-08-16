@@ -1,5 +1,0 @@
-{
-  "case_id": "nonmonotonic-clock-chain",
-  "mutation_id": "nonmonotonic_clock_chain",
-  "expected_diagnostic": "OUTCOMES-CLOCK-ORDER"
-}

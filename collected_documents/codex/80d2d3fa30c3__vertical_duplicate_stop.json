@@ -1,5 +1,0 @@
-{
-  "case_id": "vertical-duplicate-stop",
-  "mutation_id": "duplicate_stop_issued",
-  "expected_diagnostic": "VERTICAL-ROUTE-DUPLICATE-LOCATION"
-}

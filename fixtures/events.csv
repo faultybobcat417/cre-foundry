@@ -1,0 +1,8 @@
+event_id,source_id,source_record_id,observed_at,event_date,event_type,account_name,address,city,amount,description,attribution
+evt:permit-001,brampton_building_permits,BP-001,2026-08-10T12:00:00Z,2026-08-08,building_permit,Northstar Logistics,8100 Dixie Rd,Brampton,3200000,Interior alteration and warehouse expansion,City of Brampton Open Data
+evt:exp-001,public_company_release,NR-001,2026-08-12T15:00:00Z,2026-08-12,expansion,Northstar Logistics Inc,8100 Dixie Road,Brampton,,Additional distribution capacity announced,Synthetic fixture
+evt:permit-002,brampton_building_permits,BP-002,2026-07-28T11:00:00Z,2026-07-25,building_permit,Apex Food Processing,45 Advance Blvd,Brampton,850000,Processing area alterations,City of Brampton Open Data
+evt:business-002,brampton_business_directory,BD-002,2026-08-01T09:00:00Z,2026-07-30,business_record,Apex Food Processing Ltd,45 Advance Boulevard,Brampton,,Current business directory record,Synthetic fixture
+evt:permit-003,brampton_building_permits,BP-003,2026-05-20T11:00:00Z,2026-05-18,building_permit,Meridian Fabrication,125 Orenda Rd,Brampton,275000,Industrial equipment foundation work,City of Brampton Open Data
+evt:ambiguous-001,brampton_building_permits,BP-004,2026-08-14T11:00:00Z,2026-08-13,building_permit,Twin Creek,5000 Steeles Ave East,Brampton,1500000,Interior alteration,City of Brampton Open Data
+evt:noise-001,brampton_building_permits,BP-005,2026-08-14T11:00:00Z,2026-08-13,building_permit,Unknown Company,9999 Missing Street,Brampton,800000,Unresolved fixture event,City of Brampton Open Data

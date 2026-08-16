@@ -1,5 +1,0 @@
-{
-  "case_id": "contract-silent-schema-upgrade",
-  "mutation_id": "schema_version_silently_upgraded",
-  "expected_diagnostic": "CONTRACT-UNREGISTERED-SCHEMA-VERSION:THIN_SLICE_OBSERVATION:9.9.9"
-}

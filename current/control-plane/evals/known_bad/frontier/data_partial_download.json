@@ -1,5 +1,0 @@
-{
-  "case_id": "partial-download-accepted",
-  "mutation_id": "partial_download_accepted",
-  "expected_diagnostic": "DATA-HISTORY-PARTIAL-DOWNLOAD"
-}

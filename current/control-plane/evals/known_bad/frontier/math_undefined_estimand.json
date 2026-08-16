@@ -1,8 +1,0 @@
-{
-  "case_id": "undefined-estimand",
-  "target": "artifacts/math/estimand_registry.json",
-  "pointer": "/estimands/EST-F9-ITT/treatment",
-  "expected_before": "assigned candidate list policy a",
-  "value": "observational score",
-  "expected_diagnostic": "MATH-P08 decision estimand is undefined or conflated"
-}

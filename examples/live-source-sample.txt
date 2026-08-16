@@ -1,0 +1,7 @@
+$ cre-foundry fetch-brampton --limit 10
+Fetched 10 permit event(s).
+- 88595: 9 Van Der Graaf Crt, Brampton, ON, L6T 5E5 — 2000-12-20
+- 88629: 7525 Financial Dr, Brampton, ON, L6Y 5P4 — 2004-04-23
+- 88665: 8480 Highway 50, Unit 1, Brampton, ON — 2024-01-02
+- 88695: 25 Production Rd, Brampton, ON, L6T 4N8 — 2016-11-09
+- 88713: 151 East Dr, Brampton, ON, L6T 1B5 — 2023-10-11

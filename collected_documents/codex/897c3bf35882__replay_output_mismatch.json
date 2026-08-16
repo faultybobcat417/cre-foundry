@@ -1,5 +1,0 @@
-{
-  "case_id": "replay-output-mismatch",
-  "expected_diagnostic": "REPLAY-OUTPUT-MISMATCH",
-  "mutation_id": "replay_output_mismatch"
-}

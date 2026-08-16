@@ -1,5 +1,0 @@
-{
-  "case_id": "evaluator-unavailable-pass",
-  "expected_diagnostic": "ADVERSARIAL-EVALUATOR-UNAVAILABLE",
-  "mutation_id": "evaluator_unavailable_pass"
-}

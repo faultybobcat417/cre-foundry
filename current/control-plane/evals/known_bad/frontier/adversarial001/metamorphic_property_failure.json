@@ -1,5 +1,0 @@
-{
-  "case_id": "metamorphic-property-failure",
-  "expected_diagnostic": "ADVERSARIAL-PROPERTY-FAILURE",
-  "mutation_id": "metamorphic_property_failure"
-}

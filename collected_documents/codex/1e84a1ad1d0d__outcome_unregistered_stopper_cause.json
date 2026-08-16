@@ -1,5 +1,0 @@
-{
-  "case_id": "unregistered-stopper-cause",
-  "mutation_id": "unregistered_stopper_cause",
-  "expected_diagnostic": "OUTCOMES-INPUT-LEDGER-SCHEMA"
-}

@@ -1,5 +1,0 @@
-{
-  "case_id": "stale-sweeps",
-  "mutation_id": "stale_sweeps",
-  "expected_diagnostic": "CONVERGENCE-STALE-SWEEPS"
-}

@@ -1,5 +1,0 @@
-{
-  "case_id": "contract-brand-location-collapse",
-  "mutation_id": "brand_collapsed_into_physical_location",
-  "expected_diagnostic": "CONTRACT-IDENTITY-GRAIN-COLLAPSE"
-}

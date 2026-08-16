@@ -1,7 +1,0 @@
-{
-  "gates": [
-    {"gate_id": "AF-CYCLE-A-001", "dependencies": ["AF-CYCLE-B-001"]},
-    {"gate_id": "AF-CYCLE-B-001", "dependencies": ["AF-CYCLE-A-001"]}
-  ],
-  "reason": "Cyclic completion dependencies must fail closed."
-}

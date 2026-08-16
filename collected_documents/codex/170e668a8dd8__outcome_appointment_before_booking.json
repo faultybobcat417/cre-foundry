@@ -1,5 +1,0 @@
-{
-  "case_id": "appointment-before-booking",
-  "mutation_id": "appointment_before_booking",
-  "expected_diagnostic": "OUTCOMES-F9-APPOINTMENT-CHRONOLOGY"
-}

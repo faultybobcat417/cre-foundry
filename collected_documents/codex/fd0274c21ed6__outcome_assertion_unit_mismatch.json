@@ -1,5 +1,0 @@
-{
-  "case_id": "assertion-unit-mismatch",
-  "mutation_id": "assertion_unit_mismatch",
-  "expected_diagnostic": "OUTCOMES-ASSERTION-UNIT-BINDING"
-}

@@ -1,7 +1,0 @@
-{
-  "case_id": "nine-or-eleven",
-  "target": "decision_policy",
-  "mutant": "evals/known_bad/math/issue_nine.py",
-  "problem_case": "nine",
-  "expected_diagnostic": "MATH-P01 exact-ten-or-abstain violated"
-}

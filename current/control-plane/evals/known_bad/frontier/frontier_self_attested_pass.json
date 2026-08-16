@@ -1,6 +1,0 @@
-{
-  "claimed_result": "PASS",
-  "verification_commands": [],
-  "evidence": [],
-  "reason": "A builder assertion without current executable evidence must fail."
-}

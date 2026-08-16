@@ -1,6 +1,0 @@
-{"error": {
- "code": 400,
- "messageCode": "CONT_0001",
- "message": "Item does not exist or is inaccessible.",
- "details": []
-}}

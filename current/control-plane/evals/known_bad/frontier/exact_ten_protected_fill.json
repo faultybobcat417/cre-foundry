@@ -1,7 +1,0 @@
-{
-  "case_id": "protected-fill",
-  "target": "decision_policy",
-  "mutant": "evals/known_bad/math/fill_with_protected_alias.py",
-  "problem_case": "protected_alias",
-  "expected_diagnostic": "MATH-P02 protected or unresolved candidate cleared"
-}

@@ -1,5 +1,0 @@
-{
-  "case_id": "rehashed-dedupe-reassignment",
-  "mutation_id": "rehashed_dedupe_reassignment",
-  "expected_diagnostic": "OUTCOMES-REPLAY-DEDUPE-MISMATCH"
-}

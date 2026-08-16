@@ -1,5 +1,0 @@
-{
-  "case_id": "single-clean-round",
-  "mutation_id": "single_clean_round",
-  "expected_diagnostic": "CONVERGENCE-SINGLE-CLEAN-ROUND"
-}

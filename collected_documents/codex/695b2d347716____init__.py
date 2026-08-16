@@ -1,1 +1,0 @@
-"""Bounded synthetic calibration mechanics."""

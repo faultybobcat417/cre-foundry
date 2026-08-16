@@ -1,5 +1,0 @@
-{
-  "case_id": "future-available-evidence-used",
-  "mutation_id": "future_available_evidence_used",
-  "expected_diagnostic": "OUTCOMES-ASOF-LEAKAGE"
-}

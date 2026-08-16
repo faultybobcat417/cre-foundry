@@ -1,8 +1,0 @@
-{
-  "case_id": "metadata-equals-access",
-  "target": {"artifact": "source_feasibility_registry.json", "collection": "sources", "selector": {"field": "source_id", "equals": "ON-SELECT"}, "field": "/access/rows"},
-  "operation": "replace",
-  "expected_before": "not_acquired",
-  "value": "acquired_authorized",
-  "expected_diagnostic": "R001_METADATA_AS_ACCESS: metadata and schema reproduction cannot establish authorized immutable row acquisition or handling"
-}

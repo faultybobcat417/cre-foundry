@@ -1,5 +1,0 @@
-{
-  "case_id": "identity-protection-bypass",
-  "expected_diagnostic": "ADVERSARIAL-IDENTITY-PROTECTION",
-  "mutation_id": "identity_protection_bypass"
-}

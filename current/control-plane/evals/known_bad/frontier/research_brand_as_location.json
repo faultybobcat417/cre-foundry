@@ -1,8 +1,0 @@
-{
-  "case_id": "brand-as-location",
-  "target": {"artifact": "canonical_field_map.json", "collection": "maps", "selector": {"field": "source_id", "equals": "ON-SELECT"}, "field": "/candidate_keys/brand_location/status"},
-  "operation": "replace",
-  "expected_before": "prohibited",
-  "value": "candidate_only",
-  "expected_diagnostic": "R001_BRAND_AS_LOCATION: brand, licence, legal entity, and physical establishment must remain distinct grains"
-}

@@ -1,5 +1,0 @@
-{
-  "case_id": "shifted-assignment-anchor",
-  "mutation_id": "shifted_assignment_anchor",
-  "expected_diagnostic": "OUTCOMES-ASSIGNMENT-CHRONOLOGY"
-}

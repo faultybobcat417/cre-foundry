@@ -1,8 +1,0 @@
-{
-  "task_id": "SECURITY-001",
-  "task_path": "tasks/SECURITY-001.json",
-  "status": "in_progress",
-  "selected_reason": "ECONOMICS-001 reached public proof level 5 with a green material implementation and truthful task-result. SECURITY-001 is the next depth-first executable task.",
-  "started_at": "2026-08-03T20:38:00Z",
-  "proof_target": 4
-}

@@ -1,7 +1,0 @@
-{
-  "passed": false,
-  "errors": [
-    "INV-004 protected or ineligible location cleared",
-    "INV-001 fewer than ten valid locations must abstain"
-  ]
-}
